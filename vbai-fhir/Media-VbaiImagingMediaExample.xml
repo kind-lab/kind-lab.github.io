@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Media xmlns="http://hl7.org/fhir">
+  <id value="VbaiImagingMediaExample"/>
+  <meta>
+    <profile value="http://someurl/fhir/vbai/StructureDefinition/vbai-imaging-media"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Media</b><a name="VbaiImagingMediaExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Media "VbaiImagingMediaExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-vbai-imaging-media.html">VBAI Imaging Media</a></p></div><p><b>status</b>: completed</p><p><b>modality</b>: Panoramic X-Ray <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html">DICOM</a>#PX)</span></p><p><b>subject</b>: <a href="Patient-VbaiPatientExample.html">Patient/VbaiPatientExample</a> " SMITH"</p><p><b>encounter</b>: <a href="Encounter-VbaiEncounterExample.html">Encounter/VbaiEncounterExample</a></p><h3>Contents</h3><table class="grid"><tr><td>-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td>*</td><td>application/dicom</td><td><a href="http://some.imaging.server.com/some-xray-image">http://some.imaging.server.com/some-xray-image</a></td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <modality>
+    <coding>
+      <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+      <code value="PX"/>
+      <display value="Panoramic X-Ray"/>
+    </coding>
+  </modality>
+  <subject>
+    <reference value="Patient/VbaiPatientExample"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/VbaiEncounterExample"/>
+  </encounter>
+  <content>
+    <contentType value="application/dicom"/>
+    <url value="http://some.imaging.server.com/some-xray-image"/>
+  </content>
+</Media>

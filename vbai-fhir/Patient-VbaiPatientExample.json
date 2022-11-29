@@ -1,0 +1,29 @@
+{
+  "resourceType": "Patient",
+  "id": "VbaiPatientExample",
+  "meta": {
+    "profile": [
+      "http://someurl/fhir/vbai/StructureDefinition/vbai-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>James Smith </b> male, DoB: 1999-04-01 ( id: 123456)</p><hr/></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://voice.mit.edu/fhir/vbai/identifier/patient-id",
+      "value": "123456"
+    }
+  ],
+  "name": [
+    {
+      "family": "Smith",
+      "given": [
+        "James"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1999-04-01"
+}

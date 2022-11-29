@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://someurl/fhir/vbai/Patient/VbaiPatientExample> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "VbaiPatientExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://someurl/fhir/vbai/StructureDefinition/vbai-patient";
+       fhir:index 0;
+       fhir:link <http://someurl/fhir/vbai/StructureDefinition/vbai-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>James Smith </b> male, DoB: 1999-04-01 ( id: 123456)</p><hr/></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://voice.mit.edu/fhir/vbai/identifier/patient-id" ];
+     fhir:Identifier.value [ fhir:value "123456" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Smith" ];
+     fhir:HumanName.given [
+       fhir:value "James";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1999-04-01"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://someurl/fhir/vbai/Patient/VbaiPatientExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

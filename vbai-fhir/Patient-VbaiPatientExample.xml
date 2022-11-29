@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="VbaiPatientExample"/>
+  <meta>
+    <profile value="http://someurl/fhir/vbai/StructureDefinition/vbai-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>James Smith </b> male, DoB: 1999-04-01 ( id: 123456)</p><hr/></div>
+  </text>
+  <identifier>
+    <system value="http://voice.mit.edu/fhir/vbai/identifier/patient-id"/>
+    <value value="123456"/>
+  </identifier>
+  <name>
+    <family value="Smith"/>
+    <given value="James"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1999-04-01"/>
+</Patient>

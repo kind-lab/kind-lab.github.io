@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://someurl/fhir/vbai/ImagingStudy/VbaiImagingStudyExample> a fhir:ImagingStudy;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "VbaiImagingStudyExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://someurl/fhir/vbai/StructureDefinition/vbai-imaging-study";
+       fhir:index 0;
+       fhir:link <http://someurl/fhir/vbai/StructureDefinition/vbai-imaging-study>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ImagingStudy</b><a name=\"VbaiImagingStudyExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ImagingStudy \"VbaiImagingStudyExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-imaging-study.html\">VBAI Imaging Study</a></p></div><p><b>status</b>: registered</p><p><b>modality</b>: Computed Tomography (Details: DICOM code CT = 'Computed Tomography', stated as 'null')</p><p><b>subject</b>: <a href=\"Patient-VbaiPatientExample.html\">Patient/VbaiPatientExample</a> \" SMITH\"</p><p><b>encounter</b>: <a href=\"Encounter-VbaiEncounterExample.html\">Encounter/VbaiEncounterExample</a></p></div>"
+  ];
+  fhir:ImagingStudy.status [ fhir:value "registered"];
+  fhir:ImagingStudy.modality [
+     fhir:index 0;
+     fhir:Coding.system [ fhir:value "http://dicom.nema.org/resources/ontology/DCM" ];
+     fhir:Coding.code [ fhir:value "CT" ]
+  ];
+  fhir:ImagingStudy.subject [
+     fhir:link <http://someurl/fhir/vbai/Patient/VbaiPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/VbaiPatientExample" ]
+  ];
+  fhir:ImagingStudy.encounter [
+     fhir:link <http://someurl/fhir/vbai/Encounter/VbaiEncounterExample>;
+     fhir:Reference.reference [ fhir:value "Encounter/VbaiEncounterExample" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://someurl/fhir/vbai/ImagingStudy/VbaiImagingStudyExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
