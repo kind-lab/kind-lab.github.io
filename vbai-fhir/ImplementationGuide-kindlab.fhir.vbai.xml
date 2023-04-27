@@ -3,14 +3,17 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="kindlab.fhir.vbai"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>VoiceasaBiomarkerofHealth</h2><p>The official URL for this implementation guide is: </p><pre>http://someurl/fhir/vbai/ImplementationGuide/kindlab.fhir.vbai</pre><div><p>Implementation Guide for Voice as a Biomarker for AI FHIR Profiles</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>VoiceaBiomarkerforAI</h2><p>The official URL for this implementation guide is: </p><pre>https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai</pre><div><p>Implementation Guide for Voice Biomarker for AI FHIR Profiles</p>
 </div></div>
   </text>
-  <url value="http://someurl/fhir/vbai/ImplementationGuide/kindlab.fhir.vbai"/>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+    <valueCode value="hl7.fhir.uv.tools#current"/>
+  </extension>
+  <url value="https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai"/>
   <version value="0.1.0"/>
-  <name value="VoiceasaBiomarkerofHealth"/>
+  <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2022-10-17T09:13:36-04:00"/>
+  <date value="2023-04-27T14:21:23-04:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -19,14 +22,17 @@
       <value value="http://fhir.kindlab.sickkids.ca"/>
     </telecom>
   </contact>
-  <description value="Implementation Guide for Voice as a Biomarker for AI FHIR Profiles"/>
+  <description value="Implementation Guide for Voice Biomarker for AI FHIR Profiles"/>
   <packageId value="kindlab.fhir.vbai"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="4.0.0"/>
+    <version value="5.0.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_us_core">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -111,7 +117,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://someurl/fhir/vbai/history.html"/>
+        <valueString value="https://voicecollab.ai/fhir/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -228,7 +234,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="copyrightyear"/>
+        <valueCode value="copyrightyear"/>
       </extension>
       <extension url="value">
         <valueString value="2022+"/>
@@ -236,7 +242,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="releaselabel"/>
+        <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
         <valueString value="ci-build"/>
@@ -244,7 +250,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="autoload-resources"/>
+        <valueCode value="autoload-resources"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -252,7 +258,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-liquid"/>
+        <valueCode value="path-liquid"/>
       </extension>
       <extension url="value">
         <valueString value="template/liquid"/>
@@ -260,7 +266,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-liquid"/>
+        <valueCode value="path-liquid"/>
       </extension>
       <extension url="value">
         <valueString value="input/liquid"/>
@@ -268,7 +274,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-qa"/>
+        <valueCode value="path-qa"/>
       </extension>
       <extension url="value">
         <valueString value="temp/qa"/>
@@ -276,7 +282,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-temp"/>
+        <valueCode value="path-temp"/>
       </extension>
       <extension url="value">
         <valueString value="temp/pages"/>
@@ -284,7 +290,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-output"/>
+        <valueCode value="path-output"/>
       </extension>
       <extension url="value">
         <valueString value="output"/>
@@ -292,7 +298,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-suppressed-warnings"/>
+        <valueCode value="path-suppressed-warnings"/>
       </extension>
       <extension url="value">
         <valueString value="input/ignoreWarnings.txt"/>
@@ -300,15 +306,15 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-history"/>
+        <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://someurl/fhir/vbai/history.html"/>
+        <valueString value="https://voicecollab.ai/fhir/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="template-html"/>
+        <valueCode value="template-html"/>
       </extension>
       <extension url="value">
         <valueString value="template-page.html"/>
@@ -316,7 +322,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="template-md"/>
+        <valueCode value="template-md"/>
       </extension>
       <extension url="value">
         <valueString value="template-page-md.html"/>
@@ -324,7 +330,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-contact"/>
+        <valueCode value="apply-contact"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -332,7 +338,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-context"/>
+        <valueCode value="apply-context"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -340,7 +346,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-copyright"/>
+        <valueCode value="apply-copyright"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -348,7 +354,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-jurisdiction"/>
+        <valueCode value="apply-jurisdiction"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -356,7 +362,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-license"/>
+        <valueCode value="apply-license"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -364,7 +370,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-publisher"/>
+        <valueCode value="apply-publisher"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -372,7 +378,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-version"/>
+        <valueCode value="apply-version"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -380,7 +386,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="active-tables"/>
+        <valueCode value="active-tables"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -388,7 +394,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="fmm-definition"/>
+        <valueCode value="fmm-definition"/>
       </extension>
       <extension url="value">
         <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
@@ -396,7 +402,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="propagate-status"/>
+        <valueCode value="propagate-status"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -404,7 +410,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="excludelogbinaryformat"/>
+        <valueCode value="excludelogbinaryformat"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -412,7 +418,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="tabbed-snapshots"/>
+        <valueCode value="tabbed-snapshots"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -426,7 +432,7 @@
         <reference value="StructureDefinition/vbai-body-height"/>
       </reference>
       <name value="VBAI Body Height"/>
-      <description value="An observation profile based on US Core Body Height Profile."/>
+      <description value="An observation profile based on US Core Body Height Profile"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -449,6 +455,17 @@
       </reference>
       <name value="VBAI Condition"/>
       <description value="A condition profile based on US Core Condition Encounter Diagnosis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-consent"/>
+      </reference>
+      <name value="VBAI Consent"/>
+      <description value="A consent profile based on the base Consent resource"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -492,7 +509,7 @@
         <reference value="StructureDefinition/vbai-patient"/>
       </reference>
       <name value="VBAI Patient"/>
-      <description value="A patient profile based on US Core Patient."/>
+      <description value="A patient profile based on US Core Patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -503,7 +520,7 @@
         <reference value="StructureDefinition/vbai-questionnaire"/>
       </reference>
       <name value="VBAI Questionnaire"/>
-      <description value="A questionnaire profile based on the base Questionnaire resource."/>
+      <description value="A questionnaire profile based on the base Questionnaire resource"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -514,7 +531,7 @@
         <reference value="StructureDefinition/vbai-questionnaire-response"/>
       </reference>
       <name value="VBAI Questionnaire Response"/>
-      <description value="A questionnaire response profile based on the base QuestionnaireResponse resource."/>
+      <description value="A questionnaire response profile based on the base QuestionnaireResponse resource"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -547,8 +564,52 @@
         <reference value="StructureDefinition/vbai-waveform-media"/>
       </reference>
       <name value="VBAI Waveform Media"/>
-      <description value="A media profile based on the base Media resource."/>
+      <description value="A media profile based on the base Media resource. Primarily captures binary audio waveform data."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/GAD7schema"/>
+      </reference>
+      <name value="GAD7_schema"/>
+      <description value="GAD7 assessment schema"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/PHQ9schema"/>
+      </reference>
+      <name value="PHQ9_schema"/>
+      <description value="PHQ-9 assessment schema"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/QuestionnaireGAD7Example"/>
+      </reference>
+      <name value="QuestionnaireGAD7Example"/>
+      <description value="QuestionnaireGAD7Example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/QuestionnairePHQ9Example"/>
+      </reference>
+      <name value="QuestionnairePHQ9Example"/>
+      <description value="QuestionnairePHQ9Example"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -558,8 +619,8 @@
         <reference value="Observation/VbaiBodyHeightExample"/>
       </reference>
       <name value="VbaiBodyHeightExample"/>
-      <description value="An example of a Voice as a Biomarker body height profile"/>
-      <exampleCanonical value="http://someurl/fhir/vbai/StructureDefinition/vbai-body-height"/>
+      <description value="An example of a Voice as a Biomarker for AI body height profile"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-body-height"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -569,8 +630,8 @@
         <reference value="Observation/VbaiBodyWeightExample"/>
       </reference>
       <name value="VbaiBodyWeightExample"/>
-      <description value="An example of a Voice as a Biomarker body weight profile"/>
-      <exampleCanonical value="http://someurl/fhir/vbai/StructureDefinition/vbai-body-weight"/>
+      <description value="An example of a Voice as a Biomarker for AI body weight profile"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-body-weight"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -580,8 +641,19 @@
         <reference value="Condition/VbaiConditionExample"/>
       </reference>
       <name value="VbaiConditionExample"/>
-      <description value="An example of a Voice as a Biomarker condition"/>
-      <exampleCanonical value="http://someurl/fhir/vbai/StructureDefinition/vbai-condition"/>
+      <description value="An example of a Voice as a Biomarker for AI condition"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/VbaiConsentExample"/>
+      </reference>
+      <name value="VbaiConsentExample"/>
+      <description value="An example of a Voice as a Biomarker consent profile"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-consent"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -591,8 +663,8 @@
         <reference value="Encounter/VbaiEncounterExample"/>
       </reference>
       <name value="VbaiEncounterExample"/>
-      <description value="An example of a Voice as a Biomarker patient"/>
-      <exampleCanonical value="http://someurl/fhir/vbai/StructureDefinition/vbai-encounter"/>
+      <description value="An example of a Voice as a Biomarker for AI patient"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-encounter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -602,8 +674,8 @@
         <reference value="Media/VbaiImagingMediaExample"/>
       </reference>
       <name value="VbaiImagingMediaExample"/>
-      <description value="An example of a Voice as a Biomarker imaging media"/>
-      <exampleCanonical value="http://someurl/fhir/vbai/StructureDefinition/vbai-imaging-media"/>
+      <description value="An example of a Voice as a Biomarker for AI imaging media"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-imaging-media"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -613,8 +685,8 @@
         <reference value="ImagingStudy/VbaiImagingStudyExample"/>
       </reference>
       <name value="VbaiImagingStudyExample"/>
-      <description value="An example of a Voice as a Biomarker imaging study"/>
-      <exampleCanonical value="http://someurl/fhir/vbai/StructureDefinition/vbai-imaging-study"/>
+      <description value="An example of a Voice as a Biomarker for AI imaging study"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-imaging-study"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -624,8 +696,30 @@
         <reference value="Patient/VbaiPatientExample"/>
       </reference>
       <name value="VbaiPatientExample"/>
-      <description value="An example of a Voice as a Biomarker for AI patient"/>
-      <exampleCanonical value="http://someurl/fhir/vbai/StructureDefinition/vbai-patient"/>
+      <description value="An example of a Voice as a Biomarker for AI Patient"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/VbaiQuestionnaireCofoundersExample"/>
+      </reference>
+      <name value="vbaiQuestionnaireCofoundersExample"/>
+      <description value="VbaiQuestionnaire cofounders Example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/VbaiQuestionnaireDemographicExample"/>
+      </reference>
+      <name value="VbaiQuestionnaireDemographicExample"/>
+      <description value="VbaiQuestionnaireDemographic Example"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -635,8 +729,8 @@
         <reference value="Observation/VbaiVitalSignsExample"/>
       </reference>
       <name value="VbaiVitalSignsExample"/>
-      <description value="An example of a Voice as a Biomarker vital sign profile"/>
-      <exampleCanonical value="http://someurl/fhir/vbai/StructureDefinition/vbai-vital-signs"/>
+      <description value="An example of a Voice as a Biomarker for AI vital sign profile"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-vital-signs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -646,8 +740,8 @@
         <reference value="Device/VbaiWaveformDeviceExample"/>
       </reference>
       <name value="VbaiWaveformDeviceExample"/>
-      <description value="An example of a Voice as a Biomarker waveform device"/>
-      <exampleCanonical value="http://someurl/fhir/vbai/StructureDefinition/vbai-waveform-device"/>
+      <description value="An example of a Voice as a Biomarker for AI waveform device"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-waveform-device"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -657,8 +751,8 @@
         <reference value="Media/VbaiWaveformMediaExample"/>
       </reference>
       <name value="VbaiWaveformMediaExample"/>
-      <description value="An example of a Voice as a Biomarker waveform media"/>
-      <exampleCanonical value="http://someurl/fhir/vbai/StructureDefinition/vbai-waveform-media"/>
+      <description value="An example of a Voice as a Biomarker for AI waveform media"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-waveform-media"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

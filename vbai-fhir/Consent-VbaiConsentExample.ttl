@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/Consent/VbaiConsentExample> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VbaiConsentExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-consent"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-consent>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"VbaiConsentExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent &quot;VbaiConsentExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-consent.html\">VBAI Consent</a></p></div><p><b>status</b>: active</p><p><b>scope</b>: Research <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#research)</span></p><p><b>category</b>: Research Information Access <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-consentcategorycodes.html\">Consent Category Codes</a>#research)</span></p><p><b>patient</b>: <a href=\"Patient-VbaiPatientExample.html\">Patient/VbaiPatientExample</a> &quot; SMITH&quot;</p><p><b>policyRule</b>: HHS NIH HIPAA Research Authorization <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-consentpolicycodes.html\">Consent PolicyRule Codes</a>#nih-hipaa)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "research" ] ;
+       fhir:display [ fhir:v "Research" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "research" ] ;
+       fhir:display [ fhir:v "Research Information Access" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <https://voicecollab.ai/fhir/Patient/VbaiPatientExample> ;
+     fhir:reference [ fhir:v "Patient/VbaiPatientExample" ]
+  ] ; # 
+  fhir:policyRule [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentpolicycodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "nih-hipaa" ] ;
+       fhir:display [ fhir:v "HHS NIH HIPAA Research Authorization" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

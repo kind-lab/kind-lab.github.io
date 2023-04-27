@@ -131,7 +131,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">VoiceasaBiomarkerofHealth - Local Development build (v0.1.0). See the <a href="http://someurl/fhir/vbai/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v0.1.0). See the <a href="https://voicecollab.ai/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts</h2>
   
   
@@ -157,7 +157,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <a name="1"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -169,7 +169,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/vbai-body-height">VBAI Body Height</a>
                </td>
                <td>
-<p>An observation profile based on US Core Body Height Profile.</p>
+<p>An observation profile based on US Core Body Height Profile</p>
 </td>
             </tr>
             <tr>
@@ -188,6 +188,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>A condition profile based on US Core Condition Encounter Diagnosis.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vbai-consent.html"
+                     title="StructureDefinition/vbai-consent">VBAI Consent</a>
+               </td>
+               <td>
+<p>A consent profile based on the base Consent resource</p>
 </td>
             </tr>
             <tr>
@@ -223,7 +232,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/vbai-patient">VBAI Patient</a>
                </td>
                <td>
-<p>A patient profile based on US Core Patient.</p>
+<p>A patient profile based on US Core Patient</p>
 </td>
             </tr>
             <tr>
@@ -232,7 +241,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/vbai-questionnaire">VBAI Questionnaire</a>
                </td>
                <td>
-<p>A questionnaire profile based on the base Questionnaire resource.</p>
+<p>A questionnaire profile based on the base Questionnaire resource</p>
 </td>
             </tr>
             <tr>
@@ -241,7 +250,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/vbai-questionnaire-response">VBAI Questionnaire Response</a>
                </td>
                <td>
-<p>A questionnaire response profile based on the base QuestionnaireResponse resource.</p>
+<p>A questionnaire response profile based on the base QuestionnaireResponse resource</p>
 </td>
             </tr>
             <tr>
@@ -268,7 +277,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/vbai-waveform-media">VBAI Waveform Media</a>
                </td>
                <td>
-<p>A media profile based on the base Media resource.</p>
+<p>A media profile based on the base Media resource. Primarily captures binary audio waveform data.</p>
 </td>
             </tr>
          </tbody>
@@ -277,7 +286,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <a name="2"> </a>
    <h3>Example: Example Instances </h3>
    <p>
-    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 </p>
    <p>
       <table class="grid">
@@ -285,11 +294,45 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="Questionnaire-GAD7schema.html" title="Questionnaire/GAD7schema">GAD7_schema</a>
+               </td>
+               <td>
+<p>GAD7 assessment schema</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-PHQ9schema.html" title="Questionnaire/PHQ9schema">PHQ9_schema</a>
+               </td>
+               <td>
+<p>PHQ-9 assessment schema</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-QuestionnaireGAD7Example.html"
+                     title="Questionnaire/QuestionnaireGAD7Example">QuestionnaireGAD7Example</a>
+               </td>
+               <td>
+<p>QuestionnaireGAD7Example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-QuestionnairePHQ9Example.html"
+                     title="Questionnaire/QuestionnairePHQ9Example">QuestionnairePHQ9Example</a>
+               </td>
+               <td>
+<p>QuestionnairePHQ9Example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Observation-VbaiBodyHeightExample.html"
                      title="Observation/VbaiBodyHeightExample">VbaiBodyHeightExample</a>
                </td>
                <td>
-<p>An example of a Voice as a Biomarker body height profile</p>
+<p>An example of a Voice as a Biomarker for AI body height profile</p>
 </td>
             </tr>
             <tr>
@@ -298,7 +341,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Observation/VbaiBodyWeightExample">VbaiBodyWeightExample</a>
                </td>
                <td>
-<p>An example of a Voice as a Biomarker body weight profile</p>
+<p>An example of a Voice as a Biomarker for AI body weight profile</p>
 </td>
             </tr>
             <tr>
@@ -307,7 +350,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Condition/VbaiConditionExample">VbaiConditionExample</a>
                </td>
                <td>
-<p>An example of a Voice as a Biomarker condition</p>
+<p>An example of a Voice as a Biomarker for AI condition</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Consent-VbaiConsentExample.html"
+                     title="Consent/VbaiConsentExample">VbaiConsentExample</a>
+               </td>
+               <td>
+<p>An example of a Voice as a Biomarker consent profile</p>
 </td>
             </tr>
             <tr>
@@ -316,7 +368,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Encounter/VbaiEncounterExample">VbaiEncounterExample</a>
                </td>
                <td>
-<p>An example of a Voice as a Biomarker patient</p>
+<p>An example of a Voice as a Biomarker for AI patient</p>
 </td>
             </tr>
             <tr>
@@ -325,7 +377,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Media/VbaiImagingMediaExample">VbaiImagingMediaExample</a>
                </td>
                <td>
-<p>An example of a Voice as a Biomarker imaging media</p>
+<p>An example of a Voice as a Biomarker for AI imaging media</p>
 </td>
             </tr>
             <tr>
@@ -334,7 +386,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="ImagingStudy/VbaiImagingStudyExample">VbaiImagingStudyExample</a>
                </td>
                <td>
-<p>An example of a Voice as a Biomarker imaging study</p>
+<p>An example of a Voice as a Biomarker for AI imaging study</p>
 </td>
             </tr>
             <tr>
@@ -343,7 +395,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Patient/VbaiPatientExample">VbaiPatientExample</a>
                </td>
                <td>
-<p>An example of a Voice as a Biomarker for AI patient</p>
+<p>An example of a Voice as a Biomarker for AI Patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-VbaiQuestionnaireCofoundersExample.html"
+                     title="Questionnaire/VbaiQuestionnaireCofoundersExample">vbaiQuestionnaireCofoundersExample</a>
+               </td>
+               <td>
+<p>VbaiQuestionnaire cofounders Example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-VbaiQuestionnaireDemographicExample.html"
+                     title="Questionnaire/VbaiQuestionnaireDemographicExample">VbaiQuestionnaireDemographicExample</a>
+               </td>
+               <td>
+<p>VbaiQuestionnaireDemographic Example</p>
 </td>
             </tr>
             <tr>
@@ -352,7 +422,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Observation/VbaiVitalSignsExample">VbaiVitalSignsExample</a>
                </td>
                <td>
-<p>An example of a Voice as a Biomarker vital sign profile</p>
+<p>An example of a Voice as a Biomarker for AI vital sign profile</p>
 </td>
             </tr>
             <tr>
@@ -361,7 +431,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Device/VbaiWaveformDeviceExample">VbaiWaveformDeviceExample</a>
                </td>
                <td>
-<p>An example of a Voice as a Biomarker waveform device</p>
+<p>An example of a Voice as a Biomarker for AI waveform device</p>
 </td>
             </tr>
             <tr>
@@ -370,7 +440,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Media/VbaiWaveformMediaExample">VbaiWaveformMediaExample</a>
                </td>
                <td>
-<p>An example of a Voice as a Biomarker waveform media</p>
+<p>An example of a Voice as a Biomarker for AI waveform media</p>
 </td>
             </tr>
          </tbody>
@@ -400,7 +470,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 17, 2022 09:13-0400">2022-10-17</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 27, 2023 14:21-0400">2023-04-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

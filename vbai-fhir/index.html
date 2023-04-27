@@ -131,7 +131,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">VoiceasaBiomarkerofHealth - Local Development build (v0.1.0). See the <a href="http://someurl/fhir/vbai/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v0.1.0). See the <a href="https://voicecollab.ai/fhir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Index</h2>
   
 
@@ -143,10 +143,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://someurl/fhir/vbai/ImplementationGuide/kindlab.fhir.vbai<button data-clipboard-text="http://someurl/fhir/vbai/ImplementationGuide/kindlab.fhir.vbai" title="Click to copy URL" class="btn-copy"></button></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai<button data-clipboard-text="https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai" title="Click to copy URL" class="btn-copy"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button data-clipboard-text="http://someurl/fhir/vbai/ImplementationGuide/kindlab.fhir.vbai|0.1.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      <span class="copy-text">0.1.0<button data-clipboard-text="https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai|0.1.0" title="Click to copy versioned URL" class="btn-copy"/></span>
       </td>
     </tr>
 
@@ -162,14 +162,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2022-10-17
+            as of 2023-04-27
           
         
       </td>
 
 
 
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">VoiceasaBiomarkerofHealth</span></td>
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">VoiceaBiomarkerforAI</span></td>
     </tr>
 
 
@@ -189,7 +189,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#what-is-voice-as-a-biomarker-of-health" id="markdown-toc-what-is-voice-as-a-biomarker-of-health">What is Voice as a Biomarker of Health?</a></li>
+  <li><a href="#what-is-voice-as-a-biomarker-for-ai" id="markdown-toc-what-is-voice-as-a-biomarker-for-ai">What is Voice as a Biomarker for AI?</a></li>
   <li><a href="#intended-audience" id="markdown-toc-intended-audience">Intended Audience</a></li>
   <li><a href="#walkthrough-of-implementation-guide" id="markdown-toc-walkthrough-of-implementation-guide">Walkthrough of Implementation Guide</a></li>
   <li><a href="#vbai-profiles" id="markdown-toc-vbai-profiles">VBAI Profiles</a></li>
@@ -197,11 +197,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 <h3 id="introduction">Introduction</h3>
-
 <p><a name="l315">​</a>The Voice as a Biomarker for AI Health (VBAI) profiles are based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and derived from <a href="http://hl7.org/fhir/us/core/STU5/">US Core STU5</a> where possible. The profiles capture the data collected in the VBAI study.</p>
 
-<h3 id="what-is-voice-as-a-biomarker-of-health">What is Voice as a Biomarker of Health?</h3>
-<p>The National Institue of Health (<a href="https://www.nih.gov/">NIH</a>) started the <a href="https://commonfund.nih.gov/bridge2ai">Bridge2AI</a> initiative to fund the creation of foundational datasets in the medical field. Voice as a Biomarker for AI(VBAI) is one of five foundational datasets being constructed currently. The VBAI project will capture multimodal data from vocal recordings, genomic screens, waveform profiles, and electronic health records. The goal of the VBAI project is to create a dataset that can be used to create applications to diagnose conditions based on voice recordings. The researchers creating the VBAI dataset are multidisciplinary and across multiple institutions in Canada, USA, and France.</p>
+<h3 id="what-is-voice-as-a-biomarker-for-ai">What is Voice as a Biomarker for AI?</h3>
+<p><a name="l327">​</a>The National Institue of Health (<a href="https://www.nih.gov/">NIH</a>) started the <a href="https://commonfund.nih.gov/bridge2ai">Bridge2AI</a> initiative to fund the creation of foundational datasets in the medical field. <a href="reporter.nih.gov/search/ZslK_vrR0kapVRnpwKvsmQ/project-details/10473236">Voice as a Biomarker for AI</a> (VBAI) is one of five foundational datasets being constructed currently. The VBAI project will capture multimodal data from vocal recordings, genomic screens, waveform profiles, and electronic health records. The goal of the VBAI project is to create a dataset that can be used to create applications to diagnose conditions based on voice recordings. The researchers creating the VBAI dataset are multidisciplinary and across institutions in Canada, USA, and Mexico. More information on the VBAI project can be found at the main project website: <a href="http://voicecollab.ai">voicecollab.ai</a>.</p>
 
 <h3 id="intended-audience">Intended Audience</h3>
 <p>The VBAI Profiles are meant for use in research and development. The audience then breaks into two categories:</p>
@@ -223,6 +222,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="StructureDefinition-vbai-body-height.html">VbaiBodyHeight</a></li>
   <li><a href="StructureDefinition-vbai-body-weight.html">VbaiBodyWeight</a></li>
   <li><a href="StructureDefinition-vbai-condition.html">VbaiCondition</a></li>
+  <li><a href="StructureDefinition-vbai-consent.html">VbaiConsent</a></li>
   <li><a href="StructureDefinition-vbai-encounter.html">VbaiEncounter</a></li>
   <li><a href="StructureDefinition-vbai-imaging-media.html">VbaiImagingMedia</a></li>
   <li><a href="StructureDefinition-vbai-imaging-study.html">VbaiImagingStudy</a></li>
@@ -259,7 +259,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 17, 2022 09:13-0400">2022-10-17</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 27, 2023 14:21-0400">2023-04-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

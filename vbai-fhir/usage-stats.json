@@ -6,55 +6,61 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://someurl/fhir/vbai/StructureDefinition/vbai-vital-signs",
+        "url": "https://voicecollab.ai/fhir/StructureDefinition/vbai-vital-signs",
         "title": "VBAI Vital Signs"
       }
     ],
     "Condition": [
       {
-        "url": "http://someurl/fhir/vbai/StructureDefinition/vbai-condition",
+        "url": "https://voicecollab.ai/fhir/StructureDefinition/vbai-condition",
         "title": "VBAI Condition"
+      }
+    ],
+    "Consent": [
+      {
+        "url": "https://voicecollab.ai/fhir/StructureDefinition/vbai-consent",
+        "title": "VBAI Consent"
       }
     ],
     "Encounter": [
       {
-        "url": "http://someurl/fhir/vbai/StructureDefinition/vbai-encounter",
+        "url": "https://voicecollab.ai/fhir/StructureDefinition/vbai-encounter",
         "title": "VBAI Encounter"
       }
     ],
     "Media": [
       {
-        "url": "http://someurl/fhir/vbai/StructureDefinition/vbai-waveform-media",
+        "url": "https://voicecollab.ai/fhir/StructureDefinition/vbai-waveform-media",
         "title": "VBAI Waveform Media"
       }
     ],
     "ImagingStudy": [
       {
-        "url": "http://someurl/fhir/vbai/StructureDefinition/vbai-imaging-study",
+        "url": "https://voicecollab.ai/fhir/StructureDefinition/vbai-imaging-study",
         "title": "VBAI Imaging Study"
       }
     ],
     "Patient": [
       {
-        "url": "http://someurl/fhir/vbai/StructureDefinition/vbai-patient",
+        "url": "https://voicecollab.ai/fhir/StructureDefinition/vbai-patient",
         "title": "VBAI Patient"
       }
     ],
     "Questionnaire": [
       {
-        "url": "http://someurl/fhir/vbai/StructureDefinition/vbai-questionnaire",
+        "url": "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire",
         "title": "VBAI Questionnaire"
       }
     ],
     "QuestionnaireResponse": [
       {
-        "url": "http://someurl/fhir/vbai/StructureDefinition/vbai-questionnaire-response",
+        "url": "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire-response",
         "title": "VBAI Questionnaire Response"
       }
     ],
     "Device": [
       {
-        "url": "http://someurl/fhir/vbai/StructureDefinition/vbai-waveform-device",
+        "url": "https://voicecollab.ai/fhir/StructureDefinition/vbai-waveform-device",
         "title": "VBAI Waveform Device"
       }
     ]
@@ -106,12 +112,18 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"

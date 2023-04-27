@@ -1,47 +1,39 @@
 {
-  "resourceType": "Observation",
-  "id": "VbaiBodyWeightExample",
-  "meta": {
-    "profile": [
-      "http://someurl/fhir/vbai/StructureDefinition/vbai-body-weight"
-    ]
+  "resourceType" : "Observation",
+  "id" : "VbaiBodyWeightExample",
+  "meta" : {
+    "profile" : ["https://voicecollab.ai/fhir/StructureDefinition/vbai-body-weight"]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"VbaiBodyWeightExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"VbaiBodyWeightExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-body-weight.html\">VBAI Body Weight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href=\"Patient-VbaiPatientExample.html\">Patient/VbaiPatientExample</a> \" SMITH\"</p><p><b>encounter</b>: <a href=\"Encounter-VbaiEncounterExample.html\">Encounter/VbaiEncounterExample</a></p><p><b>effective</b>: 2002-03-02</p><p><b>value</b>: 68 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg = 'kg')</span></p></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"VbaiBodyWeightExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;VbaiBodyWeightExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-body-weight.html\">VBAI Body Weight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href=\"Patient-VbaiPatientExample.html\">Patient/VbaiPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-VbaiEncounterExample.html\">Encounter/VbaiEncounterExample</a></p><p><b>effective</b>: 2002-03-02</p><p><b>value</b>: 68 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg = 'kg')</span></p></div>"
   },
-  "status": "final",
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "Vital Signs"
-        }
-      ]
-    }
-  ],
-  "code": {
-    "coding": [
-      {
-        "system": "http://loinc.org",
-        "code": "29463-7",
-        "display": "Body weight"
-      }
-    ]
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "29463-7",
+      "display" : "Body weight"
+    }]
   },
-  "subject": {
-    "reference": "Patient/VbaiPatientExample"
+  "subject" : {
+    "reference" : "Patient/VbaiPatientExample"
   },
-  "encounter": {
-    "reference": "Encounter/VbaiEncounterExample"
+  "encounter" : {
+    "reference" : "Encounter/VbaiEncounterExample"
   },
-  "effectiveDateTime": "2002-03-02",
-  "valueQuantity": {
-    "value": 68,
-    "unit": "kg",
-    "system": "http://unitsofmeasure.org",
-    "code": "kg"
+  "effectiveDateTime" : "2002-03-02",
+  "valueQuantity" : {
+    "value" : 68,
+    "unit" : "kg",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "kg"
   }
 }

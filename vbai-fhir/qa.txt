@@ -1,59 +1,127 @@
-﻿VoiceasaBiomarkerofHealth : Validation Results
+﻿VoiceaBiomarkerforAI : Validation Results
 =========================================
 
-err = 0, warn = 3, info = 0
-IG Publisher Version: 1.2.6 Out of date - current version is 1.2.7
-Generated Mon Oct 17 09:14:07 EDT 2022. FHIR version 4.0.1 for kindlab.fhir.vbai#0.1.0 (canonical = http://someurl/fhir/vbai)
- Build Errors : 1 / 0 / 0
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/Condition-VbaiConditionExample : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/Device-VbaiWaveformDeviceExample : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/Encounter-VbaiEncounterExample : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/ImagingStudy-VbaiImagingStudyExample : 0 / 1 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/ImplementationGuide-kindlab.fhir.vbai : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/Media-VbaiImagingMediaExample : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/Media-VbaiWaveformMediaExample : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/Observation-VbaiBodyHeightExample : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/Observation-VbaiBodyWeightExample : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/Observation-VbaiVitalSignsExample : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/Patient-VbaiPatientExample : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-body-height : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-body-weight : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-condition : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-encounter : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-imaging-media : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-imaging-study : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-patient : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-questionnaire : 0 / 1 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-questionnaire-response : 0 / 1 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-vital-signs : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-waveform-device : 0 / 0 / 1
- /home/alex/git/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-waveform-media : 0 / 0 / 1
+err = 4, warn = 47, info = 2
+IG Publisher Version: 1.3.5
+Generated Thu Apr 27 14:22:26 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai#0.1.0 (canonical = https://voicecollab.ai/fhir)
+ Build Errors : 3 / 4 / 0
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Condition-VbaiConditionExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Consent-VbaiConsentExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Device-VbaiWaveformDeviceExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Encounter-VbaiEncounterExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ImagingStudy-VbaiImagingStudyExample : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ImplementationGuide-kindlab.fhir.vbai : 1 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Media-VbaiImagingMediaExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Media-VbaiWaveformMediaExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Observation-VbaiBodyHeightExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Observation-VbaiBodyWeightExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Observation-VbaiVitalSignsExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Patient-VbaiPatientExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-GAD7schema : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-PHQ9schema : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-QuestionnaireGAD7Example : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-QuestionnairePHQ9Example : 0 / 6 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-VbaiQuestionnaireCofoundersExample : 2 / 20 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-VbaiQuestionnaireDemographicExample : 0 / 9 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-body-height : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-body-weight : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-condition : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-consent : 1 / 0 / 2
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-encounter : 0 / 0 / 2
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-imaging-media : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-imaging-study : 0 / 4 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-patient : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-questionnaire : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-questionnaire-response : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-vital-signs : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-waveform-device : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-waveform-media : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /home/alex/git/voice-biomarker-fhir/output/index.html#/html/body/div/div/div/div/div/p/a at Line 201, column 146: The link 'http://hl7.org/fhir/us/core/STU5/' for "US Core STU5" cannot be resolved
+ERROR: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/output/Questionnaire-VbaiQuestionnaireCofoundersExample.html#/html/body/div/div/div/div/div/div/table/tr/td/span/a at Line 254, column 1581: The link '#item.emt_history' for "emt_history" cannot be resolved (valid targets: 116 targets)
+ERROR: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/output/index.html#/html/body/div/div/div/div/div/p/a at Line 200, column 146: The link 'http://hl7.org/fhir/us/core/STU5/' for "US Core STU5" cannot be resolved
+ERROR: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/output/index.html#/html/body/div/div/div/div/div/p/a at Line 203, column 230: The link 'reporter.nih.gov/search/ZslK_vrR0kapVRnpwKvsmQ/project-details/10473236' for "Voice as a Biomarker for AI" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Condition-VbaiConditionExample.json ==
+== fsh-generated/resources/Consent-VbaiConsentExample.json ==
 == fsh-generated/resources/Device-VbaiWaveformDeviceExample.json ==
 == fsh-generated/resources/Encounter-VbaiEncounterExample.json ==
 == fsh-generated/resources/ImagingStudy-VbaiImagingStudyExample.json ==
 WARNING: ImagingStudy/VbaiImagingStudyExample: ImagingStudy.modality[0]: ValueSet http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html not found by validator
 == fsh-generated/resources/ImplementationGuide-kindlab.fhir.vbai.json ==
+WARNING: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ImplementationGuide-kindlab.fhir.vbai: Unknown Parameters: [releaselabel, fmm-definition, excludelogbinaryformat]
+ERROR: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency' does not resolve
 == fsh-generated/resources/Media-VbaiImagingMediaExample.json ==
 == fsh-generated/resources/Media-VbaiWaveformMediaExample.json ==
 == fsh-generated/resources/Observation-VbaiBodyHeightExample.json ==
 == fsh-generated/resources/Observation-VbaiBodyWeightExample.json ==
 == fsh-generated/resources/Observation-VbaiVitalSignsExample.json ==
 == fsh-generated/resources/Patient-VbaiPatientExample.json ==
+== fsh-generated/resources/Questionnaire-GAD7schema.json ==
+== fsh-generated/resources/Questionnaire-PHQ9schema.json ==
+== fsh-generated/resources/Questionnaire-QuestionnaireGAD7Example.json ==
+WARNING: Questionnaire/QuestionnaireGAD7Example: Questionnaire.item[2].answerOption[2].value.ofType(string): value should not start or finish with whitespace 'Very difficult '
+== fsh-generated/resources/Questionnaire-QuestionnairePHQ9Example.json ==
+WARNING: Questionnaire/QuestionnairePHQ9Example: Questionnaire.item[0].item[1].text: value should not start or finish with whitespace 'Feeling down, depressed, or hopeless '
+WARNING: Questionnaire/QuestionnairePHQ9Example: Questionnaire.item[0].item[2].text: value should not start or finish with whitespace 'Trouble falling or staying asleep, or sleeping too much '
+WARNING: Questionnaire/QuestionnairePHQ9Example: Questionnaire.item[0].item[3].text: value should not start or finish with whitespace 'Feeling tired or having little energy '
+WARNING: Questionnaire/QuestionnairePHQ9Example: Questionnaire.item[0].item[4].text: value should not start or finish with whitespace 'Poor appetite or overeating '
+WARNING: Questionnaire/QuestionnairePHQ9Example: Questionnaire.item[0].item[6].text: value should not start or finish with whitespace 'Trouble concentrating on things, such as reading the newspaper or watching television '
+WARNING: Questionnaire/QuestionnairePHQ9Example: Questionnaire.item[2].answerOption[2].value.ofType(string): value should not start or finish with whitespace 'Very difficult '
+== fsh-generated/resources/Questionnaire-VbaiQuestionnaireCofoundersExample.json ==
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[1].item[2].answerOption[0].value.ofType(string): value should not start or finish with whitespace '3 or 4 '
+ERROR: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[2]: Rule que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet' Failed
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[2].item[0].text: value should not start or finish with whitespace 'Are you currently in recovery for substance use?\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[2].item[1].text: value should not start or finish with whitespace 'During the past TWO (2) WEEKS, about how often did you use any of the following medicines ON YOUR OWN, that is, without a doctor’s prescription, in greater amounts or longer than prescribed?\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[6].item[0].text: value should not start or finish with whitespace 'Please specify ___. Do you currently have any tooth loss, dentures, retainers or braces? '
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].text: value should not start or finish with whitespace 'Do you have any of these voice, communication, or hearing conditions or had any of the interventions mentioned below? (check all that apply)\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].answerOption[20].value.ofType(string): value should not start or finish with whitespace 'Chronic ear surgery (e.g. mastoid)\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].answerOption[22].value.ofType(string): value should not start or finish with whitespace 'Chronic ear surgery (e.g. mastoid)\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].answerOption[54].value.ofType(string): value should not start or finish with whitespace 'Hoarseness\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].answerOption[55].value.ofType(string): value should not start or finish with whitespace 'Lisping\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].answerOption[65].value.ofType(string): value should not start or finish with whitespace 'Prefer not to disclose\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].item[0].text: value should not start or finish with whitespace 'Do you currently have these conditions or currently experience symptoms as a result of having had these conditions or interventions?\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[12].text: value should not start or finish with whitespace 'Have you been diagnosed with any of these neurological health conditions by a clinician? (check all that apply)\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[12].item[0].text: value should not start or finish with whitespace 'Do you currently have these conditions or currently experience symptoms as a result of having had these conditions?\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[12].item[0].item[0].text: value should not start or finish with whitespace 'Which ones do you currently have? '
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[13].text: value should not start or finish with whitespace 'Psychiatric conditions: Have you been diagnosed with any of these mental health conditions by a clinician? (check all that apply)\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[13].item[0].text: value should not start or finish with whitespace 'Do you currently have these conditions?\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[15].item[0].text: value should not start or finish with whitespace 'Please specify ___. '
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[16].item[0].text: value should not start or finish with whitespace 'Please specify ___. '
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[17].text: value should not start or finish with whitespace 'Do you do one of these jobs or hobbies that requires using your voice for many hours a day (check all that apply): '
+WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[17].answerOption[3].value.ofType(string): value should not start or finish with whitespace 'K-12 Teacher '
+ERROR: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].item[0]: Unable to find an item with the linkId 'emt_history' which is referenced in the enableWhen for 'emt_history_q2'
+== fsh-generated/resources/Questionnaire-VbaiQuestionnaireDemographicExample.json ==
+WARNING: Questionnaire/VbaiQuestionnaireDemographicExample: Questionnaire.item[6].answerOption[12].value.ofType(string): value should not start or finish with whitespace 'Grade 1 '
+WARNING: Questionnaire/VbaiQuestionnaireDemographicExample: Questionnaire.item[7].text: value should not start or finish with whitespace 'Do you have an individualized education plan or some other adaptive education plan? '
+WARNING: Questionnaire/VbaiQuestionnaireDemographicExample: Questionnaire.item[12].text: value should not start or finish with whitespace 'What is your employment status? Choose all that apply '
+WARNING: Questionnaire/VbaiQuestionnaireDemographicExample: Questionnaire.item[12].answerOption[0].value.ofType(string): value should not start or finish with whitespace 'Employed, freelance '
+WARNING: Questionnaire/VbaiQuestionnaireDemographicExample: Questionnaire.item[12].answerOption[5].value.ofType(string): value should not start or finish with whitespace 'Self-employed '
+WARNING: Questionnaire/VbaiQuestionnaireDemographicExample: Questionnaire.item[12].answerOption[8].value.ofType(string): value should not start or finish with whitespace 'Other, please specify '
+WARNING: Questionnaire/VbaiQuestionnaireDemographicExample: Questionnaire.item[16].item[0].answerOption[3].value.ofType(string): value should not start or finish with whitespace 'Temporary Assistance for Needy Families (TANF), including Pass through Child Support\nGeneral Assistance (GA) '
+WARNING: Questionnaire/VbaiQuestionnaireDemographicExample: Questionnaire.item[17].answerOption[6].value.ofType(string): value should not start or finish with whitespace 'Non-immigrant worker '
+WARNING: Questionnaire/VbaiQuestionnaireDemographicExample: Questionnaire.item[17].answerOption[7].value.ofType(string): value should not start or finish with whitespace 'Prefer not to answer '
 == fsh-generated/resources/StructureDefinition-vbai-body-height.json ==
 == fsh-generated/resources/StructureDefinition-vbai-body-weight.json ==
 == fsh-generated/resources/StructureDefinition-vbai-condition.json ==
+== fsh-generated/resources/StructureDefinition-vbai-consent.json ==
+ERROR: StructureDefinition/vbai-consent: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
+INFORMATION: StructureDefinition/vbai-consent: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-vbai-encounter.json ==
+INFORMATION: StructureDefinition/vbai-encounter: StructureDefinition.snapshot.element[32].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-vbai-imaging-media.json ==
 == fsh-generated/resources/StructureDefinition-vbai-imaging-study.json ==
+WARNING: StructureDefinition/vbai-imaging-study: StructureDefinition.snapshot.element[11].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html on element ImagingStudy.modality could not be resolved
+WARNING: StructureDefinition/vbai-imaging-study: StructureDefinition.snapshot.element[22].binding: The valueSet reference http://www.rsna.org/RadLex_Playbook.aspx on element ImagingStudy.procedureCode could not be resolved
+WARNING: StructureDefinition/vbai-imaging-study: StructureDefinition.snapshot.element[34].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html on element ImagingStudy.series.modality could not be resolved
+WARNING: StructureDefinition/vbai-imaging-study: StructureDefinition.snapshot.element[53].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1 on element ImagingStudy.series.instance.sopClass could not be resolved
 == fsh-generated/resources/StructureDefinition-vbai-patient.json ==
 == fsh-generated/resources/StructureDefinition-vbai-questionnaire.json ==
-WARNING: StructureDefinition.where(url = 'http://someurl/fhir/vbai/StructureDefinition/vbai-questionnaire'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-vbai-questionnaire-response.json ==
-WARNING: StructureDefinition.where(url = 'http://someurl/fhir/vbai/StructureDefinition/vbai-questionnaire-response'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire-response'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-vbai-vital-signs.json ==
 == fsh-generated/resources/StructureDefinition-vbai-waveform-device.json ==
 == fsh-generated/resources/StructureDefinition-vbai-waveform-media.json ==

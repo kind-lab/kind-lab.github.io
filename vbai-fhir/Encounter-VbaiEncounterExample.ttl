@@ -6,44 +6,36 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://someurl/fhir/vbai/Encounter/VbaiEncounterExample> a fhir:Encounter;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "VbaiEncounterExample"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://someurl/fhir/vbai/StructureDefinition/vbai-encounter";
-       fhir:index 0;
-       fhir:link <http://someurl/fhir/vbai/StructureDefinition/vbai-encounter>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"VbaiEncounterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter \"VbaiEncounterExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-encounter.html\">VBAI Encounter</a></p></div><p><b>status</b>: planned</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'null')</p><p><b>type</b>: Patient encounter procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#308335008)</span></p><p><b>subject</b>: <a href=\"Patient-VbaiPatientExample.html\">Patient/VbaiPatientExample</a> \" SMITH\"</p></div>"
-  ];
-  fhir:Encounter.status [ fhir:value "planned"];
-  fhir:Encounter.class [
-     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
-     fhir:Coding.code [ fhir:value "AMB" ]
-  ];
-  fhir:Encounter.type [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a sct:308335008;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "308335008" ];
-       fhir:Coding.display [ fhir:value "Patient encounter procedure" ]
-     ]
-  ];
-  fhir:Encounter.subject [
-     fhir:link <http://someurl/fhir/vbai/Patient/VbaiPatientExample>;
-     fhir:Reference.reference [ fhir:value "Patient/VbaiPatientExample" ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://someurl/fhir/vbai/Encounter/VbaiEncounterExample.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://voicecollab.ai/fhir/Encounter/VbaiEncounterExample> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VbaiEncounterExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-encounter"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"VbaiEncounterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;VbaiEncounterExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-encounter.html\">VBAI Encounter</a></p></div><p><b>status</b>: planned</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'null')</p><p><b>type</b>: Patient encounter procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#308335008)</span></p><p><b>subject</b>: <a href=\"Patient-VbaiPatientExample.html\">Patient/VbaiPatientExample</a> &quot; SMITH&quot;</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "planned"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a sct:308335008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "308335008" ] ;
+       fhir:display [ fhir:v "Patient encounter procedure" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <https://voicecollab.ai/fhir/Patient/VbaiPatientExample> ;
+     fhir:reference [ fhir:v "Patient/VbaiPatientExample" ]
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

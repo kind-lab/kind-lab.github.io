@@ -5,46 +5,39 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://someurl/fhir/vbai/Media/VbaiImagingMediaExample> a fhir:Media;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "VbaiImagingMediaExample"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://someurl/fhir/vbai/StructureDefinition/vbai-imaging-media";
-       fhir:index 0;
-       fhir:link <http://someurl/fhir/vbai/StructureDefinition/vbai-imaging-media>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Media</b><a name=\"VbaiImagingMediaExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Media \"VbaiImagingMediaExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-imaging-media.html\">VBAI Imaging Media</a></p></div><p><b>status</b>: completed</p><p><b>modality</b>: Panoramic X-Ray <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html\">DICOM</a>#PX)</span></p><p><b>subject</b>: <a href=\"Patient-VbaiPatientExample.html\">Patient/VbaiPatientExample</a> \" SMITH\"</p><p><b>encounter</b>: <a href=\"Encounter-VbaiEncounterExample.html\">Encounter/VbaiEncounterExample</a></p><h3>Contents</h3><table class=\"grid\"><tr><td>-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td>*</td><td>application/dicom</td><td><a href=\"http://some.imaging.server.com/some-xray-image\">http://some.imaging.server.com/some-xray-image</a></td></tr></table></div>"
-  ];
-  fhir:Media.status [ fhir:value "completed"];
-  fhir:Media.modality [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://dicom.nema.org/resources/ontology/DCM" ];
-       fhir:Coding.code [ fhir:value "PX" ];
-       fhir:Coding.display [ fhir:value "Panoramic X-Ray" ]
-     ]
-  ];
-  fhir:Media.subject [
-     fhir:link <http://someurl/fhir/vbai/Patient/VbaiPatientExample>;
-     fhir:Reference.reference [ fhir:value "Patient/VbaiPatientExample" ]
-  ];
-  fhir:Media.encounter [
-     fhir:link <http://someurl/fhir/vbai/Encounter/VbaiEncounterExample>;
-     fhir:Reference.reference [ fhir:value "Encounter/VbaiEncounterExample" ]
-  ];
-  fhir:Media.content [
-     fhir:Attachment.contentType [ fhir:value "application/dicom" ];
-     fhir:Attachment.url [ fhir:value "http://some.imaging.server.com/some-xray-image" ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://someurl/fhir/vbai/Media/VbaiImagingMediaExample.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://voicecollab.ai/fhir/Media/VbaiImagingMediaExample> a fhir:Media ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VbaiImagingMediaExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-imaging-media"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-imaging-media>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Media</b><a name=\"VbaiImagingMediaExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Media &quot;VbaiImagingMediaExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-imaging-media.html\">VBAI Imaging Media</a></p></div><p><b>status</b>: completed</p><p><b>modality</b>: Panoramic X-Ray <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html\">DICOM</a>#PX)</span></p><p><b>subject</b>: <a href=\"Patient-VbaiPatientExample.html\">Patient/VbaiPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-VbaiEncounterExample.html\">Encounter/VbaiEncounterExample</a></p><h3>Contents</h3><table class=\"grid\"><tr><td>-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td>*</td><td>application/dicom</td><td><a href=\"http://some.imaging.server.com/some-xray-image\">http://some.imaging.server.com/some-xray-image</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:modality [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PX" ] ;
+       fhir:display [ fhir:v "Panoramic X-Ray" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://voicecollab.ai/fhir/Patient/VbaiPatientExample> ;
+     fhir:reference [ fhir:v "Patient/VbaiPatientExample" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://voicecollab.ai/fhir/Encounter/VbaiEncounterExample> ;
+     fhir:reference [ fhir:v "Encounter/VbaiEncounterExample" ]
+  ] ; # 
+  fhir:content [
+     fhir:contentType [ fhir:v "application/dicom" ] ;
+     fhir:url [ fhir:v "http://some.imaging.server.com/some-xray-image"^^xsd:anyURI ]
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

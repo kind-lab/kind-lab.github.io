@@ -1,5 +1,6 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping","Mapping: UDI Mapping"
-"Device","Device","","","",0,*,"","","","","Item used in healthcare","A type of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity. The device may be a medical or non-medical device.","","","","","","","","","",,,,,"",,,,"Device",0,*,"","","Entity. Role, or Act","Device"
+"Device","Device","","","",0,*,"","","","null {[]} {[]}
+","Item used in healthcare","A type of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity. The device may be a medical or non-medical device.","","","","","","","","","",,,,,"",,,,"Device",0,*,"","","Entity. Role, or Act","Device"
 "Device.id","Device.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "Device.meta","Device.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -112,7 +113,7 @@ ICCBA DIs for other devices:
 "Device.serialNumber","Device.serialNumber","","","",0,1,"","","","string {[]} {[]}
 ","Serial number assigned by the manufacturer","The serial number assigned by the organization when the device was manufactured.","Alphanumeric Maximum 20.","","","","","","","","",,,,,"",,,,"Device.serialNumber",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".playedRole[typeCode=MANU].id","FiveWs.what[x]"
-"Device.deviceName","Device.deviceName","","","",0,*,"","","","BackboneElement {[]} {[]}
+"Device.deviceName","Device.deviceName","","","",1,1,"","","","BackboneElement {[]} {[]}
 ","The name of the device as given by the manufacturer","This represents the manufacturer's name of the device as provided by the device, from a UDI label, or by a person describing the Device.  This typically would be used when a person provides the name(s) or when the device represents one of the names available from DeviceDefinition.","","","","","","","","","",,,,,"",,,,"Device.deviceName",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Device.deviceName.id","Device.deviceName.id","","","",0,1,"","","","string {[]} {[]}
