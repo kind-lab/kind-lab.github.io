@@ -3,7 +3,7 @@
 
 err = 4, warn = 47, info = 2
 IG Publisher Version: 1.3.5
-Generated Thu Apr 27 14:22:26 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai#0.1.0 (canonical = https://voicecollab.ai/fhir)
+Generated Fri Apr 28 13:02:53 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai#0.1.0 (canonical = https://voicecollab.ai/fhir)
  Build Errors : 3 / 4 / 0
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Condition-VbaiConditionExample : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Consent-VbaiConsentExample : 0 / 0 / 1
@@ -17,6 +17,7 @@ Generated Thu Apr 27 14:22:26 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Observation-VbaiBodyWeightExample : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Observation-VbaiVitalSignsExample : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Patient-VbaiPatientExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionExample : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-GAD7schema : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-PHQ9schema : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-QuestionnaireGAD7Example : 0 / 1 / 1
@@ -31,6 +32,7 @@ Generated Thu Apr 27 14:22:26 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-imaging-media : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-imaging-study : 0 / 4 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-patient : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-plan-definition : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-questionnaire : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-questionnaire-response : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-vital-signs : 0 / 0 / 1
@@ -60,6 +62,7 @@ ERROR: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.extension[0].u
 == fsh-generated/resources/Observation-VbaiBodyWeightExample.json ==
 == fsh-generated/resources/Observation-VbaiVitalSignsExample.json ==
 == fsh-generated/resources/Patient-VbaiPatientExample.json ==
+== fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionExample.json ==
 == fsh-generated/resources/Questionnaire-GAD7schema.json ==
 == fsh-generated/resources/Questionnaire-PHQ9schema.json ==
 == fsh-generated/resources/Questionnaire-QuestionnaireGAD7Example.json ==
@@ -119,6 +122,7 @@ WARNING: StructureDefinition/vbai-imaging-study: StructureDefinition.snapshot.el
 WARNING: StructureDefinition/vbai-imaging-study: StructureDefinition.snapshot.element[34].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html on element ImagingStudy.series.modality could not be resolved
 WARNING: StructureDefinition/vbai-imaging-study: StructureDefinition.snapshot.element[53].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1 on element ImagingStudy.series.instance.sopClass could not be resolved
 == fsh-generated/resources/StructureDefinition-vbai-patient.json ==
+== fsh-generated/resources/StructureDefinition-vbai-plan-definition.json ==
 == fsh-generated/resources/StructureDefinition-vbai-questionnaire.json ==
 == fsh-generated/resources/StructureDefinition-vbai-questionnaire-response.json ==
 WARNING: StructureDefinition.where(url = 'https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire-response'): The Implementation Guide contains no examples for this profile

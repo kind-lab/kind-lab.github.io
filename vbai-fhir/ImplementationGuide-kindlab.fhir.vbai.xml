@@ -13,7 +13,7 @@
   <version value="0.1.0"/>
   <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2023-04-27T14:21:23-04:00"/>
+  <date value="2023-04-28T13:01:52-04:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -517,6 +517,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/vbai-plan-definition"/>
+      </reference>
+      <name value="Vbai Plan Definition"/>
+      <description value="An PlanDefinition profile based on the base PlanDefinition resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/vbai-questionnaire"/>
       </reference>
       <name value="VBAI Questionnaire"/>
@@ -698,6 +709,17 @@
       <name value="VbaiPatientExample"/>
       <description value="An example of a Voice as a Biomarker for AI Patient"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/VbaiPlanDefinitionExample"/>
+      </reference>
+      <name value="VbaiPlanDefinitionExample"/>
+      <description value="An example of a Voice as a Biomarker for PlanDefinition"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -13,7 +13,7 @@
   "version" : "0.1.0",
   "name" : "VoiceaBiomarkerforAI",
   "status" : "draft",
-  "date" : "2023-04-27T14:21:23-04:00",
+  "date" : "2023-04-28T13:01:52-04:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -673,6 +673,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/vbai-plan-definition"
+      },
+      "name" : "Vbai Plan Definition",
+      "description" : "An PlanDefinition profile based on the base PlanDefinition resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/vbai-questionnaire"
       },
       "name" : "VBAI Questionnaire",
@@ -870,6 +882,18 @@
       "name" : "VbaiPatientExample",
       "description" : "An example of a Voice as a Biomarker for AI Patient",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionExample"
+      },
+      "name" : "VbaiPlanDefinitionExample",
+      "description" : "An example of a Voice as a Biomarker for PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
     },
     {
       "extension" : [{
