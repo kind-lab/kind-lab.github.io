@@ -6,14 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>VoiceaBiomarkerforAI</h2><p>The official URL for this implementation guide is: </p><pre>https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai</pre><div><p>Implementation Guide for Voice Biomarker for AI FHIR Profiles</p>
 </div></div>
   </text>
-  <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-    <valueCode value="hl7.fhir.uv.tools#current"/>
-  </extension>
   <url value="https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai"/>
   <version value="0.1.0"/>
   <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2023-04-28T13:01:52-04:00"/>
+  <date value="2023-05-05T10:26:54-04:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -231,6 +228,9 @@
       <extension url="value">
         <valueString value="true"/>
       </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#current"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -719,6 +719,61 @@
       </reference>
       <name value="VbaiPlanDefinitionExample"/>
       <description value="An example of a Voice as a Biomarker for PlanDefinition"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/VbaiPlanDefinitionMoodExample"/>
+      </reference>
+      <name value="VbaiPlanDefinitionMoodExample"/>
+      <description value="An example of the Mood Cohort's PlanDefinition"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/VbaiPlanDefinitionNeurologyExample"/>
+      </reference>
+      <name value="VbaiPlanDefinitionNeurologyExample"/>
+      <description value="An example of a Voice as a Biomarker for  Neurology PlanDefinition"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/VbaiPlanDefinitionPedsExample"/>
+      </reference>
+      <name value="VbaiPlanDefinitionPedsExample"/>
+      <description value="An example of a Voice as a Biomarker for Peds PlanDefinition"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/VbaiPlanDefinitionRespiratoryExample"/>
+      </reference>
+      <name value="VbaiPlanDefinitionRespiratoryExample"/>
+      <description value="An example of a Voice as a Biomarker for Respiratory Cohort PlanDefinition"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/VbaiPlanDefinitionVoiceExample"/>
+      </reference>
+      <name value="VbaiPlanDefinitionVoiceExample"/>
+      <description value="An example of the Voice Cohort's PlanDefinition"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
     </resource>
     <resource>

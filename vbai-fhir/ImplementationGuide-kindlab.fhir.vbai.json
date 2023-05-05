@@ -5,15 +5,11 @@
     "status" : "extensions",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VoiceaBiomarkerforAI</h2><p>The official URL for this implementation guide is: </p><pre>https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai</pre><div><p>Implementation Guide for Voice Biomarker for AI FHIR Profiles</p>\n</div></div>"
   },
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-    "valueCode" : "hl7.fhir.uv.tools#current"
-  }],
   "url" : "https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai",
   "version" : "0.1.0",
   "name" : "VoiceaBiomarkerforAI",
   "status" : "draft",
-  "date" : "2023-04-28T13:01:52-04:00",
+  "date" : "2023-05-05T10:26:54-04:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -306,6 +302,10 @@
         "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#current"
     },
     {
       "extension" : [{
@@ -893,6 +893,66 @@
       },
       "name" : "VbaiPlanDefinitionExample",
       "description" : "An example of a Voice as a Biomarker for PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionMoodExample"
+      },
+      "name" : "VbaiPlanDefinitionMoodExample",
+      "description" : "An example of the Mood Cohort's PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionNeurologyExample"
+      },
+      "name" : "VbaiPlanDefinitionNeurologyExample",
+      "description" : "An example of a Voice as a Biomarker for  Neurology PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionPedsExample"
+      },
+      "name" : "VbaiPlanDefinitionPedsExample",
+      "description" : "An example of a Voice as a Biomarker for Peds PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionRespiratoryExample"
+      },
+      "name" : "VbaiPlanDefinitionRespiratoryExample",
+      "description" : "An example of a Voice as a Biomarker for Respiratory Cohort PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionVoiceExample"
+      },
+      "name" : "VbaiPlanDefinitionVoiceExample",
+      "description" : "An example of the Voice Cohort's PlanDefinition",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
     },
     {

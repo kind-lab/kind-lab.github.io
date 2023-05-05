@@ -1,0 +1,215 @@
+{
+  "resourceType" : "PlanDefinition",
+  "id" : "VbaiPlanDefinitionNeurologyExample",
+  "meta" : {
+    "profile" : ["https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"VbaiPlanDefinitionNeurologyExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;VbaiPlanDefinitionNeurologyExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-plan-definition.html\">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionNeurologyExample</code></p><p><b>version</b>: 0.1.0</p><p><b>title</b>: Neurology Cohort Protcol</p><p><b>status</b>: active</p><p><b>date</b>: 2023-04-28</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href=\"http://fhir.kindlab.sickkids.ca\">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for Neurology cohort protocol</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.1</p><p><b>title</b>: Consent</p><p><b>description</b>: Ask particpant for consent</p><p><b>priority</b>: routine</p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>patient</td></tr></table><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Prefix</b></td><td><b>Title</b></td><td><b>Description</b></td><td><b>Priority</b></td></tr><tr><td>*</td><td>1.1.1</td><td>Login for clinician</td><td>Login for clinician</td><td>routine</td></tr><tr><td>*</td><td>1.1.2</td><td>enrolled participant</td><td>enrolled participant</td><td>routine</td></tr><tr><td>*</td><td>1.1.1</td><td>Retrieve Consent</td><td>Before you participate in this study, we need your consent. The consent gives you information of what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent.</td><td>routine</td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.2</p><p><b>title</b>: Demographics</p><p><b>description</b>: Gather Demogrpahics that need to be collected</p><p><b>priority</b>: routine</p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.3</p><p><b>title</b>: Acoustic Tasks</p><p><b>description</b>: Acoustic tasks across all cohorts</p><p><b>priority</b>: routine</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Prefix</b></td><td><b>Title</b></td><td><b>Description</b></td><td><b>Priority</b></td></tr><tr><td>*</td><td>1.3.1</td><td>Perform Acoustic tasks</td><td>Audio check (Audio check: Before we start, let’s test your microphone. Click on the Start button below and say something out loud like “Testing 1, 2, 3”. Recording will stop automatically after 5 seconds. Click Play to hear your recording. If you hear background noise, please go to a quieter place and try again by selecting Redo Recording.  If it sounds good, continue.</td><td>routine</td></tr><tr><td>*</td><td>1.3 Task 1</td><td>Prolonged vowel: ​Count to 3 and say “e” for 5 seconds\u00a0</td><td>his tasks helps us analyze features in your voice</td><td>routine</td></tr><tr><td>*</td><td>1.3 Task 2</td><td>Maximum phonation time: Say /e/  (max. phonation time ): 'Using your normal voice, take a deep breath and say /e/' until you run completely out of air (click stop when you run out of air)'. (need to ask for this task twice!)\u00a0</td><td>This tasks helps us analyze the way your respiration is connected to your voice</td><td>routine</td></tr><tr><td>*</td><td>1.3 Task 3</td><td>Glides: “Using the sound “e”, glide from your lowest pitch possible to the highest pitch possible. Rest, take a breath and then glide from your highest pitch possible to the lowest pitch possible”</td><td>this task helps us understand how your vocal folds stretch</td><td>routine</td></tr><tr><td>*</td><td>1.3 Task 4</td><td>Rainbow passage :  'Read the following passage using your normal voice:' Short Rainbow passage: '￼Read the following passage using your normal voice: When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow. The rainbow is a division of white light into many beautiful colors.  These take the shape of a long round arch, with its path high above, and its two ends apparently beyond the horizon. There is, according to legend, a boiling pot of gold at one end. </td><td>This is a standardized passage that contains all the important sounds of the English language</td><td>routine</td></tr><tr><td>*</td><td>1.3 Task 5</td><td>    Task 5: Cape-V Sentences: “Read these sentences using your normal voice”\u00a0\n     The blue spot is on the key again,\n     How hard did he hit him?,\n     We were away a year ago,\n     We eat eggs every easter,\n     My momma makes lemon muffins,\n     Peter will keep at the peak\u00a0</td><td>This is a standardized passage that contains all the important sounds of the English language</td><td>routine</td></tr><tr><td>*</td><td>1.3 Task 6</td><td> Task 6: Caterpillar passage 'Read the following passage using your normal voice:' Caterpillar passage: Do you like amusement parks? Well, I sure do. To amuse myself, I went twice last spring. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic rollercoaster high above the ground. When I saw how high the Caterpillar rose into the bright blue sky I knew it was for me. After waiting in line for thirty minutes, I made it to the front where the man measured my height to see if I was tall enough. I gave the man my coins, asked for change, and jumped on the cart. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I could see the parking lot. Boy was I SCARED! I thought to myself, “There’s no turning back now.” People were so scared they screamed as we swiftly zoomed fast, fast, and faster along the tracks. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time to pack the car and drive home. That night I dreamt of the wild ride on the Caterpillar. Taking a trip to the amusement park and riding on the Caterpillar was my MOST memorable moment ever!\u00a0</td><td>This is a standardized passage that contains all the important words to test your articulation</td><td>routine</td></tr><tr><td>*</td><td>1.3 Task 7</td><td>Task 7: ​￼​Diadocokinesis:[Text Wrapping Break]\u00a0\n    Say the syllables as they appear on your screen – Pa / Ta / Ka,\n    Now record yourself repeating the syllable /PA/ as fast as possible 10 times,\n    Record yourself repeating the syllable /TA/ as fast as possible 10 times,\n    Record yourself repeating the syllable /KA/ as fast as possible 10 times,\n    Now repeat the work /Pataka/ as fast as possible 10 times,\n    Now repeat the word /buttercup/ as fast as possible 10 times\u00a0</td><td>This task tests the way you can articulate the sounds and can gives  neurological queues</td><td>routine</td></tr><tr><td>*</td><td>1.3 Task 8</td><td>Task 8: Free speech: Open ended question (generic) chose 1-2\u00a0\n “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)[Text Wrapping Break]- Options:\u00a0\u00a0\n\n    Can you talk to us about why you are interested by this study? Who told you about it? Why is it meaningful or valuable to you? How do you think it will help patients in the future?,\n\n    Can you tell us a little bit about your health condition? When did it start, what kind of symptoms have you had and for how long? Tell us how you are managing it and how you are doing?​​​,\n\n​​​​    How would you get from where you are now to the grocery store? Explain with as much detail as possible.​​​​​​​</td><td> </td><td>routine</td></tr><tr><td>*</td><td>1.3 Task 9</td><td>Task 9: Respiration and cough:\u00a0\u00a0\n'Respiratory sounds can also provide information on your[Text Wrapping Break]health, let’s record them” -\u00a0\n\nFirst, let's hear you breath comfortably for 30 seconds,\nAfter pressing on record, take 5 big breaths in and out through your nose with your mouth closed,\u00a0\nAfter pressing on record, take 5 big breaths in and out through your nose with your mouth closed,\nAfter pressing record, cough 5 times,\nNow try again (need that task twice)\u00a0</td><td> </td><td>routine</td></tr><tr><td>*</td><td>1.3 Task 10</td><td>Picture description: “You will be shown a picture, please describe what you see in your own words. You can keep talking until the time runs out” (1 min)</td><td> </td><td>routine</td></tr><tr><td>*</td><td>1.3 Task 11</td><td>Task 11: Story Recall:  “You are given a text. Read the text so you familiarize yourself with it. You have up to 5 minutes to read it as many times as you want. When you are ready, you will be asked to recall the story. This can be in your own words.”\u00a0\n\n- \u2003You wished to know all about my grandfather. Well, he is nearly ninety-three years old. He dresses himself in an ancient black frock coat, usually minus several buttons; yet he still thinks as swiftly as ever. A long, flowing beard clings to his chin, giving those who observe him a pronounced feeling of the utmost respect. When he speaks his voice is just a bit cracked and quivers a trifle. Twice each day he plays skillfully and with zest upon our small organ. Except in the winter when the ooze or snow or ice prevents, he slowly takes a short walk in the open air each day. We have often urged him to walk more and smoke less, but he always answers, “Banana Oil!” Grandfather likes to be modern in his language.\u00a0</td><td> </td><td>routine</td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.4</p><p><b>title</b>: PMHX and List of Confounders</p><p><b>description</b>: Gather PMHx and Cofounders that need to be collected</p><p><b>priority</b>: routine</p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.5</p><p><b>title</b>: Questionnaires</p><p><b>description</b>: Administer validated questionnaires</p><p><b>priority</b>: routine</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Prefix</b></td><td><b>Title</b></td><td><b>Description</b></td><td><b>Priority</b></td><td><b>Definition[x]</b></td></tr><tr><td>*</td><td>1.5.1</td><td>PHQ9 Questionniare</td><td>Administer PHQ9 Questionnaire</td><td>routine</td><td><a href=\"Questionnaire-PHQ9schema.html\">PHQ9_schema</a></td></tr><tr><td>*</td><td>1.5.2</td><td>GAD7 Questionniare</td><td>Administer GAD7 Questionnaire</td><td>routine</td><td><a href=\"Questionnaire-GAD7schema.html\">GAD7_schema</a></td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.6</p><p><b>title</b>: Feedback Pilot</p><p><b>description</b>: Questions for feedback for pilot​</p><p><b>priority</b>: routine</p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B</p><p><b>title</b>: Part B Neurology Disorders</p><p><b>description</b>: Acoustic Tasks specific to Neuro cohort\u00a0​</p><p><b>priority</b>: routine</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Prefix</b></td><td><b>Title</b></td><td><b>Description</b></td></tr><tr><td>*</td><td>B.1 Task 1</td><td>Montreal Cognitive Assessment (MoCA Test)</td><td> </td></tr><tr><td>*</td><td>B.1 Task 2</td><td>Word-colour Stroop:</td><td>You will be shown a word (one of 5 colour words - red, green, blue, brown, purple; such as ‘blue’, or a baseline stimulus, ‘oooo’), which is displayed in a congruent or incongruent colour (one of 5 colour stimuli). You have to name the colour in which the word is displayed. (no time limit)\u00a0</td></tr><tr><td>*</td><td>B.1 Task 3</td><td>Productive vocabulary link:</td><td>You will be shown a target word. You will have to provide a definition for it (no time limit).</td></tr><tr><td>*</td><td>B.1 Task 4</td><td>Random item generation / semantic fluency link:</td><td>You will have to speak a series of (I) random, non-repeating letters or numbers, or (ii) items from a given category (e.g., cities, animals, etc.), with the goal of maximizing the number of items. (time limit: 60 seconds).\u00a0</td></tr><tr><td>*</td><td>B.1 Task 5</td><td>Winograd schemas link </td><td>Read each sentence, and answer the question by selecting one of the options:\n    \nThe scientists are studying three species of fish that have recently been found living in the Indian Ocean. They began two years ago. Who or what began two years ago?\u00a0\n\n    - The Scientists\n\n    - The fish\n\nFred watched TV while George went out to buy groceries. After an hour he got up. Who got up?\n\n    - Fred\n\n    - George\n\nJoan made sure to thank Susan for all the help she had received. Who had received help?\n\n    - Joan\n\n    - Susan\n\nJoe’s uncle can still beat him at tennis, even though he is 30 years older. Who is older?\n\n    - Joe\n\n    - Joe’s uncle\n\nThe delivery truck zoomed by the school bus because it was going so fast. What was going so fast?\n\n    - The bus\n\n    - The truck</td></tr><tr><td>*</td><td>B.1 Task 6</td><td>Montreal Cognitive Assessment (MoCA Test)</td><td> </td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B.3</p><p><b>title</b>: B Validated questionnaires specific to neuro cohort</p><p><b>priority</b>: routine</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Prefix</b></td><td><b>Title</b></td><td><b>Description</b></td><td><b>Priority</b></td></tr><tr><td>*</td><td>B.3.1</td><td>Incidental findings Questionnaire</td><td>Administer Incidental Findings Questionnaire</td><td>routine</td></tr><tr><td>*</td><td>B.3.2</td><td>Genome sequencing Outcomes measure survey</td><td>Administer Genome sequencing Outcomes measure survey</td><td>routine</td></tr></table></blockquote></div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionNeurologyExample",
+  "version" : "0.1.0",
+  "title" : "Neurology Cohort Protcol",
+  "status" : "active",
+  "date" : "2023-04-28",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "This is a plandefinition for Neurology cohort protocol",
+  "action" : [{
+    "prefix" : "1.1",
+    "title" : "Consent",
+    "description" : "Ask particpant for consent",
+    "priority" : "routine",
+    "participant" : [{
+      "type" : "patient"
+    }],
+    "action" : [{
+      "prefix" : "1.1.1",
+      "title" : "Login for clinician",
+      "description" : "Login for clinician",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "1.1.2",
+      "title" : "enrolled participant",
+      "description" : "enrolled participant",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "1.1.1",
+      "title" : "Retrieve Consent",
+      "description" : "Before you participate in this study, we need your consent. The consent gives you information of what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent.",
+      "priority" : "routine"
+    }]
+  },
+  {
+    "prefix" : "1.2",
+    "title" : "Demographics",
+    "description" : "Gather Demogrpahics that need to be collected",
+    "priority" : "routine"
+  },
+  {
+    "prefix" : "1.3",
+    "title" : "Acoustic Tasks",
+    "description" : "Acoustic tasks across all cohorts",
+    "priority" : "routine",
+    "action" : [{
+      "prefix" : "1.3.1",
+      "title" : "Perform Acoustic tasks",
+      "description" : "Audio check (Audio check: Before we start, let’s test your microphone. Click on the Start button below and say something out loud like “Testing 1, 2, 3”. Recording will stop automatically after 5 seconds. Click Play to hear your recording. If you hear background noise, please go to a quieter place and try again by selecting Redo Recording.  If it sounds good, continue.",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "1.3 Task 1",
+      "title" : "Prolonged vowel: ​Count to 3 and say “e” for 5 seconds\u00a0",
+      "description" : "his tasks helps us analyze features in your voice",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "1.3 Task 2",
+      "title" : "Maximum phonation time: Say /e/  (max. phonation time ): 'Using your normal voice, take a deep breath and say /e/' until you run completely out of air (click stop when you run out of air)'. (need to ask for this task twice!)\u00a0",
+      "description" : "This tasks helps us analyze the way your respiration is connected to your voice",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "1.3 Task 3",
+      "title" : "Glides: “Using the sound “e”, glide from your lowest pitch possible to the highest pitch possible. Rest, take a breath and then glide from your highest pitch possible to the lowest pitch possible”",
+      "description" : "this task helps us understand how your vocal folds stretch",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "1.3 Task 4",
+      "title" : "Rainbow passage :  'Read the following passage using your normal voice:' Short Rainbow passage: '￼Read the following passage using your normal voice: When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow. The rainbow is a division of white light into many beautiful colors.  These take the shape of a long round arch, with its path high above, and its two ends apparently beyond the horizon. There is, according to legend, a boiling pot of gold at one end. ",
+      "description" : "This is a standardized passage that contains all the important sounds of the English language",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "1.3 Task 5",
+      "title" : "    Task 5: Cape-V Sentences: “Read these sentences using your normal voice”\u00a0\n     The blue spot is on the key again,\n     How hard did he hit him?,\n     We were away a year ago,\n     We eat eggs every easter,\n     My momma makes lemon muffins,\n     Peter will keep at the peak\u00a0",
+      "description" : "This is a standardized passage that contains all the important sounds of the English language",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "1.3 Task 6",
+      "title" : " Task 6: Caterpillar passage 'Read the following passage using your normal voice:' Caterpillar passage: Do you like amusement parks? Well, I sure do. To amuse myself, I went twice last spring. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic rollercoaster high above the ground. When I saw how high the Caterpillar rose into the bright blue sky I knew it was for me. After waiting in line for thirty minutes, I made it to the front where the man measured my height to see if I was tall enough. I gave the man my coins, asked for change, and jumped on the cart. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I could see the parking lot. Boy was I SCARED! I thought to myself, “There’s no turning back now.” People were so scared they screamed as we swiftly zoomed fast, fast, and faster along the tracks. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time to pack the car and drive home. That night I dreamt of the wild ride on the Caterpillar. Taking a trip to the amusement park and riding on the Caterpillar was my MOST memorable moment ever!\u00a0",
+      "description" : "This is a standardized passage that contains all the important words to test your articulation",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "1.3 Task 7",
+      "title" : "Task 7: ​￼​Diadocokinesis:[Text Wrapping Break]\u00a0\n    Say the syllables as they appear on your screen – Pa / Ta / Ka,\n    Now record yourself repeating the syllable /PA/ as fast as possible 10 times,\n    Record yourself repeating the syllable /TA/ as fast as possible 10 times,\n    Record yourself repeating the syllable /KA/ as fast as possible 10 times,\n    Now repeat the work /Pataka/ as fast as possible 10 times,\n    Now repeat the word /buttercup/ as fast as possible 10 times\u00a0",
+      "description" : "This task tests the way you can articulate the sounds and can gives  neurological queues",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "1.3 Task 8",
+      "title" : "Task 8: Free speech: Open ended question (generic) chose 1-2\u00a0\n “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)[Text Wrapping Break]- Options:\u00a0\u00a0\n\n    Can you talk to us about why you are interested by this study? Who told you about it? Why is it meaningful or valuable to you? How do you think it will help patients in the future?,\n\n    Can you tell us a little bit about your health condition? When did it start, what kind of symptoms have you had and for how long? Tell us how you are managing it and how you are doing?​​​,\n\n​​​​    How would you get from where you are now to the grocery store? Explain with as much detail as possible.​​​​​​​",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "1.3 Task 9",
+      "title" : "Task 9: Respiration and cough:\u00a0\u00a0\n'Respiratory sounds can also provide information on your[Text Wrapping Break]health, let’s record them” -\u00a0\n\nFirst, let's hear you breath comfortably for 30 seconds,\nAfter pressing on record, take 5 big breaths in and out through your nose with your mouth closed,\u00a0\nAfter pressing on record, take 5 big breaths in and out through your nose with your mouth closed,\nAfter pressing record, cough 5 times,\nNow try again (need that task twice)\u00a0",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "1.3 Task 10",
+      "title" : "Picture description: “You will be shown a picture, please describe what you see in your own words. You can keep talking until the time runs out” (1 min)",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "1.3 Task 11",
+      "title" : "Task 11: Story Recall:  “You are given a text. Read the text so you familiarize yourself with it. You have up to 5 minutes to read it as many times as you want. When you are ready, you will be asked to recall the story. This can be in your own words.”\u00a0\n\n- \u2003You wished to know all about my grandfather. Well, he is nearly ninety-three years old. He dresses himself in an ancient black frock coat, usually minus several buttons; yet he still thinks as swiftly as ever. A long, flowing beard clings to his chin, giving those who observe him a pronounced feeling of the utmost respect. When he speaks his voice is just a bit cracked and quivers a trifle. Twice each day he plays skillfully and with zest upon our small organ. Except in the winter when the ooze or snow or ice prevents, he slowly takes a short walk in the open air each day. We have often urged him to walk more and smoke less, but he always answers, “Banana Oil!” Grandfather likes to be modern in his language.\u00a0",
+      "priority" : "routine"
+    }]
+  },
+  {
+    "prefix" : "1.4",
+    "title" : "PMHX and List of Confounders",
+    "description" : "Gather PMHx and Cofounders that need to be collected",
+    "priority" : "routine"
+  },
+  {
+    "prefix" : "1.5",
+    "title" : "Questionnaires",
+    "description" : "Administer validated questionnaires",
+    "priority" : "routine",
+    "action" : [{
+      "prefix" : "1.5.1",
+      "title" : "PHQ9 Questionniare",
+      "description" : "Administer PHQ9 Questionnaire",
+      "priority" : "routine",
+      "definitionUri" : "https://voicecollab.ai/fhir/Questionnaire/PHQ9schema"
+    },
+    {
+      "prefix" : "1.5.2",
+      "title" : "GAD7 Questionniare",
+      "description" : "Administer GAD7 Questionnaire",
+      "priority" : "routine",
+      "definitionUri" : "https://voicecollab.ai/fhir/Questionnaire/GAD7schema"
+    }]
+  },
+  {
+    "prefix" : "1.6",
+    "title" : "Feedback Pilot",
+    "description" : "Questions for feedback for pilot​",
+    "priority" : "routine"
+  },
+  {
+    "prefix" : "B",
+    "title" : "Part B Neurology Disorders",
+    "description" : "Acoustic Tasks specific to Neuro cohort\u00a0​",
+    "priority" : "routine",
+    "action" : [{
+      "prefix" : "B.1 Task 1",
+      "title" : "Montreal Cognitive Assessment (MoCA Test)"
+    },
+    {
+      "prefix" : "B.1 Task 2",
+      "title" : "Word-colour Stroop:",
+      "description" : "You will be shown a word (one of 5 colour words - red, green, blue, brown, purple; such as ‘blue’, or a baseline stimulus, ‘oooo’), which is displayed in a congruent or incongruent colour (one of 5 colour stimuli). You have to name the colour in which the word is displayed. (no time limit)\u00a0"
+    },
+    {
+      "prefix" : "B.1 Task 3",
+      "title" : "Productive vocabulary link:",
+      "description" : "You will be shown a target word. You will have to provide a definition for it (no time limit)."
+    },
+    {
+      "prefix" : "B.1 Task 4",
+      "title" : "Random item generation / semantic fluency link:",
+      "description" : "You will have to speak a series of (I) random, non-repeating letters or numbers, or (ii) items from a given category (e.g., cities, animals, etc.), with the goal of maximizing the number of items. (time limit: 60 seconds).\u00a0"
+    },
+    {
+      "prefix" : "B.1 Task 5",
+      "title" : "Winograd schemas link ",
+      "description" : "Read each sentence, and answer the question by selecting one of the options:\n    \nThe scientists are studying three species of fish that have recently been found living in the Indian Ocean. They began two years ago. Who or what began two years ago?\u00a0\n\n    - The Scientists\n\n    - The fish\n\nFred watched TV while George went out to buy groceries. After an hour he got up. Who got up?\n\n    - Fred\n\n    - George\n\nJoan made sure to thank Susan for all the help she had received. Who had received help?\n\n    - Joan\n\n    - Susan\n\nJoe’s uncle can still beat him at tennis, even though he is 30 years older. Who is older?\n\n    - Joe\n\n    - Joe’s uncle\n\nThe delivery truck zoomed by the school bus because it was going so fast. What was going so fast?\n\n    - The bus\n\n    - The truck"
+    },
+    {
+      "prefix" : "B.1 Task 6",
+      "title" : "Montreal Cognitive Assessment (MoCA Test)"
+    }]
+  },
+  {
+    "prefix" : "B.3",
+    "title" : "B Validated questionnaires specific to neuro cohort",
+    "priority" : "routine",
+    "action" : [{
+      "prefix" : "B.3.1",
+      "title" : "Incidental findings Questionnaire",
+      "description" : "Administer Incidental Findings Questionnaire",
+      "priority" : "routine"
+    },
+    {
+      "prefix" : "B.3.2",
+      "title" : "Genome sequencing Outcomes measure survey",
+      "description" : "Administer Genome sequencing Outcomes measure survey",
+      "priority" : "routine"
+    }]
+  }]
+}

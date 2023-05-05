@@ -1,9 +1,9 @@
 ﻿VoiceaBiomarkerforAI : Validation Results
 =========================================
 
-err = 4, warn = 47, info = 2
-IG Publisher Version: 1.3.5
-Generated Fri Apr 28 13:02:53 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai#0.1.0 (canonical = https://voicecollab.ai/fhir)
+err = 4, warn = 49, info = 2
+IG Publisher Version: 1.3.7 Out of date - current version is 1.3.8
+Generated Fri May 05 10:27:53 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai#0.1.0 (canonical = https://voicecollab.ai/fhir)
  Build Errors : 3 / 4 / 0
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Condition-VbaiConditionExample : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Consent-VbaiConsentExample : 0 / 0 / 1
@@ -18,6 +18,11 @@ Generated Fri Apr 28 13:02:53 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Observation-VbaiVitalSignsExample : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Patient-VbaiPatientExample : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionMoodExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionNeurologyExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionPedsExample : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionRespiratoryExample : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionVoiceExample : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-GAD7schema : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-PHQ9schema : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-QuestionnaireGAD7Example : 0 / 1 / 1
@@ -54,8 +59,8 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/ImagingStudy-VbaiImagingStudyExample.json ==
 WARNING: ImagingStudy/VbaiImagingStudyExample: ImagingStudy.modality[0]: ValueSet http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html not found by validator
 == fsh-generated/resources/ImplementationGuide-kindlab.fhir.vbai.json ==
-WARNING: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ImplementationGuide-kindlab.fhir.vbai: Unknown Parameters: [releaselabel, fmm-definition, excludelogbinaryformat]
-ERROR: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency' does not resolve
+WARNING: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ImplementationGuide-kindlab.fhir.vbai: Unknown Parameters: []
+ERROR: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.extension[24].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency' does not resolve
 == fsh-generated/resources/Media-VbaiImagingMediaExample.json ==
 == fsh-generated/resources/Media-VbaiWaveformMediaExample.json ==
 == fsh-generated/resources/Observation-VbaiBodyHeightExample.json ==
@@ -63,6 +68,13 @@ ERROR: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.extension[0].u
 == fsh-generated/resources/Observation-VbaiVitalSignsExample.json ==
 == fsh-generated/resources/Patient-VbaiPatientExample.json ==
 == fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionExample.json ==
+== fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionMoodExample.json ==
+== fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionNeurologyExample.json ==
+== fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionPedsExample.json ==
+== fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionRespiratoryExample.json ==
+WARNING: PlanDefinition/VbaiPlanDefinitionRespiratoryExample: PlanDefinition.action[6].description: value should not start or finish with whitespace 'Baseline functional data will be collected on all patients.  Full pulmonary function testing will be performed as standard of care for all patients included in the trial.\u00a0'
+== fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionVoiceExample.json ==
+WARNING: PlanDefinition/VbaiPlanDefinitionVoiceExample: PlanDefinition.action[8].title: value should not start or finish with whitespace 'Validated questionnaires specific to voice cohort\u00a0'
 == fsh-generated/resources/Questionnaire-GAD7schema.json ==
 == fsh-generated/resources/Questionnaire-PHQ9schema.json ==
 == fsh-generated/resources/Questionnaire-QuestionnaireGAD7Example.json ==

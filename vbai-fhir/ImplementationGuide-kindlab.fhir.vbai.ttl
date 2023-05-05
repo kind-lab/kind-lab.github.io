@@ -12,15 +12,11 @@
      fhir:status [ fhir:v "extensions" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VoiceaBiomarkerforAI</h2><p>The official URL for this implementation guide is: </p><pre>https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai</pre><div><p>Implementation Guide for Voice Biomarker for AI FHIR Profiles</p>\n</div></div>"
   ] ; # 
-  fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
-  ] ) ; # 
   fhir:url [ fhir:v "https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "VoiceaBiomarkerforAI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-04-28T13:01:52-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-05T10:26:54-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -271,6 +267,9 @@
          fhir:value [ fhir:v "true" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -835,6 +834,81 @@
        ] ;
        fhir:name [ fhir:v "VbaiPlanDefinitionExample" ] ;
        fhir:description [ fhir:v "An example of a Voice as a Biomarker for PlanDefinition" ] ;
+       fhir:example [
+         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionMoodExample> ;
+         fhir:reference [ fhir:v "PlanDefinition/VbaiPlanDefinitionMoodExample" ]
+       ] ;
+       fhir:name [ fhir:v "VbaiPlanDefinitionMoodExample" ] ;
+       fhir:description [ fhir:v "An example of the Mood Cohort's PlanDefinition" ] ;
+       fhir:example [
+         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionNeurologyExample> ;
+         fhir:reference [ fhir:v "PlanDefinition/VbaiPlanDefinitionNeurologyExample" ]
+       ] ;
+       fhir:name [ fhir:v "VbaiPlanDefinitionNeurologyExample" ] ;
+       fhir:description [ fhir:v "An example of a Voice as a Biomarker for  Neurology PlanDefinition" ] ;
+       fhir:example [
+         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionPedsExample> ;
+         fhir:reference [ fhir:v "PlanDefinition/VbaiPlanDefinitionPedsExample" ]
+       ] ;
+       fhir:name [ fhir:v "VbaiPlanDefinitionPedsExample" ] ;
+       fhir:description [ fhir:v "An example of a Voice as a Biomarker for Peds PlanDefinition" ] ;
+       fhir:example [
+         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionRespiratoryExample> ;
+         fhir:reference [ fhir:v "PlanDefinition/VbaiPlanDefinitionRespiratoryExample" ]
+       ] ;
+       fhir:name [ fhir:v "VbaiPlanDefinitionRespiratoryExample" ] ;
+       fhir:description [ fhir:v "An example of a Voice as a Biomarker for Respiratory Cohort PlanDefinition" ] ;
+       fhir:example [
+         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceExample> ;
+         fhir:reference [ fhir:v "PlanDefinition/VbaiPlanDefinitionVoiceExample" ]
+       ] ;
+       fhir:name [ fhir:v "VbaiPlanDefinitionVoiceExample" ] ;
+       fhir:description [ fhir:v "An example of the Voice Cohort's PlanDefinition" ] ;
        fhir:example [
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
