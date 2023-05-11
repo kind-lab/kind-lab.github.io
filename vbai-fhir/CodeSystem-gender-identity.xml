@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="gender-identity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/gender-identity</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">M<a name="gender-identity-M"> </a></td><td>Man</td><td>Gender identity is a Man.</td></tr><tr><td style="white-space:nowrap">F<a name="gender-identity-F"> </a></td><td>Woman</td><td>Gender identity is a Woman.</td></tr><tr><td style="white-space:nowrap">TM<a name="gender-identity-TM"> </a></td><td>Transgender male/Transman/Female-to-male</td><td>Gender identity is Transgender male or Transman or Female-to-Male.</td></tr><tr><td style="white-space:nowrap">TF<a name="gender-identity-TF"> </a></td><td>Transgender female/Transwoman/Male-tofemale</td><td>Gender identity is Transgender female or Transwoman or Male-to-female.</td></tr><tr><td style="white-space:nowrap">GQ<a name="gender-identity-GQ"> </a></td><td>Genderqueer/Non-binary</td><td>Gender identity is GenderQueer/Non-binary.</td></tr><tr><td style="white-space:nowrap">DC<a name="gender-identity-DC"> </a></td><td>Decline to Answer</td><td>Person has declined to answer about their gender identity.</td></tr><tr><td style="white-space:nowrap">OT<a name="gender-identity-OT"> </a></td><td>Other</td><td>Person's gender identity is Other.</td></tr></table></div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/CodeSystem/gender-identity"/>
+  <version value="0.1.0"/>
+  <name value="GenderIdentity"/>
+  <title value=" Gender Identity Codes"/>
+  <status value="active"/>
+  <date value="2023-05-11"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="The  Gender Identity Codes contains the codes to be used vbai Demographic Questionnaire"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="M"/>
+    <display value="Man"/>
+    <definition value="Gender identity is a Man."/>
+  </concept>
+  <concept>
+    <code value="F"/>
+    <display value="Woman"/>
+    <definition value="Gender identity is a Woman."/>
+  </concept>
+  <concept>
+    <code value="TM"/>
+    <display value="Transgender male/Transman/Female-to-male"/>
+    <definition value="Gender identity is Transgender male or Transman or Female-to-Male."/>
+  </concept>
+  <concept>
+    <code value="TF"/>
+    <display value="Transgender female/Transwoman/Male-tofemale"/>
+    <definition value="Gender identity is Transgender female or Transwoman or Male-to-female."/>
+  </concept>
+  <concept>
+    <code value="GQ"/>
+    <display value="Genderqueer/Non-binary"/>
+    <definition value="Gender identity is GenderQueer/Non-binary."/>
+  </concept>
+  <concept>
+    <code value="DC"/>
+    <display value="Decline to Answer"/>
+    <definition value="Person has declined to answer about their gender identity."/>
+  </concept>
+  <concept>
+    <code value="OT"/>
+    <display value="Other"/>
+    <definition value="Person's gender identity is Other."/>
+  </concept>
+</CodeSystem>

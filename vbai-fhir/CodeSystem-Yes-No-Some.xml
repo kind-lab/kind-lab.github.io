@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Yes-No-Some"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/Yes-No-Some</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">Y<a name="Yes-No-Some-Y"> </a></td><td>Yes</td><td>Yes</td></tr><tr><td style="white-space:nowrap">N<a name="Yes-No-Some-N"> </a></td><td>No</td><td>No</td></tr><tr><td style="white-space:nowrap">S<a name="Yes-No-Some-S"> </a></td><td>Some</td><td>Some</td></tr></table></div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/CodeSystem/Yes-No-Some"/>
+  <version value="0.1.0"/>
+  <name value="YesNoSome"/>
+  <title value="Questionnaire Yes/No/Some codes"/>
+  <status value="active"/>
+  <date value="2023-05-11"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="The codes required for Questionnaires yes/no/some"/>
+  <caseSensitive value="true"/>
+  <valueSet value="https://voicecollab.ai/fhir/ValueSet/yesnodontknow"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="Y"/>
+    <display value="Yes"/>
+    <definition value="Yes"/>
+  </concept>
+  <concept>
+    <code value="N"/>
+    <display value="No"/>
+    <definition value="No"/>
+  </concept>
+  <concept>
+    <code value="S"/>
+    <display value="Some"/>
+    <definition value="Some"/>
+  </concept>
+</CodeSystem>

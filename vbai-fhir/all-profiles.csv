@@ -2837,7 +2837,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Resource that can be subject of QuestionnaireResponse","The types of subjects that can be the subject of responses created for the questionnaire.","If none are specified, then the subject is unlimited.","","","","","","","","",,"required","One of the resource types defined as part of this version of FHIR.","http://hl7.org/fhir/ValueSet/resource-types|4.0.1","",,,,"Questionnaire.subjectType",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "vbai-questionnaire","Questionnaire.date","Questionnaire.date","","Revision Date
-","",1,1,"Y","","Y","dateTime {[]} {[]}
+","",0,1,"Y","","Y","dateTime {[]} {[]}
 ","Date last changed","The date  (and optionally time) when the questionnaire was published. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the questionnaire changes.","Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the questionnaire. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.","","","","","","","","",,,,,"",,,,"Questionnaire.date",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "vbai-questionnaire","Questionnaire.publisher","Questionnaire.publisher","","","",0,1,"","","Y","string {[]} {[]}

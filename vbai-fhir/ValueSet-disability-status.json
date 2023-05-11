@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "disability-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-AB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-disability-status.html#disability-status-AB\">AB</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Able-bodied</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-DAW\"> </a>\u00a0\u00a0<a href=\"CodeSystem-disability-status.html#disability-status-DAW\">DAW</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Disabled, able to work</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-DUW\"> </a>\u00a0\u00a0<a href=\"CodeSystem-disability-status.html#disability-status-DUW\">DUW</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Disabled, unable to work</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-PNA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-disability-status.html#disability-status-PNA\">PNA</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Prefer not to answer</td></tr></table></div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/ValueSet/disability-status",
+  "version" : "0.1.0",
+  "name" : "DisabilityStatus",
+  "title" : "Disability Status",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-05-11T16:43:35-04:00",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "Valueset for capturing disability status",
+  "compose" : {
+    "include" : [{
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/disability-status",
+      "concept" : [{
+        "code" : "AB",
+        "display" : "Able-bodied"
+      },
+      {
+        "code" : "DAW",
+        "display" : "Disabled, able to work"
+      },
+      {
+        "code" : "DUW",
+        "display" : "Disabled, unable to work"
+      },
+      {
+        "code" : "PNA",
+        "display" : "Prefer not to answer"
+      }]
+    }]
+  },
+  "expansion" : {
+    "timestamp" : "2023-05-11T10:00:00Z",
+    "contains" : [{
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/disability-status",
+      "code" : "AB",
+      "display" : "Able-bodied"
+    },
+    {
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/disability-status",
+      "code" : "DAW",
+      "display" : "Disabled, able to work"
+    },
+    {
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/disability-status",
+      "code" : "DUW",
+      "display" : "Disabled, unable to work"
+    },
+    {
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/disability-status",
+      "code" : "PNA",
+      "display" : "Prefer not to answer"
+    }]
+  }
+}

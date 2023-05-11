@@ -1,0 +1,104 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "transportation-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-transportation-type-p\"> </a>\u00a0\u00a0<a href=\"CodeSystem-transportation-type.html#transportation-type-p\">p</a></td><td>https://voicecollab.ai/fhir/CodeSystem/transportation-type</td><td>Personal vehicle</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-transportation-type-S\"> </a>\u00a0\u00a0<a href=\"CodeSystem-transportation-type.html#transportation-type-S\">S</a></td><td>https://voicecollab.ai/fhir/CodeSystem/transportation-type</td><td>Shared vehicle</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-transportation-type-PT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-transportation-type.html#transportation-type-PT\">PT</a></td><td>https://voicecollab.ai/fhir/CodeSystem/transportation-type</td><td>Public transportation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-transportation-type-R\"> </a>\u00a0\u00a0<a href=\"CodeSystem-transportation-type.html#transportation-type-R\">R</a></td><td>https://voicecollab.ai/fhir/CodeSystem/transportation-type</td><td>Ride with someone else</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-transportation-type-RS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-transportation-type.html#transportation-type-RS\">RS</a></td><td>https://voicecollab.ai/fhir/CodeSystem/transportation-type</td><td>Ride service</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-transportation-type-M\"> </a>\u00a0\u00a0<a href=\"CodeSystem-transportation-type.html#transportation-type-M\">M</a></td><td>https://voicecollab.ai/fhir/CodeSystem/transportation-type</td><td>Bicycle/Motorbike</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-transportation-type-W\"> </a>\u00a0\u00a0<a href=\"CodeSystem-transportation-type.html#transportation-type-W\">W</a></td><td>https://voicecollab.ai/fhir/CodeSystem/transportation-type</td><td>Walking</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-transportation-type-O\"> </a>\u00a0\u00a0<a href=\"CodeSystem-transportation-type.html#transportation-type-O\">O</a></td><td>https://voicecollab.ai/fhir/CodeSystem/transportation-type</td><td>Other, please specify</td></tr></table></div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/ValueSet/transportation-type",
+  "version" : "0.1.0",
+  "name" : "TransportationType",
+  "title" : "Transportation Type",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-05-11T16:43:35-04:00",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "Valueset for capturing Transportation Type",
+  "compose" : {
+    "include" : [{
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/transportation-type",
+      "concept" : [{
+        "code" : "P",
+        "display" : "Personal vehicle"
+      },
+      {
+        "code" : "S",
+        "display" : "Shared vehicle"
+      },
+      {
+        "code" : "PT",
+        "display" : "Public transportation"
+      },
+      {
+        "code" : "R",
+        "display" : "Ride with someone else"
+      },
+      {
+        "code" : "RS",
+        "display" : "Ride service"
+      },
+      {
+        "code" : "M",
+        "display" : "Bicycle/Motorbike"
+      },
+      {
+        "code" : "W",
+        "display" : "Walking"
+      },
+      {
+        "code" : "O",
+        "display" : "Other, please specify"
+      }]
+    }]
+  },
+  "expansion" : {
+    "timestamp" : "2023-05-11T10:00:00Z",
+    "contains" : [{
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/transportation-type",
+      "code" : "p",
+      "display" : "Personal vehicle"
+    },
+    {
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/transportation-type",
+      "code" : "S",
+      "display" : "Shared vehicle"
+    },
+    {
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/transportation-type",
+      "code" : "PT",
+      "display" : "Public transportation"
+    },
+    {
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/transportation-type",
+      "code" : "R",
+      "display" : "Ride with someone else"
+    },
+    {
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/transportation-type",
+      "code" : "RS",
+      "display" : "Ride service"
+    },
+    {
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/transportation-type",
+      "code" : "M",
+      "display" : "Bicycle/Motorbike"
+    },
+    {
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/transportation-type",
+      "code" : "W",
+      "display" : "Walking"
+    },
+    {
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/transportation-type",
+      "code" : "O",
+      "display" : "Other, please specify"
+    }]
+  }
+}

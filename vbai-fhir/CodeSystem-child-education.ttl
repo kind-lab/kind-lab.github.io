@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/CodeSystem/child-education> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "child-education"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/child-education</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">NFE<a name=\"child-education-NFE\"> </a></td><td>No Formal Education</td><td>User has no formal Education</td></tr><tr><td style=\"white-space:nowrap\">PS<a name=\"child-education-PS\"> </a></td><td>Pre-school</td><td>User's highest level of education was the Pre-school level</td></tr><tr><td style=\"white-space:nowrap\">K<a name=\"child-education-K\"> </a></td><td>Kindergarden</td><td>User's highest level of education was the Kindergarden level</td></tr><tr><td style=\"white-space:nowrap\">G1<a name=\"child-education-G1\"> </a></td><td>Grade 1</td><td>User's highest level of education was Grade 1</td></tr><tr><td style=\"white-space:nowrap\">G2<a name=\"child-education-G2\"> </a></td><td>Grade 2</td><td>User's highest level of education was Grade 2</td></tr><tr><td style=\"white-space:nowrap\">G3<a name=\"child-education-G3\"> </a></td><td>Grade 3</td><td>User's highest level of education was Grade 3</td></tr><tr><td style=\"white-space:nowrap\">G4<a name=\"child-education-G4\"> </a></td><td>Grade 4</td><td>User's highest level of education was Grade 4</td></tr><tr><td style=\"white-space:nowrap\">G5<a name=\"child-education-G5\"> </a></td><td>Grade 5</td><td>User's highest level of education was Grade 5</td></tr><tr><td style=\"white-space:nowrap\">G6<a name=\"child-education-G6\"> </a></td><td>Grade 6</td><td>User's highest level of education was Grade 6</td></tr><tr><td style=\"white-space:nowrap\">G7<a name=\"child-education-G7\"> </a></td><td>Grade 7</td><td>User's highest level of education was Grade 7</td></tr><tr><td style=\"white-space:nowrap\">G8<a name=\"child-education-G8\"> </a></td><td>Grade 8</td><td>User's highest level of education was Grade 8</td></tr><tr><td style=\"white-space:nowrap\">G9<a name=\"child-education-G9\"> </a></td><td>Grade 9</td><td>User's highest level of education was Grade 9</td></tr><tr><td style=\"white-space:nowrap\">G10<a name=\"child-education-G10\"> </a></td><td>Grade 10</td><td>User's highest level of education was Grade 10</td></tr><tr><td style=\"white-space:nowrap\">G11<a name=\"child-education-G11\"> </a></td><td>Grade 11</td><td>User's highest level of education was Grade 11</td></tr><tr><td style=\"white-space:nowrap\">G12<a name=\"child-education-G12\"> </a></td><td>Grade 12</td><td>User's highest level of education was Grade 12</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/child-education"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ChildEducation"] ; # 
+  fhir:title [ fhir:v "Questionnaire codes for child education"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-11"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The codes required for questionnaires"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "15"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "NFE" ] ;
+     fhir:display [ fhir:v "No Formal Education" ] ;
+     fhir:definition [ fhir:v "User has no formal Education" ]
+  ] [
+     fhir:code [ fhir:v "PS" ] ;
+     fhir:display [ fhir:v "Pre-school" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was the Pre-school level" ]
+  ] [
+     fhir:code [ fhir:v "K" ] ;
+     fhir:display [ fhir:v "Kindergarden" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was the Kindergarden level" ]
+  ] [
+     fhir:code [ fhir:v "G1" ] ;
+     fhir:display [ fhir:v "Grade 1" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was Grade 1" ]
+  ] [
+     fhir:code [ fhir:v "G2" ] ;
+     fhir:display [ fhir:v "Grade 2" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was Grade 2" ]
+  ] [
+     fhir:code [ fhir:v "G3" ] ;
+     fhir:display [ fhir:v "Grade 3" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was Grade 3" ]
+  ] [
+     fhir:code [ fhir:v "G4" ] ;
+     fhir:display [ fhir:v "Grade 4" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was Grade 4" ]
+  ] [
+     fhir:code [ fhir:v "G5" ] ;
+     fhir:display [ fhir:v "Grade 5" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was Grade 5" ]
+  ] [
+     fhir:code [ fhir:v "G6" ] ;
+     fhir:display [ fhir:v "Grade 6" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was Grade 6" ]
+  ] [
+     fhir:code [ fhir:v "G7" ] ;
+     fhir:display [ fhir:v "Grade 7" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was Grade 7" ]
+  ] [
+     fhir:code [ fhir:v "G8" ] ;
+     fhir:display [ fhir:v "Grade 8" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was Grade 8" ]
+  ] [
+     fhir:code [ fhir:v "G9" ] ;
+     fhir:display [ fhir:v "Grade 9" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was Grade 9" ]
+  ] [
+     fhir:code [ fhir:v "G10" ] ;
+     fhir:display [ fhir:v "Grade 10" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was Grade 10" ]
+  ] [
+     fhir:code [ fhir:v "G11" ] ;
+     fhir:display [ fhir:v "Grade 11" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was Grade 11" ]
+  ] [
+     fhir:code [ fhir:v "G12" ] ;
+     fhir:display [ fhir:v "Grade 12" ] ;
+     fhir:definition [ fhir:v "User's highest level of education was Grade 12" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

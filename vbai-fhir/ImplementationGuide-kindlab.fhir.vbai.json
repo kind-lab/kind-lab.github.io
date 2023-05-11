@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "VoiceaBiomarkerforAI",
   "status" : "draft",
-  "date" : "2023-05-05T10:26:54-04:00",
+  "date" : "2023-05-11T16:43:35-04:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -742,6 +742,342 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/disability-status"
+      },
+      "name" : "Disability Status",
+      "description" : "Valueset for capturing disability status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/disability-type"
+      },
+      "name" : "Disability Type",
+      "description" : "Valueset for capturing disability status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/employment-status"
+      },
+      "name" : "Employment Status",
+      "description" : "Valueset for capturing Employment status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/financial-assistance"
+      },
+      "name" : "Financial Assistance",
+      "description" : "Valueset for capturing Financial Assistance Programs user is using",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/gender-identity"
+      },
+      "name" : "Gender Identity",
+      "description" : "The Gender Identity Codes contains the codes to be used by demographic questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Highest-Education"
+      },
+      "name" : "Highest form of Education",
+      "description" : "For Capturing a users highest education level",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/household-makeup"
+      },
+      "name" : "Household Makeup",
+      "description" : "Valueset for capturing Household Makeup",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/household-status"
+      },
+      "name" : "Household Status",
+      "description" : "Valueset for capturing Household Status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/immigration-status"
+      },
+      "name" : "Immigration Status",
+      "description" : "Valueset for capturing Immigration Status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/marital-status"
+      },
+      "name" : "Marital Status",
+      "description" : "Valueset for capturing Marital Status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/survey-options"
+      },
+      "name" : "SurveyOptions",
+      "description" : "The SurveyOptions Codes used by PHQ9 and GAD7 questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/transportation-type"
+      },
+      "name" : "Transportation Type",
+      "description" : "Valueset for capturing Transportation Type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/whocompletedsurvey"
+      },
+      "name" : "whocompletedsurvey",
+      "description" : "For Capturing who completed surveys",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/yesnosome"
+      },
+      "name" : "Yes/No/Some",
+      "description" : "For Capturing simple yes-no-don't know answers",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/child-education"
+      },
+      "name" : "Questionnaire codes for child education",
+      "description" : "The codes required for questionnaires",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/disability-status"
+      },
+      "name" : "Questionnaire codes Disability Status",
+      "description" : "The codes required for Questionnaire's Disability Status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/disability-type"
+      },
+      "name" : "Questionnaire codes Disability Type",
+      "description" : "The codes required for Questionnaire's Disability Type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/employment-status"
+      },
+      "name" : "Questionnaire codes Employment Status",
+      "description" : "The codes required for Questionnaire's Employment Status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/financial-assistance"
+      },
+      "name" : "Questionnaire codes Financial Assistance Programs",
+      "description" : "The codes required for Questionnaire's Financial Assistance Programs",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/gender-identity"
+      },
+      "name" : " Gender Identity Codes",
+      "description" : "The  Gender Identity Codes contains the codes to be used vbai Demographic Questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/household-makeup"
+      },
+      "name" : "Questionnaire codes for household makeup",
+      "description" : "The codes required for household makeup",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/household-status"
+      },
+      "name" : "Questionnaire codes for Household status",
+      "description" : "The codes required for household status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/immigration-status"
+      },
+      "name" : "Questionnaire codes for immigration status",
+      "description" : "The codes required for immigration status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/marital-status"
+      },
+      "name" : "Questionnaire codes for marital status",
+      "description" : "The codes required for marital status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/survey-options"
+      },
+      "name" : "Option Codes for PHQ9 and GAD7",
+      "description" : "The  Codes used for PHQ9 and GAD7 Questionnaires",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/transportation-type"
+      },
+      "name" : "Questionnaire codes for Transportation Type",
+      "description" : "The codes required for Transportation Type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Who-Completed-Survey"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Yes-No-Some"
+      },
+      "name" : "Questionnaire Yes/No/Some codes",
+      "description" : "The codes required for Questionnaires yes/no/some",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Questionnaire"
       }],
       "reference" : {
@@ -749,7 +1085,7 @@
       },
       "name" : "GAD7_schema",
       "description" : "GAD7 assessment schema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -761,7 +1097,7 @@
       },
       "name" : "PHQ9_schema",
       "description" : "PHQ-9 assessment schema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -773,7 +1109,7 @@
       },
       "name" : "QuestionnaireGAD7Example",
       "description" : "QuestionnaireGAD7Example",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -785,7 +1121,7 @@
       },
       "name" : "QuestionnairePHQ9Example",
       "description" : "QuestionnairePHQ9Example",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -965,7 +1301,7 @@
       },
       "name" : "vbaiQuestionnaireCofoundersExample",
       "description" : "VbaiQuestionnaire cofounders Example",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -977,6 +1313,18 @@
       },
       "name" : "VbaiQuestionnaireDemographicExample",
       "description" : "VbaiQuestionnaireDemographic Example",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/VbaiQuestionnaireDemographicExample2"
+      },
+      "name" : "VbaiQuestionnaireDemographicExample2",
+      "description" : "VbaiQuestionnaireDemographic Example2",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {

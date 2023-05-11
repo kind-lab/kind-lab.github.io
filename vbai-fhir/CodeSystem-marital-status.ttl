@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/CodeSystem/marital-status> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "marital-status"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/marital-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"marital-status-D\"> </a></td><td>Divorced</td></tr><tr><td style=\"white-space:nowrap\">RL<a name=\"marital-status-RL\"> </a></td><td>In a relationship, not married, living with partner</td></tr><tr><td style=\"white-space:nowrap\">RNL<a name=\"marital-status-RNL\"> </a></td><td>In a relationship, not married, not living with partner</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"marital-status-M\"> </a></td><td>Married</td></tr><tr><td style=\"white-space:nowrap\">SD<a name=\"marital-status-SD\"> </a></td><td>Separated</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"marital-status-S\"> </a></td><td>Single</td></tr><tr><td style=\"white-space:nowrap\">W<a name=\"marital-status-W\"> </a></td><td>Widowed</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/marital-status"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "MaritalStatus"] ; # 
+  fhir:title [ fhir:v "Questionnaire codes for marital status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-11"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The codes required for marital status"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "D" ] ;
+     fhir:display [ fhir:v "Divorced" ]
+  ] [
+     fhir:code [ fhir:v "RL" ] ;
+     fhir:display [ fhir:v "In a relationship, not married, living with partner" ]
+  ] [
+     fhir:code [ fhir:v "RNL" ] ;
+     fhir:display [ fhir:v "In a relationship, not married, not living with partner" ]
+  ] [
+     fhir:code [ fhir:v "M" ] ;
+     fhir:display [ fhir:v "Married" ]
+  ] [
+     fhir:code [ fhir:v "SD" ] ;
+     fhir:display [ fhir:v "Separated" ]
+  ] [
+     fhir:code [ fhir:v "S" ] ;
+     fhir:display [ fhir:v "Single" ]
+  ] [
+     fhir:code [ fhir:v "W" ] ;
+     fhir:display [ fhir:v "Widowed" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

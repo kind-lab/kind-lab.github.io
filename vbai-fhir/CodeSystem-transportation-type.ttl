@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/CodeSystem/transportation-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "transportation-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/transportation-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"transportation-type-P\"> </a></td><td>Personal vehicle</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"transportation-type-S\"> </a></td><td>Shared vehicle</td></tr><tr><td style=\"white-space:nowrap\">PT<a name=\"transportation-type-PT\"> </a></td><td>Public transportation</td></tr><tr><td style=\"white-space:nowrap\">R<a name=\"transportation-type-R\"> </a></td><td>Ride with someone else</td></tr><tr><td style=\"white-space:nowrap\">RS<a name=\"transportation-type-RS\"> </a></td><td>Ride service</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"transportation-type-M\"> </a></td><td>Bicycle/Motorbike</td></tr><tr><td style=\"white-space:nowrap\">W<a name=\"transportation-type-W\"> </a></td><td>Walking</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"transportation-type-O\"> </a></td><td>Other, please specify</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/transportation-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TransportationType"] ; # 
+  fhir:title [ fhir:v "Questionnaire codes for Transportation Type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-11"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The codes required for Transportation Type"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "P" ] ;
+     fhir:display [ fhir:v "Personal vehicle" ]
+  ] [
+     fhir:code [ fhir:v "S" ] ;
+     fhir:display [ fhir:v "Shared vehicle" ]
+  ] [
+     fhir:code [ fhir:v "PT" ] ;
+     fhir:display [ fhir:v "Public transportation" ]
+  ] [
+     fhir:code [ fhir:v "R" ] ;
+     fhir:display [ fhir:v "Ride with someone else" ]
+  ] [
+     fhir:code [ fhir:v "RS" ] ;
+     fhir:display [ fhir:v "Ride service" ]
+  ] [
+     fhir:code [ fhir:v "M" ] ;
+     fhir:display [ fhir:v "Bicycle/Motorbike" ]
+  ] [
+     fhir:code [ fhir:v "W" ] ;
+     fhir:display [ fhir:v "Walking" ]
+  ] [
+     fhir:code [ fhir:v "O" ] ;
+     fhir:display [ fhir:v "Other, please specify" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/CodeSystem/household-status> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "household-status"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/household-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AL<a name=\"household-status-AL\"> </a></td><td>Assisted living</td></tr><tr><td style=\"white-space:nowrap\">PC<a name=\"household-status-PC\"> </a></td><td>Live with parent/care giver</td></tr><tr><td style=\"white-space:nowrap\">OH<a name=\"household-status-OH\"> </a></td><td>Own home</td></tr><tr><td style=\"white-space:nowrap\">R<a name=\"household-status-R\"> </a></td><td>Rent home</td></tr><tr><td style=\"white-space:nowrap\">SN<a name=\"household-status-SN\"> </a></td><td>Skilled nursing facility/nursing home    </td></tr><tr><td style=\"white-space:nowrap\">UT<a name=\"household-status-UT\"> </a></td><td>Unhoused-temporarily</td></tr><tr><td style=\"white-space:nowrap\">UP<a name=\"household-status-UP\"> </a></td><td>Unhoused-permanently</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/household-status"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HouseholdStatus"] ; # 
+  fhir:title [ fhir:v "Questionnaire codes for Household status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-11"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The codes required for household status"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AL" ] ;
+     fhir:display [ fhir:v "Assisted living" ]
+  ] [
+     fhir:code [ fhir:v "PC" ] ;
+     fhir:display [ fhir:v "Live with parent/care giver" ]
+  ] [
+     fhir:code [ fhir:v "OH" ] ;
+     fhir:display [ fhir:v "Own home" ]
+  ] [
+     fhir:code [ fhir:v "R" ] ;
+     fhir:display [ fhir:v "Rent home" ]
+  ] [
+     fhir:code [ fhir:v "SN" ] ;
+     fhir:display [ fhir:v "Skilled nursing facility/nursing home    " ]
+  ] [
+     fhir:code [ fhir:v "UT" ] ;
+     fhir:display [ fhir:v "Unhoused-temporarily" ]
+  ] [
+     fhir:code [ fhir:v "UP" ] ;
+     fhir:display [ fhir:v "Unhoused-permanently" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

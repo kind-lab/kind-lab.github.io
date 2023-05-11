@@ -13,7 +13,6 @@
     <sch:title>f:Questionnaire</sch:title>
     <sch:rule context="f:Questionnaire">
       <sch:assert test="count(f:title) &gt;= 1">title: minimum cardinality of 'title' is 1</sch:assert>
-      <sch:assert test="count(f:date) &gt;= 1">date: minimum cardinality of 'date' is 1</sch:assert>
       <sch:assert test="count(f:item) &gt;= 1">item: minimum cardinality of 'item' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
