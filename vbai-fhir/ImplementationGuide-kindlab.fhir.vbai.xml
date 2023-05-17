@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2023-05-11T16:43:35-04:00"/>
+  <date value="2023-05-17T15:26:12-04:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -605,6 +605,39 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/drink-number"/>
+      </reference>
+      <name value="Drinking number ValueSet"/>
+      <description value="The Codes used by Cofounder questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/drinking-times"/>
+      </reference>
+      <name value="Drinking times ValueSet"/>
+      <description value="The Codes used by Cofounder questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ent-history"/>
+      </reference>
+      <name value="ENT History ValueSet"/>
+      <description value="The Codes used by Cofounder questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/employment-status"/>
       </reference>
       <name value="Employment Status"/>
@@ -693,6 +726,94 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/medication"/>
+      </reference>
+      <name value="Medication ValueSet"/>
+      <description value="The Codes used by Cofounder questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/menstration-menopause"/>
+      </reference>
+      <name value="Menstration MenopauseValueSet"/>
+      <description value="The Codes used by Cofounder questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/neurological-history"/>
+      </reference>
+      <name value="NeurologicalHistory ValueSet"/>
+      <description value="The Codes used by Cofounder questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/psychiatric-history"/>
+      </reference>
+      <name value="Psychiatric History ValueSet"/>
+      <description value="The Codes used by Cofounder questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/reading-ability"/>
+      </reference>
+      <name value="Reading ability ValueSet"/>
+      <description value="The Codes used by Cofounder questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/smoking"/>
+      </reference>
+      <name value="Smoking ValueSet"/>
+      <description value="The  Codes used by WHODAS questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/smoking-times"/>
+      </reference>
+      <name value="Smoking times ValueSet"/>
+      <description value="The  Codes used by Cofounder questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/smoking-types"/>
+      </reference>
+      <name value="Smoking types ValueSet"/>
+      <description value="The  Codes used by WHODAS questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/survey-options"/>
       </reference>
       <name value="SurveyOptions"/>
@@ -704,10 +825,43 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/sweat"/>
+      </reference>
+      <name value="Sweat ValueSet"/>
+      <description value="The Codes used by Cofounder questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/transportation-type"/>
       </reference>
       <name value="Transportation Type"/>
       <description value="Valueset for capturing Transportation Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vocal-activity"/>
+      </reference>
+      <name value="Vocal Activity ValueSet"/>
+      <description value="The Codes used by Cofounder questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/whodas"/>
+      </reference>
+      <name value="WHODAS ValueSet"/>
+      <description value="The  Codes used by WHODAS questionnaire"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -763,6 +917,39 @@
       </reference>
       <name value="Questionnaire codes Disability Type"/>
       <description value="The codes required for Questionnaire's Disability Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/drink-number"/>
+      </reference>
+      <name value="Questionnaire alchohol number codes"/>
+      <description value="The codes required for Questionnaire Cofounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/drinking-times"/>
+      </reference>
+      <name value="Questionnaire alchohol times codes"/>
+      <description value="The codes required for Questionnaire Cofounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ent-history"/>
+      </reference>
+      <name value="Questionnaire ent history codes"/>
+      <description value="The codes required for Questionnaire Cofounders"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -847,6 +1034,94 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/medication"/>
+      </reference>
+      <name value="Questionnaire medication codes"/>
+      <description value="The codes required for Questionnaire Cofounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/menstration-menopause"/>
+      </reference>
+      <name value="Questionnaire sweat codes"/>
+      <description value="The codes required for Questionnaire Cofounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/neurological-history"/>
+      </reference>
+      <name value="Questionnaire neurological history codes"/>
+      <description value="The codes required for Questionnaire Cofounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/psychiatric-history"/>
+      </reference>
+      <name value="Questionnaire psychiatric history codes"/>
+      <description value="The codes required for Questionnaire Cofounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/reading-ability"/>
+      </reference>
+      <name value="Questionnaire sweat codes"/>
+      <description value="The codes required for Questionnaire Cofounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/smoking"/>
+      </reference>
+      <name value="Questionnaire smoking codes"/>
+      <description value="The codes required for Questionnaire Cofounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/smoking-times"/>
+      </reference>
+      <name value="Questionnaire smoking times codes"/>
+      <description value="The codes required for Questionnaire Cofounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/smoking-types"/>
+      </reference>
+      <name value="Questionnaire smoking type codes"/>
+      <description value="The codes required for Questionnaire Cofounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/survey-options"/>
       </reference>
       <name value="Option Codes for PHQ9 and GAD7"/>
@@ -858,10 +1133,43 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/sweat"/>
+      </reference>
+      <name value="Questionnaire sweat codes"/>
+      <description value="The codes required for Questionnaire Cofounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/transportation-type"/>
       </reference>
       <name value="Questionnaire codes for Transportation Type"/>
       <description value="The codes required for Transportation Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/vocal-activity"/>
+      </reference>
+      <name value="Questionnaire sweat codes"/>
+      <description value="The codes required for Questionnaire Cofounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/whodas"/>
+      </reference>
+      <name value="Questionnaire WHODAS codes"/>
+      <description value="The codes required for WHODAS Questionnaires "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1092,6 +1400,17 @@
         <reference value="Questionnaire/VbaiQuestionnaireCofoundersExample"/>
       </reference>
       <name value="vbaiQuestionnaireCofoundersExample"/>
+      <description value="VbaiQuestionnaire cofounders Example"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/VbaiQuestionnaireCofoundersExample2"/>
+      </reference>
+      <name value="vbaiQuestionnaireCofoundersExample2"/>
       <description value="VbaiQuestionnaire cofounders Example"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>

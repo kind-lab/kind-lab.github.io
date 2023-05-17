@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/CodeSystem/psychiatric-history> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "psychiatric-history"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/psychiatric-history</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"psychiatric-history-C\"> </a></td><td>Confused</td></tr><tr><td style=\"white-space:nowrap\">NA<a name=\"psychiatric-history-NA\"> </a></td><td>Nervous/Anxious</td></tr><tr><td style=\"white-space:nowrap\">SD<a name=\"psychiatric-history-SD\"> </a></td><td>Sleep Disturbance</td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"psychiatric-history-A\"> </a></td><td>Agoraphobia</td></tr><tr><td style=\"white-space:nowrap\">ADHD<a name=\"psychiatric-history-ADHD\"> </a></td><td>Attention-Deficit / Hyperactivity Disorder (ADHD)</td></tr><tr><td style=\"white-space:nowrap\">ASD<a name=\"psychiatric-history-ASD\"> </a></td><td>Autism Spectrum Disorder (ASD)</td></tr><tr><td style=\"white-space:nowrap\">BI<a name=\"psychiatric-history-BI\"> </a></td><td>Bipolar Disorder</td></tr><tr><td style=\"white-space:nowrap\">BPD<a name=\"psychiatric-history-BPD\"> </a></td><td>Borderline Personality Disorder (BPD)</td></tr><tr><td style=\"white-space:nowrap\">ED<a name=\"psychiatric-history-ED\"> </a></td><td>Eating Disorder (ED)</td></tr><tr><td style=\"white-space:nowrap\">GAD<a name=\"psychiatric-history-GAD\"> </a></td><td>Generalized Anxiety Disorder (GAD)</td></tr><tr><td style=\"white-space:nowrap\">IS<a name=\"psychiatric-history-IS\"> </a></td><td>Insomnia / sleep disorder</td></tr><tr><td style=\"white-space:nowrap\">MDD<a name=\"psychiatric-history-MDD\"> </a></td><td>Major Depressive Disorder</td></tr><tr><td style=\"white-space:nowrap\">OCD<a name=\"psychiatric-history-OCD\"> </a></td><td>Obsessive-Compulsive Disorder (OCD)</td></tr><tr><td style=\"white-space:nowrap\">PD<a name=\"psychiatric-history-PD\"> </a></td><td>Panic Disorder</td></tr><tr><td style=\"white-space:nowrap\">PTSD<a name=\"psychiatric-history-PTSD\"> </a></td><td>Post-Traumatic Stress Disorder (PTSD)</td></tr><tr><td style=\"white-space:nowrap\">SCH<a name=\"psychiatric-history-SCH\"> </a></td><td>Schizophrenia</td></tr><tr><td style=\"white-space:nowrap\">SAD<a name=\"psychiatric-history-SAD\"> </a></td><td>Social Anxiety Disorder</td></tr><tr><td style=\"white-space:nowrap\">SUD<a name=\"psychiatric-history-SUD\"> </a></td><td>Substance Use Disorder</td></tr><tr><td style=\"white-space:nowrap\">PND<a name=\"psychiatric-history-PND\"> </a></td><td>Prefer not to disclose</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"psychiatric-history-O\"> </a></td><td>Other Please Specify</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"psychiatric-history-N\"> </a></td><td>None</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/psychiatric-history"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PsychiatricHistory"] ; # 
+  fhir:title [ fhir:v "Questionnaire psychiatric history codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The codes required for Questionnaire Cofounders"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "21"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "C" ] ;
+     fhir:display [ fhir:v "Confused" ]
+  ] [
+     fhir:code [ fhir:v "NA" ] ;
+     fhir:display [ fhir:v "Nervous/Anxious" ]
+  ] [
+     fhir:code [ fhir:v "SD" ] ;
+     fhir:display [ fhir:v "Sleep Disturbance" ]
+  ] [
+     fhir:code [ fhir:v "A" ] ;
+     fhir:display [ fhir:v "Agoraphobia" ]
+  ] [
+     fhir:code [ fhir:v "ADHD" ] ;
+     fhir:display [ fhir:v "Attention-Deficit / Hyperactivity Disorder (ADHD)" ]
+  ] [
+     fhir:code [ fhir:v "ASD" ] ;
+     fhir:display [ fhir:v "Autism Spectrum Disorder (ASD)" ]
+  ] [
+     fhir:code [ fhir:v "BI" ] ;
+     fhir:display [ fhir:v "Bipolar Disorder" ]
+  ] [
+     fhir:code [ fhir:v "BPD" ] ;
+     fhir:display [ fhir:v "Borderline Personality Disorder (BPD)" ]
+  ] [
+     fhir:code [ fhir:v "ED" ] ;
+     fhir:display [ fhir:v "Eating Disorder (ED)" ]
+  ] [
+     fhir:code [ fhir:v "GAD" ] ;
+     fhir:display [ fhir:v "Generalized Anxiety Disorder (GAD)" ]
+  ] [
+     fhir:code [ fhir:v "IS" ] ;
+     fhir:display [ fhir:v "Insomnia / sleep disorder" ]
+  ] [
+     fhir:code [ fhir:v "MDD" ] ;
+     fhir:display [ fhir:v "Major Depressive Disorder" ]
+  ] [
+     fhir:code [ fhir:v "OCD" ] ;
+     fhir:display [ fhir:v "Obsessive-Compulsive Disorder (OCD)" ]
+  ] [
+     fhir:code [ fhir:v "PD" ] ;
+     fhir:display [ fhir:v "Panic Disorder" ]
+  ] [
+     fhir:code [ fhir:v "PTSD" ] ;
+     fhir:display [ fhir:v "Post-Traumatic Stress Disorder (PTSD)" ]
+  ] [
+     fhir:code [ fhir:v "SCH" ] ;
+     fhir:display [ fhir:v "Schizophrenia" ]
+  ] [
+     fhir:code [ fhir:v "SAD" ] ;
+     fhir:display [ fhir:v "Social Anxiety Disorder" ]
+  ] [
+     fhir:code [ fhir:v "SUD" ] ;
+     fhir:display [ fhir:v "Substance Use Disorder" ]
+  ] [
+     fhir:code [ fhir:v "PND" ] ;
+     fhir:display [ fhir:v "Prefer not to disclose" ]
+  ] [
+     fhir:code [ fhir:v "O" ] ;
+     fhir:display [ fhir:v "Other Please Specify" ]
+  ] [
+     fhir:code [ fhir:v "N" ] ;
+     fhir:display [ fhir:v "None" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

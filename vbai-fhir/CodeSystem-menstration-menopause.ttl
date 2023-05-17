@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/CodeSystem/menstration-menopause> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "menstration-menopause"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/menstration-menopause</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"menstration-menopause-N\"> </a></td><td>Does not apply</td></tr><tr><td style=\"white-space:nowrap\">Y<a name=\"menstration-menopause-Y\"> </a></td><td>Yes</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"menstration-menopause-M\"> </a></td><td>I have gone through menopause</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"menstration-menopause-O\"> </a></td><td>Other, Please Specify</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/menstration-menopause"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "MenstrationMenopause"] ; # 
+  fhir:title [ fhir:v "Questionnaire sweat codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The codes required for Questionnaire Cofounders"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "N" ] ;
+     fhir:display [ fhir:v "Does not apply" ]
+  ] [
+     fhir:code [ fhir:v "Y" ] ;
+     fhir:display [ fhir:v "Yes" ]
+  ] [
+     fhir:code [ fhir:v "M" ] ;
+     fhir:display [ fhir:v "I have gone through menopause" ]
+  ] [
+     fhir:code [ fhir:v "O" ] ;
+     fhir:display [ fhir:v "Other, Please Specify" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

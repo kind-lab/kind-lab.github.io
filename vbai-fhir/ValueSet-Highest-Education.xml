@@ -3,9 +3,10 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="Highest-Education"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 15 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-child-education-NFE"> </a>  <a href="CodeSystem-child-education.html#child-education-NFE">NFE</a></td><td>https://voicecollab.ai/fhir/CodeSystem/child-education</td><td>No Formal Education</td><td><div><p>User has no formal Education</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 16 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-child-education-NFE"> </a>  <a href="CodeSystem-child-education.html#child-education-NFE">NFE</a></td><td>https://voicecollab.ai/fhir/CodeSystem/child-education</td><td>No Formal Education</td><td><div><p>User has no formal Education</p>
 </div></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-child-education-PS"> </a>  <a href="CodeSystem-child-education.html#child-education-PS">PS</a></td><td>https://voicecollab.ai/fhir/CodeSystem/child-education</td><td>Pre-school</td><td><div><p>User's highest level of education was the Pre-school level</p>
 </div></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-child-education-K"> </a>  <a href="CodeSystem-child-education.html#child-education-K">K</a></td><td>https://voicecollab.ai/fhir/CodeSystem/child-education</td><td>Kindergarden</td><td><div><p>User's highest level of education was the Kindergarden level</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-child-education-SE"> </a>  <a href="CodeSystem-child-education.html#child-education-SE">SE</a></td><td>https://voicecollab.ai/fhir/CodeSystem/child-education</td><td>Some elementary school education</td><td><div><p>User's highest level of education was the Elementary level</p>
 </div></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-child-education-G1"> </a>  <a href="CodeSystem-child-education.html#child-education-G1">G1</a></td><td>https://voicecollab.ai/fhir/CodeSystem/child-education</td><td>Grade 1</td><td><div><p>User's highest level of education was Grade 1</p>
 </div></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-child-education-G2"> </a>  <a href="CodeSystem-child-education.html#child-education-G2">G2</a></td><td>https://voicecollab.ai/fhir/CodeSystem/child-education</td><td>Grade 2</td><td><div><p>User's highest level of education was Grade 2</p>
 </div></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-child-education-G3"> </a>  <a href="CodeSystem-child-education.html#child-education-G3">G3</a></td><td>https://voicecollab.ai/fhir/CodeSystem/child-education</td><td>Grade 3</td><td><div><p>User's highest level of education was Grade 3</p>
@@ -26,7 +27,7 @@
   <title value="Highest form of Education"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2023-05-11T16:43:35-04:00"/>
+  <date value="2023-05-17T15:26:12-04:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -55,8 +56,12 @@
         <display value="Kindergarden"/>
       </concept>
       <concept>
+        <code value="SE"/>
+        <display value="Some elementary school education"/>
+      </concept>
+      <concept>
         <code value="G1"/>
-        <display value="Grade 1"/>
+        <display value="transportationGrade 1"/>
       </concept>
       <concept>
         <code value="G2"/>
@@ -119,6 +124,11 @@
       <system value="https://voicecollab.ai/fhir/CodeSystem/child-education"/>
       <code value="K"/>
       <display value="Kindergarden"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/child-education"/>
+      <code value="SE"/>
+      <display value="Some elementary school education"/>
     </contains>
     <contains>
       <system value="https://voicecollab.ai/fhir/CodeSystem/child-education"/>

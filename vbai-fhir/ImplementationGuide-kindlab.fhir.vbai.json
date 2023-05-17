@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "VoiceaBiomarkerforAI",
   "status" : "draft",
-  "date" : "2023-05-11T16:43:35-04:00",
+  "date" : "2023-05-17T15:26:12-04:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -769,6 +769,42 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/drink-number"
+      },
+      "name" : "Drinking number ValueSet",
+      "description" : "The Codes used by Cofounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/drinking-times"
+      },
+      "name" : "Drinking times ValueSet",
+      "description" : "The Codes used by Cofounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ent-history"
+      },
+      "name" : "ENT History ValueSet",
+      "description" : "The Codes used by Cofounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/employment-status"
       },
       "name" : "Employment Status",
@@ -865,6 +901,102 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/medication"
+      },
+      "name" : "Medication ValueSet",
+      "description" : "The Codes used by Cofounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/menstration-menopause"
+      },
+      "name" : "Menstration MenopauseValueSet",
+      "description" : "The Codes used by Cofounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/neurological-history"
+      },
+      "name" : "NeurologicalHistory ValueSet",
+      "description" : "The Codes used by Cofounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/psychiatric-history"
+      },
+      "name" : "Psychiatric History ValueSet",
+      "description" : "The Codes used by Cofounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/reading-ability"
+      },
+      "name" : "Reading ability ValueSet",
+      "description" : "The Codes used by Cofounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/smoking"
+      },
+      "name" : "Smoking ValueSet",
+      "description" : "The  Codes used by WHODAS questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/smoking-times"
+      },
+      "name" : "Smoking times ValueSet",
+      "description" : "The  Codes used by Cofounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/smoking-types"
+      },
+      "name" : "Smoking types ValueSet",
+      "description" : "The  Codes used by WHODAS questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/survey-options"
       },
       "name" : "SurveyOptions",
@@ -877,10 +1009,46 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/sweat"
+      },
+      "name" : "Sweat ValueSet",
+      "description" : "The Codes used by Cofounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/transportation-type"
       },
       "name" : "Transportation Type",
       "description" : "Valueset for capturing Transportation Type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vocal-activity"
+      },
+      "name" : "Vocal Activity ValueSet",
+      "description" : "The Codes used by Cofounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/whodas"
+      },
+      "name" : "WHODAS ValueSet",
+      "description" : "The  Codes used by WHODAS questionnaire",
       "exampleBoolean" : false
     },
     {
@@ -941,6 +1109,42 @@
       },
       "name" : "Questionnaire codes Disability Type",
       "description" : "The codes required for Questionnaire's Disability Type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/drink-number"
+      },
+      "name" : "Questionnaire alchohol number codes",
+      "description" : "The codes required for Questionnaire Cofounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/drinking-times"
+      },
+      "name" : "Questionnaire alchohol times codes",
+      "description" : "The codes required for Questionnaire Cofounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ent-history"
+      },
+      "name" : "Questionnaire ent history codes",
+      "description" : "The codes required for Questionnaire Cofounders",
       "exampleBoolean" : false
     },
     {
@@ -1033,6 +1237,102 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/medication"
+      },
+      "name" : "Questionnaire medication codes",
+      "description" : "The codes required for Questionnaire Cofounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/menstration-menopause"
+      },
+      "name" : "Questionnaire sweat codes",
+      "description" : "The codes required for Questionnaire Cofounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/neurological-history"
+      },
+      "name" : "Questionnaire neurological history codes",
+      "description" : "The codes required for Questionnaire Cofounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/psychiatric-history"
+      },
+      "name" : "Questionnaire psychiatric history codes",
+      "description" : "The codes required for Questionnaire Cofounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/reading-ability"
+      },
+      "name" : "Questionnaire sweat codes",
+      "description" : "The codes required for Questionnaire Cofounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/smoking"
+      },
+      "name" : "Questionnaire smoking codes",
+      "description" : "The codes required for Questionnaire Cofounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/smoking-times"
+      },
+      "name" : "Questionnaire smoking times codes",
+      "description" : "The codes required for Questionnaire Cofounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/smoking-types"
+      },
+      "name" : "Questionnaire smoking type codes",
+      "description" : "The codes required for Questionnaire Cofounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/survey-options"
       },
       "name" : "Option Codes for PHQ9 and GAD7",
@@ -1045,10 +1345,46 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/sweat"
+      },
+      "name" : "Questionnaire sweat codes",
+      "description" : "The codes required for Questionnaire Cofounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/transportation-type"
       },
       "name" : "Questionnaire codes for Transportation Type",
       "description" : "The codes required for Transportation Type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/vocal-activity"
+      },
+      "name" : "Questionnaire sweat codes",
+      "description" : "The codes required for Questionnaire Cofounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/whodas"
+      },
+      "name" : "Questionnaire WHODAS codes",
+      "description" : "The codes required for WHODAS Questionnaires ",
       "exampleBoolean" : false
     },
     {
@@ -1300,6 +1636,18 @@
         "reference" : "Questionnaire/VbaiQuestionnaireCofoundersExample"
       },
       "name" : "vbaiQuestionnaireCofoundersExample",
+      "description" : "VbaiQuestionnaire cofounders Example",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/VbaiQuestionnaireCofoundersExample2"
+      },
+      "name" : "vbaiQuestionnaireCofoundersExample2",
       "description" : "VbaiQuestionnaire cofounders Example",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },

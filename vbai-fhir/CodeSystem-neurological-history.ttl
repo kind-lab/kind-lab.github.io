@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/CodeSystem/neurological-history> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "neurological-history"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/neurological-history</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"neurological-history-D\"> </a></td><td>Dizziness</td></tr><tr><td style=\"white-space:nowrap\">FH<a name=\"neurological-history-FH\"> </a></td><td>Frequent or severe headache</td></tr><tr><td style=\"white-space:nowrap\">SD<a name=\"neurological-history-SD\"> </a></td><td>Speech Difficulty</td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"neurological-history-A\"> </a></td><td>Alzheimer's Disease</td></tr><tr><td style=\"white-space:nowrap\">BT<a name=\"neurological-history-BT\"> </a></td><td>Brain tumor</td></tr><tr><td style=\"white-space:nowrap\">DM<a name=\"neurological-history-DM\"> </a></td><td>Dementia</td></tr><tr><td style=\"white-space:nowrap\">E<a name=\"neurological-history-E\"> </a></td><td>Epilepsy</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"neurological-history-M\"> </a></td><td>Migraine</td></tr><tr><td style=\"white-space:nowrap\">MS<a name=\"neurological-history-MS\"> </a></td><td>Multiple sclerosis</td></tr><tr><td style=\"white-space:nowrap\">PD<a name=\"neurological-history-PD\"> </a></td><td>Parkinson's Disease</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"neurological-history-S\"> </a></td><td>Stroke</td></tr><tr><td style=\"white-space:nowrap\">TBI<a name=\"neurological-history-TBI\"> </a></td><td>Traumatic brain injury</td></tr><tr><td style=\"white-space:nowrap\">PNTA<a name=\"neurological-history-PNTA\"> </a></td><td>Prefer not to disclose</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"neurological-history-O\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"neurological-history-N\"> </a></td><td>None</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/neurological-history"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "NeurologicalHistory"] ; # 
+  fhir:title [ fhir:v "Questionnaire neurological history codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The codes required for Questionnaire Cofounders"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "15"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "D" ] ;
+     fhir:display [ fhir:v "Dizziness" ]
+  ] [
+     fhir:code [ fhir:v "FH" ] ;
+     fhir:display [ fhir:v "Frequent or severe headache" ]
+  ] [
+     fhir:code [ fhir:v "SD" ] ;
+     fhir:display [ fhir:v "Speech Difficulty" ]
+  ] [
+     fhir:code [ fhir:v "A" ] ;
+     fhir:display [ fhir:v "Alzheimer's Disease" ]
+  ] [
+     fhir:code [ fhir:v "BT" ] ;
+     fhir:display [ fhir:v "Brain tumor" ]
+  ] [
+     fhir:code [ fhir:v "DM" ] ;
+     fhir:display [ fhir:v "Dementia" ]
+  ] [
+     fhir:code [ fhir:v "E" ] ;
+     fhir:display [ fhir:v "Epilepsy" ]
+  ] [
+     fhir:code [ fhir:v "M" ] ;
+     fhir:display [ fhir:v "Migraine" ]
+  ] [
+     fhir:code [ fhir:v "MS" ] ;
+     fhir:display [ fhir:v "Multiple sclerosis" ]
+  ] [
+     fhir:code [ fhir:v "PD" ] ;
+     fhir:display [ fhir:v "Parkinson's Disease" ]
+  ] [
+     fhir:code [ fhir:v "S" ] ;
+     fhir:display [ fhir:v "Stroke" ]
+  ] [
+     fhir:code [ fhir:v "TBI" ] ;
+     fhir:display [ fhir:v "Traumatic brain injury" ]
+  ] [
+     fhir:code [ fhir:v "PNTA" ] ;
+     fhir:display [ fhir:v "Prefer not to disclose" ]
+  ] [
+     fhir:code [ fhir:v "O" ] ;
+     fhir:display [ fhir:v "Other" ]
+  ] [
+     fhir:code [ fhir:v "N" ] ;
+     fhir:display [ fhir:v "None" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

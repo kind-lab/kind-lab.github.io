@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="smoking"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-smoking.html"><code>https://voicecollab.ai/fhir/CodeSystem/smoking</code></a></li></ul></div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/ValueSet/smoking"/>
+  <version value="0.1.0"/>
+  <name value="Smoking"/>
+  <title value="Smoking ValueSet"/>
+  <status value="active"/>
+  <date value="2023-05-11"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="The  Codes used by WHODAS questionnaire"/>
+  <compose>
+    <include>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/smoking"/>
+    </include>
+  </compose>
+</ValueSet>

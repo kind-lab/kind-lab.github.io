@@ -1,0 +1,228 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/CodeSystem/ent-history> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ent-history"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/ent-history</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CEI<a name=\"ent-history-CEI\"> </a></td><td>Chronic ear infection</td></tr><tr><td style=\"white-space:nowrap\">CR<a name=\"ent-history-CR\"> </a></td><td>Chronic rhinosinusitis</td></tr><tr><td style=\"white-space:nowrap\">CI<a name=\"ent-history-CI\"> </a></td><td>Cochlear implant</td></tr><tr><td style=\"white-space:nowrap\">CT<a name=\"ent-history-CT\"> </a></td><td>Cancer: throat</td></tr><tr><td style=\"white-space:nowrap\">DY<a name=\"ent-history-DY\"> </a></td><td>Dysphagia (difficulty swallowing)</td></tr><tr><td style=\"white-space:nowrap\">FS<a name=\"ent-history-FS\"> </a></td><td>Frequent sinusitis</td></tr><tr><td style=\"white-space:nowrap\">HL<a name=\"ent-history-HL\"> </a></td><td>Hearing loss</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"ent-history-M\"> </a></td><td>Migraine</td></tr><tr><td style=\"white-space:nowrap\">PCL<a name=\"ent-history-PCL\"> </a></td><td>Pre-cancerous lesion (e.g., laryngeal leukoplakia or keratosis)</td></tr><tr><td style=\"white-space:nowrap\">RAH<a name=\"ent-history-RAH\"> </a></td><td>Radiation around head, neck, or ears</td></tr><tr><td style=\"white-space:nowrap\">R<a name=\"ent-history-R\"> </a></td><td>Reflux (heartburn)</td></tr><tr><td style=\"white-space:nowrap\">RE<a name=\"ent-history-RE\"> </a></td><td>Reinke's edema, polypoid corditis, or smoker's larynx</td></tr><tr><td style=\"white-space:nowrap\">SA<a name=\"ent-history-SA\"> </a></td><td>Seasonal allergies</td></tr><tr><td style=\"white-space:nowrap\">SS<a name=\"ent-history-SS\"> </a></td><td>Sjogren's syndrome</td></tr><tr><td style=\"white-space:nowrap\">TD<a name=\"ent-history-TD\"> </a></td><td>Thyroid disease</td></tr><tr><td style=\"white-space:nowrap\">VI<a name=\"ent-history-VI\"> </a></td><td>Velopharyngeal insufficiency</td></tr><tr><td style=\"white-space:nowrap\">VFP<a name=\"ent-history-VFP\"> </a></td><td>Vocal fold polyp, nodule, or cyst</td></tr><tr><td style=\"white-space:nowrap\">VH<a name=\"ent-history-VH\"> </a></td><td>Vocal hemorrhage or bleed</td></tr><tr><td style=\"white-space:nowrap\">VTD<a name=\"ent-history-VTD\"> </a></td><td>Voice/throat disorder</td></tr><tr><td style=\"white-space:nowrap\">CES<a name=\"ent-history-CES\"> </a></td><td>Chronic ear surgery (e.g. mastoid)</td></tr><tr><td style=\"white-space:nowrap\">ET<a name=\"ent-history-ET\"> </a></td><td>Ear tubes</td></tr><tr><td style=\"white-space:nowrap\">SINS<a name=\"ent-history-SINS\"> </a></td><td>Sinus Surgery</td></tr><tr><td style=\"white-space:nowrap\">SR<a name=\"ent-history-SR\"> </a></td><td>Septoplasty/Rhinoplasty</td></tr><tr><td style=\"white-space:nowrap\">SLS<a name=\"ent-history-SLS\"> </a></td><td>Sleep surgery</td></tr><tr><td style=\"white-space:nowrap\">TS<a name=\"ent-history-TS\"> </a></td><td>Throat surgery</td></tr><tr><td style=\"white-space:nowrap\">THS<a name=\"ent-history-THS\"> </a></td><td>Thyroid surgery</td></tr><tr><td style=\"white-space:nowrap\">TA<a name=\"ent-history-TA\"> </a></td><td>Tonsillectomy/Adenoidectomy</td></tr><tr><td style=\"white-space:nowrap\">DP<a name=\"ent-history-DP\"> </a></td><td>Dental problem</td></tr><tr><td style=\"white-space:nowrap\">ED<a name=\"ent-history-ED\"> </a></td><td>Ear discharge</td></tr><tr><td style=\"white-space:nowrap\">EP<a name=\"ent-history-EP\"> </a></td><td>Ear pain</td></tr><tr><td style=\"white-space:nowrap\">NC<a name=\"ent-history-NC\"> </a></td><td>Nasal Congestion/runny nose</td></tr><tr><td style=\"white-space:nowrap\">NB<a name=\"ent-history-NB\"> </a></td><td>Nosebleeds</td></tr><tr><td style=\"white-space:nowrap\">PWT<a name=\"ent-history-PWT\"> </a></td><td>Pain while talking or singing</td></tr><tr><td style=\"white-space:nowrap\">PND<a name=\"ent-history-PND\"> </a></td><td>Post-nasal drip</td></tr><tr><td style=\"white-space:nowrap\">SP<a name=\"ent-history-SP\"> </a></td><td>Sinus pressure</td></tr><tr><td style=\"white-space:nowrap\">ST<a name=\"ent-history-ST\"> </a></td><td>Sore Throat</td></tr><tr><td style=\"white-space:nowrap\">T<a name=\"ent-history-T\"> </a></td><td>Tinnitus</td></tr><tr><td style=\"white-space:nowrap\">TVT<a name=\"ent-history-TVT\"> </a></td><td>Tremors: vocal tremors</td></tr><tr><td style=\"white-space:nowrap\">VC<a name=\"ent-history-VC\"> </a></td><td>Voice change</td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"ent-history-A\"> </a></td><td>Asmtha</td></tr><tr><td style=\"white-space:nowrap\">COPD<a name=\"ent-history-COPD\"> </a></td><td>Chronic Obstructive Pulmonary Disease (COPD)</td></tr><tr><td style=\"white-space:nowrap\">CC<a name=\"ent-history-CC\"> </a></td><td>Chronic cough</td></tr><tr><td style=\"white-space:nowrap\">NBRE<a name=\"ent-history-NBRE\"> </a></td><td>Noisy breathing</td></tr><tr><td style=\"white-space:nowrap\">SOB<a name=\"ent-history-SOB\"> </a></td><td>Shortness of breath</td></tr><tr><td style=\"white-space:nowrap\">CA<a name=\"ent-history-CA\"> </a></td><td>Craniofacial abnormalities</td></tr><tr><td style=\"white-space:nowrap\">CUA<a name=\"ent-history-CUA\"> </a></td><td>Cushingoid appearance</td></tr><tr><td style=\"white-space:nowrap\">CWD<a name=\"ent-history-CWD\"> </a></td><td>Chest wall deformities (scars, deformities)</td></tr><tr><td style=\"white-space:nowrap\">APR<a name=\"ent-history-APR\"> </a></td><td>Apraxia</td></tr><tr><td style=\"white-space:nowrap\">CRA<a name=\"ent-history-CRA\"> </a></td><td>Craniofacial abnormalities</td></tr><tr><td style=\"white-space:nowrap\">DYS<a name=\"ent-history-DYS\"> </a></td><td>Dysarthria</td></tr><tr><td style=\"white-space:nowrap\">HOAR<a name=\"ent-history-HOAR\"> </a></td><td>Hoarseness </td></tr><tr><td style=\"white-space:nowrap\">L<a name=\"ent-history-L\"> </a></td><td>Lisping</td></tr><tr><td style=\"white-space:nowrap\">SD<a name=\"ent-history-SD\"> </a></td><td>Spasmodic Dysphonia</td></tr><tr><td style=\"white-space:nowrap\">STU<a name=\"ent-history-STU\"> </a></td><td>Stuttering</td></tr><tr><td style=\"white-space:nowrap\">VCPAR<a name=\"ent-history-VCPAR\"> </a></td><td>Vocal Fold Paralysis</td></tr><tr><td style=\"white-space:nowrap\">Apha<a name=\"ent-history-Apha\"> </a></td><td>Aphasia</td></tr><tr><td style=\"white-space:nowrap\">DYSL<a name=\"ent-history-DYSL\"> </a></td><td>Dyslexia</td></tr><tr><td style=\"white-space:nowrap\">ADHD<a name=\"ent-history-ADHD\"> </a></td><td>ADHD</td></tr><tr><td style=\"white-space:nowrap\">DYSC<a name=\"ent-history-DYSC\"> </a></td><td>Dyscalculia</td></tr><tr><td style=\"white-space:nowrap\">DYSG<a name=\"ent-history-DYSG\"> </a></td><td>Dysgraphia</td></tr><tr><td style=\"white-space:nowrap\">DYSP<a name=\"ent-history-DYSP\"> </a></td><td>Dyspraxia</td></tr><tr><td style=\"white-space:nowrap\">PNTD<a name=\"ent-history-PNTD\"> </a></td><td>Prefer not to disclose </td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"ent-history-O\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"ent-history-N\"> </a></td><td>None</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/ent-history"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ENTHistory"] ; # 
+  fhir:title [ fhir:v "Questionnaire ent history codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The codes required for Questionnaire Cofounders"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "64"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "CEI" ] ;
+     fhir:display [ fhir:v "Chronic ear infection" ]
+  ] [
+     fhir:code [ fhir:v "CR" ] ;
+     fhir:display [ fhir:v "Chronic rhinosinusitis" ]
+  ] [
+     fhir:code [ fhir:v "CI" ] ;
+     fhir:display [ fhir:v "Cochlear implant" ]
+  ] [
+     fhir:code [ fhir:v "CT" ] ;
+     fhir:display [ fhir:v "Cancer: throat" ]
+  ] [
+     fhir:code [ fhir:v "DY" ] ;
+     fhir:display [ fhir:v "Dysphagia (difficulty swallowing)" ]
+  ] [
+     fhir:code [ fhir:v "FS" ] ;
+     fhir:display [ fhir:v "Frequent sinusitis" ]
+  ] [
+     fhir:code [ fhir:v "HL" ] ;
+     fhir:display [ fhir:v "Hearing loss" ]
+  ] [
+     fhir:code [ fhir:v "M" ] ;
+     fhir:display [ fhir:v "Migraine" ]
+  ] [
+     fhir:code [ fhir:v "PCL" ] ;
+     fhir:display [ fhir:v "Pre-cancerous lesion (e.g., laryngeal leukoplakia or keratosis)" ]
+  ] [
+     fhir:code [ fhir:v "RAH" ] ;
+     fhir:display [ fhir:v "Radiation around head, neck, or ears" ]
+  ] [
+     fhir:code [ fhir:v "R" ] ;
+     fhir:display [ fhir:v "Reflux (heartburn)" ]
+  ] [
+     fhir:code [ fhir:v "RE" ] ;
+     fhir:display [ fhir:v "Reinke's edema, polypoid corditis, or smoker's larynx" ]
+  ] [
+     fhir:code [ fhir:v "SA" ] ;
+     fhir:display [ fhir:v "Seasonal allergies" ]
+  ] [
+     fhir:code [ fhir:v "SS" ] ;
+     fhir:display [ fhir:v "Sjogren's syndrome" ]
+  ] [
+     fhir:code [ fhir:v "TD" ] ;
+     fhir:display [ fhir:v "Thyroid disease" ]
+  ] [
+     fhir:code [ fhir:v "VI" ] ;
+     fhir:display [ fhir:v "Velopharyngeal insufficiency" ]
+  ] [
+     fhir:code [ fhir:v "VFP" ] ;
+     fhir:display [ fhir:v "Vocal fold polyp, nodule, or cyst" ]
+  ] [
+     fhir:code [ fhir:v "VH" ] ;
+     fhir:display [ fhir:v "Vocal hemorrhage or bleed" ]
+  ] [
+     fhir:code [ fhir:v "VTD" ] ;
+     fhir:display [ fhir:v "Voice/throat disorder" ]
+  ] [
+     fhir:code [ fhir:v "CES" ] ;
+     fhir:display [ fhir:v "Chronic ear surgery (e.g. mastoid)" ]
+  ] [
+     fhir:code [ fhir:v "ET" ] ;
+     fhir:display [ fhir:v "Ear tubes" ]
+  ] [
+     fhir:code [ fhir:v "SINS" ] ;
+     fhir:display [ fhir:v "Sinus Surgery" ]
+  ] [
+     fhir:code [ fhir:v "SR" ] ;
+     fhir:display [ fhir:v "Septoplasty/Rhinoplasty" ]
+  ] [
+     fhir:code [ fhir:v "SLS" ] ;
+     fhir:display [ fhir:v "Sleep surgery" ]
+  ] [
+     fhir:code [ fhir:v "TS" ] ;
+     fhir:display [ fhir:v "Throat surgery" ]
+  ] [
+     fhir:code [ fhir:v "THS" ] ;
+     fhir:display [ fhir:v "Thyroid surgery" ]
+  ] [
+     fhir:code [ fhir:v "TA" ] ;
+     fhir:display [ fhir:v "Tonsillectomy/Adenoidectomy" ]
+  ] [
+     fhir:code [ fhir:v "DP" ] ;
+     fhir:display [ fhir:v "Dental problem" ]
+  ] [
+     fhir:code [ fhir:v "ED" ] ;
+     fhir:display [ fhir:v "Ear discharge" ]
+  ] [
+     fhir:code [ fhir:v "EP" ] ;
+     fhir:display [ fhir:v "Ear pain" ]
+  ] [
+     fhir:code [ fhir:v "NC" ] ;
+     fhir:display [ fhir:v "Nasal Congestion/runny nose" ]
+  ] [
+     fhir:code [ fhir:v "NB" ] ;
+     fhir:display [ fhir:v "Nosebleeds" ]
+  ] [
+     fhir:code [ fhir:v "PWT" ] ;
+     fhir:display [ fhir:v "Pain while talking or singing" ]
+  ] [
+     fhir:code [ fhir:v "PND" ] ;
+     fhir:display [ fhir:v "Post-nasal drip" ]
+  ] [
+     fhir:code [ fhir:v "SP" ] ;
+     fhir:display [ fhir:v "Sinus pressure" ]
+  ] [
+     fhir:code [ fhir:v "ST" ] ;
+     fhir:display [ fhir:v "Sore Throat" ]
+  ] [
+     fhir:code [ fhir:v "T" ] ;
+     fhir:display [ fhir:v "Tinnitus" ]
+  ] [
+     fhir:code [ fhir:v "TVT" ] ;
+     fhir:display [ fhir:v "Tremors: vocal tremors" ]
+  ] [
+     fhir:code [ fhir:v "VC" ] ;
+     fhir:display [ fhir:v "Voice change" ]
+  ] [
+     fhir:code [ fhir:v "A" ] ;
+     fhir:display [ fhir:v "Asmtha" ]
+  ] [
+     fhir:code [ fhir:v "COPD" ] ;
+     fhir:display [ fhir:v "Chronic Obstructive Pulmonary Disease (COPD)" ]
+  ] [
+     fhir:code [ fhir:v "CC" ] ;
+     fhir:display [ fhir:v "Chronic cough" ]
+  ] [
+     fhir:code [ fhir:v "NBRE" ] ;
+     fhir:display [ fhir:v "Noisy breathing" ]
+  ] [
+     fhir:code [ fhir:v "SOB" ] ;
+     fhir:display [ fhir:v "Shortness of breath" ]
+  ] [
+     fhir:code [ fhir:v "CA" ] ;
+     fhir:display [ fhir:v "Craniofacial abnormalities" ]
+  ] [
+     fhir:code [ fhir:v "CUA" ] ;
+     fhir:display [ fhir:v "Cushingoid appearance" ]
+  ] [
+     fhir:code [ fhir:v "CWD" ] ;
+     fhir:display [ fhir:v "Chest wall deformities (scars, deformities)" ]
+  ] [
+     fhir:code [ fhir:v "APR" ] ;
+     fhir:display [ fhir:v "Apraxia" ]
+  ] [
+     fhir:code [ fhir:v "CRA" ] ;
+     fhir:display [ fhir:v "Craniofacial abnormalities" ]
+  ] [
+     fhir:code [ fhir:v "DYS" ] ;
+     fhir:display [ fhir:v "Dysarthria" ]
+  ] [
+     fhir:code [ fhir:v "HOAR" ] ;
+     fhir:display [ fhir:v "Hoarseness " ]
+  ] [
+     fhir:code [ fhir:v "L" ] ;
+     fhir:display [ fhir:v "Lisping" ]
+  ] [
+     fhir:code [ fhir:v "SD" ] ;
+     fhir:display [ fhir:v "Spasmodic Dysphonia" ]
+  ] [
+     fhir:code [ fhir:v "STU" ] ;
+     fhir:display [ fhir:v "Stuttering" ]
+  ] [
+     fhir:code [ fhir:v "VCPAR" ] ;
+     fhir:display [ fhir:v "Vocal Fold Paralysis" ]
+  ] [
+     fhir:code [ fhir:v "Apha" ] ;
+     fhir:display [ fhir:v "Aphasia" ]
+  ] [
+     fhir:code [ fhir:v "DYSL" ] ;
+     fhir:display [ fhir:v "Dyslexia" ]
+  ] [
+     fhir:code [ fhir:v "ADHD" ] ;
+     fhir:display [ fhir:v "ADHD" ]
+  ] [
+     fhir:code [ fhir:v "DYSC" ] ;
+     fhir:display [ fhir:v "Dyscalculia" ]
+  ] [
+     fhir:code [ fhir:v "DYSG" ] ;
+     fhir:display [ fhir:v "Dysgraphia" ]
+  ] [
+     fhir:code [ fhir:v "DYSP" ] ;
+     fhir:display [ fhir:v "Dyspraxia" ]
+  ] [
+     fhir:code [ fhir:v "PNTD" ] ;
+     fhir:display [ fhir:v "Prefer not to disclose " ]
+  ] [
+     fhir:code [ fhir:v "O" ] ;
+     fhir:display [ fhir:v "Other" ]
+  ] [
+     fhir:code [ fhir:v "N" ] ;
+     fhir:display [ fhir:v "None" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

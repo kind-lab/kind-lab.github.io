@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/CodeSystem/medication> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medication"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/medication</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AB<a name=\"medication-AB\"> </a></td><td>Antibiotics</td></tr><tr><td style=\"white-space:nowrap\">AH<a name=\"medication-AH\"> </a></td><td>Antihistamines</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"medication-C\"> </a></td><td>Cocaine use</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"medication-D\"> </a></td><td>Diuretics</td></tr><tr><td style=\"white-space:nowrap\">H<a name=\"medication-H\"> </a></td><td>Hormone use - oral contraceptives</td></tr><tr><td style=\"white-space:nowrap\">ICA<a name=\"medication-ICA\"> </a></td><td>Inhaled corticosteroids for asthma</td></tr><tr><td style=\"white-space:nowrap\">PK<a name=\"medication-PK\"> </a></td><td>Pain medications</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"medication-P\"> </a></td><td>Psychotropic medications</td></tr><tr><td style=\"white-space:nowrap\">TA<a name=\"medication-TA\"> </a></td><td>Tricyclic antidepressants</td></tr><tr><td style=\"white-space:nowrap\">V<a name=\"medication-V\"> </a></td><td>Vitamins</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"medication-O\"> </a></td><td>Other</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/medication"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Medication"] ; # 
+  fhir:title [ fhir:v "Questionnaire medication codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The codes required for Questionnaire Cofounders"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AB" ] ;
+     fhir:display [ fhir:v "Antibiotics" ]
+  ] [
+     fhir:code [ fhir:v "AH" ] ;
+     fhir:display [ fhir:v "Antihistamines" ]
+  ] [
+     fhir:code [ fhir:v "C" ] ;
+     fhir:display [ fhir:v "Cocaine use" ]
+  ] [
+     fhir:code [ fhir:v "D" ] ;
+     fhir:display [ fhir:v "Diuretics" ]
+  ] [
+     fhir:code [ fhir:v "H" ] ;
+     fhir:display [ fhir:v "Hormone use - oral contraceptives" ]
+  ] [
+     fhir:code [ fhir:v "ICA" ] ;
+     fhir:display [ fhir:v "Inhaled corticosteroids for asthma" ]
+  ] [
+     fhir:code [ fhir:v "PK" ] ;
+     fhir:display [ fhir:v "Pain medications" ]
+  ] [
+     fhir:code [ fhir:v "P" ] ;
+     fhir:display [ fhir:v "Psychotropic medications" ]
+  ] [
+     fhir:code [ fhir:v "TA" ] ;
+     fhir:display [ fhir:v "Tricyclic antidepressants" ]
+  ] [
+     fhir:code [ fhir:v "V" ] ;
+     fhir:display [ fhir:v "Vitamins" ]
+  ] [
+     fhir:code [ fhir:v "O" ] ;
+     fhir:display [ fhir:v "Other" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

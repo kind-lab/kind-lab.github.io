@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/CodeSystem/drinking-times> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "drinking-times"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/drinking-times</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"drinking-times-N\"> </a></td><td>Never</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"drinking-times-M\"> </a></td><td>Monthly or less</td></tr><tr><td style=\"white-space:nowrap\">TFM<a name=\"drinking-times-TFM\"> </a></td><td>2-4 times a month</td></tr><tr><td style=\"white-space:nowrap\">TTW<a name=\"drinking-times-TTW\"> </a></td><td>2-3 times a week</td></tr><tr><td style=\"white-space:nowrap\">FM<a name=\"drinking-times-FM\"> </a></td><td>4 or more times a week</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/drinking-times"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "DrinkingTimes"] ; # 
+  fhir:title [ fhir:v "Questionnaire alchohol times codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The codes required for Questionnaire Cofounders"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "N" ] ;
+     fhir:display [ fhir:v "Never" ]
+  ] [
+     fhir:code [ fhir:v "M" ] ;
+     fhir:display [ fhir:v "Monthly or less" ]
+  ] [
+     fhir:code [ fhir:v "TFM" ] ;
+     fhir:display [ fhir:v "2-4 times a month" ]
+  ] [
+     fhir:code [ fhir:v "TTW" ] ;
+     fhir:display [ fhir:v "2-3 times a week" ]
+  ] [
+     fhir:code [ fhir:v "FM" ] ;
+     fhir:display [ fhir:v "4 or more times a week" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
