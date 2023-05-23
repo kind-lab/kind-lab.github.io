@@ -33,10 +33,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -196,7 +196,7 @@
 
 
 
-  <pre class="xml" style="white-space: pre; overflow: hidden"><code>
+  <pre class="xml" style="white-space: pre; overflow: hidden"><code class="language-xml">
 
 &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition">PlanDefinition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;VbaiPlanDefinitionNeurologyExample&quot;/&gt;
@@ -206,34 +206,7 @@
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: PlanDefinition&lt;/b&gt;&lt;a name=&quot;VbaiPlanDefinitionNeurologyExample&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource PlanDefinition &amp;quot;VbaiPlanDefinitionNeurologyExample&amp;quot; &lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-vbai-plan-definition.html&quot;&gt;Vbai Plan Definition&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;code&gt;https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionNeurologyExample&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 0.1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Neurology Cohort Protcol&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2023-04-28&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: KinD Lab&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: KinD Lab: &lt;a href=&quot;http://fhir.kindlab.sickkids.ca&quot;&gt;http://fhir.kindlab.sickkids.ca&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This is a plandefinition for Neurology cohort protocol&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.1&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Consent&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Ask participant for consent&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;patient&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Actions&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Prefix&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Priority&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.1&lt;/td&gt;&lt;td&gt;Login for clinician&lt;/td&gt;&lt;td&gt;Login for clinician&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.2&lt;/td&gt;&lt;td&gt;Enroll participant&lt;/td&gt;&lt;td&gt;Enroll participant&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.1&lt;/td&gt;&lt;td&gt;Retrieve Consent&lt;/td&gt;&lt;td&gt;Before you participate in this study, we need your consent. The consent gives you information of what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent.&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.2&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Demographics&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Gather Demographics that need to be collected&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: &lt;a href=&quot;Questionnaire-VbaiQuestionnaireDemographicExample2.html&quot;&gt;Demographic Surveys2&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.3&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Acoustic Tasks&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Acoustic tasks across all cohorts&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;h3&gt;Actions&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Prefix&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Priority&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3.1&lt;/td&gt;&lt;td&gt;Perform Acoustic tasks&lt;/td&gt;&lt;td&gt;Audio check (Audio check: Before we start, let’s test your microphone. Click on the Start button below and say something out loud like “Testing 1, 2, 3”. Recording will stop automatically after 5 seconds. Click Play to hear your recording. If you hear background noise, please go to a quieter place and try again by selecting Redo Recording.  If it sounds good, continue.&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3 Task 1&lt;/td&gt;&lt;td&gt;Prolonged vowel: ​Count to 3 and say “e” for 5 seconds &lt;/td&gt;&lt;td&gt;This task helps us analyze features in your voice&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3 Task 2&lt;/td&gt;&lt;td&gt;Maximum phonation time: Say /e/  (max. phonation time ): 'Using your normal voice, take a deep breath and say /e/' until you run completely out of air (click stop when you run out of air)'. (need to ask for this task twice!) &lt;/td&gt;&lt;td&gt;This tasks helps us analyze the way your respiration is connected to your voice&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3 Task 3&lt;/td&gt;&lt;td&gt;Glides: “Using the sound “e”, glide from your lowest pitch possible to the highest pitch possible. Rest, take a breath and then glide from your highest pitch possible to the lowest pitch possible”&lt;/td&gt;&lt;td&gt;This task helps us understand how your vocal folds stretch&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3 Task 4&lt;/td&gt;&lt;td&gt;Rainbow passage :  'Read the following passage using your normal voice:' Short Rainbow passage: '￼Read the following passage using your normal voice: When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow. The rainbow is a division of white light into many beautiful colors.  These take the shape of a long round arch, with its path high above, and its two ends apparently beyond the horizon. There is, according to legend, a boiling pot of gold at one end. &lt;/td&gt;&lt;td&gt;This is a standardized passage that contains all the important sounds of the English language&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3 Task 5&lt;/td&gt;&lt;td&gt;Task 5: Cape-V Sentences: “Read these sentences using your normal voice” 
-      The blue spot is on the key again,
-      How hard did he hit him?,
-      We were away a year ago,
-      We eat eggs every easter,
-      My momma makes lemon muffins,
-      Peter will keep at the peak &lt;/td&gt;&lt;td&gt;This is a standardized passage that contains all the important sounds of the English language&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3 Task 6&lt;/td&gt;&lt;td&gt; Task 6: Caterpillar passage 'Read the following passage using your normal voice:' Caterpillar passage: Do you like amusement parks? Well, I sure do. To amuse myself, I went twice last spring. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic rollercoaster high above the ground. When I saw how high the Caterpillar rose into the bright blue sky I knew it was for me. After waiting in line for thirty minutes, I made it to the front where the man measured my height to see if I was tall enough. I gave the man my coins, asked for change, and jumped on the cart. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I could see the parking lot. Boy was I SCARED! I thought to myself, “There’s no turning back now.” People were so scared they screamed as we swiftly zoomed fast, fast, and faster along the tracks. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time to pack the car and drive home. That night I dreamt of the wild ride on the Caterpillar. Taking a trip to the amusement park and riding on the Caterpillar was my MOST memorable moment ever! &lt;/td&gt;&lt;td&gt;This is a standardized passage that contains all the important words to test your articulation&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3 Task 7&lt;/td&gt;&lt;td&gt;Task 7: ​￼​Diadocokinesis:[Text Wrapping Break] 
-    Say the syllables as they appear on your screen – Pa / Ta / Ka,
-    Now record yourself repeating the syllable /PA/ as fast as possible 10 times,
-    Record yourself repeating the syllable /TA/ as fast as possible 10 times,
-    Record yourself repeating the syllable /KA/ as fast as possible 10 times,
-    Now repeat the work /Pataka/ as fast as possible 10 times,
-    Now repeat the word /buttercup/ as fast as possible 10 times &lt;/td&gt;&lt;td&gt;This task tests the way you can articulate the sounds and can gives neurological queues&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3 Task 8&lt;/td&gt;&lt;td&gt;Task 8: Free speech: Open ended question (generic) chose 1-2 
- “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)- Options:  
-
-    Can you talk to us about why you are interested by this study? Who told you about it? Why is it meaningful or valuable to you? How do you think it will help patients in the future?,
-
-    Can you tell us a little bit about your health condition? When did it start, what kind of symptoms have you had and for how long? Tell us how you are managing it and how you are doing?​​​,
-
-​​​​    How would you get from where you are now to the grocery store? Explain with as much detail as possible.​​​​​​​&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3 Task 9&lt;/td&gt;&lt;td&gt;Task 9: Respiration and cough:  
-'Respiratory sounds can also provide information on your health, let’s record them” - 
-
-First, let's hear you breath comfortably for 30 seconds,
-After pressing on record, take 5 big breaths in and out through your nose with your mouth closed,
-After pressing record, cough 5 times,
-Now try again (need that task twice) &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3 Task 10&lt;/td&gt;&lt;td&gt;Picture description: “You will be shown a picture, please describe what you see in your own words. You can keep talking until the time runs out” (1 min)&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3 Task 11&lt;/td&gt;&lt;td&gt;Task 11: Story Recall:  “You are given a text. Read the text so you familiarize yourself with it. You have up to 5 minutes to read it as many times as you want. When you are ready, you will be asked to recall the story. This can be in your own words.” 
-
--  You wished to know all about my grandfather. Well, he is nearly ninety-three years old. He dresses himself in an ancient black frock coat, usually minus several buttons; yet he still thinks as swiftly as ever. A long, flowing beard clings to his chin, giving those who observe him a pronounced feeling of the utmost respect. When he speaks his voice is just a bit cracked and quivers a trifle. Twice each day he plays skillfully and with zest upon our small organ. Except in the winter when the ooze or snow or ice prevents, he slowly takes a short walk in the open air each day. We have often urged him to walk more and smoke less, but he always answers, “Banana Oil!” Grandfather likes to be modern in his language. &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.4&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: PMHX and List of Confounders&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Gather PMHx and Cofounders that need to be collected&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: &lt;a href=&quot;Questionnaire-VbaiQuestionnaireCofoundersExample2.html&quot;&gt;Cofounder Surveys&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.5&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Questionnaires&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Administer validated questionnaires&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;h3&gt;Actions&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Prefix&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Priority&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5.1&lt;/td&gt;&lt;td&gt;PHQ9 Questionniare&lt;/td&gt;&lt;td&gt;Administer PHQ9 Questionnaire&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;Questionnaire-PHQ9schema.html&quot;&gt;PHQ9_schema&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5.2&lt;/td&gt;&lt;td&gt;GAD7 Questionniare&lt;/td&gt;&lt;td&gt;Administer GAD7 Questionnaire&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;Questionnaire-GAD7schema.html&quot;&gt;GAD7_schema&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.6&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Feedback Pilot&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Questions for feedback for pilot​&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: B&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Part B Neurology Disorders&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Acoustic Tasks specific to Neuro cohort ​&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;h3&gt;Actions&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Prefix&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;B.1 Task 1&lt;/td&gt;&lt;td&gt;Montreal Cognitive Assessment (MoCA Test)&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;B.1 Task 2&lt;/td&gt;&lt;td&gt;Word-colour Stroop:&lt;/td&gt;&lt;td&gt;You will be shown a word (one of 5 colour words - red, green, blue, brown, purple; such as ‘blue’, or a baseline stimulus, ‘oooo’), which is displayed in a congruent or incongruent colour (one of 5 colour stimuli). You have to name the colour in which the word is displayed. (no time limit) &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;B.1 Task 3&lt;/td&gt;&lt;td&gt;Productive vocabulary link:&lt;/td&gt;&lt;td&gt;You will be shown a target word. You will have to provide a definition for it (no time limit).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;B.1 Task 4&lt;/td&gt;&lt;td&gt;Random item generation / semantic fluency link:&lt;/td&gt;&lt;td&gt;You will have to speak a series of (I) random, non-repeating letters or numbers, or (ii) items from a given category (e.g., cities, animals, etc.), with the goal of maximizing the number of items. (time limit: 60 seconds). &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;B.1 Task 5&lt;/td&gt;&lt;td&gt;Winograd schemas link &lt;/td&gt;&lt;td&gt;Read each sentence, and answer the question by selecting one of the options:
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: PlanDefinition&lt;/b&gt;&lt;a name=&quot;VbaiPlanDefinitionNeurologyExample&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource PlanDefinition &amp;quot;VbaiPlanDefinitionNeurologyExample&amp;quot; &lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-vbai-plan-definition.html&quot;&gt;Vbai Plan Definition&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;code&gt;https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionNeurologyExample&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 0.1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Neurology Cohort Protcol&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2023-04-28&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: KinD Lab&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: KinD Lab: &lt;a href=&quot;http://fhir.kindlab.sickkids.ca&quot;&gt;http://fhir.kindlab.sickkids.ca&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This is a plandefinition for Neurology cohort protocol&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.1 - 1.6&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Required task across all chorts&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: List of tasks and actions done across all 5 cohorts&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: &lt;a href=&quot;PlanDefinition-VbaiPlanDefinitionExample.html&quot;&gt;Cohort Protcol&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: B&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Part B Neurology Disorders&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Acoustic Tasks specific to Neuro cohort ​&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;h3&gt;Actions&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Prefix&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;B.1 Task 1&lt;/td&gt;&lt;td&gt;Montreal Cognitive Assessment (MoCA Test)&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;B.1 Task 2&lt;/td&gt;&lt;td&gt;Word-colour Stroop:&lt;/td&gt;&lt;td&gt;You will be shown a word (one of 5 colour words - red, green, blue, brown, purple; such as ‘blue’, or a baseline stimulus, ‘oooo’), which is displayed in a congruent or incongruent colour (one of 5 colour stimuli). You have to name the colour in which the word is displayed. (no time limit) &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;B.1 Task 3&lt;/td&gt;&lt;td&gt;Productive vocabulary link:&lt;/td&gt;&lt;td&gt;You will be shown a target word. You will have to provide a definition for it (no time limit).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;B.1 Task 4&lt;/td&gt;&lt;td&gt;Random item generation / semantic fluency link:&lt;/td&gt;&lt;td&gt;You will have to speak a series of (I) random, non-repeating letters or numbers, or (ii) items from a given category (e.g., cities, animals, etc.), with the goal of maximizing the number of items. (time limit: 60 seconds). &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;B.1 Task 5&lt;/td&gt;&lt;td&gt;Winograd schemas link &lt;/td&gt;&lt;td&gt;Read each sentence, and answer the question by selecting one of the options:
     
 The scientists are studying three species of fish that have recently been found living in the Indian Ocean. They began two years ago. Who or what began two years ago? 
 
@@ -282,195 +255,12 @@ The delivery truck zoomed by the school bus because it was going so fast. What w
   &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.description">description</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;This is a plandefinition for Neurology cohort protocol&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action">action</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.1&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Consent&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ask participant for consent&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.participant">participant</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.participant.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;patient&quot;/&gt;
-    &lt;/participant&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.1.1&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Login for clinician&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Login for clinician&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.1.2&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Enroll participant&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Enroll participant&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.1.1&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Retrieve Consent&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Before you participate in this study, we need your consent. The consent gives you information of what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent.&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-  &lt;/action&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action">action</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.2&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Demographics&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Gather Demographics that need to be collected&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.1 - 1.6&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Required task across all chorts&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;List of tasks and actions done across all 5 cohorts&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://voicecollab.ai/fhir/Questionnaire/VbaiQuestionnaireDemographicExample2&quot;/&gt;
-  &lt;/action&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action">action</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.3&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Acoustic Tasks&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Acoustic tasks across all cohorts&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.3.1&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Perform Acoustic tasks&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Audio check (Audio check: Before we start, let’s test your microphone. Click on the Start button below and say something out loud like “Testing 1, 2, 3”. Recording will stop automatically after 5 seconds. Click Play to hear your recording. If you hear background noise, please go to a quieter place and try again by selecting Redo Recording.  If it sounds good, continue.&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.3 Task 1&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Prolonged vowel: ​Count to 3 and say “e” for 5 seconds &quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;This task helps us analyze features in your voice&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.3 Task 2&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Maximum phonation time: Say /e/  (max. phonation time ): 'Using your normal voice, take a deep breath and say /e/' until you run completely out of air (click stop when you run out of air)'. (need to ask for this task twice!) &quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;This tasks helps us analyze the way your respiration is connected to your voice&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.3 Task 3&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Glides: “Using the sound “e”, glide from your lowest pitch possible to the highest pitch possible. Rest, take a breath and then glide from your highest pitch possible to the lowest pitch possible”&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;This task helps us understand how your vocal folds stretch&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.3 Task 4&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rainbow passage :  'Read the following passage using your normal voice:' Short Rainbow passage: '￼Read the following passage using your normal voice: When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow. The rainbow is a division of white light into many beautiful colors.  These take the shape of a long round arch, with its path high above, and its two ends apparently beyond the horizon. There is, according to legend, a boiling pot of gold at one end. &quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;This is a standardized passage that contains all the important sounds of the English language&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.3 Task 5&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Task 5: Cape-V Sentences: “Read these sentences using your normal voice” 
-      The blue spot is on the key again,
-      How hard did he hit him?,
-      We were away a year ago,
-      We eat eggs every easter,
-      My momma makes lemon muffins,
-      Peter will keep at the peak &quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;This is a standardized passage that contains all the important sounds of the English language&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.3 Task 6&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot; Task 6: Caterpillar passage 'Read the following passage using your normal voice:' Caterpillar passage: Do you like amusement parks? Well, I sure do. To amuse myself, I went twice last spring. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic rollercoaster high above the ground. When I saw how high the Caterpillar rose into the bright blue sky I knew it was for me. After waiting in line for thirty minutes, I made it to the front where the man measured my height to see if I was tall enough. I gave the man my coins, asked for change, and jumped on the cart. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I could see the parking lot. Boy was I SCARED! I thought to myself, “There’s no turning back now.” People were so scared they screamed as we swiftly zoomed fast, fast, and faster along the tracks. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time to pack the car and drive home. That night I dreamt of the wild ride on the Caterpillar. Taking a trip to the amusement park and riding on the Caterpillar was my MOST memorable moment ever! &quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;This is a standardized passage that contains all the important words to test your articulation&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.3 Task 7&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Task 7: ​￼​Diadocokinesis:[Text Wrapping Break] 
-    Say the syllables as they appear on your screen – Pa / Ta / Ka,
-    Now record yourself repeating the syllable /PA/ as fast as possible 10 times,
-    Record yourself repeating the syllable /TA/ as fast as possible 10 times,
-    Record yourself repeating the syllable /KA/ as fast as possible 10 times,
-    Now repeat the work /Pataka/ as fast as possible 10 times,
-    Now repeat the word /buttercup/ as fast as possible 10 times &quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;This task tests the way you can articulate the sounds and can gives neurological queues&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.3 Task 8&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Task 8: Free speech: Open ended question (generic) chose 1-2 
- “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)- Options:  
-
-    Can you talk to us about why you are interested by this study? Who told you about it? Why is it meaningful or valuable to you? How do you think it will help patients in the future?,
-
-    Can you tell us a little bit about your health condition? When did it start, what kind of symptoms have you had and for how long? Tell us how you are managing it and how you are doing?​​​,
-
-​​​​    How would you get from where you are now to the grocery store? Explain with as much detail as possible.​​​​​​​&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.3 Task 9&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Task 9: Respiration and cough:  
-'Respiratory sounds can also provide information on your health, let’s record them” - 
-
-First, let's hear you breath comfortably for 30 seconds,
-After pressing on record, take 5 big breaths in and out through your nose with your mouth closed,
-After pressing record, cough 5 times,
-Now try again (need that task twice) &quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.3 Task 10&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Picture description: “You will be shown a picture, please describe what you see in your own words. You can keep talking until the time runs out” (1 min)&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.3 Task 11&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Task 11: Story Recall:  “You are given a text. Read the text so you familiarize yourself with it. You have up to 5 minutes to read it as many times as you want. When you are ready, you will be asked to recall the story. This can be in your own words.” 
-
--  You wished to know all about my grandfather. Well, he is nearly ninety-three years old. He dresses himself in an ancient black frock coat, usually minus several buttons; yet he still thinks as swiftly as ever. A long, flowing beard clings to his chin, giving those who observe him a pronounced feeling of the utmost respect. When he speaks his voice is just a bit cracked and quivers a trifle. Twice each day he plays skillfully and with zest upon our small organ. Except in the winter when the ooze or snow or ice prevents, he slowly takes a short walk in the open air each day. We have often urged him to walk more and smoke less, but he always answers, “Banana Oil!” Grandfather likes to be modern in his language. &quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;/action&gt;
-  &lt;/action&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action">action</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.4&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;PMHX and List of Confounders&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Gather PMHx and Cofounders that need to be collected&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://voicecollab.ai/fhir/Questionnaire/VbaiQuestionnaireCofoundersExample2&quot;/&gt;
-  &lt;/action&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action">action</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.5&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Questionnaires&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Administer validated questionnaires&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.5.1&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;PHQ9 Questionniare&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Administer PHQ9 Questionnaire&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://voicecollab.ai/fhir/Questionnaire/PHQ9schema&quot;/&gt;
-    &lt;/action&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.5.2&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GAD7 Questionniare&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Administer GAD7 Questionnaire&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://voicecollab.ai/fhir/Questionnaire/GAD7schema&quot;/&gt;
-    &lt;/action&gt;
-  &lt;/action&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action">action</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.6&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Feedback Pilot&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Questions for feedback for pilot​&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;routine&quot;/&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionExample&quot;/&gt;
   &lt;/action&gt;
   &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action">action</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;B&quot;/&gt;
@@ -588,7 +378,7 @@ The delivery truck zoomed by the school bus because it was going so fast. What w
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 17, 2023 15:26-0400">2023-05-17</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 23, 2023 11:50-0400">2023-05-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
