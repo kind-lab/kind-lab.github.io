@@ -1,10 +1,10 @@
 ﻿VoiceaBiomarkerforAI : Validation Results
 =========================================
 
-err = 4, warn = 95, info = 2
-IG Publisher Version: 1.3.9 Out of date - current version is 1.3.11
-Generated Tue May 23 11:52:21 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai#0.1.0 (canonical = https://voicecollab.ai/fhir)
- Build Errors : 12 / 4 / 0
+err = 4, warn = 96, info = 2
+IG Publisher Version: 1.3.9 Out of date - current version is ?pub-ver-1?
+Generated Fri May 26 16:06:29 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai#0.1.0 (canonical = https://voicecollab.ai/fhir)
+ Build Errors : 9 / 4 / 0
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-Who-Completed-Survey : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-Yes-No-Some : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-child-education : 0 / 1 / 1
@@ -55,8 +55,8 @@ Generated Tue May 23 11:52:21 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-PHQ9schema : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-QuestionnaireGAD7Example : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-QuestionnairePHQ9Example : 0 / 1 / 1
- /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-VbaiQuestionnaireCofoundersExample : 1 / 10 / 1
- /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-VbaiQuestionnaireCofoundersExample2 : 0 / 4 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-VbaiQuestionnaireConfoundersExample : 1 / 10 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-VbaiQuestionnaireConfoundersExample2 : 0 / 4 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-VbaiQuestionnaireDemographicExample : 0 / 8 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-VbaiQuestionnaireDemographicExample2 : 0 / 2 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-body-height : 0 / 0 / 1
@@ -85,7 +85,7 @@ Generated Tue May 23 11:52:21 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-household-makeup : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-household-status : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-immigration-status : 0 / 0 / 1
- /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-marital-status : 0 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-marital-status : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-medication : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-menstration-menopause : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-neurological-history : 0 / 1 / 1
@@ -109,9 +109,6 @@ ERROR: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/output/ValueSet-fi
 ERROR: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/output/ValueSet-financial-assistance.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 240, column 627: The link 'CodeSystem-disability-status.html#disability-status-SNAP' for "SNAP" cannot be resolved (valid targets: [codesystem-questionnaire-codes-disability-status, segment-header, disability-status-DAW, publish-box, bottom, hl7-logo, disability-status-DUW, segment-post-footer, disability-status-PNA, family-logo, family-nav, ig-status, top, disability-status-AB, root, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/output/ValueSet-financial-assistance.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 240, column 947: The link 'CodeSystem-disability-status.html#disability-status-WIC' for "WIC" cannot be resolved (valid targets: [codesystem-questionnaire-codes-disability-status, segment-header, disability-status-DAW, publish-box, bottom, hl7-logo, disability-status-DUW, segment-post-footer, disability-status-PNA, family-logo, family-nav, ig-status, top, disability-status-AB, root, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/output/ValueSet-financial-assistance.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 240, column 1297: The link 'CodeSystem-disability-status.html#disability-status-TANFGA' for "TANFGA" cannot be resolved (valid targets: [codesystem-questionnaire-codes-disability-status, segment-header, disability-status-DAW, publish-box, bottom, hl7-logo, disability-status-DUW, segment-post-footer, disability-status-PNA, family-logo, family-nav, ig-status, top, disability-status-AB, root, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/output/ValueSet-marital-status.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 240, column 1456: The link 'CodeSystem-marital-status.html#marital-status-SN' for "SN" cannot be resolved (valid targets: [marital-status-RNL, marital-status-SD, marital-status-D, segment-header, publish-box, bottom, hl7-logo, codesystem-questionnaire-codes-for-marital-status, marital-status-M, segment-post-footer, family-logo, marital-status-RL, family-nav, ig-status, marital-status-S, top, marital-status-W, root, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/output/ValueSet-marital-status.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 240, column 1720: The link 'CodeSystem-marital-status.html#marital-status-UT' for "UT" cannot be resolved (valid targets: [marital-status-RNL, marital-status-SD, marital-status-D, segment-header, publish-box, bottom, hl7-logo, codesystem-questionnaire-codes-for-marital-status, marital-status-M, segment-post-footer, family-logo, marital-status-RL, family-nav, ig-status, marital-status-S, top, marital-status-W, root, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/output/ValueSet-marital-status.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 240, column 1981: The link 'CodeSystem-marital-status.html#marital-status-UP' for "UP" cannot be resolved (valid targets: [marital-status-RNL, marital-status-SD, marital-status-D, segment-header, publish-box, bottom, hl7-logo, codesystem-questionnaire-codes-for-marital-status, marital-status-M, segment-post-footer, family-logo, marital-status-RL, family-nav, ig-status, marital-status-S, top, marital-status-W, root, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/output/ValueSet-transportation-type.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 240, column 322: The link 'CodeSystem-transportation-type.html#transportation-type-p' for "p" cannot be resolved - case is wrong ('transportation-type-P')
 ERROR: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/output/index.html#/html/body/div/div/div/div/div/p/a at Line 200, column 146: The link 'http://hl7.org/fhir/us/core/STU5/' for "US Core STU5" cannot be resolved
 ERROR: /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/output/index.html#/html/body/div/div/div/div/div/p/a at Line 203, column 230: The link 'reporter.nih.gov/search/ZslK_vrR0kapVRnpwKvsmQ/project-details/10473236' for "Voice as a Biomarker for AI" cannot be resolved
@@ -212,23 +209,23 @@ WARNING: PlanDefinition/VbaiPlanDefinitionVoiceExample: PlanDefinition.action[3]
 WARNING: Questionnaire/QuestionnaireGAD7Example: Questionnaire.item[2].answerOption[2].value.ofType(string): value should not start or finish with whitespace 'Very difficult '
 == fsh-generated/resources/Questionnaire-QuestionnairePHQ9Example.json ==
 WARNING: Questionnaire/QuestionnairePHQ9Example: Questionnaire.item[2].answerOption[2].value.ofType(string): value should not start or finish with whitespace 'Very difficult '
-== fsh-generated/resources/Questionnaire-VbaiQuestionnaireCofoundersExample.json ==
-ERROR: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[2]: Rule que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet' Failed
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].text: value should not start or finish with whitespace 'Do you have any of these voice, communication, or hearing conditions or had any of the interventions mentioned below? (check all that apply)\u00a0'
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].answerOption[20].value.ofType(string): value should not start or finish with whitespace 'Chronic ear surgery (e.g. mastoid)\u00a0'
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].answerOption[22].value.ofType(string): value should not start or finish with whitespace 'Chronic ear surgery (e.g. mastoid)\u00a0'
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].answerOption[54].value.ofType(string): value should not start or finish with whitespace 'Hoarseness\u00a0'
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].answerOption[55].value.ofType(string): value should not start or finish with whitespace 'Lisping\u00a0'
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[11].answerOption[65].value.ofType(string): value should not start or finish with whitespace 'Prefer not to disclose\u00a0'
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[12].text: value should not start or finish with whitespace 'Have you been diagnosed with any of these neurological health conditions by a clinician? (check all that apply)\u00a0'
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[13].text: value should not start or finish with whitespace 'Psychiatric conditions: Have you been diagnosed with any of these mental health conditions by a clinician? (check all that apply)\u00a0'
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[17].text: value should not start or finish with whitespace 'Do you do one of these jobs or hobbies that requires using your voice for many hours a day (check all that apply): '
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample: Questionnaire.item[17].answerOption[3].value.ofType(string): value should not start or finish with whitespace 'K-12 Teacher '
-== fsh-generated/resources/Questionnaire-VbaiQuestionnaireCofoundersExample2.json ==
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample2: Questionnaire.item[11].text: value should not start or finish with whitespace 'Do you have any of these voice, communication, or hearing conditions or had any of the interventions mentioned below? (check all that apply)\u00a0'
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample2: Questionnaire.item[12].text: value should not start or finish with whitespace 'Have you been diagnosed with any of these neurological health conditions by a clinician? (check all that apply)\u00a0'
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample2: Questionnaire.item[13].text: value should not start or finish with whitespace 'Psychiatric conditions: Have you been diagnosed with any of these mental health conditions by a clinician? (check all that apply)\u00a0'
-WARNING: Questionnaire/VbaiQuestionnaireCofoundersExample2: Questionnaire.item[17].text: value should not start or finish with whitespace 'Do you do one of these jobs or hobbies that requires using your voice for many hours a day (check all that apply): '
+== fsh-generated/resources/Questionnaire-VbaiQuestionnaireConfoundersExample.json ==
+ERROR: Questionnaire/VbaiQuestionnaireConfoundersExample: Questionnaire.item[2]: Rule que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet' Failed
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample: Questionnaire.item[11].text: value should not start or finish with whitespace 'Do you have any of these voice, communication, or hearing conditions or had any of the interventions mentioned below? (check all that apply)\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample: Questionnaire.item[11].answerOption[20].value.ofType(string): value should not start or finish with whitespace 'Chronic ear surgery (e.g. mastoid)\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample: Questionnaire.item[11].answerOption[22].value.ofType(string): value should not start or finish with whitespace 'Chronic ear surgery (e.g. mastoid)\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample: Questionnaire.item[11].answerOption[54].value.ofType(string): value should not start or finish with whitespace 'Hoarseness\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample: Questionnaire.item[11].answerOption[55].value.ofType(string): value should not start or finish with whitespace 'Lisping\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample: Questionnaire.item[11].answerOption[65].value.ofType(string): value should not start or finish with whitespace 'Prefer not to disclose\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample: Questionnaire.item[12].text: value should not start or finish with whitespace 'Have you been diagnosed with any of these neurological health conditions by a clinician? (check all that apply)\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample: Questionnaire.item[13].text: value should not start or finish with whitespace 'Psychiatric conditions: Have you been diagnosed with any of these mental health conditions by a clinician? (check all that apply)\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample: Questionnaire.item[17].text: value should not start or finish with whitespace 'Do you do one of these jobs or hobbies that requires using your voice for many hours a day (check all that apply): '
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample: Questionnaire.item[17].answerOption[3].value.ofType(string): value should not start or finish with whitespace 'K-12 Teacher '
+== fsh-generated/resources/Questionnaire-VbaiQuestionnaireConfoundersExample2.json ==
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample2: Questionnaire.item[11].text: value should not start or finish with whitespace 'Do you have any of these voice, communication, or hearing conditions or had any of the interventions mentioned below? (check all that apply)\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample2: Questionnaire.item[12].text: value should not start or finish with whitespace 'Have you been diagnosed with any of these neurological health conditions by a clinician? (check all that apply)\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample2: Questionnaire.item[13].text: value should not start or finish with whitespace 'Psychiatric conditions: Have you been diagnosed with any of these mental health conditions by a clinician? (check all that apply)\u00a0'
+WARNING: Questionnaire/VbaiQuestionnaireConfoundersExample2: Questionnaire.item[17].text: value should not start or finish with whitespace 'Do you do one of these jobs or hobbies that requires using your voice for many hours a day (check all that apply): '
 == fsh-generated/resources/Questionnaire-VbaiQuestionnaireDemographicExample.json ==
 WARNING: Questionnaire/VbaiQuestionnaireDemographicExample: Questionnaire.item[6].answerOption[12].value.ofType(string): value should not start or finish with whitespace 'Grade 1 '
 WARNING: Questionnaire/VbaiQuestionnaireDemographicExample: Questionnaire.item[7].text: value should not start or finish with whitespace 'Do you have an individualized education plan or some other adaptive education plan? '
@@ -285,6 +282,7 @@ WARNING: ValueSet/gender-identity: ValueSet: The ShareableValueSet profile says 
 == fsh-generated/resources/ValueSet-household-status.json ==
 == fsh-generated/resources/ValueSet-immigration-status.json ==
 == fsh-generated/resources/ValueSet-marital-status.json ==
+WARNING: ValueSet/marital-status: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-medication.json ==
 WARNING: ValueSet/medication: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-menstration-menopause.json ==

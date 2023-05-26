@@ -3,15 +3,14 @@
   "id" : "marital-status",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-marital-status-D\"> </a>\u00a0\u00a0<a href=\"CodeSystem-marital-status.html#marital-status-D\">D</a></td><td>https://voicecollab.ai/fhir/CodeSystem/marital-status</td><td>Divorced</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-marital-status-RL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-marital-status.html#marital-status-RL\">RL</a></td><td>https://voicecollab.ai/fhir/CodeSystem/marital-status</td><td>In a relationship, not married, living with partner</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-marital-status-RNL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-marital-status.html#marital-status-RNL\">RNL</a></td><td>https://voicecollab.ai/fhir/CodeSystem/marital-status</td><td>In a relationship, not married, not living with partner</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-marital-status-M\"> </a>\u00a0\u00a0<a href=\"CodeSystem-marital-status.html#marital-status-M\">M</a></td><td>https://voicecollab.ai/fhir/CodeSystem/marital-status</td><td>Married</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-marital-status-SN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-marital-status.html#marital-status-SN\">SN</a></td><td>https://voicecollab.ai/fhir/CodeSystem/marital-status</td><td>Separated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-marital-status-UT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-marital-status.html#marital-status-UT\">UT</a></td><td>https://voicecollab.ai/fhir/CodeSystem/marital-status</td><td>Single</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-marital-status-UP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-marital-status.html#marital-status-UP\">UP</a></td><td>https://voicecollab.ai/fhir/CodeSystem/marital-status</td><td>Widowed</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-marital-status.html\"><code>https://voicecollab.ai/fhir/CodeSystem/marital-status</code></a></li></ul></div>"
   },
   "url" : "https://voicecollab.ai/fhir/ValueSet/marital-status",
   "version" : "0.1.0",
   "name" : "MaritalStatus",
   "title" : "Marital Status",
-  "status" : "draft",
-  "experimental" : true,
-  "date" : "2023-05-23T11:50:31-04:00",
+  "status" : "active",
+  "date" : "2023-05-11",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -23,73 +22,7 @@
   "description" : "Valueset for capturing Marital Status",
   "compose" : {
     "include" : [{
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/marital-status",
-      "concept" : [{
-        "code" : "D",
-        "display" : "Divorced"
-      },
-      {
-        "code" : "RL",
-        "display" : "In a relationship, not married, living with partner"
-      },
-      {
-        "code" : "RNL",
-        "display" : "In a relationship, not married, not living with partner"
-      },
-      {
-        "code" : "M",
-        "display" : "Married"
-      },
-      {
-        "code" : "SD",
-        "display" : "Separated"
-      },
-      {
-        "code" : "S",
-        "display" : "Single"
-      },
-      {
-        "code" : "W",
-        "display" : "Widowed"
-      }]
-    }]
-  },
-  "expansion" : {
-    "timestamp" : "2023-05-11T10:00:00Z",
-    "contains" : [{
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/marital-status",
-      "code" : "D",
-      "display" : "Divorced"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/marital-status",
-      "code" : "RL",
-      "display" : "In a relationship, not married, living with partner"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/marital-status",
-      "code" : "RNL",
-      "display" : "In a relationship, not married, not living with partner"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/marital-status",
-      "code" : "M",
-      "display" : "Married"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/marital-status",
-      "code" : "SN",
-      "display" : "Separated"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/marital-status",
-      "code" : "UT",
-      "display" : "Single"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/marital-status",
-      "code" : "UP",
-      "display" : "Widowed"
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/marital-status"
     }]
   }
 }
