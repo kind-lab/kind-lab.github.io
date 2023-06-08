@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="81a21b5f-a48f-456c-8ecd-ae2e37f701eb"/>
+  <id value="51df5aba-f4ec-4a6a-a7c9-ad8daea3e843"/>
   <meta>
-    <lastUpdated value="2023-05-30T15:29:53.776-04:00"/>
+    <lastUpdated value="2023-06-08T09:02:09.437-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -159,8 +159,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:4af8414e-913a-4296-a85f-5894e9444b8a"/>
-          <timestamp value="2023-05-30T15:30:34-04:00"/>
+          <identifier value="urn:uuid:4fd3f45f-b79e-4e5e-9692-af39d41af235"/>
+          <timestamp value="2023-06-08T09:03:25-04:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -506,7 +506,7 @@
         <title value="Highest form of Education"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-05-30T15:29:53-04:00"/>
+        <date value="2023-06-08T09:02:09-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -674,8 +674,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:96c625f2-ae8a-44ba-911a-9213fc5bd0a5"/>
-          <timestamp value="2023-05-30T15:30:35-04:00"/>
+          <identifier value="urn:uuid:8c909afa-96e1-4a2e-a77f-d9dcb01fa5aa"/>
+          <timestamp value="2023-06-08T09:03:26-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -709,6 +709,93 @@
             <system value="https://voicecollab.ai/fhir/CodeSystem/reading-ability"/>
             <code value="P"/>
             <display value="Poor"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/select-language"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-enrollment-select-language.html">Questionnaire enrollment language codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-enrollment-select-language-EN"> </a>  
+                  <a href="CodeSystem-enrollment-select-language.html#enrollment-select-language-EN">EN</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/enrollment-select-language</td>
+                <td>English</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-enrollment-select-language-FR"> </a>  
+                  <a href="CodeSystem-enrollment-select-language.html#enrollment-select-language-FR">FR</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/enrollment-select-language</td>
+                <td>French</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-enrollment-select-language-SP"> </a>  
+                  <a href="CodeSystem-enrollment-select-language.html#enrollment-select-language-SP">SP</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/enrollment-select-language</td>
+                <td>Spanish</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/select-language"/>
+        <version value="0.1.0"/>
+        <name value="EfSelectLanguage"/>
+        <title value="EF Select ValueSet"/>
+        <status value="active"/>
+        <date value="2023-06-06"/>
+        <expansion>
+          <identifier value="urn:uuid:f17f4614-2357-4517-9cf3-793d9f3bb537"/>
+          <timestamp value="2023-06-08T09:03:27-04:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/enrollment-select-language|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/enrollment-select-language"/>
+            <code value="EN"/>
+            <display value="English"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/enrollment-select-language"/>
+            <code value="FR"/>
+            <display value="French"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/enrollment-select-language"/>
+            <code value="SP"/>
+            <display value="Spanish"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -789,7 +876,7 @@
         <title value="whocompletedsurvey"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-05-30T15:29:53-04:00"/>
+        <date value="2023-06-08T09:02:09-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -815,6 +902,193 @@
             <system value="https://voicecollab.ai/fhir/CodeSystem/Who-Completed-Survey"/>
             <code value="P"/>
             <display value="Parent/Caregiver"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/eligible-studies"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-eligible-studies.html">Questionnaire enrollment eligible studies codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-eligible-studies-ES1"> </a>  
+                  <a href="CodeSystem-eligible-studies.html#eligible-studies-ES1">ES1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/eligible-studies</td>
+                <td>Voice Disorders</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-eligible-studies-ES2"> </a>  
+                  <a href="CodeSystem-eligible-studies.html#eligible-studies-ES2">ES2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/eligible-studies</td>
+                <td>Neurological and Neurodegenerative Disorders</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-eligible-studies-ES3"> </a>  
+                  <a href="CodeSystem-eligible-studies.html#eligible-studies-ES3">ES3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/eligible-studies</td>
+                <td>Mood and Psychiatric Disorders</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-eligible-studies-ES4"> </a>  
+                  <a href="CodeSystem-eligible-studies.html#eligible-studies-ES4">ES4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/eligible-studies</td>
+                <td>Respiratory Disorders</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-eligible-studies-ES5"> </a>  
+                  <a href="CodeSystem-eligible-studies.html#eligible-studies-ES5">ES5</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/eligible-studies</td>
+                <td>Pediatric Disorders</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/eligible-studies"/>
+        <version value="0.1.0"/>
+        <name value="EligibleStudies"/>
+        <title value="Eligible studies ValueSet"/>
+        <status value="active"/>
+        <date value="2023-06-06"/>
+        <expansion>
+          <identifier value="urn:uuid:1db5ad0c-7559-464a-be46-54a8ba32b886"/>
+          <timestamp value="2023-06-08T09:03:35-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/eligible-studies|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/eligible-studies"/>
+            <code value="ES1"/>
+            <display value="Voice Disorders"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/eligible-studies"/>
+            <code value="ES2"/>
+            <display value="Neurological and Neurodegenerative Disorders"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/eligible-studies"/>
+            <code value="ES3"/>
+            <display value="Mood and Psychiatric Disorders"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/eligible-studies"/>
+            <code value="ES4"/>
+            <display value="Respiratory Disorders"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/eligible-studies"/>
+            <code value="ES5"/>
+            <display value="Pediatric Disorders"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-checked-unchecked.html">Questionnaire enrollment condition codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-checked-unchecked-C"> </a>  
+                  <a href="CodeSystem-checked-unchecked.html#checked-unchecked-C">C</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/checked-unchecked</td>
+                <td>Checked</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-checked-unchecked-UC"> </a>  
+                  <a href="CodeSystem-checked-unchecked.html#checked-unchecked-UC">UC</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/checked-unchecked</td>
+                <td>Unchecked</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
+        <version value="0.1.0"/>
+        <name value="CheckedUnchecked"/>
+        <title value="Conditions ValueSet"/>
+        <status value="active"/>
+        <date value="2023-06-06"/>
+        <expansion>
+          <identifier value="urn:uuid:70dbc479-44c9-4909-8c6a-684173d71bf1"/>
+          <timestamp value="2023-06-08T09:03:35-04:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/checked-unchecked|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/checked-unchecked"/>
+            <code value="C"/>
+            <display value="Checked"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/checked-unchecked"/>
+            <code value="UC"/>
+            <display value="Unchecked"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -941,8 +1215,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:5fd0a79c-f105-4a50-bacd-2c7bd9fe966e"/>
-          <timestamp value="2023-05-30T15:30:38-04:00"/>
+          <identifier value="urn:uuid:a7b166b8-0ce1-4943-b991-782601a80888"/>
+          <timestamp value="2023-06-08T09:03:36-04:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1212,8 +1486,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:ec32f058-8fce-4896-ae49-b6de00ba623e"/>
-          <timestamp value="2023-05-30T15:30:39-04:00"/>
+          <identifier value="urn:uuid:cc491020-ffa8-4fd2-ac09-99702f8995d1"/>
+          <timestamp value="2023-06-08T09:03:36-04:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1333,6 +1607,280 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/decline-reason"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-decline-reason.html">Questionnaire enrollment eligible studies codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-decline-reason-R1"> </a>  
+                  <a href="CodeSystem-decline-reason.html#decline-reason-R1">R1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/decline-reason</td>
+                <td>I am not interested in having my voice recorded</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-decline-reason-R2"> </a>  
+                  <a href="CodeSystem-decline-reason.html#decline-reason-R2">R2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/decline-reason</td>
+                <td>I do not have enough time today and want to be contacted later</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-decline-reason-R3"> </a>  
+                  <a href="CodeSystem-decline-reason.html#decline-reason-R3">R3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/decline-reason</td>
+                <td>I do not have enough time and do not want to be contacted later</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-decline-reason-R4"> </a>  
+                  <a href="CodeSystem-decline-reason.html#decline-reason-R4">R4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/decline-reason</td>
+                <td>I prefer not to share any health information for research</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-decline-reason-R5"> </a>  
+                  <a href="CodeSystem-decline-reason.html#decline-reason-R5">R5</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/decline-reason</td>
+                <td>Other, Please Specify</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/decline-reason"/>
+        <version value="0.1.0"/>
+        <name value="DeclineReason"/>
+        <title value="Decline Reason ValueSet"/>
+        <status value="active"/>
+        <date value="2023-06-06"/>
+        <expansion>
+          <identifier value="urn:uuid:13667341-8241-4b36-94b0-a5f3b69c7f02"/>
+          <timestamp value="2023-06-08T09:03:37-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/decline-reason|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/decline-reason"/>
+            <code value="R1"/>
+            <display value="I am not interested in having my voice recorded"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/decline-reason"/>
+            <code value="R2"/>
+            <display value="I do not have enough time today and want to be contacted later"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/decline-reason"/>
+            <code value="R3"/>
+            <display value="I do not have enough time and do not want to be contacted later"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/decline-reason"/>
+            <code value="R4"/>
+            <display value="I prefer not to share any health information for research"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/decline-reason"/>
+            <code value="R5"/>
+            <display value="Other, Please Specify"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/enroll"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-enroll.html">Questionnaire enrollment eligible studies codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-enroll-E"> </a>  
+                  <a href="CodeSystem-enroll.html#enroll-E">E</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/enroll</td>
+                <td>Enroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-enroll-D"> </a>  
+                  <a href="CodeSystem-enroll.html#enroll-D">D</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/enroll</td>
+                <td>Decline</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/enroll"/>
+        <version value="0.1.0"/>
+        <name value="Enroll"/>
+        <title value="Enroll ValueSet"/>
+        <status value="active"/>
+        <date value="2023-06-06"/>
+        <expansion>
+          <identifier value="urn:uuid:671ddc41-237e-428c-96d6-7e1bc353b831"/>
+          <timestamp value="2023-06-08T09:03:38-04:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/enroll|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/enroll"/>
+            <code value="E"/>
+            <display value="Enroll"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/enroll"/>
+            <code value="D"/>
+            <display value="Decline"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/enrollment-complete"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-enrollment-complete.html">Questionnaire enrollment  codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-enrollment-complete-I"> </a>  
+                  <a href="CodeSystem-enrollment-complete.html#enrollment-complete-I">I</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/enrollment-complete</td>
+                <td>Incomplete</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-enrollment-complete-UV"> </a>  
+                  <a href="CodeSystem-enrollment-complete.html#enrollment-complete-UV">UV</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/enrollment-complete</td>
+                <td>Unverified</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-enrollment-complete-C"> </a>  
+                  <a href="CodeSystem-enrollment-complete.html#enrollment-complete-C">C</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/enrollment-complete</td>
+                <td>Complete</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/enrollment-complete"/>
+        <version value="0.1.0"/>
+        <name value="EnrollmentComplete"/>
+        <title value="Enrollment Complete ValueSet"/>
+        <status value="active"/>
+        <date value="2023-06-06"/>
+        <expansion>
+          <identifier value="urn:uuid:4a4da5eb-3676-4441-a8f1-977d60b796c4"/>
+          <timestamp value="2023-06-08T09:03:38-04:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/enrollment-complete|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/enrollment-complete"/>
+            <code value="I"/>
+            <display value="Incomplete"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/enrollment-complete"/>
+            <code value="UV"/>
+            <display value="Unverified"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/enrollment-complete"/>
+            <code value="C"/>
+            <display value="Complete"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://voicecollab.ai/fhir/ValueSet/menstration-menopause"/>
     <resource>
       <ValueSet>
@@ -1397,8 +1945,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:2600f9e7-8fdd-4b54-9563-0e9b5368aafd"/>
-          <timestamp value="2023-05-30T15:30:39-04:00"/>
+          <identifier value="urn:uuid:ff7e7288-7507-48d6-9acb-f6a507deb5e9"/>
+          <timestamp value="2023-06-08T09:03:38-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1494,7 +2042,7 @@
         <title value="Disability Status"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-05-30T15:29:53-04:00"/>
+        <date value="2023-06-08T09:02:09-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -1632,7 +2180,7 @@
         <title value="Disability Type"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-05-30T15:29:53-04:00"/>
+        <date value="2023-06-08T09:02:09-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -1758,8 +2306,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:953f68f3-9fb9-4baa-a6a1-247d35a0435e"/>
-          <timestamp value="2023-05-30T15:30:43-04:00"/>
+          <identifier value="urn:uuid:b82d3c2f-28c1-458b-bb59-5148ac9a7a96"/>
+          <timestamp value="2023-06-08T09:03:44-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1871,7 +2419,7 @@
         <title value="Household Makeup"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-05-30T15:29:53-04:00"/>
+        <date value="2023-06-08T09:02:09-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -1982,8 +2530,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:7d1e042b-d899-475b-a462-51b7c61e9394"/>
-          <timestamp value="2023-05-30T15:30:47-04:00"/>
+          <identifier value="urn:uuid:1f9c9f64-5cd6-44ca-b31f-afbf493555f9"/>
+          <timestamp value="2023-06-08T09:03:53-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2106,8 +2654,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:3f188577-0aa5-4af5-8e0e-58a34d446775"/>
-          <timestamp value="2023-05-30T15:30:47-04:00"/>
+          <identifier value="urn:uuid:b3db1d1f-2537-484b-80c6-837d2434e0cc"/>
+          <timestamp value="2023-06-08T09:03:53-04:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2701,8 +3249,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:58e27a84-5272-4483-890f-07b51801918b"/>
-          <timestamp value="2023-05-30T15:30:47-04:00"/>
+          <identifier value="urn:uuid:a35bbb89-0bb6-4112-8d39-c3833359f094"/>
+          <timestamp value="2023-06-08T09:03:53-04:00"/>
           <total value="64"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3130,7 +3678,7 @@
         <title value="Transportation Type"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-05-30T15:29:53-04:00"/>
+        <date value="2023-06-08T09:02:09-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -3243,8 +3791,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:97d546ef-cae2-4f8a-91cf-602ac6ba7489"/>
-          <timestamp value="2023-05-30T15:30:48-04:00"/>
+          <identifier value="urn:uuid:2ce00074-eead-43c6-a046-80da56d7dcd6"/>
+          <timestamp value="2023-06-08T09:03:54-04:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3359,7 +3907,7 @@
         <title value="Household Status"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-05-30T15:29:53-04:00"/>
+        <date value="2023-06-08T09:02:09-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -3483,8 +4031,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:4ccbe2ea-cd8d-4931-9e8e-13255a8678c2"/>
-          <timestamp value="2023-05-30T15:30:53-04:00"/>
+          <identifier value="urn:uuid:12ff5a33-f089-4399-892d-5d8f4858d4c3"/>
+          <timestamp value="2023-06-08T09:04:05-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3636,8 +4184,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:b1f42622-c605-4bf1-bfe0-775301ba1f17"/>
-          <timestamp value="2023-05-30T15:30:57-04:00"/>
+          <identifier value="urn:uuid:d8b33d4b-ada2-4809-8b4b-d7112c583afd"/>
+          <timestamp value="2023-06-08T09:04:12-04:00"/>
           <total value="10"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3774,8 +4322,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:3a2d6333-d37f-4b89-b2f3-e8fde0bf2e71"/>
-          <timestamp value="2023-05-30T15:30:57-04:00"/>
+          <identifier value="urn:uuid:97d8d07e-854e-4cfb-9c4e-3bdf2d58b64f"/>
+          <timestamp value="2023-06-08T09:04:13-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3879,8 +4427,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:93d6bfb7-d314-49e2-bd74-8c18006bb498"/>
-          <timestamp value="2023-05-30T15:30:57-04:00"/>
+          <identifier value="urn:uuid:c93fff92-86f4-4a4f-b17b-9b18285d5665"/>
+          <timestamp value="2023-06-08T09:04:13-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3989,7 +4537,7 @@
         <title value="Yes/No/Some"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-05-30T15:29:53-04:00"/>
+        <date value="2023-06-08T09:02:09-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -4114,7 +4662,7 @@
         <title value="Immigration Status"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-05-30T15:29:53-04:00"/>
+        <date value="2023-06-08T09:02:09-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -4243,8 +4791,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:ce31bacf-cfd6-4fc7-bba6-91e457d34ecf"/>
-          <timestamp value="2023-05-30T15:30:58-04:00"/>
+          <identifier value="urn:uuid:e98a6cc7-8978-4477-8847-cc3cd6d90f2a"/>
+          <timestamp value="2023-06-08T09:04:15-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4345,7 +4893,7 @@
         <title value="Financial Assistance"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-05-30T15:29:53-04:00"/>
+        <date value="2023-06-08T09:02:09-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -4478,8 +5026,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:c511a786-2e4a-4832-aea0-b8dca4bd1394"/>
-          <timestamp value="2023-05-30T15:30:58-04:00"/>
+          <identifier value="urn:uuid:eb336d87-6639-4a47-ae0a-b30f51d7c55a"/>
+          <timestamp value="2023-06-08T09:04:15-04:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4526,6 +5074,119 @@
           </contains>
           <contains>
             <system value="https://voicecollab.ai/fhir/CodeSystem/vocal-activity"/>
+            <code value="O"/>
+            <display value="Other, Please Specify"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/fluent-language"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-fluent-language.html">Questionnaire enrollment Fluent language codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-fluent-language-N"> </a>  
+                  <a href="CodeSystem-fluent-language.html#fluent-language-N">N</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/fluent-language</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-fluent-language-EN"> </a>  
+                  <a href="CodeSystem-fluent-language.html#fluent-language-EN">EN</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/fluent-language</td>
+                <td>English</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-fluent-language-FR"> </a>  
+                  <a href="CodeSystem-fluent-language.html#fluent-language-FR">FR</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/fluent-language</td>
+                <td>French</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-fluent-language-SP"> </a>  
+                  <a href="CodeSystem-fluent-language.html#fluent-language-SP">SP</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/fluent-language</td>
+                <td>Spanish</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-fluent-language-O"> </a>  
+                  <a href="CodeSystem-fluent-language.html#fluent-language-O">O</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/fluent-language</td>
+                <td>Other, Please Specify</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/fluent-language"/>
+        <version value="0.1.0"/>
+        <name value="EfFluentLanguage"/>
+        <title value="Ef Fluent ValueSet"/>
+        <status value="active"/>
+        <date value="2023-06-06"/>
+        <expansion>
+          <identifier value="urn:uuid:007a7b3f-6524-4d4b-b487-40160873499a"/>
+          <timestamp value="2023-06-08T09:04:17-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/fluent-language|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/fluent-language"/>
+            <code value="N"/>
+            <display value="None"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/fluent-language"/>
+            <code value="EN"/>
+            <display value="English"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/fluent-language"/>
+            <code value="FR"/>
+            <display value="French"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/fluent-language"/>
+            <code value="SP"/>
+            <display value="Spanish"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/fluent-language"/>
             <code value="O"/>
             <display value="Other, Please Specify"/>
           </contains>
@@ -4635,7 +5296,7 @@
         <title value="Employment Status"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-05-30T15:29:53-04:00"/>
+        <date value="2023-06-08T09:02:09-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -4830,8 +5491,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:cbbdf605-b250-4970-8191-2db035e7f82a"/>
-          <timestamp value="2023-05-30T15:31:01-04:00"/>
+          <identifier value="urn:uuid:d84c92ea-4801-4fc9-b9c5-7f00b590427d"/>
+          <timestamp value="2023-06-08T09:04:20-04:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4875,6 +5536,93 @@
             <system value="https://voicecollab.ai/fhir/CodeSystem/gender-identity"/>
             <code value="UN"/>
             <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/enrollment-institution"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-enrollment-institution.html">Questionnaire enrollment  codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-enrollment-institution-USF"> </a>  
+                  <a href="CodeSystem-enrollment-institution.html#enrollment-institution-USF">USF</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/enrollment-institution</td>
+                <td>USF</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-enrollment-institution-WCM"> </a>  
+                  <a href="CodeSystem-enrollment-institution.html#enrollment-institution-WCM">WCM</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/enrollment-institution</td>
+                <td>WCM</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-enrollment-institution-MIT"> </a>  
+                  <a href="CodeSystem-enrollment-institution.html#enrollment-institution-MIT">MIT</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/enrollment-institution</td>
+                <td>MIT</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/enrollment-institution"/>
+        <version value="0.1.0"/>
+        <name value="EnrollmentInstitution"/>
+        <title value="Enrollment Institution ValueSet"/>
+        <status value="active"/>
+        <date value="2023-06-06"/>
+        <expansion>
+          <identifier value="urn:uuid:a955d9b4-6f08-4afa-a9d7-a94724089688"/>
+          <timestamp value="2023-06-08T09:04:20-04:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/enrollment-institution|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/enrollment-institution"/>
+            <code value="USF"/>
+            <display value="USF"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/enrollment-institution"/>
+            <code value="WCM"/>
+            <display value="WCM"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/enrollment-institution"/>
+            <code value="MIT"/>
+            <display value="MIT"/>
           </contains>
         </expansion>
       </ValueSet>

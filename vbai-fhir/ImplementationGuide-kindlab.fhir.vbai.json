@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "VoiceaBiomarkerforAI",
   "status" : "draft",
-  "date" : "2023-05-30T15:29:53-04:00",
+  "date" : "2023-06-08T09:02:09-04:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -745,6 +745,30 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/checked-unchecked"
+      },
+      "name" : "Conditions ValueSet",
+      "description" : "The Codes used by enrollment questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/decline-reason"
+      },
+      "name" : "Decline Reason ValueSet",
+      "description" : "The Codes used by enrollment questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/disability-status"
       },
       "name" : "Disability Status",
@@ -805,10 +829,82 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/fluent-language"
+      },
+      "name" : "Ef Fluent ValueSet",
+      "description" : "The Codes used by enrollment questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/select-language"
+      },
+      "name" : "EF Select ValueSet",
+      "description" : "The Codes used by enrollment questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/eligible-studies"
+      },
+      "name" : "Eligible studies ValueSet",
+      "description" : "The Codes used by enrollment questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/employment-status"
       },
       "name" : "Employment Status",
       "description" : "Valueset for capturing Employment status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/enroll"
+      },
+      "name" : "Enroll ValueSet",
+      "description" : "The Codes used by enrollment questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/enrollment-complete"
+      },
+      "name" : "Enrollment Complete ValueSet",
+      "description" : "The Codes used by enrollment questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/enrollment-institution"
+      },
+      "name" : "Enrollment Institution ValueSet",
+      "description" : "The Codes used by enrollment questionnaire",
       "exampleBoolean" : false
     },
     {
@@ -1081,10 +1177,34 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/checked-unchecked"
+      },
+      "name" : "Questionnaire enrollment condition codes",
+      "description" : "The codes required for Questionnaire enrollment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/child-education"
       },
       "name" : "Questionnaire codes for child education",
       "description" : "The codes required for questionnaires",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/decline-reason"
+      },
+      "name" : "Questionnaire enrollment eligible studies codes",
+      "description" : "The codes required for Questionnaire enrollment",
       "exampleBoolean" : false
     },
     {
@@ -1153,6 +1273,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/eligible-studies"
+      },
+      "name" : "Questionnaire enrollment eligible studies codes",
+      "description" : "The codes required for Questionnaire enrollment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/employment-status"
       },
       "name" : "Questionnaire codes Employment Status",
@@ -1165,10 +1297,70 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/enroll"
+      },
+      "name" : "Questionnaire enrollment eligible studies codes",
+      "description" : "The codes required for Questionnaire enrollment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/enrollment-complete"
+      },
+      "name" : "Questionnaire enrollment  codes",
+      "description" : "The codes required for Questionnaire enrollment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/enrollment-institution"
+      },
+      "name" : "Questionnaire enrollment  codes",
+      "description" : "The codes required for Questionnaire enrollment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/enrollment-select-language"
+      },
+      "name" : "Questionnaire enrollment language codes",
+      "description" : "The codes required for Questionnaire enrollment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/financial-assistance"
       },
       "name" : "Questionnaire codes Financial Assistance Programs",
       "description" : "The codes required for Questionnaire's Financial Assistance Programs",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fluent-language"
+      },
+      "name" : "Questionnaire enrollment Fluent language codes",
+      "description" : "The codes required for Questionnaire enrollment",
       "exampleBoolean" : false
     },
     {
@@ -1410,6 +1602,18 @@
       "name" : "Questionnaire Yes/No/Some codes",
       "description" : "The codes required for Questionnaires yes/no/some",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/Enrollment"
+      },
+      "name" : "Enrollment Questionnaire",
+      "description" : "Enrollment Questionnaire",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{

@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "eligible-studies",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-eligible-studies.html\"><code>https://voicecollab.ai/fhir/CodeSystem/eligible-studies</code></a></li></ul></div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/ValueSet/eligible-studies",
+  "version" : "0.1.0",
+  "name" : "EligibleStudies",
+  "title" : "Eligible studies ValueSet",
+  "status" : "active",
+  "date" : "2023-06-06",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "The Codes used by enrollment questionnaire",
+  "compose" : {
+    "include" : [{
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/eligible-studies"
+    }]
+  }
+}

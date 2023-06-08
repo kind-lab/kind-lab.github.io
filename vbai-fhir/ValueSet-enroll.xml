@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="enroll"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-enroll.html"><code>https://voicecollab.ai/fhir/CodeSystem/enroll</code></a></li></ul></div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/ValueSet/enroll"/>
+  <version value="0.1.0"/>
+  <name value="Enroll"/>
+  <title value="Enroll ValueSet"/>
+  <status value="active"/>
+  <date value="2023-06-06"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="The Codes used by enrollment questionnaire"/>
+  <compose>
+    <include>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/enroll"/>
+    </include>
+  </compose>
+</ValueSet>

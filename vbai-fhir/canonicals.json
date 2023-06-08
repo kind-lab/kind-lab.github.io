@@ -14,11 +14,25 @@
     "name" : "YesNoSome"
   },
   {
+    "id" : "checked-unchecked",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/checked-unchecked",
+    "version" : "0.1.0",
+    "name" : "CheckedUnchecked"
+  },
+  {
     "id" : "child-education",
     "type" : "CodeSystem",
     "url" : "https://voicecollab.ai/fhir/CodeSystem/child-education",
     "version" : "0.1.0",
     "name" : "ChildEducation"
+  },
+  {
+    "id" : "decline-reason",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/decline-reason",
+    "version" : "0.1.0",
+    "name" : "DeclineReason"
   },
   {
     "id" : "disability-status",
@@ -49,11 +63,46 @@
     "name" : "DrinkingTimes"
   },
   {
+    "id" : "eligible-studies",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/eligible-studies",
+    "version" : "0.1.0",
+    "name" : "EligibleStudies"
+  },
+  {
     "id" : "employment-status",
     "type" : "CodeSystem",
     "url" : "https://voicecollab.ai/fhir/CodeSystem/employment-status",
     "version" : "0.1.0",
     "name" : "EmploymentStatus"
+  },
+  {
+    "id" : "enroll",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/enroll",
+    "version" : "0.1.0",
+    "name" : "Enroll"
+  },
+  {
+    "id" : "enrollment-complete",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/enrollment-complete",
+    "version" : "0.1.0",
+    "name" : "EnrollmentComplete"
+  },
+  {
+    "id" : "enrollment-institution",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/enrollment-institution",
+    "version" : "0.1.0",
+    "name" : "EnrollmentInstitution"
+  },
+  {
+    "id" : "enrollment-select-language",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/enrollment-select-language",
+    "version" : "0.1.0",
+    "name" : "EnrollmentSelectLanguage"
   },
   {
     "id" : "ent-history",
@@ -68,6 +117,13 @@
     "url" : "https://voicecollab.ai/fhir/CodeSystem/financial-assistance",
     "version" : "0.1.0",
     "name" : "FinancialAssistance"
+  },
+  {
+    "id" : "fluent-language",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/fluent-language",
+    "version" : "0.1.0",
+    "name" : "FluentLanguage"
   },
   {
     "id" : "gender-identity",
@@ -239,6 +295,12 @@
     "version" : "0.1.0"
   },
   {
+    "id" : "Enrollment",
+    "type" : "Questionnaire",
+    "url" : "https://voicecollab.ai/fhir/Questionnaire/Enrollment",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "GAD7schema",
     "type" : "Questionnaire",
     "url" : "https://voicecollab.ai/fhir/Questionnaire/GAD7schema",
@@ -368,6 +430,20 @@
     "name" : "HighestEducation"
   },
   {
+    "id" : "checked-unchecked",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked",
+    "version" : "0.1.0",
+    "name" : "CheckedUnchecked"
+  },
+  {
+    "id" : "decline-reason",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/decline-reason",
+    "version" : "0.1.0",
+    "name" : "DeclineReason"
+  },
+  {
     "id" : "disability-status",
     "type" : "ValueSet",
     "url" : "https://voicecollab.ai/fhir/ValueSet/disability-status",
@@ -396,11 +472,39 @@
     "name" : "DrinkingTimes"
   },
   {
+    "id" : "eligible-studies",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/eligible-studies",
+    "version" : "0.1.0",
+    "name" : "EligibleStudies"
+  },
+  {
     "id" : "employment-status",
     "type" : "ValueSet",
     "url" : "https://voicecollab.ai/fhir/ValueSet/employment-status",
     "version" : "0.1.0",
     "name" : "EmploymentStatus"
+  },
+  {
+    "id" : "enroll",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/enroll",
+    "version" : "0.1.0",
+    "name" : "Enroll"
+  },
+  {
+    "id" : "enrollment-complete",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/enrollment-complete",
+    "version" : "0.1.0",
+    "name" : "EnrollmentComplete"
+  },
+  {
+    "id" : "enrollment-institution",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/enrollment-institution",
+    "version" : "0.1.0",
+    "name" : "EnrollmentInstitution"
   },
   {
     "id" : "ent-history",
@@ -415,6 +519,13 @@
     "url" : "https://voicecollab.ai/fhir/ValueSet/financial-assistance",
     "version" : "0.1.0",
     "name" : "FinancialAssistance"
+  },
+  {
+    "id" : "fluent-language",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/fluent-language",
+    "version" : "0.1.0",
+    "name" : "EfFluentLanguage"
   },
   {
     "id" : "gender-identity",
@@ -485,6 +596,13 @@
     "url" : "https://voicecollab.ai/fhir/ValueSet/reading-ability",
     "version" : "0.1.0",
     "name" : "ReadingAbility"
+  },
+  {
+    "id" : "select-language",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/select-language",
+    "version" : "0.1.0",
+    "name" : "EfSelectLanguage"
   },
   {
     "id" : "smoking",

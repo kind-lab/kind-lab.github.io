@@ -1,20 +1,28 @@
 ﻿VoiceaBiomarkerforAI : Validation Results
 =========================================
 
-err = 3, warn = 76, info = 2
-IG Publisher Version: 1.3.9 Out of date - current version is 1.3.13
-Generated Tue May 30 15:31:44 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai#0.1.0 (canonical = https://voicecollab.ai/fhir)
+err = 4, warn = 96, info = 2
+IG Publisher Version: 1.3.9 Out of date - current version is 1.3.15
+Generated Thu Jun 08 09:05:36 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai#0.1.0 (canonical = https://voicecollab.ai/fhir)
  Build Errors : 9 / 4 / 0
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-Who-Completed-Survey : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-Yes-No-Some : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-checked-unchecked : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-child-education : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-decline-reason : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-disability-status : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-disability-type : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-drink-number : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-drinking-times : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-eligible-studies : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-employment-status : 0 / 2 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-enroll : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-enrollment-complete : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-enrollment-institution : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-enrollment-select-language : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-ent-history : 0 / 3 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-financial-assistance : 0 / 2 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-fluent-language : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-gender-identity : 0 / 2 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-household-makeup : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-household-status : 0 / 2 / 1
@@ -51,6 +59,7 @@ Generated Tue May 30 15:31:44 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionPedsExample : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionRespiratoryExample : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionVoiceExample : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-Enrollment : 1 / 4 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-GAD7schema : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-PHQ9schema : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-VbaiQuestionnaireConfoundersExample : 0 / 4 / 1
@@ -70,13 +79,20 @@ Generated Tue May 30 15:31:44 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-waveform-device : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-waveform-media : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-Highest-Education : 1 / 0 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-checked-unchecked : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-decline-reason : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-disability-status : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-disability-type : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-drink-number : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-drinking-times : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-eligible-studies : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-employment-status : 0 / 2 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-enroll : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-enrollment-complete : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-enrollment-institution : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-ent-history : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-financial-assistance : 0 / 2 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-fluent-language : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-gender-identity : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-household-makeup : 0 / 0 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-household-status : 0 / 0 / 1
@@ -87,6 +103,7 @@ Generated Tue May 30 15:31:44 EDT 2023. FHIR version 4.0.1 for kindlab.fhir.vbai
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-neurological-history : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-psychiatric-history : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-reading-ability : 0 / 1 / 1
+ /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-select-language : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-smoking : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-smoking-times : 0 / 1 / 1
  /home/evanng/Documents/voice-fhir/voice-biomarker-fhir/fsh-generated/resources/ValueSet-smoking-types : 0 / 1 / 1
@@ -116,8 +133,12 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 WARNING: CodeSystem/Who-Completed-Survey: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-Yes-No-Some.json ==
 WARNING: CodeSystem/Yes-No-Some: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-checked-unchecked.json ==
+WARNING: CodeSystem/checked-unchecked: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-child-education.json ==
 WARNING: CodeSystem/child-education: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-decline-reason.json ==
+WARNING: CodeSystem/decline-reason: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-disability-status.json ==
 WARNING: CodeSystem/disability-status: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-disability-type.json ==
@@ -126,9 +147,19 @@ WARNING: CodeSystem/disability-type: CodeSystem: The ShareableCodeSystem profile
 WARNING: CodeSystem/drink-number: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-drinking-times.json ==
 WARNING: CodeSystem/drinking-times: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-eligible-studies.json ==
+WARNING: CodeSystem/eligible-studies: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-employment-status.json ==
 WARNING: CodeSystem/employment-status: CodeSystem.concept[0].display: value should not start or finish with whitespace 'Employed, freelance '
 WARNING: CodeSystem/employment-status: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-enroll.json ==
+WARNING: CodeSystem/enroll: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-enrollment-complete.json ==
+WARNING: CodeSystem/enrollment-complete: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-enrollment-institution.json ==
+WARNING: CodeSystem/enrollment-institution: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-enrollment-select-language.json ==
+WARNING: CodeSystem/enrollment-select-language: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-ent-history.json ==
 WARNING: CodeSystem/ent-history: CodeSystem.concept[50].display: value should not start or finish with whitespace 'Hoarseness\u00a0'
 WARNING: CodeSystem/ent-history: CodeSystem.concept[61].display: value should not start or finish with whitespace 'Prefer not to disclose\u00a0'
@@ -136,6 +167,8 @@ WARNING: CodeSystem/ent-history: CodeSystem: The ShareableCodeSystem profile say
 == fsh-generated/resources/CodeSystem-financial-assistance.json ==
 WARNING: CodeSystem/financial-assistance: CodeSystem.concept[3].display: value should not start or finish with whitespace 'Temporary Assistance for Needy Families (TANF), including Pass through Child Support General Assistance (GA) '
 WARNING: CodeSystem/financial-assistance: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-fluent-language.json ==
+WARNING: CodeSystem/fluent-language: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-gender-identity.json ==
 WARNING: CodeSystem/gender-identity: CodeSystem.title: value should not start or finish with whitespace ' Gender Identity Codes'
 WARNING: CodeSystem/gender-identity: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
@@ -183,8 +216,8 @@ WARNING: CodeSystem/whodas: CodeSystem: The ShareableCodeSystem profile says tha
 WARNING: ImagingStudy/VbaiImagingStudyExample: ImagingStudy.modality[0]: ValueSet http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html not found by validator
 == fsh-generated/resources/ImplementationGuide-kindlab.fhir.vbai.json ==
 ERROR: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.extension[24].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency' does not resolve
-WARNING: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.resource[50].name: value should not start or finish with whitespace ' Gender Identity Codes'
-WARNING: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.resource[67].description: value should not start or finish with whitespace 'The codes required for WHODAS Questionnaires '
+WARNING: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.resource[66].name: value should not start or finish with whitespace ' Gender Identity Codes'
+WARNING: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.resource[83].description: value should not start or finish with whitespace 'The codes required for WHODAS Questionnaires '
 == fsh-generated/resources/Media-VbaiImagingMediaExample.json ==
 == fsh-generated/resources/Media-VbaiWaveformMediaExample.json ==
 == fsh-generated/resources/Observation-VbaiBodyHeightExample.json ==
@@ -199,6 +232,12 @@ WARNING: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.r
 WARNING: PlanDefinition/VbaiPlanDefinitionRespiratoryExample: PlanDefinition.action[1].description: value should not start or finish with whitespace 'Baseline functional data will be collected on all patients.  Full pulmonary function testing will be performed as standard of care for all patients included in the trial.\u00a0'
 == fsh-generated/resources/PlanDefinition-VbaiPlanDefinitionVoiceExample.json ==
 WARNING: PlanDefinition/VbaiPlanDefinitionVoiceExample: PlanDefinition.action[3].title: value should not start or finish with whitespace 'Validated questionnaires specific to voice cohort\u00a0'
+== fsh-generated/resources/Questionnaire-Enrollment.json ==
+WARNING: Questionnaire/Enrollment: Questionnaire.item[2].text: value should not start or finish with whitespace 'Check the boxes to all that apply: '
+ERROR: Questionnaire/Enrollment: Questionnaire.item[3]: Rule que-4: 'A question cannot have both answerOption and answerValueSet' Failed
+WARNING: Questionnaire/Enrollment: Questionnaire.item[5].text: value should not start or finish with whitespace 'What is your date of birth? '
+WARNING: Questionnaire/Enrollment: Questionnaire.item[9].text: value should not start or finish with whitespace 'Can you use a smart device? '
+WARNING: Questionnaire/Enrollment: Questionnaire.item[10].text: value should not start or finish with whitespace 'Do you have access to a smart device on a regular basis?  '
 == fsh-generated/resources/Questionnaire-GAD7schema.json ==
 == fsh-generated/resources/Questionnaire-PHQ9schema.json ==
 == fsh-generated/resources/Questionnaire-VbaiQuestionnaireConfoundersExample.json ==
@@ -233,20 +272,34 @@ WARNING: StructureDefinition.where(url = 'https://voicecollab.ai/fhir/StructureD
 == fsh-generated/resources/StructureDefinition-vbai-waveform-media.json ==
 == fsh-generated/resources/ValueSet-Highest-Education.json ==
 ERROR: ValueSet/Highest-Education: ValueSet.expansion: ValueSet.expansion.timestamp: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ValueSet|4.0.1)
+== fsh-generated/resources/ValueSet-checked-unchecked.json ==
+WARNING: ValueSet/checked-unchecked: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-decline-reason.json ==
+WARNING: ValueSet/decline-reason: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-disability-status.json ==
 == fsh-generated/resources/ValueSet-disability-type.json ==
 == fsh-generated/resources/ValueSet-drink-number.json ==
 WARNING: ValueSet/drink-number: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-drinking-times.json ==
 WARNING: ValueSet/drinking-times: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-eligible-studies.json ==
+WARNING: ValueSet/eligible-studies: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-employment-status.json ==
 WARNING: ValueSet/employment-status: ValueSet.expansion.contains[0].display: value should not start or finish with whitespace 'Employed, freelance '
 WARNING: ValueSet/employment-status: ValueSet.expansion.contains[8].display: value should not start or finish with whitespace 'Other, please specify '
+== fsh-generated/resources/ValueSet-enroll.json ==
+WARNING: ValueSet/enroll: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-enrollment-complete.json ==
+WARNING: ValueSet/enrollment-complete: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-enrollment-institution.json ==
+WARNING: ValueSet/enrollment-institution: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-ent-history.json ==
 WARNING: ValueSet/ent-history: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-financial-assistance.json ==
 WARNING: ValueSet/financial-assistance: ValueSet.compose.include[0].concept[3].display: value should not start or finish with whitespace 'Temporary Assistance for Needy Families (TANF), including Pass through Child Support General Assistance (GA) '
 WARNING: ValueSet/financial-assistance: ValueSet.expansion.contains[3].display: value should not start or finish with whitespace 'Temporary Assistance for Needy Families (TANF), including Pass through Child Support General Assistance (GA) '
+== fsh-generated/resources/ValueSet-fluent-language.json ==
+WARNING: ValueSet/fluent-language: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-gender-identity.json ==
 WARNING: ValueSet/gender-identity: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-household-makeup.json ==
@@ -264,6 +317,8 @@ WARNING: ValueSet/neurological-history: ValueSet: The ShareableValueSet profile 
 WARNING: ValueSet/psychiatric-history: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-reading-ability.json ==
 WARNING: ValueSet/reading-ability: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-select-language.json ==
+WARNING: ValueSet/select-language: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-smoking.json ==
 WARNING: ValueSet/smoking: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-smoking-times.json ==

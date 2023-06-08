@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2023-05-30T15:29:53-04:00"/>
+  <date value="2023-06-08T09:02:09-04:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -583,6 +583,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/checked-unchecked"/>
+      </reference>
+      <name value="Conditions ValueSet"/>
+      <description value="The Codes used by enrollment questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/decline-reason"/>
+      </reference>
+      <name value="Decline Reason ValueSet"/>
+      <description value="The Codes used by enrollment questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/disability-status"/>
       </reference>
       <name value="Disability Status"/>
@@ -638,10 +660,76 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/fluent-language"/>
+      </reference>
+      <name value="Ef Fluent ValueSet"/>
+      <description value="The Codes used by enrollment questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/select-language"/>
+      </reference>
+      <name value="EF Select ValueSet"/>
+      <description value="The Codes used by enrollment questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/eligible-studies"/>
+      </reference>
+      <name value="Eligible studies ValueSet"/>
+      <description value="The Codes used by enrollment questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/employment-status"/>
       </reference>
       <name value="Employment Status"/>
       <description value="Valueset for capturing Employment status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/enroll"/>
+      </reference>
+      <name value="Enroll ValueSet"/>
+      <description value="The Codes used by enrollment questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/enrollment-complete"/>
+      </reference>
+      <name value="Enrollment Complete ValueSet"/>
+      <description value="The Codes used by enrollment questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/enrollment-institution"/>
+      </reference>
+      <name value="Enrollment Institution ValueSet"/>
+      <description value="The Codes used by enrollment questionnaire"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -891,10 +979,32 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/checked-unchecked"/>
+      </reference>
+      <name value="Questionnaire enrollment condition codes"/>
+      <description value="The codes required for Questionnaire enrollment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/child-education"/>
       </reference>
       <name value="Questionnaire codes for child education"/>
       <description value="The codes required for questionnaires"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/decline-reason"/>
+      </reference>
+      <name value="Questionnaire enrollment eligible studies codes"/>
+      <description value="The codes required for Questionnaire enrollment"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -957,6 +1067,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/eligible-studies"/>
+      </reference>
+      <name value="Questionnaire enrollment eligible studies codes"/>
+      <description value="The codes required for Questionnaire enrollment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/employment-status"/>
       </reference>
       <name value="Questionnaire codes Employment Status"/>
@@ -968,10 +1089,65 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/enroll"/>
+      </reference>
+      <name value="Questionnaire enrollment eligible studies codes"/>
+      <description value="The codes required for Questionnaire enrollment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/enrollment-complete"/>
+      </reference>
+      <name value="Questionnaire enrollment  codes"/>
+      <description value="The codes required for Questionnaire enrollment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/enrollment-institution"/>
+      </reference>
+      <name value="Questionnaire enrollment  codes"/>
+      <description value="The codes required for Questionnaire enrollment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/enrollment-select-language"/>
+      </reference>
+      <name value="Questionnaire enrollment language codes"/>
+      <description value="The codes required for Questionnaire enrollment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/financial-assistance"/>
       </reference>
       <name value="Questionnaire codes Financial Assistance Programs"/>
       <description value="The codes required for Questionnaire's Financial Assistance Programs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/fluent-language"/>
+      </reference>
+      <name value="Questionnaire enrollment Fluent language codes"/>
+      <description value="The codes required for Questionnaire enrollment"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1193,6 +1369,17 @@
       <name value="Questionnaire Yes/No/Some codes"/>
       <description value="The codes required for Questionnaires yes/no/some"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/Enrollment"/>
+      </reference>
+      <name value="Enrollment Questionnaire"/>
+      <description value="Enrollment Questionnaire"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
