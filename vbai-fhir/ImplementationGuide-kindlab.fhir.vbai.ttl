@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "VoiceaBiomarkerforAI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-08T10:27:07-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-06-09T08:59:53-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -745,30 +745,6 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/fluent-language> ;
-         fhir:reference [ fhir:v "ValueSet/fluent-language" ]
-       ] ;
-       fhir:name [ fhir:v "Ef Fluent ValueSet" ] ;
-       fhir:description [ fhir:v "The Codes used by enrollment questionnaire" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/select-language> ;
-         fhir:reference [ fhir:v "ValueSet/select-language" ]
-       ] ;
-       fhir:name [ fhir:v "EF Select ValueSet" ] ;
-       fhir:description [ fhir:v "The Codes used by enrollment questionnaire" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/ValueSet/eligible-studies> ;
          fhir:reference [ fhir:v "ValueSet/eligible-studies" ]
        ] ;
@@ -834,6 +810,18 @@
        ] ;
        fhir:name [ fhir:v "Financial Assistance" ] ;
        fhir:description [ fhir:v "Valueset for capturing Financial Assistance Programs user is using" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/fluent-language> ;
+         fhir:reference [ fhir:v "ValueSet/fluent-language" ]
+       ] ;
+       fhir:name [ fhir:v "Fluent ValueSet" ] ;
+       fhir:description [ fhir:v "The Codes used by enrollment questionnaire" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -966,6 +954,18 @@
        ] ;
        fhir:name [ fhir:v "Reading ability ValueSet" ] ;
        fhir:description [ fhir:v "The Codes used by confounder questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/select-language> ;
+         fhir:reference [ fhir:v "ValueSet/select-language" ]
+       ] ;
+       fhir:name [ fhir:v "Select ValueSet" ] ;
+       fhir:description [ fhir:v "The Codes used by enrollment questionnaire" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
