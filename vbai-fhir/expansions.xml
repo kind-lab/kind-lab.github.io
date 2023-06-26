@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="76965840-6d6f-4cf6-b850-3513e268cf99"/>
+  <id value="d03b4f87-3e8f-46a5-9d7e-0f499dbce89c"/>
   <meta>
-    <lastUpdated value="2023-06-09T08:59:53.021-04:00"/>
+    <lastUpdated value="2023-06-26T13:45:18.516-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -159,8 +159,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:7d23d9e1-2160-4cbd-8f00-ecff322a8539"/>
-          <timestamp value="2023-06-09T09:00:33-04:00"/>
+          <identifier value="urn:uuid:ed0332c1-b870-4c2c-9f01-c27ebf91b996"/>
+          <timestamp value="2023-06-26T13:46:04-04:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -506,7 +506,7 @@
         <title value="Highest form of Education"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-06-09T08:59:53-04:00"/>
+        <date value="2023-06-26T13:45:18-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -602,6 +602,119 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/voice-handicap-index"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-voice-handicap-index.html">Voice Handicap Index codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-voice-handicap-index-1"> </a>  
+                  <a href="CodeSystem-voice-handicap-index.html#voice-handicap-index-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index</td>
+                <td>Never</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-voice-handicap-index-2"> </a>  
+                  <a href="CodeSystem-voice-handicap-index.html#voice-handicap-index-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index</td>
+                <td>Almost Never</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-voice-handicap-index-3"> </a>  
+                  <a href="CodeSystem-voice-handicap-index.html#voice-handicap-index-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index</td>
+                <td>Sometimes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-voice-handicap-index-4"> </a>  
+                  <a href="CodeSystem-voice-handicap-index.html#voice-handicap-index-4">4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index</td>
+                <td>Almost Always</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-voice-handicap-index-5"> </a>  
+                  <a href="CodeSystem-voice-handicap-index.html#voice-handicap-index-5">5</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index</td>
+                <td>Always</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/voice-handicap-index"/>
+        <version value="0.1.0"/>
+        <name value="VoiceHandicapIndex"/>
+        <title value="Voice Handicap Index ValueSet"/>
+        <status value="active"/>
+        <date value="2023-06-19"/>
+        <expansion>
+          <identifier value="urn:uuid:2a12715b-51be-4f8e-af9c-da9721fa490b"/>
+          <timestamp value="2023-06-26T13:46:04-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index"/>
+            <code value="1"/>
+            <display value="Never"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index"/>
+            <code value="2"/>
+            <display value="Almost Never"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index"/>
+            <code value="3"/>
+            <display value="Sometimes"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index"/>
+            <code value="4"/>
+            <display value="Almost Always"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index"/>
+            <code value="5"/>
+            <display value="Always"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://voicecollab.ai/fhir/ValueSet/reading-ability"/>
     <resource>
       <ValueSet>
@@ -674,8 +787,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:a7c84d35-590d-465a-9003-6edc50ef4f90"/>
-          <timestamp value="2023-06-09T09:00:39-04:00"/>
+          <identifier value="urn:uuid:9f84872c-3d63-4091-9216-828cb70b15cc"/>
+          <timestamp value="2023-06-26T13:46:05-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -771,8 +884,8 @@
         <status value="active"/>
         <date value="2023-06-06"/>
         <expansion>
-          <identifier value="urn:uuid:1f267ef8-c6e9-47b8-ac06-4500dd307da6"/>
-          <timestamp value="2023-06-09T09:00:39-04:00"/>
+          <identifier value="urn:uuid:afbff8fd-9241-41f6-b367-9d72bcf6192c"/>
+          <timestamp value="2023-06-26T13:46:05-04:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -876,7 +989,7 @@
         <title value="whocompletedsurvey"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-06-09T08:59:53-04:00"/>
+        <date value="2023-06-26T13:45:18-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -902,6 +1015,280 @@
             <system value="https://voicecollab.ai/fhir/CodeSystem/Who-Completed-Survey"/>
             <code value="P"/>
             <display value="Parent/Caregiver"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/dsm5-q5"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-dsm5-q5.html">dsm5 q5 v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q5-1"> </a>  
+                  <a href="CodeSystem-dsm5-q5.html#dsm5-q5-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q5</td>
+                <td>I have not been more active (either socially, sexually, at work, home, or school) than usual.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q5-2"> </a>  
+                  <a href="CodeSystem-dsm5-q5.html#dsm5-q5-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q5</td>
+                <td>I have occasionally been more active than usual.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q5-3"> </a>  
+                  <a href="CodeSystem-dsm5-q5.html#dsm5-q5-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q5</td>
+                <td>I have often been more active than usual</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q5-4"> </a>  
+                  <a href="CodeSystem-dsm5-q5.html#dsm5-q5-4">4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q5</td>
+                <td>I have frequently been more active than usual.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q5-5"> </a>  
+                  <a href="CodeSystem-dsm5-q5.html#dsm5-q5-5">5</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q5</td>
+                <td>I am constantly more active or on the go all the time.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/dsm5-q5"/>
+        <version value="0.1.0"/>
+        <name value="DSM5Q5"/>
+        <title value="DSM5 Q5"/>
+        <status value="active"/>
+        <date value="2023-06-21"/>
+        <expansion>
+          <identifier value="urn:uuid:be5c1216-ef15-4efb-91fe-56fe8689e15d"/>
+          <timestamp value="2023-06-26T13:46:05-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q5|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q5"/>
+            <code value="1"/>
+            <display value="I have not been more active (either socially, sexually, at work, home, or school) than usual."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q5"/>
+            <code value="2"/>
+            <display value="I have occasionally been more active than usual."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q5"/>
+            <code value="3"/>
+            <display value="I have often been more active than usual"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q5"/>
+            <code value="4"/>
+            <display value="I have frequently been more active than usual."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q5"/>
+            <code value="5"/>
+            <display value="I am constantly more active or on the go all the time."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/comments"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-comments.html">Comments v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-comments-1"> </a>  
+                  <a href="CodeSystem-comments.html#comments-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/comments</td>
+                <td>Normal</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-comments-2"> </a>  
+                  <a href="CodeSystem-comments.html#comments-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/comments</td>
+                <td>Other (Provide Description)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/comments"/>
+        <version value="0.1.0"/>
+        <name value="Comments"/>
+        <title value="Comments"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:34de85dd-5fb2-455d-82d4-5cef417a3c42"/>
+          <timestamp value="2023-06-26T13:46:05-04:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/comments|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/comments"/>
+            <code value="1"/>
+            <display value="Normal"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/comments"/>
+            <code value="2"/>
+            <display value="Other (Provide Description)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/yes-no-not-certain"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-yes-no-not-certain.html">YesNoNotCertain v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-yes-no-not-certain-Y"> </a>  
+                  <a href="CodeSystem-yes-no-not-certain.html#yes-no-not-certain-Y">Y</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/yes-no-not-certain</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-yes-no-not-certain-N"> </a>  
+                  <a href="CodeSystem-yes-no-not-certain.html#yes-no-not-certain-N">N</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/yes-no-not-certain</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-yes-no-not-certain-NC"> </a>  
+                  <a href="CodeSystem-yes-no-not-certain.html#yes-no-not-certain-NC">NC</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/yes-no-not-certain</td>
+                <td>Not Certain</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/yes-no-not-certain"/>
+        <version value="0.1.0"/>
+        <name value="YesNoNotCertain"/>
+        <title value="YesNoNotCertain"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:e00f3903-d9d3-4e64-81c1-b6e46681447c"/>
+          <timestamp value="2023-06-26T13:46:09-04:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/yes-no-not-certain|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/yes-no-not-certain"/>
+            <code value="Y"/>
+            <display value="Yes"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/yes-no-not-certain"/>
+            <code value="N"/>
+            <display value="No"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/yes-no-not-certain"/>
+            <code value="NC"/>
+            <display value="Not Certain"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -980,8 +1367,8 @@
         <status value="active"/>
         <date value="2023-06-06"/>
         <expansion>
-          <identifier value="urn:uuid:5a667597-0e8e-46fd-b52f-68d2cd92a927"/>
-          <timestamp value="2023-06-09T09:00:42-04:00"/>
+          <identifier value="urn:uuid:7e61e66d-782d-4d6f-a947-d3f56b6809d5"/>
+          <timestamp value="2023-06-26T13:46:11-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1069,8 +1456,8 @@
         <status value="active"/>
         <date value="2023-06-06"/>
         <expansion>
-          <identifier value="urn:uuid:ae56c6d6-4dfd-4e22-a7eb-3905f3774753"/>
-          <timestamp value="2023-06-09T09:00:42-04:00"/>
+          <identifier value="urn:uuid:0f6a3ee5-2f56-453f-ac1c-ad8745905caf"/>
+          <timestamp value="2023-06-26T13:46:11-04:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1215,8 +1602,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:74d2e9fb-a238-4808-bcb8-54d6a0c3640a"/>
-          <timestamp value="2023-06-09T09:00:43-04:00"/>
+          <identifier value="urn:uuid:7778aa66-3842-4ac1-a30c-11faa5dd6fad"/>
+          <timestamp value="2023-06-26T13:46:11-04:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1486,8 +1873,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:cbfbf051-0306-4d1a-8a63-ea1e37fee95b"/>
-          <timestamp value="2023-06-09T09:00:43-04:00"/>
+          <identifier value="urn:uuid:debbd45e-81eb-425d-9422-45faf204e306"/>
+          <timestamp value="2023-06-26T13:46:12-04:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1607,6 +1994,319 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/dsm5-q4"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-dsm5-q4.html">dsm5 q4 v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q4-1"> </a>  
+                  <a href="CodeSystem-dsm5-q4.html#dsm5-q4-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q4</td>
+                <td>I do not talk more than usual.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q4-2"> </a>  
+                  <a href="CodeSystem-dsm5-q4.html#dsm5-q4-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q4</td>
+                <td>I occasionally talk more than usual.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q4-3"> </a>  
+                  <a href="CodeSystem-dsm5-q4.html#dsm5-q4-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q4</td>
+                <td>I often talk more than usual</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q4-4"> </a>  
+                  <a href="CodeSystem-dsm5-q4.html#dsm5-q4-4">4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q4</td>
+                <td>I frequently talk more than usual</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q4-5"> </a>  
+                  <a href="CodeSystem-dsm5-q4.html#dsm5-q4-5">5</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q4</td>
+                <td>I talk constantly and cannot be interrupted.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/dsm5-q4"/>
+        <version value="0.1.0"/>
+        <name value="DSM5Q4"/>
+        <title value="DSM5 Q4"/>
+        <status value="active"/>
+        <date value="2023-06-21"/>
+        <expansion>
+          <identifier value="urn:uuid:2e13c0f0-166f-4fe6-b3f3-f7c2bcdf42c7"/>
+          <timestamp value="2023-06-26T13:46:12-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q4|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q4"/>
+            <code value="1"/>
+            <display value="I do not talk more than usual."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q4"/>
+            <code value="2"/>
+            <display value="I occasionally talk more than usual."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q4"/>
+            <code value="3"/>
+            <display value="I often talk more than usual"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q4"/>
+            <code value="4"/>
+            <display value="I frequently talk more than usual"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q4"/>
+            <code value="5"/>
+            <display value="I talk constantly and cannot be interrupted."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/consent-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-consent-status.html">Questionnaire general info codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-consent-status-P"> </a>  
+                  <a href="CodeSystem-consent-status.html#consent-status-P">P</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/consent-status</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-consent-status-C"> </a>  
+                  <a href="CodeSystem-consent-status.html#consent-status-C">C</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/consent-status</td>
+                <td>Consented</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-consent-status-W"> </a>  
+                  <a href="CodeSystem-consent-status.html#consent-status-W">W</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/consent-status</td>
+                <td>Withdrawn Consent</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/consent-status"/>
+        <version value="0.1.0"/>
+        <name value="ConsentStatus"/>
+        <title value="Consent status ValueSet"/>
+        <status value="active"/>
+        <date value="2023-06-06"/>
+        <expansion>
+          <identifier value="urn:uuid:00fdd8f7-13c5-4a38-a949-fda43f64aee0"/>
+          <timestamp value="2023-06-26T13:46:12-04:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/consent-status|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/consent-status"/>
+            <code value="P"/>
+            <display value="Pending"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/consent-status"/>
+            <code value="C"/>
+            <display value="Consented"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/consent-status"/>
+            <code value="W"/>
+            <display value="Withdrawn Consent"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/dsm5"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-dsm5.html">dsm5 v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-1"> </a>  
+                  <a href="CodeSystem-dsm5.html#dsm5-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5</td>
+                <td>None (Not at all)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-2"> </a>  
+                  <a href="CodeSystem-dsm5.html#dsm5-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5</td>
+                <td>Slight (Rare, less than a day or two)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-3"> </a>  
+                  <a href="CodeSystem-dsm5.html#dsm5-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5</td>
+                <td>Mild (Several days)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-4"> </a>  
+                  <a href="CodeSystem-dsm5.html#dsm5-4">4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5</td>
+                <td>Moderate (More than half the dayd)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-5"> </a>  
+                  <a href="CodeSystem-dsm5.html#dsm5-5">5</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5</td>
+                <td>Severe (Nearly every day)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/dsm5"/>
+        <version value="0.1.0"/>
+        <name value="DSM5"/>
+        <title value="DSM5"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:3cb40ca2-e87c-4312-a266-591eedbb676f"/>
+          <timestamp value="2023-06-26T13:46:12-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/dsm5|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5"/>
+            <code value="1"/>
+            <display value="None (Not at all)"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5"/>
+            <code value="2"/>
+            <display value="Slight (Rare, less than a day or two)"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5"/>
+            <code value="3"/>
+            <display value="Mild (Several days)"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5"/>
+            <code value="4"/>
+            <display value="Moderate (More than half the dayd)"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5"/>
+            <code value="5"/>
+            <display value="Severe (Nearly every day)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://voicecollab.ai/fhir/ValueSet/decline-reason"/>
     <resource>
       <ValueSet>
@@ -1679,8 +2379,8 @@
         <status value="active"/>
         <date value="2023-06-06"/>
         <expansion>
-          <identifier value="urn:uuid:5ae0feab-953c-4479-9dee-ab0689503b04"/>
-          <timestamp value="2023-06-09T09:00:43-04:00"/>
+          <identifier value="urn:uuid:5d1cae7a-2adf-46da-a250-2a3fdedfccb5"/>
+          <timestamp value="2023-06-26T13:46:13-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1768,8 +2468,8 @@
         <status value="active"/>
         <date value="2023-06-06"/>
         <expansion>
-          <identifier value="urn:uuid:af910c39-717f-465f-92e6-a7f707a8249d"/>
-          <timestamp value="2023-06-09T09:00:44-04:00"/>
+          <identifier value="urn:uuid:a7954296-2425-429f-82fd-54d1d5a9baa8"/>
+          <timestamp value="2023-06-26T13:46:13-04:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1850,8 +2550,8 @@
         <status value="active"/>
         <date value="2023-06-06"/>
         <expansion>
-          <identifier value="urn:uuid:ed9f73ed-6253-44d5-b4b4-973a772046aa"/>
-          <timestamp value="2023-06-09T09:00:44-04:00"/>
+          <identifier value="urn:uuid:1437556d-118e-448e-93a2-98caff46defe"/>
+          <timestamp value="2023-06-26T13:46:13-04:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1875,6 +2575,119 @@
             <system value="https://voicecollab.ai/fhir/CodeSystem/enrollment-complete"/>
             <code value="C"/>
             <display value="Complete"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/ptsd"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-ptsd.html">ptsd v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-ptsd-0"> </a>  
+                  <a href="CodeSystem-ptsd.html#ptsd-0">0</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/ptsd</td>
+                <td>Not at all</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-ptsd-1"> </a>  
+                  <a href="CodeSystem-ptsd.html#ptsd-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/ptsd</td>
+                <td>A little bit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-ptsd-2"> </a>  
+                  <a href="CodeSystem-ptsd.html#ptsd-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/ptsd</td>
+                <td>Moderately</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-ptsd-3"> </a>  
+                  <a href="CodeSystem-ptsd.html#ptsd-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/ptsd</td>
+                <td>Quite a bit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-ptsd-4"> </a>  
+                  <a href="CodeSystem-ptsd.html#ptsd-4">4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/ptsd</td>
+                <td>Extremely</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/ptsd"/>
+        <version value="0.1.0"/>
+        <name value="PTSD"/>
+        <title value="PTSD"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:f6c9dc72-06aa-46ea-8dae-add74f74495b"/>
+          <timestamp value="2023-06-26T13:46:13-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/ptsd|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/ptsd"/>
+            <code value="0"/>
+            <display value="Not at all"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/ptsd"/>
+            <code value="1"/>
+            <display value="A little bit"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/ptsd"/>
+            <code value="2"/>
+            <display value="Moderately"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/ptsd"/>
+            <code value="3"/>
+            <display value="Quite a bit"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/ptsd"/>
+            <code value="4"/>
+            <display value="Extremely"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1945,8 +2758,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:25c3c4ed-cf2d-4b25-9623-cd2b60b3fa6b"/>
-          <timestamp value="2023-06-09T09:00:44-04:00"/>
+          <identifier value="urn:uuid:b5eccfd1-c7a0-4d74-a5ec-989f2ab3abc3"/>
+          <timestamp value="2023-06-26T13:46:13-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2042,7 +2855,7 @@
         <title value="Disability Status"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-06-09T08:59:53-04:00"/>
+        <date value="2023-06-26T13:45:18-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -2180,7 +2993,7 @@
         <title value="Disability Type"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-06-09T08:59:53-04:00"/>
+        <date value="2023-06-26T13:45:18-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -2236,6 +3049,80 @@
             <system value="https://voicecollab.ai/fhir/CodeSystem/disability-type"/>
             <code value="SR"/>
             <display value="Social Relationships"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/session"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-session.html">Session info codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-session-IPR"> </a>  
+                  <a href="CodeSystem-session.html#session-IPR">IPR</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/session</td>
+                <td>In Progress</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-session-C"> </a>  
+                  <a href="CodeSystem-session.html#session-C">C</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/session</td>
+                <td>Completed</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/session"/>
+        <version value="0.1.0"/>
+        <name value="Session"/>
+        <title value="session ValueSet"/>
+        <status value="active"/>
+        <date value="2023-06-16"/>
+        <expansion>
+          <identifier value="urn:uuid:1946a582-fecc-4364-9342-967b4eae52ea"/>
+          <timestamp value="2023-06-26T13:46:16-04:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/session|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/session"/>
+            <code value="IPR"/>
+            <display value="In Progress"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/session"/>
+            <code value="C"/>
+            <display value="Completed"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2306,8 +3193,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:fdec1b62-89b4-4d1e-b9f4-66afd446f063"/>
-          <timestamp value="2023-06-09T09:00:46-04:00"/>
+          <identifier value="urn:uuid:7d58b2e5-af55-4d99-aed8-785c96a8aa9f"/>
+          <timestamp value="2023-06-26T13:46:16-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2336,6 +3223,80 @@
             <system value="https://voicecollab.ai/fhir/CodeSystem/drink-number"/>
             <code value="TM"/>
             <display value="10 to more"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/left-right"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-left-right.html">leftRight v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-left-right-L"> </a>  
+                  <a href="CodeSystem-left-right.html#left-right-L">L</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/left-right</td>
+                <td>Left</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-left-right-R"> </a>  
+                  <a href="CodeSystem-left-right.html#left-right-R">R</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/left-right</td>
+                <td>Right</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/left-right"/>
+        <version value="0.1.0"/>
+        <name value="LeftRight"/>
+        <title value="leftRight"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:95a4392c-1631-4e32-80e8-cd216141aeee"/>
+          <timestamp value="2023-06-26T13:46:18-04:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/left-right|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/left-right"/>
+            <code value="L"/>
+            <display value="Left"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/left-right"/>
+            <code value="R"/>
+            <display value="Right"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2419,7 +3380,7 @@
         <title value="Household Makeup"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-06-09T08:59:53-04:00"/>
+        <date value="2023-06-26T13:45:18-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -2530,8 +3491,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:a546ee6a-fb6c-48fa-adfa-5458993c6fbc"/>
-          <timestamp value="2023-06-09T09:00:49-04:00"/>
+          <identifier value="urn:uuid:514b9acc-b52e-44ac-8384-d74f784ec55c"/>
+          <timestamp value="2023-06-26T13:46:20-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2654,8 +3615,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:180bc11c-a248-4a00-a3e1-d1a9e858e073"/>
-          <timestamp value="2023-06-09T09:00:49-04:00"/>
+          <identifier value="urn:uuid:802eff25-5ac6-48be-97b6-8a1d77a370a8"/>
+          <timestamp value="2023-06-26T13:46:20-04:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3249,8 +4210,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:b3b3e7d7-e056-4629-a431-ea895a80402a"/>
-          <timestamp value="2023-06-09T09:00:49-04:00"/>
+          <identifier value="urn:uuid:81cec5d8-f907-4294-80af-f65b62005761"/>
+          <timestamp value="2023-06-26T13:46:20-04:00"/>
           <total value="64"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3678,7 +4639,7 @@
         <title value="Transportation Type"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-06-09T08:59:53-04:00"/>
+        <date value="2023-06-26T13:45:18-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -3729,6 +4690,206 @@
             <system value="https://voicecollab.ai/fhir/CodeSystem/transportation-type"/>
             <code value="O"/>
             <display value="Other, please specify"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/etiology"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-etiology.html">etiology v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-etiology-1"> </a>  
+                  <a href="CodeSystem-etiology.html#etiology-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/etiology</td>
+                <td>Idiopathic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-etiology-2"> </a>  
+                  <a href="CodeSystem-etiology.html#etiology-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/etiology</td>
+                <td>Latrogenic (surgery/intubation)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-etiology-3"> </a>  
+                  <a href="CodeSystem-etiology.html#etiology-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/etiology</td>
+                <td>Tumor invading RLN</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-etiology-4"> </a>  
+                  <a href="CodeSystem-etiology.html#etiology-4">4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/etiology</td>
+                <td>Radiation</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/etiology"/>
+        <version value="0.1.0"/>
+        <name value="Etiology"/>
+        <title value="etiology"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:289520ce-d711-4a6b-845c-b12800738492"/>
+          <timestamp value="2023-06-26T13:46:21-04:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/etiology|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/etiology"/>
+            <code value="1"/>
+            <display value="Idiopathic"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/etiology"/>
+            <code value="2"/>
+            <display value="Latrogenic (surgery/intubation)"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/etiology"/>
+            <code value="3"/>
+            <display value="Tumor invading RLN"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/etiology"/>
+            <code value="4"/>
+            <display value="Radiation"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/vocal-fold-injection-augmentation"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-vocal-fold-injection-augmentation.html">Vocal Fold Injection Augmentation v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-vocal-fold-injection-augmentation-1"> </a>  
+                  <a href="CodeSystem-vocal-fold-injection-augmentation.html#vocal-fold-injection-augmentation-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/vocal-fold-injection-augmentation</td>
+                <td>Caha</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-vocal-fold-injection-augmentation-2"> </a>  
+                  <a href="CodeSystem-vocal-fold-injection-augmentation.html#vocal-fold-injection-augmentation-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/vocal-fold-injection-augmentation</td>
+                <td>Gel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-vocal-fold-injection-augmentation-3"> </a>  
+                  <a href="CodeSystem-vocal-fold-injection-augmentation.html#vocal-fold-injection-augmentation-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/vocal-fold-injection-augmentation</td>
+                <td>Hyaluronic Acid augmentation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-vocal-fold-injection-augmentation-4"> </a>  
+                  <a href="CodeSystem-vocal-fold-injection-augmentation.html#vocal-fold-injection-augmentation-4">4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/vocal-fold-injection-augmentation</td>
+                <td>Fat Injection</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/vocal-fold-injection-augmentation"/>
+        <version value="0.1.0"/>
+        <name value="VocalFoldInjectionAugmentation"/>
+        <title value="Vocal Fold Injection Augmentation"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:ef47764e-f6cf-479c-9aad-1792c2d78a71"/>
+          <timestamp value="2023-06-26T13:46:21-04:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/vocal-fold-injection-augmentation|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/vocal-fold-injection-augmentation"/>
+            <code value="1"/>
+            <display value="Caha"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/vocal-fold-injection-augmentation"/>
+            <code value="2"/>
+            <display value="Gel"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/vocal-fold-injection-augmentation"/>
+            <code value="3"/>
+            <display value="Hyaluronic Acid augmentation"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/vocal-fold-injection-augmentation"/>
+            <code value="4"/>
+            <display value="Fat Injection"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -3791,8 +4952,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:ad1ac683-8feb-4c97-85ad-e418eeca412e"/>
-          <timestamp value="2023-06-09T09:00:49-04:00"/>
+          <identifier value="urn:uuid:1fcdd37c-66d2-4cf7-8bd0-41e0bfde2acd"/>
+          <timestamp value="2023-06-26T13:46:21-04:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3907,7 +5068,7 @@
         <title value="Household Status"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-06-09T08:59:53-04:00"/>
+        <date value="2023-06-26T13:45:18-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -3953,6 +5114,724 @@
             <system value="https://voicecollab.ai/fhir/CodeSystem/household-status"/>
             <code value="UP"/>
             <display value="Unhoused-permanently"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/thyroplasty"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-thyroplasty.html">Thyroplasty  v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-thyroplasty-1"> </a>  
+                  <a href="CodeSystem-thyroplasty.html#thyroplasty-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/thyroplasty</td>
+                <td>Goretex</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-thyroplasty-2"> </a>  
+                  <a href="CodeSystem-thyroplasty.html#thyroplasty-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/thyroplasty</td>
+                <td>Silastic</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/thyroplasty"/>
+        <version value="0.1.0"/>
+        <name value="Thyroplasty"/>
+        <title value="Thyroplasty"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:8504fa82-cda0-413e-b542-1308e0600803"/>
+          <timestamp value="2023-06-26T13:46:23-04:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/thyroplasty|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/thyroplasty"/>
+            <code value="1"/>
+            <display value="Goretex"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/thyroplasty"/>
+            <code value="2"/>
+            <display value="Silastic"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/adhd"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-adhd.html">adhd v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-adhd-1"> </a>  
+                  <a href="CodeSystem-adhd.html#adhd-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/adhd</td>
+                <td>Never</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-adhd-2"> </a>  
+                  <a href="CodeSystem-adhd.html#adhd-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/adhd</td>
+                <td>Rarely</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-adhd-3"> </a>  
+                  <a href="CodeSystem-adhd.html#adhd-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/adhd</td>
+                <td>Sometimes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-adhd-4"> </a>  
+                  <a href="CodeSystem-adhd.html#adhd-4">4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/adhd</td>
+                <td>Often</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-adhd-5"> </a>  
+                  <a href="CodeSystem-adhd.html#adhd-5">5</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/adhd</td>
+                <td>Very Often</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/adhd"/>
+        <version value="0.1.0"/>
+        <name value="ADHD"/>
+        <title value="ADHD"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:4b296b95-57d2-43a7-9cd7-d43bb8f69871"/>
+          <timestamp value="2023-06-26T13:46:24-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/adhd|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/adhd"/>
+            <code value="1"/>
+            <display value="Never"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/adhd"/>
+            <code value="2"/>
+            <display value="Rarely"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/adhd"/>
+            <code value="3"/>
+            <display value="Sometimes"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/adhd"/>
+            <code value="4"/>
+            <display value="Often"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/adhd"/>
+            <code value="5"/>
+            <display value="Very Often"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/dsm5-q1"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-dsm5-q1.html">dsm5 q1 v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q1-1"> </a>  
+                  <a href="CodeSystem-dsm5-q1.html#dsm5-q1-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q1</td>
+                <td>I do not feel happier or more cheerful than usual.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q1-2"> </a>  
+                  <a href="CodeSystem-dsm5-q1.html#dsm5-q1-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q1</td>
+                <td>I occasionally feel happier or more cheerful than usual.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q1-3"> </a>  
+                  <a href="CodeSystem-dsm5-q1.html#dsm5-q1-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q1</td>
+                <td>I often feel happier or more cheerful than usual.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q1-4"> </a>  
+                  <a href="CodeSystem-dsm5-q1.html#dsm5-q1-4">4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q1</td>
+                <td>I feel happier or more cheerful than usual most of the time.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q1-5"> </a>  
+                  <a href="CodeSystem-dsm5-q1.html#dsm5-q1-5">5</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q1</td>
+                <td>I feel happier of more cheerful than usual all of the time</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/dsm5-q1"/>
+        <version value="0.1.0"/>
+        <name value="DSM5Q1"/>
+        <title value="DSM5 Q1"/>
+        <status value="active"/>
+        <date value="2023-06-21"/>
+        <expansion>
+          <identifier value="urn:uuid:641c0b9c-b185-4ad4-81f1-a70e82393455"/>
+          <timestamp value="2023-06-26T13:46:24-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q1|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q1"/>
+            <code value="1"/>
+            <display value="I do not feel happier or more cheerful than usual."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q1"/>
+            <code value="2"/>
+            <display value="I occasionally feel happier or more cheerful than usual."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q1"/>
+            <code value="3"/>
+            <display value="I often feel happier or more cheerful than usual."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q1"/>
+            <code value="4"/>
+            <display value="I feel happier or more cheerful than usual most of the time."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q1"/>
+            <code value="5"/>
+            <display value="I feel happier of more cheerful than usual all of the time"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/tumor-rln"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-tumor-rln.html">Tumor invading RLN  v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-tumor-rln-1"> </a>  
+                  <a href="CodeSystem-tumor-rln.html#tumor-rln-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/tumor-rln</td>
+                <td>Brain</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-tumor-rln-2"> </a>  
+                  <a href="CodeSystem-tumor-rln.html#tumor-rln-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/tumor-rln</td>
+                <td>Chest</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-tumor-rln-3"> </a>  
+                  <a href="CodeSystem-tumor-rln.html#tumor-rln-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/tumor-rln</td>
+                <td>Neck</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/tumor-rln"/>
+        <version value="0.1.0"/>
+        <name value="TumorRLN"/>
+        <title value="Tumor RLN"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:19d717e8-4e37-4ae5-b400-4a80bf2bc7da"/>
+          <timestamp value="2023-06-26T13:46:24-04:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/tumor-rln|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/tumor-rln"/>
+            <code value="1"/>
+            <display value="Brain"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/tumor-rln"/>
+            <code value="2"/>
+            <display value="Chest"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/tumor-rln"/>
+            <code value="3"/>
+            <display value="Neck"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/degree"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-degree.html">Degree v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-degree-1"> </a>  
+                  <a href="CodeSystem-degree.html#degree-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/degree</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-degree-2"> </a>  
+                  <a href="CodeSystem-degree.html#degree-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/degree</td>
+                <td>I</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/degree"/>
+        <version value="0.1.0"/>
+        <name value="Degree"/>
+        <title value="Degree"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:0f36e9f3-2d32-4a16-80c0-c2e6782181ba"/>
+          <timestamp value="2023-06-26T13:46:24-04:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/degree|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/degree"/>
+            <code value="1"/>
+            <display value="C"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/degree"/>
+            <code value="2"/>
+            <display value="I"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/surgery-sub-category"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-surgery-sub-category.html">surgery sub-category v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-surgery-sub-category-1"> </a>  
+                  <a href="CodeSystem-surgery-sub-category.html#surgery-sub-category-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/surgery-sub-category</td>
+                <td>Thyroplasty</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-surgery-sub-category-2"> </a>  
+                  <a href="CodeSystem-surgery-sub-category.html#surgery-sub-category-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/surgery-sub-category</td>
+                <td>Vocal fold injection augmentation</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/surgery-sub-category"/>
+        <version value="0.1.0"/>
+        <name value="SurgerySubCategory"/>
+        <title value="Surgery Sub Category"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:c82362a4-58f4-4492-8e1c-29699595fee0"/>
+          <timestamp value="2023-06-26T13:46:26-04:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/surgery-sub-category|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/surgery-sub-category"/>
+            <code value="1"/>
+            <display value="Thyroplasty"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/surgery-sub-category"/>
+            <code value="2"/>
+            <display value="Vocal fold injection augmentation"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/consent-usf-question"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-consent-usf-question.html">Consent Usf Question v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-consent-usf-question-1"> </a>  
+                  <a href="CodeSystem-consent-usf-question.html#consent-usf-question-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/consent-usf-question</td>
+                <td>I consent to having all data I submit shared only with the researchers of this study.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-consent-usf-question-2"> </a>  
+                  <a href="CodeSystem-consent-usf-question.html#consent-usf-question-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/consent-usf-question</td>
+                <td>I consent to having all data I submit shared with
+the researchers of this study and to having my
+audio recordings and de-identified written
+responses shared with other qualified
+researchers.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-consent-usf-question-3"> </a>  
+                  <a href="CodeSystem-consent-usf-question.html#consent-usf-question-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/consent-usf-question</td>
+                <td>I consent to having all data I submit shared with
+the researchers of this study and to having my
+audio recordings and de-identified written
+responses shared with other qualified
+researchers as well as publicly in the form of an
+open-source database</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/consent-usf-question"/>
+        <version value="0.1.0"/>
+        <name value="ConsentUsfQuestion"/>
+        <title value="Consent Main ICF (USF)"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:ddb873fa-12f5-41b8-a431-dd7f94fce1c4"/>
+          <timestamp value="2023-06-26T13:46:26-04:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/consent-usf-question|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/consent-usf-question"/>
+            <code value="1"/>
+            <display value="I consent to having all data I submit shared only with the researchers of this study."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/consent-usf-question"/>
+            <code value="2"/>
+            <display value="I consent to having all data I submit shared with&#xA;the researchers of this study and to having my&#xA;audio recordings and de-identified written&#xA;responses shared with other qualified&#xA;researchers."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/consent-usf-question"/>
+            <code value="3"/>
+            <display value="I consent to having all data I submit shared with&#xA;the researchers of this study and to having my&#xA;audio recordings and de-identified written&#xA;responses shared with other qualified&#xA;researchers as well as publicly in the form of an&#xA;open-source database"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/treatment"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-treatment.html">treatment v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-treatment-1"> </a>  
+                  <a href="CodeSystem-treatment.html#treatment-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/treatment</td>
+                <td>Surgery</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-treatment-2"> </a>  
+                  <a href="CodeSystem-treatment.html#treatment-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/treatment</td>
+                <td>Speech Therapy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-treatment-3"> </a>  
+                  <a href="CodeSystem-treatment.html#treatment-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/treatment</td>
+                <td>No Treatment</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/treatment"/>
+        <version value="0.1.0"/>
+        <name value="Treatment"/>
+        <title value="treatment"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:bf33f4b3-cd46-48c6-b78f-a7fd98c67aa4"/>
+          <timestamp value="2023-06-26T13:46:26-04:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/treatment|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/treatment"/>
+            <code value="1"/>
+            <display value="Surgery"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/treatment"/>
+            <code value="2"/>
+            <display value="Speech Therapy"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/treatment"/>
+            <code value="3"/>
+            <display value="No Treatment"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -4031,8 +5910,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:536536f6-8838-45fb-940d-16ff8f46315b"/>
-          <timestamp value="2023-06-09T09:00:54-04:00"/>
+          <identifier value="urn:uuid:86307e01-9b43-4b41-a835-6aa4087a549b"/>
+          <timestamp value="2023-06-26T13:46:27-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4066,6 +5945,306 @@
             <system value="https://voicecollab.ai/fhir/CodeSystem/drinking-times"/>
             <code value="FM"/>
             <display value="4 or more times a week"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/dsm5-phobia"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-dsm5-phobia.html">dsm5 q5 v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-phobia-1"> </a>  
+                  <a href="CodeSystem-dsm5-phobia.html#dsm5-phobia-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia</td>
+                <td>Never</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-phobia-2"> </a>  
+                  <a href="CodeSystem-dsm5-phobia.html#dsm5-phobia-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia</td>
+                <td>Occasionally</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-phobia-3"> </a>  
+                  <a href="CodeSystem-dsm5-phobia.html#dsm5-phobia-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia</td>
+                <td>Half of the time</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-phobia-4"> </a>  
+                  <a href="CodeSystem-dsm5-phobia.html#dsm5-phobia-4">4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia</td>
+                <td>Most of the time</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-phobia-5"> </a>  
+                  <a href="CodeSystem-dsm5-phobia.html#dsm5-phobia-5">5</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia</td>
+                <td>All of the time</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/dsm5-phobia"/>
+        <version value="0.1.0"/>
+        <name value="DSM5Phobia"/>
+        <title value="DSM5 Q5"/>
+        <status value="active"/>
+        <date value="2023-06-21"/>
+        <expansion>
+          <identifier value="urn:uuid:d89ae902-58ef-478b-9b1b-d63846f951f8"/>
+          <timestamp value="2023-06-26T13:46:29-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia"/>
+            <code value="1"/>
+            <display value="Never"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia"/>
+            <code value="2"/>
+            <display value="Occasionally"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia"/>
+            <code value="3"/>
+            <display value="Half of the time"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia"/>
+            <code value="4"/>
+            <display value="Most of the time"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia"/>
+            <code value="5"/>
+            <display value="All of the time"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/dsm5-q3"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-dsm5-q3.html">dsm5 q3 v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q3-1"> </a>  
+                  <a href="CodeSystem-dsm5-q3.html#dsm5-q3-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q3</td>
+                <td>I do not need less sleep than usual</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q3-2"> </a>  
+                  <a href="CodeSystem-dsm5-q3.html#dsm5-q3-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q3</td>
+                <td>I occasionally need less sleep than usual</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q3-3"> </a>  
+                  <a href="CodeSystem-dsm5-q3.html#dsm5-q3-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q3</td>
+                <td>I need less sleep than usual</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q3-4"> </a>  
+                  <a href="CodeSystem-dsm5-q3.html#dsm5-q3-4">4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q3</td>
+                <td>I frequently need less sleep than usual.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q3-5"> </a>  
+                  <a href="CodeSystem-dsm5-q3.html#dsm5-q3-5">5</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q3</td>
+                <td>I can go all day and all night without any sleep and still not feel tired.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/dsm5-q3"/>
+        <version value="0.1.0"/>
+        <name value="DSM5Q3"/>
+        <title value="DSM5 Q3"/>
+        <status value="active"/>
+        <date value="2023-06-21"/>
+        <expansion>
+          <identifier value="urn:uuid:d154481f-c82d-4b43-ac71-bc2035f42a1a"/>
+          <timestamp value="2023-06-26T13:46:29-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q3|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q3"/>
+            <code value="1"/>
+            <display value="I do not need less sleep than usual"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q3"/>
+            <code value="2"/>
+            <display value="I occasionally need less sleep than usual"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q3"/>
+            <code value="3"/>
+            <display value="I need less sleep than usual"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q3"/>
+            <code value="4"/>
+            <display value="I frequently need less sleep than usual."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q3"/>
+            <code value="5"/>
+            <display value="I can go all day and all night without any sleep and still not feel tired."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/acoustic-task-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-acoustic-task-status.html">Acoustic Task Status codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-acoustic-task-status-S"> </a>  
+                  <a href="CodeSystem-acoustic-task-status.html#acoustic-task-status-S">S</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/acoustic-task-status</td>
+                <td>Skipped</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-acoustic-task-status-C"> </a>  
+                  <a href="CodeSystem-acoustic-task-status.html#acoustic-task-status-C">C</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/acoustic-task-status</td>
+                <td>Completed</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/acoustic-task-status"/>
+        <version value="0.1.0"/>
+        <name value="AcousticTaskStatus"/>
+        <title value="acoustic ValueSet"/>
+        <status value="active"/>
+        <date value="2023-06-16"/>
+        <expansion>
+          <identifier value="urn:uuid:491eceb9-47ef-4a3f-96c9-4223ee76e404"/>
+          <timestamp value="2023-06-26T13:46:30-04:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/acoustic-task-status|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/acoustic-task-status"/>
+            <code value="S"/>
+            <display value="Skipped"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/acoustic-task-status"/>
+            <code value="C"/>
+            <display value="Completed"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -4184,8 +6363,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:9294d91f-3cae-4356-9629-ba582e012cbb"/>
-          <timestamp value="2023-06-09T09:00:56-04:00"/>
+          <identifier value="urn:uuid:6e34684e-90a8-4c17-8864-fd478f0538ac"/>
+          <timestamp value="2023-06-26T13:46:30-04:00"/>
           <total value="10"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4322,8 +6501,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:231a1d73-8554-4df7-98a3-fe848591075b"/>
-          <timestamp value="2023-06-09T09:00:57-04:00"/>
+          <identifier value="urn:uuid:1f59c072-461f-42da-9eab-52b13d22f46d"/>
+          <timestamp value="2023-06-26T13:46:30-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4427,8 +6606,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:8eeec76e-1f91-4b0b-be3a-d606c0ddd3b4"/>
-          <timestamp value="2023-06-09T09:00:57-04:00"/>
+          <identifier value="urn:uuid:1425869d-ca06-46ac-ad42-5ed6ca9ffcac"/>
+          <timestamp value="2023-06-26T13:46:31-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4537,7 +6716,7 @@
         <title value="Yes/No/Some"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-06-09T08:59:53-04:00"/>
+        <date value="2023-06-26T13:45:18-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -4662,7 +6841,7 @@
         <title value="Immigration Status"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-06-09T08:59:53-04:00"/>
+        <date value="2023-06-26T13:45:18-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -4791,8 +6970,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:221620f0-f2ca-4e89-a35f-96c5d7d7fc11"/>
-          <timestamp value="2023-06-09T09:00:57-04:00"/>
+          <identifier value="urn:uuid:a69159c5-37b2-46f0-a2d7-7189af37fbab"/>
+          <timestamp value="2023-06-26T13:46:31-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4893,7 +7072,7 @@
         <title value="Financial Assistance"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-06-09T08:59:53-04:00"/>
+        <date value="2023-06-26T13:45:18-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -5026,8 +7205,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:88d73085-2ba0-4042-b0e3-01eb0cd41b1a"/>
-          <timestamp value="2023-06-09T09:00:58-04:00"/>
+          <identifier value="urn:uuid:f504c62b-7b0d-4b3c-a410-c02ee496ac35"/>
+          <timestamp value="2023-06-26T13:46:32-04:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -5076,6 +7255,219 @@
             <system value="https://voicecollab.ai/fhir/CodeSystem/vocal-activity"/>
             <code value="O"/>
             <display value="Other, Please Specify"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/glottic-gap"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-glottic-gap.html">Tumor invading RLN  v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-glottic-gap-1"> </a>  
+                  <a href="CodeSystem-glottic-gap.html#glottic-gap-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/glottic-gap</td>
+                <td>Small</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-glottic-gap-2"> </a>  
+                  <a href="CodeSystem-glottic-gap.html#glottic-gap-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/glottic-gap</td>
+                <td>Moderate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-glottic-gap-3"> </a>  
+                  <a href="CodeSystem-glottic-gap.html#glottic-gap-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/glottic-gap</td>
+                <td>Large</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/glottic-gap"/>
+        <version value="0.1.0"/>
+        <name value="GlotticGap"/>
+        <title value="Glottic Gap"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:a9e9a35e-615a-467e-991d-f50a25e78363"/>
+          <timestamp value="2023-06-26T13:46:32-04:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/glottic-gap|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/glottic-gap"/>
+            <code value="1"/>
+            <display value="Small"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/glottic-gap"/>
+            <code value="2"/>
+            <display value="Moderate"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/glottic-gap"/>
+            <code value="3"/>
+            <display value="Large"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/iatrogenic"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-iatrogenic.html">iatrogenic v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-iatrogenic-1"> </a>  
+                  <a href="CodeSystem-iatrogenic.html#iatrogenic-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/iatrogenic</td>
+                <td>Thyroidectomy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-iatrogenic-2"> </a>  
+                  <a href="CodeSystem-iatrogenic.html#iatrogenic-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/iatrogenic</td>
+                <td>ACDF</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-iatrogenic-3"> </a>  
+                  <a href="CodeSystem-iatrogenic.html#iatrogenic-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/iatrogenic</td>
+                <td>Lung surgery</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-iatrogenic-4"> </a>  
+                  <a href="CodeSystem-iatrogenic.html#iatrogenic-4">4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/iatrogenic</td>
+                <td>Heart Surgery</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-iatrogenic-5"> </a>  
+                  <a href="CodeSystem-iatrogenic.html#iatrogenic-5">5</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/iatrogenic</td>
+                <td>Intubation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-iatrogenic-6"> </a>  
+                  <a href="CodeSystem-iatrogenic.html#iatrogenic-6">6</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/iatrogenic</td>
+                <td>Brain Surgery</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/iatrogenic"/>
+        <version value="0.1.0"/>
+        <name value="Iatrogenic"/>
+        <title value="Iatrogenic"/>
+        <status value="active"/>
+        <date value="2023-06-20"/>
+        <expansion>
+          <identifier value="urn:uuid:dafead59-1a6f-4afe-ba28-b741f63e76e6"/>
+          <timestamp value="2023-06-26T13:46:33-04:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/iatrogenic|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/iatrogenic"/>
+            <code value="1"/>
+            <display value="Thyroidectomy"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/iatrogenic"/>
+            <code value="2"/>
+            <display value="ACDF"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/iatrogenic"/>
+            <code value="3"/>
+            <display value="Lung surgery"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/iatrogenic"/>
+            <code value="4"/>
+            <display value="Heart Surgery"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/iatrogenic"/>
+            <code value="5"/>
+            <display value="Intubation"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/iatrogenic"/>
+            <code value="6"/>
+            <display value="Brain Surgery"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -5154,8 +7546,8 @@
         <status value="active"/>
         <date value="2023-06-06"/>
         <expansion>
-          <identifier value="urn:uuid:c519716f-4491-41b7-a047-fa8e1cf6881f"/>
-          <timestamp value="2023-06-09T09:00:59-04:00"/>
+          <identifier value="urn:uuid:05ce6675-8775-4d09-adb8-99c9c293fbae"/>
+          <timestamp value="2023-06-26T13:46:33-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -5296,7 +7688,7 @@
         <title value="Employment Status"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-06-09T08:59:53-04:00"/>
+        <date value="2023-06-26T13:45:18-04:00"/>
         <publisher value="KinD Lab"/>
         <contact>
           <name value="KinD Lab"/>
@@ -5491,8 +7883,8 @@
         <status value="active"/>
         <date value="2023-05-11"/>
         <expansion>
-          <identifier value="urn:uuid:bc3b6c39-841f-4e50-9103-8ae9881772e5"/>
-          <timestamp value="2023-06-09T09:01:00-04:00"/>
+          <identifier value="urn:uuid:81668a9c-6e3c-4c1c-b3be-fb286261f2b7"/>
+          <timestamp value="2023-06-26T13:46:35-04:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -5536,6 +7928,119 @@
             <system value="https://voicecollab.ai/fhir/CodeSystem/gender-identity"/>
             <code value="UN"/>
             <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://voicecollab.ai/fhir/ValueSet/dsm5-q2"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-dsm5-q2.html">dsm5 q2 v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q2-1"> </a>  
+                  <a href="CodeSystem-dsm5-q2.html#dsm5-q2-1">1</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q2</td>
+                <td>I do not feel more self-confident than usual.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q2-2"> </a>  
+                  <a href="CodeSystem-dsm5-q2.html#dsm5-q2-2">2</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q2</td>
+                <td>I occasionally feel more self-confident thanusual.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q2-3"> </a>  
+                  <a href="CodeSystem-dsm5-q2.html#dsm5-q2-3">3</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q2</td>
+                <td>I often feel more self-confident than usual</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q2-4"> </a>  
+                  <a href="CodeSystem-dsm5-q2.html#dsm5-q2-4">4</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q2</td>
+                <td>I frequently feel more self-confident than usual.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---voicecollab.ai-fhir-CodeSystem-dsm5-q2-5"> </a>  
+                  <a href="CodeSystem-dsm5-q2.html#dsm5-q2-5">5</a>
+                </td>
+                <td>https://voicecollab.ai/fhir/CodeSystem/dsm5-q2</td>
+                <td>I feel extremely self-confident all of the time.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://voicecollab.ai/fhir/ValueSet/dsm5-q2"/>
+        <version value="0.1.0"/>
+        <name value="DSM5Q2"/>
+        <title value="DSM5 Q3"/>
+        <status value="active"/>
+        <date value="2023-06-21"/>
+        <expansion>
+          <identifier value="urn:uuid:9bf18ead-e03d-4499-ac1b-f917501b95a9"/>
+          <timestamp value="2023-06-26T13:46:35-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q2|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q2"/>
+            <code value="1"/>
+            <display value="I do not feel more self-confident than usual."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q2"/>
+            <code value="2"/>
+            <display value="I occasionally feel more self-confident thanusual."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q2"/>
+            <code value="3"/>
+            <display value="I often feel more self-confident than usual"/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q2"/>
+            <code value="4"/>
+            <display value="I frequently feel more self-confident than usual."/>
+          </contains>
+          <contains>
+            <system value="https://voicecollab.ai/fhir/CodeSystem/dsm5-q2"/>
+            <code value="5"/>
+            <display value="I feel extremely self-confident all of the time."/>
           </contains>
         </expansion>
       </ValueSet>
@@ -5598,8 +8103,8 @@
         <status value="active"/>
         <date value="2023-06-06"/>
         <expansion>
-          <identifier value="urn:uuid:17c4a5b9-20e7-40aa-8103-9261d0da85ba"/>
-          <timestamp value="2023-06-09T09:01:01-04:00"/>
+          <identifier value="urn:uuid:dec25735-1d67-4b96-a9fa-2ad1457af52a"/>
+          <timestamp value="2023-06-26T13:46:35-04:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>

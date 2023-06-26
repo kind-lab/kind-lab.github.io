@@ -1,0 +1,559 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/Questionnaire/DSM5> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DSM5"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The linkId for the item\">LinkId</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the itemcan appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> </td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">https://voicecollab.ai/fhir/Questionnaire/DSM5#0.1.0</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.dsm_5_session_id\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> dsm_5_session_id</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Session ID</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.dsm_5_started_at\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> dsm_5_started_at</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Started At</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.dsm_5_completed_at\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> dsm_5_completed_at</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Completed At</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.null\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> </td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">During the past TWO (2) WEEKS, how much (or how\noften) have you been bothered by the following problems? 0=None (Not\nat all), 1=Slight (Rare, less than a day or two), 2=Mild (Several days),\n3=Moderate (More than half the days), 4=Severe (Nearly every day</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.little_interest\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> little_interest</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Little interest or pleasure in doing things?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.feeling_down\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> feeling_down</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling down, depressed, or hopeless?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.feeling_more_irritate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> feeling_more_irritate</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling more irritated, grouchy, or angry than usual? </td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.sleeping_less\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> sleeping_less</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Sleeping less than usual, but still have a lot of energy?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.starting_more_projects\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> starting_more_projects</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Starting lots more projects than usual or doing more risky things than usual?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.feeling_nervous\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> feeling_nervous</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling nervous, anxious, frightened, worried, or on edge?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.feeling_panic\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> feeling_panic</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling panic or being frightened?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.avoiding_situations\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> avoiding_situations</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Avoiding situations that make you anxious? </td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.unexplained_aches\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> unexplained_aches</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Unexplained aches and pains (e.g., head, back, joints, abdomen, legs)?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.illness_not_taken_serious\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> illness_not_taken_serious</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling that your illnesses are not being taken seriously enough?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.self_harm\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> self_harm</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Thoughts of actually hurting yourself?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.hearing_things\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> hearing_things</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Hearing things other people couldn't hear, such as voices even when no one was around?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.someone_hear_thoughts\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> someone_hear_thoughts</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling that someone could hear your thoughts, or that you could hear what another person was thinking?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.sleep_quality\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> sleep_quality</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Problems with sleep that affected your sleep quality overall?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.memory_issues\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> memory_issues</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Problems with memory (e.g., learning new information) or with location (e.g., finding your way home)?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.unpleasant_thoughts\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> unpleasant_thoughts</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Unpleasant thoughts, urges, or images that repeatedly enter your mind?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.repeat_acts\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> repeat_acts</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling driven to perform certain behaviors or mental acts over and over again?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.feeling_detached\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> feeling_detached</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling detached or distant from yourself, your body, your physical surroundings, or your memories?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.no_purpose\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> no_purpose</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not knowing who you really are or what you want out of life?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.isolated\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> isolated</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not feeling close to other people or enjoying your relationships with them?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.drinking_more\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> drinking_more</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Drinking at least 4 drinks of any kind of alcohol in a single day?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.smoking_more\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> smoking_more</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Smoking any cigarettes, a cigar, or pipe, or using snuff or chewing tobacco?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.medication_use\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> medication_use</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Using any of the following medicines ON YOUR OWN, that\nis, without a doctor's prescription, in greater amounts or\nlonger than prescribed [e.g., painkillers (like Vicodin),\nstimulants (like Ritalin or Adderall), sedatives or\ntranquilizers (like sleeping pills or Valium), or drugs like\nmarijuana, cocaine or crack, club drugs (like ecstasy),\nhallucinogens (like LSD), heroin, inhalants or solvents (like\nglue), or methamphetamine (like speed)]?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-dsm5.html\">DSM5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.best_describes\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> best_describes</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">DSM-5 Adult (ASRM) Choose the one statement in each\ngroup that best describes the way you (the individual receiving care) have\nbeen feeling for the past week. Please note: The word 'occasionally' when\nused here means once or twice; 'often' means several times or more and\n'frequently' means most of the time.</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.q1_happy\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> q1_happy</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Question 1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.sleeping_less\">sleeping_less</a> &gt; 2</li><li><a href=\"#item.starting_more_projects\">starting_more_projects</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-q1.html\">DSM5 Q1</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.q2_self_confident\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> q2_self_confident</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Question 2</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.sleeping_less\">sleeping_less</a> &gt; 2</li><li><a href=\"#item.starting_more_projects\">starting_more_projects</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-q2.html\">DSM5 Q3</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.q3_sleep\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> q3_sleep</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Question 3</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.sleeping_less\">sleeping_less</a> &gt; 2</li><li><a href=\"#item.starting_more_projects\">starting_more_projects</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-q3.html\">DSM5 Q3</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.q4_talk\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> q4_talk</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Question 4</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.sleeping_less\">sleeping_less</a> &gt; 2</li><li><a href=\"#item.starting_more_projects\">starting_more_projects</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-q4.html\">DSM5 Q4</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.q5_active\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> q5_active</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Question 5</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.sleeping_less\">sleeping_less</a> &gt; 2</li><li><a href=\"#item.starting_more_projects\">starting_more_projects</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-q5.html\">DSM5 Q5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.phobia\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> phobia</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">DSM-5 Adult (Social Phobia) The following questions ask\nabout thoughts, feelings, and behaviors that you may have had about\nsocial situations. Usual social situations include: public speaking,\nspeaking in meetings, attending social events or parties, introducing\nyourself to others, having conversations, giving and receiving\ncompliments, making requests of others, and eating and writing in public.\nDuring the PAST 7 DAYS, I have...</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.social_phobia_1\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">felt moments of sudden terror, fear, or fright in social situations</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.feeling_nervous\">feeling_nervous</a> &gt; 2</li><li><a href=\"#item.feeling_panic\">feeling_panic</a> &gt; 2</li><li><a href=\"#item.avoiding_situations\">avoiding_situations</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-phobia.html\">DSM5 Q5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.social_phobia_2\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_2</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">felt anxious, worried, or nervous about social situations</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.feeling_nervous\">feeling_nervous</a> &gt; 2</li><li><a href=\"#item.feeling_panic\">feeling_panic</a> &gt; 2</li><li><a href=\"#item.avoiding_situations\">avoiding_situations</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-phobia.html\">DSM5 Q5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.social_phobia_3\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_3</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">had thoughts of being rejected, humiliated, embarrassed, ridiculed, or offending others</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.feeling_nervous\">feeling_nervous</a> &gt; 2</li><li><a href=\"#item.feeling_panic\">feeling_panic</a> &gt; 2</li><li><a href=\"#item.avoiding_situations\">avoiding_situations</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-phobia.html\">DSM5 Q5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.social_phobia_4\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_4</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">felt a racing heart, sweaty, trouble breathing, faint, or shaky in social situations</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.feeling_nervous\">feeling_nervous</a> &gt; 2</li><li><a href=\"#item.feeling_panic\">feeling_panic</a> &gt; 2</li><li><a href=\"#item.avoiding_situations\">avoiding_situations</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-phobia.html\">DSM5 Q5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.social_phobia_5\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_5</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">felt tense muscles, felt on edge or restless, or had trouble relaxing in social situations</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.feeling_nervous\">feeling_nervous</a> &gt; 2</li><li><a href=\"#item.feeling_panic\">feeling_panic</a> &gt; 2</li><li><a href=\"#item.avoiding_situations\">avoiding_situations</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-phobia.html\">DSM5 Q5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.social_phobia_6\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_6</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">avoided, or did not approach or enter, social situations</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.feeling_nervous\">feeling_nervous</a> &gt; 2</li><li><a href=\"#item.feeling_panic\">feeling_panic</a> &gt; 2</li><li><a href=\"#item.avoiding_situations\">avoiding_situations</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-phobia.html\">DSM5 Q5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.social_phobia_7\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_7</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">left social situations early or participated only minimally (e.g., said little, avoided eye contact)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.feeling_nervous\">feeling_nervous</a> &gt; 2</li><li><a href=\"#item.feeling_panic\">feeling_panic</a> &gt; 2</li><li><a href=\"#item.avoiding_situations\">avoiding_situations</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-phobia.html\">DSM5 Q5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.social_phobia_8\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_8</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">spent a lot of time preparing what to say or how to act in social situations</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.feeling_nervous\">feeling_nervous</a> &gt; 2</li><li><a href=\"#item.feeling_panic\">feeling_panic</a> &gt; 2</li><li><a href=\"#item.avoiding_situations\">avoiding_situations</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-phobia.html\">DSM5 Q5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.social_phobia_9\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_9</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">distracted myself to avoid thinking about social situations</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.feeling_nervous\">feeling_nervous</a> &gt; 2</li><li><a href=\"#item.feeling_panic\">feeling_panic</a> &gt; 2</li><li><a href=\"#item.avoiding_situations\">avoiding_situations</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-phobia.html\">DSM5 Q5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.social_phobia_10\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_10</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">needed help to cope with social situations (e.g., alcohol or medications, superstitious objects)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.feeling_nervous\">feeling_nervous</a> &gt; 2</li><li><a href=\"#item.feeling_panic\">feeling_panic</a> &gt; 2</li><li><a href=\"#item.avoiding_situations\">avoiding_situations</a> &gt; 2</li></ul><br/>Value Set: <a href=\"ValueSet-dsm5-phobia.html\">DSM5 Q5</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" id=\"item.questionnaire_mood_disorders_dsm5_adult_complete\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> questionnaire_mood_disorders_dsm5_adult_complete</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Complete?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-enrollment-complete.html\">Enrollment Complete ValueSet</a></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/DSM5"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "DSM-5 Adult"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-06-21"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "dsm_5_session_id" ] ;
+     fhir:text [ fhir:v "Session ID" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "dsm_5_started_at" ] ;
+     fhir:text [ fhir:v "Questionnaire Started At" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "dsm_5_completed_at" ] ;
+     fhir:text [ fhir:v "Questionnaire Completed At" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:text [ fhir:v "During the past TWO (2) WEEKS, how much (or how\noften) have you been bothered by the following problems? 0=None (Not\nat all), 1=Slight (Rare, less than a day or two), 2=Mild (Several days),\n3=Moderate (More than half the days), 4=Severe (Nearly every day" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "little_interest" ] ;
+       fhir:text [ fhir:v "Little interest or pleasure in doing things?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "feeling_down" ] ;
+       fhir:text [ fhir:v "Feeling down, depressed, or hopeless?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "feeling_more_irritate" ] ;
+       fhir:text [ fhir:v "Feeling more irritated, grouchy, or angry than usual? " ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "sleeping_less" ] ;
+       fhir:text [ fhir:v "Sleeping less than usual, but still have a lot of energy?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "starting_more_projects" ] ;
+       fhir:text [ fhir:v "Starting lots more projects than usual or doing more risky things than usual?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "feeling_nervous" ] ;
+       fhir:text [ fhir:v "Feeling nervous, anxious, frightened, worried, or on edge?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "feeling_panic" ] ;
+       fhir:text [ fhir:v "Feeling panic or being frightened?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "avoiding_situations" ] ;
+       fhir:text [ fhir:v "Avoiding situations that make you anxious? " ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "unexplained_aches" ] ;
+       fhir:text [ fhir:v "Unexplained aches and pains (e.g., head, back, joints, abdomen, legs)?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "illness_not_taken_serious" ] ;
+       fhir:text [ fhir:v "Feeling that your illnesses are not being taken seriously enough?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "self_harm" ] ;
+       fhir:text [ fhir:v "Thoughts of actually hurting yourself?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "hearing_things" ] ;
+       fhir:text [ fhir:v "Hearing things other people couldn't hear, such as voices even when no one was around?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "someone_hear_thoughts" ] ;
+       fhir:text [ fhir:v "Feeling that someone could hear your thoughts, or that you could hear what another person was thinking?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "sleep_quality" ] ;
+       fhir:text [ fhir:v "Problems with sleep that affected your sleep quality overall?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "memory_issues" ] ;
+       fhir:text [ fhir:v "Problems with memory (e.g., learning new information) or with location (e.g., finding your way home)?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "unpleasant_thoughts" ] ;
+       fhir:text [ fhir:v "Unpleasant thoughts, urges, or images that repeatedly enter your mind?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "repeat_acts" ] ;
+       fhir:text [ fhir:v "Feeling driven to perform certain behaviors or mental acts over and over again?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "feeling_detached" ] ;
+       fhir:text [ fhir:v "Feeling detached or distant from yourself, your body, your physical surroundings, or your memories?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "no_purpose" ] ;
+       fhir:text [ fhir:v "Not knowing who you really are or what you want out of life?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "isolated" ] ;
+       fhir:text [ fhir:v "Not feeling close to other people or enjoying your relationships with them?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "drinking_more" ] ;
+       fhir:text [ fhir:v "Drinking at least 4 drinks of any kind of alcohol in a single day?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "smoking_more" ] ;
+       fhir:text [ fhir:v "Smoking any cigarettes, a cigar, or pipe, or using snuff or chewing tobacco?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "medication_use" ] ;
+       fhir:text [ fhir:v "Using any of the following medicines ON YOUR OWN, that\nis, without a doctor's prescription, in greater amounts or\nlonger than prescribed [e.g., painkillers (like Vicodin),\nstimulants (like Ritalin or Adderall), sedatives or\ntranquilizers (like sleeping pills or Valium), or drugs like\nmarijuana, cocaine or crack, club drugs (like ecstasy),\nhallucinogens (like LSD), heroin, inhalants or solvents (like\nglue), or methamphetamine (like speed)]?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5>
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "best_describes" ] ;
+     fhir:text [ fhir:v "DSM-5 Adult (ASRM) Choose the one statement in each\ngroup that best describes the way you (the individual receiving care) have\nbeen feeling for the past week. Please note: The word 'occasionally' when\nused here means once or twice; 'often' means several times or more and\n'frequently' means most of the time." ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "q1_happy" ] ;
+       fhir:text [ fhir:v "Question 1" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "sleeping_less" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "starting_more_projects" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-q1"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-q1>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "q2_self_confident" ] ;
+       fhir:text [ fhir:v "Question 2" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "sleeping_less" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "starting_more_projects" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-q2"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-q2>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "q3_sleep" ] ;
+       fhir:text [ fhir:v "Question 3" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "sleeping_less" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "starting_more_projects" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-q3"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-q3>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "q4_talk" ] ;
+       fhir:text [ fhir:v "Question 4" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "sleeping_less" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "starting_more_projects" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-q4"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-q4>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "q5_active" ] ;
+       fhir:text [ fhir:v "Question 5" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "sleeping_less" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "starting_more_projects" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-q5"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-q5>
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "phobia" ] ;
+     fhir:text [ fhir:v "DSM-5 Adult (Social Phobia) The following questions ask\nabout thoughts, feelings, and behaviors that you may have had about\nsocial situations. Usual social situations include: public speaking,\nspeaking in meetings, attending social events or parties, introducing\nyourself to others, having conversations, giving and receiving\ncompliments, making requests of others, and eating and writing in public.\nDuring the PAST 7 DAYS, I have..." ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "social_phobia_1" ] ;
+       fhir:text [ fhir:v "felt moments of sudden terror, fear, or fright in social situations" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "feeling_nervous" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "feeling_panic" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "avoiding_situations" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-phobia"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-phobia>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "social_phobia_2" ] ;
+       fhir:text [ fhir:v "felt anxious, worried, or nervous about social situations" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "feeling_nervous" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "feeling_panic" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "avoiding_situations" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-phobia"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-phobia>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "social_phobia_3" ] ;
+       fhir:text [ fhir:v "had thoughts of being rejected, humiliated, embarrassed, ridiculed, or offending others" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "feeling_nervous" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "feeling_panic" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "avoiding_situations" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-phobia"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-phobia>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "social_phobia_4" ] ;
+       fhir:text [ fhir:v "felt a racing heart, sweaty, trouble breathing, faint, or shaky in social situations" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "feeling_nervous" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "feeling_panic" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "avoiding_situations" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-phobia"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-phobia>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "social_phobia_5" ] ;
+       fhir:text [ fhir:v "felt tense muscles, felt on edge or restless, or had trouble relaxing in social situations" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "feeling_nervous" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "feeling_panic" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "avoiding_situations" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-phobia"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-phobia>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "social_phobia_6" ] ;
+       fhir:text [ fhir:v "avoided, or did not approach or enter, social situations" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "feeling_nervous" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "feeling_panic" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "avoiding_situations" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-phobia"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-phobia>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "social_phobia_7" ] ;
+       fhir:text [ fhir:v "left social situations early or participated only minimally (e.g., said little, avoided eye contact)" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "feeling_nervous" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "feeling_panic" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "avoiding_situations" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-phobia"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-phobia>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "social_phobia_8" ] ;
+       fhir:text [ fhir:v "spent a lot of time preparing what to say or how to act in social situations" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "feeling_nervous" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "feeling_panic" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "avoiding_situations" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-phobia"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-phobia>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "social_phobia_9" ] ;
+       fhir:text [ fhir:v "distracted myself to avoid thinking about social situations" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "feeling_nervous" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "feeling_panic" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "avoiding_situations" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-phobia"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-phobia>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "social_phobia_10" ] ;
+       fhir:text [ fhir:v "needed help to cope with social situations (e.g., alcohol or medications, superstitious objects)" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:enableWhen ( [
+         fhir:question [ fhir:v "feeling_nervous" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "feeling_panic" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] [
+         fhir:question [ fhir:v "avoiding_situations" ] ;
+         fhir:operator [ fhir:v ">" ] ;
+         fhir:answer [ fhir:v "2" ]
+       ] ) ;
+       fhir:enableBehavior [ fhir:v "any" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/dsm5-phobia"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-phobia>
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "questionnaire_mood_disorders_dsm5_adult_complete" ] ;
+     fhir:text [ fhir:v "Complete?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerValueSet [
+       fhir:v "https://voicecollab.ai/fhir/ValueSet/enrollment-complete"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/ValueSet/enrollment-complete>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

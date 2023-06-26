@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "VoiceaBiomarkerforAI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-09T08:59:53-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-06-26T13:45:18-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -661,6 +661,30 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/adhd> ;
+         fhir:reference [ fhir:v "ValueSet/adhd" ]
+       ] ;
+       fhir:name [ fhir:v "ADHD" ] ;
+       fhir:description [ fhir:v "The Codes used by adhd" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/acoustic-task-status> ;
+         fhir:reference [ fhir:v "ValueSet/acoustic-task-status" ]
+       ] ;
+       fhir:name [ fhir:v "acoustic ValueSet" ] ;
+       fhir:description [ fhir:v "The Codes used by acoustic status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked> ;
          fhir:reference [ fhir:v "ValueSet/checked-unchecked" ]
        ] ;
@@ -673,11 +697,143 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/comments> ;
+         fhir:reference [ fhir:v "ValueSet/comments" ]
+       ] ;
+       fhir:name [ fhir:v "Comments" ] ;
+       fhir:description [ fhir:v "The Codes used by Diagnosis" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/consent-status> ;
+         fhir:reference [ fhir:v "ValueSet/consent-status" ]
+       ] ;
+       fhir:name [ fhir:v "Consent status ValueSet" ] ;
+       fhir:description [ fhir:v "The Codes used by general information questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/consent-usf-question> ;
+         fhir:reference [ fhir:v "ValueSet/consent-usf-question" ]
+       ] ;
+       fhir:name [ fhir:v "Consent Main ICF (USF)" ] ;
+       fhir:description [ fhir:v "The Codes used by Consent Main ICF (USF)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5> ;
+         fhir:reference [ fhir:v "ValueSet/dsm5" ]
+       ] ;
+       fhir:name [ fhir:v "DSM5" ] ;
+       fhir:description [ fhir:v "The Codes used by DSM5" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-phobia> ;
+         fhir:reference [ fhir:v "ValueSet/dsm5-phobia" ]
+       ] ;
+       fhir:name [ fhir:v "DSM5 Q5" ] ;
+       fhir:description [ fhir:v "The Codes used by DSM5 phobia" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-q1> ;
+         fhir:reference [ fhir:v "ValueSet/dsm5-q1" ]
+       ] ;
+       fhir:name [ fhir:v "DSM5 Q1" ] ;
+       fhir:description [ fhir:v "The Codes used by DSM5 Q1" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-q2> ;
+         fhir:reference [ fhir:v "ValueSet/dsm5-q2" ]
+       ] ;
+       fhir:name [ fhir:v "DSM5 Q3" ] ;
+       fhir:description [ fhir:v "The Codes used by DSM5 Q2" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-q3> ;
+         fhir:reference [ fhir:v "ValueSet/dsm5-q3" ]
+       ] ;
+       fhir:name [ fhir:v "DSM5 Q3" ] ;
+       fhir:description [ fhir:v "The Codes used by DSM5 Q3" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-q4> ;
+         fhir:reference [ fhir:v "ValueSet/dsm5-q4" ]
+       ] ;
+       fhir:name [ fhir:v "DSM5 Q4" ] ;
+       fhir:description [ fhir:v "The Codes used by DSM5 Q4" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/dsm5-q5> ;
+         fhir:reference [ fhir:v "ValueSet/dsm5-q5" ]
+       ] ;
+       fhir:name [ fhir:v "DSM5 Q5" ] ;
+       fhir:description [ fhir:v "The Codes used by DSM5 Q5" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/ValueSet/decline-reason> ;
          fhir:reference [ fhir:v "ValueSet/decline-reason" ]
        ] ;
        fhir:name [ fhir:v "Decline Reason ValueSet" ] ;
        fhir:description [ fhir:v "The Codes used by enrollment questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/degree> ;
+         fhir:reference [ fhir:v "ValueSet/degree" ]
+       ] ;
+       fhir:name [ fhir:v "Degree" ] ;
+       fhir:description [ fhir:v "The Codes used by Diagnosis" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -805,6 +961,18 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/etiology> ;
+         fhir:reference [ fhir:v "ValueSet/etiology" ]
+       ] ;
+       fhir:name [ fhir:v "etiology" ] ;
+       fhir:description [ fhir:v "The Codes used by Diagnosis" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/ValueSet/financial-assistance> ;
          fhir:reference [ fhir:v "ValueSet/financial-assistance" ]
        ] ;
@@ -834,6 +1002,18 @@
        ] ;
        fhir:name [ fhir:v "Gender Identity" ] ;
        fhir:description [ fhir:v "The Gender Identity Codes contains the codes to be used by demographic questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/glottic-gap> ;
+         fhir:reference [ fhir:v "ValueSet/glottic-gap" ]
+       ] ;
+       fhir:name [ fhir:v "Glottic Gap" ] ;
+       fhir:description [ fhir:v "The Codes used by Diagnosis" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -877,11 +1057,35 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/iatrogenic> ;
+         fhir:reference [ fhir:v "ValueSet/iatrogenic" ]
+       ] ;
+       fhir:name [ fhir:v "Iatrogenic" ] ;
+       fhir:description [ fhir:v "The Codes used by Diagnosis" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/ValueSet/immigration-status> ;
          fhir:reference [ fhir:v "ValueSet/immigration-status" ]
        ] ;
        fhir:name [ fhir:v "Immigration Status" ] ;
        fhir:description [ fhir:v "Valueset for capturing Immigration Status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/left-right> ;
+         fhir:reference [ fhir:v "ValueSet/left-right" ]
+       ] ;
+       fhir:name [ fhir:v "leftRight" ] ;
+       fhir:description [ fhir:v "The Codes used by Diagnosis" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -937,6 +1141,18 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/ptsd> ;
+         fhir:reference [ fhir:v "ValueSet/ptsd" ]
+       ] ;
+       fhir:name [ fhir:v "PTSD" ] ;
+       fhir:description [ fhir:v "The Codes used by PTSD" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/ValueSet/psychiatric-history> ;
          fhir:reference [ fhir:v "ValueSet/psychiatric-history" ]
        ] ;
@@ -961,11 +1177,35 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/recording> ;
+         fhir:reference [ fhir:v "ValueSet/recording" ]
+       ] ;
+       fhir:name [ fhir:v "recordig ValueSet" ] ;
+       fhir:description [ fhir:v "The Codes used by recording" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/ValueSet/select-language> ;
          fhir:reference [ fhir:v "ValueSet/select-language" ]
        ] ;
        fhir:name [ fhir:v "Select ValueSet" ] ;
        fhir:description [ fhir:v "The Codes used by enrollment questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/session> ;
+         fhir:reference [ fhir:v "ValueSet/session" ]
+       ] ;
+       fhir:name [ fhir:v "session ValueSet" ] ;
+       fhir:description [ fhir:v "The Codes used by session" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1009,6 +1249,18 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/surgery-sub-category> ;
+         fhir:reference [ fhir:v "ValueSet/surgery-sub-category" ]
+       ] ;
+       fhir:name [ fhir:v "Surgery Sub Category" ] ;
+       fhir:description [ fhir:v "The Codes used by Diagnosis" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/ValueSet/survey-options> ;
          fhir:reference [ fhir:v "ValueSet/survey-options" ]
        ] ;
@@ -1033,6 +1285,18 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/thyroplasty> ;
+         fhir:reference [ fhir:v "ValueSet/thyroplasty" ]
+       ] ;
+       fhir:name [ fhir:v "Thyroplasty" ] ;
+       fhir:description [ fhir:v "The Codes used by Diagnosis" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/ValueSet/transportation-type> ;
          fhir:reference [ fhir:v "ValueSet/transportation-type" ]
        ] ;
@@ -1045,11 +1309,59 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/treatment> ;
+         fhir:reference [ fhir:v "ValueSet/treatment" ]
+       ] ;
+       fhir:name [ fhir:v "treatment" ] ;
+       fhir:description [ fhir:v "The Codes used by Diagnosis" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/tumor-rln> ;
+         fhir:reference [ fhir:v "ValueSet/tumor-rln" ]
+       ] ;
+       fhir:name [ fhir:v "Tumor RLN" ] ;
+       fhir:description [ fhir:v "The Codes used by Diagnosis" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/ValueSet/vocal-activity> ;
          fhir:reference [ fhir:v "ValueSet/vocal-activity" ]
        ] ;
        fhir:name [ fhir:v "Vocal Activity ValueSet" ] ;
        fhir:description [ fhir:v "The Codes used by confounder questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/vocal-fold-injection-augmentation> ;
+         fhir:reference [ fhir:v "ValueSet/vocal-fold-injection-augmentation" ]
+       ] ;
+       fhir:name [ fhir:v "Vocal Fold Injection Augmentation" ] ;
+       fhir:description [ fhir:v "The Codes used by Diagnosis" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/voice-handicap-index> ;
+         fhir:reference [ fhir:v "ValueSet/voice-handicap-index" ]
+       ] ;
+       fhir:name [ fhir:v "Voice Handicap Index ValueSet" ] ;
+       fhir:description [ fhir:v "The Codes used by Voice Handicap Index" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1081,11 +1393,47 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/yes-no-not-certain> ;
+         fhir:reference [ fhir:v "ValueSet/yes-no-not-certain" ]
+       ] ;
+       fhir:name [ fhir:v "YesNoNotCertain" ] ;
+       fhir:description [ fhir:v "The Codes used by Diagnosis" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/ValueSet/yesnosome> ;
          fhir:reference [ fhir:v "ValueSet/yesnosome" ]
        ] ;
        fhir:name [ fhir:v "Yes/No/Some" ] ;
        fhir:description [ fhir:v "For Capturing simple yes-no-don't know answers" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/adhd> ;
+         fhir:reference [ fhir:v "CodeSystem/adhd" ]
+       ] ;
+       fhir:name [ fhir:v "adhd" ] ;
+       fhir:description [ fhir:v "The codes required for adhd questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/acoustic-task-status> ;
+         fhir:reference [ fhir:v "CodeSystem/acoustic-task-status" ]
+       ] ;
+       fhir:name [ fhir:v "Acoustic Task Status codes" ] ;
+       fhir:description [ fhir:v "The codes required for Acoustic Tasks" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1117,11 +1465,143 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/comments> ;
+         fhir:reference [ fhir:v "CodeSystem/comments" ]
+       ] ;
+       fhir:name [ fhir:v "Comments" ] ;
+       fhir:description [ fhir:v "The codes required for Diagnosis questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/consent-status> ;
+         fhir:reference [ fhir:v "CodeSystem/consent-status" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire general info codes" ] ;
+       fhir:description [ fhir:v "The codes required for general information questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/consent-usf-question> ;
+         fhir:reference [ fhir:v "CodeSystem/consent-usf-question" ]
+       ] ;
+       fhir:name [ fhir:v "Consent Usf Question" ] ;
+       fhir:description [ fhir:v "The codes required for Diagnosis questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/dsm5> ;
+         fhir:reference [ fhir:v "CodeSystem/dsm5" ]
+       ] ;
+       fhir:name [ fhir:v "dsm5" ] ;
+       fhir:description [ fhir:v "The codes required for dsm5 questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia> ;
+         fhir:reference [ fhir:v "CodeSystem/dsm5-phobia" ]
+       ] ;
+       fhir:name [ fhir:v "dsm5 q5" ] ;
+       fhir:description [ fhir:v "The codes required for dsm5 phobia questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/dsm5-q1> ;
+         fhir:reference [ fhir:v "CodeSystem/dsm5-q1" ]
+       ] ;
+       fhir:name [ fhir:v "dsm5 q1" ] ;
+       fhir:description [ fhir:v "The codes required for dsm5 q1 questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/dsm5-q2> ;
+         fhir:reference [ fhir:v "CodeSystem/dsm5-q2" ]
+       ] ;
+       fhir:name [ fhir:v "dsm5 q2" ] ;
+       fhir:description [ fhir:v "The codes required for dsm5 q2 questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/dsm5-q3> ;
+         fhir:reference [ fhir:v "CodeSystem/dsm5-q3" ]
+       ] ;
+       fhir:name [ fhir:v "dsm5 q3" ] ;
+       fhir:description [ fhir:v "The codes required for dsm5 q3 questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/dsm5-q4> ;
+         fhir:reference [ fhir:v "CodeSystem/dsm5-q4" ]
+       ] ;
+       fhir:name [ fhir:v "dsm5 q4" ] ;
+       fhir:description [ fhir:v "The codes required for dsm5 q4 questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/dsm5-q5> ;
+         fhir:reference [ fhir:v "CodeSystem/dsm5-q5" ]
+       ] ;
+       fhir:name [ fhir:v "dsm5 q5" ] ;
+       fhir:description [ fhir:v "The codes required for dsm5 q5 questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/CodeSystem/decline-reason> ;
          fhir:reference [ fhir:v "CodeSystem/decline-reason" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire enrollment eligible studies codes" ] ;
        fhir:description [ fhir:v "The codes required for Questionnaire enrollment" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/degree> ;
+         fhir:reference [ fhir:v "CodeSystem/degree" ]
+       ] ;
+       fhir:name [ fhir:v "Degree" ] ;
+       fhir:description [ fhir:v "The codes required for Diagnosis questionnaire" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1261,6 +1741,18 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/etiology> ;
+         fhir:reference [ fhir:v "CodeSystem/etiology" ]
+       ] ;
+       fhir:name [ fhir:v "etiology" ] ;
+       fhir:description [ fhir:v "The codes required for Diagnosis questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/CodeSystem/financial-assistance> ;
          fhir:reference [ fhir:v "CodeSystem/financial-assistance" ]
        ] ;
@@ -1297,6 +1789,18 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/glottic-gap> ;
+         fhir:reference [ fhir:v "CodeSystem/glottic-gap" ]
+       ] ;
+       fhir:name [ fhir:v "Tumor invading RLN " ] ;
+       fhir:description [ fhir:v "The codes required for Diagnosis questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/CodeSystem/household-makeup> ;
          fhir:reference [ fhir:v "CodeSystem/household-makeup" ]
        ] ;
@@ -1321,11 +1825,35 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/iatrogenic> ;
+         fhir:reference [ fhir:v "CodeSystem/iatrogenic" ]
+       ] ;
+       fhir:name [ fhir:v "iatrogenic" ] ;
+       fhir:description [ fhir:v "The codes required for Diagnosis questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/CodeSystem/immigration-status> ;
          fhir:reference [ fhir:v "CodeSystem/immigration-status" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire codes for immigration status" ] ;
        fhir:description [ fhir:v "The codes required for immigration status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/left-right> ;
+         fhir:reference [ fhir:v "CodeSystem/left-right" ]
+       ] ;
+       fhir:name [ fhir:v "leftRight" ] ;
+       fhir:description [ fhir:v "The codes required for Diagnosis questionnaire" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1381,6 +1909,18 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/ptsd> ;
+         fhir:reference [ fhir:v "CodeSystem/ptsd" ]
+       ] ;
+       fhir:name [ fhir:v "ptsd" ] ;
+       fhir:description [ fhir:v "The codes required for ptsd questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/CodeSystem/psychiatric-history> ;
          fhir:reference [ fhir:v "CodeSystem/psychiatric-history" ]
        ] ;
@@ -1398,6 +1938,30 @@
        ] ;
        fhir:name [ fhir:v "Questionnaire sweat codes" ] ;
        fhir:description [ fhir:v "The codes required for Questionnaire confounders" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/recording> ;
+         fhir:reference [ fhir:v "CodeSystem/recording" ]
+       ] ;
+       fhir:name [ fhir:v "Recording codes" ] ;
+       fhir:description [ fhir:v "The codes required for Recording" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/session> ;
+         fhir:reference [ fhir:v "CodeSystem/session" ]
+       ] ;
+       fhir:name [ fhir:v "Session info codes" ] ;
+       fhir:description [ fhir:v "The codes required for session" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1441,6 +2005,18 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/surgery-sub-category> ;
+         fhir:reference [ fhir:v "CodeSystem/surgery-sub-category" ]
+       ] ;
+       fhir:name [ fhir:v "surgery sub-category" ] ;
+       fhir:description [ fhir:v "The codes required for Diagnosis questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/CodeSystem/survey-options> ;
          fhir:reference [ fhir:v "CodeSystem/survey-options" ]
        ] ;
@@ -1465,6 +2041,18 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/thyroplasty> ;
+         fhir:reference [ fhir:v "CodeSystem/thyroplasty" ]
+       ] ;
+       fhir:name [ fhir:v "Thyroplasty " ] ;
+       fhir:description [ fhir:v "The codes required for Diagnosis questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/CodeSystem/transportation-type> ;
          fhir:reference [ fhir:v "CodeSystem/transportation-type" ]
        ] ;
@@ -1477,11 +2065,59 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/treatment> ;
+         fhir:reference [ fhir:v "CodeSystem/treatment" ]
+       ] ;
+       fhir:name [ fhir:v "treatment" ] ;
+       fhir:description [ fhir:v "The codes required for Diagnosis questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/tumor-rln> ;
+         fhir:reference [ fhir:v "CodeSystem/tumor-rln" ]
+       ] ;
+       fhir:name [ fhir:v "Tumor invading RLN " ] ;
+       fhir:description [ fhir:v "The codes required for Diagnosis questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/CodeSystem/vocal-activity> ;
          fhir:reference [ fhir:v "CodeSystem/vocal-activity" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire sweat codes" ] ;
        fhir:description [ fhir:v "The codes required for Questionnaire confounders" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/vocal-fold-injection-augmentation> ;
+         fhir:reference [ fhir:v "CodeSystem/vocal-fold-injection-augmentation" ]
+       ] ;
+       fhir:name [ fhir:v "Vocal Fold Injection Augmentation" ] ;
+       fhir:description [ fhir:v "The codes required for Diagnosis questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index> ;
+         fhir:reference [ fhir:v "CodeSystem/voice-handicap-index" ]
+       ] ;
+       fhir:name [ fhir:v "Voice Handicap Index codes" ] ;
+       fhir:description [ fhir:v "The codes required for Voice Handicap Index" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1513,12 +2149,132 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/yes-no-not-certain> ;
+         fhir:reference [ fhir:v "CodeSystem/yes-no-not-certain" ]
+       ] ;
+       fhir:name [ fhir:v "YesNoNotCertain" ] ;
+       fhir:description [ fhir:v "The codes required for Diagnosis questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/CodeSystem/Yes-No-Some> ;
          fhir:reference [ fhir:v "CodeSystem/Yes-No-Some" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire Yes/No/Some codes" ] ;
        fhir:description [ fhir:v "The codes required for Questionnaires yes/no/some" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/ADHDQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/ADHDQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "ADHDQuestionnaire" ] ;
+       fhir:description [ fhir:v "ADHD Questionnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/AcousticTask> ;
+         fhir:reference [ fhir:v "Questionnaire/AcousticTask" ]
+       ] ;
+       fhir:name [ fhir:v "AcousticTask" ] ;
+       fhir:description [ fhir:v "Questonnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/AddendumCombinedPDF> ;
+         fhir:reference [ fhir:v "Questionnaire/AddendumCombinedPDF" ]
+       ] ;
+       fhir:name [ fhir:v "Addendum Combined PDF" ] ;
+       fhir:description [ fhir:v "Addendum Combined PDF" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/AddendumWCM> ;
+         fhir:reference [ fhir:v "Questionnaire/AddendumWCM" ]
+       ] ;
+       fhir:name [ fhir:v "AddendumWCM" ] ;
+       fhir:description [ fhir:v "AddendumWCM" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/AddendumWCMResearcherStatement> ;
+         fhir:reference [ fhir:v "Questionnaire/AddendumWCMResearcherStatement" ]
+       ] ;
+       fhir:name [ fhir:v "Addendum WCM Researcher Statement" ] ;
+       fhir:description [ fhir:v "Addendum WCM Researcher Statement" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/ContactInformation> ;
+         fhir:reference [ fhir:v "Questionnaire/ContactInformation" ]
+       ] ;
+       fhir:name [ fhir:v "ContactInformation" ] ;
+       fhir:description [ fhir:v "Contact Information Questionnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/CustomAffectScaleQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/CustomAffectScaleQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "CustomAffectScaleQuestionnaire" ] ;
+       fhir:description [ fhir:v "Custom Affect Scale Questionnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/DSM5> ;
+         fhir:reference [ fhir:v "Questionnaire/DSM5" ]
+       ] ;
+       fhir:name [ fhir:v "DSM5" ] ;
+       fhir:description [ fhir:v "DSM5 Questionnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/EligibleStudies> ;
+         fhir:reference [ fhir:v "Questionnaire/EligibleStudies" ]
+       ] ;
+       fhir:name [ fhir:v "Eligible Studies" ] ;
+       fhir:description [ fhir:v "Eligible Studies" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1555,6 +2311,66 @@
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/GeneralInformation> ;
+         fhir:reference [ fhir:v "Questionnaire/GeneralInformation" ]
+       ] ;
+       fhir:name [ fhir:v "General Information Questionnaire" ] ;
+       fhir:description [ fhir:v "Questonnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/MainICF> ;
+         fhir:reference [ fhir:v "Questionnaire/MainICF" ]
+       ] ;
+       fhir:name [ fhir:v "Main ICF" ] ;
+       fhir:description [ fhir:v "Main ICF" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/MainICFCombinedPDF> ;
+         fhir:reference [ fhir:v "Questionnaire/MainICFCombinedPDF" ]
+       ] ;
+       fhir:name [ fhir:v "Main ICF Combined PDF" ] ;
+       fhir:description [ fhir:v "Main ICF Combined PDF" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/MainICFResearcherStatement> ;
+         fhir:reference [ fhir:v "Questionnaire/MainICFResearcherStatement" ]
+       ] ;
+       fhir:name [ fhir:v "Main ICF Researcher Statement" ] ;
+       fhir:description [ fhir:v "Main ICF Researcher Statement" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/PANASQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/PANASQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "PANASQuestionnaire" ] ;
+       fhir:description [ fhir:v "PANAS Questionnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/Questionnaire/PHQ9schema> ;
          fhir:reference [ fhir:v "Questionnaire/PHQ9schema" ]
        ] ;
@@ -1564,6 +2380,54 @@
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/PTSD> ;
+         fhir:reference [ fhir:v "Questionnaire/PTSD" ]
+       ] ;
+       fhir:name [ fhir:v "PTSD" ] ;
+       fhir:description [ fhir:v "PTSD Questionnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/Recording> ;
+         fhir:reference [ fhir:v "Questionnaire/Recording" ]
+       ] ;
+       fhir:name [ fhir:v "Recording" ] ;
+       fhir:description [ fhir:v "Questionnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/Session> ;
+         fhir:reference [ fhir:v "Questionnaire/Session" ]
+       ] ;
+       fhir:name [ fhir:v "Session" ] ;
+       fhir:description [ fhir:v "Quesionnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/VHI10> ;
+         fhir:reference [ fhir:v "Questionnaire/VHI10" ]
+       ] ;
+       fhir:name [ fhir:v "VHI10" ] ;
+       fhir:description [ fhir:v "VHI-10 Questionnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1849,6 +2713,42 @@
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-waveform-media"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-waveform-media>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/VocalFoldParalysis> ;
+         fhir:reference [ fhir:v "Questionnaire/VocalFoldParalysis" ]
+       ] ;
+       fhir:name [ fhir:v "VocalFoldParalysis" ] ;
+       fhir:description [ fhir:v "Vocal Fold Paralysis Questionnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/VoicePerception> ;
+         fhir:reference [ fhir:v "Questionnaire/VoicePerception" ]
+       ] ;
+       fhir:name [ fhir:v "VoicePerception" ] ;
+       fhir:description [ fhir:v "Questionnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/VoiceProblemSeverity> ;
+         fhir:reference [ fhir:v "Questionnaire/VoiceProblemSeverity" ]
+       ] ;
+       fhir:name [ fhir:v "Voice problem severity Questionnaire" ] ;
+       fhir:description [ fhir:v "Voice problem severity " ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

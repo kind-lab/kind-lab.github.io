@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "VoiceaBiomarkerforAI",
   "status" : "draft",
-  "date" : "2023-06-09T08:59:53-04:00",
+  "date" : "2023-06-26T13:45:18-04:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -745,6 +745,30 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/adhd"
+      },
+      "name" : "ADHD",
+      "description" : "The Codes used by adhd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/acoustic-task-status"
+      },
+      "name" : "acoustic ValueSet",
+      "description" : "The Codes used by acoustic status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/checked-unchecked"
       },
       "name" : "Conditions ValueSet",
@@ -757,10 +781,142 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/comments"
+      },
+      "name" : "Comments",
+      "description" : "The Codes used by Diagnosis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/consent-status"
+      },
+      "name" : "Consent status ValueSet",
+      "description" : "The Codes used by general information questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/consent-usf-question"
+      },
+      "name" : "Consent Main ICF (USF)",
+      "description" : "The Codes used by Consent Main ICF (USF)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dsm5"
+      },
+      "name" : "DSM5",
+      "description" : "The Codes used by DSM5",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dsm5-phobia"
+      },
+      "name" : "DSM5 Q5",
+      "description" : "The Codes used by DSM5 phobia",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dsm5-q1"
+      },
+      "name" : "DSM5 Q1",
+      "description" : "The Codes used by DSM5 Q1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dsm5-q2"
+      },
+      "name" : "DSM5 Q3",
+      "description" : "The Codes used by DSM5 Q2",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dsm5-q3"
+      },
+      "name" : "DSM5 Q3",
+      "description" : "The Codes used by DSM5 Q3",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dsm5-q4"
+      },
+      "name" : "DSM5 Q4",
+      "description" : "The Codes used by DSM5 Q4",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dsm5-q5"
+      },
+      "name" : "DSM5 Q5",
+      "description" : "The Codes used by DSM5 Q5",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/decline-reason"
       },
       "name" : "Decline Reason ValueSet",
       "description" : "The Codes used by enrollment questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/degree"
+      },
+      "name" : "Degree",
+      "description" : "The Codes used by Diagnosis",
       "exampleBoolean" : false
     },
     {
@@ -889,6 +1045,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/etiology"
+      },
+      "name" : "etiology",
+      "description" : "The Codes used by Diagnosis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/financial-assistance"
       },
       "name" : "Financial Assistance",
@@ -917,6 +1085,18 @@
       },
       "name" : "Gender Identity",
       "description" : "The Gender Identity Codes contains the codes to be used by demographic questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/glottic-gap"
+      },
+      "name" : "Glottic Gap",
+      "description" : "The Codes used by Diagnosis",
       "exampleBoolean" : false
     },
     {
@@ -961,10 +1141,34 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/iatrogenic"
+      },
+      "name" : "Iatrogenic",
+      "description" : "The Codes used by Diagnosis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/immigration-status"
       },
       "name" : "Immigration Status",
       "description" : "Valueset for capturing Immigration Status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/left-right"
+      },
+      "name" : "leftRight",
+      "description" : "The Codes used by Diagnosis",
       "exampleBoolean" : false
     },
     {
@@ -1021,6 +1225,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/ptsd"
+      },
+      "name" : "PTSD",
+      "description" : "The Codes used by PTSD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/psychiatric-history"
       },
       "name" : "Psychiatric History ValueSet",
@@ -1045,10 +1261,34 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/recording"
+      },
+      "name" : "recordig ValueSet",
+      "description" : "The Codes used by recording",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/select-language"
       },
       "name" : "Select ValueSet",
       "description" : "The Codes used by enrollment questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/session"
+      },
+      "name" : "session ValueSet",
+      "description" : "The Codes used by session",
       "exampleBoolean" : false
     },
     {
@@ -1093,6 +1333,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/surgery-sub-category"
+      },
+      "name" : "Surgery Sub Category",
+      "description" : "The Codes used by Diagnosis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/survey-options"
       },
       "name" : "SurveyOptions",
@@ -1117,6 +1369,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/thyroplasty"
+      },
+      "name" : "Thyroplasty",
+      "description" : "The Codes used by Diagnosis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/transportation-type"
       },
       "name" : "Transportation Type",
@@ -1129,10 +1393,58 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/treatment"
+      },
+      "name" : "treatment",
+      "description" : "The Codes used by Diagnosis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tumor-rln"
+      },
+      "name" : "Tumor RLN",
+      "description" : "The Codes used by Diagnosis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/vocal-activity"
       },
       "name" : "Vocal Activity ValueSet",
       "description" : "The Codes used by confounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vocal-fold-injection-augmentation"
+      },
+      "name" : "Vocal Fold Injection Augmentation",
+      "description" : "The Codes used by Diagnosis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/voice-handicap-index"
+      },
+      "name" : "Voice Handicap Index ValueSet",
+      "description" : "The Codes used by Voice Handicap Index",
       "exampleBoolean" : false
     },
     {
@@ -1165,10 +1477,46 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/yes-no-not-certain"
+      },
+      "name" : "YesNoNotCertain",
+      "description" : "The Codes used by Diagnosis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/yesnosome"
       },
       "name" : "Yes/No/Some",
       "description" : "For Capturing simple yes-no-don't know answers",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/adhd"
+      },
+      "name" : "adhd",
+      "description" : "The codes required for adhd questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/acoustic-task-status"
+      },
+      "name" : "Acoustic Task Status codes",
+      "description" : "The codes required for Acoustic Tasks",
       "exampleBoolean" : false
     },
     {
@@ -1201,10 +1549,142 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/comments"
+      },
+      "name" : "Comments",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/consent-status"
+      },
+      "name" : "Questionnaire general info codes",
+      "description" : "The codes required for general information questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/consent-usf-question"
+      },
+      "name" : "Consent Usf Question",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dsm5"
+      },
+      "name" : "dsm5",
+      "description" : "The codes required for dsm5 questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dsm5-phobia"
+      },
+      "name" : "dsm5 q5",
+      "description" : "The codes required for dsm5 phobia questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dsm5-q1"
+      },
+      "name" : "dsm5 q1",
+      "description" : "The codes required for dsm5 q1 questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dsm5-q2"
+      },
+      "name" : "dsm5 q2",
+      "description" : "The codes required for dsm5 q2 questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dsm5-q3"
+      },
+      "name" : "dsm5 q3",
+      "description" : "The codes required for dsm5 q3 questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dsm5-q4"
+      },
+      "name" : "dsm5 q4",
+      "description" : "The codes required for dsm5 q4 questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dsm5-q5"
+      },
+      "name" : "dsm5 q5",
+      "description" : "The codes required for dsm5 q5 questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/decline-reason"
       },
       "name" : "Questionnaire enrollment eligible studies codes",
       "description" : "The codes required for Questionnaire enrollment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/degree"
+      },
+      "name" : "Degree",
+      "description" : "The codes required for Diagnosis questionnaire",
       "exampleBoolean" : false
     },
     {
@@ -1345,6 +1825,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/etiology"
+      },
+      "name" : "etiology",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/financial-assistance"
       },
       "name" : "Questionnaire codes Financial Assistance Programs",
@@ -1381,6 +1873,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/glottic-gap"
+      },
+      "name" : "Tumor invading RLN ",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/household-makeup"
       },
       "name" : "Questionnaire codes for household makeup",
@@ -1405,10 +1909,34 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/iatrogenic"
+      },
+      "name" : "iatrogenic",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/immigration-status"
       },
       "name" : "Questionnaire codes for immigration status",
       "description" : "The codes required for immigration status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/left-right"
+      },
+      "name" : "leftRight",
+      "description" : "The codes required for Diagnosis questionnaire",
       "exampleBoolean" : false
     },
     {
@@ -1465,6 +1993,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/ptsd"
+      },
+      "name" : "ptsd",
+      "description" : "The codes required for ptsd questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/psychiatric-history"
       },
       "name" : "Questionnaire psychiatric history codes",
@@ -1481,6 +2021,30 @@
       },
       "name" : "Questionnaire sweat codes",
       "description" : "The codes required for Questionnaire confounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/recording"
+      },
+      "name" : "Recording codes",
+      "description" : "The codes required for Recording",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/session"
+      },
+      "name" : "Session info codes",
+      "description" : "The codes required for session",
       "exampleBoolean" : false
     },
     {
@@ -1525,6 +2089,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/surgery-sub-category"
+      },
+      "name" : "surgery sub-category",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/survey-options"
       },
       "name" : "Option Codes for PHQ9 and GAD7",
@@ -1549,6 +2125,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/thyroplasty"
+      },
+      "name" : "Thyroplasty ",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/transportation-type"
       },
       "name" : "Questionnaire codes for Transportation Type",
@@ -1561,10 +2149,58 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/treatment"
+      },
+      "name" : "treatment",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tumor-rln"
+      },
+      "name" : "Tumor invading RLN ",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/vocal-activity"
       },
       "name" : "Questionnaire sweat codes",
       "description" : "The codes required for Questionnaire confounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/vocal-fold-injection-augmentation"
+      },
+      "name" : "Vocal Fold Injection Augmentation",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/voice-handicap-index"
+      },
+      "name" : "Voice Handicap Index codes",
+      "description" : "The codes required for Voice Handicap Index",
       "exampleBoolean" : false
     },
     {
@@ -1597,11 +2233,131 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/yes-no-not-certain"
+      },
+      "name" : "YesNoNotCertain",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/Yes-No-Some"
       },
       "name" : "Questionnaire Yes/No/Some codes",
       "description" : "The codes required for Questionnaires yes/no/some",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/ADHDQuestionnaire"
+      },
+      "name" : "ADHDQuestionnaire",
+      "description" : "ADHD Questionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/AcousticTask"
+      },
+      "name" : "AcousticTask",
+      "description" : "Questonnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/AddendumCombinedPDF"
+      },
+      "name" : "Addendum Combined PDF",
+      "description" : "Addendum Combined PDF",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/AddendumWCM"
+      },
+      "name" : "AddendumWCM",
+      "description" : "AddendumWCM",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/AddendumWCMResearcherStatement"
+      },
+      "name" : "Addendum WCM Researcher Statement",
+      "description" : "Addendum WCM Researcher Statement",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/ContactInformation"
+      },
+      "name" : "ContactInformation",
+      "description" : "Contact Information Questionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/CustomAffectScaleQuestionnaire"
+      },
+      "name" : "CustomAffectScaleQuestionnaire",
+      "description" : "Custom Affect Scale Questionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/DSM5"
+      },
+      "name" : "DSM5",
+      "description" : "DSM5 Questionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/EligibleStudies"
+      },
+      "name" : "Eligible Studies",
+      "description" : "Eligible Studies",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1633,11 +2389,119 @@
         "valueString" : "Questionnaire"
       }],
       "reference" : {
+        "reference" : "Questionnaire/GeneralInformation"
+      },
+      "name" : "General Information Questionnaire",
+      "description" : "Questonnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MainICF"
+      },
+      "name" : "Main ICF",
+      "description" : "Main ICF",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MainICFCombinedPDF"
+      },
+      "name" : "Main ICF Combined PDF",
+      "description" : "Main ICF Combined PDF",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MainICFResearcherStatement"
+      },
+      "name" : "Main ICF Researcher Statement",
+      "description" : "Main ICF Researcher Statement",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/PANASQuestionnaire"
+      },
+      "name" : "PANASQuestionnaire",
+      "description" : "PANAS Questionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
         "reference" : "Questionnaire/PHQ9schema"
       },
       "name" : "PHQ9_schema",
       "description" : "PHQ-9 assessment schema",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/PTSD"
+      },
+      "name" : "PTSD",
+      "description" : "PTSD Questionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/Recording"
+      },
+      "name" : "Recording",
+      "description" : "Questionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/Session"
+      },
+      "name" : "Session",
+      "description" : "Quesionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/VHI10"
+      },
+      "name" : "VHI10",
+      "description" : "VHI-10 Questionnaire",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1866,6 +2730,42 @@
       "name" : "VbaiWaveformMediaExample",
       "description" : "An example of a Voice as a Biomarker for AI waveform media",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-waveform-media"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/VocalFoldParalysis"
+      },
+      "name" : "VocalFoldParalysis",
+      "description" : "Vocal Fold Paralysis Questionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/VoicePerception"
+      },
+      "name" : "VoicePerception",
+      "description" : "Questionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/VoiceProblemSeverity"
+      },
+      "name" : "Voice problem severity Questionnaire",
+      "description" : "Voice problem severity ",
+      "exampleBoolean" : true
     }],
     "page" : {
       "extension" : [{

@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "acoustic-task-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-acoustic-task-status.html\"><code>https://voicecollab.ai/fhir/CodeSystem/acoustic-task-status</code></a></li></ul></div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/ValueSet/acoustic-task-status",
+  "version" : "0.1.0",
+  "name" : "AcousticTaskStatus",
+  "title" : "acoustic ValueSet",
+  "status" : "active",
+  "date" : "2023-06-16",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "The Codes used by acoustic status",
+  "compose" : {
+    "include" : [{
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/acoustic-task-status"
+    }]
+  }
+}

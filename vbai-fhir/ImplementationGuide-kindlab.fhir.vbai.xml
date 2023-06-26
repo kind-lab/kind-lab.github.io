@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2023-06-09T08:59:53-04:00"/>
+  <date value="2023-06-26T13:45:18-04:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -583,6 +583,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/adhd"/>
+      </reference>
+      <name value="ADHD"/>
+      <description value="The Codes used by adhd"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/acoustic-task-status"/>
+      </reference>
+      <name value="acoustic ValueSet"/>
+      <description value="The Codes used by acoustic status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/checked-unchecked"/>
       </reference>
       <name value="Conditions ValueSet"/>
@@ -594,10 +616,131 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/comments"/>
+      </reference>
+      <name value="Comments"/>
+      <description value="The Codes used by Diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/consent-status"/>
+      </reference>
+      <name value="Consent status ValueSet"/>
+      <description value="The Codes used by general information questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/consent-usf-question"/>
+      </reference>
+      <name value="Consent Main ICF (USF)"/>
+      <description value="The Codes used by Consent Main ICF (USF)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dsm5"/>
+      </reference>
+      <name value="DSM5"/>
+      <description value="The Codes used by DSM5"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dsm5-phobia"/>
+      </reference>
+      <name value="DSM5 Q5"/>
+      <description value="The Codes used by DSM5 phobia"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dsm5-q1"/>
+      </reference>
+      <name value="DSM5 Q1"/>
+      <description value="The Codes used by DSM5 Q1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dsm5-q2"/>
+      </reference>
+      <name value="DSM5 Q3"/>
+      <description value="The Codes used by DSM5 Q2"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dsm5-q3"/>
+      </reference>
+      <name value="DSM5 Q3"/>
+      <description value="The Codes used by DSM5 Q3"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dsm5-q4"/>
+      </reference>
+      <name value="DSM5 Q4"/>
+      <description value="The Codes used by DSM5 Q4"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dsm5-q5"/>
+      </reference>
+      <name value="DSM5 Q5"/>
+      <description value="The Codes used by DSM5 Q5"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/decline-reason"/>
       </reference>
       <name value="Decline Reason ValueSet"/>
       <description value="The Codes used by enrollment questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/degree"/>
+      </reference>
+      <name value="Degree"/>
+      <description value="The Codes used by Diagnosis"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -715,6 +858,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/etiology"/>
+      </reference>
+      <name value="etiology"/>
+      <description value="The Codes used by Diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/financial-assistance"/>
       </reference>
       <name value="Financial Assistance"/>
@@ -741,6 +895,17 @@
       </reference>
       <name value="Gender Identity"/>
       <description value="The Gender Identity Codes contains the codes to be used by demographic questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/glottic-gap"/>
+      </reference>
+      <name value="Glottic Gap"/>
+      <description value="The Codes used by Diagnosis"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -781,10 +946,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/iatrogenic"/>
+      </reference>
+      <name value="Iatrogenic"/>
+      <description value="The Codes used by Diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/immigration-status"/>
       </reference>
       <name value="Immigration Status"/>
       <description value="Valueset for capturing Immigration Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/left-right"/>
+      </reference>
+      <name value="leftRight"/>
+      <description value="The Codes used by Diagnosis"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -836,6 +1023,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/ptsd"/>
+      </reference>
+      <name value="PTSD"/>
+      <description value="The Codes used by PTSD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/psychiatric-history"/>
       </reference>
       <name value="Psychiatric History ValueSet"/>
@@ -858,10 +1056,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/recording"/>
+      </reference>
+      <name value="recordig ValueSet"/>
+      <description value="The Codes used by recording"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/select-language"/>
       </reference>
       <name value="Select ValueSet"/>
       <description value="The Codes used by enrollment questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/session"/>
+      </reference>
+      <name value="session ValueSet"/>
+      <description value="The Codes used by session"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -902,6 +1122,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/surgery-sub-category"/>
+      </reference>
+      <name value="Surgery Sub Category"/>
+      <description value="The Codes used by Diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/survey-options"/>
       </reference>
       <name value="SurveyOptions"/>
@@ -924,6 +1155,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/thyroplasty"/>
+      </reference>
+      <name value="Thyroplasty"/>
+      <description value="The Codes used by Diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/transportation-type"/>
       </reference>
       <name value="Transportation Type"/>
@@ -935,10 +1177,54 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/treatment"/>
+      </reference>
+      <name value="treatment"/>
+      <description value="The Codes used by Diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tumor-rln"/>
+      </reference>
+      <name value="Tumor RLN"/>
+      <description value="The Codes used by Diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/vocal-activity"/>
       </reference>
       <name value="Vocal Activity ValueSet"/>
       <description value="The Codes used by confounder questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vocal-fold-injection-augmentation"/>
+      </reference>
+      <name value="Vocal Fold Injection Augmentation"/>
+      <description value="The Codes used by Diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/voice-handicap-index"/>
+      </reference>
+      <name value="Voice Handicap Index ValueSet"/>
+      <description value="The Codes used by Voice Handicap Index"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -968,10 +1254,43 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/yes-no-not-certain"/>
+      </reference>
+      <name value="YesNoNotCertain"/>
+      <description value="The Codes used by Diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/yesnosome"/>
       </reference>
       <name value="Yes/No/Some"/>
       <description value="For Capturing simple yes-no-don't know answers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/adhd"/>
+      </reference>
+      <name value="adhd"/>
+      <description value="The codes required for adhd questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/acoustic-task-status"/>
+      </reference>
+      <name value="Acoustic Task Status codes"/>
+      <description value="The codes required for Acoustic Tasks"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1001,10 +1320,131 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/comments"/>
+      </reference>
+      <name value="Comments"/>
+      <description value="The codes required for Diagnosis questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/consent-status"/>
+      </reference>
+      <name value="Questionnaire general info codes"/>
+      <description value="The codes required for general information questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/consent-usf-question"/>
+      </reference>
+      <name value="Consent Usf Question"/>
+      <description value="The codes required for Diagnosis questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dsm5"/>
+      </reference>
+      <name value="dsm5"/>
+      <description value="The codes required for dsm5 questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dsm5-phobia"/>
+      </reference>
+      <name value="dsm5 q5"/>
+      <description value="The codes required for dsm5 phobia questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dsm5-q1"/>
+      </reference>
+      <name value="dsm5 q1"/>
+      <description value="The codes required for dsm5 q1 questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dsm5-q2"/>
+      </reference>
+      <name value="dsm5 q2"/>
+      <description value="The codes required for dsm5 q2 questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dsm5-q3"/>
+      </reference>
+      <name value="dsm5 q3"/>
+      <description value="The codes required for dsm5 q3 questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dsm5-q4"/>
+      </reference>
+      <name value="dsm5 q4"/>
+      <description value="The codes required for dsm5 q4 questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dsm5-q5"/>
+      </reference>
+      <name value="dsm5 q5"/>
+      <description value="The codes required for dsm5 q5 questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/decline-reason"/>
       </reference>
       <name value="Questionnaire enrollment eligible studies codes"/>
       <description value="The codes required for Questionnaire enrollment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/degree"/>
+      </reference>
+      <name value="Degree"/>
+      <description value="The codes required for Diagnosis questionnaire"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1133,6 +1573,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/etiology"/>
+      </reference>
+      <name value="etiology"/>
+      <description value="The codes required for Diagnosis questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/financial-assistance"/>
       </reference>
       <name value="Questionnaire codes Financial Assistance Programs"/>
@@ -1166,6 +1617,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/glottic-gap"/>
+      </reference>
+      <name value="Tumor invading RLN "/>
+      <description value="The codes required for Diagnosis questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/household-makeup"/>
       </reference>
       <name value="Questionnaire codes for household makeup"/>
@@ -1188,10 +1650,32 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/iatrogenic"/>
+      </reference>
+      <name value="iatrogenic"/>
+      <description value="The codes required for Diagnosis questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/immigration-status"/>
       </reference>
       <name value="Questionnaire codes for immigration status"/>
       <description value="The codes required for immigration status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/left-right"/>
+      </reference>
+      <name value="leftRight"/>
+      <description value="The codes required for Diagnosis questionnaire"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1243,6 +1727,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/ptsd"/>
+      </reference>
+      <name value="ptsd"/>
+      <description value="The codes required for ptsd questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/psychiatric-history"/>
       </reference>
       <name value="Questionnaire psychiatric history codes"/>
@@ -1258,6 +1753,28 @@
       </reference>
       <name value="Questionnaire sweat codes"/>
       <description value="The codes required for Questionnaire confounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/recording"/>
+      </reference>
+      <name value="Recording codes"/>
+      <description value="The codes required for Recording"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/session"/>
+      </reference>
+      <name value="Session info codes"/>
+      <description value="The codes required for session"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1298,6 +1815,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/surgery-sub-category"/>
+      </reference>
+      <name value="surgery sub-category"/>
+      <description value="The codes required for Diagnosis questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/survey-options"/>
       </reference>
       <name value="Option Codes for PHQ9 and GAD7"/>
@@ -1320,6 +1848,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/thyroplasty"/>
+      </reference>
+      <name value="Thyroplasty "/>
+      <description value="The codes required for Diagnosis questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/transportation-type"/>
       </reference>
       <name value="Questionnaire codes for Transportation Type"/>
@@ -1331,10 +1870,54 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/treatment"/>
+      </reference>
+      <name value="treatment"/>
+      <description value="The codes required for Diagnosis questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tumor-rln"/>
+      </reference>
+      <name value="Tumor invading RLN "/>
+      <description value="The codes required for Diagnosis questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/vocal-activity"/>
       </reference>
       <name value="Questionnaire sweat codes"/>
       <description value="The codes required for Questionnaire confounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/vocal-fold-injection-augmentation"/>
+      </reference>
+      <name value="Vocal Fold Injection Augmentation"/>
+      <description value="The codes required for Diagnosis questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/voice-handicap-index"/>
+      </reference>
+      <name value="Voice Handicap Index codes"/>
+      <description value="The codes required for Voice Handicap Index"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1364,11 +1947,121 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/yes-no-not-certain"/>
+      </reference>
+      <name value="YesNoNotCertain"/>
+      <description value="The codes required for Diagnosis questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/Yes-No-Some"/>
       </reference>
       <name value="Questionnaire Yes/No/Some codes"/>
       <description value="The codes required for Questionnaires yes/no/some"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/ADHDQuestionnaire"/>
+      </reference>
+      <name value="ADHDQuestionnaire"/>
+      <description value="ADHD Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/AcousticTask"/>
+      </reference>
+      <name value="AcousticTask"/>
+      <description value="Questonnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/AddendumCombinedPDF"/>
+      </reference>
+      <name value="Addendum Combined PDF"/>
+      <description value="Addendum Combined PDF"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/AddendumWCM"/>
+      </reference>
+      <name value="AddendumWCM"/>
+      <description value="AddendumWCM"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/AddendumWCMResearcherStatement"/>
+      </reference>
+      <name value="Addendum WCM Researcher Statement"/>
+      <description value="Addendum WCM Researcher Statement"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/ContactInformation"/>
+      </reference>
+      <name value="ContactInformation"/>
+      <description value="Contact Information Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/CustomAffectScaleQuestionnaire"/>
+      </reference>
+      <name value="CustomAffectScaleQuestionnaire"/>
+      <description value="Custom Affect Scale Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/DSM5"/>
+      </reference>
+      <name value="DSM5"/>
+      <description value="DSM5 Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/EligibleStudies"/>
+      </reference>
+      <name value="Eligible Studies"/>
+      <description value="Eligible Studies"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1397,11 +2090,110 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
+        <reference value="Questionnaire/GeneralInformation"/>
+      </reference>
+      <name value="General Information Questionnaire"/>
+      <description value="Questonnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MainICF"/>
+      </reference>
+      <name value="Main ICF"/>
+      <description value="Main ICF"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MainICFCombinedPDF"/>
+      </reference>
+      <name value="Main ICF Combined PDF"/>
+      <description value="Main ICF Combined PDF"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MainICFResearcherStatement"/>
+      </reference>
+      <name value="Main ICF Researcher Statement"/>
+      <description value="Main ICF Researcher Statement"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/PANASQuestionnaire"/>
+      </reference>
+      <name value="PANASQuestionnaire"/>
+      <description value="PANAS Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
         <reference value="Questionnaire/PHQ9schema"/>
       </reference>
       <name value="PHQ9_schema"/>
       <description value="PHQ-9 assessment schema"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/PTSD"/>
+      </reference>
+      <name value="PTSD"/>
+      <description value="PTSD Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/Recording"/>
+      </reference>
+      <name value="Recording"/>
+      <description value="Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/Session"/>
+      </reference>
+      <name value="Session"/>
+      <description value="Quesionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/VHI10"/>
+      </reference>
+      <name value="VHI10"/>
+      <description value="VHI-10 Questionnaire"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1611,6 +2403,39 @@
       <name value="VbaiWaveformMediaExample"/>
       <description value="An example of a Voice as a Biomarker for AI waveform media"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-waveform-media"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/VocalFoldParalysis"/>
+      </reference>
+      <name value="VocalFoldParalysis"/>
+      <description value="Vocal Fold Paralysis Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/VoicePerception"/>
+      </reference>
+      <name value="VoicePerception"/>
+      <description value="Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/VoiceProblemSeverity"/>
+      </reference>
+      <name value="Voice problem severity Questionnaire"/>
+      <description value="Voice problem severity "/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
