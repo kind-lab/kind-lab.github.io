@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="whocompletedsurvey"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 3 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-Who-Completed-Survey-S"> </a>  <a href="CodeSystem-Who-Completed-Survey.html#Who-Completed-Survey-S">S</a></td><td>https://voicecollab.ai/fhir/CodeSystem/Who-Completed-Survey</td><td>Self</td><td><div><p>Survey was completed by self</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-Who-Completed-Survey-A"> </a>  <a href="CodeSystem-Who-Completed-Survey.html#Who-Completed-Survey-A">A</a></td><td>https://voicecollab.ai/fhir/CodeSystem/Who-Completed-Survey</td><td>Assistant</td><td><div><p>Survey was completed by an assistant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-Who-Completed-Survey-P"> </a>  <a href="CodeSystem-Who-Completed-Survey.html#Who-Completed-Survey-P">P</a></td><td>https://voicecollab.ai/fhir/CodeSystem/Who-Completed-Survey</td><td>Parent/Caregiver</td><td><div><p>Survey was completed by a parent/cargiver</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/ValueSet/whocompletedsurvey"/>
+  <version value="0.1.0"/>
+  <name value="WhoCompletedSurvey"/>
+  <title value="whocompletedsurvey"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-06-27T14:58:12-04:00"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="For Capturing who completed surveys"/>
+  <compose>
+    <include>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/Who-Completed-Survey"/>
+      <concept>
+        <code value="S"/>
+        <display value="Self"/>
+      </concept>
+      <concept>
+        <code value="A"/>
+        <display value="Assistant"/>
+      </concept>
+      <concept>
+        <code value="P"/>
+        <display value="Parent/Caregiver"/>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <timestamp value="2023-05-11T10:00:00Z"/>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/Who-Completed-Survey"/>
+      <code value="S"/>
+      <display value="Self"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/Who-Completed-Survey"/>
+      <code value="A"/>
+      <display value="Assistant"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/Who-Completed-Survey"/>
+      <code value="P"/>
+      <display value="Parent/Caregiver"/>
+    </contains>
+  </expansion>
+</ValueSet>

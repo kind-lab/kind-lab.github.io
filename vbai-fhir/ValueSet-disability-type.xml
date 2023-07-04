@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="disability-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 9 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-disability-type-V"> </a>  <a href="CodeSystem-disability-type.html#disability-type-V">V</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-type</td><td>Vision</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-disability-type-DAW"> </a>  <a href="CodeSystem-disability-type.html#disability-type-DAW">DAW</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-type</td><td>Movement</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-disability-type-DUW"> </a>  <a href="CodeSystem-disability-type.html#disability-type-DUW">DUW</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-type</td><td>Thinking</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-disability-type-R"> </a>  <a href="CodeSystem-disability-type.html#disability-type-R">R</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-type</td><td>Remembering</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-disability-type-L"> </a>  <a href="CodeSystem-disability-type.html#disability-type-L">L</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-type</td><td>Learning</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-disability-type-C"> </a>  <a href="CodeSystem-disability-type.html#disability-type-C">C</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-type</td><td>Communicating</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-disability-type-H"> </a>  <a href="CodeSystem-disability-type.html#disability-type-H">H</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-type</td><td>Hearing</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-disability-type-MH"> </a>  <a href="CodeSystem-disability-type.html#disability-type-MH">MH</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-type</td><td>Mental Health</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-disability-type-SR"> </a>  <a href="CodeSystem-disability-type.html#disability-type-SR">SR</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-type</td><td>Social Relationships</td></tr></table></div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/ValueSet/disability-type"/>
+  <version value="0.1.0"/>
+  <name value="DisabilityType"/>
+  <title value="Disability Type"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-06-27T14:58:12-04:00"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="Valueset for capturing disability status"/>
+  <compose>
+    <include>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-type"/>
+      <concept>
+        <code value="V"/>
+        <display value="Vision"/>
+      </concept>
+      <concept>
+        <code value="M"/>
+        <display value="Movement"/>
+      </concept>
+      <concept>
+        <code value="T"/>
+        <display value="Thinking"/>
+      </concept>
+      <concept>
+        <code value="R"/>
+        <display value="Remembering"/>
+      </concept>
+      <concept>
+        <code value="L"/>
+        <display value="Learning"/>
+      </concept>
+      <concept>
+        <code value="C"/>
+        <display value="Communicating"/>
+      </concept>
+      <concept>
+        <code value="H"/>
+        <display value="Hearing"/>
+      </concept>
+      <concept>
+        <code value="MH"/>
+        <display value="Mental Health"/>
+      </concept>
+      <concept>
+        <code value="SR"/>
+        <display value="Social Relationships"/>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <timestamp value="2023-05-11T10:00:00Z"/>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-type"/>
+      <code value="V"/>
+      <display value="Vision"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-type"/>
+      <code value="DAW"/>
+      <display value="Movement"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-type"/>
+      <code value="DUW"/>
+      <display value="Thinking"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-type"/>
+      <code value="R"/>
+      <display value="Remembering"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-type"/>
+      <code value="L"/>
+      <display value="Learning"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-type"/>
+      <code value="C"/>
+      <display value="Communicating"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-type"/>
+      <code value="H"/>
+      <display value="Hearing"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-type"/>
+      <code value="MH"/>
+      <display value="Mental Health"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-type"/>
+      <code value="SR"/>
+      <display value="Social Relationships"/>
+    </contains>
+  </expansion>
+</ValueSet>

@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/ValueSet/financial-assistance> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "financial-assistance"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-SSI\"> </a>  <a href=\"CodeSystem-disability-status.html#disability-status-SSI\">SSI</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Supplemental Security Income (SSI)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-SNAP\"> </a>  <a href=\"CodeSystem-disability-status.html#disability-status-SNAP\">SNAP</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Supplemental Nutrition Assistance Program (SNAP)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-WIC\"> </a>  <a href=\"CodeSystem-disability-status.html#disability-status-WIC\">WIC</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-TANFGA\"> </a>  <a href=\"CodeSystem-disability-status.html#disability-status-TANFGA\">TANFGA</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Temporary Assistance for Needy Families (TANF), including Pass through Child Support General Assistance (GA) </td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/ValueSet/financial-assistance"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "FinancialAssistance"] ; # 
+  fhir:title [ fhir:v "Financial Assistance"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-06-27T14:58:12-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Valueset for capturing Financial Assistance Programs user is using"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/financial-assistance"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "SSI" ] ;
+         fhir:display [ fhir:v "Supplemental Security Income (SSI)" ]
+       ] [
+         fhir:code [ fhir:v "SNAP" ] ;
+         fhir:display [ fhir:v "Supplemental Nutrition Assistance Program (SNAP)" ]
+       ] [
+         fhir:code [ fhir:v "WIC" ] ;
+         fhir:display [ fhir:v "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)" ]
+       ] [
+         fhir:code [ fhir:v "TANFGA" ] ;
+         fhir:display [ fhir:v "Temporary Assistance for Needy Families (TANF), including Pass through Child Support General Assistance (GA) " ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:expansion [
+     fhir:timestamp [ fhir:v "2023-05-11T10:00:00Z"^^xsd:dateTime ] ;
+     fhir:contains ( [
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/disability-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SSI" ] ;
+       fhir:display [ fhir:v "Supplemental Security Income (SSI)" ]
+     ] [
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/disability-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SNAP" ] ;
+       fhir:display [ fhir:v "Supplemental Nutrition Assistance Program (SNAP)" ]
+     ] [
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/disability-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "WIC" ] ;
+       fhir:display [ fhir:v "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)" ]
+     ] [
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/disability-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TANFGA" ] ;
+       fhir:display [ fhir:v "Temporary Assistance for Needy Families (TANF), including Pass through Child Support General Assistance (GA) " ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

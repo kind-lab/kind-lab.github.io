@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="disability-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 4 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-disability-status-AB"> </a>  <a href="CodeSystem-disability-status.html#disability-status-AB">AB</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Able-bodied</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-disability-status-DAW"> </a>  <a href="CodeSystem-disability-status.html#disability-status-DAW">DAW</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Disabled, able to work</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-disability-status-DUW"> </a>  <a href="CodeSystem-disability-status.html#disability-status-DUW">DUW</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Disabled, unable to work</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-disability-status-PNA"> </a>  <a href="CodeSystem-disability-status.html#disability-status-PNA">PNA</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Prefer not to answer</td></tr></table></div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/ValueSet/disability-status"/>
+  <version value="0.1.0"/>
+  <name value="DisabilityStatus"/>
+  <title value="Disability Status"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-06-27T14:58:12-04:00"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="Valueset for capturing disability status"/>
+  <compose>
+    <include>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-status"/>
+      <concept>
+        <code value="AB"/>
+        <display value="Able-bodied"/>
+      </concept>
+      <concept>
+        <code value="DAW"/>
+        <display value="Disabled, able to work"/>
+      </concept>
+      <concept>
+        <code value="DUW"/>
+        <display value="Disabled, unable to work"/>
+      </concept>
+      <concept>
+        <code value="PNA"/>
+        <display value="Prefer not to answer"/>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <timestamp value="2023-05-11T10:00:00Z"/>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-status"/>
+      <code value="AB"/>
+      <display value="Able-bodied"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-status"/>
+      <code value="DAW"/>
+      <display value="Disabled, able to work"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-status"/>
+      <code value="DUW"/>
+      <display value="Disabled, unable to work"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/disability-status"/>
+      <code value="PNA"/>
+      <display value="Prefer not to answer"/>
+    </contains>
+  </expansion>
+</ValueSet>

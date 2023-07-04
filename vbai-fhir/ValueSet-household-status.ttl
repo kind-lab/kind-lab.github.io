@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/ValueSet/household-status> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "household-status"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-household-status-AL\"> </a>  <a href=\"CodeSystem-household-status.html#household-status-AL\">AL</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Assisted living</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-household-status-PC\"> </a>  <a href=\"CodeSystem-household-status.html#household-status-PC\">PC</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Live with parent/care giver</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-household-status-OH\"> </a>  <a href=\"CodeSystem-household-status.html#household-status-OH\">OH</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Own home</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-household-status-R\"> </a>  <a href=\"CodeSystem-household-status.html#household-status-R\">R</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Rent home</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-household-status-SN\"> </a>  <a href=\"CodeSystem-household-status.html#household-status-SN\">SN</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Skilled nursing facility/nursing home</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-household-status-UT\"> </a>  <a href=\"CodeSystem-household-status.html#household-status-UT\">UT</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Unhoused-temporarily</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-household-status-UP\"> </a>  <a href=\"CodeSystem-household-status.html#household-status-UP\">UP</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Unhoused-permanently</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/ValueSet/household-status"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HouseholdStatus"] ; # 
+  fhir:title [ fhir:v "Household Status"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-06-27T14:58:12-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Valueset for capturing Household Status"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/household-status"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "AL" ] ;
+         fhir:display [ fhir:v "Assisted living" ]
+       ] [
+         fhir:code [ fhir:v "PC" ] ;
+         fhir:display [ fhir:v "Live with parent/care giver" ]
+       ] [
+         fhir:code [ fhir:v "OH" ] ;
+         fhir:display [ fhir:v "Own home" ]
+       ] [
+         fhir:code [ fhir:v "R" ] ;
+         fhir:display [ fhir:v "Rent home" ]
+       ] [
+         fhir:code [ fhir:v "SN" ] ;
+         fhir:display [ fhir:v "Skilled nursing facility/nursing home" ]
+       ] [
+         fhir:code [ fhir:v "UT" ] ;
+         fhir:display [ fhir:v "Unhoused-temporarily" ]
+       ] [
+         fhir:code [ fhir:v "UP" ] ;
+         fhir:display [ fhir:v "Unhoused-permanently" ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:expansion [
+     fhir:timestamp [ fhir:v "2023-05-11T10:00:00Z"^^xsd:dateTime ] ;
+     fhir:contains ( [
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/household-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "AL" ] ;
+       fhir:display [ fhir:v "Assisted living" ]
+     ] [
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/household-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PC" ] ;
+       fhir:display [ fhir:v "Live with parent/care giver" ]
+     ] [
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/household-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "OH" ] ;
+       fhir:display [ fhir:v "Own home" ]
+     ] [
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/household-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "R" ] ;
+       fhir:display [ fhir:v "Rent home" ]
+     ] [
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/household-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SN" ] ;
+       fhir:display [ fhir:v "Skilled nursing facility/nursing home" ]
+     ] [
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/household-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "UT" ] ;
+       fhir:display [ fhir:v "Unhoused-temporarily" ]
+     ] [
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/household-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "UP" ] ;
+       fhir:display [ fhir:v "Unhoused-permanently" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
