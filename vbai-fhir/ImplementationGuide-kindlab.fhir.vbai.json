@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "VoiceaBiomarkerforAI",
   "status" : "draft",
-  "date" : "2023-06-27T14:58:12-04:00",
+  "date" : "2023-07-04T05:55:31+00:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -31,6 +31,16 @@
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
     "version" : "5.0.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "1.0.0"
   },
   {
     "id" : "hl7_fhir_us_core",
@@ -2212,7 +2222,7 @@
         "reference" : "CodeSystem/whodas"
       },
       "name" : "Questionnaire WHODAS codes",
-      "description" : "The codes required for WHODAS Questionnaires ",
+      "description" : "The codes required for WHODAS Questionnaires",
       "exampleBoolean" : false
     },
     {
@@ -2764,7 +2774,7 @@
         "reference" : "Questionnaire/VoiceProblemSeverity"
       },
       "name" : "Voice problem severity Questionnaire",
-      "description" : "Voice problem severity ",
+      "description" : "Voice problem severity",
       "exampleBoolean" : true
     }],
     "page" : {
