@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="yesnosome"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 3 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-Yes-No-Some-Y"> </a>  <a href="CodeSystem-Yes-No-Some.html#Yes-No-Some-Y">Y</a></td><td>https://voicecollab.ai/fhir/CodeSystem/Yes-No-Some</td><td>Yes</td><td><div><p>Yes</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-Yes-No-Some-N"> </a>  <a href="CodeSystem-Yes-No-Some.html#Yes-No-Some-N">N</a></td><td>https://voicecollab.ai/fhir/CodeSystem/Yes-No-Some</td><td>No</td><td><div><p>No</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-Yes-No-Some-S"> </a>  <a href="CodeSystem-Yes-No-Some.html#Yes-No-Some-S">S</a></td><td>https://voicecollab.ai/fhir/CodeSystem/Yes-No-Some</td><td>Some</td><td><div><p>Some</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/ValueSet/yesnosome"/>
+  <version value="0.1.0"/>
+  <name value="YesNoSome"/>
+  <title value="Yes/No/Some"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-07-04T05:24:55+00:00"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="For Capturing simple yes-no-don't know answers"/>
+  <compose>
+    <include>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/Yes-No-Some"/>
+      <concept>
+        <code value="Y"/>
+        <display value="Yes"/>
+      </concept>
+      <concept>
+        <code value="N"/>
+        <display value="No"/>
+      </concept>
+      <concept>
+        <code value="S"/>
+        <display value="Some"/>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <timestamp value="2023-05-11T10:00:00Z"/>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/Yes-No-Some"/>
+      <code value="Y"/>
+      <display value="Yes"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/Yes-No-Some"/>
+      <code value="N"/>
+      <display value="No"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/Yes-No-Some"/>
+      <code value="S"/>
+      <display value="Some"/>
+    </contains>
+  </expansion>
+</ValueSet>

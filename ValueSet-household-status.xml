@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="household-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 7 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-household-status-AL"> </a>  <a href="CodeSystem-household-status.html#household-status-AL">AL</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Assisted living</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-household-status-PC"> </a>  <a href="CodeSystem-household-status.html#household-status-PC">PC</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Live with parent/care giver</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-household-status-OH"> </a>  <a href="CodeSystem-household-status.html#household-status-OH">OH</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Own home</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-household-status-R"> </a>  <a href="CodeSystem-household-status.html#household-status-R">R</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Rent home</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-household-status-SN"> </a>  <a href="CodeSystem-household-status.html#household-status-SN">SN</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Skilled nursing facility/nursing home</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-household-status-UT"> </a>  <a href="CodeSystem-household-status.html#household-status-UT">UT</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Unhoused-temporarily</td></tr><tr><td style="white-space:nowrap"><a name="https---voicecollab.ai-fhir-CodeSystem-household-status-UP"> </a>  <a href="CodeSystem-household-status.html#household-status-UP">UP</a></td><td>https://voicecollab.ai/fhir/CodeSystem/household-status</td><td>Unhoused-permanently</td></tr></table></div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/ValueSet/household-status"/>
+  <version value="0.1.0"/>
+  <name value="HouseholdStatus"/>
+  <title value="Household Status"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-07-04T05:24:55+00:00"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="Valueset for capturing Household Status"/>
+  <compose>
+    <include>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/household-status"/>
+      <concept>
+        <code value="AL"/>
+        <display value="Assisted living"/>
+      </concept>
+      <concept>
+        <code value="PC"/>
+        <display value="Live with parent/care giver"/>
+      </concept>
+      <concept>
+        <code value="OH"/>
+        <display value="Own home"/>
+      </concept>
+      <concept>
+        <code value="R"/>
+        <display value="Rent home"/>
+      </concept>
+      <concept>
+        <code value="SN"/>
+        <display value="Skilled nursing facility/nursing home"/>
+      </concept>
+      <concept>
+        <code value="UT"/>
+        <display value="Unhoused-temporarily"/>
+      </concept>
+      <concept>
+        <code value="UP"/>
+        <display value="Unhoused-permanently"/>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <timestamp value="2023-05-11T10:00:00Z"/>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/household-status"/>
+      <code value="AL"/>
+      <display value="Assisted living"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/household-status"/>
+      <code value="PC"/>
+      <display value="Live with parent/care giver"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/household-status"/>
+      <code value="OH"/>
+      <display value="Own home"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/household-status"/>
+      <code value="R"/>
+      <display value="Rent home"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/household-status"/>
+      <code value="SN"/>
+      <display value="Skilled nursing facility/nursing home"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/household-status"/>
+      <code value="UT"/>
+      <display value="Unhoused-temporarily"/>
+    </contains>
+    <contains>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/household-status"/>
+      <code value="UP"/>
+      <display value="Unhoused-permanently"/>
+    </contains>
+  </expansion>
+</ValueSet>

@@ -1,0 +1,577 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>KINDLAB.FHIR.VBAI\VbaiPlanDefinitionExample - JSON Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.170"}
+    h3,h4,h5,h6{--heading-prefix:"3.170"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">Guidance</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>VbaiPlanDefinitionExample</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v0.1.0). See the <a href="https://voicecollab.ai/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="PlanDefinition-VbaiPlanDefinitionExample.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="PlanDefinition-VbaiPlanDefinitionExample.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="PlanDefinition-VbaiPlanDefinitionExample.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: VbaiPlanDefinitionExample - JSON Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2023-04-28
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="PlanDefinition-VbaiPlanDefinitionExample.json" no-download="true">Raw json</a> | <a href="PlanDefinition-VbaiPlanDefinitionExample.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; overflow: hidden"><code>
+{
+  "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition">resourceType</a>" : "PlanDefinition",
+  "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.id">id</a>" : "VbaiPlanDefinitionExample",
+  "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: PlanDefinition&lt;/b&gt;&lt;a name=\&quot;VbaiPlanDefinitionExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource PlanDefinition &amp;quot;VbaiPlanDefinitionExample&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-vbai-plan-definition.html\&quot;&gt;Vbai Plan Definition&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;code&gt;https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionExample&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 0.1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Cohort Protocol&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2023-04-28&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: KinD Lab&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: KinD Lab: &lt;a href=\&quot;http://fhir.kindlab.sickkids.ca\&quot;&gt;http://fhir.kindlab.sickkids.ca&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This is a plandefinition for cohort protocol&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.1&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Information Gathering &amp;amp; Consent&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Prepare participant for protocol by retrieving basic &amp;amp; contact information, eligibility, and consent&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;patient&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Actions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Prefix&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Priority&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.1&lt;/td&gt;&lt;td&gt;Login for clinician&lt;/td&gt;&lt;td&gt;Login for clinician&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.2&lt;/td&gt;&lt;td&gt;Retrieve Basic Information&lt;/td&gt;&lt;td&gt;Retrieve Basic Information from Participant&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-GeneralInformation.html\&quot;&gt;General Information Questionnaire&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.3&lt;/td&gt;&lt;td&gt;Retrieve Contact Information&lt;/td&gt;&lt;td&gt;Retrieve Contact Information from Participant&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-ContactInformation.html\&quot;&gt;Contact Information Questionnaire&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.4&lt;/td&gt;&lt;td&gt;Determine Eligibility&lt;/td&gt;&lt;td&gt;Determine Eligibility of Participant&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-EligibleStudies.html\&quot;&gt;Eligible Studies Questionnaire&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.5&lt;/td&gt;&lt;td&gt;Enroll participant&lt;/td&gt;&lt;td&gt;Enroll participant&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-Enrollment.html\&quot;&gt;Enrollment Questionnaire&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.6&lt;/td&gt;&lt;td&gt;Have patient read and sign consent &lt;/td&gt;&lt;td&gt;Before you participate in this study, we need your consent. The consent gives you information of what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent.&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-MainICF.html\&quot;&gt;Consent Main ICF&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.7&lt;/td&gt;&lt;td&gt;Retreive Researcher Statement&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-MainICFResearcherStatement.html\&quot;&gt;Consent Main ICF Researcher Statement&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.8&lt;/td&gt;&lt;td&gt;Upload Combined Consent Document&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-MainICFCombinedPDF.html\&quot;&gt;Consent Main ICF Researcher Statement&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.9&lt;/td&gt;&lt;td&gt;Have patient sign Addendum &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-AddendumWCM.html\&quot;&gt;Addendum WCM&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.10&lt;/td&gt;&lt;td&gt;Retrieve researcher statement for Addendum&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-AddendumWCMResearcherStatement.html\&quot;&gt;Addendum WCM Researcher Statement&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.1.11&lt;/td&gt;&lt;td&gt;Upload Combined Document of Addendum&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-AddendumCombinedPDF.html\&quot;&gt;Addendum Combined PDF&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.2&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Demographics&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Gather Demographics that need to be collected&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: &lt;a href=\&quot;Questionnaire-VbaiQuestionnaireDemographicExample.html\&quot;&gt;Demographic Surveys&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.3&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Diagnosis - Voice Disorders - Vocal Fold Paralysis&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Diagnosis - Voice Disorders - Vocal Fold Paralysis&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: &lt;a href=\&quot;Questionnaire-VocalFoldParalysis.html\&quot;&gt;Vocal Fold Paralysis&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.4&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Session&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Begin Session&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: &lt;a href=\&quot;Questionnaire-Session.html\&quot;&gt;Session&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.5&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Acoustic Tasks&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Acoustic tasks across all cohorts&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: &lt;a href=\&quot;Questionnaire-AcousticTask.html\&quot;&gt;Accoustic Tasks&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Actions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Prefix&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Priority&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5.1&lt;/td&gt;&lt;td&gt;Perform Acoustic tasks&lt;/td&gt;&lt;td&gt;Audio check (Audio check: Before we start, let’s test your microphone. Click on the Start button below and say something out loud like “Testing 1, 2, 3”. Recording will stop automatically after 5 seconds. Click Play to hear your recording. If you hear background noise, please go to a quieter place and try again by selecting Redo Recording.  If it sounds good, continue.&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5 Task 1&lt;/td&gt;&lt;td&gt;Prolonged vowel: ​Count to 3 and say “e” for 5 seconds\u00a0&lt;/td&gt;&lt;td&gt;This task helps us analyze features in your voice&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5 Task 2&lt;/td&gt;&lt;td&gt;Maximum phonation time: Say /e/  (max. phonation time ): 'Using your normal voice, take a deep breath and say /e/' until you run completely out of air (click stop when you run out of air)'. (need to ask for this task twice!)\u00a0&lt;/td&gt;&lt;td&gt;This tasks helps us analyze the way your respiration is connected to your voice&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5 Task 3&lt;/td&gt;&lt;td&gt;Glides: “Using the sound “e”, glide from your lowest pitch possible to the highest pitch possible. Rest, take a breath and then glide from your highest pitch possible to the lowest pitch possible”&lt;/td&gt;&lt;td&gt;This task helps us understand how your vocal folds stretch&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5 Task 4&lt;/td&gt;&lt;td&gt;Rainbow passage :  'Read the following passage using your normal voice:' Short Rainbow passage: '￼Read the following passage using your normal voice: When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow. The rainbow is a division of white light into many beautiful colors.  These take the shape of a long round arch, with its path high above, and its two ends apparently beyond the horizon. There is, according to legend, a boiling pot of gold at one end. &lt;/td&gt;&lt;td&gt;This is a standardized passage that contains all the important sounds of the English language&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5 Task 5&lt;/td&gt;&lt;td&gt;Task 5: Cape-V Sentences: “Read these sentences using your normal voice”\u00a0\n      The blue spot is on the key again,\n      How hard did he hit him?,\n      We were away a year ago,\n      We eat eggs every easter,\n      My momma makes lemon muffins,\n      Peter will keep at the peak\u00a0&lt;/td&gt;&lt;td&gt;This is a standardized passage that contains all the important sounds of the English language&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5 Task 6&lt;/td&gt;&lt;td&gt; Task 6: Caterpillar passage 'Read the following passage using your normal voice:' Caterpillar passage: Do you like amusement parks? Well, I sure do. To amuse myself, I went twice last spring. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic rollercoaster high above the ground. When I saw how high the Caterpillar rose into the bright blue sky I knew it was for me. After waiting in line for thirty minutes, I made it to the front where the man measured my height to see if I was tall enough. I gave the man my coins, asked for change, and jumped on the cart. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I could see the parking lot. Boy was I SCARED! I thought to myself, “There’s no turning back now.” People were so scared they screamed as we swiftly zoomed fast, fast, and faster along the tracks. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time to pack the car and drive home. That night I dreamt of the wild ride on the Caterpillar. Taking a trip to the amusement park and riding on the Caterpillar was my MOST memorable moment ever!\u00a0&lt;/td&gt;&lt;td&gt;This is a standardized passage that contains all the important words to test your articulation&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5 Task 7&lt;/td&gt;&lt;td&gt;Task 7: ​￼​Diadocokinesis:[Text Wrapping Break]\u00a0\n    Say the syllables as they appear on your screen – Pa / Ta / Ka,\n    Now record yourself repeating the syllable /PA/ as fast as possible 10 times,\n    Record yourself repeating the syllable /TA/ as fast as possible 10 times,\n    Record yourself repeating the syllable /KA/ as fast as possible 10 times,\n    Now repeat the work /Pataka/ as fast as possible 10 times,\n    Now repeat the word /buttercup/ as fast as possible 10 times\u00a0&lt;/td&gt;&lt;td&gt;This task tests the way you can articulate the sounds and can gives neurological queues&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5 Task 8&lt;/td&gt;&lt;td&gt;Task 6: Free speech: Open ended question (generic) chose 1-2\u00a0\n “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)- Options:\u00a0\u00a0\n\n    Can you talk to us about why you are interested by this study? Who told you about it? Why is it meaningful or valuable to you? How do you think it will help patients in the future?,\n\n    Can you tell us a little bit about your health condition? When did it start, what kind of symptoms have you had and for how long? Tell us how you are managing it and how you are doing?​​​,\n\n​​​​    How would you get from where you are now to the grocery store? Explain with as much detail as possible.​​​​​​​&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5 Task 9&lt;/td&gt;&lt;td&gt;Task 9: Respiration and cough:\u00a0\u00a0\n'Respiratory sounds can also provide information on your health, let’s record them” -\u00a0\n\nFirst, let's hear you breath comfortably for 30 seconds,\nAfter pressing on record, take 5 big breaths in and out through your nose with your mouth closed,\nAfter pressing record, cough 5 times,\nNow try again (need that task twice)\u00a0&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5 Task 10&lt;/td&gt;&lt;td&gt;Picture description: “You will be shown a picture, please describe what you see in your own words. You can keep talking until the time runs out” (1 min)&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.5 Task 11&lt;/td&gt;&lt;td&gt;Task 11: Story Recall:  “You are given a text. Read the text so you familiarize yourself with it. You have up to 5 minutes to read it as many times as you want. When you are ready, you will be asked to recall the story. This can be in your own words.”\u00a0\n\n- \u2003You wished to know all about my grandfather. Well, he is nearly ninety-three years old. He dresses himself in an ancient black frock coat, usually minus several buttons; yet he still thinks as swiftly as ever. A long, flowing beard clings to his chin, giving those who observe him a pronounced feeling of the utmost respect. When he speaks his voice is just a bit cracked and quivers a trifle. Twice each day he plays skillfully and with zest upon our small organ. Except in the winter when the ooze or snow or ice prevents, he slowly takes a short walk in the open air each day. We have often urged him to walk more and smoke less, but he always answers, “Banana Oil!” Grandfather likes to be modern in his language.\u00a0&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.6&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: PMHX and List of Confounders&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Gather PMHx and Confounders that need to be collected&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: &lt;a href=\&quot;Questionnaire-VbaiQuestionnaireConfoundersExample.html\&quot;&gt;Confounder Surveys&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.7&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Questionnaires&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Administer validated questionnaires&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;h3&gt;Actions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Prefix&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Priority&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.7.1&lt;/td&gt;&lt;td&gt;PHQ9 Questionniare&lt;/td&gt;&lt;td&gt;Administer PHQ9 Questionnaire&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-PHQ9schema.html\&quot;&gt;PHQ9_schema&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.7.2&lt;/td&gt;&lt;td&gt;GAD7 Questionniare&lt;/td&gt;&lt;td&gt;Administer GAD7 Questionnaire&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-GAD7schema.html\&quot;&gt;GAD7_schema&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.7.3&lt;/td&gt;&lt;td&gt;Voice Perception Questionniare&lt;/td&gt;&lt;td&gt;Administer Voice Perception Questionnaire&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-VoicePerception.html\&quot;&gt;Voice Perception&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.7.4&lt;/td&gt;&lt;td&gt;VHI-10 Questionniare&lt;/td&gt;&lt;td&gt;Administer VHI-10 Questionnaire&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Questionnaire-VHI10.html\&quot;&gt;VHI-10&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 1.8&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Feedback Pilot&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Questions for feedback for pilot​&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;prefix&lt;/b&gt;: 2.x&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Cohort Specific PlanDefinitions&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: PlanDefinitions specifics based on cohort&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;h3&gt;Actions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Prefix&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Priority&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;2.1&lt;/td&gt;&lt;td&gt;Mood Cohort&lt;/td&gt;&lt;td&gt;PlanDefinition Mood Cohort&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;PlanDefinition-VbaiPlanDefinitionMoodExample.html\&quot;&gt;Mood Cohort Protocol&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;2.2&lt;/td&gt;&lt;td&gt;Voice Cohort&lt;/td&gt;&lt;td&gt;PlanDefinition Voice Cohort&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;PlanDefinition-VbaiPlanDefinitionVoiceExample.html\&quot;&gt;Voice Cohort Protocol&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;2.3&lt;/td&gt;&lt;td&gt;Peds Cohort&lt;/td&gt;&lt;td&gt;PlanDefinition Peds Cohort&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;PlanDefinition-VbaiPlanDefinitionPedsExample.html\&quot;&gt;Pediatrics Cohort Protocol&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;2.4&lt;/td&gt;&lt;td&gt;Neurology Cohort&lt;/td&gt;&lt;td&gt;PlanDefinition Neurology Cohort&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;PlanDefinition-VbaiPlanDefinitionNeurologyExample.html\&quot;&gt;Neurology Cohort Protocol&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;2.5&lt;/td&gt;&lt;td&gt;Respiratory Cohort&lt;/td&gt;&lt;td&gt;PlanDefinition Respiratory  Cohort&lt;/td&gt;&lt;td&gt;routine&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;PlanDefinition-VbaiPlanDefinitionRespiratoryExample.html\&quot;&gt;Respiratory Cohort Protocol&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.url">url</a>" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionExample",
+  "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.title">title</a>" : "Cohort Protocol",
+  "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.date">date</a>" : "2023-04-28",
+  "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.publisher">publisher</a>" : "KinD Lab",
+  "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "KinD Lab",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.description">description</a>" : "This is a plandefinition for cohort protocol",
+  "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action">action</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.1",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Information Gathering &amp; Consent",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Prepare participant for protocol by retrieving basic &amp; contact information, eligibility, and consent",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.participant">participant</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.participant.type">type</a>" : "patient"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.1.1",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Login for clinician",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Login for clinician",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.1.2",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Retrieve Basic Information",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Retrieve Basic Information from Participant",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/GeneralInformation"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.1.3",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Retrieve Contact Information",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Retrieve Contact Information from Participant",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/ContactInformation"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.1.4",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Determine Eligibility",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Determine Eligibility of Participant",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/EligibleStudies"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.1.5",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Enroll participant",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Enroll participant",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/Enrollment"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.1.6",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Have patient read and sign consent ",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Before you participate in this study, we need your consent. The consent gives you information of what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent.",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/MainICF"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.1.7",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Retreive Researcher Statement",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/MainICFResearcherStatement"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.1.8",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Upload Combined Consent Document",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/MainICFCombinedPDF"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.1.9",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Have patient sign Addendum ",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/AddendumWCM"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.1.10",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Retrieve researcher statement for Addendum",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/AddendumWCMResearcherStatement"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.1.11",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Upload Combined Document of Addendum",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/AddendumCombinedPDF"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.2",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Demographics",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Gather Demographics that need to be collected",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/VbaiQuestionnaireDemographicExample"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.3",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Diagnosis - Voice Disorders - Vocal Fold Paralysis",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Diagnosis - Voice Disorders - Vocal Fold Paralysis",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/VocalFoldParalysis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.4",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Session",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Begin Session",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/Session"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.5",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Acoustic Tasks",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Acoustic tasks across all cohorts",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/AcousticTask",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.5.1",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Perform Acoustic tasks",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Audio check (Audio check: Before we start, let’s test your microphone. Click on the Start button below and say something out loud like “Testing 1, 2, 3”. Recording will stop automatically after 5 seconds. Click Play to hear your recording. If you hear background noise, please go to a quieter place and try again by selecting Redo Recording.  If it sounds good, continue.",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.5 Task 1",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Prolonged vowel: ​Count to 3 and say “e” for 5 seconds\u00a0",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "This task helps us analyze features in your voice",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.5 Task 2",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Maximum phonation time: Say /e/  (max. phonation time ): 'Using your normal voice, take a deep breath and say /e/' until you run completely out of air (click stop when you run out of air)'. (need to ask for this task twice!)\u00a0",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "This tasks helps us analyze the way your respiration is connected to your voice",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.5 Task 3",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Glides: “Using the sound “e”, glide from your lowest pitch possible to the highest pitch possible. Rest, take a breath and then glide from your highest pitch possible to the lowest pitch possible”",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "This task helps us understand how your vocal folds stretch",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.5 Task 4",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Rainbow passage :  'Read the following passage using your normal voice:' Short Rainbow passage: '￼Read the following passage using your normal voice: When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow. The rainbow is a division of white light into many beautiful colors.  These take the shape of a long round arch, with its path high above, and its two ends apparently beyond the horizon. There is, according to legend, a boiling pot of gold at one end. ",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "This is a standardized passage that contains all the important sounds of the English language",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.5 Task 5",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Task 5: Cape-V Sentences: “Read these sentences using your normal voice”\u00a0\n      The blue spot is on the key again,\n      How hard did he hit him?,\n      We were away a year ago,\n      We eat eggs every easter,\n      My momma makes lemon muffins,\n      Peter will keep at the peak\u00a0",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "This is a standardized passage that contains all the important sounds of the English language",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.5 Task 6",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : " Task 6: Caterpillar passage 'Read the following passage using your normal voice:' Caterpillar passage: Do you like amusement parks? Well, I sure do. To amuse myself, I went twice last spring. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic rollercoaster high above the ground. When I saw how high the Caterpillar rose into the bright blue sky I knew it was for me. After waiting in line for thirty minutes, I made it to the front where the man measured my height to see if I was tall enough. I gave the man my coins, asked for change, and jumped on the cart. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I could see the parking lot. Boy was I SCARED! I thought to myself, “There’s no turning back now.” People were so scared they screamed as we swiftly zoomed fast, fast, and faster along the tracks. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time to pack the car and drive home. That night I dreamt of the wild ride on the Caterpillar. Taking a trip to the amusement park and riding on the Caterpillar was my MOST memorable moment ever!\u00a0",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "This is a standardized passage that contains all the important words to test your articulation",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.5 Task 7",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Task 7: ​￼​Diadocokinesis:[Text Wrapping Break]\u00a0\n    Say the syllables as they appear on your screen – Pa / Ta / Ka,\n    Now record yourself repeating the syllable /PA/ as fast as possible 10 times,\n    Record yourself repeating the syllable /TA/ as fast as possible 10 times,\n    Record yourself repeating the syllable /KA/ as fast as possible 10 times,\n    Now repeat the work /Pataka/ as fast as possible 10 times,\n    Now repeat the word /buttercup/ as fast as possible 10 times\u00a0",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "This task tests the way you can articulate the sounds and can gives neurological queues",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.5 Task 8",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Task 6: Free speech: Open ended question (generic) chose 1-2\u00a0\n “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)- Options:\u00a0\u00a0\n\n    Can you talk to us about why you are interested by this study? Who told you about it? Why is it meaningful or valuable to you? How do you think it will help patients in the future?,\n\n    Can you tell us a little bit about your health condition? When did it start, what kind of symptoms have you had and for how long? Tell us how you are managing it and how you are doing?​​​,\n\n​​​​    How would you get from where you are now to the grocery store? Explain with as much detail as possible.​​​​​​​",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.5 Task 9",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Task 9: Respiration and cough:\u00a0\u00a0\n'Respiratory sounds can also provide information on your health, let’s record them” -\u00a0\n\nFirst, let's hear you breath comfortably for 30 seconds,\nAfter pressing on record, take 5 big breaths in and out through your nose with your mouth closed,\nAfter pressing record, cough 5 times,\nNow try again (need that task twice)\u00a0",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.5 Task 10",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Picture description: “You will be shown a picture, please describe what you see in your own words. You can keep talking until the time runs out” (1 min)",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.5 Task 11",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Task 11: Story Recall:  “You are given a text. Read the text so you familiarize yourself with it. You have up to 5 minutes to read it as many times as you want. When you are ready, you will be asked to recall the story. This can be in your own words.”\u00a0\n\n- \u2003You wished to know all about my grandfather. Well, he is nearly ninety-three years old. He dresses himself in an ancient black frock coat, usually minus several buttons; yet he still thinks as swiftly as ever. A long, flowing beard clings to his chin, giving those who observe him a pronounced feeling of the utmost respect. When he speaks his voice is just a bit cracked and quivers a trifle. Twice each day he plays skillfully and with zest upon our small organ. Except in the winter when the ooze or snow or ice prevents, he slowly takes a short walk in the open air each day. We have often urged him to walk more and smoke less, but he always answers, “Banana Oil!” Grandfather likes to be modern in his language.\u00a0",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.6",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "PMHX and List of Confounders",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Gather PMHx and Confounders that need to be collected",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/VbaiQuestionnaireConfoundersExample"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.7",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Questionnaires",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Administer validated questionnaires",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.7.1",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "PHQ9 Questionniare",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Administer PHQ9 Questionnaire",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/PHQ9schema"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.7.2",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "GAD7 Questionniare",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Administer GAD7 Questionnaire",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/GAD7schema"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.7.3",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Voice Perception Questionniare",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Administer Voice Perception Questionnaire",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/VoicePerception"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.7.4",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "VHI-10 Questionniare",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Administer VHI-10 Questionnaire",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/Questionnaire/VHI10"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "1.8",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Feedback Pilot",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "Questions for feedback for pilot​",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "2.x",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Cohort Specific PlanDefinitions",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "PlanDefinitions specifics based on cohort",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+      "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.action">action</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "2.1",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Mood Cohort",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "PlanDefinition Mood Cohort",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionMoodExample"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "2.2",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Voice Cohort",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "PlanDefinition Voice Cohort",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceExample"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "2.3",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Peds Cohort",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "PlanDefinition Peds Cohort",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionPedsExample"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "2.4",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Neurology Cohort",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "PlanDefinition Neurology Cohort",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionNeurologyExample"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.prefix">prefix</a>" : "2.5",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">title</a>" : "Respiratory Cohort",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">description</a>" : "PlanDefinition Respiratory  Cohort",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.priority">priority</a>" : "routine",
+          "<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.definition[x]">definitionUri</a>" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionRespiratoryExample"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 4, 2023 05:24+0000">2023-07-04</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
