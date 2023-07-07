@@ -3,7 +3,7 @@
   "id" : "financial-assistance",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-SSI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-disability-status.html#disability-status-SSI\">SSI</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Supplemental Security Income (SSI)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-SNAP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-disability-status.html#disability-status-SNAP\">SNAP</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Supplemental Nutrition Assistance Program (SNAP)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-WIC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-disability-status.html#disability-status-WIC\">WIC</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-TANFGA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-disability-status.html#disability-status-TANFGA\">TANFGA</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Temporary Assistance for Needy Families (TANF), including Pass through Child Support General Assistance (GA) </td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-financial-assistance.html\"><code>https://voicecollab.ai/fhir/CodeSystem/financial-assistance</code></a></li></ul></div>"
   },
   "url" : "https://voicecollab.ai/fhir/ValueSet/financial-assistance",
   "version" : "0.1.0",
@@ -11,7 +11,7 @@
   "title" : "Financial Assistance",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2023-07-07T14:27:15+00:00",
+  "date" : "2023-07-07T14:44:27+00:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -23,46 +23,7 @@
   "description" : "Valueset for capturing Financial Assistance Programs user is using",
   "compose" : {
     "include" : [{
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/financial-assistance",
-      "concept" : [{
-        "code" : "SSI",
-        "display" : "Supplemental Security Income (SSI)"
-      },
-      {
-        "code" : "SNAP",
-        "display" : "Supplemental Nutrition Assistance Program (SNAP)"
-      },
-      {
-        "code" : "WIC",
-        "display" : "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)"
-      },
-      {
-        "code" : "TANFGA",
-        "display" : "Temporary Assistance for Needy Families (TANF), including Pass through Child Support General Assistance (GA) "
-      }]
-    }]
-  },
-  "expansion" : {
-    "timestamp" : "2023-05-11T10:00:00Z",
-    "contains" : [{
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/disability-status",
-      "code" : "SSI",
-      "display" : "Supplemental Security Income (SSI)"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/disability-status",
-      "code" : "SNAP",
-      "display" : "Supplemental Nutrition Assistance Program (SNAP)"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/disability-status",
-      "code" : "WIC",
-      "display" : "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/disability-status",
-      "code" : "TANFGA",
-      "display" : "Temporary Assistance for Needy Families (TANF), including Pass through Child Support General Assistance (GA) "
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/financial-assistance"
     }]
   }
 }

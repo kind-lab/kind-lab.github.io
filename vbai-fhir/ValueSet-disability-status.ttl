@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "disability-status"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-AB\"> </a>  <a href=\"CodeSystem-disability-status.html#disability-status-AB\">AB</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Able-bodied</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-DAW\"> </a>  <a href=\"CodeSystem-disability-status.html#disability-status-DAW\">DAW</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Disabled, able to work</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-DUW\"> </a>  <a href=\"CodeSystem-disability-status.html#disability-status-DUW\">DUW</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Disabled, unable to work</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---voicecollab.ai-fhir-CodeSystem-disability-status-PNA\"> </a>  <a href=\"CodeSystem-disability-status.html#disability-status-PNA\">PNA</a></td><td>https://voicecollab.ai/fhir/CodeSystem/disability-status</td><td>Prefer not to answer</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-disability-status.html\"><code>https://voicecollab.ai/fhir/CodeSystem/disability-status</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://voicecollab.ai/fhir/ValueSet/disability-status"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "Disability Status"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-07-07T14:27:15+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-07T14:44:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -30,40 +30,7 @@
   fhir:description [ fhir:v "Valueset for capturing disability status"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/disability-status"^^xsd:anyURI ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "AB" ] ;
-         fhir:display [ fhir:v "Able-bodied" ]
-       ] [
-         fhir:code [ fhir:v "DAW" ] ;
-         fhir:display [ fhir:v "Disabled, able to work" ]
-       ] [
-         fhir:code [ fhir:v "DUW" ] ;
-         fhir:display [ fhir:v "Disabled, unable to work" ]
-       ] [
-         fhir:code [ fhir:v "PNA" ] ;
-         fhir:display [ fhir:v "Prefer not to answer" ]
-       ] )
-     ] )
-  ] ; # 
-  fhir:expansion [
-     fhir:timestamp [ fhir:v "2023-05-11T10:00:00Z"^^xsd:dateTime ] ;
-     fhir:contains ( [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/disability-status"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "AB" ] ;
-       fhir:display [ fhir:v "Able-bodied" ]
-     ] [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/disability-status"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "DAW" ] ;
-       fhir:display [ fhir:v "Disabled, able to work" ]
-     ] [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/disability-status"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "DUW" ] ;
-       fhir:display [ fhir:v "Disabled, unable to work" ]
-     ] [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/disability-status"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "PNA" ] ;
-       fhir:display [ fhir:v "Prefer not to answer" ]
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/disability-status"^^xsd:anyURI ]
      ] )
   ] . # 
 
