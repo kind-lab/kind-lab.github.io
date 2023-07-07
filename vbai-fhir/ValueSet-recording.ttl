@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "recording"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>https://voicecollab.ai/fhir/ValueSet/recording</code></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-recording.html\"><code>https://voicecollab.ai/fhir/CodeSystem/recording</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://voicecollab.ai/fhir/ValueSet/recording"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -29,7 +29,7 @@
   fhir:description [ fhir:v "The Codes used by recording"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/ValueSet/recording"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/recording"^^xsd:anyURI ]
      ] )
   ] . # 
 
