@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2023-07-07T14:51:33+00:00"/>
+  <date value="2023-07-11T16:10:46-04:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -30,14 +30,6 @@
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
     <version value="5.0.0"/>
-  </dependsOn>
-  <dependsOn id="hl7ext">
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
-      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
-    </extension>
-    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
-    <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="1.0.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_us_core">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -1936,7 +1928,7 @@
         <reference value="CodeSystem/whodas"/>
       </reference>
       <name value="Questionnaire WHODAS codes"/>
-      <description value="The codes required for WHODAS Questionnaires"/>
+      <description value="The codes required for WHODAS Questionnaires "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2025,6 +2017,17 @@
       </reference>
       <name value="Addendum WCM Researcher Statement"/>
       <description value="Addendum WCM Researcher Statement"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/CAPEVQuestionnaire"/>
+      </reference>
+      <name value="CAPE-V Questionnaire"/>
+      <description value="Questinnaire"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -2168,6 +2171,17 @@
       </reference>
       <name value="PTSD"/>
       <description value="PTSD Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/PatientQuestions"/>
+      </reference>
+      <name value="Patient Questionnaire"/>
+      <description value="Patient Questionnaire"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -2442,7 +2456,7 @@
         <reference value="Questionnaire/VoiceProblemSeverity"/>
       </reference>
       <name value="Voice problem severity Questionnaire"/>
-      <description value="Voice problem severity"/>
+      <description value="Voice problem severity "/>
       <exampleBoolean value="true"/>
     </resource>
     <page>

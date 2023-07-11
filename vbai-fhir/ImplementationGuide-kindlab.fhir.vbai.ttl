@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "VoiceaBiomarkerforAI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-07-07T14:51:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-11T16:10:46-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -41,18 +41,6 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
      fhir:version [ fhir:v "5.0.0" ]
-  ] [
-     fhir:id [ fhir:v "hl7ext" ] ;
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
-     ] ) ;
-     fhir:uri [
-       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
-     ] ;
-     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_us_core" ] ;
      fhir:uri [
@@ -2141,7 +2129,7 @@
          fhir:reference [ fhir:v "CodeSystem/whodas" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire WHODAS codes" ] ;
-       fhir:description [ fhir:v "The codes required for WHODAS Questionnaires" ] ;
+       fhir:description [ fhir:v "The codes required for WHODAS Questionnaires " ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2238,6 +2226,18 @@
        ] ;
        fhir:name [ fhir:v "Addendum WCM Researcher Statement" ] ;
        fhir:description [ fhir:v "Addendum WCM Researcher Statement" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/CAPEVQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/CAPEVQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "CAPE-V Questionnaire" ] ;
+       fhir:description [ fhir:v "Questinnaire" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2403,6 +2403,18 @@
        ] ;
        fhir:name [ fhir:v "PTSD" ] ;
        fhir:description [ fhir:v "PTSD Questionnaire" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/PatientQuestions> ;
+         fhir:reference [ fhir:v "Questionnaire/PatientQuestions" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Questionnaire" ] ;
+       fhir:description [ fhir:v "Patient Questionnaire" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2759,7 +2771,7 @@
          fhir:reference [ fhir:v "Questionnaire/VoiceProblemSeverity" ]
        ] ;
        fhir:name [ fhir:v "Voice problem severity Questionnaire" ] ;
-       fhir:description [ fhir:v "Voice problem severity" ] ;
+       fhir:description [ fhir:v "Voice problem severity " ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] ) ;
      fhir:page [
