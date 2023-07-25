@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "VoiceaBiomarkerforAI",
   "status" : "draft",
-  "date" : "2023-07-11T16:10:46-04:00",
+  "date" : "2023-07-25T13:28:49-04:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -973,6 +973,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/dysnpea-index"
+      },
+      "name" : "Dysnpea Index ValueSet",
+      "description" : "The Codes used by Dysnpea Index",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/ent-history"
       },
       "name" : "ENT History ValueSet",
@@ -1177,6 +1189,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/leicester-cough"
+      },
+      "name" : "Leicester Cough ValueSet",
+      "description" : "The Codes used by Leicester Cough Questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/marital-status"
       },
       "name" : "Marital Status",
@@ -1217,6 +1241,18 @@
       },
       "name" : "NeurologicalHistory ValueSet",
       "description" : "The Codes used by confounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/psc-17"
+      },
+      "name" : "Pediatric Symptom Checklist (PSC-17) ValueSet",
+      "description" : "The Codes used by Pediatric Symptom Checklist (PSC-17)",
       "exampleBoolean" : false
     },
     {
@@ -1409,6 +1445,18 @@
       },
       "name" : "Tumor RLN",
       "description" : "The Codes used by Diagnosis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/urge-to-cough"
+      },
+      "name" : "Urge to Cough ValueSet",
+      "description" : "The Codes used by Urge to Cough Questionnaire",
       "exampleBoolean" : false
     },
     {
@@ -1741,6 +1789,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/dysnpea-index"
+      },
+      "name" : "Dysnpea Index",
+      "description" : "Dysnpea Index",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/ent-history"
       },
       "name" : "Questionnaire ent history codes",
@@ -1945,6 +2005,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/leicester-cough"
+      },
+      "name" : "Leicester Cough Questionnaire",
+      "description" : "Leicester Cough Questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/marital-status"
       },
       "name" : "Questionnaire codes for marital status",
@@ -1985,6 +2057,18 @@
       },
       "name" : "Questionnaire neurological history codes",
       "description" : "The codes required for Questionnaire confounders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/psc-17"
+      },
+      "name" : "Pediatric Symptom Checklist (PSC-17)",
+      "description" : "The codes required for Pediatric Symptom Checklist (PSC-17) questionnaire",
       "exampleBoolean" : false
     },
     {
@@ -2173,6 +2257,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/urge-to-cough"
+      },
+      "name" : "Urge to Cough Questionnaire",
+      "description" : "Urge to Cough Questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/vocal-activity"
       },
       "name" : "Questionnaire sweat codes",
@@ -2261,7 +2357,7 @@
       },
       "name" : "ADHD Questionnaire",
       "description" : "ADHD Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2273,7 +2369,7 @@
       },
       "name" : "Acoustic Task",
       "description" : "Acoustic Task Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2321,7 +2417,7 @@
       },
       "name" : "CAPE-V Questionnaire",
       "description" : "Questinnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2333,7 +2429,7 @@
       },
       "name" : "ContactInformation",
       "description" : "Contact Information Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2345,7 +2441,7 @@
       },
       "name" : "CustomAffectScaleQuestionnaire",
       "description" : "Custom Affect Scale Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2357,7 +2453,19 @@
       },
       "name" : "DSM5",
       "description" : "DSM5 Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/DyspneaIndex"
+      },
+      "name" : "DyspneaIndex",
+      "description" : "Dyspnea Index Questionnaire",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2369,7 +2477,7 @@
       },
       "name" : "Eligible Studies",
       "description" : "Eligible Studies",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2382,6 +2490,18 @@
       "name" : "Enrollment Questionnaire",
       "description" : "Enrollment Questionnaire",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/GAD7Response"
+      },
+      "name" : "GAD7Response",
+      "description" : "Example Response of GAD7 Questionnaire",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire-response"
     },
     {
       "extension" : [{
@@ -2405,7 +2525,19 @@
       },
       "name" : "General Information Questionnaire",
       "description" : "Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/LeicesterCough"
+      },
+      "name" : "LeicesterCough",
+      "description" : "LeicesterCoughQuestionnaire",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2417,7 +2549,7 @@
       },
       "name" : "Main ICF",
       "description" : "Main ICF",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2453,7 +2585,7 @@
       },
       "name" : "PANAS Questionnaire",
       "description" : "PANAS Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2473,11 +2605,23 @@
         "valueString" : "Questionnaire"
       }],
       "reference" : {
+        "reference" : "Questionnaire/PSC17"
+      },
+      "name" : "PSC17",
+      "description" : "PSC17 Questionnaire",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
         "reference" : "Questionnaire/PTSD"
       },
       "name" : "PTSD",
       "description" : "PTSD Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2489,7 +2633,7 @@
       },
       "name" : "Patient Questionnaire",
       "description" : "Patient Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2501,7 +2645,7 @@
       },
       "name" : "Recording",
       "description" : "Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2513,7 +2657,19 @@
       },
       "name" : "Session",
       "description" : "Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/UrgeToCough"
+      },
+      "name" : "UrgeToCough",
+      "description" : "Urge to cough Questionnaire",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2525,7 +2681,7 @@
       },
       "name" : "VHI10",
       "description" : "VHI-10 Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2765,7 +2921,7 @@
       },
       "name" : "VocalFoldParalysis",
       "description" : "Vocal Fold Paralysis Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2777,7 +2933,7 @@
       },
       "name" : "VoicePerception",
       "description" : "Questionnaire",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2789,7 +2945,7 @@
       },
       "name" : "Voice problem severity Questionnaire",
       "description" : "Voice problem severity ",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     }],
     "page" : {
       "extension" : [{

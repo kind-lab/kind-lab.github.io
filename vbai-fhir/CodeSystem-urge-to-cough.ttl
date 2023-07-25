@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/CodeSystem/urge-to-cough> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "urge-to-cough"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/urge-to-cough</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"urge-to-cough-1\"> </a></td><td>No need to cough</td></tr><tr><td style=\"white-space:nowrap\">1.5<a name=\"urge-to-cough-1.465\"> </a></td><td>Just noticeable urge to cough</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"urge-to-cough-2\"> </a></td><td>Slight urge to cough</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"urge-to-cough-3\"> </a></td><td>Slight-to-moderate urge to cough</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"urge-to-cough-4\"> </a></td><td>Moderate urge to cough</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"urge-to-cough-5\"> </a></td><td>Moderate-to-strong urge to cough</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"urge-to-cough-6\"> </a></td><td>Strong urge to cough</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"urge-to-cough-7\"> </a></td><td>Strong-to-severe urge to cough</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"urge-to-cough-8\"> </a></td><td>Strong urge to cough</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"urge-to-cough-9\"> </a></td><td>Severe-to-maxium urge to cough</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"urge-to-cough-10\"> </a></td><td>Maxium urge to cough</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/urge-to-cough"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "UrgeToCough"] ; # 
+  fhir:title [ fhir:v "Urge to Cough Questionnaire"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-07-19"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Urge to Cough Questionnaire"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "No need to cough" ]
+  ] [
+     fhir:code [ fhir:v "1.5" ] ;
+     fhir:display [ fhir:v "Just noticeable urge to cough" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Slight urge to cough" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Slight-to-moderate urge to cough" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "Moderate urge to cough" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "Moderate-to-strong urge to cough" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "Strong urge to cough" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "Strong-to-severe urge to cough" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "Strong urge to cough" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "Severe-to-maxium urge to cough" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "Maxium urge to cough" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

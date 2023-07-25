@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2023-07-11T16:10:46-04:00"/>
+  <date value="2023-07-25T13:28:49-04:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -792,6 +792,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/dysnpea-index"/>
+      </reference>
+      <name value="Dysnpea Index ValueSet"/>
+      <description value="The Codes used by Dysnpea Index"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/ent-history"/>
       </reference>
       <name value="ENT History ValueSet"/>
@@ -979,6 +990,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/leicester-cough"/>
+      </reference>
+      <name value="Leicester Cough ValueSet"/>
+      <description value="The Codes used by Leicester Cough Questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/marital-status"/>
       </reference>
       <name value="Marital Status"/>
@@ -1016,6 +1038,17 @@
       </reference>
       <name value="NeurologicalHistory ValueSet"/>
       <description value="The Codes used by confounder questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/psc-17"/>
+      </reference>
+      <name value="Pediatric Symptom Checklist (PSC-17) ValueSet"/>
+      <description value="The Codes used by Pediatric Symptom Checklist (PSC-17)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1192,6 +1225,17 @@
       </reference>
       <name value="Tumor RLN"/>
       <description value="The Codes used by Diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/urge-to-cough"/>
+      </reference>
+      <name value="Urge to Cough ValueSet"/>
+      <description value="The Codes used by Urge to Cough Questionnaire"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1496,6 +1540,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/dysnpea-index"/>
+      </reference>
+      <name value="Dysnpea Index"/>
+      <description value="Dysnpea Index"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/ent-history"/>
       </reference>
       <name value="Questionnaire ent history codes"/>
@@ -1683,6 +1738,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/leicester-cough"/>
+      </reference>
+      <name value="Leicester Cough Questionnaire"/>
+      <description value="Leicester Cough Questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/marital-status"/>
       </reference>
       <name value="Questionnaire codes for marital status"/>
@@ -1720,6 +1786,17 @@
       </reference>
       <name value="Questionnaire neurological history codes"/>
       <description value="The codes required for Questionnaire confounders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/psc-17"/>
+      </reference>
+      <name value="Pediatric Symptom Checklist (PSC-17)"/>
+      <description value="The codes required for Pediatric Symptom Checklist (PSC-17) questionnaire"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1892,6 +1969,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/urge-to-cough"/>
+      </reference>
+      <name value="Urge to Cough Questionnaire"/>
+      <description value="Urge to Cough Questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/vocal-activity"/>
       </reference>
       <name value="Questionnaire sweat codes"/>
@@ -1973,7 +2061,7 @@
       </reference>
       <name value="ADHD Questionnaire"/>
       <description value="ADHD Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1984,7 +2072,7 @@
       </reference>
       <name value="Acoustic Task"/>
       <description value="Acoustic Task Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2028,7 +2116,7 @@
       </reference>
       <name value="CAPE-V Questionnaire"/>
       <description value="Questinnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2039,7 +2127,7 @@
       </reference>
       <name value="ContactInformation"/>
       <description value="Contact Information Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2050,7 +2138,7 @@
       </reference>
       <name value="CustomAffectScaleQuestionnaire"/>
       <description value="Custom Affect Scale Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2061,7 +2149,18 @@
       </reference>
       <name value="DSM5"/>
       <description value="DSM5 Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/DyspneaIndex"/>
+      </reference>
+      <name value="DyspneaIndex"/>
+      <description value="Dyspnea Index Questionnaire"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2072,7 +2171,7 @@
       </reference>
       <name value="Eligible Studies"/>
       <description value="Eligible Studies"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2084,6 +2183,17 @@
       <name value="Enrollment Questionnaire"/>
       <description value="Enrollment Questionnaire"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/GAD7Response"/>
+      </reference>
+      <name value="GAD7Response"/>
+      <description value="Example Response of GAD7 Questionnaire"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire-response"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2105,7 +2215,18 @@
       </reference>
       <name value="General Information Questionnaire"/>
       <description value="Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/LeicesterCough"/>
+      </reference>
+      <name value="LeicesterCough"/>
+      <description value="LeicesterCoughQuestionnaire"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2116,7 +2237,7 @@
       </reference>
       <name value="Main ICF"/>
       <description value="Main ICF"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2149,7 +2270,7 @@
       </reference>
       <name value="PANAS Questionnaire"/>
       <description value="PANAS Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2167,11 +2288,22 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
+        <reference value="Questionnaire/PSC17"/>
+      </reference>
+      <name value="PSC17"/>
+      <description value="PSC17 Questionnaire"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
         <reference value="Questionnaire/PTSD"/>
       </reference>
       <name value="PTSD"/>
       <description value="PTSD Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2182,7 +2314,7 @@
       </reference>
       <name value="Patient Questionnaire"/>
       <description value="Patient Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2193,7 +2325,7 @@
       </reference>
       <name value="Recording"/>
       <description value="Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2204,7 +2336,18 @@
       </reference>
       <name value="Session"/>
       <description value="Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/UrgeToCough"/>
+      </reference>
+      <name value="UrgeToCough"/>
+      <description value="Urge to cough Questionnaire"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2215,7 +2358,7 @@
       </reference>
       <name value="VHI10"/>
       <description value="VHI-10 Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2435,7 +2578,7 @@
       </reference>
       <name value="VocalFoldParalysis"/>
       <description value="Vocal Fold Paralysis Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2446,7 +2589,7 @@
       </reference>
       <name value="VoicePerception"/>
       <description value="Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2457,7 +2600,7 @@
       </reference>
       <name value="Voice problem severity Questionnaire"/>
       <description value="Voice problem severity "/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

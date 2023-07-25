@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"VbaiPlanDefinitionVoiceExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;VbaiPlanDefinitionVoiceExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-plan-definition.html\">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceExample</code></p><p><b>version</b>: 0.1.0</p><p><b>title</b>: Voice Cohort Protocol</p><p><b>status</b>: active</p><p><b>date</b>: 2023-04-28</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href=\"http://fhir.kindlab.sickkids.ca\">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for Voice cohort protocol</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.1 - 1.8</p><p><b>title</b>: Required task across all chorts</p><p><b>description</b>: List of tasks and actions done across all 5 cohorts</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionExample.html\">Cohort Protocol</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B</p><p><b>title</b>: Patient Questionnaire</p><p><b>description</b>: Questions for the patient to answer</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"Questionnaire-PatientQuestions.html\">Patient Questions</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B.2</p><p><b>title</b>: VHI-10</p><p><b>description</b>: Have patient complete VHI-10 Questionnaire</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"Questionnaire-VHI10.html\">VHI-10</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B.3</p><p><b>title</b>: CAPE-V</p><p><b>description</b>: Have patient complete CAPE-V</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"Questionnaire-CAPEVQuestionnaire.html\">CAPE-V Questionnaire</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B.1</p><p><b>title</b>:  Voice Disorders</p><p><b>description</b>: Acoustic Tasks specific to voice cohort\u00a0​</p><p><b>priority</b>: routine</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Prefix</b></td><td><b>Title</b></td><td><b>Description</b></td></tr><tr><td>*</td><td>B.1 Task 1</td><td>Task 1: Caterpillar passage     Read the following passage using your normal voice:\n    Caterpillar passage: Do you like amusement parks? Well, I sure do. To amuse myself, I went twice last spring. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic rollercoaster high above the ground. When I saw how high the Caterpillar rose into the bright blue sky I knew it was for me. After waiting in line for thirty minutes, I made it to the front where the man measured my height to see if I was tall enough. I gave the man my coins, asked for change, and jumped on the cart. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I could see the parking lot. Boy was I SCARED! I thought to myself, “There’s no turning back now.” People were so scared they screamed as we swiftly zoomed fast, fast, and faster along the tracks. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time to pack the car and drive home. That night I dreamt of the wild ride on the Caterpillar. Taking a trip to the amusement park and riding on the Caterpillar was my MOST memorable moment ever!\u00a0</td><td>This is a standardized passage that contains all the important words to test your articulation</td></tr><tr><td>*</td><td>B.1 Task 2</td><td>Task 2: Cape V sentences\u00a0</td><td>Please read the following sentences out loud:\u00a0\n·The blue spot is on the key again.\u00a0\n·How hard did he hit him?\u00a0\n·We were away a year ago.\u00a0\n·We eat eggs every easter.\u00a0\n·My mama makes lemon muffins.\u00a0\n·Peter will keep at the peak\u00a0</td></tr><tr><td>*</td><td>B.1 Task 3</td><td>Task 3: Free Speechs</td><td>Please answer the following questions. You can read the question, then click on the recording button when you are ready to answer. You can keep talking until the timer is up. (Leave the timer for 30 seconds)\u00a0\n-  Can you explain your voice/speech problems and why you consulted a physician for it?</td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B.2</p><p><b>title</b>: PMHx and Confounders specific to voice cohort</p><p><b>priority</b>: routine</p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B.3</p><p><b>title</b>: Validated questionnaires specific to voice cohort\u00a0</p><p><b>priority</b>: routine</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Prefix</b></td><td><b>Title</b></td><td><b>Description</b></td><td><b>Priority</b></td><td><b>Definition[x]</b></td></tr><tr><td>*</td><td>B.3.1</td><td>Consensus Auditory-Perceptual Evaluation of Voice (CAPE-V)\u00a0</td><td>Administer CAPE-V Questionnaire</td><td>routine</td><td> </td></tr><tr><td>*</td><td>B.3.2</td><td>Overall Voice Problem severity scale </td><td>Administer Voice Problem Severity Questionnaire</td><td>routine</td><td><a href=\"Questionnaire-VoiceProblemSeverity.html\">Voice Problen Severity</a></td></tr></table></blockquote></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"VbaiPlanDefinitionVoiceExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;VbaiPlanDefinitionVoiceExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-plan-definition.html\">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceExample</code></p><p><b>version</b>: 0.1.0</p><p><b>title</b>: Voice Cohort Protocol</p><p><b>status</b>: active</p><p><b>date</b>: 2023-04-28</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href=\"http://fhir.kindlab.sickkids.ca\">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for Voice cohort protocol</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.1 - 1.8</p><p><b>title</b>: Required task across all chorts</p><p><b>description</b>: List of tasks and actions done across all 5 cohorts</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionExample.html\">Cohort Protocol</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B</p><p><b>title</b>: Patient Questionnaire</p><p><b>description</b>: Questions for the patient to answer</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"Questionnaire-PatientQuestions.html\">Patient Questions</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B.2</p><p><b>title</b>: VHI-10</p><p><b>description</b>: Have patient complete VHI-10 Questionnaire</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"Questionnaire-VHI10.html\">VHI-10</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B.3</p><p><b>title</b>: CAPE-V</p><p><b>description</b>: Have patient complete CAPE-V</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"Questionnaire-CAPEVQuestionnaire.html\">CAPE-V Questionnaire</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B.4</p><p><b>title</b>:  Voice Disorders</p><p><b>description</b>: Acoustic Tasks specific to voice cohort\u00a0​</p><p><b>priority</b>: routine</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Prefix</b></td><td><b>Title</b></td><td><b>Description</b></td></tr><tr><td>*</td><td>B.4 Task 1</td><td>Prolonged vowel (1)</td><td>Relax, take a deep breath, and sustain the sound “ah” for as long aspossible.</td></tr><tr><td>*</td><td>B.4 Task 2</td><td>Prolonged vowel (2)</td><td>Chant the numbers 1 through 3 and say “ah” for 3-5 seconds.</td></tr><tr><td>*</td><td>B.4 Task 3</td><td>Sentences CAPE-V</td><td>Please read the sentences on your screen: 1. The blue spot is on the key again 2. How hard did he hit him? 3. We were\naway a year ago. 4. We eat eggs every easter. 5. My mama makes lemon muffins. 6. Peter will keep at the peak</td></tr><tr><td>*</td><td>B.4 Task 4</td><td>Connected speech passage Reading 'Rainbow passage'</td><td>Please read the passage on your screen: \nWhen the sunlight strikes raindrops in the air, they act as a prism and form a rainbow. The rainbow is a division of white light into many beautiful colors. These take the shape of a long round arch, with its path high above, and its two ends apparently beyond the horizon.</td></tr><tr><td>*</td><td>B.4 Task 5</td><td>Pitch range &amp; intensity</td><td>Using the sound\n'e', glide from your\nlowest pitch\npossible to the\nhighest pitch\npossible. Rest, take\na breath and then\nglide from your\nhighest pitch\npossible to the\nlowest pitch\npossible.</td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B.5</p><p><b>title</b>: PMHx and Confounders specific to voice cohort</p><p><b>priority</b>: routine</p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: B.6</p><p><b>title</b>: Validated questionnaires specific to voice cohort\u00a0</p><p><b>priority</b>: routine</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Prefix</b></td><td><b>Title</b></td><td><b>Description</b></td><td><b>Priority</b></td><td><b>Definition[x]</b></td></tr><tr><td>*</td><td>B.7.2</td><td>Overall Voice Problem severity scale </td><td>Administer Voice Problem Severity Questionnaire</td><td>routine</td><td><a href=\"Questionnaire-VoiceProblemSeverity.html\">Voice Problen Severity</a></td></tr></table></blockquote></div>"
   },
   "url" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceExample",
   "version" : "0.1.0",
@@ -51,43 +51,47 @@
     "definitionUri" : "https://voicecollab.ai/fhir/Questionnaire/CAPEVQuestionnaire"
   },
   {
-    "prefix" : "B.1",
+    "prefix" : "B.4",
     "title" : " Voice Disorders",
     "description" : "Acoustic Tasks specific to voice cohort\u00a0​",
     "priority" : "routine",
     "action" : [{
-      "prefix" : "B.1 Task 1",
-      "title" : "Task 1: Caterpillar passage     Read the following passage using your normal voice:\n    Caterpillar passage: Do you like amusement parks? Well, I sure do. To amuse myself, I went twice last spring. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic rollercoaster high above the ground. When I saw how high the Caterpillar rose into the bright blue sky I knew it was for me. After waiting in line for thirty minutes, I made it to the front where the man measured my height to see if I was tall enough. I gave the man my coins, asked for change, and jumped on the cart. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I could see the parking lot. Boy was I SCARED! I thought to myself, “There’s no turning back now.” People were so scared they screamed as we swiftly zoomed fast, fast, and faster along the tracks. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time to pack the car and drive home. That night I dreamt of the wild ride on the Caterpillar. Taking a trip to the amusement park and riding on the Caterpillar was my MOST memorable moment ever!\u00a0",
-      "description" : "This is a standardized passage that contains all the important words to test your articulation"
+      "prefix" : "B.4 Task 1",
+      "title" : "Prolonged vowel (1)",
+      "description" : "Relax, take a deep breath, and sustain the sound “ah” for as long aspossible."
     },
     {
-      "prefix" : "B.1 Task 2",
-      "title" : "Task 2: Cape V sentences\u00a0",
-      "description" : "Please read the following sentences out loud:\u00a0\n·The blue spot is on the key again.\u00a0\n·How hard did he hit him?\u00a0\n·We were away a year ago.\u00a0\n·We eat eggs every easter.\u00a0\n·My mama makes lemon muffins.\u00a0\n·Peter will keep at the peak\u00a0"
+      "prefix" : "B.4 Task 2",
+      "title" : "Prolonged vowel (2)",
+      "description" : "Chant the numbers 1 through 3 and say “ah” for 3-5 seconds."
     },
     {
-      "prefix" : "B.1 Task 3",
-      "title" : "Task 3: Free Speechs",
-      "description" : "Please answer the following questions. You can read the question, then click on the recording button when you are ready to answer. You can keep talking until the timer is up. (Leave the timer for 30 seconds)\u00a0\n-  Can you explain your voice/speech problems and why you consulted a physician for it?"
+      "prefix" : "B.4 Task 3",
+      "title" : "Sentences CAPE-V",
+      "description" : "Please read the sentences on your screen: 1. The blue spot is on the key again 2. How hard did he hit him? 3. We were\naway a year ago. 4. We eat eggs every easter. 5. My mama makes lemon muffins. 6. Peter will keep at the peak"
+    },
+    {
+      "prefix" : "B.4 Task 4",
+      "title" : "Connected speech passage Reading 'Rainbow passage'",
+      "description" : "Please read the passage on your screen: \nWhen the sunlight strikes raindrops in the air, they act as a prism and form a rainbow. The rainbow is a division of white light into many beautiful colors. These take the shape of a long round arch, with its path high above, and its two ends apparently beyond the horizon."
+    },
+    {
+      "prefix" : "B.4 Task 5",
+      "title" : "Pitch range & intensity",
+      "description" : "Using the sound\n'e', glide from your\nlowest pitch\npossible to the\nhighest pitch\npossible. Rest, take\na breath and then\nglide from your\nhighest pitch\npossible to the\nlowest pitch\npossible."
     }]
   },
   {
-    "prefix" : "B.2",
+    "prefix" : "B.5",
     "title" : "PMHx and Confounders specific to voice cohort",
     "priority" : "routine"
   },
   {
-    "prefix" : "B.3",
+    "prefix" : "B.6",
     "title" : "Validated questionnaires specific to voice cohort\u00a0",
     "priority" : "routine",
     "action" : [{
-      "prefix" : "B.3.1",
-      "title" : "Consensus Auditory-Perceptual Evaluation of Voice (CAPE-V)\u00a0",
-      "description" : "Administer CAPE-V Questionnaire",
-      "priority" : "routine"
-    },
-    {
-      "prefix" : "B.3.2",
+      "prefix" : "B.7.2",
       "title" : "Overall Voice Problem severity scale ",
       "description" : "Administer Voice Problem Severity Questionnaire",
       "priority" : "routine",
