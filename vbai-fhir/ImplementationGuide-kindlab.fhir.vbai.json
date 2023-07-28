@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "VoiceaBiomarkerforAI",
   "status" : "draft",
-  "date" : "2023-07-25T13:28:49-04:00",
+  "date" : "2023-07-28T14:17:54-04:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -2785,10 +2785,94 @@
         "valueString" : "PlanDefinition"
       }],
       "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionAcousticTasksExample"
+      },
+      "name" : "VbaiPlanDefinitionAcousticTasksExample",
+      "description" : "An example of the AcousticTasks Cohort's PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionAcousticTasksGeneralExample"
+      },
+      "name" : "VbaiPlanDefinitionAcousticTasksGeneralExample",
+      "description" : "An example of the AcousticTasksGeneral Cohort's PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionAcousticTasksPedsExample"
+      },
+      "name" : "VbaiPlanDefinitionAcousticTasksPedsExample",
+      "description" : "An example PlanDefinition of the Acoustic Tasks for Peds Cohort's ",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionConfoundersExample"
+      },
+      "name" : "VbaiPlanDefinitionConfoundersExample",
+      "description" : "An example of the Confounders Cohort's PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionConsentExample"
+      },
+      "name" : "VbaiPlanDefinitionConsentExample",
+      "description" : "An example of the Consent Cohort's PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionDemographicsExample"
+      },
+      "name" : "VbaiPlanDefinitionDemographicExample",
+      "description" : "An example of the Demographic Cohort's PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
         "reference" : "PlanDefinition/VbaiPlanDefinitionExample"
       },
       "name" : "VbaiPlanDefinitionExample",
       "description" : "An example of a Voice as a Biomarker for PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionGeneralQuestionnaireExample"
+      },
+      "name" : "VbaiPlanDefinitionGeneralQuestionnaireExample",
+      "description" : "An example of the GeneralQuestionnaire Cohort's PlanDefinition",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
     },
     {
@@ -2833,6 +2917,42 @@
         "valueString" : "PlanDefinition"
       }],
       "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionPreQuestionExample"
+      },
+      "name" : "VbaiPlanDefinitionPreQuestionExample",
+      "description" : "An example of the PreQuestion Cohort's PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionQuestionnaireExample"
+      },
+      "name" : "VbaiPlanDefinitionQuestionnaireExample",
+      "description" : "An example of the Questionnaire Cohort's PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionQuestionnairePedsExample"
+      },
+      "name" : "VbaiPlanDefinitionQuestionnairePedsExample",
+      "description" : "An example of the QuestionnairePeds Cohort's PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
         "reference" : "PlanDefinition/VbaiPlanDefinitionRespiratoryExample"
       },
       "name" : "VbaiPlanDefinitionRespiratoryExample",
@@ -2845,10 +2965,46 @@
         "valueString" : "PlanDefinition"
       }],
       "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionSessionExample"
+      },
+      "name" : "VbaiPlanDefinitionSessionExample",
+      "description" : "An example of the Session Cohort's PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
         "reference" : "PlanDefinition/VbaiPlanDefinitionVoiceExample"
       },
       "name" : "VbaiPlanDefinitionVoiceExample",
       "description" : "An example of the Voice Cohort's PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitionVoiceImpactingExample"
+      },
+      "name" : "VbaiPlanDefinitionVoiceImpactingExample",
+      "description" : "An example of the VoiceImpacting Cohort's PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPlanDefinitiongeneralFlowExample"
+      },
+      "name" : "VbaiPlanDefinitionGeneralFlowExample",
+      "description" : "An example of the GeneralFlow Cohort's PlanDefinition",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
     },
     {

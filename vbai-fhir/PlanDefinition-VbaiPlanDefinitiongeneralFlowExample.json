@@ -1,0 +1,93 @@
+{
+  "resourceType" : "PlanDefinition",
+  "id" : "VbaiPlanDefinitiongeneralFlowExample",
+  "meta" : {
+    "profile" : ["https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"VbaiPlanDefinitiongeneralFlowExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;VbaiPlanDefinitiongeneralFlowExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-plan-definition.html\">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitiongeneralFlowExample</code></p><p><b>version</b>: 0.1.0</p><p><b>title</b>: GeneralFlow Cohort Protocol</p><p><b>status</b>: active</p><p><b>date</b>: 2023-07-28</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href=\"http://fhir.kindlab.sickkids.ca\">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for GeneralFlow</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.0</p><p><b>title</b>: Pre-consent Questions</p><p><b>description</b>: Adminisiter Pre-consent Questions </p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionPreQuestionExample.html\">Pre-Questions PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.1</p><p><b>title</b>: Consent/Assent</p><p><b>description</b>: Retrieve consent/assesnt</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionConsentExample.html\">Consent</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.2</p><p><b>title</b>: Demographics</p><p><b>description</b>: Retrieve Demographcs</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionDemographicsExample.html\">Demographic PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.3</p><p><b>title</b>: Voice Impacting Q's</p><p><b>description</b>: Administer Voice Impacting Questions</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionVoiceImpactingExample.html\">VoiceImpacting PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.4</p><p><b>title</b>: Session</p><p><b>description</b>: Start Session</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionSessionExample.html\">Session PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.5</p><p><b>title</b>: Acoustic Tasks</p><p><b>description</b>: Perform Acoustic Tasks</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionAcousticTasksExample.html\">AcousticTasks PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.6</p><p><b>title</b>: Confounders</p><p><b>description</b>: Retrieve Confounders</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionConfoundersExample.html\">Confounders PlanDefintion</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.7</p><p><b>title</b>: Questionnaires</p><p><b>description</b>: Administier Validated Questionnaires</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionQuestionnaireExample.html\">Questionnaire PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.8</p><p><b>title</b>: Other</p><p><b>description</b>: Other</p><p><b>priority</b>: routine</p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.9</p><p><b>title</b>: Feedback</p><p><b>description</b>: Please leave any comments or suggestions on the study so we can improve it (or skip)</p><p><b>priority</b>: routine</p></blockquote></div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitiongeneralFlowExample",
+  "version" : "0.1.0",
+  "title" : "GeneralFlow Cohort Protocol",
+  "status" : "active",
+  "date" : "2023-07-28",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "This is a plandefinition for GeneralFlow",
+  "action" : [{
+    "prefix" : "1.0",
+    "title" : "Pre-consent Questions",
+    "description" : "Adminisiter Pre-consent Questions ",
+    "priority" : "routine",
+    "definitionUri" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionPreQuestionExample"
+  },
+  {
+    "prefix" : "1.1",
+    "title" : "Consent/Assent",
+    "description" : "Retrieve consent/assesnt",
+    "priority" : "routine",
+    "definitionUri" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConsentExample"
+  },
+  {
+    "prefix" : "1.2",
+    "title" : "Demographics",
+    "description" : "Retrieve Demographcs",
+    "priority" : "routine",
+    "definitionUri" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionDemographicsExample"
+  },
+  {
+    "prefix" : "1.3",
+    "title" : "Voice Impacting Q's",
+    "description" : "Administer Voice Impacting Questions",
+    "priority" : "routine",
+    "definitionUri" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceImpactingExample"
+  },
+  {
+    "prefix" : "1.4",
+    "title" : "Session",
+    "description" : "Start Session",
+    "priority" : "routine",
+    "definitionUri" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionSessionExample"
+  },
+  {
+    "prefix" : "1.5",
+    "title" : "Acoustic Tasks",
+    "description" : "Perform Acoustic Tasks",
+    "priority" : "routine",
+    "definitionUri" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksExample"
+  },
+  {
+    "prefix" : "1.6",
+    "title" : "Confounders",
+    "description" : "Retrieve Confounders",
+    "priority" : "routine",
+    "definitionUri" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConfoundersExample"
+  },
+  {
+    "prefix" : "1.7",
+    "title" : "Questionnaires",
+    "description" : "Administier Validated Questionnaires",
+    "priority" : "routine",
+    "definitionUri" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireExample"
+  },
+  {
+    "prefix" : "1.8",
+    "title" : "Other",
+    "description" : "Other",
+    "priority" : "routine"
+  },
+  {
+    "prefix" : "1.9",
+    "title" : "Feedback",
+    "description" : "Please leave any comments or suggestions on the study so we can improve it (or skip)",
+    "priority" : "routine"
+  }]
+}

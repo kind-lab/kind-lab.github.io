@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="VbaiPlanDefinitionQuestionnaireExample"/>
+  <meta>
+    <profile value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="VbaiPlanDefinitionQuestionnaireExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition &quot;VbaiPlanDefinitionQuestionnaireExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-vbai-plan-definition.html">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireExample</code></p><p><b>version</b>: 0.1.0</p><p><b>title</b>: Questionnaire PlanDefinition</p><p><b>status</b>: active</p><p><b>date</b>: 2023-07-28</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href="http://fhir.kindlab.sickkids.ca">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for Questionnaire</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.7.1</p><p><b>title</b>: Questionnaires Across All Cohorts</p><p><b>description</b>: Questionnaires Across All Cohorts</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href="PlanDefinition-VbaiPlanDefinitionGeneralQuestionnaireExample.html">General Questionnaire PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.7.2</p><p><b>title</b>: Questionnaires From Peds Cohorts</p><p><b>description</b>: Questionnaires From Peds Cohorts</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href="PlanDefinition-VbaiPlanDefinitionQuestionnairePedsExample.html">QuestionnairePeds PlanDefinition</a></p></blockquote></div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireExample"/>
+  <version value="0.1.0"/>
+  <title value="Questionnaire PlanDefinition"/>
+  <status value="active"/>
+  <date value="2023-07-28"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="This is a plandefinition for Questionnaire"/>
+  <action>
+    <prefix value="1.7.1"/>
+    <title value="Questionnaires Across All Cohorts"/>
+    <description value="Questionnaires Across All Cohorts"/>
+    <priority value="routine"/>
+    <definitionUri value="https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionGeneralQuestionnaireExample"/>
+  </action>
+  <action>
+    <prefix value="1.7.2"/>
+    <title value="Questionnaires From Peds Cohorts"/>
+    <description value="Questionnaires From Peds Cohorts"/>
+    <priority value="routine"/>
+    <definitionUri value="https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnairePedsExample"/>
+  </action>
+</PlanDefinition>
