@@ -1,0 +1,164 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/PlanDefinition/VoiceCohortProtocolExample> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VoiceCohortProtocolExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-cohort-protocol"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-cohort-protocol>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"VoiceCohortProtocolExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;VoiceCohortProtocolExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-cohort-protocol.html\">Vbai cohort protocol Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VoiceCohortProtocolExample</code></p><p><b>version</b>: 0.1.0</p><p><b>title</b>: Voice Cohort Protocol</p><p><b>status</b>: active</p><p><b>date</b>: 2023-07-31</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href=\"http://fhir.kindlab.sickkids.ca\">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for Voice cohort protocol</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.0</p><p><b>title</b>: Pre-Questions</p><p><b>description</b>: List of pre-questions</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionPreQuestionExample.html\">Pre-Questions PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.1</p><p><b>title</b>: Consent/Assent</p><p><b>description</b>: Retieve consent/assent from participant</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionConsentExample.html\">Consent</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.2</p><p><b>title</b>: Demographics</p><p><b>description</b>: have Participant complete demographics</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionDemographicsExample.html\">Demographic PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.3</p><p><b>title</b>: Voice Impacting Q's</p><p><b>description</b>: Administer Voice Impacting Questions</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionVoiceImpactingExample.html\">VoiceImpacting PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.4</p><p><b>title</b>: Session</p><p><b>description</b>: Start Session</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionSessionExample.html\">Session PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.5</p><p><b>title</b>: Acoustic Tasks</p><p><b>description</b>: Perform Acoustic Tasks</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionAcousticTasksExample.html\">AcousticTasks PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.6</p><p><b>title</b>: Confounders</p><p><b>description</b>: Retrieve Confounders</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionConfoundersExample.html\">Confounders PlanDefintion</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.7</p><p><b>title</b>: Questionnaires</p><p><b>description</b>: Administier Validated Questionnaires</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionQuestionnaireExample.html\">Questionnaire PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.8</p><p><b>title</b>: Cohort specific acoustic tasks</p><p><b>description</b>: Administer cohort specific acoustic tasks</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionAcousticTasksVoiceExample.html\">Acoustic Tasks Voice Cohort Protocol</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.9</p><p><b>title</b>: Cohort specific confounders</p><p><b>description</b>: Administer cohort specific confounders</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionConfoundersExample.html\">Confounders PlanDefintion</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10</p><p><b>title</b>: Cohort specific Questionnaires</p><p><b>description</b>: Administer cohort specific questionnaires</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionQuestionnaireVoiceExample.html\">QuestionnaireVoice Cohort Protocol</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.11</p><p><b>title</b>: Clinician input</p><p><b>description</b>: Have Clinican give their input</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionClinicianInputExample.html\">ClinicianInput PlanDefinition</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.12</p><p><b>title</b>: Other</p><p><b>description</b>: Other</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionOtherExample.html\">Other PlanDefintion</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.13</p><p><b>title</b>: Feedback</p><p><b>description</b>: Recieve Feedback</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"PlanDefinition-VbaiPlanDefinitionFeedbackExample.html\">Feedback PlanDefintion</a></p></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VoiceCohortProtocolExample"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "Voice Cohort Protocol"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-07-31"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This is a plandefinition for Voice cohort protocol"] ; # 
+  fhir:action ( [
+     fhir:prefix [ fhir:v "1.0" ] ;
+     fhir:title [ fhir:v "Pre-Questions" ] ;
+     fhir:description [ fhir:v "List of pre-questions" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionPreQuestionExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionPreQuestionExample>
+     ]
+  ] [
+     fhir:prefix [ fhir:v "1.1" ] ;
+     fhir:title [ fhir:v "Consent/Assent" ] ;
+     fhir:description [ fhir:v "Retieve consent/assent from participant" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConsentExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConsentExample>
+     ]
+  ] [
+     fhir:prefix [ fhir:v "1.2" ] ;
+     fhir:title [ fhir:v "Demographics" ] ;
+     fhir:description [ fhir:v "have Participant complete demographics" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionDemographicsExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionDemographicsExample>
+     ]
+  ] [
+     fhir:prefix [ fhir:v "1.3" ] ;
+     fhir:title [ fhir:v "Voice Impacting Q's" ] ;
+     fhir:description [ fhir:v "Administer Voice Impacting Questions" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceImpactingExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceImpactingExample>
+     ]
+  ] [
+     fhir:prefix [ fhir:v "1.4" ] ;
+     fhir:title [ fhir:v "Session" ] ;
+     fhir:description [ fhir:v "Start Session" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionSessionExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionSessionExample>
+     ]
+  ] [
+     fhir:prefix [ fhir:v "1.5" ] ;
+     fhir:title [ fhir:v "Acoustic Tasks" ] ;
+     fhir:description [ fhir:v "Perform Acoustic Tasks" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksExample>
+     ]
+  ] [
+     fhir:prefix [ fhir:v "1.6" ] ;
+     fhir:title [ fhir:v "Confounders" ] ;
+     fhir:description [ fhir:v "Retrieve Confounders" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConfoundersExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConfoundersExample>
+     ]
+  ] [
+     fhir:prefix [ fhir:v "1.7" ] ;
+     fhir:title [ fhir:v "Questionnaires" ] ;
+     fhir:description [ fhir:v "Administier Validated Questionnaires" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireExample>
+     ]
+  ] [
+     fhir:prefix [ fhir:v "1.8" ] ;
+     fhir:title [ fhir:v "Cohort specific acoustic tasks" ] ;
+     fhir:description [ fhir:v "Administer cohort specific acoustic tasks" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksVoiceExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksVoiceExample>
+     ]
+  ] [
+     fhir:prefix [ fhir:v "1.9" ] ;
+     fhir:title [ fhir:v "Cohort specific confounders" ] ;
+     fhir:description [ fhir:v "Administer cohort specific confounders" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConfoundersExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConfoundersExample>
+     ]
+  ] [
+     fhir:prefix [ fhir:v "1.10" ] ;
+     fhir:title [ fhir:v "Cohort specific Questionnaires" ] ;
+     fhir:description [ fhir:v "Administer cohort specific questionnaires" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireVoiceExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireVoiceExample>
+     ]
+  ] [
+     fhir:prefix [ fhir:v "1.11" ] ;
+     fhir:title [ fhir:v "Clinician input" ] ;
+     fhir:description [ fhir:v "Have Clinican give their input" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionClinicianInputExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionClinicianInputExample>
+     ]
+  ] [
+     fhir:prefix [ fhir:v "1.12" ] ;
+     fhir:title [ fhir:v "Other" ] ;
+     fhir:description [ fhir:v "Other" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionOtherExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionOtherExample>
+     ]
+  ] [
+     fhir:prefix [ fhir:v "1.13" ] ;
+     fhir:title [ fhir:v "Feedback" ] ;
+     fhir:description [ fhir:v "Recieve Feedback" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [
+       fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionFeedbackExample"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionFeedbackExample>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

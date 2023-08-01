@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="VbaiPlanDefinitionQuestionnaireVoiceExample"/>
+  <meta>
+    <profile value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="VbaiPlanDefinitionQuestionnaireVoiceExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition &quot;VbaiPlanDefinitionQuestionnaireVoiceExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-vbai-plan-definition.html">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireVoiceExample</code></p><p><b>version</b>: 0.1.0</p><p><b>title</b>: QuestionnaireVoice Cohort Protocol</p><p><b>status</b>: active</p><p><b>date</b>: 2023-07-31</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href="http://fhir.kindlab.sickkids.ca">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for QuestionnaireVoice cohort protocol</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.1</p><p><b>title</b>: Patient Questionnaire</p><p><b>description</b>: Questions for the patient to answer</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href="Questionnaire-PatientQuestions.html">Patient Questions</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.2</p><p><b>title</b>: VHI-10</p><p><b>description</b>: Have patient complete VHI-10 Questionnaire</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href="Questionnaire-VHI10.html">VHI-10</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.3</p><p><b>title</b>: CAPE-V</p><p><b>description</b>: Have patient complete CAPE-V</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href="Questionnaire-CAPEVQuestionnaire.html">CAPE-V Questionnaire</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.4</p><p><b>title</b>: Overall Voice Problem severity scale </p><p><b>description</b>: Administer Voice Problem Severity Questionnaire</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href="Questionnaire-VoiceProblemSeverity.html">Voice Problen Severity</a></p></blockquote></div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireVoiceExample"/>
+  <version value="0.1.0"/>
+  <title value="QuestionnaireVoice Cohort Protocol"/>
+  <status value="active"/>
+  <date value="2023-07-31"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="This is a plandefinition for QuestionnaireVoice cohort protocol"/>
+  <action>
+    <prefix value="1.10.1"/>
+    <title value="Patient Questionnaire"/>
+    <description value="Questions for the patient to answer"/>
+    <priority value="routine"/>
+    <definitionUri value="https://voicecollab.ai/fhir/Questionnaire/PatientQuestions"/>
+  </action>
+  <action>
+    <prefix value="1.10.2"/>
+    <title value="VHI-10"/>
+    <description value="Have patient complete VHI-10 Questionnaire"/>
+    <priority value="routine"/>
+    <definitionUri value="https://voicecollab.ai/fhir/Questionnaire/VHI10"/>
+  </action>
+  <action>
+    <prefix value="1.10.3"/>
+    <title value="CAPE-V"/>
+    <description value="Have patient complete CAPE-V"/>
+    <priority value="routine"/>
+    <definitionUri value="https://voicecollab.ai/fhir/Questionnaire/CAPEVQuestionnaire"/>
+  </action>
+  <action>
+    <prefix value="1.10.4"/>
+    <title value="Overall Voice Problem severity scale "/>
+    <description value="Administer Voice Problem Severity Questionnaire"/>
+    <priority value="routine"/>
+    <definitionUri value="https://voicecollab.ai/fhir/Questionnaire/VoiceProblemSeverity"/>
+  </action>
+</PlanDefinition>

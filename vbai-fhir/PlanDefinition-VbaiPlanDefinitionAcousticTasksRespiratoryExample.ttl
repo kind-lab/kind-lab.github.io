@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksRespiratoryExample> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VbaiPlanDefinitionAcousticTasksRespiratoryExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"VbaiPlanDefinitionAcousticTasksRespiratoryExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;VbaiPlanDefinitionAcousticTasksRespiratoryExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-plan-definition.html\">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksRespiratoryExample</code></p><p><b>version</b>: 0.1.0</p><p><b>title</b>: Acoustic Tasks Respiratory Cohort Protocol</p><p><b>status</b>: active</p><p><b>date</b>: 2023-07-31</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href=\"http://fhir.kindlab.sickkids.ca\">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for Acoustic Tasks Respiratory cohort protocol</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.8 Task 1</p><p><b>title</b>: Breath Sounds</p><p><b>description</b>: Relax until the task starts.“Take three deep breaths in a row in andout the mouth.”</p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.8 Task 2</p><p><b>title</b>: Voluntary cough</p><p><b>description</b>: “Breathe normally, then when you are ready, cough HARD as if something werestuck in your throat.”Complete this three times.</p></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksRespiratoryExample"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "Acoustic Tasks Respiratory Cohort Protocol"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-07-31"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This is a plandefinition for Acoustic Tasks Respiratory cohort protocol"] ; # 
+  fhir:action ( [
+     fhir:prefix [ fhir:v "1.8 Task 1" ] ;
+     fhir:title [ fhir:v "Breath Sounds" ] ;
+     fhir:description [ fhir:v "Relax until the task starts.“Take three deep breaths in a row in andout the mouth.”" ]
+  ] [
+     fhir:prefix [ fhir:v "1.8 Task 2" ] ;
+     fhir:title [ fhir:v "Voluntary cough" ] ;
+     fhir:description [ fhir:v "“Breathe normally, then when you are ready, cough HARD as if something werestuck in your throat.”Complete this three times." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,103 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireMoodExample> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VbaiPlanDefinitionQuestionnaireMoodExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"VbaiPlanDefinitionQuestionnaireMoodExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;VbaiPlanDefinitionQuestionnaireMoodExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-plan-definition.html\">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireMoodExample</code></p><p><b>version</b>: 0.1.0</p><p><b>title</b>: QuestionnaireMood Cohort Protocol</p><p><b>status</b>: active</p><p><b>date</b>: 2023-07-31</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href=\"http://fhir.kindlab.sickkids.ca\">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for QuestionnaireMood cohort protocol</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.8</p><p><b>title</b>: Validated questionnaires specific to mood disorder Cohorts</p><p><b>priority</b>: routine</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Prefix</b></td><td><b>Title</b></td><td><b>Description</b></td><td><b>Priority</b></td><td><b>Definition[x]</b></td></tr><tr><td>*</td><td>1.8.1</td><td>International PANAS Short Form (10) affect scale</td><td>Administer PANAS Questionnaire</td><td>routine</td><td><a href=\"Questionnaire-PANASQuestionnaire.html\">PANAS</a></td></tr><tr><td>*</td><td>1.8.2</td><td>Custom Affect scale </td><td>Administer CAS Questionnaire</td><td>routine</td><td><a href=\"Questionnaire-CustomAffectScaleQuestionnaire.html\">Custom Affect Scale</a></td></tr><tr><td>*</td><td>1.8.3</td><td>DSM-5 Cross Cutting Measure, Adult Version (23 items).</td><td>Administer DSM5 Questionnaire</td><td>routine</td><td><a href=\"Questionnaire-DSM5.html\">DSM-5 Adult</a></td></tr><tr><td>*</td><td>1.8.4</td><td>Altman Self-Rating Mania Scale</td><td>Administer ASRM Questionnaire</td><td>routine</td><td> </td></tr><tr><td>*</td><td>1.8.5</td><td>National Stressful Events Survey PTSD Short Scale (NSESSS)</td><td>Depending on response to DSM-5, administer NSESSS Questionnaire</td><td>routine</td><td><a href=\"Questionnaire-PTSD.html\">PTSD</a></td></tr><tr><td>*</td><td>1.8.6</td><td>Severity Measure for Social Anxiety Disorder (Social Phobia)—Adult - 10</td><td>Depending on response to DSM-5, administer SMSAD Questionnaire</td><td>routine</td><td> </td></tr><tr><td>*</td><td>1.8.7</td><td>Adult ADHD Self-Report Scale (ASRS-v1.1) Symptom Checklist Part A</td><td>Depending on response to DSM-5, administer ASRS-v1.1 Questionnaire</td><td>routine</td><td><a href=\"Questionnaire-ADHDQuestionnaire.html\">ADHD</a></td></tr><tr><td>*</td><td>1.8.8</td><td>Well-being: Secure Flourishing Index</td><td>Administer SFI Questionnaire</td><td>routine</td><td> </td></tr><tr><td>*</td><td>1.8.9</td><td>Hamburg–Hannover Agitation Scale (H2A) </td><td>Administer H2A Questionnaire</td><td>routine</td><td> </td></tr><tr><td>*</td><td>1.8.10</td><td>Chalder Fatigue Scale 11</td><td>Administer CFS 11 Questionnaire</td><td>routine</td><td> </td></tr><tr><td>*</td><td>1.8.11</td><td>The Big Five Inventory–2 Extra Short Form </td><td>Administer The Big Five Inventory–2 Extra Short Form  Questionnaire</td><td>routine</td><td> </td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireMoodExample"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "QuestionnaireMood Cohort Protocol"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-07-31"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This is a plandefinition for QuestionnaireMood cohort protocol"] ; # 
+  fhir:action ( [
+     fhir:prefix [ fhir:v "1.8" ] ;
+     fhir:title [ fhir:v "Validated questionnaires specific to mood disorder Cohorts" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:action ( [
+       fhir:prefix [ fhir:v "1.8.1" ] ;
+       fhir:title [ fhir:v "International PANAS Short Form (10) affect scale" ] ;
+       fhir:description [ fhir:v "Administer PANAS Questionnaire" ] ;
+       fhir:priority [ fhir:v "routine" ] ;
+       fhir:definition [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/PANASQuestionnaire"^^xsd:anyURI ]
+     ] [
+       fhir:prefix [ fhir:v "1.8.2" ] ;
+       fhir:title [ fhir:v "Custom Affect scale " ] ;
+       fhir:description [ fhir:v "Administer CAS Questionnaire" ] ;
+       fhir:priority [ fhir:v "routine" ] ;
+       fhir:definition [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/CustomAffectScaleQuestionnaire"^^xsd:anyURI ]
+     ] [
+       fhir:prefix [ fhir:v "1.8.3" ] ;
+       fhir:title [ fhir:v "DSM-5 Cross Cutting Measure, Adult Version (23 items)." ] ;
+       fhir:description [ fhir:v "Administer DSM5 Questionnaire" ] ;
+       fhir:priority [ fhir:v "routine" ] ;
+       fhir:definition [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/DSM5"^^xsd:anyURI ]
+     ] [
+       fhir:prefix [ fhir:v "1.8.4" ] ;
+       fhir:title [ fhir:v "Altman Self-Rating Mania Scale" ] ;
+       fhir:description [ fhir:v "Administer ASRM Questionnaire" ] ;
+       fhir:priority [ fhir:v "routine" ]
+     ] [
+       fhir:prefix [ fhir:v "1.8.5" ] ;
+       fhir:title [ fhir:v "National Stressful Events Survey PTSD Short Scale (NSESSS)" ] ;
+       fhir:description [ fhir:v "Depending on response to DSM-5, administer NSESSS Questionnaire" ] ;
+       fhir:priority [ fhir:v "routine" ] ;
+       fhir:definition [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/PTSD"^^xsd:anyURI ]
+     ] [
+       fhir:prefix [ fhir:v "1.8.6" ] ;
+       fhir:title [ fhir:v "Severity Measure for Social Anxiety Disorder (Social Phobia)—Adult - 10" ] ;
+       fhir:description [ fhir:v "Depending on response to DSM-5, administer SMSAD Questionnaire" ] ;
+       fhir:priority [ fhir:v "routine" ]
+     ] [
+       fhir:prefix [ fhir:v "1.8.7" ] ;
+       fhir:title [ fhir:v "Adult ADHD Self-Report Scale (ASRS-v1.1) Symptom Checklist Part A" ] ;
+       fhir:description [ fhir:v "Depending on response to DSM-5, administer ASRS-v1.1 Questionnaire" ] ;
+       fhir:priority [ fhir:v "routine" ] ;
+       fhir:definition [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/ADHDQuestionnaire"^^xsd:anyURI ]
+     ] [
+       fhir:prefix [ fhir:v "1.8.8" ] ;
+       fhir:title [ fhir:v "Well-being: Secure Flourishing Index" ] ;
+       fhir:description [ fhir:v "Administer SFI Questionnaire" ] ;
+       fhir:priority [ fhir:v "routine" ]
+     ] [
+       fhir:prefix [ fhir:v "1.8.9" ] ;
+       fhir:title [ fhir:v "Hamburg–Hannover Agitation Scale (H2A) " ] ;
+       fhir:description [ fhir:v "Administer H2A Questionnaire" ] ;
+       fhir:priority [ fhir:v "routine" ]
+     ] [
+       fhir:prefix [ fhir:v "1.8.10" ] ;
+       fhir:title [ fhir:v "Chalder Fatigue Scale 11" ] ;
+       fhir:description [ fhir:v "Administer CFS 11 Questionnaire" ] ;
+       fhir:priority [ fhir:v "routine" ]
+     ] [
+       fhir:prefix [ fhir:v "1.8.11" ] ;
+       fhir:title [ fhir:v "The Big Five Inventory–2 Extra Short Form " ] ;
+       fhir:description [ fhir:v "Administer The Big Five Inventory–2 Extra Short Form  Questionnaire" ] ;
+       fhir:priority [ fhir:v "routine" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

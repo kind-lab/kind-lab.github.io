@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireVoiceExample> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VbaiPlanDefinitionQuestionnaireVoiceExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"VbaiPlanDefinitionQuestionnaireVoiceExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;VbaiPlanDefinitionQuestionnaireVoiceExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-plan-definition.html\">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireVoiceExample</code></p><p><b>version</b>: 0.1.0</p><p><b>title</b>: QuestionnaireVoice Cohort Protocol</p><p><b>status</b>: active</p><p><b>date</b>: 2023-07-31</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href=\"http://fhir.kindlab.sickkids.ca\">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for QuestionnaireVoice cohort protocol</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.1</p><p><b>title</b>: Patient Questionnaire</p><p><b>description</b>: Questions for the patient to answer</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"Questionnaire-PatientQuestions.html\">Patient Questions</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.2</p><p><b>title</b>: VHI-10</p><p><b>description</b>: Have patient complete VHI-10 Questionnaire</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"Questionnaire-VHI10.html\">VHI-10</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.3</p><p><b>title</b>: CAPE-V</p><p><b>description</b>: Have patient complete CAPE-V</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"Questionnaire-CAPEVQuestionnaire.html\">CAPE-V Questionnaire</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.4</p><p><b>title</b>: Overall Voice Problem severity scale </p><p><b>description</b>: Administer Voice Problem Severity Questionnaire</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href=\"Questionnaire-VoiceProblemSeverity.html\">Voice Problen Severity</a></p></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireVoiceExample"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "QuestionnaireVoice Cohort Protocol"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-07-31"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This is a plandefinition for QuestionnaireVoice cohort protocol"] ; # 
+  fhir:action ( [
+     fhir:prefix [ fhir:v "1.10.1" ] ;
+     fhir:title [ fhir:v "Patient Questionnaire" ] ;
+     fhir:description [ fhir:v "Questions for the patient to answer" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/PatientQuestions"^^xsd:anyURI ]
+  ] [
+     fhir:prefix [ fhir:v "1.10.2" ] ;
+     fhir:title [ fhir:v "VHI-10" ] ;
+     fhir:description [ fhir:v "Have patient complete VHI-10 Questionnaire" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/VHI10"^^xsd:anyURI ]
+  ] [
+     fhir:prefix [ fhir:v "1.10.3" ] ;
+     fhir:title [ fhir:v "CAPE-V" ] ;
+     fhir:description [ fhir:v "Have patient complete CAPE-V" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/CAPEVQuestionnaire"^^xsd:anyURI ]
+  ] [
+     fhir:prefix [ fhir:v "1.10.4" ] ;
+     fhir:title [ fhir:v "Overall Voice Problem severity scale " ] ;
+     fhir:description [ fhir:v "Administer Voice Problem Severity Questionnaire" ] ;
+     fhir:priority [ fhir:v "routine" ] ;
+     fhir:definition [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/VoiceProblemSeverity"^^xsd:anyURI ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
