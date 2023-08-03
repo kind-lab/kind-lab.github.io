@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2023-08-01T11:06:47-04:00"/>
+  <date value="2023-08-03T16:45:03-04:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -759,6 +759,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/difficulty-breathing"/>
+      </reference>
+      <name value="Questionnaire codes for difficulty breahing"/>
+      <description value="The codes required for Questionnaires"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/disability-status"/>
       </reference>
       <name value="Disability Status"/>
@@ -1071,6 +1082,61 @@
       </reference>
       <name value="PTSD"/>
       <description value="The Codes used by PTSD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/peds-enrollment"/>
+      </reference>
+      <name value="Pediatric Enrollment"/>
+      <description value="The codes required for Pediatric enrollment pre-question questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/peds-language-fluency"/>
+      </reference>
+      <name value="Pediatric Language Fluency"/>
+      <description value="The codes required for Pediatric enrollment pre-question questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/peds-medical-history"/>
+      </reference>
+      <name value="Questionnaire codes"/>
+      <description value="The codes required for Questionnaires Medical History"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/peds-reason-to-decline"/>
+      </reference>
+      <name value="Questionnaire codes"/>
+      <description value="The codes required for Questionnaires Medical History"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/peds-who-completed-survey"/>
+      </reference>
+      <name value="Questionnaire codes"/>
+      <description value="The codes required for Questionnaires survey completion"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1507,6 +1573,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/difficulty-breathing"/>
+      </reference>
+      <name value="Questionnaire codes for difficulty breahing"/>
+      <description value="The codes required for Questionnaires"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/disability-status"/>
       </reference>
       <name value="Questionnaire codes Disability Status"/>
@@ -1819,6 +1896,61 @@
       </reference>
       <name value="ptsd"/>
       <description value="The codes required for ptsd questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/peds-enrollment"/>
+      </reference>
+      <name value="Pediatric Enrollment"/>
+      <description value="The codes required for Pediatric enrollment pre-question questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/peds-language-fluency"/>
+      </reference>
+      <name value="Pediatric Enrollment"/>
+      <description value="The codes required for Pediatric enrollment pre-question questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/peds-medical-history"/>
+      </reference>
+      <name value="Questionnaire codes"/>
+      <description value="The codes required for Questionnaires survey completion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/peds-reason-to-decline"/>
+      </reference>
+      <name value="Questionnaire codes for peds reason to decline"/>
+      <description value="The codes required for Questionnaires"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/peds-who-completed-survey"/>
+      </reference>
+      <name value="Questionnaire codes"/>
+      <description value="The codes required for Questionnaires survey completion"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2365,6 +2497,17 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
+        <reference value="Questionnaire/PedsPreQuestionQuestionnaire"/>
+      </reference>
+      <name value="PedsPreQuestionQuestionnaire"/>
+      <description value="Vbai Peds Pre-Question Questionnaire"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
         <reference value="Questionnaire/Recording"/>
       </reference>
       <name value="Recording"/>
@@ -2381,6 +2524,17 @@
       <name value="CohortProtocolRespiratoryExample"/>
       <description value="VbaiRespiratoryCohortProtocol"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-cohort-protocol"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/RespiratoryPatientQuestionnaire"/>
+      </reference>
+      <name value="Patient Questionnaire for Respiratory"/>
+      <description value="Respiratory Cohort's Patient Questionnaire"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2414,6 +2568,17 @@
       <name value="VHI10"/>
       <description value="VHI-10 Questionnaire"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/VbaiAdultPlanDefinitionPreQuestionExample"/>
+      </reference>
+      <name value="VbaiAdultPlanDefinitionPreQuestionExample"/>
+      <description value="An example of the Adult PreQuestion PlanDefinition"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2502,6 +2667,17 @@
       <name value="VbaiPatientExample"/>
       <description value="An example of a Voice as a Biomarker for AI Patient"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/VbaiPedsPlanDefinitionPreQuestionExample"/>
+      </reference>
+      <name value="VbaiPedsPlanDefinitionPreQuestionExample"/>
+      <description value="An example of the Peds PreQuestion PlanDefinition"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2677,17 +2853,6 @@
       </reference>
       <name value="VbaiPlanDefinitionOtherExample"/>
       <description value="An example of the Other PlanDefinition"/>
-      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PlanDefinition"/>
-      </extension>
-      <reference>
-        <reference value="PlanDefinition/VbaiPlanDefinitionPreQuestionExample"/>
-      </reference>
-      <name value="VbaiPlanDefinitionPreQuestionExample"/>
-      <description value="An example of the PreQuestion Cohort's PlanDefinition"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
     </resource>
     <resource>

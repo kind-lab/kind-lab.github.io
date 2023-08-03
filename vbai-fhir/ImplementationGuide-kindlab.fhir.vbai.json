@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "VoiceaBiomarkerforAI",
   "status" : "draft",
-  "date" : "2023-08-01T11:06:47-04:00",
+  "date" : "2023-08-03T16:45:03-04:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -937,6 +937,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/difficulty-breathing"
+      },
+      "name" : "Questionnaire codes for difficulty breahing",
+      "description" : "The codes required for Questionnaires",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/disability-status"
       },
       "name" : "Disability Status",
@@ -1277,6 +1289,66 @@
       },
       "name" : "PTSD",
       "description" : "The Codes used by PTSD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/peds-enrollment"
+      },
+      "name" : "Pediatric Enrollment",
+      "description" : "The codes required for Pediatric enrollment pre-question questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/peds-language-fluency"
+      },
+      "name" : "Pediatric Language Fluency",
+      "description" : "The codes required for Pediatric enrollment pre-question questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/peds-medical-history"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires Medical History",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/peds-reason-to-decline"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires Medical History",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/peds-who-completed-survey"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
       "exampleBoolean" : false
     },
     {
@@ -1753,6 +1825,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/difficulty-breathing"
+      },
+      "name" : "Questionnaire codes for difficulty breahing",
+      "description" : "The codes required for Questionnaires",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/disability-status"
       },
       "name" : "Questionnaire codes Disability Status",
@@ -2093,6 +2177,66 @@
       },
       "name" : "ptsd",
       "description" : "The codes required for ptsd questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/peds-enrollment"
+      },
+      "name" : "Pediatric Enrollment",
+      "description" : "The codes required for Pediatric enrollment pre-question questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/peds-language-fluency"
+      },
+      "name" : "Pediatric Enrollment",
+      "description" : "The codes required for Pediatric enrollment pre-question questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/peds-medical-history"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/peds-reason-to-decline"
+      },
+      "name" : "Questionnaire codes for peds reason to decline",
+      "description" : "The codes required for Questionnaires",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/peds-who-completed-survey"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
       "exampleBoolean" : false
     },
     {
@@ -2689,6 +2833,18 @@
         "valueString" : "Questionnaire"
       }],
       "reference" : {
+        "reference" : "Questionnaire/PedsPreQuestionQuestionnaire"
+      },
+      "name" : "PedsPreQuestionQuestionnaire",
+      "description" : "Vbai Peds Pre-Question Questionnaire",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
         "reference" : "Questionnaire/Recording"
       },
       "name" : "Recording",
@@ -2706,6 +2862,18 @@
       "name" : "CohortProtocolRespiratoryExample",
       "description" : "VbaiRespiratoryCohortProtocol",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-cohort-protocol"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/RespiratoryPatientQuestionnaire"
+      },
+      "name" : "Patient Questionnaire for Respiratory",
+      "description" : "Respiratory Cohort's Patient Questionnaire",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -2742,6 +2910,18 @@
       "name" : "VHI10",
       "description" : "VHI-10 Questionnaire",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiAdultPlanDefinitionPreQuestionExample"
+      },
+      "name" : "VbaiAdultPlanDefinitionPreQuestionExample",
+      "description" : "An example of the Adult PreQuestion PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
     },
     {
       "extension" : [{
@@ -2838,6 +3018,18 @@
       "name" : "VbaiPatientExample",
       "description" : "An example of a Voice as a Biomarker for AI Patient",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/VbaiPedsPlanDefinitionPreQuestionExample"
+      },
+      "name" : "VbaiPedsPlanDefinitionPreQuestionExample",
+      "description" : "An example of the Peds PreQuestion PlanDefinition",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
     },
     {
       "extension" : [{
@@ -3029,18 +3221,6 @@
       },
       "name" : "VbaiPlanDefinitionOtherExample",
       "description" : "An example of the Other PlanDefinition",
-      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PlanDefinition"
-      }],
-      "reference" : {
-        "reference" : "PlanDefinition/VbaiPlanDefinitionPreQuestionExample"
-      },
-      "name" : "VbaiPlanDefinitionPreQuestionExample",
-      "description" : "An example of the PreQuestion Cohort's PlanDefinition",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"
     },
     {

@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "peds-enrollment",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-peds-enrollment.html\"><code>https://voicecollab.ai/fhir/CodeSystem/peds-enrollment</code></a></li></ul></div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/ValueSet/peds-enrollment",
+  "version" : "0.1.0",
+  "name" : "PedsEnrollment",
+  "title" : "Pediatric Enrollment",
+  "status" : "active",
+  "date" : "2023-07-21",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "The codes required for Pediatric enrollment pre-question questionnaire",
+  "compose" : {
+    "include" : [{
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/peds-enrollment"
+    }]
+  }
+}

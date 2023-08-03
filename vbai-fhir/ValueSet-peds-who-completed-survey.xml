@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="peds-who-completed-survey"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-peds-who-completed-survey.html"><code>https://voicecollab.ai/fhir/CodeSystem/peds-who-completed-survey</code></a></li></ul></div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/ValueSet/peds-who-completed-survey"/>
+  <version value="0.1.0"/>
+  <name value="PedsWhoCompletedSurvey"/>
+  <title value="Questionnaire codes"/>
+  <status value="active"/>
+  <date value="2023-08-02"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="The codes required for Questionnaires survey completion"/>
+  <compose>
+    <include>
+      <system value="https://voicecollab.ai/fhir/CodeSystem/peds-who-completed-survey"/>
+    </include>
+  </compose>
+</ValueSet>

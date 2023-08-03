@@ -77,6 +77,13 @@
     "name" : "Degree"
   },
   {
+    "id" : "difficulty-breathing",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/difficulty-breathing",
+    "version" : "0.1.0",
+    "name" : "DifficultyBreathing"
+  },
+  {
     "id" : "disability-status",
     "type" : "CodeSystem",
     "url" : "https://voicecollab.ai/fhir/CodeSystem/disability-status",
@@ -315,6 +322,41 @@
     "name" : "NeurologicalHistory"
   },
   {
+    "id" : "peds-enrollment",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/peds-enrollment",
+    "version" : "0.1.0",
+    "name" : "PedsEnrollment"
+  },
+  {
+    "id" : "peds-language-fluency",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/peds-language-fluency",
+    "version" : "0.1.0",
+    "name" : "PedsLanguageFluency"
+  },
+  {
+    "id" : "peds-medical-history",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/peds-medical-history",
+    "version" : "0.1.0",
+    "name" : "PedsMedicalHistory"
+  },
+  {
+    "id" : "peds-reason-to-decline",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/peds-reason-to-decline",
+    "version" : "0.1.0",
+    "name" : "PedsReasonToDecline"
+  },
+  {
+    "id" : "peds-who-completed-survey",
+    "type" : "CodeSystem",
+    "url" : "https://voicecollab.ai/fhir/CodeSystem/peds-who-completed-survey",
+    "version" : "0.1.0",
+    "name" : "PedsWhoCompletedSurvey"
+  },
+  {
     "id" : "psc-17",
     "type" : "CodeSystem",
     "url" : "https://voicecollab.ai/fhir/CodeSystem/psc-17",
@@ -500,6 +542,18 @@
     "version" : "0.1.0"
   },
   {
+    "id" : "VbaiAdultPlanDefinitionPreQuestionExample",
+    "type" : "PlanDefinition",
+    "url" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiAdultPlanDefinitionPreQuestionExample",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "VbaiPedsPlanDefinitionPreQuestionExample",
+    "type" : "PlanDefinition",
+    "url" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPedsPlanDefinitionPreQuestionExample",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "VbaiPlanDefinitionAcousticTasksExample",
     "type" : "PlanDefinition",
     "url" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksExample",
@@ -593,12 +647,6 @@
     "id" : "VbaiPlanDefinitionOtherExample",
     "type" : "PlanDefinition",
     "url" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionOtherExample",
-    "version" : "0.1.0"
-  },
-  {
-    "id" : "VbaiPlanDefinitionPreQuestionExample",
-    "type" : "PlanDefinition",
-    "url" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionPreQuestionExample",
     "version" : "0.1.0"
   },
   {
@@ -800,9 +848,21 @@
     "version" : "0.1.0"
   },
   {
+    "id" : "PedsPreQuestionQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "https://voicecollab.ai/fhir/Questionnaire/PedsPreQuestionQuestionnaire",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "Recording",
     "type" : "Questionnaire",
     "url" : "https://voicecollab.ai/fhir/Questionnaire/Recording",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "RespiratoryPatientQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "https://voicecollab.ai/fhir/Questionnaire/RespiratoryPatientQuestionnaire",
     "version" : "0.1.0"
   },
   {
@@ -1020,6 +1080,13 @@
     "url" : "https://voicecollab.ai/fhir/ValueSet/degree",
     "version" : "0.1.0",
     "name" : "Degree"
+  },
+  {
+    "id" : "difficulty-breathing",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/difficulty-breathing",
+    "version" : "0.1.0",
+    "name" : "DifficultyBreathing"
   },
   {
     "id" : "disability-status",
@@ -1251,6 +1318,41 @@
     "url" : "https://voicecollab.ai/fhir/ValueSet/neurological-history",
     "version" : "0.1.0",
     "name" : "NeurologicalHistory"
+  },
+  {
+    "id" : "peds-enrollment",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/peds-enrollment",
+    "version" : "0.1.0",
+    "name" : "PedsEnrollment"
+  },
+  {
+    "id" : "peds-language-fluency",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/peds-language-fluency",
+    "version" : "0.1.0",
+    "name" : "PedsLanguageFluency"
+  },
+  {
+    "id" : "peds-medical-history",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/peds-medical-history",
+    "version" : "0.1.0",
+    "name" : "PedsMedicalHistory"
+  },
+  {
+    "id" : "peds-reason-to-decline",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/peds-reason-to-decline",
+    "version" : "0.1.0",
+    "name" : "PedsReasonToDecline"
+  },
+  {
+    "id" : "peds-who-completed-survey",
+    "type" : "ValueSet",
+    "url" : "https://voicecollab.ai/fhir/ValueSet/peds-who-completed-survey",
+    "version" : "0.1.0",
+    "name" : "PedsWhoCompletedSurvey"
   },
   {
     "id" : "psc-17",
