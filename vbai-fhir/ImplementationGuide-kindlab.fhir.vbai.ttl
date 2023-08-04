@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "VoiceaBiomarkerforAI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-08-03T16:45:03-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-04T11:46:30-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -1525,6 +1525,66 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/winograd-q1> ;
+         fhir:reference [ fhir:v "ValueSet/winograd-q1" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire ValueSet for Winograd schema Question 1" ] ;
+       fhir:description [ fhir:v "The ValueSet required for Winograd Questionnaires Question 1" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/winograd-q2> ;
+         fhir:reference [ fhir:v "ValueSet/winograd-q2" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire ValueSet for Winograd schema Question 2" ] ;
+       fhir:description [ fhir:v "The ValueSet required for Winograd Questionnaires Question 2" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/winograd-q3> ;
+         fhir:reference [ fhir:v "ValueSet/winograd-q3" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire ValueSet for Winograd schema Question 3" ] ;
+       fhir:description [ fhir:v "The ValueSet required for Winograd Questionnaires Question 3" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/winograd-q4> ;
+         fhir:reference [ fhir:v "ValueSet/winograd-q4" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire ValueSet for Winograd schema Question 4" ] ;
+       fhir:description [ fhir:v "The ValueSet required for Winograd Questionnaires Question 4" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/winograd-q5> ;
+         fhir:reference [ fhir:v "ValueSet/winograd-q5" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire ValueSet for Winograd schema Question 5" ] ;
+       fhir:description [ fhir:v "The ValueSet required for Winograd Questionnaires Question 5" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/ValueSet/yes-no-not-certain> ;
          fhir:reference [ fhir:v "ValueSet/yes-no-not-certain" ]
        ] ;
@@ -2394,6 +2454,66 @@
        ] ;
        fhir:name [ fhir:v "Questionnaire codes" ] ;
        fhir:description [ fhir:v "The codes required for Questionnaires survey completion" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/winograd-q1> ;
+         fhir:reference [ fhir:v "CodeSystem/winograd-q1" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire codes for Winograd schema Question 1" ] ;
+       fhir:description [ fhir:v "The codes required for Winograd Questionnaires Question 1" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/winograd-q2> ;
+         fhir:reference [ fhir:v "CodeSystem/winograd-q2" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire codes for Winograd schema Question 2" ] ;
+       fhir:description [ fhir:v "The codes required for Winograd Questionnaires Question 2" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/winograd-q3> ;
+         fhir:reference [ fhir:v "CodeSystem/winograd-q3" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire codes for Winograd schema Question 3" ] ;
+       fhir:description [ fhir:v "The codes required for Winograd Questionnaires Question 3" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/winograd-q4> ;
+         fhir:reference [ fhir:v "CodeSystem/winograd-q4" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire codes for Winograd schema Question 4" ] ;
+       fhir:description [ fhir:v "The codes required for Winograd Questionnaires Question 4" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/winograd-q5> ;
+         fhir:reference [ fhir:v "CodeSystem/winograd-q5" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire codes for Winograd schema Question 5" ] ;
+       fhir:description [ fhir:v "The codes required for Winograd Questionnaires Question 5" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -3570,6 +3690,21 @@
        ] ;
        fhir:name [ fhir:v "Voice problem severity Questionnaire" ] ;
        fhir:description [ fhir:v "Voice problem severity " ] ;
+       fhir:example [
+         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/WinogradSchema> ;
+         fhir:reference [ fhir:v "Questionnaire/WinogradSchema" ]
+       ] ;
+       fhir:name [ fhir:v "WinogradSchema" ] ;
+       fhir:description [ fhir:v "Winograd Schema" ] ;
        fhir:example [
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>

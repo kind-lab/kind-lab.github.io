@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2023-08-03T16:45:03-04:00"/>
+  <date value="2023-08-04T11:46:30-04:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -1375,6 +1375,61 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/winograd-q1"/>
+      </reference>
+      <name value="Questionnaire ValueSet for Winograd schema Question 1"/>
+      <description value="The ValueSet required for Winograd Questionnaires Question 1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/winograd-q2"/>
+      </reference>
+      <name value="Questionnaire ValueSet for Winograd schema Question 2"/>
+      <description value="The ValueSet required for Winograd Questionnaires Question 2"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/winograd-q3"/>
+      </reference>
+      <name value="Questionnaire ValueSet for Winograd schema Question 3"/>
+      <description value="The ValueSet required for Winograd Questionnaires Question 3"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/winograd-q4"/>
+      </reference>
+      <name value="Questionnaire ValueSet for Winograd schema Question 4"/>
+      <description value="The ValueSet required for Winograd Questionnaires Question 4"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/winograd-q5"/>
+      </reference>
+      <name value="Questionnaire ValueSet for Winograd schema Question 5"/>
+      <description value="The ValueSet required for Winograd Questionnaires Question 5"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/yes-no-not-certain"/>
       </reference>
       <name value="YesNoNotCertain"/>
@@ -2171,6 +2226,61 @@
       </reference>
       <name value="Questionnaire codes"/>
       <description value="The codes required for Questionnaires survey completion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/winograd-q1"/>
+      </reference>
+      <name value="Questionnaire codes for Winograd schema Question 1"/>
+      <description value="The codes required for Winograd Questionnaires Question 1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/winograd-q2"/>
+      </reference>
+      <name value="Questionnaire codes for Winograd schema Question 2"/>
+      <description value="The codes required for Winograd Questionnaires Question 2"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/winograd-q3"/>
+      </reference>
+      <name value="Questionnaire codes for Winograd schema Question 3"/>
+      <description value="The codes required for Winograd Questionnaires Question 3"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/winograd-q4"/>
+      </reference>
+      <name value="Questionnaire codes for Winograd schema Question 4"/>
+      <description value="The codes required for Winograd Questionnaires Question 4"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/winograd-q5"/>
+      </reference>
+      <name value="Questionnaire codes for Winograd schema Question 5"/>
+      <description value="The codes required for Winograd Questionnaires Question 5"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3051,6 +3161,17 @@
       </reference>
       <name value="Voice problem severity Questionnaire"/>
       <description value="Voice problem severity "/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/WinogradSchema"/>
+      </reference>
+      <name value="WinogradSchema"/>
+      <description value="Winograd Schema"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <page>

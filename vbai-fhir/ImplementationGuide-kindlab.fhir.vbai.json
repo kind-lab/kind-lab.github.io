@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "VoiceaBiomarkerforAI",
   "status" : "draft",
-  "date" : "2023-08-03T16:45:03-04:00",
+  "date" : "2023-08-04T11:46:30-04:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -1609,6 +1609,66 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/winograd-q1"
+      },
+      "name" : "Questionnaire ValueSet for Winograd schema Question 1",
+      "description" : "The ValueSet required for Winograd Questionnaires Question 1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/winograd-q2"
+      },
+      "name" : "Questionnaire ValueSet for Winograd schema Question 2",
+      "description" : "The ValueSet required for Winograd Questionnaires Question 2",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/winograd-q3"
+      },
+      "name" : "Questionnaire ValueSet for Winograd schema Question 3",
+      "description" : "The ValueSet required for Winograd Questionnaires Question 3",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/winograd-q4"
+      },
+      "name" : "Questionnaire ValueSet for Winograd schema Question 4",
+      "description" : "The ValueSet required for Winograd Questionnaires Question 4",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/winograd-q5"
+      },
+      "name" : "Questionnaire ValueSet for Winograd schema Question 5",
+      "description" : "The ValueSet required for Winograd Questionnaires Question 5",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/yes-no-not-certain"
       },
       "name" : "YesNoNotCertain",
@@ -2477,6 +2537,66 @@
       },
       "name" : "Questionnaire codes",
       "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/winograd-q1"
+      },
+      "name" : "Questionnaire codes for Winograd schema Question 1",
+      "description" : "The codes required for Winograd Questionnaires Question 1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/winograd-q2"
+      },
+      "name" : "Questionnaire codes for Winograd schema Question 2",
+      "description" : "The codes required for Winograd Questionnaires Question 2",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/winograd-q3"
+      },
+      "name" : "Questionnaire codes for Winograd schema Question 3",
+      "description" : "The codes required for Winograd Questionnaires Question 3",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/winograd-q4"
+      },
+      "name" : "Questionnaire codes for Winograd schema Question 4",
+      "description" : "The codes required for Winograd Questionnaires Question 4",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/winograd-q5"
+      },
+      "name" : "Questionnaire codes for Winograd schema Question 5",
+      "description" : "The codes required for Winograd Questionnaires Question 5",
       "exampleBoolean" : false
     },
     {
@@ -3437,6 +3557,18 @@
       },
       "name" : "Voice problem severity Questionnaire",
       "description" : "Voice problem severity ",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/WinogradSchema"
+      },
+      "name" : "WinogradSchema",
+      "description" : "Winograd Schema",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     }],
     "page" : {

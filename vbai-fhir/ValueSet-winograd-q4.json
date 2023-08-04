@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "winograd-q4",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-winograd-q4.html\"><code>https://voicecollab.ai/fhir/CodeSystem/winograd-q4</code></a></li></ul></div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/ValueSet/winograd-q4",
+  "version" : "0.1.0",
+  "name" : "WinogradQ4",
+  "title" : "Questionnaire ValueSet for Winograd schema Question 4",
+  "status" : "active",
+  "date" : "2023-08-04",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "The ValueSet required for Winograd Questionnaires Question 4",
+  "compose" : {
+    "include" : [{
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/winograd-q4"
+    }]
+  }
+}
