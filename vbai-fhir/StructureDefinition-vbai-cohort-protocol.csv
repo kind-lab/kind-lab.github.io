@@ -180,7 +180,7 @@ Range {[]} {[]}CodeableConcept {[]} {[]}","The target value to be achieved","The
 "PlanDefinition.goal.target.due","PlanDefinition.goal.target.due","","","",0,1,"","","","Duration {[]} {[]}
 ","Reach goal within","Indicates the timeframe after the start of the goal in which the goal should be met.","","","","","","","","","",,,,,"",,,,"PlanDefinition.goal.target.due",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"PlanDefinition.action","PlanDefinition.action","","","",14,14,"Y","","","BackboneElement {[]} {[]}
+"PlanDefinition.action","PlanDefinition.action","","","",12,12,"Y","","","BackboneElement {[]} {[]}
 ","Action defined by the plan","An action or group of actions to be taken as part of the plan.","Note that there is overlap between many of the elements defined here and the ActivityDefinition resource. When an ActivityDefinition is referenced (using the definition element), the overlapping elements in the plan override the content of the referenced ActivityDefinition unless otherwise documented in the specific elements. See the PlanDefinition resource for more detailed information.","","","","","","","","",,,,,"",,,,"PlanDefinition.action",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","{Is a contained Definition}"
 "PlanDefinition.action.id","PlanDefinition.action.id","","","",0,1,"","","","string {[]} {[]}

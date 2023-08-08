@@ -14,8 +14,8 @@
     <sch:rule context="f:PlanDefinition">
       <sch:assert test="count(f:title) &gt;= 1">title: minimum cardinality of 'title' is 1</sch:assert>
       <sch:assert test="count(f:date) &gt;= 1">date: minimum cardinality of 'date' is 1</sch:assert>
-      <sch:assert test="count(f:action) &gt;= 14">action: minimum cardinality of 'action' is 14</sch:assert>
-      <sch:assert test="count(f:action) &lt;= 14">action: maximum cardinality of 'action' is 14</sch:assert>
+      <sch:assert test="count(f:action) &gt;= 12">action: minimum cardinality of 'action' is 12</sch:assert>
+      <sch:assert test="count(f:action) &lt;= 12">action: maximum cardinality of 'action' is 12</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
