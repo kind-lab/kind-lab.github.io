@@ -195,6 +195,33 @@ Whereas the <a href="StructureDefinition-vbai-questionnaire.html">Questionnaire<
 
 <p>Think of a multiple choice exam. In this case, <a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a> describes the exam questions, and the possible answers to each question (e.g. a, b, c, or d). The <a href="StructureDefinition-vbai-questionnaire-response.html">QuestionnaireResponse</a> is just the set of answers provided by an individual.</p>
 
+<h4 id="reading-a-resource">Reading a resource</h4>
+
+<p>With some knowledge of the resources involved in the cohort, it will be useful to understand how to read a resource page.
+The following is a sample of the [DemographicsQuestionnaire]:</p>
+
+  <!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide -->
+
+<div>
+    <figure class="figure"><a name="l380">​</a>
+    <figcaption class="figure-caption"><strong>Top rows of the demographic questionnaire.</strong></figcaption>
+      <img src="null" alt="null" class="figure-img img-responsive img-rounded center-block"/>
+    </figure>
+
+<p></p>
+</div>
+
+<p>Let’s look at the “completed_by” field, the last row in the above screenshot. From left to right, we can read:</p>
+
+<ul>
+  <li>The level of the item in the hierarchy. Many items in FHIR are hierarchical or grouped. The questions above “completed_by” are grouped under a “general” group. These groups are useful for storing related items. Visually we can see that “completed_by” is not in the general group.</li>
+  <li>The name of the item (e.g. “completed_by”)</li>
+  <li>A description (e.g. “Who is completing this survey?”)</li>
+  <li>The cardinality of the identifier, which stipulates how many responses are allowed. The most common entry is “0..1”, which means both 0 and 1 responses are allowed. More clearly, we expect one response, but it’s OK for there to be no response, and we don’t allow more than one response to this question.</li>
+  <li>The type of the response. Types enforce certain rules on the response. A “choice” type can only be one of a predecided set of choices. A “string” type can be any text. A “date” type must follow rules for well-formed dates, and so on.</li>
+  <li>Optionally, a ValueSet is listed. For the “choice” data type, the ValueSet lists out the allowed choices. For “completed_by”, this is the <a href="ValueSet-whocompletedsurvey.html">whocompletedsurvey</a> ValueSet.</li>
+</ul>
+
 
 
 
@@ -220,7 +247,7 @@ Whereas the <a href="StructureDefinition-vbai-questionnaire.html">Questionnaire<
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 16, 2023 18:12+0000">2023-08-16</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 16, 2023 22:53+0000">2023-08-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
