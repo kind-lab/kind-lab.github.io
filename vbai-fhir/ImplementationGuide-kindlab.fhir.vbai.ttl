@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "VoiceaBiomarkerforAI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-08-16T16:37:06+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-16T17:53:24+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -3749,6 +3749,14 @@
          ] ) ;
          fhir:name [ fhir:v "tutorial_table_of_contents.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Tutorial Table of Contents" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "brief_fhir_intro.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "brief_fhir_intro.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Brief Fhir Intro" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
