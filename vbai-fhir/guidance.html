@@ -99,6 +99,9 @@
   <li>
     <a href="changelog.html">Change Log</a>
   </li>
+  <li>
+    <a href="tutorial_table_of_contents.html">Tutorial</a>
+  </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -152,13 +155,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="introduction">Introduction</h3>
 
-<p>The goal of this implementation guide is to comprehensively document the data collection process for the Bridge2AI Voice as a Biomarker of Health project. Where possible, the FHIR profiles aim to validate data content and ensure data quality.</p>
+<p>The goal of this implementation guide is to comprehensively document the data collection process for the Bridge2AI Voice as a Biomarker of Health project.
+The initial phase of the project focused on the collection of voice data with relevant clinical context in five groups: neurological disorders, mood disorders, respiratory disorders, voice disorders, and a pediatric cohort.
+A set of FHIR profiles and resources were created to support standardization of the data during collection.</p>
 
-<p>The initial phase of the project focused on the collection of voice data with relevant clinical context in five groups: neurological disorders, mood disorders, respiratory disorders, voice disorders, and a pediatric cohort.
-To ensure consistency across these groups, a standardized protocol was created which aligned the high level workflow.
-In FHIR, the canonical <a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a> resource can be used to structure protocols. At its core, a PlanDefinition is a pre-defined group of actions to be taken in particular circumstances. In our case, these actions are the data collection steps undertaken as a part of the data collection process.</p>
+<h4 id="overarching-structure">Overarching structure</h4>
 
-<p>To provide consistency across the protocols, we extend the base PlanDefinition resource and defining a base <a href="StructureDefinition-vbai-cohort-protocol.html">VbaiCohortProtocol</a>. This protocol constrains there to be exactly 12 steps. Though the title is not constrained by the profile, these steps are assumed to be:</p>
+<p>In FHIR, the canonical <a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a> resource can be used to structure protocols. At its core, a PlanDefinition is a pre-defined group of actions to be taken in particular circumstances. In our case, these actions are the data collection steps undertaken as a part of the data collection process.</p>
+
+<p>To provide consistency across the protocols, the base PlanDefinition resource was extended to create <a href="StructureDefinition-vbai-cohort-protocol.html">VbaiCohortProtocol</a>. Each individual disease group follows the same protocol with exactly 12 steps:</p>
 
 <ol>
   <li>Pre-Questions</li>
@@ -175,6 +180,10 @@ In FHIR, the canonical <a href="http://hl7.org/fhir/R4/plandefinition.html">Plan
   <li>Feedback</li>
 </ol>
 
+<h4 id="further-reading">Further reading</h4>
+
+<p>A tutorial for each cohort is provided. These tutorials provide lay summaries and links to the components of the protocol.</p>
+
 <p>Each group’s specific protocol will be an instance of the overarching <a href="StructureDefinition-vbai-cohort-protocol.html">VbaiCohortProtocol</a>. Currently this includes:</p>
 
 <ul>
@@ -186,36 +195,6 @@ In FHIR, the canonical <a href="http://hl7.org/fhir/R4/plandefinition.html">Plan
 </ul>
 
 <p>Every step in these protocols points to a separate PlanDefinition. This is an abstraction that makes it easy in FHIR to have the individual steps vary across the groups.</p>
-<h4 id="elements-of-each-protocol">Elements of each protocol</h4>
-
-<p>Protocols are composed of chronological actions. These actions have either:</p>
-
-<ol>
-  <li>A title and a description only. This is typical for acoustic tasks. In this case, the action is described as it is intended to be performed.</li>
-  <li>A title, description, and a definition. The definition is typically a Questionnaire resource.</li>
-</ol>
-
-<p>The latter type is more interesting, as the <a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a> resource allows us to specify both the questions being asked <em>and</em> the structure of the responses. This specification will allow a FHIR server using this profile to validate data content.</p>
-
-<h4 id="questionnaire-examples"><a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a> examples</h4>
-
-<p>There are two resources related to a questionnaire:</p>
-
-<ul>
-  <li><a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a> - the Questionnaire structure itself</li>
-  <li><a href="StructureDefinition-vbai-questionnaire-response.html">QuestionnaireResponse</a> - an individual’s answers to a particular questionnaire.</li>
-</ul>
-
-<p>The Questionnaire resource captures the structure for any particular survey/questionnaire. Each question within the Questionnaire resource is bounded to a set of options and valuesets, with each having their own codesystem.</p>
-
-<p>Some example questionnaires in the protocols include:</p>
-
-<ul>
-  <li><a href="Questionnaire-PHQ9schema.html">PHQ9</a></li>
-  <li><a href="Questionnaire-GAD7schema.html">GAD7</a></li>
-  <li><a href="Questionnaire-VbaiQuestionnaireConfoundersExample.html">Confounders</a></li>
-  <li><a href="Questionnaire-VbaiQuestionnaireDemographicExample.html">Demographics</a></li>
-</ul>
 
 
 
@@ -242,7 +221,7 @@ In FHIR, the canonical <a href="http://hl7.org/fhir/R4/plandefinition.html">Plan
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 10, 2023 15:12-0400">2023-08-10</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 16, 2023 16:37+0000">2023-08-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
