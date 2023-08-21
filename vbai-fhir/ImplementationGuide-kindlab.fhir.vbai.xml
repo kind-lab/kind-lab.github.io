@@ -7,10 +7,10 @@
 </div></div>
   </text>
   <url value="https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2023-08-16T23:37:19+00:00"/>
+  <date value="2023-08-21T16:52:35-04:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -30,14 +30,6 @@
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
     <version value="5.0.0"/>
-  </dependsOn>
-  <dependsOn id="hl7ext">
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
-      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
-    </extension>
-    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
-    <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="1.0.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_us_core">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -1064,6 +1056,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/neuro-consent"/>
+      </reference>
+      <name value="Questionnaire codes for neuro consent"/>
+      <description value="The codes required for neuro consent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/neuro-participation-consent"/>
+      </reference>
+      <name value="Questionnaire codes for neuro consent"/>
+      <description value="The codes required for neuro consent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/neurological-history"/>
       </reference>
       <name value="NeurologicalHistory ValueSet"/>
@@ -1145,6 +1159,28 @@
       </reference>
       <name value="Questionnaire codes"/>
       <description value="The codes required for Questionnaires survey completion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/permission-to-share-with-doctor"/>
+      </reference>
+      <name value="Questionnaire codes for neuro consent"/>
+      <description value="The codes required for neuro consent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/permission-to-share-with-family"/>
+      </reference>
+      <name value="Questionnaire codes for neuro consent"/>
+      <description value="The codes required for neuro consent"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1933,6 +1969,28 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/neuro-consent"/>
+      </reference>
+      <name value="Questionnaire codes for neuro consent"/>
+      <description value="The codes required for neuro consent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/neuro-participation-consent"/>
+      </reference>
+      <name value="Questionnaire codes for neuro consent"/>
+      <description value="The codes required for neuro consent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/neurological-history"/>
       </reference>
       <name value="Questionnaire neurological history codes"/>
@@ -2014,6 +2072,28 @@
       </reference>
       <name value="Questionnaire codes"/>
       <description value="The codes required for Questionnaires survey completion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/permission-to-share-with-doctor"/>
+      </reference>
+      <name value="Questionnaire codes for neuro consent"/>
+      <description value="The codes required for neuro consent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/permission-to-share-with-family"/>
+      </reference>
+      <name value="Questionnaire codes for neuro consent"/>
+      <description value="The codes required for neuro consent"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2222,7 +2302,7 @@
         <reference value="CodeSystem/whodas"/>
       </reference>
       <name value="Questionnaire WHODAS codes"/>
-      <description value="The codes required for WHODAS Questionnaires"/>
+      <description value="The codes required for WHODAS Questionnaires "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2549,6 +2629,17 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
+        <reference value="Questionnaire/NeuroConsent"/>
+      </reference>
+      <name value="NeuroConsent"/>
+      <description value="Consent for Neuro Cohort"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
         <reference value="Questionnaire/PANASQuestionnaire"/>
       </reference>
       <name value="PANAS Questionnaire"/>
@@ -2816,7 +2907,7 @@
         <reference value="PlanDefinition/VbaiPlanDefinitionAcousticTasksMoodExample"/>
       </reference>
       <name value="Acoustic Tasks Mood PlanDefinition"/>
-      <description value="An example PlanDefinition of the Acoustic Tasks for Mood Cohort's"/>
+      <description value="An example PlanDefinition of the Acoustic Tasks for Mood Cohort's "/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
     </resource>
     <resource>
@@ -2838,7 +2929,7 @@
         <reference value="PlanDefinition/VbaiPlanDefinitionAcousticTasksPedsExample"/>
       </reference>
       <name value="Acoustic Tasks Peds PlanDefinition"/>
-      <description value="An example PlanDefinition of the Acoustic Tasks for Peds Cohort's"/>
+      <description value="An example PlanDefinition of the Acoustic Tasks for Peds Cohort's "/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
     </resource>
     <resource>
@@ -2860,7 +2951,7 @@
         <reference value="PlanDefinition/VbaiPlanDefinitionAcousticTasksVoiceExample"/>
       </reference>
       <name value="Acoustic Tasks Voice PlanDefinition"/>
-      <description value="An example PlanDefinition of the Acoustic Tasks for Voice Cohort's"/>
+      <description value="An example PlanDefinition of the Acoustic Tasks for Voice Cohort's "/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
     </resource>
     <resource>
@@ -2949,6 +3040,17 @@
       </reference>
       <name value="VbaiPlanDefinitionGeneralQuestionnaireExample"/>
       <description value="An example of the GeneralQuestionnaire Cohort's PlanDefinition"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/VbaiPlanDefinitionNeuroConsentExample"/>
+      </reference>
+      <name value="VbaiPlanDefinitionNeuroConsentExample"/>
+      <description value="An example of the neuro Cohort's consent PlanDefinition"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
     </resource>
     <resource>
@@ -3124,7 +3226,7 @@
         <reference value="Questionnaire/VoiceProblemSeverity"/>
       </reference>
       <name value="Voice problem severity Questionnaire"/>
-      <description value="Voice problem severity"/>
+      <description value="Voice problem severity "/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>

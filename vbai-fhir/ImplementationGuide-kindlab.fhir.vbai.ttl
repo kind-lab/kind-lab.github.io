@@ -13,10 +13,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VoiceaBiomarkerforAI</h2><p>The official URL for this implementation guide is: </p><pre>https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai</pre><div><p>Implementation Guide for Voice Biomarker for AI FHIR Profiles</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "VoiceaBiomarkerforAI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-08-16T23:37:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-21T16:52:35-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -41,18 +41,6 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
      fhir:version [ fhir:v "5.0.0" ]
-  ] [
-     fhir:id [ fhir:v "hl7ext" ] ;
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
-     ] ) ;
-     fhir:uri [
-       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
-     ] ;
-     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_us_core" ] ;
      fhir:uri [
@@ -1189,6 +1177,30 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/neuro-consent> ;
+         fhir:reference [ fhir:v "ValueSet/neuro-consent" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire codes for neuro consent" ] ;
+       fhir:description [ fhir:v "The codes required for neuro consent" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/neuro-participation-consent> ;
+         fhir:reference [ fhir:v "ValueSet/neuro-participation-consent" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire codes for neuro consent" ] ;
+       fhir:description [ fhir:v "The codes required for neuro consent" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/ValueSet/neurological-history> ;
          fhir:reference [ fhir:v "ValueSet/neurological-history" ]
        ] ;
@@ -1278,6 +1290,30 @@
        ] ;
        fhir:name [ fhir:v "Questionnaire codes" ] ;
        fhir:description [ fhir:v "The codes required for Questionnaires survey completion" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/permission-to-share-with-doctor> ;
+         fhir:reference [ fhir:v "ValueSet/permission-to-share-with-doctor" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire codes for neuro consent" ] ;
+       fhir:description [ fhir:v "The codes required for neuro consent" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/permission-to-share-with-family> ;
+         fhir:reference [ fhir:v "ValueSet/permission-to-share-with-family" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire codes for neuro consent" ] ;
+       fhir:description [ fhir:v "The codes required for neuro consent" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2137,6 +2173,30 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/neuro-consent> ;
+         fhir:reference [ fhir:v "CodeSystem/neuro-consent" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire codes for neuro consent" ] ;
+       fhir:description [ fhir:v "The codes required for neuro consent" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/neuro-participation-consent> ;
+         fhir:reference [ fhir:v "CodeSystem/neuro-participation-consent" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire codes for neuro consent" ] ;
+       fhir:description [ fhir:v "The codes required for neuro consent" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/CodeSystem/neurological-history> ;
          fhir:reference [ fhir:v "CodeSystem/neurological-history" ]
        ] ;
@@ -2226,6 +2286,30 @@
        ] ;
        fhir:name [ fhir:v "Questionnaire codes" ] ;
        fhir:description [ fhir:v "The codes required for Questionnaires survey completion" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/permission-to-share-with-doctor> ;
+         fhir:reference [ fhir:v "CodeSystem/permission-to-share-with-doctor" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire codes for neuro consent" ] ;
+       fhir:description [ fhir:v "The codes required for neuro consent" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/CodeSystem/permission-to-share-with-family> ;
+         fhir:reference [ fhir:v "CodeSystem/permission-to-share-with-family" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire codes for neuro consent" ] ;
+       fhir:description [ fhir:v "The codes required for neuro consent" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2453,7 +2537,7 @@
          fhir:reference [ fhir:v "CodeSystem/whodas" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire WHODAS codes" ] ;
-       fhir:description [ fhir:v "The codes required for WHODAS Questionnaires" ] ;
+       fhir:description [ fhir:v "The codes required for WHODAS Questionnaires " ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2857,6 +2941,21 @@
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/NeuroConsent> ;
+         fhir:reference [ fhir:v "Questionnaire/NeuroConsent" ]
+       ] ;
+       fhir:name [ fhir:v "NeuroConsent" ] ;
+       fhir:description [ fhir:v "Consent for Neuro Cohort" ] ;
+       fhir:example [
+         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://voicecollab.ai/fhir/Questionnaire/PANASQuestionnaire> ;
          fhir:reference [ fhir:v "Questionnaire/PANASQuestionnaire" ]
        ] ;
@@ -3221,7 +3320,7 @@
          fhir:reference [ fhir:v "PlanDefinition/VbaiPlanDefinitionAcousticTasksMoodExample" ]
        ] ;
        fhir:name [ fhir:v "Acoustic Tasks Mood PlanDefinition" ] ;
-       fhir:description [ fhir:v "An example PlanDefinition of the Acoustic Tasks for Mood Cohort's" ] ;
+       fhir:description [ fhir:v "An example PlanDefinition of the Acoustic Tasks for Mood Cohort's " ] ;
        fhir:example [
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
@@ -3251,7 +3350,7 @@
          fhir:reference [ fhir:v "PlanDefinition/VbaiPlanDefinitionAcousticTasksPedsExample" ]
        ] ;
        fhir:name [ fhir:v "Acoustic Tasks Peds PlanDefinition" ] ;
-       fhir:description [ fhir:v "An example PlanDefinition of the Acoustic Tasks for Peds Cohort's" ] ;
+       fhir:description [ fhir:v "An example PlanDefinition of the Acoustic Tasks for Peds Cohort's " ] ;
        fhir:example [
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
@@ -3281,7 +3380,7 @@
          fhir:reference [ fhir:v "PlanDefinition/VbaiPlanDefinitionAcousticTasksVoiceExample" ]
        ] ;
        fhir:name [ fhir:v "Acoustic Tasks Voice PlanDefinition" ] ;
-       fhir:description [ fhir:v "An example PlanDefinition of the Acoustic Tasks for Voice Cohort's" ] ;
+       fhir:description [ fhir:v "An example PlanDefinition of the Acoustic Tasks for Voice Cohort's " ] ;
        fhir:example [
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
@@ -3402,6 +3501,21 @@
        ] ;
        fhir:name [ fhir:v "VbaiPlanDefinitionGeneralQuestionnaireExample" ] ;
        fhir:description [ fhir:v "An example of the GeneralQuestionnaire Cohort's PlanDefinition" ] ;
+       fhir:example [
+         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionNeuroConsentExample> ;
+         fhir:reference [ fhir:v "PlanDefinition/VbaiPlanDefinitionNeuroConsentExample" ]
+       ] ;
+       fhir:name [ fhir:v "VbaiPlanDefinitionNeuroConsentExample" ] ;
+       fhir:description [ fhir:v "An example of the neuro Cohort's consent PlanDefinition" ] ;
        fhir:example [
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
@@ -3641,7 +3755,7 @@
          fhir:reference [ fhir:v "Questionnaire/VoiceProblemSeverity" ]
        ] ;
        fhir:name [ fhir:v "Voice problem severity Questionnaire" ] ;
-       fhir:description [ fhir:v "Voice problem severity" ] ;
+       fhir:description [ fhir:v "Voice problem severity " ] ;
        fhir:example [
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
