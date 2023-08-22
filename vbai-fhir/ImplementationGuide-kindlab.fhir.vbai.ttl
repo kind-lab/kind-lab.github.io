@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "VoiceaBiomarkerforAI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-08-21T17:33:05-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-22T05:01:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -41,6 +41,18 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
      fhir:version [ fhir:v "5.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_us_core" ] ;
      fhir:uri [
@@ -2537,7 +2549,7 @@
          fhir:reference [ fhir:v "CodeSystem/whodas" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire WHODAS codes" ] ;
-       fhir:description [ fhir:v "The codes required for WHODAS Questionnaires " ] ;
+       fhir:description [ fhir:v "The codes required for WHODAS Questionnaires" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -3320,7 +3332,7 @@
          fhir:reference [ fhir:v "PlanDefinition/VbaiPlanDefinitionAcousticTasksMoodExample" ]
        ] ;
        fhir:name [ fhir:v "Acoustic Tasks Mood PlanDefinition" ] ;
-       fhir:description [ fhir:v "An example PlanDefinition of the Acoustic Tasks for Mood Cohort's " ] ;
+       fhir:description [ fhir:v "An example PlanDefinition of the Acoustic Tasks for Mood Cohort's" ] ;
        fhir:example [
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
@@ -3350,7 +3362,7 @@
          fhir:reference [ fhir:v "PlanDefinition/VbaiPlanDefinitionAcousticTasksPedsExample" ]
        ] ;
        fhir:name [ fhir:v "Acoustic Tasks Peds PlanDefinition" ] ;
-       fhir:description [ fhir:v "An example PlanDefinition of the Acoustic Tasks for Peds Cohort's " ] ;
+       fhir:description [ fhir:v "An example PlanDefinition of the Acoustic Tasks for Peds Cohort's" ] ;
        fhir:example [
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
@@ -3380,7 +3392,7 @@
          fhir:reference [ fhir:v "PlanDefinition/VbaiPlanDefinitionAcousticTasksVoiceExample" ]
        ] ;
        fhir:name [ fhir:v "Acoustic Tasks Voice PlanDefinition" ] ;
-       fhir:description [ fhir:v "An example PlanDefinition of the Acoustic Tasks for Voice Cohort's " ] ;
+       fhir:description [ fhir:v "An example PlanDefinition of the Acoustic Tasks for Voice Cohort's" ] ;
        fhir:example [
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition>
@@ -3755,7 +3767,7 @@
          fhir:reference [ fhir:v "Questionnaire/VoiceProblemSeverity" ]
        ] ;
        fhir:name [ fhir:v "Voice problem severity Questionnaire" ] ;
-       fhir:description [ fhir:v "Voice problem severity " ] ;
+       fhir:description [ fhir:v "Voice problem severity" ] ;
        fhir:example [
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
