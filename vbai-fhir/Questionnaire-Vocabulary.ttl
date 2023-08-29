@@ -1,0 +1,765 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/Questionnaire/Vocabulary> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Vocabulary"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/Vocabulary"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:title [ fhir:v "Vocabulary Questionniare"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-08-21"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "Vocabulary_1" ] ;
+     fhir:text [ fhir:v "boil" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_2" ] ;
+     fhir:text [ fhir:v "duckling" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_3" ] ;
+     fhir:text [ fhir:v "cupboard" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_4" ] ;
+     fhir:text [ fhir:v "workbench" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_5" ] ;
+     fhir:text [ fhir:v "agreeable" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_6" ] ;
+     fhir:text [ fhir:v "swear" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_7" ] ;
+     fhir:text [ fhir:v "cap" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_8" ] ;
+     fhir:text [ fhir:v "unwire" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_9" ] ;
+     fhir:text [ fhir:v "guitarist" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_10" ] ;
+     fhir:text [ fhir:v "hardcover" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_11" ] ;
+     fhir:text [ fhir:v "broccoli" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_12" ] ;
+     fhir:text [ fhir:v "unsolved" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_13" ] ;
+     fhir:text [ fhir:v "coral" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_14" ] ;
+     fhir:text [ fhir:v "gladiator" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_15" ] ;
+     fhir:text [ fhir:v "monkey" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_16" ] ;
+     fhir:text [ fhir:v "jobless" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_17" ] ;
+     fhir:text [ fhir:v "capitalization" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_18" ] ;
+     fhir:text [ fhir:v "selfish" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_19" ] ;
+     fhir:text [ fhir:v "emptiness" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_20" ] ;
+     fhir:text [ fhir:v "pain" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_21" ] ;
+     fhir:text [ fhir:v "brainpower" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_22" ] ;
+     fhir:text [ fhir:v "lettuce" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_23" ] ;
+     fhir:text [ fhir:v "wartime" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_24" ] ;
+     fhir:text [ fhir:v "newsboy" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_25" ] ;
+     fhir:text [ fhir:v "equipment" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_26" ] ;
+     fhir:text [ fhir:v "sensation" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_27" ] ;
+     fhir:text [ fhir:v "burglar" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_28" ] ;
+     fhir:text [ fhir:v "idiotic" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_29" ] ;
+     fhir:text [ fhir:v "spoils" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_30" ] ;
+     fhir:text [ fhir:v "belong" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_31" ] ;
+     fhir:text [ fhir:v "greeter" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_32" ] ;
+     fhir:text [ fhir:v "screech" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_33" ] ;
+     fhir:text [ fhir:v "tardy" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_34" ] ;
+     fhir:text [ fhir:v "viewing" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_35" ] ;
+     fhir:text [ fhir:v "heating" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_36" ] ;
+     fhir:text [ fhir:v "homeward" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_37" ] ;
+     fhir:text [ fhir:v "payment" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_38" ] ;
+     fhir:text [ fhir:v "refereeing" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_39" ] ;
+     fhir:text [ fhir:v "canyon" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_40" ] ;
+     fhir:text [ fhir:v "nutmeg" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_41" ] ;
+     fhir:text [ fhir:v "birdcage" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_42" ] ;
+     fhir:text [ fhir:v "killer" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_43" ] ;
+     fhir:text [ fhir:v "waistband" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_44" ] ;
+     fhir:text [ fhir:v "mutter" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_45" ] ;
+     fhir:text [ fhir:v "specific" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_46" ] ;
+     fhir:text [ fhir:v "clerk" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_47" ] ;
+     fhir:text [ fhir:v "orphaned" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_48" ] ;
+     fhir:text [ fhir:v "bat" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_49" ] ;
+     fhir:text [ fhir:v "bakeshop" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_50" ] ;
+     fhir:text [ fhir:v "hilarious" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_51" ] ;
+     fhir:text [ fhir:v "cheeseburger" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_52" ] ;
+     fhir:text [ fhir:v "able" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_53" ] ;
+     fhir:text [ fhir:v "morning" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_54" ] ;
+     fhir:text [ fhir:v "tradition" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_55" ] ;
+     fhir:text [ fhir:v "jean" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_56" ] ;
+     fhir:text [ fhir:v "merry" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_57" ] ;
+     fhir:text [ fhir:v "sunset" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_58" ] ;
+     fhir:text [ fhir:v "stand" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_59" ] ;
+     fhir:text [ fhir:v "sportsmanlike" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_60" ] ;
+     fhir:text [ fhir:v "superstitious" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_61" ] ;
+     fhir:text [ fhir:v "weightless" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_62" ] ;
+     fhir:text [ fhir:v "vibration" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_63" ] ;
+     fhir:text [ fhir:v "spotless" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_64" ] ;
+     fhir:text [ fhir:v "plank" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_65" ] ;
+     fhir:text [ fhir:v "pebble" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_66" ] ;
+     fhir:text [ fhir:v "wastebasket" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_67" ] ;
+     fhir:text [ fhir:v "envy" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_68" ] ;
+     fhir:text [ fhir:v "hammer" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_69" ] ;
+     fhir:text [ fhir:v "sun" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_70" ] ;
+     fhir:text [ fhir:v "whole" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_71" ] ;
+     fhir:text [ fhir:v "faucet" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_72" ] ;
+     fhir:text [ fhir:v "cursive" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_73" ] ;
+     fhir:text [ fhir:v "tire" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_74" ] ;
+     fhir:text [ fhir:v "perch" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_75" ] ;
+     fhir:text [ fhir:v "invitation" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_76" ] ;
+     fhir:text [ fhir:v "continent" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_77" ] ;
+     fhir:text [ fhir:v "membership" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_78" ] ;
+     fhir:text [ fhir:v "scramble" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_79" ] ;
+     fhir:text [ fhir:v "wood" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_80" ] ;
+     fhir:text [ fhir:v "pheasant" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_81" ] ;
+     fhir:text [ fhir:v "anonymous" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_82" ] ;
+     fhir:text [ fhir:v "strategic" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_83" ] ;
+     fhir:text [ fhir:v "polling" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_84" ] ;
+     fhir:text [ fhir:v "combustion" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_85" ] ;
+     fhir:text [ fhir:v "remembrance" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_86" ] ;
+     fhir:text [ fhir:v "obscure" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_87" ] ;
+     fhir:text [ fhir:v "cleric" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_88" ] ;
+     fhir:text [ fhir:v "outrank" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_89" ] ;
+     fhir:text [ fhir:v "absolution" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_90" ] ;
+     fhir:text [ fhir:v "priesthood" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_91" ] ;
+     fhir:text [ fhir:v "critic" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_92" ] ;
+     fhir:text [ fhir:v "uncensored" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_93" ] ;
+     fhir:text [ fhir:v "hobbyist" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_94" ] ;
+     fhir:text [ fhir:v "perilous" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_95" ] ;
+     fhir:text [ fhir:v "irate" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_96" ] ;
+     fhir:text [ fhir:v "global" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_97" ] ;
+     fhir:text [ fhir:v "hovel" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_98" ] ;
+     fhir:text [ fhir:v "sophomore" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_99" ] ;
+     fhir:text [ fhir:v "dirham" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_100" ] ;
+     fhir:text [ fhir:v "keen" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_101" ] ;
+     fhir:text [ fhir:v "fuddle" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_102" ] ;
+     fhir:text [ fhir:v "battlewagon" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_103" ] ;
+     fhir:text [ fhir:v "entail" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_104" ] ;
+     fhir:text [ fhir:v "scarab" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_105" ] ;
+     fhir:text [ fhir:v "dank" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_106" ] ;
+     fhir:text [ fhir:v "guarantee" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_107" ] ;
+     fhir:text [ fhir:v "adjuster" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_108" ] ;
+     fhir:text [ fhir:v "enliven" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_109" ] ;
+     fhir:text [ fhir:v "biodegradable" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_110" ] ;
+     fhir:text [ fhir:v "enfold" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_111" ] ;
+     fhir:text [ fhir:v "amputee" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_112" ] ;
+     fhir:text [ fhir:v "trench" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_113" ] ;
+     fhir:text [ fhir:v "ovation" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_114" ] ;
+     fhir:text [ fhir:v "unsuitable" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_115" ] ;
+     fhir:text [ fhir:v "suburban" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_116" ] ;
+     fhir:text [ fhir:v "memento" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_117" ] ;
+     fhir:text [ fhir:v "inevitable" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_118" ] ;
+     fhir:text [ fhir:v "marine" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_119" ] ;
+     fhir:text [ fhir:v "uncorrupted" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_120" ] ;
+     fhir:text [ fhir:v "mystique" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_121" ] ;
+     fhir:text [ fhir:v "behemoth" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_122" ] ;
+     fhir:text [ fhir:v "marshland" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_123" ] ;
+     fhir:text [ fhir:v "unaltered" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_124" ] ;
+     fhir:text [ fhir:v "minority" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_125" ] ;
+     fhir:text [ fhir:v "illicit" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_126" ] ;
+     fhir:text [ fhir:v "stockbroker" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_127" ] ;
+     fhir:text [ fhir:v "luster" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_128" ] ;
+     fhir:text [ fhir:v "contort" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_129" ] ;
+     fhir:text [ fhir:v "crimping" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_130" ] ;
+     fhir:text [ fhir:v "finery" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_131" ] ;
+     fhir:text [ fhir:v "feminist" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_132" ] ;
+     fhir:text [ fhir:v "hallmark" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_133" ] ;
+     fhir:text [ fhir:v "showy" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_134" ] ;
+     fhir:text [ fhir:v "tarantella" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_135" ] ;
+     fhir:text [ fhir:v "restaurateur" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_136" ] ;
+     fhir:text [ fhir:v "uncanny" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_137" ] ;
+     fhir:text [ fhir:v "kilter" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_138" ] ;
+     fhir:text [ fhir:v "legislation" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_139" ] ;
+     fhir:text [ fhir:v "illogical" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_140" ] ;
+     fhir:text [ fhir:v "entirety" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_141" ] ;
+     fhir:text [ fhir:v "irreparable" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_142" ] ;
+     fhir:text [ fhir:v "itinerary" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_143" ] ;
+     fhir:text [ fhir:v "concept" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_144" ] ;
+     fhir:text [ fhir:v "quivering" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_145" ] ;
+     fhir:text [ fhir:v "plagiarize" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_146" ] ;
+     fhir:text [ fhir:v "effectiveness" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_147" ] ;
+     fhir:text [ fhir:v "portrayal" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_148" ] ;
+     fhir:text [ fhir:v "civilization" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_149" ] ;
+     fhir:text [ fhir:v "variation" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_150" ] ;
+     fhir:text [ fhir:v "omen" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_151" ] ;
+     fhir:text [ fhir:v "teriyaki" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_152" ] ;
+     fhir:text [ fhir:v "oligarch" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_153" ] ;
+     fhir:text [ fhir:v "compartmentalize" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_154" ] ;
+     fhir:text [ fhir:v "lemma" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_155" ] ;
+     fhir:text [ fhir:v "aquaplane" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_156" ] ;
+     fhir:text [ fhir:v "homicidal" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_157" ] ;
+     fhir:text [ fhir:v "editorialize" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_158" ] ;
+     fhir:text [ fhir:v "inkling" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_159" ] ;
+     fhir:text [ fhir:v "valency" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_160" ] ;
+     fhir:text [ fhir:v "mesosphere" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_161" ] ;
+     fhir:text [ fhir:v "distillate" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_162" ] ;
+     fhir:text [ fhir:v "deduce" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_163" ] ;
+     fhir:text [ fhir:v "deformation" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_164" ] ;
+     fhir:text [ fhir:v "puerile" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_165" ] ;
+     fhir:text [ fhir:v "cynical" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_166" ] ;
+     fhir:text [ fhir:v "surreal" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_167" ] ;
+     fhir:text [ fhir:v "denigrate" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_168" ] ;
+     fhir:text [ fhir:v "unconventionality" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_169" ] ;
+     fhir:text [ fhir:v "maceration" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_170" ] ;
+     fhir:text [ fhir:v "jocularity" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_171" ] ;
+     fhir:text [ fhir:v "poignant" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_172" ] ;
+     fhir:text [ fhir:v "subornation" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_173" ] ;
+     fhir:text [ fhir:v "heliotrope" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_174" ] ;
+     fhir:text [ fhir:v "clef" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_175" ] ;
+     fhir:text [ fhir:v "exudation" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_176" ] ;
+     fhir:text [ fhir:v "inequitable" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_177" ] ;
+     fhir:text [ fhir:v "lox" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_178" ] ;
+     fhir:text [ fhir:v "loyalist" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_179" ] ;
+     fhir:text [ fhir:v "immutable" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_180" ] ;
+     fhir:text [ fhir:v "conga" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_181" ] ;
+     fhir:text [ fhir:v "affirmation" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Vocabulary_182" ] ;
+     fhir:text [ fhir:v "pejorative" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

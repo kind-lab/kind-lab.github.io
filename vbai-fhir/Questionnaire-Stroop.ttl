@@ -1,0 +1,277 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/Questionnaire/Stroop> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Stroop"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/Stroop"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:title [ fhir:v "Stroop Questionniare for Neuro Cohort"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-08-29"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "Stroop_1" ] ;
+     fhir:text [ fhir:v "oooo colour: red" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_2" ] ;
+     fhir:text [ fhir:v "oooo colour: green" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_3" ] ;
+     fhir:text [ fhir:v "oooo colour: blue" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_4" ] ;
+     fhir:text [ fhir:v "oooo colour: brown" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_5" ] ;
+     fhir:text [ fhir:v "oooo colour: purple" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_6" ] ;
+     fhir:text [ fhir:v "oooo colour: red" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_7" ] ;
+     fhir:text [ fhir:v "oooo colour: green" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_8" ] ;
+     fhir:text [ fhir:v "oooo colour: blue" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_9" ] ;
+     fhir:text [ fhir:v "oooo colour: brown" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_10" ] ;
+     fhir:text [ fhir:v "oooo colour: purple" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_11" ] ;
+     fhir:text [ fhir:v "oooo colour: red" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_12" ] ;
+     fhir:text [ fhir:v "oooo colour: green" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_13" ] ;
+     fhir:text [ fhir:v "oooo colour: blue" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_14" ] ;
+     fhir:text [ fhir:v "oooo colour: brown" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_15" ] ;
+     fhir:text [ fhir:v "oooo colour: purple" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_16" ] ;
+     fhir:text [ fhir:v "oooo colour: red" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_17" ] ;
+     fhir:text [ fhir:v "oooo colour: green" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_18" ] ;
+     fhir:text [ fhir:v "oooo colour: blue" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_19" ] ;
+     fhir:text [ fhir:v "oooo colour: brown" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_20" ] ;
+     fhir:text [ fhir:v "oooo colour: purple" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_21" ] ;
+     fhir:text [ fhir:v "red colour: red" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_22" ] ;
+     fhir:text [ fhir:v "green colour: green" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_23" ] ;
+     fhir:text [ fhir:v "blue colour: blue" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_24" ] ;
+     fhir:text [ fhir:v "brown colour: brown" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_25" ] ;
+     fhir:text [ fhir:v "purple colour: purple" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_26" ] ;
+     fhir:text [ fhir:v "red colour: red" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_27" ] ;
+     fhir:text [ fhir:v "green colour: green" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_28" ] ;
+     fhir:text [ fhir:v "blue colour: blue" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_29" ] ;
+     fhir:text [ fhir:v "brown colour: brown" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_30" ] ;
+     fhir:text [ fhir:v "purple colour: purple" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_31" ] ;
+     fhir:text [ fhir:v "red colour: red" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_32" ] ;
+     fhir:text [ fhir:v "green colour: green" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_33" ] ;
+     fhir:text [ fhir:v "blue colour: blue" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_34" ] ;
+     fhir:text [ fhir:v "brown colour: brown" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_35" ] ;
+     fhir:text [ fhir:v "purple colour: purple" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_36" ] ;
+     fhir:text [ fhir:v "red colour: red" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_37" ] ;
+     fhir:text [ fhir:v "green colour: green" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_38" ] ;
+     fhir:text [ fhir:v "blue colour: blue" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_39" ] ;
+     fhir:text [ fhir:v "brown colour: brown" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_40" ] ;
+     fhir:text [ fhir:v "purple colour: purple" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_41" ] ;
+     fhir:text [ fhir:v "red colour: green" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_42" ] ;
+     fhir:text [ fhir:v "red colour: blue" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_43" ] ;
+     fhir:text [ fhir:v "red colour: brown" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_44" ] ;
+     fhir:text [ fhir:v "red colour: purple" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_45" ] ;
+     fhir:text [ fhir:v "green colour: red" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_46" ] ;
+     fhir:text [ fhir:v "green colour: blue" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_47" ] ;
+     fhir:text [ fhir:v "green colour: brown" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_48" ] ;
+     fhir:text [ fhir:v "green colour: purple" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_49" ] ;
+     fhir:text [ fhir:v "blue colour: red" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_50" ] ;
+     fhir:text [ fhir:v "blue colour: green" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_51" ] ;
+     fhir:text [ fhir:v "blue colour: brown" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_52" ] ;
+     fhir:text [ fhir:v "blue colour: purple" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_53" ] ;
+     fhir:text [ fhir:v "brown colour: red" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_54" ] ;
+     fhir:text [ fhir:v "brown colour: green" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_55" ] ;
+     fhir:text [ fhir:v "brown colour: blue" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_56" ] ;
+     fhir:text [ fhir:v "brown colour: purple" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_57" ] ;
+     fhir:text [ fhir:v "purple colour: red" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_58" ] ;
+     fhir:text [ fhir:v "purple colour: green" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_59" ] ;
+     fhir:text [ fhir:v "purple colour: blue" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Stroop_60" ] ;
+     fhir:text [ fhir:v "purple colour: brown" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

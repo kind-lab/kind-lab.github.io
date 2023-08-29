@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/CodeSystem/frequency-of-smoking> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "frequency-of-smoking"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/frequency-of-smoking"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "SmokingTimes"] ; # 
+  fhir:title [ fhir:v "Frequency of Smoking Codes for Questionnaires"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This code system includes specific codes used in questionnaires to assess the frequency of a respondent's smoking habits."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "M" ] ;
+     fhir:display [ fhir:v "Multiple times a day" ]
+  ] [
+     fhir:code [ fhir:v "AO" ] ;
+     fhir:display [ fhir:v "About once a day" ]
+  ] [
+     fhir:code [ fhir:v "FW" ] ;
+     fhir:display [ fhir:v "A few times a week" ]
+  ] [
+     fhir:code [ fhir:v "FM" ] ;
+     fhir:display [ fhir:v "A few times a month" ]
+  ] [
+     fhir:code [ fhir:v "FY" ] ;
+     fhir:display [ fhir:v "A few times a year" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="MOCA"/>
+  <meta>
+    <profile value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/Questionnaire/MOCA"/>
+  <version value="1.0.0"/>
+  <title value="MoCA Questionnaire"/>
+  <status value="active"/>
+  <date value="2023-06-21"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <item>
+    <linkId value="VisualSpacial/Executive"/>
+    <text value="Solving VisualSpacial problems"/>
+    <type value="group"/>
+    <item>
+      <linkId value="VisualSpacial_Q1"/>
+      <text value="Match number and letters in order"/>
+      <type value="boolean"/>
+    </item>
+    <item>
+      <linkId value="VisualSpacial_Q2"/>
+      <text value="Draw a cube"/>
+      <type value="boolean"/>
+    </item>
+    <item>
+      <linkId value="VisualSpacial_Q3"/>
+      <text value="Draw a clock pointing to ten past eleven"/>
+      <type value="boolean"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="Naming"/>
+    <text value="Name the animal displayed"/>
+    <type value="group"/>
+    <item>
+      <linkId value="Naming_Q1"/>
+      <text value="Lion"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Naming_Q2"/>
+      <text value="Rhino"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Naming_Q3"/>
+      <text value="Camel"/>
+      <type value="attachment"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="Memory"/>
+    <text value="Read list of words subject must repeat them. Do 2 trials, even if 1st trial is successful. Do a recall aftr 5 minutes."/>
+    <type value="group"/>
+    <item>
+      <linkId value="1st Trial"/>
+      <text value="Face, Velvet, Church, Daisy and Red"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="2nd Trial"/>
+      <text value="Face, Velvet, Church, Daisy and Red"/>
+      <type value="attachment"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="Attention"/>
+    <text value="Read list of digits (1 digit/sec)"/>
+    <type value="group"/>
+    <item>
+      <linkId value="Attention_Q1 (2 1 8 5 4)"/>
+      <text value="Subject has to repeat them in forward order"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Attention_Q2 (7 4 2)"/>
+      <text value="Subject has to repeat them in backward order"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Attention_Q3 (F B A C M N A A J K L B A F A K D E A A A J A M O F A A B)"/>
+      <text value="Read list of letters. The subject must tap with his hand at each letter A. No point if &gt;2 errors."/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Attention_Q4"/>
+      <text value="Serial 7 subtraction starting at 100"/>
+      <type value="group"/>
+      <item>
+        <linkId value="Attention_Q4 (93)"/>
+        <text value="subtraction starting at 100"/>
+        <type value="attachment"/>
+      </item>
+      <item>
+        <linkId value="Attention_Q4 (86)"/>
+        <text value="subtraction starting at 100"/>
+        <type value="attachment"/>
+      </item>
+      <item>
+        <linkId value="Attention_Q4 (79)"/>
+        <text value="subtraction starting at 100"/>
+        <type value="attachment"/>
+      </item>
+      <item>
+        <linkId value="Attention_Q4 (72)"/>
+        <text value="subtraction starting at 100"/>
+        <type value="attachment"/>
+      </item>
+      <item>
+        <linkId value="Attention_Q4 (65)"/>
+        <text value="subtraction starting at 100"/>
+        <type value="attachment"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <linkId value="Language"/>
+    <text value="Repeat"/>
+    <type value="group"/>
+    <item>
+      <linkId value="Language_Q1"/>
+      <text value=" I only know that John is the one to help today."/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Language_Q2"/>
+      <text value="The cat always hid under the couch when dogs were in the room."/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Language_Q3"/>
+      <text value="Fluency / Name maximum number of words in one minute that begin with the letter F"/>
+      <type value="attachment"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="Abstraction"/>
+    <text value="Similarity between e.g. banana - orange = fruit "/>
+    <type value="group"/>
+    <item>
+      <linkId value="Abstraction_Q1"/>
+      <text value="train – bicycle "/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Abstraction_Q2"/>
+      <text value="watch - ruler"/>
+      <type value="attachment"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="Delayed Recall"/>
+    <text value="Has to recall words WITH NO CUE"/>
+    <type value="group"/>
+    <item>
+      <linkId value="Abstraction FACE"/>
+      <text value="Recall FACE"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Abstraction VELVET"/>
+      <text value="Recall VELVET"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Abstraction CHURCH"/>
+      <text value="Recall CHURCH"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Abstraction DAISY"/>
+      <text value="Recall DAISY"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Abstraction RED"/>
+      <text value="Recall RED"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Abstraction OPTIONAL"/>
+      <text value="Category cue and Multiple choice cue"/>
+      <type value="attachment"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="Orientation"/>
+    <text value="Determine the orientation"/>
+    <type value="group"/>
+    <item>
+      <linkId value="Orientation_Q1"/>
+      <text value="Date"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Orientation_Q2"/>
+      <text value="Month"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Orientation_Q3"/>
+      <text value="Year"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Orientation_Q4"/>
+      <text value="Day"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Orientation_Q5"/>
+      <text value="Place"/>
+      <type value="attachment"/>
+    </item>
+    <item>
+      <linkId value="Orientation_Q6"/>
+      <text value="City"/>
+      <type value="attachment"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="Total"/>
+    <text value="Total Score"/>
+    <type value="integer"/>
+  </item>
+</Questionnaire>

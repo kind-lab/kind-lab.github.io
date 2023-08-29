@@ -1,0 +1,38 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "smoking-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/CodeSystem/smoking-status",
+  "version" : "1.0.0",
+  "name" : "SmokingStatus",
+  "title" : "Smoking Status Codes for Questionnaires",
+  "status" : "active",
+  "date" : "2023-05-15",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "This code system defines the necessary codes for identifying smoking status in health questionnaires.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "N",
+    "display" : "I've never smoked regularly"
+  },
+  {
+    "code" : "U",
+    "display" : "I used to smoke"
+  },
+  {
+    "code" : "C",
+    "display" : "I currently smoke"
+  }]
+}

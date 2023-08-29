@@ -1,0 +1,1037 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>KINDLAB.FHIR.VBAI\Vocabulary Questionniare - TTL Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.485"}
+    h3,h4,h5,h6{--heading-prefix:"3.485"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">Guidance</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+  <li>
+    <a href="tutorial_table_of_contents.html">Tutorial</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>Vocabulary Questionniare</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v1.0.0). See the <a href="https://voicecollab.ai/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Questionnaire-Vocabulary.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Questionnaire-Vocabulary.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Questionnaire-Vocabulary.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Vocabulary Questionniare - TTL Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2023-08-21
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Questionnaire-Vocabulary.ttl" no-download="true">Raw ttl</a> | <a href="Questionnaire-Vocabulary.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" style="white-space: pre; overflow: hidden">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Questionnaire ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Vocabulary&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;Placeholder&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://voicecollab.ai/fhir/Questionnaire/Vocabulary&quot;^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.0.0&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary Questionniare&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-08-21&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;KinD Lab&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;KinD Lab&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://fhir.kindlab.sickkids.ca&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">fhir:item</a> ( [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;boil&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_2&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;duckling&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_3&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;cupboard&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_4&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;workbench&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_5&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;agreeable&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_6&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;swear&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_7&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;cap&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_8&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;unwire&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_9&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;guitarist&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_10&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;hardcover&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_11&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;broccoli&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_12&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;unsolved&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_13&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;coral&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_14&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;gladiator&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_15&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;monkey&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_16&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;jobless&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_17&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;capitalization&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_18&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;selfish&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_19&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;emptiness&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_20&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;pain&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_21&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;brainpower&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_22&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;lettuce&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_23&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;wartime&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_24&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;newsboy&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_25&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;equipment&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_26&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sensation&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_27&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;burglar&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_28&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;idiotic&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_29&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;spoils&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_30&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;belong&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_31&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;greeter&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_32&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;screech&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_33&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;tardy&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_34&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;viewing&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_35&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;heating&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_36&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;homeward&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_37&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;payment&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_38&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;refereeing&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_39&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;canyon&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_40&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;nutmeg&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_41&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;birdcage&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_42&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;killer&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_43&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;waistband&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_44&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mutter&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_45&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;specific&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_46&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;clerk&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_47&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;orphaned&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_48&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;bat&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_49&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;bakeshop&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_50&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;hilarious&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_51&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;cheeseburger&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_52&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;able&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_53&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;morning&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_54&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;tradition&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_55&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;jean&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_56&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;merry&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_57&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sunset&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_58&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;stand&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_59&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sportsmanlike&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_60&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;superstitious&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_61&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;weightless&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_62&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;vibration&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_63&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;spotless&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_64&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;plank&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_65&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;pebble&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_66&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;wastebasket&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_67&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;envy&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_68&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;hammer&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_69&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sun&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_70&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;whole&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_71&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;faucet&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_72&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;cursive&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_73&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;tire&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_74&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;perch&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_75&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;invitation&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_76&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;continent&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_77&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;membership&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_78&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;scramble&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_79&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;wood&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_80&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;pheasant&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_81&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;anonymous&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_82&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;strategic&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_83&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;polling&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_84&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;combustion&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_85&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;remembrance&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_86&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;obscure&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_87&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;cleric&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_88&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;outrank&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_89&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;absolution&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_90&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;priesthood&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_91&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;critic&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_92&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;uncensored&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_93&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;hobbyist&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_94&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;perilous&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_95&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;irate&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_96&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;global&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_97&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;hovel&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_98&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sophomore&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_99&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;dirham&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_100&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;keen&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_101&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;fuddle&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_102&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;battlewagon&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_103&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;entail&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_104&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;scarab&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_105&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;dank&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_106&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;guarantee&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_107&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;adjuster&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_108&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;enliven&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_109&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;biodegradable&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_110&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;enfold&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_111&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;amputee&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_112&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;trench&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_113&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ovation&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_114&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;unsuitable&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_115&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;suburban&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_116&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;memento&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_117&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;inevitable&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_118&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;marine&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_119&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;uncorrupted&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_120&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mystique&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_121&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;behemoth&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_122&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;marshland&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_123&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;unaltered&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_124&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;minority&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_125&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;illicit&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_126&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;stockbroker&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_127&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;luster&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_128&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;contort&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_129&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;crimping&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_130&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;finery&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_131&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;feminist&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_132&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;hallmark&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_133&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;showy&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_134&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;tarantella&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_135&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;restaurateur&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_136&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;uncanny&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_137&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;kilter&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_138&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;legislation&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_139&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;illogical&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_140&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;entirety&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_141&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;irreparable&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_142&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;itinerary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_143&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;concept&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_144&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;quivering&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_145&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;plagiarize&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_146&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;effectiveness&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_147&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;portrayal&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_148&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;civilization&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_149&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;variation&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_150&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;omen&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_151&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;teriyaki&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;oligarch&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_153&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;compartmentalize&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_154&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;lemma&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_155&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;aquaplane&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_156&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;homicidal&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_157&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;editorialize&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_158&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;inkling&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_159&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;valency&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_160&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mesosphere&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_161&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;distillate&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_162&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;deduce&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_163&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;deformation&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_164&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;puerile&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_165&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;cynical&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_166&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;surreal&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_167&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;denigrate&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_168&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;unconventionality&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_169&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;maceration&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_170&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;jocularity&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_171&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;poignant&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_172&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;subornation&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_173&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;heliotrope&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_174&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;clef&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_175&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;exudation&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_176&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;inequitable&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_177&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;lox&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_178&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;loyalist&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_179&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;immutable&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_180&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;conga&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_181&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;affirmation&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vocabulary_182&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;pejorative&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;attachment&quot; ]
+  ] ) . # 
+
+</pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 29, 2023 20:22+0000">2023-08-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

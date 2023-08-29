@@ -1,0 +1,218 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/Questionnaire/MOCA> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MOCA"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/MOCA"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:title [ fhir:v "MoCA Questionnaire"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-06-21"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "VisualSpacial/Executive" ] ;
+     fhir:text [ fhir:v "Solving VisualSpacial problems" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "VisualSpacial_Q1" ] ;
+       fhir:text [ fhir:v "Match number and letters in order" ] ;
+       fhir:type [ fhir:v "boolean" ]
+     ] [
+       fhir:linkId [ fhir:v "VisualSpacial_Q2" ] ;
+       fhir:text [ fhir:v "Draw a cube" ] ;
+       fhir:type [ fhir:v "boolean" ]
+     ] [
+       fhir:linkId [ fhir:v "VisualSpacial_Q3" ] ;
+       fhir:text [ fhir:v "Draw a clock pointing to ten past eleven" ] ;
+       fhir:type [ fhir:v "boolean" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "Naming" ] ;
+     fhir:text [ fhir:v "Name the animal displayed" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "Naming_Q1" ] ;
+       fhir:text [ fhir:v "Lion" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Naming_Q2" ] ;
+       fhir:text [ fhir:v "Rhino" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Naming_Q3" ] ;
+       fhir:text [ fhir:v "Camel" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "Memory" ] ;
+     fhir:text [ fhir:v "Read list of words subject must repeat them. Do 2 trials, even if 1st trial is successful. Do a recall aftr 5 minutes." ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "1st Trial" ] ;
+       fhir:text [ fhir:v "Face, Velvet, Church, Daisy and Red" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "2nd Trial" ] ;
+       fhir:text [ fhir:v "Face, Velvet, Church, Daisy and Red" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "Attention" ] ;
+     fhir:text [ fhir:v "Read list of digits (1 digit/sec)" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "Attention_Q1 (2 1 8 5 4)" ] ;
+       fhir:text [ fhir:v "Subject has to repeat them in forward order" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Attention_Q2 (7 4 2)" ] ;
+       fhir:text [ fhir:v "Subject has to repeat them in backward order" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Attention_Q3 (F B A C M N A A J K L B A F A K D E A A A J A M O F A A B)" ] ;
+       fhir:text [ fhir:v "Read list of letters. The subject must tap with his hand at each letter A. No point if >2 errors." ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Attention_Q4" ] ;
+       fhir:text [ fhir:v "Serial 7 subtraction starting at 100" ] ;
+       fhir:type [ fhir:v "group" ] ;
+       fhir:item ( [
+         fhir:linkId [ fhir:v "Attention_Q4 (93)" ] ;
+         fhir:text [ fhir:v "subtraction starting at 100" ] ;
+         fhir:type [ fhir:v "attachment" ]
+       ] [
+         fhir:linkId [ fhir:v "Attention_Q4 (86)" ] ;
+         fhir:text [ fhir:v "subtraction starting at 100" ] ;
+         fhir:type [ fhir:v "attachment" ]
+       ] [
+         fhir:linkId [ fhir:v "Attention_Q4 (79)" ] ;
+         fhir:text [ fhir:v "subtraction starting at 100" ] ;
+         fhir:type [ fhir:v "attachment" ]
+       ] [
+         fhir:linkId [ fhir:v "Attention_Q4 (72)" ] ;
+         fhir:text [ fhir:v "subtraction starting at 100" ] ;
+         fhir:type [ fhir:v "attachment" ]
+       ] [
+         fhir:linkId [ fhir:v "Attention_Q4 (65)" ] ;
+         fhir:text [ fhir:v "subtraction starting at 100" ] ;
+         fhir:type [ fhir:v "attachment" ]
+       ] )
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "Language" ] ;
+     fhir:text [ fhir:v "Repeat" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "Language_Q1" ] ;
+       fhir:text [ fhir:v " I only know that John is the one to help today." ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Language_Q2" ] ;
+       fhir:text [ fhir:v "The cat always hid under the couch when dogs were in the room." ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Language_Q3" ] ;
+       fhir:text [ fhir:v "Fluency / Name maximum number of words in one minute that begin with the letter F" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "Abstraction" ] ;
+     fhir:text [ fhir:v "Similarity between e.g. banana - orange = fruit " ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "Abstraction_Q1" ] ;
+       fhir:text [ fhir:v "train – bicycle " ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Abstraction_Q2" ] ;
+       fhir:text [ fhir:v "watch - ruler" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "Delayed Recall" ] ;
+     fhir:text [ fhir:v "Has to recall words WITH NO CUE" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "Abstraction FACE" ] ;
+       fhir:text [ fhir:v "Recall FACE" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Abstraction VELVET" ] ;
+       fhir:text [ fhir:v "Recall VELVET" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Abstraction CHURCH" ] ;
+       fhir:text [ fhir:v "Recall CHURCH" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Abstraction DAISY" ] ;
+       fhir:text [ fhir:v "Recall DAISY" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Abstraction RED" ] ;
+       fhir:text [ fhir:v "Recall RED" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Abstraction OPTIONAL" ] ;
+       fhir:text [ fhir:v "Category cue and Multiple choice cue" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "Orientation" ] ;
+     fhir:text [ fhir:v "Determine the orientation" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "Orientation_Q1" ] ;
+       fhir:text [ fhir:v "Date" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Orientation_Q2" ] ;
+       fhir:text [ fhir:v "Month" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Orientation_Q3" ] ;
+       fhir:text [ fhir:v "Year" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Orientation_Q4" ] ;
+       fhir:text [ fhir:v "Day" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Orientation_Q5" ] ;
+       fhir:text [ fhir:v "Place" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] [
+       fhir:linkId [ fhir:v "Orientation_Q6" ] ;
+       fhir:text [ fhir:v "City" ] ;
+       fhir:type [ fhir:v "attachment" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "Total" ] ;
+     fhir:text [ fhir:v "Total Score" ] ;
+     fhir:type [ fhir:v "integer" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

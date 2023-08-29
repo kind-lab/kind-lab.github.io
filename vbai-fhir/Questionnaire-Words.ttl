@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/Questionnaire/Words> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Words"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/Words"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:title [ fhir:v "Random Item Generation Questionniare"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-08-21"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "Word_1" ] ;
+     fhir:text [ fhir:v "Numbers" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Word_2" ] ;
+     fhir:text [ fhir:v "Letters" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Word_3" ] ;
+     fhir:text [ fhir:v "First names" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Word_4" ] ;
+     fhir:text [ fhir:v "City names" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Word_5" ] ;
+     fhir:text [ fhir:v "Country names" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Word_6" ] ;
+     fhir:text [ fhir:v "Jobs" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Word_7" ] ;
+     fhir:text [ fhir:v "Fruits" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Word_8" ] ;
+     fhir:text [ fhir:v "Drinks" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Word_9" ] ;
+     fhir:text [ fhir:v "Animals" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] [
+     fhir:linkId [ fhir:v "Word_10" ] ;
+     fhir:text [ fhir:v "English words starting with 't'" ] ;
+     fhir:type [ fhir:v "attachment" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

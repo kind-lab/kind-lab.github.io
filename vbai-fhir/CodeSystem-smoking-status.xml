@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="smoking-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/CodeSystem/smoking-status"/>
+  <version value="1.0.0"/>
+  <name value="SmokingStatus"/>
+  <title value="Smoking Status Codes for Questionnaires"/>
+  <status value="active"/>
+  <date value="2023-05-15"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="This code system defines the necessary codes for identifying smoking status in health questionnaires."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="N"/>
+    <display value="I've never smoked regularly"/>
+  </concept>
+  <concept>
+    <code value="U"/>
+    <display value="I used to smoke"/>
+  </concept>
+  <concept>
+    <code value="C"/>
+    <display value="I currently smoke"/>
+  </concept>
+</CodeSystem>

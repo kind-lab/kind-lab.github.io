@@ -3,12 +3,12 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="gender-identity"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://voicecollab.ai/fhir/CodeSystem/gender-identity</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">CM<a name="gender-identity-CM"> </a></td><td>Cis Man</td><td>Gender identity is a cis Man.</td></tr><tr><td style="white-space:nowrap">CF<a name="gender-identity-CF"> </a></td><td>Cis Woman</td><td>Gender identity is a cis Woman.</td></tr><tr><td style="white-space:nowrap">TM<a name="gender-identity-TM"> </a></td><td>Transgender male/Transman/Female-to-male</td><td>Gender identity is Transgender male or Transman or Female-to-Male.</td></tr><tr><td style="white-space:nowrap">TF<a name="gender-identity-TF"> </a></td><td>Transgender female/Transwoman/Male-tofemale</td><td>Gender identity is Transgender female or Transwoman or Male-to-female.</td></tr><tr><td style="white-space:nowrap">GQ<a name="gender-identity-GQ"> </a></td><td>Genderqueer/Non-binary</td><td>Gender identity is GenderQueer/Non-binary.</td></tr><tr><td style="white-space:nowrap">DC<a name="gender-identity-DC"> </a></td><td>Decline to Answer</td><td>Person has declined to answer about their gender identity.</td></tr><tr><td style="white-space:nowrap">UN<a name="gender-identity-UN"> </a></td><td>Unknown</td><td>Person's gender identity is unknown.</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://voicecollab.ai/fhir/CodeSystem/gender-identity"/>
   <version value="1.0.0"/>
   <name value="GenderIdentity"/>
-  <title value=" Gender Identity Codes"/>
+  <title value="Comprehensive Gender Identity Codes"/>
   <status value="active"/>
   <date value="2023-05-11"/>
   <publisher value="KinD Lab"/>
@@ -19,43 +19,43 @@
       <value value="http://fhir.kindlab.sickkids.ca"/>
     </telecom>
   </contact>
-  <description value="The  Gender Identity Codes contains the codes to be used vbai Demographic Questionnaire"/>
+  <description value="This code system provides a comprehensive list of gender identity codes for use in demographic questionnaires."/>
   <caseSensitive value="true"/>
   <content value="complete"/>
   <count value="7"/>
   <concept>
     <code value="CM"/>
     <display value="Cis Man"/>
-    <definition value="Gender identity is a cis Man."/>
+    <definition value="Identifies as a cisgender man."/>
   </concept>
   <concept>
     <code value="CF"/>
     <display value="Cis Woman"/>
-    <definition value="Gender identity is a cis Woman."/>
+    <definition value="Identifies as a cisgender woman."/>
   </concept>
   <concept>
     <code value="TM"/>
     <display value="Transgender male/Transman/Female-to-male"/>
-    <definition value="Gender identity is Transgender male or Transman or Female-to-Male."/>
+    <definition value="Identifies as a transgender male, transman, or female-to-male."/>
   </concept>
   <concept>
     <code value="TF"/>
     <display value="Transgender female/Transwoman/Male-tofemale"/>
-    <definition value="Gender identity is Transgender female or Transwoman or Male-to-female."/>
+    <definition value="Identifies as a transgender female, transwoman, or male-to-female."/>
   </concept>
   <concept>
     <code value="GQ"/>
     <display value="Genderqueer/Non-binary"/>
-    <definition value="Gender identity is GenderQueer/Non-binary."/>
+    <definition value="Identifies as genderqueer or non-binary."/>
   </concept>
   <concept>
     <code value="DC"/>
     <display value="Decline to Answer"/>
-    <definition value="Person has declined to answer about their gender identity."/>
+    <definition value="Chose not to disclose gender identity."/>
   </concept>
   <concept>
     <code value="UN"/>
     <display value="Unknown"/>
-    <definition value="Person's gender identity is unknown."/>
+    <definition value="Gender identity is not known."/>
   </concept>
 </CodeSystem>

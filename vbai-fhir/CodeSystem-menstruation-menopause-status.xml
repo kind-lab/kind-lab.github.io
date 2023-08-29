@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="menstruation-menopause-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/CodeSystem/menstruation-menopause-status"/>
+  <version value="1.0.0"/>
+  <name value="MenstruationMenopauseStatus"/>
+  <title value="Menstruation and Menopause Status Codes"/>
+  <status value="active"/>
+  <date value="2023-05-15"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="This code system defines the possible responses for a questionnaire regarding menstruation and menopause status."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="N"/>
+    <display value="Does not apply"/>
+  </concept>
+  <concept>
+    <code value="Y"/>
+    <display value="Yes"/>
+  </concept>
+  <concept>
+    <code value="M"/>
+    <display value="I have gone through menopause"/>
+  </concept>
+  <concept>
+    <code value="O"/>
+    <display value="Other, Please Specify"/>
+  </concept>
+</CodeSystem>

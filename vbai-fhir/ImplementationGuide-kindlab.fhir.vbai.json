@@ -3,13 +3,13 @@
   "id" : "kindlab.fhir.vbai",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VoiceaBiomarkerforAI</h2><p>The official URL for this implementation guide is: </p><pre>https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai</pre><div><p>Implementation Guide for Voice Biomarker for AI FHIR Profiles</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai",
   "version" : "1.0.0",
   "name" : "VoiceaBiomarkerforAI",
   "status" : "draft",
-  "date" : "2023-08-22T05:01:43+00:00",
+  "date" : "2023-08-29T20:22:11+00:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -613,8 +613,8 @@
       "reference" : {
         "reference" : "StructureDefinition/vbai-cohort-protocol"
       },
-      "name" : "Vbai cohort protocol Plan Definition",
-      "description" : "An PlanDefinition profile based on cohort protocol",
+      "name" : "A general template for VBAI protocols",
+      "description" : "This profile extends PlanDefinition to restrict the number of actions to 12, the number of high-level steps in the VBAI protocol template.",
       "exampleBoolean" : false
     },
     {
@@ -783,6 +783,30 @@
       },
       "name" : "acoustic ValueSet",
       "description" : "The Codes used by acoustic status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/alcohol-consumption-amount"
+      },
+      "name" : "Drinking number ValueSet",
+      "description" : "The Codes used by confounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/alcohol-consumption-frequency"
+      },
+      "name" : "Alcohol Consumption ValueSet",
+      "description" : "The Codes used by confounder questionnaire",
       "exampleBoolean" : false
     },
     {
@@ -975,30 +999,6 @@
       },
       "name" : "Disability Type",
       "description" : "Valueset for capturing disability status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/drink-number"
-      },
-      "name" : "Drinking number ValueSet",
-      "description" : "The Codes used by confounder questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/drinking-times"
-      },
-      "name" : "Drinking times ValueSet",
-      "description" : "The Codes used by confounder questionnaire",
       "exampleBoolean" : false
     },
     {
@@ -1259,9 +1259,9 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/menstration-menopause"
+        "reference" : "ValueSet/menstruation-menopause-status"
       },
-      "name" : "Menstration MenopauseValueSet",
+      "name" : "Menstratio / Menopause ValueSet",
       "description" : "The Codes used by confounder questionnaire",
       "exampleBoolean" : false
     },
@@ -1415,6 +1415,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/perspiration-frequency"
+      },
+      "name" : "Perspiration ValueSet",
+      "description" : "The Codes used by confounder questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/psychiatric-history"
       },
       "name" : "Psychiatric History ValueSet",
@@ -1475,10 +1487,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/smoking"
+        "reference" : "ValueSet/smoking-status"
       },
-      "name" : "Smoking ValueSet",
-      "description" : "The  Codes used by WHODAS questionnaire",
+      "name" : "Smoking Status ValueSet",
+      "description" : "The codes used by WHODAS questionnaire for an individual's smoking status",
       "exampleBoolean" : false
     },
     {
@@ -1527,18 +1539,6 @@
       },
       "name" : "SurveyOptions",
       "description" : "The SurveyOptions Codes used by PHQ9 and GAD7 questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/sweat"
-      },
-      "name" : "Sweat ValueSet",
-      "description" : "The Codes used by confounder questionnaire",
       "exampleBoolean" : false
     },
     {
@@ -1607,10 +1607,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vocal-activity"
+        "reference" : "ValueSet/vocal-fold-injection-augmentation"
       },
-      "name" : "Vocal Activity ValueSet",
-      "description" : "The Codes used by confounder questionnaire",
+      "name" : "Vocal Fold Injection Augmentation",
+      "description" : "The Codes used by Diagnosis",
       "exampleBoolean" : false
     },
     {
@@ -1619,10 +1619,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vocal-fold-injection-augmentation"
+        "reference" : "ValueSet/vocal-profession"
       },
-      "name" : "Vocal Fold Injection Augmentation",
-      "description" : "The Codes used by Diagnosis",
+      "name" : "Vocal Profession ValueSet",
+      "description" : "The Codes used by confounder questionnaire",
       "exampleBoolean" : false
     },
     {
@@ -1667,10 +1667,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/winograd-q1"
+        "reference" : "ValueSet/Winograd-1"
       },
-      "name" : "Questionnaire ValueSet for Winograd schema Question 1",
-      "description" : "The ValueSet required for Winograd Questionnaires Question 1",
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
       "exampleBoolean" : false
     },
     {
@@ -1679,10 +1679,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/winograd-q2"
+        "reference" : "ValueSet/Winograd-10"
       },
-      "name" : "Questionnaire ValueSet for Winograd schema Question 2",
-      "description" : "The ValueSet required for Winograd Questionnaires Question 2",
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
       "exampleBoolean" : false
     },
     {
@@ -1691,10 +1691,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/winograd-q3"
+        "reference" : "ValueSet/Winograd-100"
       },
-      "name" : "Questionnaire ValueSet for Winograd schema Question 3",
-      "description" : "The ValueSet required for Winograd Questionnaires Question 3",
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
       "exampleBoolean" : false
     },
     {
@@ -1703,10 +1703,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/winograd-q4"
+        "reference" : "ValueSet/Winograd-101"
       },
-      "name" : "Questionnaire ValueSet for Winograd schema Question 4",
-      "description" : "The ValueSet required for Winograd Questionnaires Question 4",
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
       "exampleBoolean" : false
     },
     {
@@ -1715,10 +1715,1606 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/winograd-q5"
+        "reference" : "ValueSet/Winograd-102"
       },
-      "name" : "Questionnaire ValueSet for Winograd schema Question 5",
-      "description" : "The ValueSet required for Winograd Questionnaires Question 5",
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-103"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-104"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-105"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-106"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-107"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-108"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-109"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-11"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-110"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-111"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-112"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-113"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-114"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-115"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-116"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-117"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-118"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-119"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-12"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-120"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-121"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-122"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-123"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-124"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-125"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-126"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-127"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-128"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-129"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-13"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-130"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-131"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-132"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-133"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-134"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-135"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-136"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-137"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-138"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-14"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-15"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-16"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-17"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-18"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-19"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-2"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-20"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-21"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-22"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-23"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-24"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-25"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-26"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-27"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-28"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-29"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-3"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-30"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-31"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-32"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-33"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-34"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-35"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-36"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-37"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-38"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-39"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-4"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-40"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-41"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-42"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-43"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-44"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-45"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-46"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-47"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-48"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-49"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-5"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-50"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-51"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-52"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-53"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-54"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-55"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-56"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-57"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-58"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-59"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-6"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-60"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-61"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-62"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-63"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-64"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-65"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-66"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-67"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-68"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-69"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-7"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-70"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-71"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-72"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-73"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-74"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-75"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-76"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-77"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-78"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-79"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-8"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-80"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-81"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-82"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-83"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-84"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-85"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-86"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-87"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-88"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-89"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-9"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-90"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-91"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-92"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-93"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-94"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-95"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-96"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-97"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-98"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Winograd-99"
+      },
+      "name" : "Quesionnaire ValueSet For Winograd Scehema",
+      "description" : "The codes required for winograd",
       "exampleBoolean" : false
     },
     {
@@ -1751,10 +3347,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/adhd"
+        "reference" : "CodeSystem/acoustic-task-status"
       },
-      "name" : "adhd",
-      "description" : "The codes required for adhd questionnaire",
+      "name" : "Status Codes for Acoustic Tasks",
+      "description" : "A comprehensive set of codes representing the status of Acoustic Tasks.",
       "exampleBoolean" : false
     },
     {
@@ -1763,10 +3359,22 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/acoustic-task-status"
+        "reference" : "CodeSystem/alcohol-consumption-amount"
       },
-      "name" : "Acoustic Task Status codes",
-      "description" : "The codes required for Acoustic Tasks",
+      "name" : "Alcohol Consumption Frequency Codes",
+      "description" : "This code system defines the frequency of alcohol consumption for use in questionnaires.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/alcohol-consumption-frequency"
+      },
+      "name" : "Alcohol Consumption Frequency Codes",
+      "description" : "This code system defines the frequency of alcohol consumption for use in questionnaires.",
       "exampleBoolean" : false
     },
     {
@@ -1777,8 +3385,8 @@
       "reference" : {
         "reference" : "CodeSystem/checked-unchecked"
       },
-      "name" : "Questionnaire enrollment condition codes",
-      "description" : "The codes required for Questionnaire enrollment",
+      "name" : "Enrollment Status Codes for Questionnaires",
+      "description" : "This code system defines the status codes used to indicate the enrollment condition in questionnaires.",
       "exampleBoolean" : false
     },
     {
@@ -1789,20 +3397,8 @@
       "reference" : {
         "reference" : "CodeSystem/child-education"
       },
-      "name" : "Questionnaire codes for child education",
-      "description" : "The codes required for questionnaires",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/comments"
-      },
-      "name" : "Comments",
-      "description" : "The codes required for Diagnosis questionnaire",
+      "name" : "Child Education Level Code System",
+      "description" : "A comprehensive code system for identifying the highest level of education attained by a child, used in questionnaire contexts.",
       "exampleBoolean" : false
     },
     {
@@ -1813,20 +3409,8 @@
       "reference" : {
         "reference" : "CodeSystem/consent-status"
       },
-      "name" : "Questionnaire general info codes",
-      "description" : "The codes required for general information questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/consent-usf-question"
-      },
-      "name" : "Consent Usf Question",
-      "description" : "The codes required for Diagnosis questionnaire",
+      "name" : "Consent Status Codes",
+      "description" : "Code system representing various statuses of patient consent",
       "exampleBoolean" : false
     },
     {
@@ -1837,80 +3421,8 @@
       "reference" : {
         "reference" : "CodeSystem/dsm5"
       },
-      "name" : "dsm5",
-      "description" : "The codes required for dsm5 questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/dsm5-phobia"
-      },
-      "name" : "dsm5 q5",
-      "description" : "The codes required for dsm5 phobia questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/dsm5-q1"
-      },
-      "name" : "dsm5 q1",
-      "description" : "The codes required for dsm5 q1 questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/dsm5-q2"
-      },
-      "name" : "dsm5 q2",
-      "description" : "The codes required for dsm5 q2 questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/dsm5-q3"
-      },
-      "name" : "dsm5 q3",
-      "description" : "The codes required for dsm5 q3 questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/dsm5-q4"
-      },
-      "name" : "dsm5 q4",
-      "description" : "The codes required for dsm5 q4 questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/dsm5-q5"
-      },
-      "name" : "dsm5 q5",
-      "description" : "The codes required for dsm5 q5 questionnaire",
+      "name" : "Diagnostic and Statistical Manual of Mental Disorders (DSM-5) Code System",
+      "description" : "This code system is designed for the DSM-5 questionnaire, providing severity codes for mental health conditions.",
       "exampleBoolean" : false
     },
     {
@@ -1921,32 +3433,8 @@
       "reference" : {
         "reference" : "CodeSystem/decline-reason"
       },
-      "name" : "Questionnaire enrollment eligible studies codes",
-      "description" : "The codes required for Questionnaire enrollment",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/degree"
-      },
-      "name" : "Degree",
-      "description" : "The codes required for Diagnosis questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/difficulty-breathing"
-      },
-      "name" : "Questionnaire codes for difficulty breahing",
-      "description" : "The codes required for Questionnaires",
+      "name" : "Reasons for Declining Participation Codes",
+      "description" : "This code system specifies the various reasons an individual might decline participation in a study, as used in questionnaire enrollment.",
       "exampleBoolean" : false
     },
     {
@@ -1957,8 +3445,8 @@
       "reference" : {
         "reference" : "CodeSystem/disability-status"
       },
-      "name" : "Questionnaire codes Disability Status",
-      "description" : "The codes required for Questionnaire's Disability Status",
+      "name" : "Disability Status Code System",
+      "description" : "A comprehensive code system for categorizing disability status in a questionnaire format.",
       "exampleBoolean" : false
     },
     {
@@ -1969,44 +3457,8 @@
       "reference" : {
         "reference" : "CodeSystem/disability-type"
       },
-      "name" : "Questionnaire codes Disability Type",
-      "description" : "The codes required for Questionnaire's Disability Type",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/drink-number"
-      },
-      "name" : "Questionnaire alchohol number codes",
-      "description" : "The codes required for Questionnaire confounders",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/drinking-times"
-      },
-      "name" : "Questionnaire alchohol times codes",
-      "description" : "The codes required for Questionnaire confounders",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/dysnpea-index"
-      },
-      "name" : "Dysnpea Index",
-      "description" : "Dysnpea Index",
+      "name" : "Disability Classification Codes",
+      "description" : "A comprehensive set of codes representing different types of disabilities for use in questionnaires.",
       "exampleBoolean" : false
     },
     {
@@ -2017,8 +3469,8 @@
       "reference" : {
         "reference" : "CodeSystem/ent-history"
       },
-      "name" : "Questionnaire ent history codes",
-      "description" : "The codes required for Questionnaire confounders",
+      "name" : "Ear, Nose, and Throat (ENT) History Codes",
+      "description" : "This code system encompasses the complete set of codes used for documenting patient's ear, nose, and throat (ENT) history in questionnaires.",
       "exampleBoolean" : false
     },
     {
@@ -2029,8 +3481,8 @@
       "reference" : {
         "reference" : "CodeSystem/eligible-studies"
       },
-      "name" : "Questionnaire enrollment eligible studies codes",
-      "description" : "The codes required for Questionnaire enrollment",
+      "name" : "Eligibility Criteria for Study Enrollment",
+      "description" : "A comprehensive set of codes representing different study fields for questionnaire enrollment.",
       "exampleBoolean" : false
     },
     {
@@ -2041,8 +3493,8 @@
       "reference" : {
         "reference" : "CodeSystem/employment-status"
       },
-      "name" : "Questionnaire codes Employment Status",
-      "description" : "The codes required for Questionnaire's Employment Status",
+      "name" : "Employment Status Code System",
+      "description" : "A comprehensive code system for categorizing employment status in a questionnaire.",
       "exampleBoolean" : false
     },
     {
@@ -2053,8 +3505,8 @@
       "reference" : {
         "reference" : "CodeSystem/enroll"
       },
-      "name" : "Questionnaire enrollment eligible studies codes",
-      "description" : "The codes required for Questionnaire enrollment",
+      "name" : "Eligibility Status Codes for Study Enrollment",
+      "description" : "This code system defines the possible status codes for study enrollment eligibility in a questionnaire.",
       "exampleBoolean" : false
     },
     {
@@ -2065,8 +3517,8 @@
       "reference" : {
         "reference" : "CodeSystem/enrollment-complete"
       },
-      "name" : "Questionnaire enrollment  codes",
-      "description" : "The codes required for Questionnaire enrollment",
+      "name" : "Enrollment Status Codes",
+      "description" : "The set of codes representing the status of a Questionnaire enrollment",
       "exampleBoolean" : false
     },
     {
@@ -2077,8 +3529,8 @@
       "reference" : {
         "reference" : "CodeSystem/enrollment-institution"
       },
-      "name" : "Questionnaire enrollment  codes",
-      "description" : "The codes required for Questionnaire enrollment",
+      "name" : "Institution Enrollment Codes",
+      "description" : "Specific codes representing different institutions for questionnaire enrollment.",
       "exampleBoolean" : false
     },
     {
@@ -2089,20 +3541,8 @@
       "reference" : {
         "reference" : "CodeSystem/enrollment-select-language"
       },
-      "name" : "Questionnaire enrollment language codes",
-      "description" : "The codes required for Questionnaire enrollment",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/etiology"
-      },
-      "name" : "etiology",
-      "description" : "The codes required for Diagnosis questionnaire",
+      "name" : "Language Selection Codes for Enrollment Questionnaire",
+      "description" : "This code system defines the language options available for the enrollment questionnaire.",
       "exampleBoolean" : false
     },
     {
@@ -2113,8 +3553,8 @@
       "reference" : {
         "reference" : "CodeSystem/financial-assistance"
       },
-      "name" : "Questionnaire codes Financial Assistance Programs",
-      "description" : "The codes required for Questionnaire's Financial Assistance Programs",
+      "name" : "Financial Aid Programs Questionnaire Codes",
+      "description" : "Existence of a financial aid program.",
       "exampleBoolean" : false
     },
     {
@@ -2125,8 +3565,8 @@
       "reference" : {
         "reference" : "CodeSystem/fluent-language"
       },
-      "name" : "Questionnaire enrollment Fluent language codes",
-      "description" : "The codes required for Questionnaire enrollment",
+      "name" : "Fluent Language Identification Codes",
+      "description" : "A set of codes identifying languages for questionnaire enrollment purposes.",
       "exampleBoolean" : false
     },
     {
@@ -2137,20 +3577,8 @@
       "reference" : {
         "reference" : "CodeSystem/gender-identity"
       },
-      "name" : " Gender Identity Codes",
-      "description" : "The  Gender Identity Codes contains the codes to be used vbai Demographic Questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/glottic-gap"
-      },
-      "name" : "Tumor invading RLN ",
-      "description" : "The codes required for Diagnosis questionnaire",
+      "name" : "Comprehensive Gender Identity Codes",
+      "description" : "This code system provides a comprehensive list of gender identity codes for use in demographic questionnaires.",
       "exampleBoolean" : false
     },
     {
@@ -2161,8 +3589,8 @@
       "reference" : {
         "reference" : "CodeSystem/household-makeup"
       },
-      "name" : "Questionnaire codes for household makeup",
-      "description" : "The codes required for household makeup",
+      "name" : "Household Composition Classification Codes",
+      "description" : "A comprehensive set of codes defining different household compositions.",
       "exampleBoolean" : false
     },
     {
@@ -2173,20 +3601,8 @@
       "reference" : {
         "reference" : "CodeSystem/household-status"
       },
-      "name" : "Questionnaire codes for Household status",
-      "description" : "The codes required for household status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/iatrogenic"
-      },
-      "name" : "iatrogenic",
-      "description" : "The codes required for Diagnosis questionnaire",
+      "name" : "Residential Status Code System",
+      "description" : "A comprehensive code system defining various residential statuses.",
       "exampleBoolean" : false
     },
     {
@@ -2197,32 +3613,8 @@
       "reference" : {
         "reference" : "CodeSystem/immigration-status"
       },
-      "name" : "Questionnaire codes for immigration status",
-      "description" : "The codes required for immigration status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/left-right"
-      },
-      "name" : "leftRight",
-      "description" : "The codes required for Diagnosis questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/leicester-cough"
-      },
-      "name" : "Leicester Cough Questionnaire",
-      "description" : "Leicester Cough Questionnaire",
+      "name" : "Immigration Status Classification Codes",
+      "description" : "A comprehensive set of codes representing different immigration statuses.",
       "exampleBoolean" : false
     },
     {
@@ -2233,8 +3625,8 @@
       "reference" : {
         "reference" : "CodeSystem/marital-status"
       },
-      "name" : "Questionnaire codes for marital status",
-      "description" : "The codes required for marital status",
+      "name" : "Marital Status Classification Codes",
+      "description" : "A comprehensive set of codes representing different marital statuses for use in questionnaires.",
       "exampleBoolean" : false
     },
     {
@@ -2245,8 +3637,8 @@
       "reference" : {
         "reference" : "CodeSystem/medication"
       },
-      "name" : "Questionnaire medication codes",
-      "description" : "The codes required for Questionnaire confounders",
+      "name" : "Comprehensive Medication Code System",
+      "description" : "This code system encompasses a broad range of medications used in questionnaires, including antibiotics, antihistamines, cocaine, diuretics, hormones, inhaled corticosteroids for asthma, pain medications, psychotropic medications, tricyclic antidepressants, vitamins, and others.",
       "exampleBoolean" : false
     },
     {
@@ -2255,34 +3647,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/menstration-menopause"
+        "reference" : "CodeSystem/menstruation-menopause-status"
       },
-      "name" : "Questionnaire sweat codes",
-      "description" : "The codes required for Questionnaire confounders",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/neuro-consent"
-      },
-      "name" : "Questionnaire codes for neuro consent",
-      "description" : "The codes required for neuro consent",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/neuro-participation-consent"
-      },
-      "name" : "Questionnaire codes for neuro consent",
-      "description" : "The codes required for neuro consent",
+      "name" : "Menstruation and Menopause Status Codes",
+      "description" : "This code system defines the possible responses for a questionnaire regarding menstruation and menopause status.",
       "exampleBoolean" : false
     },
     {
@@ -2293,8 +3661,8 @@
       "reference" : {
         "reference" : "CodeSystem/neurological-history"
       },
-      "name" : "Questionnaire neurological history codes",
-      "description" : "The codes required for Questionnaire confounders",
+      "name" : "Neurological History Questionnaire Codes",
+      "description" : "A comprehensive set of codes used for identifying and categorizing neurological conditions in a questionnaire.",
       "exampleBoolean" : false
     },
     {
@@ -2303,106 +3671,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/psc-17"
+        "reference" : "CodeSystem/perspiration-frequency"
       },
-      "name" : "Pediatric Symptom Checklist (PSC-17)",
-      "description" : "The codes required for Pediatric Symptom Checklist (PSC-17) questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ptsd"
-      },
-      "name" : "ptsd",
-      "description" : "The codes required for ptsd questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/peds-enrollment"
-      },
-      "name" : "Pediatric Enrollment",
-      "description" : "The codes required for Pediatric enrollment pre-question questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/peds-language-fluency"
-      },
-      "name" : "Pediatric Enrollment",
-      "description" : "The codes required for Pediatric enrollment pre-question questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/peds-medical-history"
-      },
-      "name" : "Questionnaire codes",
-      "description" : "The codes required for Questionnaires survey completion",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/peds-reason-to-decline"
-      },
-      "name" : "Questionnaire codes for peds reason to decline",
-      "description" : "The codes required for Questionnaires",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/peds-who-completed-survey"
-      },
-      "name" : "Questionnaire codes",
-      "description" : "The codes required for Questionnaires survey completion",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/permission-to-share-with-doctor"
-      },
-      "name" : "Questionnaire codes for neuro consent",
-      "description" : "The codes required for neuro consent",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/permission-to-share-with-family"
-      },
-      "name" : "Questionnaire codes for neuro consent",
-      "description" : "The codes required for neuro consent",
+      "name" : "Perspiration Frequency Codes for Questionnaires",
+      "description" : "This code system includes specific codes for indicating the frequency of perspiration in questionnaire responses.",
       "exampleBoolean" : false
     },
     {
@@ -2413,8 +3685,8 @@
       "reference" : {
         "reference" : "CodeSystem/psychiatric-history"
       },
-      "name" : "Questionnaire psychiatric history codes",
-      "description" : "The codes required for Questionnaire confounders",
+      "name" : "Psychiatric History Classification Codes",
+      "description" : "A comprehensive set of codes representing various psychiatric conditions, used in psychiatric history questionnaires.",
       "exampleBoolean" : false
     },
     {
@@ -2425,8 +3697,8 @@
       "reference" : {
         "reference" : "CodeSystem/reading-ability"
       },
-      "name" : "Questionnaire sweat codes",
-      "description" : "The codes required for Questionnaire confounders",
+      "name" : "Reading Proficiency Levels",
+      "description" : "A comprehensive set of codes representing different levels of reading proficiency for questionnaire respondents.",
       "exampleBoolean" : false
     },
     {
@@ -2437,8 +3709,8 @@
       "reference" : {
         "reference" : "CodeSystem/recording"
       },
-      "name" : "Recording codes",
-      "description" : "The codes required for Recording",
+      "name" : "Recording Version Codes",
+      "description" : "A comprehensive set of codes representing different versions of recordings.",
       "exampleBoolean" : false
     },
     {
@@ -2449,8 +3721,8 @@
       "reference" : {
         "reference" : "CodeSystem/session"
       },
-      "name" : "Session info codes",
-      "description" : "The codes required for session",
+      "name" : "Session Status Codes",
+      "description" : "A comprehensive set of codes representing the status of a session.",
       "exampleBoolean" : false
     },
     {
@@ -2459,10 +3731,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/smoking"
+        "reference" : "CodeSystem/smoking-status"
       },
-      "name" : "Questionnaire smoking codes",
-      "description" : "The codes required for Questionnaire confounders",
+      "name" : "Smoking Status Codes for Questionnaires",
+      "description" : "This code system defines the necessary codes for identifying smoking status in health questionnaires.",
       "exampleBoolean" : false
     },
     {
@@ -2471,10 +3743,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/smoking-times"
+        "reference" : "CodeSystem/frequency-of-smoking"
       },
-      "name" : "Questionnaire smoking times codes",
-      "description" : "The codes required for Questionnaire confounders",
+      "name" : "Frequency of Smoking Codes for Questionnaires",
+      "description" : "This code system includes specific codes used in questionnaires to assess the frequency of a respondent's smoking habits.",
       "exampleBoolean" : false
     },
     {
@@ -2483,22 +3755,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/smoking-types"
+        "reference" : "CodeSystem/types-of-smoking"
       },
-      "name" : "Questionnaire smoking type codes",
-      "description" : "The codes required for Questionnaire confounders",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/surgery-sub-category"
-      },
-      "name" : "surgery sub-category",
-      "description" : "The codes required for Diagnosis questionnaire",
+      "name" : "Classification of Smoking Methods",
+      "description" : "This code system categorizes the various methods of smoking for use in questionnaires.",
       "exampleBoolean" : false
     },
     {
@@ -2509,32 +3769,8 @@
       "reference" : {
         "reference" : "CodeSystem/survey-options"
       },
-      "name" : "Option Codes for PHQ9 and GAD7",
-      "description" : "The  Codes used for PHQ9 and GAD7 Questionnaires",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/sweat"
-      },
-      "name" : "Questionnaire sweat codes",
-      "description" : "The codes required for Questionnaire confounders",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/thyroplasty"
-      },
-      "name" : "Thyroplasty ",
-      "description" : "The codes required for Diagnosis questionnaire",
+      "name" : "PHQ9 and GAD7 Survey Response Codes",
+      "description" : "This code system defines the response options for PHQ9 and GAD7 questionnaires.",
       "exampleBoolean" : false
     },
     {
@@ -2545,8 +3781,8 @@
       "reference" : {
         "reference" : "CodeSystem/transportation-type"
       },
-      "name" : "Questionnaire codes for Transportation Type",
-      "description" : "The codes required for Transportation Type",
+      "name" : "Transportation Mode Classification",
+      "description" : "A comprehensive code system categorizing various modes of transportation.",
       "exampleBoolean" : false
     },
     {
@@ -2555,58 +3791,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/treatment"
+        "reference" : "CodeSystem/vocal-profession"
       },
-      "name" : "treatment",
-      "description" : "The codes required for Diagnosis questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/tumor-rln"
-      },
-      "name" : "Tumor invading RLN ",
-      "description" : "The codes required for Diagnosis questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/urge-to-cough"
-      },
-      "name" : "Urge to Cough Questionnaire",
-      "description" : "Urge to Cough Questionnaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/vocal-activity"
-      },
-      "name" : "Questionnaire sweat codes",
-      "description" : "The codes required for Questionnaire confounders",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/vocal-fold-injection-augmentation"
-      },
-      "name" : "Vocal Fold Injection Augmentation",
-      "description" : "The codes required for Diagnosis questionnaire",
+      "name" : "Vocal Profession Codes",
+      "description" : "A comprehensive set of codes representing various professions that involve significant vocal activity.",
       "exampleBoolean" : false
     },
     {
@@ -2617,8 +3805,8 @@
       "reference" : {
         "reference" : "CodeSystem/voice-handicap-index"
       },
-      "name" : "Voice Handicap Index codes",
-      "description" : "The codes required for Voice Handicap Index",
+      "name" : "Voice Handicap Index Assessment Codes",
+      "description" : "A comprehensive set of codes used for the Voice Handicap Index assessment.",
       "exampleBoolean" : false
     },
     {
@@ -2629,8 +3817,8 @@
       "reference" : {
         "reference" : "CodeSystem/whodas"
       },
-      "name" : "Questionnaire WHODAS codes",
-      "description" : "The codes required for WHODAS Questionnaires",
+      "name" : "WHODAS Questionnaire Code System",
+      "description" : "A comprehensive code system for categorizing responses in WHODAS Questionnaires.",
       "exampleBoolean" : false
     },
     {
@@ -2640,6 +3828,18 @@
       }],
       "reference" : {
         "reference" : "CodeSystem/Who-Completed-Survey"
+      },
+      "name" : "Survey Completion Identifier Codes",
+      "description" : "This code system identifies who has completed a specific survey or questionnaire.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-1"
       },
       "name" : "Questionnaire codes",
       "description" : "The codes required for Questionnaires survey completion",
@@ -2651,10 +3851,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/winograd-q1"
+        "reference" : "CodeSystem/Winograd-10"
       },
-      "name" : "Questionnaire codes for Winograd schema Question 1",
-      "description" : "The codes required for Winograd Questionnaires Question 1",
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
       "exampleBoolean" : false
     },
     {
@@ -2663,10 +3863,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/winograd-q2"
+        "reference" : "CodeSystem/Winograd-100"
       },
-      "name" : "Questionnaire codes for Winograd schema Question 2",
-      "description" : "The codes required for Winograd Questionnaires Question 2",
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
       "exampleBoolean" : false
     },
     {
@@ -2675,10 +3875,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/winograd-q3"
+        "reference" : "CodeSystem/Winograd-101"
       },
-      "name" : "Questionnaire codes for Winograd schema Question 3",
-      "description" : "The codes required for Winograd Questionnaires Question 3",
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
       "exampleBoolean" : false
     },
     {
@@ -2687,10 +3887,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/winograd-q4"
+        "reference" : "CodeSystem/Winograd-102"
       },
-      "name" : "Questionnaire codes for Winograd schema Question 4",
-      "description" : "The codes required for Winograd Questionnaires Question 4",
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
       "exampleBoolean" : false
     },
     {
@@ -2699,10 +3899,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/winograd-q5"
+        "reference" : "CodeSystem/Winograd-103"
       },
-      "name" : "Questionnaire codes for Winograd schema Question 5",
-      "description" : "The codes required for Winograd Questionnaires Question 5",
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
       "exampleBoolean" : false
     },
     {
@@ -2711,10 +3911,1582 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/yes-no-not-certain"
+        "reference" : "CodeSystem/Winograd-104"
       },
-      "name" : "YesNoNotCertain",
-      "description" : "The codes required for Diagnosis questionnaire",
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-105"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-106"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-107"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-108"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-109"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-11"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-110"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-111"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-112"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-113"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-114"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-115"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-116"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-117"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-118"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-119"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-12"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-120"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-121"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-122"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-123"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-124"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-125"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-126"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-127"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-128"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-129"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-13"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-130"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-131"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-132"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-133"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-134"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-135"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-136"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-137"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-138"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-14"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-15"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-16"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-17"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-18"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-19"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-2"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-20"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-21"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-22"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-23"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-24"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-25"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-26"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-27"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-28"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-29"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-3"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-30"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-31"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-32"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-33"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-34"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-35"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-36"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-37"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-38"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-39"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-4"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-40"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-41"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-42"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-43"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-44"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-45"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-46"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-47"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-48"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-49"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-5"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-50"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-51"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-52"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-53"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-54"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-55"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-56"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-57"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-58"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-59"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-6"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-60"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-61"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-62"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-63"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-64"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-65"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-66"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-67"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-68"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-69"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-7"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-70"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-71"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-72"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-73"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-74"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-75"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-76"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-77"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-78"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-79"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-8"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-80"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-81"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-82"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-83"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-84"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-85"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-86"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-87"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-88"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-89"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-9"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-90"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-91"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-92"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-93"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-94"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-95"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-96"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-97"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-98"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Winograd-99"
+      },
+      "name" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
       "exampleBoolean" : false
     },
     {
@@ -2725,8 +5497,8 @@
       "reference" : {
         "reference" : "CodeSystem/Yes-No-Some"
       },
-      "name" : "Questionnaire Yes/No/Some codes",
-      "description" : "The codes required for Questionnaires yes/no/some",
+      "name" : "Yes/No/Some Response Codes",
+      "description" : "A set of codes representing 'Yes', 'No', and 'Some' responses for questionnaires.",
       "exampleBoolean" : false
     },
     {
@@ -2939,6 +5711,18 @@
         "valueString" : "Questionnaire"
       }],
       "reference" : {
+        "reference" : "Questionnaire/MOCA"
+      },
+      "name" : "MoCA",
+      "description" : "MoCA_Questionnaire",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
         "reference" : "Questionnaire/MainICF"
       },
       "name" : "Main ICF",
@@ -3111,6 +5895,18 @@
       },
       "name" : "Patient Questionnaire for Respiratory",
       "description" : "Respiratory Cohort's Patient Questionnaire",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/Stroop"
+      },
+      "name" : "Stroop Questionniare",
+      "description" : "Stroop Questionniare for Neuro Cohort",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
@@ -3599,6 +6395,18 @@
         "valueString" : "Questionnaire"
       }],
       "reference" : {
+        "reference" : "Questionnaire/Vocabulary"
+      },
+      "name" : "Vocabulary Questionniare",
+      "description" : "Vocabulary Questionniare",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
         "reference" : "Questionnaire/VocalFoldParalysis"
       },
       "name" : "VocalFoldParalysis",
@@ -3649,8 +6457,20 @@
       "reference" : {
         "reference" : "Questionnaire/WinogradSchema"
       },
-      "name" : "WinogradSchema",
-      "description" : "Winograd Schema",
+      "name" : "Winograd Questionnaire",
+      "description" : "WinoGrad Questionnaire",
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/Words"
+      },
+      "name" : "Random Item Generation Questionniare",
+      "description" : "Random Item Generation Questionniare",
       "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     }],
     "page" : {

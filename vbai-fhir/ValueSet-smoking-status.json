@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "smoking-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/ValueSet/smoking-status",
+  "version" : "1.0.0",
+  "name" : "SmokingStatus",
+  "title" : "Smoking Status ValueSet",
+  "status" : "active",
+  "date" : "2023-05-11",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "The codes used by WHODAS questionnaire for an individual's smoking status",
+  "compose" : {
+    "include" : [{
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/smoking-status"
+    }]
+  }
+}

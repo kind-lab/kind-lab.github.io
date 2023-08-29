@@ -1,0 +1,239 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "MOCA",
+  "meta" : {
+    "profile" : ["https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/Questionnaire/MOCA",
+  "version" : "1.0.0",
+  "title" : "MoCA Questionnaire",
+  "status" : "active",
+  "date" : "2023-06-21",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "item" : [{
+    "linkId" : "VisualSpacial/Executive",
+    "text" : "Solving VisualSpacial problems",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "VisualSpacial_Q1",
+      "text" : "Match number and letters in order",
+      "type" : "boolean"
+    },
+    {
+      "linkId" : "VisualSpacial_Q2",
+      "text" : "Draw a cube",
+      "type" : "boolean"
+    },
+    {
+      "linkId" : "VisualSpacial_Q3",
+      "text" : "Draw a clock pointing to ten past eleven",
+      "type" : "boolean"
+    }]
+  },
+  {
+    "linkId" : "Naming",
+    "text" : "Name the animal displayed",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "Naming_Q1",
+      "text" : "Lion",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Naming_Q2",
+      "text" : "Rhino",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Naming_Q3",
+      "text" : "Camel",
+      "type" : "attachment"
+    }]
+  },
+  {
+    "linkId" : "Memory",
+    "text" : "Read list of words subject must repeat them. Do 2 trials, even if 1st trial is successful. Do a recall aftr 5 minutes.",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "1st Trial",
+      "text" : "Face, Velvet, Church, Daisy and Red",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "2nd Trial",
+      "text" : "Face, Velvet, Church, Daisy and Red",
+      "type" : "attachment"
+    }]
+  },
+  {
+    "linkId" : "Attention",
+    "text" : "Read list of digits (1 digit/sec)",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "Attention_Q1 (2 1 8 5 4)",
+      "text" : "Subject has to repeat them in forward order",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Attention_Q2 (7 4 2)",
+      "text" : "Subject has to repeat them in backward order",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Attention_Q3 (F B A C M N A A J K L B A F A K D E A A A J A M O F A A B)",
+      "text" : "Read list of letters. The subject must tap with his hand at each letter A. No point if >2 errors.",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Attention_Q4",
+      "text" : "Serial 7 subtraction starting at 100",
+      "type" : "group",
+      "item" : [{
+        "linkId" : "Attention_Q4 (93)",
+        "text" : "subtraction starting at 100",
+        "type" : "attachment"
+      },
+      {
+        "linkId" : "Attention_Q4 (86)",
+        "text" : "subtraction starting at 100",
+        "type" : "attachment"
+      },
+      {
+        "linkId" : "Attention_Q4 (79)",
+        "text" : "subtraction starting at 100",
+        "type" : "attachment"
+      },
+      {
+        "linkId" : "Attention_Q4 (72)",
+        "text" : "subtraction starting at 100",
+        "type" : "attachment"
+      },
+      {
+        "linkId" : "Attention_Q4 (65)",
+        "text" : "subtraction starting at 100",
+        "type" : "attachment"
+      }]
+    }]
+  },
+  {
+    "linkId" : "Language",
+    "text" : "Repeat",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "Language_Q1",
+      "text" : " I only know that John is the one to help today.",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Language_Q2",
+      "text" : "The cat always hid under the couch when dogs were in the room.",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Language_Q3",
+      "text" : "Fluency / Name maximum number of words in one minute that begin with the letter F",
+      "type" : "attachment"
+    }]
+  },
+  {
+    "linkId" : "Abstraction",
+    "text" : "Similarity between e.g. banana - orange = fruit ",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "Abstraction_Q1",
+      "text" : "train – bicycle ",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Abstraction_Q2",
+      "text" : "watch - ruler",
+      "type" : "attachment"
+    }]
+  },
+  {
+    "linkId" : "Delayed Recall",
+    "text" : "Has to recall words WITH NO CUE",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "Abstraction FACE",
+      "text" : "Recall FACE",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Abstraction VELVET",
+      "text" : "Recall VELVET",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Abstraction CHURCH",
+      "text" : "Recall CHURCH",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Abstraction DAISY",
+      "text" : "Recall DAISY",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Abstraction RED",
+      "text" : "Recall RED",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Abstraction OPTIONAL",
+      "text" : "Category cue and Multiple choice cue",
+      "type" : "attachment"
+    }]
+  },
+  {
+    "linkId" : "Orientation",
+    "text" : "Determine the orientation",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "Orientation_Q1",
+      "text" : "Date",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Orientation_Q2",
+      "text" : "Month",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Orientation_Q3",
+      "text" : "Year",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Orientation_Q4",
+      "text" : "Day",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Orientation_Q5",
+      "text" : "Place",
+      "type" : "attachment"
+    },
+    {
+      "linkId" : "Orientation_Q6",
+      "text" : "City",
+      "type" : "attachment"
+    }]
+  },
+  {
+    "linkId" : "Total",
+    "text" : "Total Score",
+    "type" : "integer"
+  }]
+}
