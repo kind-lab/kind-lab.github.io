@@ -38,11 +38,11 @@
      fhir:item ( [
        fhir:linkId [ fhir:v "country" ] ;
        fhir:text [ fhir:v "Country of survery completed" ] ;
-       fhir:type [ fhir:v "string" ]
-     ] [
-       fhir:linkId [ fhir:v "name" ] ;
-       fhir:text [ fhir:v "What is your name?" ] ;
-       fhir:type [ fhir:v "string" ]
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "http://terminology.hl7.org/ValueSet/v3-Country"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/ValueSet/v3-Country>
+       ]
      ] [
        fhir:linkId [ fhir:v "dob" ] ;
        fhir:text [ fhir:v "what is your date of birth?" ] ;
@@ -134,14 +134,22 @@
        fhir:text [ fhir:v "What is your gender identity?" ] ;
        fhir:type [ fhir:v "open-choice" ] ;
        fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/gender-identity"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/gender-identity>
+         fhir:v "http://terminology.hl7.org/ValueSet/gender-identity"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/ValueSet/gender-identity>
        ] ;
        fhir:answerOption ( [
          fhir:value [ fhir:v "Not listed, Please Specify" ]
        ] [
          fhir:value [ fhir:v "Intersex, Please Specify" ]
        ] )
+     ] [
+       fhir:linkId [ fhir:v "birth_sex" ] ;
+       fhir:text [ fhir:v "What is your sex assigned at birth?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "http://hl7.org/fhir/us/core/ValueSet/birthsex"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/ValueSet/birthsex>
+       ]
      ] [
        fhir:linkId [ fhir:v "sexual_orientation" ] ;
        fhir:text [ fhir:v "What is your sexual orientation?" ] ;
@@ -172,45 +180,87 @@
      fhir:text [ fhir:v "What is your highest level of education?" ] ;
      fhir:type [ fhir:v "choice" ] ;
      fhir:answerValueSet [
-       fhir:v "https://voicecollab.ai/fhir/ValueSet/Highest-Education"^^xsd:anyURI ;
-       fhir:link <https://voicecollab.ai/fhir/ValueSet/Highest-Education>
+       fhir:v "https://voicecollab.ai/fhir/ValueSet/EducationLevel"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/ValueSet/EducationLevel>
      ]
   ] [
-     fhir:linkId [ fhir:v "iep" ] ;
-     fhir:text [ fhir:v "Do you have an individualized education plan or some other adaptive education plan? " ] ;
-     fhir:type [ fhir:v "choice" ] ;
-     fhir:answerValueSet [
-       fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
-       fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
-     ]
-  ] [
-     fhir:linkId [ fhir:v "education_caregiver" ] ;
-     fhir:text [ fhir:v "What is your parent’s/caregiver's highest level of education?" ] ;
-     fhir:type [ fhir:v "choice" ] ;
-     fhir:answerValueSet [
-       fhir:v "https://voicecollab.ai/fhir/ValueSet/Highest-Education"^^xsd:anyURI ;
-       fhir:link <https://voicecollab.ai/fhir/ValueSet/Highest-Education>
-     ]
-  ] [
-     fhir:linkId [ fhir:v "disability_status" ] ;
-     fhir:text [ fhir:v "What is your disability status?" ] ;
-     fhir:type [ fhir:v "choice" ] ;
-     fhir:answerValueSet [
-       fhir:v "https://voicecollab.ai/fhir/ValueSet/disability-status"^^xsd:anyURI ;
-       fhir:link <https://voicecollab.ai/fhir/ValueSet/disability-status>
-     ]
-  ] [
-     fhir:linkId [ fhir:v "disability_type" ] ;
-     fhir:text [ fhir:v "What types of disability(s) do you experience? Please choose all that apply" ] ;
-     fhir:type [ fhir:v "choice" ] ;
-     fhir:answerValueSet [
-       fhir:v "https://voicecollab.ai/fhir/ValueSet/disability-type"^^xsd:anyURI ;
-       fhir:link <https://voicecollab.ai/fhir/ValueSet/disability-type>
-     ]
-  ] [
-     fhir:linkId [ fhir:v "disability_label" ] ;
-     fhir:text [ fhir:v "Please specify your disability(s)? Consider those that are visible to others and those that are not visible to others." ] ;
-     fhir:type [ fhir:v "string" ]
+     fhir:linkId [ fhir:v "disability" ] ;
+     fhir:text [ fhir:v "Disability" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "disability_status" ] ;
+       fhir:text [ fhir:v "What is your disability status?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/disability-status"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/disability-status>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "disability_type" ] ;
+       fhir:text [ fhir:v "What types of disability(s) do you experience? Please choose all that apply" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/disability-type"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/disability-type>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "disability_label" ] ;
+       fhir:text [ fhir:v "Please specify your disability(s)? Consider those that are visible to others and those that are not visible to others." ] ;
+       fhir:type [ fhir:v "string" ]
+     ] [
+       fhir:linkId [ fhir:v "six_disability_questions" ] ;
+       fhir:text [ fhir:v "Please complete the following questions. Documentation: https://www2.census.gov/programs-surveys/acs/methodology/questionnaires/2023/quest23.pdf AND https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2021_ACSSubjectDefinitions.pdf (page 61)" ] ;
+       fhir:type [ fhir:v "group" ] ;
+       fhir:item ( [
+         fhir:linkId [ fhir:v "disability_Q1" ] ;
+         fhir:text [ fhir:v "Are you deaf, or do you have serious difficulty hearing?" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "disability_Q2" ] ;
+         fhir:text [ fhir:v "Are you blind, or do you have serious difficulty seeing, even when wearing glasses?" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "disability_Q3" ] ;
+         fhir:text [ fhir:v "Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions? (5 years old or older)" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "disability_Q4" ] ;
+         fhir:text [ fhir:v "Do you have serious difficulty walking or climbing stairs? (5 years old or older)" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "disability_Q5" ] ;
+         fhir:text [ fhir:v "Do you have difficulty dressing or bathing? (5 years old or older)" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "disability_Q6" ] ;
+         fhir:text [ fhir:v "Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a doctor’s office or shopping? (15 years old or older)" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] )
+     ] )
   ] [
      fhir:linkId [ fhir:v "employment_status" ] ;
      fhir:text [ fhir:v "What is your employment status? Choose all that apply " ] ;
@@ -237,24 +287,12 @@
      fhir:type [ fhir:v "integer" ]
   ] [
      fhir:linkId [ fhir:v "financial_assistance" ] ;
-     fhir:type [ fhir:v "group" ] ;
-     fhir:item ( [
-       fhir:linkId [ fhir:v "Q1" ] ;
-       fhir:text [ fhir:v "Do you take advantage of any of the following programs? Choose all that apply" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/financial-assistance"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/financial-assistance>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "Q2" ] ;
-       fhir:text [ fhir:v "Do you participate in any federally-funded income assistance programs?" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
-         fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
-       ]
-     ] )
+     fhir:text [ fhir:v "Do you take advantage of an income assistance program?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerValueSet [
+       fhir:v "https://voicecollab.ai/fhir/ValueSet/yesnosome"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/ValueSet/yesnosome>
+     ]
   ] [
      fhir:linkId [ fhir:v "immigration_status" ] ;
      fhir:text [ fhir:v "What is your immigration status?" ] ;

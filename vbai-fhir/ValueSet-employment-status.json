@@ -11,7 +11,7 @@
   "title" : "Employment Status",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2023-08-29T20:22:11+00:00",
+  "date" : "2023-09-15T16:24:43+00:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -23,91 +23,7 @@
   "description" : "Valueset for capturing Employment status",
   "compose" : {
     "include" : [{
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/employment-status",
-      "concept" : [{
-        "code" : "EF",
-        "display" : "Employed, freelance"
-      },
-      {
-        "code" : "EFT",
-        "display" : "Employed, full time"
-      },
-      {
-        "code" : "EPT",
-        "display" : "Employed, part time"
-      },
-      {
-        "code" : "EMPTJ",
-        "display" : "Employed, multiple part time jobs"
-      },
-      {
-        "code" : "S",
-        "display" : "Student"
-      },
-      {
-        "code" : "SE",
-        "display" : "Self-employed"
-      },
-      {
-        "code" : "R",
-        "display" : "Retired"
-      },
-      {
-        "code" : "U",
-        "display" : "Unemployed"
-      },
-      {
-        "code" : "O",
-        "display" : "Other"
-      }]
-    }]
-  },
-  "expansion" : {
-    "timestamp" : "2023-05-11T10:00:00Z",
-    "contains" : [{
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/employment-status",
-      "code" : "EF",
-      "display" : "Employed, freelance "
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/employment-status",
-      "code" : "EFT",
-      "display" : "Employed, full time"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/employment-status",
-      "code" : "EPT",
-      "display" : "Employed, part time"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/employment-status",
-      "code" : "EMPTJ",
-      "display" : "Employed, multiple part time jobs"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/employment-status",
-      "code" : "S",
-      "display" : "Student"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/employment-status",
-      "code" : "SE",
-      "display" : "Self-employed"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/employment-status",
-      "code" : "R",
-      "display" : "Retired"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/employment-status",
-      "code" : "U",
-      "display" : "Unemployed"
-    },
-    {
-      "system" : "https://voicecollab.ai/fhir/CodeSystem/employment-status",
-      "code" : "O",
-      "display" : "Other, please specify "
+      "valueSet" : ["http://terminology.hl7.org/ValueSet/v2-0066"]
     }]
   }
 }

@@ -48,12 +48,12 @@
     "linkId" : "primary_language",
     "text" : "What is your primary language?",
     "type" : "open-choice",
-    "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/select-language"
+    "answerValueSet" : "http://hl7.org/fhir/us/core/ValueSet/simple-language"
   },
   {
     "linkId" : "fluent_language",
     "text" : "Do you speak any additional language(s) fluently (similar to a native speaker)?",
-    "type" : "choice",
+    "type" : "open-choice",
     "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/fluent-language"
   },
   {
@@ -63,270 +63,181 @@
   },
   {
     "linkId" : "conditions_header",
-    "text" : "Do you have any of these conditions, diagnosed by a clinician? (Check all that apply if you currently have the condition) Voice Disorders",
+    "text" : "Do you have any of these conditions, diagnosed by a clinician? (Check all that apply if you currently have the condition)",
     "type" : "group",
     "item" : [{
-      "linkId" : "laryng_cancer",
-      "text" : "Laryngeal cancer",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
+      "linkId" : "vocal_disorders",
+      "text" : "vocal disorders",
+      "type" : "group",
+      "item" : [{
+        "linkId" : "laryngeal_cancer",
+        "text" : "Laryngeal cancer",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "vocal_fold_paralysis",
+        "text" : "Vocal fold paralysis",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "spas_dys",
+        "text" : "Spasmodic dysphonia / Laryngeal Tremor",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "rrp",
+        "text" : "Recurrent laryngeal papilloma (RRP)",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "benign_cord_lesion",
+        "text" : "Benign vocal cord lesion (nodule, polyp, or cyst)",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      }]
     },
     {
-      "linkId" : "voc_fold_paralysis",
-      "text" : "Vocal fold paralysis",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
+      "linkId" : "neurological_and_neurodegenerative_disorders",
+      "text" : "Neurological and neurodegenerative disorders",
+      "type" : "group",
+      "item" : [{
+        "linkId" : "dementia",
+        "text" : "Dementia",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "alzheimers",
+        "text" : "Alzheimer's",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "als",
+        "text" : "Amyotrophic Lateral Sclerosis (ALS) ",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "ataxia",
+        "text" : "Ataxia",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "parkinsons",
+        "text" : "Parkinson's",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      }]
     },
     {
-      "linkId" : "spas_dys",
-      "text" : "Spasmodic dysphonia / Laryngeal Tremor",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
+      "linkId" : "mood_and_psychiatric_disorders",
+      "text" : "Mood and psychiatric disorders",
+      "type" : "group",
+      "item" : [{
+        "linkId" : "depression_or_major_depressive_disorder",
+        "text" : "Depression or Major Depressive Disorder",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "bipolar",
+        "text" : "Bipolar Disorder",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "anxiety_disorder",
+        "text" : " Anxiety Disorder",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "schizophrenia",
+        "text" : "Schizophrenia",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      }]
     },
     {
-      "linkId" : "rrp",
-      "text" : "Recurrent laryngeal papilloma (RRP)",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "benign_cord_lesion",
-      "text" : "Benign vocal cord lesion",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "dementia",
-      "text" : "Dementia",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "alzheimers",
-      "text" : "Alzheimer's",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "stroke",
-      "text" : "Stroke",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "als",
-      "text" : "Amyotrophic Lateral Sclerosis (ALS) ",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "ataxia",
-      "text" : "Ataxia",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "parkinsons",
-      "text" : "Parkinson's",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "depression",
-      "text" : "Depression or Major Depressive Disorder",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "bipolar",
-      "text" : "Bipolar Disorder",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "gad",
-      "text" : "Generalized Anxiety Disorder (GAD)",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "ocd",
-      "text" : "Obsessive-Compulsive Disorder (OCD)",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "panic",
-      "text" : "Panic Disorder",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "ptsd",
-      "text" : "Post-Traumatic Stress Disorder (PTSD)",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "schizophrenia",
-      "text" : "Schizophrenia",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "soc_anx_dis",
-      "text" : "Social Anxiety Disorder",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "alcohol_subst_abuse",
-      "text" : "Alcohol or Substance Use Disorder",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "bpd",
-      "text" : "Borderline Personality Disorder (BPD)",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "asd",
-      "text" : "Autism Spectrum Disorder (ASD)",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "add_adhd",
-      "text" : "Attention-Deficit / Hyperactivity Disorder (ADHD)",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "ed",
-      "text" : "Eating Disorder (ED)",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "insomnia",
-      "text" : "Insomnia / sleep disorder",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "other_psych",
-      "text" : "Other psychiatric disorder",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "asthma",
-      "text" : "Asthma",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "copd",
-      "text" : "COPD",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "chronic_cough",
-      "text" : "Chronic Cough",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "osa",
-      "text" : "OSA",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "airway_stenosis",
-      "text" : "Airway Stenosis",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "autism",
-      "text" : "Autism Spectrum Disorder (ASD)",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
-    },
-    {
-      "linkId" : "speech_delay",
-      "text" : "Speech Delay",
-      "type" : "choice",
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"
+      "linkId" : "respiratory_disorders",
+      "text" : "Respiratory disorders",
+      "type" : "group",
+      "item" : [{
+        "linkId" : "asthma",
+        "text" : "Asthma",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "chronic_obstructive_pulmonary_disease",
+        "text" : "Chronic Obstructive Pulmonary Disease",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "chronic_cough",
+        "text" : "Chronic Cough",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "obstructive_sleep_apnea",
+        "text" : "Obstructive Sleep Apnea",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "airway_stenosis ",
+        "text" : "Airway Stenosis (e.g. subglottal)",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      }]
     }]
   },
   {
-    "linkId" : "read",
-    "text" : "Can you read?",
-    "type" : "choice",
-    "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/yesnosome"
-  },
-  {
-    "linkId" : "write",
-    "text" : "Can you write",
-    "type" : "choice",
-    "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/yesnosome"
-  },
-  {
-    "linkId" : "smart_device",
-    "text" : "Can you use a smart device? ",
-    "type" : "choice",
-    "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/yesnosome"
-  },
-  {
-    "linkId" : "smart_device_access",
-    "text" : "Do you have access to a smart device on a regular basis?  ",
-    "type" : "choice",
-    "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
-  },
-  {
-    "linkId" : "eligible_studies",
-    "text" : "Eligible Studies",
-    "type" : "choice",
-    "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/eligible-studies"
-  },
-  {
-    "linkId" : "contact_information",
-    "text" : "Contact Information",
+    "linkId" : "digital_literacy",
+    "text" : "Digital Literacy",
     "type" : "group",
     "item" : [{
-      "linkId" : "first_name",
-      "text" : "First Name",
-      "type" : "string"
+      "linkId" : "read",
+      "text" : "Can you read?",
+      "type" : "choice",
+      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/yesnosome"
     },
     {
-      "linkId" : "last_name",
-      "text" : "Last Name",
-      "type" : "string"
+      "linkId" : "write",
+      "text" : "Can you write",
+      "type" : "choice",
+      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/yesnosome"
     },
     {
-      "linkId" : "phone_number",
-      "text" : "Phone Number",
-      "type" : "string"
+      "linkId" : "smart_device",
+      "text" : "Can you use a smart device? ",
+      "type" : "choice",
+      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/yesnosome"
     },
     {
-      "linkId" : "subject_email",
-      "text" : "Subject's email",
-      "type" : "string"
-    },
-    {
-      "linkId" : "contact_info_stored",
-      "text" : "I want my contact information to be kept in a repository for this study which can be used to contact me to ask me to enroll in further studies or return important results. My information will not be shared with third parties.",
-      "type" : "string",
+      "linkId" : "smart_device_access",
+      "text" : "Do you have access to a smart device on a regular basis?  ",
+      "type" : "choice",
       "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
     }]
   },
   {
-    "linkId" : "review_and_Enroll",
+    "linkId" : "interested",
+    "text" : "Interested?",
+    "type" : "choice",
+    "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+  },
+  {
+    "linkId" : "review_and_enroll",
+    "text" : "Review and Enroll",
     "type" : "group",
     "item" : [{
       "linkId" : "enrollment",
@@ -371,6 +282,37 @@
       "text" : "Complete?",
       "type" : "choice",
       "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/enrollment-complete"
+    }]
+  },
+  {
+    "linkId" : "contact_information",
+    "text" : "Contact Information",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "first_name",
+      "text" : "First Name",
+      "type" : "string"
+    },
+    {
+      "linkId" : "last_name",
+      "text" : "Last Name",
+      "type" : "string"
+    },
+    {
+      "linkId" : "phone_number",
+      "text" : "Phone Number",
+      "type" : "string"
+    },
+    {
+      "linkId" : "subject_email",
+      "text" : "Subject's email",
+      "type" : "string"
+    },
+    {
+      "linkId" : "contact_info_stored",
+      "text" : "I want my contact information to be kept in a repository for this study which can be used to contact me to ask me to enroll in further studies or return important results. My information will not be shared with third parties.",
+      "type" : "string",
+      "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
     }]
   }]
 }

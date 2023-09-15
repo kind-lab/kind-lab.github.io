@@ -11,7 +11,7 @@
   <title value="Employment Status"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2023-08-29T20:22:11+00:00"/>
+  <date value="2023-09-15T16:24:43+00:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -23,91 +23,7 @@
   <description value="Valueset for capturing Employment status"/>
   <compose>
     <include>
-      <system value="https://voicecollab.ai/fhir/CodeSystem/employment-status"/>
-      <concept>
-        <code value="EF"/>
-        <display value="Employed, freelance"/>
-      </concept>
-      <concept>
-        <code value="EFT"/>
-        <display value="Employed, full time"/>
-      </concept>
-      <concept>
-        <code value="EPT"/>
-        <display value="Employed, part time"/>
-      </concept>
-      <concept>
-        <code value="EMPTJ"/>
-        <display value="Employed, multiple part time jobs"/>
-      </concept>
-      <concept>
-        <code value="S"/>
-        <display value="Student"/>
-      </concept>
-      <concept>
-        <code value="SE"/>
-        <display value="Self-employed"/>
-      </concept>
-      <concept>
-        <code value="R"/>
-        <display value="Retired"/>
-      </concept>
-      <concept>
-        <code value="U"/>
-        <display value="Unemployed"/>
-      </concept>
-      <concept>
-        <code value="O"/>
-        <display value="Other"/>
-      </concept>
+      <valueSet value="http://terminology.hl7.org/ValueSet/v2-0066"/>
     </include>
   </compose>
-  <expansion>
-    <timestamp value="2023-05-11T10:00:00Z"/>
-    <contains>
-      <system value="https://voicecollab.ai/fhir/CodeSystem/employment-status"/>
-      <code value="EF"/>
-      <display value="Employed, freelance "/>
-    </contains>
-    <contains>
-      <system value="https://voicecollab.ai/fhir/CodeSystem/employment-status"/>
-      <code value="EFT"/>
-      <display value="Employed, full time"/>
-    </contains>
-    <contains>
-      <system value="https://voicecollab.ai/fhir/CodeSystem/employment-status"/>
-      <code value="EPT"/>
-      <display value="Employed, part time"/>
-    </contains>
-    <contains>
-      <system value="https://voicecollab.ai/fhir/CodeSystem/employment-status"/>
-      <code value="EMPTJ"/>
-      <display value="Employed, multiple part time jobs"/>
-    </contains>
-    <contains>
-      <system value="https://voicecollab.ai/fhir/CodeSystem/employment-status"/>
-      <code value="S"/>
-      <display value="Student"/>
-    </contains>
-    <contains>
-      <system value="https://voicecollab.ai/fhir/CodeSystem/employment-status"/>
-      <code value="SE"/>
-      <display value="Self-employed"/>
-    </contains>
-    <contains>
-      <system value="https://voicecollab.ai/fhir/CodeSystem/employment-status"/>
-      <code value="R"/>
-      <display value="Retired"/>
-    </contains>
-    <contains>
-      <system value="https://voicecollab.ai/fhir/CodeSystem/employment-status"/>
-      <code value="U"/>
-      <display value="Unemployed"/>
-    </contains>
-    <contains>
-      <system value="https://voicecollab.ai/fhir/CodeSystem/employment-status"/>
-      <code value="O"/>
-      <display value="Other, please specify "/>
-    </contains>
-  </expansion>
 </ValueSet>

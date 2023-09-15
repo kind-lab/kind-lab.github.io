@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="peds-who-completed-survey"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/CodeSystem/peds-who-completed-survey"/>
+  <version value="1.0.0"/>
+  <name value="PedsWhoCompletedSurvey"/>
+  <title value="Survey Completion Identifier Codes"/>
+  <status value="active"/>
+  <date value="2023-05-11"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="This code system identifies who has completed a specific survey or questionnaire."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="S"/>
+    <display value="Self"/>
+    <definition value="Survey was completed by self"/>
+  </concept>
+  <concept>
+    <code value="A"/>
+    <display value="Assistant"/>
+    <definition value="Survey was completed by an assistant"/>
+  </concept>
+  <concept>
+    <code value="P"/>
+    <display value="Parent/Caregiver"/>
+    <definition value="Survey was completed by a parent/cargiver"/>
+  </concept>
+</CodeSystem>

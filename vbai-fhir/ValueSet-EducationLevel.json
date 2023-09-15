@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "EducationLevel",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/ValueSet/EducationLevel",
+  "version" : "1.0.0",
+  "name" : "EducationLevel",
+  "title" : "Highest form of Education",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-09-15T16:24:43+00:00",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "For Capturing a users highest education level",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://terminology.hl7.org/ValueSet/v3-EducationLevel"]
+    },
+    {
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/education-level"
+    }]
+  }
+}

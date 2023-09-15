@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="SurveyCompletionQuestionnaire"/>
+  <meta>
+    <profile value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/Questionnaire/SurveyCompletionQuestionnaire"/>
+  <version value="1.0.0"/>
+  <title value="Survey Completion Questionnaire"/>
+  <status value="active"/>
+  <date value="2023-05-11"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <item>
+    <linkId value="Q1"/>
+    <text value="Who is participating in completing the survey?"/>
+    <type value="choice"/>
+    <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/whocompletedsurvey"/>
+  </item>
+</Questionnaire>

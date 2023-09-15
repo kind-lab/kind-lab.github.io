@@ -48,12 +48,12 @@
     <linkId value="primary_language"/>
     <text value="What is your primary language?"/>
     <type value="open-choice"/>
-    <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/select-language"/>
+    <answerValueSet value="http://hl7.org/fhir/us/core/ValueSet/simple-language"/>
   </item>
   <item>
     <linkId value="fluent_language"/>
     <text value="Do you speak any additional language(s) fluently (similar to a native speaker)?"/>
-    <type value="choice"/>
+    <type value="open-choice"/>
     <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/fluent-language"/>
   </item>
   <item>
@@ -63,270 +63,181 @@
   </item>
   <item>
     <linkId value="conditions_header"/>
-    <text value="Do you have any of these conditions, diagnosed by a clinician? (Check all that apply if you currently have the condition) Voice Disorders"/>
+    <text value="Do you have any of these conditions, diagnosed by a clinician? (Check all that apply if you currently have the condition)"/>
     <type value="group"/>
     <item>
-      <linkId value="laryng_cancer"/>
-      <text value="Laryngeal cancer"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
+      <linkId value="vocal_disorders"/>
+      <text value="vocal disorders"/>
+      <type value="group"/>
+      <item>
+        <linkId value="laryngeal_cancer"/>
+        <text value="Laryngeal cancer"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="vocal_fold_paralysis"/>
+        <text value="Vocal fold paralysis"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="spas_dys"/>
+        <text value="Spasmodic dysphonia / Laryngeal Tremor"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="rrp"/>
+        <text value="Recurrent laryngeal papilloma (RRP)"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="benign_cord_lesion"/>
+        <text value="Benign vocal cord lesion (nodule, polyp, or cyst)"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
     </item>
     <item>
-      <linkId value="voc_fold_paralysis"/>
-      <text value="Vocal fold paralysis"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
+      <linkId value="neurological_and_neurodegenerative_disorders"/>
+      <text value="Neurological and neurodegenerative disorders"/>
+      <type value="group"/>
+      <item>
+        <linkId value="dementia"/>
+        <text value="Dementia"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="alzheimers"/>
+        <text value="Alzheimer's"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="als"/>
+        <text value="Amyotrophic Lateral Sclerosis (ALS) "/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="ataxia"/>
+        <text value="Ataxia"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="parkinsons"/>
+        <text value="Parkinson's"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
     </item>
     <item>
-      <linkId value="spas_dys"/>
-      <text value="Spasmodic dysphonia / Laryngeal Tremor"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
+      <linkId value="mood_and_psychiatric_disorders"/>
+      <text value="Mood and psychiatric disorders"/>
+      <type value="group"/>
+      <item>
+        <linkId value="depression_or_major_depressive_disorder"/>
+        <text value="Depression or Major Depressive Disorder"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="bipolar"/>
+        <text value="Bipolar Disorder"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="anxiety_disorder"/>
+        <text value=" Anxiety Disorder"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="schizophrenia"/>
+        <text value="Schizophrenia"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
     </item>
     <item>
-      <linkId value="rrp"/>
-      <text value="Recurrent laryngeal papilloma (RRP)"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="benign_cord_lesion"/>
-      <text value="Benign vocal cord lesion"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="dementia"/>
-      <text value="Dementia"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="alzheimers"/>
-      <text value="Alzheimer's"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="stroke"/>
-      <text value="Stroke"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="als"/>
-      <text value="Amyotrophic Lateral Sclerosis (ALS) "/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="ataxia"/>
-      <text value="Ataxia"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="parkinsons"/>
-      <text value="Parkinson's"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="depression"/>
-      <text value="Depression or Major Depressive Disorder"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="bipolar"/>
-      <text value="Bipolar Disorder"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="gad"/>
-      <text value="Generalized Anxiety Disorder (GAD)"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="ocd"/>
-      <text value="Obsessive-Compulsive Disorder (OCD)"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="panic"/>
-      <text value="Panic Disorder"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="ptsd"/>
-      <text value="Post-Traumatic Stress Disorder (PTSD)"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="schizophrenia"/>
-      <text value="Schizophrenia"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="soc_anx_dis"/>
-      <text value="Social Anxiety Disorder"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="alcohol_subst_abuse"/>
-      <text value="Alcohol or Substance Use Disorder"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="bpd"/>
-      <text value="Borderline Personality Disorder (BPD)"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="asd"/>
-      <text value="Autism Spectrum Disorder (ASD)"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="add_adhd"/>
-      <text value="Attention-Deficit / Hyperactivity Disorder (ADHD)"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="ed"/>
-      <text value="Eating Disorder (ED)"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="insomnia"/>
-      <text value="Insomnia / sleep disorder"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="other_psych"/>
-      <text value="Other psychiatric disorder"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="asthma"/>
-      <text value="Asthma"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="copd"/>
-      <text value="COPD"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="chronic_cough"/>
-      <text value="Chronic Cough"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="osa"/>
-      <text value="OSA"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="airway_stenosis"/>
-      <text value="Airway Stenosis"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="autism"/>
-      <text value="Autism Spectrum Disorder (ASD)"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
-    </item>
-    <item>
-      <linkId value="speech_delay"/>
-      <text value="Speech Delay"/>
-      <type value="choice"/>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/checked-unchecked"/>
+      <linkId value="respiratory_disorders"/>
+      <text value="Respiratory disorders"/>
+      <type value="group"/>
+      <item>
+        <linkId value="asthma"/>
+        <text value="Asthma"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="chronic_obstructive_pulmonary_disease"/>
+        <text value="Chronic Obstructive Pulmonary Disease"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="chronic_cough"/>
+        <text value="Chronic Cough"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="obstructive_sleep_apnea"/>
+        <text value="Obstructive Sleep Apnea"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="airway_stenosis "/>
+        <text value="Airway Stenosis (e.g. subglottal)"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
     </item>
   </item>
   <item>
-    <linkId value="read"/>
-    <text value="Can you read?"/>
-    <type value="choice"/>
-    <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/yesnosome"/>
-  </item>
-  <item>
-    <linkId value="write"/>
-    <text value="Can you write"/>
-    <type value="choice"/>
-    <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/yesnosome"/>
-  </item>
-  <item>
-    <linkId value="smart_device"/>
-    <text value="Can you use a smart device? "/>
-    <type value="choice"/>
-    <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/yesnosome"/>
-  </item>
-  <item>
-    <linkId value="smart_device_access"/>
-    <text value="Do you have access to a smart device on a regular basis?  "/>
-    <type value="choice"/>
-    <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
-  </item>
-  <item>
-    <linkId value="eligible_studies"/>
-    <text value="Eligible Studies"/>
-    <type value="choice"/>
-    <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/eligible-studies"/>
-  </item>
-  <item>
-    <linkId value="contact_information"/>
-    <text value="Contact Information"/>
+    <linkId value="digital_literacy"/>
+    <text value="Digital Literacy"/>
     <type value="group"/>
     <item>
-      <linkId value="first_name"/>
-      <text value="First Name"/>
-      <type value="string"/>
+      <linkId value="read"/>
+      <text value="Can you read?"/>
+      <type value="choice"/>
+      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/yesnosome"/>
     </item>
     <item>
-      <linkId value="last_name"/>
-      <text value="Last Name"/>
-      <type value="string"/>
+      <linkId value="write"/>
+      <text value="Can you write"/>
+      <type value="choice"/>
+      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/yesnosome"/>
     </item>
     <item>
-      <linkId value="phone_number"/>
-      <text value="Phone Number"/>
-      <type value="string"/>
+      <linkId value="smart_device"/>
+      <text value="Can you use a smart device? "/>
+      <type value="choice"/>
+      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/yesnosome"/>
     </item>
     <item>
-      <linkId value="subject_email"/>
-      <text value="Subject's email"/>
-      <type value="string"/>
-    </item>
-    <item>
-      <linkId value="contact_info_stored"/>
-      <text value="I want my contact information to be kept in a repository for this study which can be used to contact me to ask me to enroll in further studies or return important results. My information will not be shared with third parties."/>
-      <type value="string"/>
+      <linkId value="smart_device_access"/>
+      <text value="Do you have access to a smart device on a regular basis?  "/>
+      <type value="choice"/>
       <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
     </item>
   </item>
   <item>
-    <linkId value="review_and_Enroll"/>
+    <linkId value="interested"/>
+    <text value="Interested?"/>
+    <type value="choice"/>
+    <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+  </item>
+  <item>
+    <linkId value="review_and_enroll"/>
+    <text value="Review and Enroll"/>
     <type value="group"/>
     <item>
       <linkId value="enrollment"/>
@@ -371,6 +282,37 @@
       <text value="Complete?"/>
       <type value="choice"/>
       <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/enrollment-complete"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="contact_information"/>
+    <text value="Contact Information"/>
+    <type value="group"/>
+    <item>
+      <linkId value="first_name"/>
+      <text value="First Name"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <linkId value="last_name"/>
+      <text value="Last Name"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <linkId value="phone_number"/>
+      <text value="Phone Number"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <linkId value="subject_email"/>
+      <text value="Subject's email"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <linkId value="contact_info_stored"/>
+      <text value="I want my contact information to be kept in a repository for this study which can be used to contact me to ask me to enroll in further studies or return important results. My information will not be shared with third parties."/>
+      <type value="string"/>
+      <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
     </item>
   </item>
 </Questionnaire>

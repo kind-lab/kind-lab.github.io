@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "peds-who-completed-survey",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/CodeSystem/peds-who-completed-survey",
+  "version" : "1.0.0",
+  "name" : "PedsWhoCompletedSurvey",
+  "title" : "Survey Completion Identifier Codes",
+  "status" : "active",
+  "date" : "2023-05-11",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "This code system identifies who has completed a specific survey or questionnaire.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "S",
+    "display" : "Self",
+    "definition" : "Survey was completed by self"
+  },
+  {
+    "code" : "A",
+    "display" : "Assistant",
+    "definition" : "Survey was completed by an assistant"
+  },
+  {
+    "code" : "P",
+    "display" : "Parent/Caregiver",
+    "definition" : "Survey was completed by a parent/cargiver"
+  }]
+}

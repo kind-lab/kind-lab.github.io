@@ -9,7 +9,7 @@
   <version value="1.0.0"/>
   <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2023-08-29T20:22:11+00:00"/>
+  <date value="2023-09-15T16:24:43+00:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -22,26 +22,20 @@
   <packageId value="kindlab.fhir.vbai"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
-  <dependsOn id="hl7tx">
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
-      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
-    </extension>
-    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
-    <packageId value="hl7.terminology.r4"/>
-    <version value="5.0.0"/>
-  </dependsOn>
-  <dependsOn id="hl7ext">
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
-      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
-    </extension>
-    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
-    <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="1.0.0"/>
-  </dependsOn>
   <dependsOn id="hl7_fhir_us_core">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <packageId value="hl7.fhir.us.core"/>
     <version value="5.0.1"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_extensions">
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_terminology">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology"/>
+    <version value="5.2.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -843,6 +837,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/EducationLevel"/>
+      </reference>
+      <name value="Highest form of Education"/>
+      <description value="For Capturing a users highest education level"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/eligible-studies"/>
       </reference>
       <name value="Eligible studies ValueSet"/>
@@ -1232,6 +1237,17 @@
       </reference>
       <name value="recordig ValueSet"/>
       <description value="The Codes used by recording"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/seasonal-allergies"/>
+      </reference>
+      <name value="ValueSet for Confounders Season Allergies"/>
+      <description value="This Valueset is designed for confounders questionnaire."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3087,6 +3103,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/education-level"/>
+      </reference>
+      <name value="Education Level Code System"/>
+      <description value="A comprehensive code system for identifying the highest level of education attained by a child, used in questionnaire contexts."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/eligible-studies"/>
       </reference>
       <name value="Eligibility Criteria for Study Enrollment"/>
@@ -3263,6 +3290,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/peds-who-completed-survey"/>
+      </reference>
+      <name value="Survey Completion Identifier Codes"/>
+      <description value="This code system identifies who has completed a specific survey or questionnaire."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/perspiration-frequency"/>
       </reference>
       <name value="Perspiration Frequency Codes for Questionnaires"/>
@@ -3300,6 +3338,17 @@
       </reference>
       <name value="Recording Version Codes"/>
       <description value="A comprehensive set of codes representing different versions of recordings."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/seasonal-allergies"/>
+      </reference>
+      <name value="Codes for Confounders Season Allergies"/>
+      <description value="This code system is designed for confounders questionnaire."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -5067,17 +5116,6 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/EligibleStudies"/>
-      </reference>
-      <name value="Eligible Studies"/>
-      <description value="Eligible Studies"/>
-      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
         <reference value="Questionnaire/Enrollment"/>
       </reference>
       <name value="Enrollment Questionnaire"/>
@@ -5313,6 +5351,17 @@
       </reference>
       <name value="Stroop Questionniare"/>
       <description value="Stroop Questionniare for Neuro Cohort"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/SurveyCompletionQuestionnaire"/>
+      </reference>
+      <name value="Survey Completion Questionnaire"/>
+      <description value="Survey Completion Questionnaire"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
@@ -5925,6 +5974,14 @@
         </extension>
         <nameUrl value="brief_fhir_intro.html"/>
         <title value="Brief Fhir Intro"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="protocol.html"/>
+        </extension>
+        <nameUrl value="protocol.html"/>
+        <title value="Protocol"/>
         <generation value="markdown"/>
       </page>
     </page>

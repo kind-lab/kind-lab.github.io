@@ -23,161 +23,186 @@
     }]
   }],
   "item" : [{
-    "linkId" : "smoking",
-    "text" : "Have you ever smoked regularly (more than a few times a month for at least two months)? This includes tobacco, cannabis, vapes, e-cigarettes, hookah, or pipes.",
-    "type" : "choice",
-    "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/smoking-status",
+    "linkId" : "Lifestyle",
+    "text" : "LifeStyle",
+    "type" : "group",
     "item" : [{
-      "linkId" : "smoking_q2",
-      "text" : "At what age did you start smoking?",
-      "type" : "integer",
-      "enableWhen" : [{
-        "question" : "smoking",
-        "operator" : "=",
-        "answerString" : "If I used to smoke OR I currently smoke"
-      }]
-    },
-    {
-      "linkId" : "smoking_q3",
-      "text" : "What age did you stop?",
-      "type" : "integer",
-      "enableWhen" : [{
-        "question" : "smoking",
-        "operator" : "=",
-        "answerString" : "If I used to smoke"
-      }]
-    },
-    {
-      "linkId" : "smoking_q4",
-      "text" : "Checklist of different types (choose all that apply):",
-      "type" : "open-choice",
-      "enableWhen" : [{
-        "question" : "smoking",
-        "operator" : "=",
-        "answerString" : "If I used to smoke OR I currently smoke"
-      }],
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/smoking-types"
-    },
-    {
-      "linkId" : "smoking_q5",
-      "text" : "How often do/did you smoke?",
-      "type" : "string",
-      "enableWhen" : [{
-        "question" : "smoking",
-        "operator" : "=",
-        "answerString" : "If I used to smoke OR I currently smoke"
-      }],
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/smoking-times"
-    },
-    {
-      "linkId" : "smoking_q6",
-      "text" : "Have you been a regular smoker or not within the last 3 years?",
+      "linkId" : "smoking",
+      "text" : "Have you ever smoked regularly (more than a few times a month for at least two months)? This includes tobacco, cannabis, vapes, e-cigarettes, hookah, or pipes.",
       "type" : "choice",
-      "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
-    }]
-  },
-  {
-    "linkId" : "alcohol",
-    "text" : "Do you drink alcohol?",
-    "type" : "choice",
-    "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136",
-    "item" : [{
-      "linkId" : "alcohol_q2",
-      "text" : "How often do you have at least one drink containing alcohol? Drinks can be beer, wine, shots of liquor, cocktails containing a shot of liquor",
-      "type" : "choice",
-      "enableWhen" : [{
-        "question" : "alcohol",
-        "operator" : "=",
-        "answerString" : "If Yes"
-      }],
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-frequency"
-    },
-    {
-      "linkId" : "alcohol_q3",
-      "text" : "How many drinks containing alcohol do you have on a typical day when you are drinking? One drink is 12 oz. beer, 5 oz. wine, 1.5 oz. (one shot) liquor",
-      "type" : "choice",
-      "enableWhen" : [{
-        "question" : "alcohol",
-        "operator" : "=",
-        "answerString" : "If Yes"
-      }],
-      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-amount"
-    },
-    {
-      "linkId" : "alcohol_q4",
-      "text" : "Have you drunk alcohol today?",
-      "type" : "choice",
-      "enableWhen" : [{
-        "question" : "alcohol",
-        "operator" : "=",
-        "answerString" : "If Yes"
-      }],
-      "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136",
+      "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/smoking-status",
       "item" : [{
-        "linkId" : "alcohol_q5",
-        "text" : "How many drinks did you have?",
+        "linkId" : "smoking_q2",
+        "text" : "At what age did you start smoking?",
         "type" : "integer",
         "enableWhen" : [{
-          "question" : "alcohol_q4",
+          "question" : "smoking",
           "operator" : "=",
-          "answerString" : "If Yes"
+          "answerString" : "If I used to smoke OR I currently smoke"
         }]
+      },
+      {
+        "linkId" : "smoking_q3",
+        "text" : "What age did you stop?",
+        "type" : "integer",
+        "enableWhen" : [{
+          "question" : "smoking",
+          "operator" : "=",
+          "answerString" : "If I used to smoke"
+        }]
+      },
+      {
+        "linkId" : "smoking_q4",
+        "text" : "Checklist of different types (choose all that apply):",
+        "type" : "open-choice",
+        "enableWhen" : [{
+          "question" : "smoking",
+          "operator" : "=",
+          "answerString" : "If I used to smoke OR I currently smoke"
+        }],
+        "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/smoking-types"
+      },
+      {
+        "linkId" : "smoking_q5",
+        "text" : "How often do/did you smoke?",
+        "type" : "string",
+        "enableWhen" : [{
+          "question" : "smoking",
+          "operator" : "=",
+          "answerString" : "If I used to smoke OR I currently smoke"
+        }],
+        "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/smoking-times"
+      },
+      {
+        "linkId" : "smoking_q6",
+        "text" : "Have you been a regular smoker or not within the last 3 years?",
+        "type" : "choice",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
       }]
     },
     {
-      "linkId" : "alcohol_q6",
-      "text" : "Have you ever required rehab/counseling for heavy alcohol use?",
+      "linkId" : "alcohol",
+      "text" : "Do you drink alcohol?",
       "type" : "choice",
-      "enableWhen" : [{
-        "question" : "alcohol",
-        "operator" : "=",
-        "answerString" : "If Yes"
-      }],
-      "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136",
+      "item" : [{
+        "linkId" : "alcohol_q2",
+        "text" : "How often do you have at least one drink containing alcohol? Drinks can be beer, wine, shots of liquor, cocktails containing a shot of liquor",
+        "type" : "choice",
+        "enableWhen" : [{
+          "question" : "alcohol",
+          "operator" : "=",
+          "answerString" : "If Yes"
+        }],
+        "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-frequency"
+      },
+      {
+        "linkId" : "alcohol_q3",
+        "text" : "How many drinks containing alcohol do you have on a typical day when you are drinking? One drink is 12 oz. beer, 5 oz. wine, 1.5 oz. (one shot) liquor",
+        "type" : "choice",
+        "enableWhen" : [{
+          "question" : "alcohol",
+          "operator" : "=",
+          "answerString" : "If Yes"
+        }],
+        "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-amount"
+      },
+      {
+        "linkId" : "alcohol_q4",
+        "text" : "Have you drunk alcohol today?",
+        "type" : "choice",
+        "enableWhen" : [{
+          "question" : "alcohol",
+          "operator" : "=",
+          "answerString" : "If Yes"
+        }],
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136",
+        "item" : [{
+          "linkId" : "alcohol_q5",
+          "text" : "How many drinks did you have?",
+          "type" : "integer",
+          "enableWhen" : [{
+            "question" : "alcohol_q4",
+            "operator" : "=",
+            "answerString" : "If Yes"
+          }]
+        }]
+      },
+      {
+        "linkId" : "alcohol_q6",
+        "text" : "Have you ever required rehab/counseling for heavy alcohol use?",
+        "type" : "choice",
+        "enableWhen" : [{
+          "question" : "alcohol",
+          "operator" : "=",
+          "answerString" : "If Yes"
+        }],
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "alcohol_q7",
+        "text" : "Are you currently in recovery for alcohol use?",
+        "type" : "choice",
+        "enableWhen" : [{
+          "question" : "alcohol",
+          "operator" : "=",
+          "answerString" : "If Yes"
+        }],
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      }]
     },
     {
-      "linkId" : "alcohol_q7",
-      "text" : "Are you currently in recovery for alcohol use?",
-      "type" : "choice",
-      "enableWhen" : [{
-        "question" : "alcohol",
-        "operator" : "=",
-        "answerString" : "If Yes"
-      }],
-      "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
-    }]
-  },
-  {
-    "linkId" : "substance_use",
-    "text" : "How many times in the past year have you used a recreational substance or used a prescription medication for nonmedical reasons? (Recreational substances include methamphetamines (speed, crystal), cannabis (marijuana, pot), inhalants (paint thinner, aerosol, glue), tranquilizers (Valium), barbiturates, cocaine, ecstasy, hallucinogens (LSD, mushrooms), or narcotics (heroin).\u00a0)",
-    "type" : "boolean",
-    "item" : [{
-      "linkId" : "substance_use_q2",
-      "text" : "Are you currently in recovery for substance use?\u00a0",
-      "type" : "string",
-      "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
-    },
-    {
-      "linkId" : "substance_use_q3",
-      "text" : "During the past TWO (2) WEEKS, about how often did you use any of the following medicines ON YOUR OWN, that is, without a doctor’s prescription, in greater amounts or longer than prescribed?\u00a0",
-      "type" : "string"
+      "linkId" : "substance_use",
+      "text" : "How many times in the past year have you used a recreational substance or used a prescription medication for nonmedical reasons? (Recreational substances include methamphetamines (speed, crystal), cannabis (marijuana, pot), inhalants (paint thinner, aerosol, glue), tranquilizers (Valium), barbiturates, cocaine, ecstasy, hallucinogens (LSD, mushrooms), or narcotics (heroin).\u00a0)",
+      "type" : "boolean",
+      "item" : [{
+        "linkId" : "substance_use_q2",
+        "text" : "Are you currently in recovery for substance use?\u00a0",
+        "type" : "string",
+        "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
+      },
+      {
+        "linkId" : "substance_use_q3",
+        "text" : "During the past TWO (2) WEEKS, about how often did you use any of the following medicines ON YOUR OWN, that is, without a doctor’s prescription, in greater amounts or longer than prescribed?\u00a0",
+        "type" : "string"
+      }]
     }]
   },
   {
     "linkId" : "caffeine",
-    "text" : "How many 8 oz / 230 ml / small) cups of coffee OR shots of espresso OR caffeinated teas have you had today?",
-    "type" : "integer"
+    "text" : "Caffeine",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "caffeine_q1",
+      "text" : "How many (8 oz / 230 ml / small) cups of coffee OR shots of espresso OR caffeinated teas have you had today?",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "caffeine_q2",
+      "text" : "What is your regular intake of caffeine?",
+      "type" : "string"
+    }]
   },
   {
     "linkId" : "hydration",
-    "text" : "How many 8 oz / 230 ml / small) cups of water have you had today?",
-    "type" : "integer"
+    "text" : "Hydration",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "hydration_q1",
+      "text" : "How many small (8 oz / 230 ml) cups of water have you had today?",
+      "type" : "integer"
+    },
+    {
+      "linkId" : "hydration_q2",
+      "text" : "What is your regular intake of water?",
+      "type" : "integer"
+    }]
   },
   {
-    "linkId" : "hydration_underarm_sweat",
-    "text" : "Do you experience underarm perspiration (sweat)?",
-    "type" : "string",
-    "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/perspiration-frequency"
+    "linkId" : "recent_use",
+    "text" : "Did you smoke/drink/use substances/caffeine/hydration in the last 12 hours?",
+    "type" : "choice",
+    "answerValueSet" : "http://terminology.hl7.org/ValueSet/v2-0136"
   },
   {
     "linkId" : "oral_dental",
@@ -199,6 +224,12 @@
     "linkId" : "allergies_cold",
     "text" : "Do you currently have allergies or cold-like symptoms?",
     "type" : "boolean"
+  },
+  {
+    "linkId" : "seasonal_allergies",
+    "text" : "Do you have seasonal allergies or cold-like symptoms which could impact your voice today? ",
+    "type" : "choice",
+    "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/seasonal-allergies"
   },
   {
     "linkId" : "tiredness",
@@ -462,11 +493,5 @@
         "answerString" : "If != None"
       }]
     }]
-  },
-  {
-    "linkId" : "reading_ability",
-    "text" : "How good do you think you are at reading out loud in [English/Spanish/French], that is reading out loud without making mistakes and understanding what you read at a normal rate?",
-    "type" : "string",
-    "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/reading-ability"
   }]
 }

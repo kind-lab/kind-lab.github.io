@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "SurveyCompletionQuestionnaire",
+  "meta" : {
+    "profile" : ["https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/Questionnaire/SurveyCompletionQuestionnaire",
+  "version" : "1.0.0",
+  "title" : "Survey Completion Questionnaire",
+  "status" : "active",
+  "date" : "2023-05-11",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "item" : [{
+    "linkId" : "Q1",
+    "text" : "Who is participating in completing the survey?",
+    "type" : "choice",
+    "answerValueSet" : "https://voicecollab.ai/fhir/ValueSet/whocompletedsurvey"
+  }]
+}

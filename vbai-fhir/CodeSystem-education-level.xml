@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="education-level"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/CodeSystem/education-level"/>
+  <version value="1.0.0"/>
+  <name value="EducationLevel"/>
+  <title value="Education Level Code System"/>
+  <status value="active"/>
+  <date value="2023-09-01"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="A comprehensive code system for identifying the highest level of education attained by a child, used in questionnaire contexts."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="NFE"/>
+    <display value="No Formal Education"/>
+    <definition value="The child has not received any formal education."/>
+  </concept>
+  <concept>
+    <code value="P"/>
+    <display value="Prefer Not to Answer"/>
+  </concept>
+  <concept>
+    <code value="O"/>
+    <display value="Other"/>
+  </concept>
+</CodeSystem>

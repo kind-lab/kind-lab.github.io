@@ -33,182 +33,205 @@
      ] )
   ] ) ; # 
   fhir:item ( [
-     fhir:linkId [ fhir:v "smoking" ] ;
-     fhir:text [ fhir:v "Have you ever smoked regularly (more than a few times a month for at least two months)? This includes tobacco, cannabis, vapes, e-cigarettes, hookah, or pipes." ] ;
-     fhir:type [ fhir:v "choice" ] ;
-     fhir:answerValueSet [
-       fhir:v "https://voicecollab.ai/fhir/ValueSet/smoking-status"^^xsd:anyURI ;
-       fhir:link <https://voicecollab.ai/fhir/ValueSet/smoking-status>
-     ] ;
+     fhir:linkId [ fhir:v "Lifestyle" ] ;
+     fhir:text [ fhir:v "LifeStyle" ] ;
+     fhir:type [ fhir:v "group" ] ;
      fhir:item ( [
-       fhir:linkId [ fhir:v "smoking_q2" ] ;
-       fhir:text [ fhir:v "At what age did you start smoking?" ] ;
-       fhir:type [ fhir:v "integer" ] ;
-       fhir:enableWhen ( [
-         fhir:question [ fhir:v "smoking" ] ;
-         fhir:operator [ fhir:v "=" ] ;
-         fhir:answer [ fhir:v "If I used to smoke OR I currently smoke" ]
+       fhir:linkId [ fhir:v "smoking" ] ;
+       fhir:text [ fhir:v "Have you ever smoked regularly (more than a few times a month for at least two months)? This includes tobacco, cannabis, vapes, e-cigarettes, hookah, or pipes." ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/smoking-status"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/smoking-status>
+       ] ;
+       fhir:item ( [
+         fhir:linkId [ fhir:v "smoking_q2" ] ;
+         fhir:text [ fhir:v "At what age did you start smoking?" ] ;
+         fhir:type [ fhir:v "integer" ] ;
+         fhir:enableWhen ( [
+           fhir:question [ fhir:v "smoking" ] ;
+           fhir:operator [ fhir:v "=" ] ;
+           fhir:answer [ fhir:v "If I used to smoke OR I currently smoke" ]
+         ] )
+       ] [
+         fhir:linkId [ fhir:v "smoking_q3" ] ;
+         fhir:text [ fhir:v "What age did you stop?" ] ;
+         fhir:type [ fhir:v "integer" ] ;
+         fhir:enableWhen ( [
+           fhir:question [ fhir:v "smoking" ] ;
+           fhir:operator [ fhir:v "=" ] ;
+           fhir:answer [ fhir:v "If I used to smoke" ]
+         ] )
+       ] [
+         fhir:linkId [ fhir:v "smoking_q4" ] ;
+         fhir:text [ fhir:v "Checklist of different types (choose all that apply):" ] ;
+         fhir:type [ fhir:v "open-choice" ] ;
+         fhir:enableWhen ( [
+           fhir:question [ fhir:v "smoking" ] ;
+           fhir:operator [ fhir:v "=" ] ;
+           fhir:answer [ fhir:v "If I used to smoke OR I currently smoke" ]
+         ] ) ;
+         fhir:answerValueSet [
+           fhir:v "https://voicecollab.ai/fhir/ValueSet/smoking-types"^^xsd:anyURI ;
+           fhir:link <https://voicecollab.ai/fhir/ValueSet/smoking-types>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "smoking_q5" ] ;
+         fhir:text [ fhir:v "How often do/did you smoke?" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:enableWhen ( [
+           fhir:question [ fhir:v "smoking" ] ;
+           fhir:operator [ fhir:v "=" ] ;
+           fhir:answer [ fhir:v "If I used to smoke OR I currently smoke" ]
+         ] ) ;
+         fhir:answerValueSet [
+           fhir:v "https://voicecollab.ai/fhir/ValueSet/smoking-times"^^xsd:anyURI ;
+           fhir:link <https://voicecollab.ai/fhir/ValueSet/smoking-times>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "smoking_q6" ] ;
+         fhir:text [ fhir:v "Have you been a regular smoker or not within the last 3 years?" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
        ] )
      ] [
-       fhir:linkId [ fhir:v "smoking_q3" ] ;
-       fhir:text [ fhir:v "What age did you stop?" ] ;
-       fhir:type [ fhir:v "integer" ] ;
-       fhir:enableWhen ( [
-         fhir:question [ fhir:v "smoking" ] ;
-         fhir:operator [ fhir:v "=" ] ;
-         fhir:answer [ fhir:v "If I used to smoke" ]
-       ] )
-     ] [
-       fhir:linkId [ fhir:v "smoking_q4" ] ;
-       fhir:text [ fhir:v "Checklist of different types (choose all that apply):" ] ;
-       fhir:type [ fhir:v "open-choice" ] ;
-       fhir:enableWhen ( [
-         fhir:question [ fhir:v "smoking" ] ;
-         fhir:operator [ fhir:v "=" ] ;
-         fhir:answer [ fhir:v "If I used to smoke OR I currently smoke" ]
-       ] ) ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/smoking-types"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/smoking-types>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "smoking_q5" ] ;
-       fhir:text [ fhir:v "How often do/did you smoke?" ] ;
-       fhir:type [ fhir:v "string" ] ;
-       fhir:enableWhen ( [
-         fhir:question [ fhir:v "smoking" ] ;
-         fhir:operator [ fhir:v "=" ] ;
-         fhir:answer [ fhir:v "If I used to smoke OR I currently smoke" ]
-       ] ) ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/smoking-times"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/smoking-times>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "smoking_q6" ] ;
-       fhir:text [ fhir:v "Have you been a regular smoker or not within the last 3 years?" ] ;
+       fhir:linkId [ fhir:v "alcohol" ] ;
+       fhir:text [ fhir:v "Do you drink alcohol?" ] ;
        fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
-         fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
-       ]
-     ] )
-  ] [
-     fhir:linkId [ fhir:v "alcohol" ] ;
-     fhir:text [ fhir:v "Do you drink alcohol?" ] ;
-     fhir:type [ fhir:v "choice" ] ;
-     fhir:answerValueSet [
-       fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
-       fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
-     ] ;
-     fhir:item ( [
-       fhir:linkId [ fhir:v "alcohol_q2" ] ;
-       fhir:text [ fhir:v "How often do you have at least one drink containing alcohol? Drinks can be beer, wine, shots of liquor, cocktails containing a shot of liquor" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:enableWhen ( [
-         fhir:question [ fhir:v "alcohol" ] ;
-         fhir:operator [ fhir:v "=" ] ;
-         fhir:answer [ fhir:v "If Yes" ]
-       ] ) ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-frequency"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-frequency>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "alcohol_q3" ] ;
-       fhir:text [ fhir:v "How many drinks containing alcohol do you have on a typical day when you are drinking? One drink is 12 oz. beer, 5 oz. wine, 1.5 oz. (one shot) liquor" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:enableWhen ( [
-         fhir:question [ fhir:v "alcohol" ] ;
-         fhir:operator [ fhir:v "=" ] ;
-         fhir:answer [ fhir:v "If Yes" ]
-       ] ) ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-amount"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-amount>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "alcohol_q4" ] ;
-       fhir:text [ fhir:v "Have you drunk alcohol today?" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:enableWhen ( [
-         fhir:question [ fhir:v "alcohol" ] ;
-         fhir:operator [ fhir:v "=" ] ;
-         fhir:answer [ fhir:v "If Yes" ]
-       ] ) ;
        fhir:answerValueSet [
          fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
          fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
        ] ;
        fhir:item ( [
-         fhir:linkId [ fhir:v "alcohol_q5" ] ;
-         fhir:text [ fhir:v "How many drinks did you have?" ] ;
-         fhir:type [ fhir:v "integer" ] ;
+         fhir:linkId [ fhir:v "alcohol_q2" ] ;
+         fhir:text [ fhir:v "How often do you have at least one drink containing alcohol? Drinks can be beer, wine, shots of liquor, cocktails containing a shot of liquor" ] ;
+         fhir:type [ fhir:v "choice" ] ;
          fhir:enableWhen ( [
-           fhir:question [ fhir:v "alcohol_q4" ] ;
+           fhir:question [ fhir:v "alcohol" ] ;
            fhir:operator [ fhir:v "=" ] ;
            fhir:answer [ fhir:v "If Yes" ]
+         ] ) ;
+         fhir:answerValueSet [
+           fhir:v "https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-frequency"^^xsd:anyURI ;
+           fhir:link <https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-frequency>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "alcohol_q3" ] ;
+         fhir:text [ fhir:v "How many drinks containing alcohol do you have on a typical day when you are drinking? One drink is 12 oz. beer, 5 oz. wine, 1.5 oz. (one shot) liquor" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:enableWhen ( [
+           fhir:question [ fhir:v "alcohol" ] ;
+           fhir:operator [ fhir:v "=" ] ;
+           fhir:answer [ fhir:v "If Yes" ]
+         ] ) ;
+         fhir:answerValueSet [
+           fhir:v "https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-amount"^^xsd:anyURI ;
+           fhir:link <https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-amount>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "alcohol_q4" ] ;
+         fhir:text [ fhir:v "Have you drunk alcohol today?" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:enableWhen ( [
+           fhir:question [ fhir:v "alcohol" ] ;
+           fhir:operator [ fhir:v "=" ] ;
+           fhir:answer [ fhir:v "If Yes" ]
+         ] ) ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ] ;
+         fhir:item ( [
+           fhir:linkId [ fhir:v "alcohol_q5" ] ;
+           fhir:text [ fhir:v "How many drinks did you have?" ] ;
+           fhir:type [ fhir:v "integer" ] ;
+           fhir:enableWhen ( [
+             fhir:question [ fhir:v "alcohol_q4" ] ;
+             fhir:operator [ fhir:v "=" ] ;
+             fhir:answer [ fhir:v "If Yes" ]
+           ] )
          ] )
+       ] [
+         fhir:linkId [ fhir:v "alcohol_q6" ] ;
+         fhir:text [ fhir:v "Have you ever required rehab/counseling for heavy alcohol use?" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:enableWhen ( [
+           fhir:question [ fhir:v "alcohol" ] ;
+           fhir:operator [ fhir:v "=" ] ;
+           fhir:answer [ fhir:v "If Yes" ]
+         ] ) ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "alcohol_q7" ] ;
+         fhir:text [ fhir:v "Are you currently in recovery for alcohol use?" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:enableWhen ( [
+           fhir:question [ fhir:v "alcohol" ] ;
+           fhir:operator [ fhir:v "=" ] ;
+           fhir:answer [ fhir:v "If Yes" ]
+         ] ) ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
        ] )
      ] [
-       fhir:linkId [ fhir:v "alcohol_q6" ] ;
-       fhir:text [ fhir:v "Have you ever required rehab/counseling for heavy alcohol use?" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:enableWhen ( [
-         fhir:question [ fhir:v "alcohol" ] ;
-         fhir:operator [ fhir:v "=" ] ;
-         fhir:answer [ fhir:v "If Yes" ]
-       ] ) ;
-       fhir:answerValueSet [
-         fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
-         fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "alcohol_q7" ] ;
-       fhir:text [ fhir:v "Are you currently in recovery for alcohol use?" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:enableWhen ( [
-         fhir:question [ fhir:v "alcohol" ] ;
-         fhir:operator [ fhir:v "=" ] ;
-         fhir:answer [ fhir:v "If Yes" ]
-       ] ) ;
-       fhir:answerValueSet [
-         fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
-         fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
-       ]
-     ] )
-  ] [
-     fhir:linkId [ fhir:v "substance_use" ] ;
-     fhir:text [ fhir:v "How many times in the past year have you used a recreational substance or used a prescription medication for nonmedical reasons? (Recreational substances include methamphetamines (speed, crystal), cannabis (marijuana, pot), inhalants (paint thinner, aerosol, glue), tranquilizers (Valium), barbiturates, cocaine, ecstasy, hallucinogens (LSD, mushrooms), or narcotics (heroin). )" ] ;
-     fhir:type [ fhir:v "boolean" ] ;
-     fhir:item ( [
-       fhir:linkId [ fhir:v "substance_use_q2" ] ;
-       fhir:text [ fhir:v "Are you currently in recovery for substance use? " ] ;
-       fhir:type [ fhir:v "string" ] ;
-       fhir:answerValueSet [
-         fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
-         fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "substance_use_q3" ] ;
-       fhir:text [ fhir:v "During the past TWO (2) WEEKS, about how often did you use any of the following medicines ON YOUR OWN, that is, without a doctor’s prescription, in greater amounts or longer than prescribed? " ] ;
-       fhir:type [ fhir:v "string" ]
+       fhir:linkId [ fhir:v "substance_use" ] ;
+       fhir:text [ fhir:v "How many times in the past year have you used a recreational substance or used a prescription medication for nonmedical reasons? (Recreational substances include methamphetamines (speed, crystal), cannabis (marijuana, pot), inhalants (paint thinner, aerosol, glue), tranquilizers (Valium), barbiturates, cocaine, ecstasy, hallucinogens (LSD, mushrooms), or narcotics (heroin). )" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:item ( [
+         fhir:linkId [ fhir:v "substance_use_q2" ] ;
+         fhir:text [ fhir:v "Are you currently in recovery for substance use? " ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "substance_use_q3" ] ;
+         fhir:text [ fhir:v "During the past TWO (2) WEEKS, about how often did you use any of the following medicines ON YOUR OWN, that is, without a doctor’s prescription, in greater amounts or longer than prescribed? " ] ;
+         fhir:type [ fhir:v "string" ]
+       ] )
      ] )
   ] [
      fhir:linkId [ fhir:v "caffeine" ] ;
-     fhir:text [ fhir:v "How many 8 oz / 230 ml / small) cups of coffee OR shots of espresso OR caffeinated teas have you had today?" ] ;
-     fhir:type [ fhir:v "integer" ]
+     fhir:text [ fhir:v "Caffeine" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "caffeine_q1" ] ;
+       fhir:text [ fhir:v "How many (8 oz / 230 ml / small) cups of coffee OR shots of espresso OR caffeinated teas have you had today?" ] ;
+       fhir:type [ fhir:v "integer" ]
+     ] [
+       fhir:linkId [ fhir:v "caffeine_q2" ] ;
+       fhir:text [ fhir:v "What is your regular intake of caffeine?" ] ;
+       fhir:type [ fhir:v "string" ]
+     ] )
   ] [
      fhir:linkId [ fhir:v "hydration" ] ;
-     fhir:text [ fhir:v "How many 8 oz / 230 ml / small) cups of water have you had today?" ] ;
-     fhir:type [ fhir:v "integer" ]
+     fhir:text [ fhir:v "Hydration" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "hydration_q1" ] ;
+       fhir:text [ fhir:v "How many small (8 oz / 230 ml) cups of water have you had today?" ] ;
+       fhir:type [ fhir:v "integer" ]
+     ] [
+       fhir:linkId [ fhir:v "hydration_q2" ] ;
+       fhir:text [ fhir:v "What is your regular intake of water?" ] ;
+       fhir:type [ fhir:v "integer" ]
+     ] )
   ] [
-     fhir:linkId [ fhir:v "hydration_underarm_sweat" ] ;
-     fhir:text [ fhir:v "Do you experience underarm perspiration (sweat)?" ] ;
-     fhir:type [ fhir:v "string" ] ;
+     fhir:linkId [ fhir:v "recent_use" ] ;
+     fhir:text [ fhir:v "Did you smoke/drink/use substances/caffeine/hydration in the last 12 hours?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
      fhir:answerValueSet [
-       fhir:v "https://voicecollab.ai/fhir/ValueSet/perspiration-frequency"^^xsd:anyURI ;
-       fhir:link <https://voicecollab.ai/fhir/ValueSet/perspiration-frequency>
+       fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
      ]
   ] [
      fhir:linkId [ fhir:v "oral_dental" ] ;
@@ -232,6 +255,14 @@
      fhir:linkId [ fhir:v "allergies_cold" ] ;
      fhir:text [ fhir:v "Do you currently have allergies or cold-like symptoms?" ] ;
      fhir:type [ fhir:v "boolean" ]
+  ] [
+     fhir:linkId [ fhir:v "seasonal_allergies" ] ;
+     fhir:text [ fhir:v "Do you have seasonal allergies or cold-like symptoms which could impact your voice today? " ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerValueSet [
+       fhir:v "https://voicecollab.ai/fhir/ValueSet/seasonal-allergies"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/ValueSet/seasonal-allergies>
+     ]
   ] [
      fhir:linkId [ fhir:v "tiredness" ] ;
      fhir:text [ fhir:v "How tired are you? (0=not tired at all, 10=extremely tired)" ] ;
@@ -538,14 +569,6 @@
          fhir:answer [ fhir:v "If != None" ]
        ] )
      ] )
-  ] [
-     fhir:linkId [ fhir:v "reading_ability" ] ;
-     fhir:text [ fhir:v "How good do you think you are at reading out loud in [English/Spanish/French], that is reading out loud without making mistakes and understanding what you read at a normal rate?" ] ;
-     fhir:type [ fhir:v "string" ] ;
-     fhir:answerValueSet [
-       fhir:v "https://voicecollab.ai/fhir/ValueSet/reading-ability"^^xsd:anyURI ;
-       fhir:link <https://voicecollab.ai/fhir/ValueSet/reading-ability>
-     ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

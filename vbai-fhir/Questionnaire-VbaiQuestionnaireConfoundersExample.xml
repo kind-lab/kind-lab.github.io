@@ -23,161 +23,186 @@
     </telecom>
   </contact>
   <item>
-    <linkId value="smoking"/>
-    <text value="Have you ever smoked regularly (more than a few times a month for at least two months)? This includes tobacco, cannabis, vapes, e-cigarettes, hookah, or pipes."/>
-    <type value="choice"/>
-    <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/smoking-status"/>
+    <linkId value="Lifestyle"/>
+    <text value="LifeStyle"/>
+    <type value="group"/>
     <item>
-      <linkId value="smoking_q2"/>
-      <text value="At what age did you start smoking?"/>
-      <type value="integer"/>
-      <enableWhen>
-        <question value="smoking"/>
-        <operator value="="/>
-        <answerString value="If I used to smoke OR I currently smoke"/>
-      </enableWhen>
-    </item>
-    <item>
-      <linkId value="smoking_q3"/>
-      <text value="What age did you stop?"/>
-      <type value="integer"/>
-      <enableWhen>
-        <question value="smoking"/>
-        <operator value="="/>
-        <answerString value="If I used to smoke"/>
-      </enableWhen>
-    </item>
-    <item>
-      <linkId value="smoking_q4"/>
-      <text value="Checklist of different types (choose all that apply):"/>
-      <type value="open-choice"/>
-      <enableWhen>
-        <question value="smoking"/>
-        <operator value="="/>
-        <answerString value="If I used to smoke OR I currently smoke"/>
-      </enableWhen>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/smoking-types"/>
-    </item>
-    <item>
-      <linkId value="smoking_q5"/>
-      <text value="How often do/did you smoke?"/>
-      <type value="string"/>
-      <enableWhen>
-        <question value="smoking"/>
-        <operator value="="/>
-        <answerString value="If I used to smoke OR I currently smoke"/>
-      </enableWhen>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/smoking-times"/>
-    </item>
-    <item>
-      <linkId value="smoking_q6"/>
-      <text value="Have you been a regular smoker or not within the last 3 years?"/>
+      <linkId value="smoking"/>
+      <text value="Have you ever smoked regularly (more than a few times a month for at least two months)? This includes tobacco, cannabis, vapes, e-cigarettes, hookah, or pipes."/>
       <type value="choice"/>
-      <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
-    </item>
-  </item>
-  <item>
-    <linkId value="alcohol"/>
-    <text value="Do you drink alcohol?"/>
-    <type value="choice"/>
-    <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
-    <item>
-      <linkId value="alcohol_q2"/>
-      <text value="How often do you have at least one drink containing alcohol? Drinks can be beer, wine, shots of liquor, cocktails containing a shot of liquor"/>
-      <type value="choice"/>
-      <enableWhen>
-        <question value="alcohol"/>
-        <operator value="="/>
-        <answerString value="If Yes"/>
-      </enableWhen>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-frequency"/>
-    </item>
-    <item>
-      <linkId value="alcohol_q3"/>
-      <text value="How many drinks containing alcohol do you have on a typical day when you are drinking? One drink is 12 oz. beer, 5 oz. wine, 1.5 oz. (one shot) liquor"/>
-      <type value="choice"/>
-      <enableWhen>
-        <question value="alcohol"/>
-        <operator value="="/>
-        <answerString value="If Yes"/>
-      </enableWhen>
-      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-amount"/>
-    </item>
-    <item>
-      <linkId value="alcohol_q4"/>
-      <text value="Have you drunk alcohol today?"/>
-      <type value="choice"/>
-      <enableWhen>
-        <question value="alcohol"/>
-        <operator value="="/>
-        <answerString value="If Yes"/>
-      </enableWhen>
-      <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/smoking-status"/>
       <item>
-        <linkId value="alcohol_q5"/>
-        <text value="How many drinks did you have?"/>
+        <linkId value="smoking_q2"/>
+        <text value="At what age did you start smoking?"/>
         <type value="integer"/>
         <enableWhen>
-          <question value="alcohol_q4"/>
+          <question value="smoking"/>
           <operator value="="/>
-          <answerString value="If Yes"/>
+          <answerString value="If I used to smoke OR I currently smoke"/>
         </enableWhen>
+      </item>
+      <item>
+        <linkId value="smoking_q3"/>
+        <text value="What age did you stop?"/>
+        <type value="integer"/>
+        <enableWhen>
+          <question value="smoking"/>
+          <operator value="="/>
+          <answerString value="If I used to smoke"/>
+        </enableWhen>
+      </item>
+      <item>
+        <linkId value="smoking_q4"/>
+        <text value="Checklist of different types (choose all that apply):"/>
+        <type value="open-choice"/>
+        <enableWhen>
+          <question value="smoking"/>
+          <operator value="="/>
+          <answerString value="If I used to smoke OR I currently smoke"/>
+        </enableWhen>
+        <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/smoking-types"/>
+      </item>
+      <item>
+        <linkId value="smoking_q5"/>
+        <text value="How often do/did you smoke?"/>
+        <type value="string"/>
+        <enableWhen>
+          <question value="smoking"/>
+          <operator value="="/>
+          <answerString value="If I used to smoke OR I currently smoke"/>
+        </enableWhen>
+        <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/smoking-times"/>
+      </item>
+      <item>
+        <linkId value="smoking_q6"/>
+        <text value="Have you been a regular smoker or not within the last 3 years?"/>
+        <type value="choice"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
       </item>
     </item>
     <item>
-      <linkId value="alcohol_q6"/>
-      <text value="Have you ever required rehab/counseling for heavy alcohol use?"/>
+      <linkId value="alcohol"/>
+      <text value="Do you drink alcohol?"/>
       <type value="choice"/>
-      <enableWhen>
-        <question value="alcohol"/>
-        <operator value="="/>
-        <answerString value="If Yes"/>
-      </enableWhen>
       <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      <item>
+        <linkId value="alcohol_q2"/>
+        <text value="How often do you have at least one drink containing alcohol? Drinks can be beer, wine, shots of liquor, cocktails containing a shot of liquor"/>
+        <type value="choice"/>
+        <enableWhen>
+          <question value="alcohol"/>
+          <operator value="="/>
+          <answerString value="If Yes"/>
+        </enableWhen>
+        <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-frequency"/>
+      </item>
+      <item>
+        <linkId value="alcohol_q3"/>
+        <text value="How many drinks containing alcohol do you have on a typical day when you are drinking? One drink is 12 oz. beer, 5 oz. wine, 1.5 oz. (one shot) liquor"/>
+        <type value="choice"/>
+        <enableWhen>
+          <question value="alcohol"/>
+          <operator value="="/>
+          <answerString value="If Yes"/>
+        </enableWhen>
+        <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-amount"/>
+      </item>
+      <item>
+        <linkId value="alcohol_q4"/>
+        <text value="Have you drunk alcohol today?"/>
+        <type value="choice"/>
+        <enableWhen>
+          <question value="alcohol"/>
+          <operator value="="/>
+          <answerString value="If Yes"/>
+        </enableWhen>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+        <item>
+          <linkId value="alcohol_q5"/>
+          <text value="How many drinks did you have?"/>
+          <type value="integer"/>
+          <enableWhen>
+            <question value="alcohol_q4"/>
+            <operator value="="/>
+            <answerString value="If Yes"/>
+          </enableWhen>
+        </item>
+      </item>
+      <item>
+        <linkId value="alcohol_q6"/>
+        <text value="Have you ever required rehab/counseling for heavy alcohol use?"/>
+        <type value="choice"/>
+        <enableWhen>
+          <question value="alcohol"/>
+          <operator value="="/>
+          <answerString value="If Yes"/>
+        </enableWhen>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="alcohol_q7"/>
+        <text value="Are you currently in recovery for alcohol use?"/>
+        <type value="choice"/>
+        <enableWhen>
+          <question value="alcohol"/>
+          <operator value="="/>
+          <answerString value="If Yes"/>
+        </enableWhen>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
     </item>
     <item>
-      <linkId value="alcohol_q7"/>
-      <text value="Are you currently in recovery for alcohol use?"/>
-      <type value="choice"/>
-      <enableWhen>
-        <question value="alcohol"/>
-        <operator value="="/>
-        <answerString value="If Yes"/>
-      </enableWhen>
-      <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
-    </item>
-  </item>
-  <item>
-    <linkId value="substance_use"/>
-    <text value="How many times in the past year have you used a recreational substance or used a prescription medication for nonmedical reasons? (Recreational substances include methamphetamines (speed, crystal), cannabis (marijuana, pot), inhalants (paint thinner, aerosol, glue), tranquilizers (Valium), barbiturates, cocaine, ecstasy, hallucinogens (LSD, mushrooms), or narcotics (heroin). )"/>
-    <type value="boolean"/>
-    <item>
-      <linkId value="substance_use_q2"/>
-      <text value="Are you currently in recovery for substance use? "/>
-      <type value="string"/>
-      <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
-    </item>
-    <item>
-      <linkId value="substance_use_q3"/>
-      <text value="During the past TWO (2) WEEKS, about how often did you use any of the following medicines ON YOUR OWN, that is, without a doctor’s prescription, in greater amounts or longer than prescribed? "/>
-      <type value="string"/>
+      <linkId value="substance_use"/>
+      <text value="How many times in the past year have you used a recreational substance or used a prescription medication for nonmedical reasons? (Recreational substances include methamphetamines (speed, crystal), cannabis (marijuana, pot), inhalants (paint thinner, aerosol, glue), tranquilizers (Valium), barbiturates, cocaine, ecstasy, hallucinogens (LSD, mushrooms), or narcotics (heroin). )"/>
+      <type value="boolean"/>
+      <item>
+        <linkId value="substance_use_q2"/>
+        <text value="Are you currently in recovery for substance use? "/>
+        <type value="string"/>
+        <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+      </item>
+      <item>
+        <linkId value="substance_use_q3"/>
+        <text value="During the past TWO (2) WEEKS, about how often did you use any of the following medicines ON YOUR OWN, that is, without a doctor’s prescription, in greater amounts or longer than prescribed? "/>
+        <type value="string"/>
+      </item>
     </item>
   </item>
   <item>
     <linkId value="caffeine"/>
-    <text value="How many 8 oz / 230 ml / small) cups of coffee OR shots of espresso OR caffeinated teas have you had today?"/>
-    <type value="integer"/>
+    <text value="Caffeine"/>
+    <type value="group"/>
+    <item>
+      <linkId value="caffeine_q1"/>
+      <text value="How many (8 oz / 230 ml / small) cups of coffee OR shots of espresso OR caffeinated teas have you had today?"/>
+      <type value="integer"/>
+    </item>
+    <item>
+      <linkId value="caffeine_q2"/>
+      <text value="What is your regular intake of caffeine?"/>
+      <type value="string"/>
+    </item>
   </item>
   <item>
     <linkId value="hydration"/>
-    <text value="How many 8 oz / 230 ml / small) cups of water have you had today?"/>
-    <type value="integer"/>
+    <text value="Hydration"/>
+    <type value="group"/>
+    <item>
+      <linkId value="hydration_q1"/>
+      <text value="How many small (8 oz / 230 ml) cups of water have you had today?"/>
+      <type value="integer"/>
+    </item>
+    <item>
+      <linkId value="hydration_q2"/>
+      <text value="What is your regular intake of water?"/>
+      <type value="integer"/>
+    </item>
   </item>
   <item>
-    <linkId value="hydration_underarm_sweat"/>
-    <text value="Do you experience underarm perspiration (sweat)?"/>
-    <type value="string"/>
-    <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/perspiration-frequency"/>
+    <linkId value="recent_use"/>
+    <text value="Did you smoke/drink/use substances/caffeine/hydration in the last 12 hours?"/>
+    <type value="choice"/>
+    <answerValueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
   </item>
   <item>
     <linkId value="oral_dental"/>
@@ -199,6 +224,12 @@
     <linkId value="allergies_cold"/>
     <text value="Do you currently have allergies or cold-like symptoms?"/>
     <type value="boolean"/>
+  </item>
+  <item>
+    <linkId value="seasonal_allergies"/>
+    <text value="Do you have seasonal allergies or cold-like symptoms which could impact your voice today? "/>
+    <type value="choice"/>
+    <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/seasonal-allergies"/>
   </item>
   <item>
     <linkId value="tiredness"/>
@@ -462,11 +493,5 @@
         <answerString value="If != None"/>
       </enableWhen>
     </item>
-  </item>
-  <item>
-    <linkId value="reading_ability"/>
-    <text value="How good do you think you are at reading out loud in [English/Spanish/French], that is reading out loud without making mistakes and understanding what you read at a normal rate?"/>
-    <type value="string"/>
-    <answerValueSet value="https://voicecollab.ai/fhir/ValueSet/reading-ability"/>
   </item>
 </Questionnaire>

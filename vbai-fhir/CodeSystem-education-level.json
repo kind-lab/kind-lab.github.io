@@ -1,0 +1,39 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "education-level",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/CodeSystem/education-level",
+  "version" : "1.0.0",
+  "name" : "EducationLevel",
+  "title" : "Education Level Code System",
+  "status" : "active",
+  "date" : "2023-09-01",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "A comprehensive code system for identifying the highest level of education attained by a child, used in questionnaire contexts.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "NFE",
+    "display" : "No Formal Education",
+    "definition" : "The child has not received any formal education."
+  },
+  {
+    "code" : "P",
+    "display" : "Prefer Not to Answer"
+  },
+  {
+    "code" : "O",
+    "display" : "Other"
+  }]
+}

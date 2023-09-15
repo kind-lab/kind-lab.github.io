@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>KINDLAB.FHIR.VBAI\Highest form of Education - FHIR v4.0.1</title>
+    <title>Highest form of Education -  v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.48"}
-    h3,h4,h5,h6{--heading-prefix:"3.48"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.49"}
+    h3,h4,h5,h6{--heading-prefix:"3.49"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -101,6 +101,9 @@
   </li>
   <li>
     <a href="tutorial_table_of_contents.html">Tutorial</a>
+  </li>
+  <li>
+    <a href="protocol.html">Protocol</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -195,7 +198,7 @@
         
           Draft
           
-            as of 2023-08-29
+            as of 2023-09-15
           
         
       </td>
@@ -220,9 +223,7 @@
     <b>References</b>
   </p>
   
-<ul>
- <li><a href="Questionnaire-VbaiQuestionnaireDemographicExample.html">Demographic Surveys</a></li>
-</ul>
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
 
 
   <!-- insert intro if present -->
@@ -234,7 +235,7 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="http://terminology.hl7.org/3.1.0/ValueSet-v3-EducationLevel.html">EducationLevel</a></li><li>Include these codes as defined in <a href="CodeSystem-child-education.html"><code>https://voicecollab.ai/fhir/CodeSystem/child-education</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-NFE">NFE</a></td><td>No Formal Education</td><td>The child has not received any formal education.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-PS">PS</a></td><td>Pre-School</td><td>The child's highest level of education is pre-school.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-K">K</a></td><td>Kindergarden</td><td>The child's highest level of education is kindergarten.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-SE">SE</a></td><td>Some elementary school education</td><td>The child has some elementary school education.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G1">G1</a></td><td>Grade 1</td><td>The child's highest level of education is Grade 1.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G2">G2</a></td><td>Grade 2</td><td>The child's highest level of education is Grade 2.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G3">G3</a></td><td>Grade 3</td><td>The child's highest level of education is Grade 3.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G4">G4</a></td><td>Grade 4</td><td>The child's highest level of education is Grade 4.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G5">G5</a></td><td>Grade 5</td><td>The child's highest level of education is Grade 5.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G6">G6</a></td><td>Grade 6</td><td>The child's highest level of education is Grade 6.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G7">G7</a></td><td>Grade 7</td><td>The child's highest level of education is Grade 7.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G8">G8</a></td><td>Grade 8</td><td>The child's highest level of education is Grade 8.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G9">G9</a></td><td>Grade 9</td><td>The child's highest level of education is Grade 9.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G10">G10</a></td><td>Grade 10</td><td>The child's highest level of education is Grade 10.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G11">G11</a></td><td>Grade 11</td><td>The child's highest level of education is Grade 11.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G12">G12</a></td><td>Grade 12</td><td>The child's highest level of education is Grade 12.</td></tr></table></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="http://terminology.hl7.org/5.2.0/ValueSet-v3-EducationLevel.html">EducationLevel</a></li><li>Include these codes as defined in <a href="CodeSystem-child-education.html"><code>https://voicecollab.ai/fhir/CodeSystem/child-education</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-NFE">NFE</a></td><td>No Formal Education</td><td>The child has not received any formal education.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-PS">PS</a></td><td>Pre-School</td><td>The child's highest level of education is pre-school.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-K">K</a></td><td>Kindergarden</td><td>The child's highest level of education is kindergarten.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-SE">SE</a></td><td>Some elementary school education</td><td>The child has some elementary school education.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G1">G1</a></td><td>Grade 1</td><td>The child's highest level of education is Grade 1.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G2">G2</a></td><td>Grade 2</td><td>The child's highest level of education is Grade 2.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G3">G3</a></td><td>Grade 3</td><td>The child's highest level of education is Grade 3.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G4">G4</a></td><td>Grade 4</td><td>The child's highest level of education is Grade 4.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G5">G5</a></td><td>Grade 5</td><td>The child's highest level of education is Grade 5.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G6">G6</a></td><td>Grade 6</td><td>The child's highest level of education is Grade 6.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G7">G7</a></td><td>Grade 7</td><td>The child's highest level of education is Grade 7.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G8">G8</a></td><td>Grade 8</td><td>The child's highest level of education is Grade 8.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G9">G9</a></td><td>Grade 9</td><td>The child's highest level of education is Grade 9.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G10">G10</a></td><td>Grade 10</td><td>The child's highest level of education is Grade 10.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G11">G11</a></td><td>Grade 11</td><td>The child's highest level of education is Grade 11.</td></tr><tr><td><a href="CodeSystem-child-education.html#child-education-G12">G12</a></td><td>Grade 12</td><td>The child's highest level of education is Grade 12.</td></tr></table></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
@@ -321,7 +322,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 29, 2023 20:22+0000">2023-08-29</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 15, 2023 16:24+0000">2023-09-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -65,13 +65,13 @@
      fhir:text [ fhir:v "What is your primary language?" ] ;
      fhir:type [ fhir:v "open-choice" ] ;
      fhir:answerValueSet [
-       fhir:v "https://voicecollab.ai/fhir/ValueSet/select-language"^^xsd:anyURI ;
-       fhir:link <https://voicecollab.ai/fhir/ValueSet/select-language>
+       fhir:v "http://hl7.org/fhir/us/core/ValueSet/simple-language"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/ValueSet/simple-language>
      ]
   ] [
      fhir:linkId [ fhir:v "fluent_language" ] ;
      fhir:text [ fhir:v "Do you speak any additional language(s) fluently (similar to a native speaker)?" ] ;
-     fhir:type [ fhir:v "choice" ] ;
+     fhir:type [ fhir:v "open-choice" ] ;
      fhir:answerValueSet [
        fhir:v "https://voicecollab.ai/fhir/ValueSet/fluent-language"^^xsd:anyURI ;
        fhir:link <https://voicecollab.ai/fhir/ValueSet/fluent-language>
@@ -82,344 +82,229 @@
      fhir:type [ fhir:v "date" ]
   ] [
      fhir:linkId [ fhir:v "conditions_header" ] ;
-     fhir:text [ fhir:v "Do you have any of these conditions, diagnosed by a clinician? (Check all that apply if you currently have the condition) Voice Disorders" ] ;
+     fhir:text [ fhir:v "Do you have any of these conditions, diagnosed by a clinician? (Check all that apply if you currently have the condition)" ] ;
      fhir:type [ fhir:v "group" ] ;
      fhir:item ( [
-       fhir:linkId [ fhir:v "laryng_cancer" ] ;
-       fhir:text [ fhir:v "Laryngeal cancer" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
+       fhir:linkId [ fhir:v "vocal_disorders" ] ;
+       fhir:text [ fhir:v "vocal disorders" ] ;
+       fhir:type [ fhir:v "group" ] ;
+       fhir:item ( [
+         fhir:linkId [ fhir:v "laryngeal_cancer" ] ;
+         fhir:text [ fhir:v "Laryngeal cancer" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "vocal_fold_paralysis" ] ;
+         fhir:text [ fhir:v "Vocal fold paralysis" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "spas_dys" ] ;
+         fhir:text [ fhir:v "Spasmodic dysphonia / Laryngeal Tremor" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "rrp" ] ;
+         fhir:text [ fhir:v "Recurrent laryngeal papilloma (RRP)" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "benign_cord_lesion" ] ;
+         fhir:text [ fhir:v "Benign vocal cord lesion (nodule, polyp, or cyst)" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] )
      ] [
-       fhir:linkId [ fhir:v "voc_fold_paralysis" ] ;
-       fhir:text [ fhir:v "Vocal fold paralysis" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
+       fhir:linkId [ fhir:v "neurological_and_neurodegenerative_disorders" ] ;
+       fhir:text [ fhir:v "Neurological and neurodegenerative disorders" ] ;
+       fhir:type [ fhir:v "group" ] ;
+       fhir:item ( [
+         fhir:linkId [ fhir:v "dementia" ] ;
+         fhir:text [ fhir:v "Dementia" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "alzheimers" ] ;
+         fhir:text [ fhir:v "Alzheimer's" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "als" ] ;
+         fhir:text [ fhir:v "Amyotrophic Lateral Sclerosis (ALS) " ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "ataxia" ] ;
+         fhir:text [ fhir:v "Ataxia" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "parkinsons" ] ;
+         fhir:text [ fhir:v "Parkinson's" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] )
      ] [
-       fhir:linkId [ fhir:v "spas_dys" ] ;
-       fhir:text [ fhir:v "Spasmodic dysphonia / Laryngeal Tremor" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
+       fhir:linkId [ fhir:v "mood_and_psychiatric_disorders" ] ;
+       fhir:text [ fhir:v "Mood and psychiatric disorders" ] ;
+       fhir:type [ fhir:v "group" ] ;
+       fhir:item ( [
+         fhir:linkId [ fhir:v "depression_or_major_depressive_disorder" ] ;
+         fhir:text [ fhir:v "Depression or Major Depressive Disorder" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "bipolar" ] ;
+         fhir:text [ fhir:v "Bipolar Disorder" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "anxiety_disorder" ] ;
+         fhir:text [ fhir:v " Anxiety Disorder" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "schizophrenia" ] ;
+         fhir:text [ fhir:v "Schizophrenia" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] )
      ] [
-       fhir:linkId [ fhir:v "rrp" ] ;
-       fhir:text [ fhir:v "Recurrent laryngeal papilloma (RRP)" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "benign_cord_lesion" ] ;
-       fhir:text [ fhir:v "Benign vocal cord lesion" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "dementia" ] ;
-       fhir:text [ fhir:v "Dementia" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "alzheimers" ] ;
-       fhir:text [ fhir:v "Alzheimer's" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "stroke" ] ;
-       fhir:text [ fhir:v "Stroke" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "als" ] ;
-       fhir:text [ fhir:v "Amyotrophic Lateral Sclerosis (ALS) " ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "ataxia" ] ;
-       fhir:text [ fhir:v "Ataxia" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "parkinsons" ] ;
-       fhir:text [ fhir:v "Parkinson's" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "depression" ] ;
-       fhir:text [ fhir:v "Depression or Major Depressive Disorder" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "bipolar" ] ;
-       fhir:text [ fhir:v "Bipolar Disorder" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "gad" ] ;
-       fhir:text [ fhir:v "Generalized Anxiety Disorder (GAD)" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "ocd" ] ;
-       fhir:text [ fhir:v "Obsessive-Compulsive Disorder (OCD)" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "panic" ] ;
-       fhir:text [ fhir:v "Panic Disorder" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "ptsd" ] ;
-       fhir:text [ fhir:v "Post-Traumatic Stress Disorder (PTSD)" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "schizophrenia" ] ;
-       fhir:text [ fhir:v "Schizophrenia" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "soc_anx_dis" ] ;
-       fhir:text [ fhir:v "Social Anxiety Disorder" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "alcohol_subst_abuse" ] ;
-       fhir:text [ fhir:v "Alcohol or Substance Use Disorder" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "bpd" ] ;
-       fhir:text [ fhir:v "Borderline Personality Disorder (BPD)" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "asd" ] ;
-       fhir:text [ fhir:v "Autism Spectrum Disorder (ASD)" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "add_adhd" ] ;
-       fhir:text [ fhir:v "Attention-Deficit / Hyperactivity Disorder (ADHD)" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "ed" ] ;
-       fhir:text [ fhir:v "Eating Disorder (ED)" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "insomnia" ] ;
-       fhir:text [ fhir:v "Insomnia / sleep disorder" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "other_psych" ] ;
-       fhir:text [ fhir:v "Other psychiatric disorder" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "asthma" ] ;
-       fhir:text [ fhir:v "Asthma" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "copd" ] ;
-       fhir:text [ fhir:v "COPD" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "chronic_cough" ] ;
-       fhir:text [ fhir:v "Chronic Cough" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "osa" ] ;
-       fhir:text [ fhir:v "OSA" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "airway_stenosis" ] ;
-       fhir:text [ fhir:v "Airway Stenosis" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "autism" ] ;
-       fhir:text [ fhir:v "Autism Spectrum Disorder (ASD)" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
-     ] [
-       fhir:linkId [ fhir:v "speech_delay" ] ;
-       fhir:text [ fhir:v "Speech Delay" ] ;
-       fhir:type [ fhir:v "choice" ] ;
-       fhir:answerValueSet [
-         fhir:v "https://voicecollab.ai/fhir/ValueSet/checked-unchecked"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/ValueSet/checked-unchecked>
-       ]
+       fhir:linkId [ fhir:v "respiratory_disorders" ] ;
+       fhir:text [ fhir:v "Respiratory disorders" ] ;
+       fhir:type [ fhir:v "group" ] ;
+       fhir:item ( [
+         fhir:linkId [ fhir:v "asthma" ] ;
+         fhir:text [ fhir:v "Asthma" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "chronic_obstructive_pulmonary_disease" ] ;
+         fhir:text [ fhir:v "Chronic Obstructive Pulmonary Disease" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "chronic_cough" ] ;
+         fhir:text [ fhir:v "Chronic Cough" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "obstructive_sleep_apnea" ] ;
+         fhir:text [ fhir:v "Obstructive Sleep Apnea" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] [
+         fhir:linkId [ fhir:v "airway_stenosis " ] ;
+         fhir:text [ fhir:v "Airway Stenosis (e.g. subglottal)" ] ;
+         fhir:type [ fhir:v "choice" ] ;
+         fhir:answerValueSet [
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+         ]
+       ] )
      ] )
   ] [
-     fhir:linkId [ fhir:v "read" ] ;
-     fhir:text [ fhir:v "Can you read?" ] ;
-     fhir:type [ fhir:v "choice" ] ;
-     fhir:answerValueSet [
-       fhir:v "https://voicecollab.ai/fhir/ValueSet/yesnosome"^^xsd:anyURI ;
-       fhir:link <https://voicecollab.ai/fhir/ValueSet/yesnosome>
-     ]
-  ] [
-     fhir:linkId [ fhir:v "write" ] ;
-     fhir:text [ fhir:v "Can you write" ] ;
-     fhir:type [ fhir:v "choice" ] ;
-     fhir:answerValueSet [
-       fhir:v "https://voicecollab.ai/fhir/ValueSet/yesnosome"^^xsd:anyURI ;
-       fhir:link <https://voicecollab.ai/fhir/ValueSet/yesnosome>
-     ]
-  ] [
-     fhir:linkId [ fhir:v "smart_device" ] ;
-     fhir:text [ fhir:v "Can you use a smart device? " ] ;
-     fhir:type [ fhir:v "choice" ] ;
-     fhir:answerValueSet [
-       fhir:v "https://voicecollab.ai/fhir/ValueSet/yesnosome"^^xsd:anyURI ;
-       fhir:link <https://voicecollab.ai/fhir/ValueSet/yesnosome>
-     ]
-  ] [
-     fhir:linkId [ fhir:v "smart_device_access" ] ;
-     fhir:text [ fhir:v "Do you have access to a smart device on a regular basis?  " ] ;
-     fhir:type [ fhir:v "choice" ] ;
-     fhir:answerValueSet [
-       fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
-       fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
-     ]
-  ] [
-     fhir:linkId [ fhir:v "eligible_studies" ] ;
-     fhir:text [ fhir:v "Eligible Studies" ] ;
-     fhir:type [ fhir:v "choice" ] ;
-     fhir:answerValueSet [
-       fhir:v "https://voicecollab.ai/fhir/ValueSet/eligible-studies"^^xsd:anyURI ;
-       fhir:link <https://voicecollab.ai/fhir/ValueSet/eligible-studies>
-     ]
-  ] [
-     fhir:linkId [ fhir:v "contact_information" ] ;
-     fhir:text [ fhir:v "Contact Information" ] ;
+     fhir:linkId [ fhir:v "digital_literacy" ] ;
+     fhir:text [ fhir:v "Digital Literacy" ] ;
      fhir:type [ fhir:v "group" ] ;
      fhir:item ( [
-       fhir:linkId [ fhir:v "first_name" ] ;
-       fhir:text [ fhir:v "First Name" ] ;
-       fhir:type [ fhir:v "string" ]
+       fhir:linkId [ fhir:v "read" ] ;
+       fhir:text [ fhir:v "Can you read?" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/yesnosome"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/yesnosome>
+       ]
      ] [
-       fhir:linkId [ fhir:v "last_name" ] ;
-       fhir:text [ fhir:v "Last Name" ] ;
-       fhir:type [ fhir:v "string" ]
+       fhir:linkId [ fhir:v "write" ] ;
+       fhir:text [ fhir:v "Can you write" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/yesnosome"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/yesnosome>
+       ]
      ] [
-       fhir:linkId [ fhir:v "phone_number" ] ;
-       fhir:text [ fhir:v "Phone Number" ] ;
-       fhir:type [ fhir:v "string" ]
+       fhir:linkId [ fhir:v "smart_device" ] ;
+       fhir:text [ fhir:v "Can you use a smart device? " ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:answerValueSet [
+         fhir:v "https://voicecollab.ai/fhir/ValueSet/yesnosome"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/ValueSet/yesnosome>
+       ]
      ] [
-       fhir:linkId [ fhir:v "subject_email" ] ;
-       fhir:text [ fhir:v "Subject's email" ] ;
-       fhir:type [ fhir:v "string" ]
-     ] [
-       fhir:linkId [ fhir:v "contact_info_stored" ] ;
-       fhir:text [ fhir:v "I want my contact information to be kept in a repository for this study which can be used to contact me to ask me to enroll in further studies or return important results. My information will not be shared with third parties." ] ;
-       fhir:type [ fhir:v "string" ] ;
+       fhir:linkId [ fhir:v "smart_device_access" ] ;
+       fhir:text [ fhir:v "Do you have access to a smart device on a regular basis?  " ] ;
+       fhir:type [ fhir:v "choice" ] ;
        fhir:answerValueSet [
          fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
          fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
        ]
      ] )
   ] [
-     fhir:linkId [ fhir:v "review_and_Enroll" ] ;
+     fhir:linkId [ fhir:v "interested" ] ;
+     fhir:text [ fhir:v "Interested?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerValueSet [
+       fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
+     ]
+  ] [
+     fhir:linkId [ fhir:v "review_and_enroll" ] ;
+     fhir:text [ fhir:v "Review and Enroll" ] ;
      fhir:type [ fhir:v "group" ] ;
      fhir:item ( [
        fhir:linkId [ fhir:v "enrollment" ] ;
@@ -469,6 +354,35 @@
        fhir:answerValueSet [
          fhir:v "https://voicecollab.ai/fhir/ValueSet/enrollment-complete"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/ValueSet/enrollment-complete>
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "contact_information" ] ;
+     fhir:text [ fhir:v "Contact Information" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "first_name" ] ;
+       fhir:text [ fhir:v "First Name" ] ;
+       fhir:type [ fhir:v "string" ]
+     ] [
+       fhir:linkId [ fhir:v "last_name" ] ;
+       fhir:text [ fhir:v "Last Name" ] ;
+       fhir:type [ fhir:v "string" ]
+     ] [
+       fhir:linkId [ fhir:v "phone_number" ] ;
+       fhir:text [ fhir:v "Phone Number" ] ;
+       fhir:type [ fhir:v "string" ]
+     ] [
+       fhir:linkId [ fhir:v "subject_email" ] ;
+       fhir:text [ fhir:v "Subject's email" ] ;
+       fhir:type [ fhir:v "string" ]
+     ] [
+       fhir:linkId [ fhir:v "contact_info_stored" ] ;
+       fhir:text [ fhir:v "I want my contact information to be kept in a repository for this study which can be used to contact me to ask me to enroll in further studies or return important results. My information will not be shared with third parties." ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:answerValueSet [
+         fhir:v "http://terminology.hl7.org/ValueSet/v2-0136"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
        ]
      ] )
   ] ) . # 

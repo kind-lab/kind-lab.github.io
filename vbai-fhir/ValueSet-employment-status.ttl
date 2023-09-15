@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "Employment Status"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-08-29T20:22:11+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-15T16:24:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -30,75 +30,10 @@
   fhir:description [ fhir:v "Valueset for capturing Employment status"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/employment-status"^^xsd:anyURI ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "EF" ] ;
-         fhir:display [ fhir:v "Employed, freelance" ]
-       ] [
-         fhir:code [ fhir:v "EFT" ] ;
-         fhir:display [ fhir:v "Employed, full time" ]
-       ] [
-         fhir:code [ fhir:v "EPT" ] ;
-         fhir:display [ fhir:v "Employed, part time" ]
-       ] [
-         fhir:code [ fhir:v "EMPTJ" ] ;
-         fhir:display [ fhir:v "Employed, multiple part time jobs" ]
-       ] [
-         fhir:code [ fhir:v "S" ] ;
-         fhir:display [ fhir:v "Student" ]
-       ] [
-         fhir:code [ fhir:v "SE" ] ;
-         fhir:display [ fhir:v "Self-employed" ]
-       ] [
-         fhir:code [ fhir:v "R" ] ;
-         fhir:display [ fhir:v "Retired" ]
-       ] [
-         fhir:code [ fhir:v "U" ] ;
-         fhir:display [ fhir:v "Unemployed" ]
-       ] [
-         fhir:code [ fhir:v "O" ] ;
-         fhir:display [ fhir:v "Other" ]
+       fhir:valueSet ( [
+         fhir:v "http://terminology.hl7.org/ValueSet/v2-0066"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/ValueSet/v2-0066>
        ] )
-     ] )
-  ] ; # 
-  fhir:expansion [
-     fhir:timestamp [ fhir:v "2023-05-11T10:00:00Z"^^xsd:dateTime ] ;
-     fhir:contains ( [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/employment-status"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "EF" ] ;
-       fhir:display [ fhir:v "Employed, freelance " ]
-     ] [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/employment-status"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "EFT" ] ;
-       fhir:display [ fhir:v "Employed, full time" ]
-     ] [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/employment-status"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "EPT" ] ;
-       fhir:display [ fhir:v "Employed, part time" ]
-     ] [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/employment-status"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "EMPTJ" ] ;
-       fhir:display [ fhir:v "Employed, multiple part time jobs" ]
-     ] [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/employment-status"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "S" ] ;
-       fhir:display [ fhir:v "Student" ]
-     ] [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/employment-status"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "SE" ] ;
-       fhir:display [ fhir:v "Self-employed" ]
-     ] [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/employment-status"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "R" ] ;
-       fhir:display [ fhir:v "Retired" ]
-     ] [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/employment-status"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "U" ] ;
-       fhir:display [ fhir:v "Unemployed" ]
-     ] [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/employment-status"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "O" ] ;
-       fhir:display [ fhir:v "Other, please specify " ]
      ] )
   ] . # 
 

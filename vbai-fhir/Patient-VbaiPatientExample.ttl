@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>James Smith </b> male, DoB: 1999-04-01 ( id: 123456)</p><hr/></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>James Smith </b> male, DoB: 1999-04-01 ( id: 123456)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">100 Main St Metropolis Il 44130 USA </td></tr></table></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://voicecollab.ai/identifier/patient-id"^^xsd:anyURI ] ;
@@ -27,7 +27,14 @@
      fhir:given ( [ fhir:v "James" ] )
   ] ) ; # 
   fhir:gender [ fhir:v "male"] ; # 
-  fhir:birthDate [ fhir:v "1999-04-01"^^xsd:date] . # 
+  fhir:birthDate [ fhir:v "1999-04-01"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "100 Main St" ] ) ;
+     fhir:city [ fhir:v "Metropolis" ] ;
+     fhir:state [ fhir:v "Il" ] ;
+     fhir:postalCode [ fhir:v "44130" ] ;
+     fhir:country [ fhir:v "USA" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 
