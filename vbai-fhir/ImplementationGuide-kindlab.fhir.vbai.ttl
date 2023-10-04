@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "VoiceaBiomarkerforAI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-04T03:12:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-04T15:51:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -6196,6 +6196,21 @@
        ] ;
        fhir:name [ fhir:v "Enrollment Questionnaire" ] ;
        fhir:description [ fhir:v "Enrollment Questionnaire" ] ;
+       fhir:example [
+         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
+         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://voicecollab.ai/fhir/Questionnaire/FeedbackQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/FeedbackQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "FeedbackQuestionnaire" ] ;
+       fhir:description [ fhir:v "Questionnaire for providing feedback on the study" ] ;
        fhir:example [
          fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
          fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>

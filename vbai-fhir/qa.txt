@@ -3,7 +3,7 @@
 
 err = 6, warn = 957, info = 2
 IG Publisher Version: 1.4.11
-Generated Wed Oct 04 03:19:29 UTC 2023. FHIR version 4.0.1 for kindlab.fhir.vbai#1.0.0 (canonical = https://voicecollab.ai/fhir)
+Generated Wed Oct 04 15:56:44 UTC 2023. FHIR version 4.0.1 for kindlab.fhir.vbai#1.0.0 (canonical = https://voicecollab.ai/fhir)
  Build Errors : 14 / 4 / 0
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-Who-Completed-Survey : 0 / 1 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-Winograd-1 : 0 / 2 / 1
@@ -283,6 +283,7 @@ Generated Wed Oct 04 03:19:29 UTC 2023. FHIR version 4.0.1 for kindlab.fhir.vbai
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-DSM5 : 0 / 2 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-DyspneaIndex : 0 / 0 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-Enrollment : 0 / 7 / 1
+ /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-FeedbackQuestionnaire : 0 / 0 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-GAD7schema : 0 / 0 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-GeneralInformation : 0 / 2 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-LeicesterCough : 0 / 0 / 1
@@ -551,8 +552,8 @@ Generated Wed Oct 04 03:19:29 UTC 2023. FHIR version 4.0.1 for kindlab.fhir.vbai
 ERROR: /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/output/brief_fhir_intro.html#/html/body/div/div/div/div/div/p/a at Line 161, column 146: The link 'http://hl7.org/fhir/us/core/STU5/' for "US Core STU5" cannot be resolved
 ERROR: /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/output/index.html#/html/body/div/div/div/div/div/p/a at Line 206, column 146: The link 'http://hl7.org/fhir/us/core/STU5/' for "US Core STU5" cannot be resolved
 ERROR: /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/output/index.html#/html/body/div/div/div/div/div/p/a at Line 209, column 230: The link 'reporter.nih.gov/search/ZslK_vrR0kapVRnpwKvsmQ/project-details/10473236' for "Voice as a Biomarker for AI" cannot be resolved
-ERROR: /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/output/protocol.html#/html/body/div/div/div/div/div/div/a at Line 215, column 143: The link '/vbai-fhir/brief_fhir_intro.html' for "brief FHIR intro" cannot be resolved
-ERROR: /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/output/protocol.html#/html/body/div/div/div/div/div/p/a at Line 245, column 164: The link 'Questionnaire-EligibleStudies.html' for "EligibleStudies" cannot be resolved
+ERROR: /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/output/protocol.html#/html/body/div/div/div/div/div/div/a at Line 216, column 143: The link '/vbai-fhir/brief_fhir_intro.html' for "brief FHIR intro" cannot be resolved
+ERROR: /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/output/protocol.html#/html/body/div/div/div/div/div/ul/li/a at Line 251, column 8: The link 'Questionnaire-EligibleStudies.html' for "EligibleStudies" cannot be resolved
 ERROR: /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/output/tutorial_mood.html#/html/body/div/div/div/div/div/div/a at Line 165, column 143: The link '/vbai-fhir/brief_fhir_intro.html' for "brief FHIR intro" cannot be resolved
 ERROR: /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/output/tutorial_mood.html#/html/body/div/div/div/div/div/ol/li/a at Line 171, column 311: The link 'Questionnaire-EligibleStudies.html' for "EligibleStudies" cannot be resolved
 ERROR: /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/output/tutorial_neuro.html#/html/body/div/div/div/div/div/div/a at Line 165, column 143: The link '/vbai-fhir/brief_fhir_intro.html' for "brief FHIR intro" cannot be resolved
@@ -1177,7 +1178,7 @@ WARNING: ImagingStudy/VbaiImagingStudyExample: ImagingStudy.modality[0]: ValueSe
 WARNING: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.resource[270].name: value should not start or finish with whitespace 'Tumor invading RLN '
 WARNING: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.resource[303].name: value should not start or finish with whitespace 'Thyroplasty '
 WARNING: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.resource[306].name: value should not start or finish with whitespace 'Tumor invading RLN '
-WARNING: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.resource[523].name: value should not start or finish with whitespace ' Questionnaire Neuro PlanDefinition'
+WARNING: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.resource[524].name: value should not start or finish with whitespace ' Questionnaire Neuro PlanDefinition'
 == fsh-generated/resources/Media-VbaiImagingMediaExample.json ==
 == fsh-generated/resources/Media-VbaiWaveformMediaExample.json ==
 == fsh-generated/resources/Observation-VbaiBodyHeightExample.json ==
@@ -1255,6 +1256,7 @@ WARNING: Questionnaire/Enrollment: Questionnaire.item[6].item[2].item[2].text: v
 WARNING: Questionnaire/Enrollment: Questionnaire.item[6].item[3].item[4].linkId: value should not start or finish with whitespace 'airway_stenosis '
 WARNING: Questionnaire/Enrollment: Questionnaire.item[7].item[2].text: value should not start or finish with whitespace 'Can you use a smart device? '
 WARNING: Questionnaire/Enrollment: Questionnaire.item[7].item[3].text: value should not start or finish with whitespace 'Do you have access to a smart device on a regular basis?  '
+== fsh-generated/resources/Questionnaire-FeedbackQuestionnaire.json ==
 == fsh-generated/resources/Questionnaire-GAD7schema.json ==
 == fsh-generated/resources/Questionnaire-GeneralInformation.json ==
 WARNING: Questionnaire/GeneralInformation: Questionnaire.item[1].text: value should not start or finish with whitespace 'Language '
