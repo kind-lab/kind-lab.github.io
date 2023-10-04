@@ -1,0 +1,34 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "peds-enrollment",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://voicecollab.ai/fhir/CodeSystem/peds-enrollment</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Adult<a name=\"peds-enrollment-Adult\"> </a></td><td>18 or above</td></tr><tr><td style=\"white-space:nowrap\">Pediatric<a name=\"peds-enrollment-Pediatric\"> </a></td><td>2-10 year olds</td></tr></table></div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/CodeSystem/peds-enrollment",
+  "version" : "1.0.0",
+  "name" : "PedsEnrollment",
+  "title" : "Pediatric Enrollment",
+  "status" : "active",
+  "date" : "2023-08-02",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "The codes required for Pediatric enrollment pre-question questionnaire",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "Adult",
+    "display" : "18 or above"
+  },
+  {
+    "code" : "Pediatric",
+    "display" : "2-10 year olds"
+  }]
+}

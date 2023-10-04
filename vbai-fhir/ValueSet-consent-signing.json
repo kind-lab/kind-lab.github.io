@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "consent-signing",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-consent-signing.html\"><code>https://voicecollab.ai/fhir/CodeSystem/consent-signing</code></a></li></ul></div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/ValueSet/consent-signing",
+  "version" : "1.0.0",
+  "name" : "ConsentSigning",
+  "title" : "Questionnaire codes for consent signing",
+  "status" : "active",
+  "date" : "2023-08-21",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "The codes required for consent",
+  "compose" : {
+    "include" : [{
+      "system" : "https://voicecollab.ai/fhir/CodeSystem/consent-signing"
+    }]
+  }
+}

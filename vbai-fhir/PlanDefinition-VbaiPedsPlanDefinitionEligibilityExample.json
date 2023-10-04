@@ -1,0 +1,35 @@
+{
+  "resourceType" : "PlanDefinition",
+  "id" : "VbaiPedsPlanDefinitionEligibilityExample",
+  "meta" : {
+    "profile" : ["https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"VbaiPedsPlanDefinitionEligibilityExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;VbaiPedsPlanDefinitionEligibilityExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-plan-definition.html\">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPedsPlanDefinitionEligibilityExample</code></p><p><b>version</b>: 1.0.0</p><p><b>title</b>: Peds Eligibility PlanDefinition</p><p><b>status</b>: active</p><p><b>date</b>: 2023-07-27</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href=\"http://fhir.kindlab.sickkids.ca\">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for Peds Eligibility</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.0.0</p><p><b>title</b>: Peds Eligibility Questionnaire</p><p><b>description</b>: Have participant complete Eligibility questionnaire</p><p><b>priority</b>: routine</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>patient</td></tr></table><p><b>definition</b>: <a href=\"Questionnaire-PedsEligibilityQuestionnaire.html\">Peds Eligibility Questionnaire</a></p></blockquote></div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/PlanDefinition/VbaiPedsPlanDefinitionEligibilityExample",
+  "version" : "1.0.0",
+  "title" : "Peds Eligibility PlanDefinition",
+  "status" : "active",
+  "date" : "2023-07-27",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "This is a plandefinition for Peds Eligibility",
+  "action" : [{
+    "prefix" : "1.0.0",
+    "title" : "Peds Eligibility Questionnaire",
+    "description" : "Have participant complete Eligibility questionnaire",
+    "priority" : "routine",
+    "participant" : [{
+      "type" : "patient"
+    }],
+    "definitionUri" : "https://voicecollab.ai/fhir/Questionnaire/PedsEligibilityQuestionnaire"
+  }]
+}

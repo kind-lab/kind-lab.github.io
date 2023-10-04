@@ -6,7 +6,7 @@
     <profile value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="VbaiPlanDefinitionQuestionnaireRespiratoryExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition &quot;VbaiPlanDefinitionQuestionnaireRespiratoryExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-vbai-plan-definition.html">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireRespiratoryExample</code></p><p><b>version</b>: 1.0.0</p><p><b>title</b>: QuestionnaireRespiratory Cohort Protocol</p><p><b>status</b>: active</p><p><b>date</b>: 2023-07-31</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href="http://fhir.kindlab.sickkids.ca">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for QuestionnaireRespiratory cohort protocol</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.1</p><p><b>title</b>: Patient Questionnaire</p><p><b>description</b>: Patient Questionnaire</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href="Questionnaire-RespiratoryPatientQuestionnaire.html">Patient Questionnaire for Respiratory Questionnaire</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.2</p><p><b>title</b>: Dyspnea Index (DI)</p><p><b>description</b>: Perform Dysnea Index Questionnaire</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href="Questionnaire-DyspneaIndex.html">Dyspnea Index</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.3</p><p><b>title</b>: Leicester Cough Questionnaire</p><p><b>description</b>: Perform Leicester Cough Questionnaire</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href="Questionnaire-LeicesterCough.html">Leicester Cough Questionnaire</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.4</p><p><b>title</b>: Urge to Cough Scale</p><p><b>description</b>: Get the participant to rate their urge to cough</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href="Questionnaire-UrgeToCough.html">Urge to Cough Questionnaire</a></p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="VbaiPlanDefinitionQuestionnaireRespiratoryExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition &quot;VbaiPlanDefinitionQuestionnaireRespiratoryExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-vbai-plan-definition.html">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireRespiratoryExample</code></p><p><b>version</b>: 1.0.0</p><p><b>title</b>: QuestionnaireRespiratory Cohort Protocol</p><p><b>status</b>: active</p><p><b>date</b>: 2023-07-31</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href="http://fhir.kindlab.sickkids.ca">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for QuestionnaireRespiratory cohort protocol</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.1</p><p><b>title</b>: Dyspnea Index (DI)</p><p><b>description</b>: Perform Dysnea Index Questionnaire</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href="Questionnaire-DyspneaIndex.html">Dyspnea Index</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.2</p><p><b>title</b>: Leicester Cough Questionnaire</p><p><b>description</b>: Perform Leicester Cough Questionnaire</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href="Questionnaire-LeicesterCough.html">Leicester Cough Questionnaire</a></p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.10.3</p><p><b>title</b>: Urge to Cough Scale</p><p><b>description</b>: Get the participant to rate their urge to cough</p><p><b>priority</b>: routine</p><p><b>definition</b>: <a href="Questionnaire-UrgeToCough.html">Urge to Cough Questionnaire</a></p></blockquote></div>
   </text>
   <url value="https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireRespiratoryExample"/>
   <version value="1.0.0"/>
@@ -24,27 +24,20 @@
   <description value="This is a plandefinition for QuestionnaireRespiratory cohort protocol"/>
   <action>
     <prefix value="1.10.1"/>
-    <title value="Patient Questionnaire"/>
-    <description value="Patient Questionnaire"/>
-    <priority value="routine"/>
-    <definitionCanonical value="https://voicecollab.ai/fhir/Questionnaire/RespiratoryPatientQuestionnaire"/>
-  </action>
-  <action>
-    <prefix value="1.10.2"/>
     <title value="Dyspnea Index (DI)"/>
     <description value="Perform Dysnea Index Questionnaire"/>
     <priority value="routine"/>
     <definitionCanonical value="https://voicecollab.ai/fhir/Questionnaire/DyspneaIndex"/>
   </action>
   <action>
-    <prefix value="1.10.3"/>
+    <prefix value="1.10.2"/>
     <title value="Leicester Cough Questionnaire"/>
     <description value="Perform Leicester Cough Questionnaire"/>
     <priority value="routine"/>
     <definitionCanonical value="https://voicecollab.ai/fhir/Questionnaire/LeicesterCough"/>
   </action>
   <action>
-    <prefix value="1.10.4"/>
+    <prefix value="1.10.3"/>
     <title value="Urge to Cough Scale"/>
     <description value="Get the participant to rate their urge to cough"/>
     <priority value="routine"/>

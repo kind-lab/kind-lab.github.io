@@ -3,14 +3,14 @@
   "id" : "peds-who-completed-survey",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://voicecollab.ai/fhir/CodeSystem/peds-who-completed-survey</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">RA<a name=\"peds-who-completed-survey-RA\"> </a></td><td>Research Assistant</td><td>Survey was completed by an assistant</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"peds-who-completed-survey-P\"> </a></td><td>Parent/Caregiver</td><td>Survey was completed by a parent/cargiver</td></tr></table></div>"
   },
   "url" : "https://voicecollab.ai/fhir/CodeSystem/peds-who-completed-survey",
   "version" : "1.0.0",
   "name" : "PedsWhoCompletedSurvey",
-  "title" : "Survey Completion Identifier Codes",
+  "title" : "Questionnaire codes",
   "status" : "active",
-  "date" : "2023-05-11",
+  "date" : "2023-08-02",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -19,18 +19,13 @@
       "value" : "http://fhir.kindlab.sickkids.ca"
     }]
   }],
-  "description" : "This code system identifies who has completed a specific survey or questionnaire.",
+  "description" : "The codes required for Questionnaires survey completion",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 3,
+  "count" : 2,
   "concept" : [{
-    "code" : "S",
-    "display" : "Self",
-    "definition" : "Survey was completed by self"
-  },
-  {
-    "code" : "A",
-    "display" : "Assistant",
+    "code" : "RA",
+    "display" : "Research Assistant",
     "definition" : "Survey was completed by an assistant"
   },
   {

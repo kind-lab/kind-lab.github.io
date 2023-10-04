@@ -155,39 +155,132 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#prequestions" id="markdown-toc-prequestions">PreQuestions</a></li>
-  <li><a href="#consent" id="markdown-toc-consent">Consent</a></li>
-  <li><a href="#demographicquestionnaire" id="markdown-toc-demographicquestionnaire">DemographicQuestionnaire</a></li>
-  <li><a href="#acoustictasks" id="markdown-toc-acoustictasks">AcousticTasks</a></li>
-  <li><a href="#acoustic-tasks-specifically-conducted-for-this-cohort" id="markdown-toc-acoustic-tasks-specifically-conducted-for-this-cohort">Acoustic tasks specifically conducted for this cohort.</a></li>
-  <li><a href="#vbaiplandefinitioncohortspecificconfoundersexample" id="markdown-toc-vbaiplandefinitioncohortspecificconfoundersexample">VbaiPlanDefinitionCohortSpecificConfoundersExample</a></li>
-  <li><a href="#validated-questionnaires" id="markdown-toc-validated-questionnaires">Validated questionnaires.</a></li>
+  <li><a href="#protocol" id="markdown-toc-protocol">Protocol</a></li>
+  <li><a href="#about-this-study" id="markdown-toc-about-this-study">About this study</a></li>
+  <li><a href="#about-this-protocol" id="markdown-toc-about-this-protocol">About this protocol</a></li>
+  <li><a href="#protocol-1" id="markdown-toc-protocol-1">Protocol</a>    <ul>
+      <li><a href="#eligibility" id="markdown-toc-eligibility">Eligibility</a></li>
+      <li><a href="#consent" id="markdown-toc-consent">Consent</a></li>
+      <li><a href="#general" id="markdown-toc-general">General</a></li>
+      <li><a href="#demographics" id="markdown-toc-demographics">Demographics</a></li>
+      <li><a href="#acoustictasks" id="markdown-toc-acoustictasks">AcousticTasks</a></li>
+      <li><a href="#session-confounders" id="markdown-toc-session-confounders">Session confounders</a></li>
+      <li><a href="#validated-questionnaires" id="markdown-toc-validated-questionnaires">Validated questionnaires</a></li>
+      <li><a href="#acoustic-tasks-specifically-conducted-for-this-cohort" id="markdown-toc-acoustic-tasks-specifically-conducted-for-this-cohort">Acoustic tasks specifically conducted for this cohort.</a></li>
+      <li><a href="#vbaiplandefinitioncohortspecificconfoundersexample" id="markdown-toc-vbaiplandefinitioncohortspecificconfoundersexample">VbaiPlanDefinitionCohortSpecificConfoundersExample</a></li>
+      <li><a href="#cohort-specific-validated-questionnaires" id="markdown-toc-cohort-specific-validated-questionnaires">Cohort Specific Validated questionnaires.</a></li>
+    </ul>
+  </li>
 </ul>
 
 </div>
-<div><a href="https://github.com/kind-lab/voice-biomarker-fhir/edit/main/input/pagecontent/protocol.md">Edit</a></div>
+<div><a href="https://github.com/kind-lab/voice-biomarker-fhir/edit/main/input/pagecontent/protocol.md">Suggest an edit to this protocol.</a></div>
 
-<h4 id="cohort-protocol">Cohort Protocol</h4>
+<h2 id="protocol">Protocol</h2>
 
-<p>The goal of this tutorial is to support understanding the protocol.</p>
+<p>This document describes the protocol used in data collection for the Voice as a Biomarker of Health project, a large multi-institutional study funded by the National Institute of Health’s (NIH) Bridge2AI program.</p>
 
-<div class="alert info"><a name="l305">​</a>
+<h2 id="about-this-study">About this study</h2>
+
+<p>Voice as a Biomarker of Health is a study from the Bridge2AI-Voice Consortium with the
+mission to create a large-ethically sourced and diverse voice database linked to other
+health information to diagnose diseases.
+We collect voice and health data from many patients with different many different
+diseases from 5 broad categories:</p>
+
+<ul>
+  <li><strong>Voice Disorders</strong>, including laryngeal Cancer, vocal fold paralysis, spasmodic dysphonia, recurrent laryngeal papilloma (RRP), benign vocal cord lesion</li>
+  <li><strong>Neurological and Neurodegenerative Disorders</strong>, such as Dementia, Alzheimer’s, Stroke, ALS, Ataxia, Parkinsons</li>
+  <li><strong>Respiratory Disorders</strong>, including Asthma, Pneumonia, COPD, Chronic Cough, Heart failure, OSA, Airway Stenosis</li>
+  <li><strong>Mood Disorders</strong>, including Depression, Bipolar disorder, Anxiety disorder, Schizophrenia</li>
+  <li><strong>Pediatrics Disorders</strong>, such as Autism, Speech Delay</li>
+</ul>
+
+<p>The data collected in this study will be used to create algorithms to diagnose diseases
+based on voice recordings. The data will be made available to researchers and
+developers to create applications to improve the health of patients.</p>
+
+<h2 id="about-this-protocol">About this protocol</h2>
+
+<p>This protocol is used to collect data from patients in the Voice as a Biomarker of Health
+study. The protocol is designed to be portable, allowing sharing of the collected data
+across a diverse set of stakeholders.</p>
+
+<p>At its core, the protocol constitutes a number of Fast Healthcare Interoperability
+Resources (FHIR) which strictly define acceptable inputs. The design of these FHIR resources
+was collaboratively decided by the Bridge2AI-Voice Consortium.</p>
+
+<div class="alert info"><a name="l383">​</a>
   <span class="closebtn">×</span>  
   <strong>Note:</strong> If you don't know what the PlanDefinition, Questionnaire, and QuestionnaireResponse resources are, head over to the <a href="/vbai-fhir/brief_fhir_intro.html">brief FHIR intro</a> page.
 </div>
 
-<p>As with all protocols, the protocol has 12 sequential actions.</p>
+<p>Data collection was standardized into a set of sequential phases:</p>
 
-<h3 id="prequestions"><a href="PlanDefinition-VbaiAdultPlanDefinitionPreQuestionExample.html">PreQuestions</a></h3>
-<p><a name="l324">​</a>A standard set of actions taken before enrollment. These include the <a href="Questionnaire-GeneralInformation.html">GeneralInformation</a>, <a href="Questionnaire-ContactInformation.html">ContactInformation</a>, <a href="Questionnaire-EligibleStudies.html">EligibleStudies</a>, and the <a href="Questionnaire-Enrollment.html">Enrollment</a> questionnaires.</p>
+<ol>
+  <li>Eligibility</li>
+  <li>Consent</li>
+  <li>Demographic Questionnaire</li>
+  <li>Acoustic Tasks</li>
+  <li>Cohort Specific Tasks</li>
+  <li>Confounder Questionnaire</li>
+  <li>Validated Questionnaires</li>
+  <li>Clinician Input</li>
+  <li>Feedback</li>
+</ol>
 
-<h3 id="consent"><a href="PlanDefinition-VbaiPlanDefinitionConsentExample.html">Consent</a></h3>
-<p>Questions regarding consenting the individual.</p>
+<p>The first 3 phases are collected once for each individual upon enrollment into the study.
+The subsequent phases are collected for each data collection session.
+The following sections describe each of these phases in detail.</p>
 
-<h3 id="demographicquestionnaire"><a href="Questionnaire-VbaiQuestionnaireDemographicExample.html">DemographicQuestionnaire</a></h3>
-<p>A questionnaire asking demographic related questions.</p>
+<h2 id="protocol-1">Protocol</h2>
+
+<h3 id="eligibility"><a href="PlanDefinition-VbaiAdultPlanDefinitionEligibilityExample.html">Eligibility</a></h3>
+
+<p><em>A standard set of actions taken before enrollment.</em></p>
+
+<p>Before you decide if you want to enroll in this study, we will ask you a few questions to determine if you are eligible.</p>
+
+<p><a name="l445">​</a>Health information: Some of your non-identifying health information will be uploaded from your chart 
+These include the <a href="Questionnaire-GeneralInformation.html">GeneralInformation</a>, <a href="Questionnaire-ContactInformation.html">ContactInformation</a>, <a href="Questionnaire-EligibleStudies.html">EligibleStudies</a>, and the <a href="Questionnaire-Enrollment.html">Enrollment</a> questionnaires.</p>
+
+<h3 id="consent">Consent</h3>
+
+<p><em>Collection of informed consent or assent of the individual.</em></p>
+
+<p>Before you participate in this study, we need your consent. The consent gives you information of what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent</p>
+
+<h4 id="neuro-consent">Neuro Consent</h4>
+<p>Questionnaire resources:</p>
+<ul>
+  <li><a href="PlanDefinition-VbaiPlanDefinitionNeuroConsentExample.html">NeuroConsent</a></li>
+</ul>
+
+<h3 id="general">General</h3>
+<p>Questionnaire resources:</p>
+<ul>
+  <li><a href="Questionnaire-MainICF.html">ConsentMainICF</a></li>
+  <li><a href="Questionnaire-MainICFResearcherStatement.html">ConsentMainICFResearcherStatement</a></li>
+  <li><a href="Questionnaire-MainICFCombinedPDF.html">ConsentMainICFCombined</a></li>
+  <li><a href="Questionnaire-AddendumWCM.html">AddendumWCM</a></li>
+  <li><a href="Questionnaire-AddendumWCMResearcherStatement.html">AddendumWCMResearcherStatement</a></li>
+  <li><a href="Questionnaire-AddendumCombinedPDF.html">AddendumCombinedPDF</a></li>
+  <li><a href="Questionnaire-ConsentQuestionnaire.html">ConsentQuestionnaire</a></li>
+</ul>
+
+<h3 id="demographics">Demographics</h3>
+
+<p><em>Demographic related questions, intended to be collected once after study enrollment.</em></p>
+
+<p>Questionnaire resources:</p>
+<ul>
+  <li><a href="Questionnaire-VbaiQuestionnaireDemographicExample.html">DemographicQuestionnaire</a></li>
+</ul>
 
 <h3 id="acoustictasks"><a href="PlanDefinition-VbaiPlanDefinitionAcousticTasksGeneralExample.html">AcousticTasks</a></h3>
+
+<p><em>A set of acoustic tasks to be performed by the individual.</em></p>
+
 <ol>
   <li>
     <p>Audio check (Audio check: Before we start, let’s test your microphone. Click on the Start button below and say something out loud like “Testing 1, 2, 3”. Recording will stop automatically after 5 seconds. Click Play to hear your recording. If you hear background noise, please go to a quieter place and try again by selecting Redo Recording. If it sounds good, continue.</p>
@@ -213,16 +306,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p>Diadocokinesis:Say the syllables as they appear on your screen – Pa / Ta / Ka, Now record yourself repeating the syllable /PA/ as fast as possible 10 times, Record yourself repeating the syllable /TA/ as fast as possible 10 times, Record yourself repeating the syllable /KA/ as fast as possible 10 times, Now repeat the work /Pataka/ as fast as possible 10 times, Now repeat the word /buttercup/ as fast as possible 10 times&nbsp;</p>
   </li>
-  <li>
-    <p>Free speech: Open ended question (generic) chose 1-2  “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)- Options:   Can you talk to us about why you are interested by this study? Who told you about it? Why is it meaningful or valuable to you? How do you think it will help patients in the future?, Can you tell us a little bit about your health condition? When did it start, what kind of symptoms have you had and for how long? Tell us how you are managing it and how you are doing?​​​, ​​​​ How would you get from where you are now to the grocery store? Explain with as much detail as possible.​​​​​​​</p>
-  </li>
+  <li>Free speech: Open ended question (generic) chose 1-2  “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)- Options:   Can you talk to us about why you are interested by this study? Who told you about it? Why is it meaningful or valuable to you? How do you think it will help patients in the future?, Can you tell us a little bit about your health condition? When did it start, what kind of symptoms have you had and for how long? Tell us how you are managing it and how you are doing?​​​, ​​​​ How would you get from where you are now to the grocery store? Explain with as much detail as possible.​​​​​​​</li>
   <li>
     <p>Respiration and cough:   ‘Respiratory sounds can also provide information on your health, let’s record them” -  First, let’s hear you breath comfortably for 30 seconds, After pressing on record, take 5 big breaths in and out through your nose with your mouth closed, After pressing record, cough 5 times, Now try again (need that task twice)&nbsp;</p>
   </li>
-  <li>
-    <p>Picture description: “You will be shown a picture, please describe what you see in your own words. You can keep talking until the time runs out” (1 min)
-  <!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide --></p>
-  </li>
+  <li>Picture description: “You will be shown a picture, please describe what you see in your own words. You can keep talking until the time runs out” (1 min)
+  <!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide --></li>
 </ol>
 
 <div>
@@ -237,7 +326,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Story Recall: “You are given a text. Read the text so you familiarize yourself with it. You have up to 5 minutes to read it as many times as you want. When you are ready, you will be asked to recall the story. This can be in your own words.”  -  You wished to know all about my grandfather. Well, he is nearly ninety-three years old. He dresses himself in an ancient black frock coat, usually minus several buttons; yet he still thinks as swiftly as ever. A long, flowing beard clings to his chin, giving those who observe him a pronounced feeling of the utmost respect. When he speaks his voice is just a bit cracked and quivers a trifle. Twice each day he plays skillfully and with zest upon our small organ. Except in the winter when the ooze or snow or ice prevents, he slowly takes a short walk in the open air each day. We have often urged him to walk more and smoke less, but he always answers, “Banana Oil!” Grandfather likes to be modern in his language.&nbsp;</li>
 </ol>
 
-<p><a href="Questionnaire-VbaiQuestionnaireConfoundersExample.html">ConfounderQuestionnaire</a> - A questionnaire asking about factors which relate to past medical history.</p>
+<h3 id="session-confounders">Session confounders</h3>
+
+<p><em>Collect information which may impact the voice recording of the session.</em></p>
+
+<p>Questionnaire resources:
+  <a href="Questionnaire-VbaiQuestionnaireConfoundersExample.html">ConfounderQuestionnaire</a> - A questionnaire asking about factors which relate to past medical history.</p>
+
+<h3 id="validated-questionnaires">Validated questionnaires</h3>
+
+<p><em>A series of questionnaires which have been demonstrated to measure a particular construct.</em></p>
 
 <p><a href="PlanDefinition-VbaiPlanDefinitionGeneralQuestionnaireExample.html">ValidatedQuestionnaires</a> - A series of “validated” questionnaires, i.e. they have some amount of validation for measuring a particular construct.</p>
 <ul>
@@ -350,10 +448,11 @@ Ask them to repeat: You wished to know all about my grandfather. Well, he is nea
   <li>A questionnaire relating to past medical history.</li>
 </ul>
 
-<h3 id="validated-questionnaires">Validated questionnaires.</h3>
+<h3 id="cohort-specific-validated-questionnaires">Cohort Specific Validated questionnaires.</h3>
+<p><em>A series of cohort-specific validated questionnaires which have been demonstrated to measure a particular construct.</em></p>
 
 <h4 id="mood-1">Mood</h4>
-
+<p>Questionnaire resources:</p>
 <ul>
   <li><a href="Questionnaire-PANASQuestionnaire.html">Panas</a></li>
   <li><a href="Questionnaire-CustomAffectScaleQuestionnaire.html">CustomAffectScale</a></li>
@@ -369,7 +468,7 @@ Ask them to repeat: You wished to know all about my grandfather. Well, he is nea
 </ul>
 
 <h4 id="voice-1">Voice</h4>
-
+<p>Questionnaire resources:</p>
 <ul>
   <li><a href="Questionnaire-PatientQuestions.html">PatientQueestionnaire</a></li>
   <li><a href="Questionnaire-VHI10.html">VHI10</a></li>
@@ -378,13 +477,13 @@ Ask them to repeat: You wished to know all about my grandfather. Well, he is nea
 </ul>
 
 <h4 id="peds-1">PEDS</h4>
-
+<p>Questionnaire resources:</p>
 <ul>
   <li><a href="Questionnaire-PSC17.html">PSC17</a></li>
 </ul>
 
 <h4 id="respiratory-1">Respiratory</h4>
-
+<p>Questionnaire resources:</p>
 <ul>
   <li><a href="Questionnaire-RespiratoryPatientQuestionnaire.html">PatientRespiratoryQuestionnaire</a></li>
   <li><a href="Questionnaire-DyspneaIndex.html">DyspneaIndex</a></li>
@@ -400,6 +499,8 @@ Ask them to repeat: You wished to know all about my grandfather. Well, he is nea
 <p><a href="PlanDefinition-VbaiPlanDefinitionClinicianInputExample.html">VbaiPlanDefinitionClinicianInputExample</a> - Clinician may input custom information relating to patients in this cohort.</p>
 
 <p><a href="PlanDefinition-VbaiPlanDefinitionFeedbackExample.html">Feedback</a> - A section for providing feedback about the application, study, or anything else.</p>
+
+  <!-- - Consent - -->
 
 
 
@@ -426,7 +527,7 @@ Ask them to repeat: You wished to know all about my grandfather. Well, he is nea
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 15, 2023 16:24+0000">2023-09-15</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 4, 2023 03:12+0000">2023-10-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

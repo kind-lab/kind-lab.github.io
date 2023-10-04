@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"VbaiPlanDefinitionAcousticTasksRespiratoryExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;VbaiPlanDefinitionAcousticTasksRespiratoryExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-plan-definition.html\">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksRespiratoryExample</code></p><p><b>version</b>: 1.0.0</p><p><b>title</b>: Acoustic Tasks Respiratory Cohort Protocol</p><p><b>status</b>: active</p><p><b>date</b>: 2023-07-31</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href=\"http://fhir.kindlab.sickkids.ca\">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for Acoustic Tasks Respiratory cohort protocol</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.8 Task 1</p><p><b>title</b>: Breath Sounds</p><p><b>description</b>: Relax until the task starts.“Take three deep breaths in a row in andout the mouth.”</p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.8 Task 2</p><p><b>title</b>: Voluntary cough</p><p><b>description</b>: “Breathe normally, then when you are ready, cough HARD as if something werestuck in your throat.”Complete this three times.</p></blockquote></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"VbaiPlanDefinitionAcousticTasksRespiratoryExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;VbaiPlanDefinitionAcousticTasksRespiratoryExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vbai-plan-definition.html\">Vbai Plan Definition</a></p></div><p><b>url</b>: <code>https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksRespiratoryExample</code></p><p><b>version</b>: 1.0.0</p><p><b>title</b>: Acoustic Tasks Respiratory Cohort Protocol</p><p><b>status</b>: active</p><p><b>date</b>: 2023-07-31</p><p><b>publisher</b>: KinD Lab</p><p><b>contact</b>: KinD Lab: <a href=\"http://fhir.kindlab.sickkids.ca\">http://fhir.kindlab.sickkids.ca</a></p><p><b>description</b>: This is a plandefinition for Acoustic Tasks Respiratory cohort protocol</p><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.8 Task 1</p><p><b>title</b>: Breath Sounds</p><p><b>description</b>: Relax until the task starts.Take three deep breaths in a row in and out the mouth.</p></blockquote><blockquote><p><b>action</b></p><p><b>prefix</b>: 1.8 Task 2</p><p><b>title</b>: Voluntary cough</p><p><b>description</b>: Breathe normally, then when you are ready, push record and cough HARD as if something were stuck in your throat. Then breathe normally again. Complete this task three times.</p></blockquote></div>"
   ] ; # 
   fhir:url [ fhir:v "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksRespiratoryExample"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
@@ -35,11 +35,11 @@
   fhir:action ( [
      fhir:prefix [ fhir:v "1.8 Task 1" ] ;
      fhir:title [ fhir:v "Breath Sounds" ] ;
-     fhir:description [ fhir:v "Relax until the task starts.“Take three deep breaths in a row in andout the mouth.”" ]
+     fhir:description [ fhir:v "Relax until the task starts.Take three deep breaths in a row in and out the mouth." ]
   ] [
      fhir:prefix [ fhir:v "1.8 Task 2" ] ;
      fhir:title [ fhir:v "Voluntary cough" ] ;
-     fhir:description [ fhir:v "“Breathe normally, then when you are ready, cough HARD as if something werestuck in your throat.”Complete this three times." ]
+     fhir:description [ fhir:v "Breathe normally, then when you are ready, push record and cough HARD as if something were stuck in your throat. Then breathe normally again. Complete this task three times." ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

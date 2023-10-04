@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "smoking-times"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-frequency-of-smoking.html\"><code>https://voicecollab.ai/fhir/CodeSystem/frequency-of-smoking</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://voicecollab.ai/fhir/ValueSet/smoking-times"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
@@ -29,7 +29,7 @@
   fhir:description [ fhir:v "The  Codes used by confounder questionnaire"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/smoking-times"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://voicecollab.ai/fhir/CodeSystem/frequency-of-smoking"^^xsd:anyURI ]
      ] )
   ] . # 
 
