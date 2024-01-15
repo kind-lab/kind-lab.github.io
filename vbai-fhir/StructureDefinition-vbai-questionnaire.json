@@ -14,11 +14,11 @@
     "valueCode" : "business"
   }],
   "url" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire",
-  "version" : "1.0.0",
+  "version" : "1.4.0",
   "name" : "VbaiQuestionnaire",
   "title" : "VBAI Questionnaire",
   "status" : "active",
-  "date" : "2023-10-04T15:51:42+00:00",
+  "date" : "2024-01-15T14:38:18+00:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -265,10 +265,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -680,10 +676,6 @@
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "PublicationStatus"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "required",
         "description" : "The lifecycle status of an artifact.",
@@ -772,10 +764,6 @@
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "ResourceType"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "required",
         "description" : "One of the resource types defined as part of this version of FHIR.",
@@ -1007,10 +995,6 @@
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Jurisdiction"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "extensible",
         "description" : "Countries and regions within which this artifact is targeted for use.",
@@ -1507,7 +1491,7 @@
       "short" : "Unique id for item in questionnaire",
       "definition" : "An identifier that is unique within the Questionnaire allowing linkage to the equivalent item in a QuestionnaireResponse resource.",
       "comment" : "This ''can'' be a meaningful identifier (e.g. a LOINC code) but is not intended to have any meaning.  GUIDs or sequential numbers are appropriate here.",
-      "requirements" : "[QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html#) does not require omitted items to be included and may have some items that repeat, so linkage based on position alone is not sufficient.",
+      "requirements" : "[QuestionnaireResponse](questionnaireresponse.html#) does not require omitted items to be included and may have some items that repeat, so linkage based on position alone is not sufficient.",
       "min" : 1,
       "max" : "1",
       "base" : {
@@ -1539,7 +1523,7 @@
       "path" : "Questionnaire.item.definition",
       "short" : "ElementDefinition - details for the item",
       "definition" : "This element is a URI that refers to an [ElementDefinition](http://hl7.org/fhir/R4/elementdefinition.html) that provides information about this item, including information that might otherwise be included in the instance of the Questionnaire resource. A detailed description of the construction of the URI is shown in Comments, below. If this element is present then the following element values MAY be derived from the Element Definition if the corresponding elements of this Questionnaire resource instance have no value:\n\n* code (ElementDefinition.code) \n* type (ElementDefinition.type) \n* required (ElementDefinition.min) \n* repeats (ElementDefinition.max) \n* maxLength (ElementDefinition.maxLength) \n* answerValueSet (ElementDefinition.binding)\n* options (ElementDefinition.binding).",
-      "comment" : "The uri refers to an ElementDefinition in a [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html#) and always starts with the [canonical URL](http://hl7.org/fhir/R4/references.html#canonical) for the target resource. When referring to a StructureDefinition, a fragment identifier is used to specify the element definition by its id [Element.id](http://hl7.org/fhir/R4/element-definitions.html#Element.id). E.g. http://hl7.org/fhir/StructureDefinition/Observation#Observation.value[x]. In the absence of a fragment identifier, the first/root element definition in the target is the matching element definition.",
+      "comment" : "The uri refers to an ElementDefinition in a [StructureDefinition](structuredefinition.html#) and always starts with the [canonical URL](http://hl7.org/fhir/R4/references.html#canonical) for the target resource. When referring to a StructureDefinition, a fragment identifier is used to specify the element definition by its id [Element.id](http://hl7.org/fhir/R4/element-definitions.html#Element.id). E.g. http://hl7.org/fhir/StructureDefinition/Observation#Observation.value[x]. In the absence of a fragment identifier, the first/root element definition in the target is the matching element definition.",
       "requirements" : "A common pattern is to define a set of data elements and then build multiple questionnaires for different circumstances to gather the data. This element provides traceability to the common definition and allows the content for the question to come from the underlying definition.",
       "min" : 0,
       "max" : "1",

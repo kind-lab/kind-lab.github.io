@@ -14,11 +14,11 @@
     "valueCode" : "patient"
   }],
   "url" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-imaging-study",
-  "version" : "1.0.0",
+  "version" : "1.4.0",
   "name" : "VbaiImagingStudy",
   "title" : "VBAI Imaging Study",
   "status" : "active",
-  "date" : "2023-10-04T15:51:42+00:00",
+  "date" : "2024-01-15T14:38:18+00:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -250,10 +250,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -410,7 +406,7 @@
       "path" : "ImagingStudy.identifier",
       "short" : "Identifiers for the whole study",
       "definition" : "Identifiers for the ImagingStudy such as DICOM Study Instance UID, and Accession Number.",
-      "comment" : "See discussion under [Imaging Study Implementation Notes](http://hl7.org/fhir/R4/imagingstudy.html#notes) for encoding of DICOM Study Instance UID. Accession Number should use ACSN Identifier type.",
+      "comment" : "See discussion under [Imaging Study Implementation Notes](imagingstudy.html#notes) for encoding of DICOM Study Instance UID. Accession Number should use ACSN Identifier type.",
       "requirements" : "If one or more series elements are present in the ImagingStudy, then there shall be one DICOM Study UID identifier (see [DICOM PS 3.3 C.7.2](http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.html).",
       "alias" : ["StudyInstanceUID",
       "AccessionNumber"],

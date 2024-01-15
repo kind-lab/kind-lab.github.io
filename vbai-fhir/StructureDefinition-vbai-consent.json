@@ -14,11 +14,11 @@
     "valueCode" : "patient"
   }],
   "url" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-consent",
-  "version" : "1.0.0",
+  "version" : "1.4.0",
   "name" : "VbaiConsent",
   "title" : "VBAI Consent",
   "status" : "active",
-  "date" : "2023-10-04T15:51:42+00:00",
+  "date" : "2024-01-15T14:38:18+00:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -286,10 +286,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -460,7 +456,7 @@
       "example" : [{
         "label" : "General",
         "valueIdentifier" : {
-          "system" : "urn:ietf:rfc:3986",
+          "system" : "http://acme.org/identifier/local/eCMS",
           "value" : "Local eCMS identifier"
         }
       }],
@@ -1307,10 +1303,6 @@
     },
     {
       "id" : "Consent.provision",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-        "valueString" : "provision"
-      }],
       "path" : "Consent.provision",
       "short" : "Constraints to the base Consent.policyRule",
       "definition" : "An exception to the base policy of this consent. An exception can be an addition or removal of access permissions.",
@@ -1510,10 +1502,6 @@
     },
     {
       "id" : "Consent.provision.actor",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-        "valueString" : "provisionActor"
-      }],
       "path" : "Consent.provision.actor",
       "short" : "Who|what controlled by this rule (or group, by role)",
       "definition" : "Who or what is controlled by this rule. Use group to identify a set of actors by some property they share (e.g. 'admitting officers').",
@@ -1787,10 +1775,6 @@
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "SecurityLabels"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "extensible",
         "description" : "Security Labels from the Healthcare Privacy and Security Classification System.",
@@ -1934,10 +1918,6 @@
     },
     {
       "id" : "Consent.provision.data",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-        "valueString" : "provisionData"
-      }],
       "path" : "Consent.provision.data",
       "short" : "Data controlled by this rule",
       "definition" : "The resources controlled by this rule if specific resources are referenced.",

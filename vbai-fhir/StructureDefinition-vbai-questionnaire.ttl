@@ -20,11 +20,11 @@
      fhir:value [ fhir:v "business" ]
   ] ) ; # 
   fhir:url [ fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:version [ fhir:v "1.4.0"] ; # 
   fhir:name [ fhir:v "VbaiQuestionnaire"] ; # 
   fhir:title [ fhir:v "VBAI Questionnaire"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-10-04T15:51:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-15T14:38:18+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -287,9 +287,6 @@
          ] [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "Language" ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "A human language." ] ;
@@ -714,9 +711,6 @@
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "PublicationStatus" ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:strength [ fhir:v "required" ] ;
          fhir:description [ fhir:v "The lifecycle status of an artifact." ] ;
@@ -808,9 +802,6 @@
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "ResourceType" ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:strength [ fhir:v "required" ] ;
          fhir:description [ fhir:v "One of the resource types defined as part of this version of FHIR." ] ;
@@ -1049,9 +1040,6 @@
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "Jurisdiction" ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Countries and regions within which this artifact is targeted for use." ] ;
@@ -1580,7 +1568,7 @@
        fhir:short [ fhir:v "Unique id for item in questionnaire" ] ;
        fhir:definition [ fhir:v "An identifier that is unique within the Questionnaire allowing linkage to the equivalent item in a QuestionnaireResponse resource." ] ;
        fhir:comment [ fhir:v "This ''can'' be a meaningful identifier (e.g. a LOINC code) but is not intended to have any meaning.  GUIDs or sequential numbers are appropriate here." ] ;
-       fhir:requirements [ fhir:v "[QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html#) does not require omitted items to be included and may have some items that repeat, so linkage based on position alone is not sufficient." ] ;
+       fhir:requirements [ fhir:v "[QuestionnaireResponse](questionnaireresponse.html#) does not require omitted items to be included and may have some items that repeat, so linkage based on position alone is not sufficient." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1614,7 +1602,7 @@
        fhir:path [ fhir:v "Questionnaire.item.definition" ] ;
        fhir:short [ fhir:v "ElementDefinition - details for the item" ] ;
        fhir:definition [ fhir:v "This element is a URI that refers to an [ElementDefinition](http://hl7.org/fhir/R4/elementdefinition.html) that provides information about this item, including information that might otherwise be included in the instance of the Questionnaire resource. A detailed description of the construction of the URI is shown in Comments, below. If this element is present then the following element values MAY be derived from the Element Definition if the corresponding elements of this Questionnaire resource instance have no value:\n\n* code (ElementDefinition.code) \n* type (ElementDefinition.type) \n* required (ElementDefinition.min) \n* repeats (ElementDefinition.max) \n* maxLength (ElementDefinition.maxLength) \n* answerValueSet (ElementDefinition.binding)\n* options (ElementDefinition.binding)." ] ;
-       fhir:comment [ fhir:v "The uri refers to an ElementDefinition in a [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html#) and always starts with the [canonical URL](http://hl7.org/fhir/R4/references.html#canonical) for the target resource. When referring to a StructureDefinition, a fragment identifier is used to specify the element definition by its id [Element.id](http://hl7.org/fhir/R4/element-definitions.html#Element.id). E.g. http://hl7.org/fhir/StructureDefinition/Observation#Observation.value[x]. In the absence of a fragment identifier, the first/root element definition in the target is the matching element definition." ] ;
+       fhir:comment [ fhir:v "The uri refers to an ElementDefinition in a [StructureDefinition](structuredefinition.html#) and always starts with the [canonical URL](http://hl7.org/fhir/R4/references.html#canonical) for the target resource. When referring to a StructureDefinition, a fragment identifier is used to specify the element definition by its id [Element.id](http://hl7.org/fhir/R4/element-definitions.html#Element.id). E.g. http://hl7.org/fhir/StructureDefinition/Observation#Observation.value[x]. In the absence of a fragment identifier, the first/root element definition in the target is the matching element definition." ] ;
        fhir:requirements [ fhir:v "A common pattern is to define a set of data elements and then build multiple questionnaires for different circumstances to gather the data. This element provides traceability to the common definition and allows the content for the question to come from the underlying definition." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;

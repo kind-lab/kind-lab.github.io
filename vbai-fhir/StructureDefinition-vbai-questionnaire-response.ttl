@@ -20,11 +20,11 @@
      fhir:value [ fhir:v "patient" ]
   ] ) ; # 
   fhir:url [ fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire-response"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:version [ fhir:v "1.4.0"] ; # 
   fhir:name [ fhir:v "VbaiQuestionnaireResponse"] ; # 
   fhir:title [ fhir:v "VBAI Questionnaire Response"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-10-04T15:51:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-15T14:38:18+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -260,9 +260,6 @@
          ] [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "Language" ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "A human language." ] ;
@@ -1081,7 +1078,7 @@
        fhir:path [ fhir:v "QuestionnaireResponse.item.definition" ] ;
        fhir:short [ fhir:v "ElementDefinition - details for the item" ] ;
        fhir:definition [ fhir:v "A reference to an [ElementDefinition](http://hl7.org/fhir/R4/elementdefinition.html) that provides the details for the item." ] ;
-       fhir:comment [ fhir:v "The ElementDefinition must be in a [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html#), and must have a fragment identifier that identifies the specific data element by its id (Element.id). E.g. http://hl7.org/fhir/StructureDefinition/Observation#Observation.value[x].\n\nThere is no need for this element if the item pointed to by the linkId has a definition listed." ] ;
+       fhir:comment [ fhir:v "The ElementDefinition must be in a [StructureDefinition](structuredefinition.html#), and must have a fragment identifier that identifies the specific data element by its id (Element.id). E.g. http://hl7.org/fhir/StructureDefinition/Observation#Observation.value[x].\n\nThere is no need for this element if the item pointed to by the linkId has a definition listed." ] ;
        fhir:requirements [ fhir:v "A common pattern is to define a set of data elements, and then build multiple different questionnaires for different circumstances to gather the data. This element provides traceability to the common definition." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;

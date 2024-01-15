@@ -11,7 +11,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>VBAI Imaging Media - JSON Representation -  v1.0.0</title>
+    <title>VBAI Imaging Media - JSON Representation -  v1.4.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -68,7 +68,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - ci-build
+            <span style="display:inline-block;">1.4.0 - ci-build
 
 
             </span>
@@ -138,7 +138,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v1.0.0). See the <a href="https://voicecollab.ai/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v1.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://voicecollab.ai/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -221,7 +221,7 @@
         
           Active
           
-            as of 2023-10-04
+            as of 2024-01-15
           
         
       </td>
@@ -239,7 +239,7 @@
 
 
 
-  <pre class="json" style="white-space: pre; overflow: hidden"><code>
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
 {
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition">resourceType</a>" : "StructureDefinition",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.id">id</a>" : "vbai-imaging-media",
@@ -258,11 +258,11 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-imaging-media",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "1.4.0",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a>" : "VbaiImagingMedia",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "VBAI Imaging Media",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2023-10-04T15:51:42+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2024-01-15T14:38:18+00:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "KinD Lab",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -530,10 +530,6 @@
             {
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Language"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a>" : true
             }
           ],
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "preferred",
@@ -785,7 +781,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+              <a href="http://hl7.org/fhir/R4/servicerequest.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/ServiceRequest"<a href="http://hl7.org/fhir/R4/careplan.html" style="color: Maroon">&#x1F517;</a> ,
               "http://hl7.org/fhir/StructureDefinition/CarePlan"
             ]
           }
@@ -834,7 +830,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Resource"
+              <a href="http://hl7.org/fhir/R4/resource.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/Resource"
             ]
           }
         ],
@@ -1096,7 +1092,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"
+              <a href="StructureDefinition-vbai-patient.html" style="color: Maroon">&#x1F517;</a> "https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"
             ]
           }
         ],
@@ -1156,7 +1152,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://voicecollab.ai/fhir/StructureDefinition/vbai-encounter"
+              <a href="StructureDefinition-vbai-encounter.html" style="color: Maroon">&#x1F517;</a> "https://voicecollab.ai/fhir/StructureDefinition/vbai-encounter"
             ]
           }
         ],
@@ -1298,12 +1294,12 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/CareTeam",
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Device",
+              <a href="http://hl7.org/fhir/R4/practitioner.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/Practitioner"<a href="http://hl7.org/fhir/R4/practitionerrole.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"<a href="http://hl7.org/fhir/R4/organization.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/Organization"<a href="http://hl7.org/fhir/R4/careteam.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/CareTeam"<a href="http://hl7.org/fhir/R4/patient.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/Patient"<a href="http://hl7.org/fhir/R4/device.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/Device"<a href="http://hl7.org/fhir/R4/relatedperson.html" style="color: Maroon">&#x1F517;</a> ,
               "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
             ]
           }
@@ -1508,8 +1504,8 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/DeviceMetric",
+              <a href="http://hl7.org/fhir/R4/device.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/Device"<a href="http://hl7.org/fhir/R4/devicemetric.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/DeviceMetric"<a href="http://hl7.org/fhir/R4/device.html" style="color: Maroon">&#x1F517;</a> ,
               "http://hl7.org/fhir/StructureDefinition/Device"
             ]
           }
@@ -1801,7 +1797,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"
+              <a href="StructureDefinition-vbai-patient.html" style="color: Maroon">&#x1F517;</a> "https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"
             ]
           }
         ]
@@ -1813,7 +1809,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://voicecollab.ai/fhir/StructureDefinition/vbai-encounter"
+              <a href="StructureDefinition-vbai-encounter.html" style="color: Maroon">&#x1F517;</a> "https://voicecollab.ai/fhir/StructureDefinition/vbai-encounter"
             ]
           }
         ]
@@ -1874,7 +1870,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 4, 2023 15:51+0000">2023-10-04</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#1.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 15, 2024 14:38+0000">2024-01-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

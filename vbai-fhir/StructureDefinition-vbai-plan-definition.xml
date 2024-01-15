@@ -18,11 +18,11 @@
     <valueCode value="business"/>
   </extension>
   <url value="https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition"/>
-  <version value="1.0.0"/>
+  <version value="1.4.0"/>
   <name value="VbaiPlanDefinition"/>
   <title value="Vbai Plan Definition"/>
   <status value="active"/>
-  <date value="2023-10-04T15:51:42+00:00"/>
+  <date value="2024-01-15T14:38:18+00:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -239,9 +239,6 @@
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
         </extension>
         <strength value="preferred"/>
         <description value="A human language."/>
@@ -645,9 +642,6 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="PublicationStatus"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
-        </extension>
         <strength value="required"/>
         <description value="The lifecycle status of an artifact."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/publication-status|4.0.1"/>
@@ -928,9 +922,6 @@
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Jurisdiction"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
         <description value="Countries and regions within which this artifact is targeted for use."/>

@@ -11,7 +11,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>VBAI Consent - JSON Representation -  v1.0.0</title>
+    <title>VBAI Consent - JSON Representation -  v1.4.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -68,7 +68,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - ci-build
+            <span style="display:inline-block;">1.4.0 - ci-build
 
 
             </span>
@@ -138,7 +138,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v1.0.0). See the <a href="https://voicecollab.ai/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v1.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://voicecollab.ai/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -221,7 +221,7 @@
         
           Active
           
-            as of 2023-10-04
+            as of 2024-01-15
           
         
       </td>
@@ -239,7 +239,7 @@
 
 
 
-  <pre class="json" style="white-space: pre; overflow: hidden"><code>
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
 {
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition">resourceType</a>" : "StructureDefinition",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.id">id</a>" : "vbai-consent",
@@ -258,11 +258,11 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-consent",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "1.4.0",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a>" : "VbaiConsent",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "VBAI Consent",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2023-10-04T15:51:42+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2024-01-15T14:38:18+00:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "KinD Lab",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -560,10 +560,6 @@
             {
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Language"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a>" : true
             }
           ],
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "preferred",
@@ -768,7 +764,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.example.label">label</a>" : "General",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.example.value[x]">valueIdentifier</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://acme.org/identifier/local/eCMS",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "Local eCMS identifier"
             }
           }
@@ -999,7 +995,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"
+              <a href="StructureDefinition-vbai-patient.html" style="color: Maroon">&#x1F517;</a> "https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"
             ]
           }
         ],
@@ -1103,10 +1099,10 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              <a href="http://hl7.org/fhir/R4/organization.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/Organization"<a href="http://hl7.org/fhir/R4/patient.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/Patient"<a href="http://hl7.org/fhir/R4/practitioner.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"<a href="http://hl7.org/fhir/R4/relatedperson.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"<a href="http://hl7.org/fhir/R4/practitionerrole.html" style="color: Maroon">&#x1F517;</a> ,
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
             ]
           }
@@ -1157,7 +1153,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              <a href="http://hl7.org/fhir/R4/organization.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/Organization"
             ]
           }
         ],
@@ -1204,9 +1200,9 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Consent",
-              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-              "http://hl7.org/fhir/StructureDefinition/Contract",
+              <a href="http://hl7.org/fhir/R4/consent.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/Consent"<a href="http://hl7.org/fhir/R4/documentreference.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"<a href="http://hl7.org/fhir/R4/contract.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/Contract"<a href="http://hl7.org/fhir/R4/questionnaireresponse.html" style="color: Maroon">&#x1F517;</a> ,
               "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"
             ]
           }
@@ -1730,7 +1726,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
+              <a href="http://hl7.org/fhir/R4/patient.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/Patient"<a href="http://hl7.org/fhir/R4/relatedperson.html" style="color: Maroon">&#x1F517;</a> ,
               "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
             ]
           }
@@ -1780,12 +1776,6 @@
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Consent.provision",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "provision"
-          }
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Consent.provision",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Constraints to the base Consent.policyRule",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "An exception to the base policy of this consent. An exception can be an addition or removal of access permissions.",
@@ -2023,12 +2013,6 @@
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Consent.provision.actor",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "provisionActor"
-          }
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Consent.provision.actor",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Who|what controlled by this rule (or group, by role)",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Who or what is controlled by this rule. Use group to identify a set of actors by some property they share (e.g. 'admitting officers').",
@@ -2251,13 +2235,13 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://hl7.org/fhir/StructureDefinition/CareTeam",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              <a href="http://hl7.org/fhir/R4/device.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/Device"<a href="http://hl7.org/fhir/R4/group.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/Group"<a href="http://hl7.org/fhir/R4/careteam.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/CareTeam"<a href="http://hl7.org/fhir/R4/organization.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/Organization"<a href="http://hl7.org/fhir/R4/patient.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/Patient"<a href="http://hl7.org/fhir/R4/practitioner.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"<a href="http://hl7.org/fhir/R4/relatedperson.html" style="color: Maroon">&#x1F517;</a> ,
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"<a href="http://hl7.org/fhir/R4/practitionerrole.html" style="color: Maroon">&#x1F517;</a> ,
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
             ]
           }
@@ -2353,10 +2337,6 @@
             {
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "SecurityLabels"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a>" : true
             }
           ],
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
@@ -2523,12 +2503,6 @@
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Consent.provision.data",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "provisionData"
-          }
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Consent.provision.data",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Data controlled by this rule",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The resources controlled by this rule if specific resources are referenced.",
@@ -2757,7 +2731,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Resource"
+              <a href="http://hl7.org/fhir/R4/resource.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/Resource"
             ]
           }
         ],
@@ -2846,7 +2820,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"
+              <a href="StructureDefinition-vbai-patient.html" style="color: Maroon">&#x1F517;</a> "https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"
             ]
           }
         ]
@@ -2920,7 +2894,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 4, 2023 15:51+0000">2023-10-04</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#1.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 15, 2024 14:38+0000">2024-01-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

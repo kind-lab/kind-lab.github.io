@@ -15,11 +15,11 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire-response"/>
-  <version value="1.0.0"/>
+  <version value="1.4.0"/>
   <name value="VbaiQuestionnaireResponse"/>
   <title value="VBAI Questionnaire Response"/>
   <status value="active"/>
-  <date value="2023-10-04T15:51:42+00:00"/>
+  <date value="2024-01-15T14:38:18+00:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -230,9 +230,6 @@
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
         </extension>
         <strength value="preferred"/>
         <description value="A human language."/>
@@ -977,7 +974,7 @@
       <path value="QuestionnaireResponse.item.definition"/>
       <short value="ElementDefinition - details for the item"/>
       <definition value="A reference to an [ElementDefinition](http://hl7.org/fhir/R4/elementdefinition.html) that provides the details for the item."/>
-      <comment value="The ElementDefinition must be in a [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html#), and must have a fragment identifier that identifies the specific data element by its id (Element.id). E.g. http://hl7.org/fhir/StructureDefinition/Observation#Observation.value[x].&#xA;&#xA;There is no need for this element if the item pointed to by the linkId has a definition listed."/>
+      <comment value="The ElementDefinition must be in a [StructureDefinition](structuredefinition.html#), and must have a fragment identifier that identifies the specific data element by its id (Element.id). E.g. http://hl7.org/fhir/StructureDefinition/Observation#Observation.value[x].&#xA;&#xA;There is no need for this element if the item pointed to by the linkId has a definition listed."/>
       <requirements value="A common pattern is to define a set of data elements, and then build multiple different questionnaires for different circumstances to gather the data. This element provides traceability to the common definition."/>
       <min value="0"/>
       <max value="1"/>

@@ -20,11 +20,11 @@
      fhir:value [ fhir:v "patient" ]
   ] ) ; # 
   fhir:url [ fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-consent"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:version [ fhir:v "1.4.0"] ; # 
   fhir:name [ fhir:v "VbaiConsent"] ; # 
   fhir:title [ fhir:v "VBAI Consent"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-10-04T15:51:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-15T14:38:18+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -316,9 +316,6 @@
          ] [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "Language" ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "A human language." ] ;
@@ -494,7 +491,7 @@
          fhir:label [ fhir:v "General" ] ;
          fhir:value [
            a fhir:Identifier ;
-           fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+           fhir:system [ fhir:v "http://acme.org/identifier/local/eCMS"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "Local eCMS identifier" ]
          ]
        ] ) ;
@@ -1411,10 +1408,6 @@
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Consent.provision" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "provision" ]
-       ] ) ;
        fhir:path [ fhir:v "Consent.provision" ] ;
        fhir:short [ fhir:v "Constraints to the base Consent.policyRule" ] ;
        fhir:definition [ fhir:v "An exception to the base policy of this consent. An exception can be an addition or removal of access permissions." ] ;
@@ -1627,10 +1620,6 @@
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Consent.provision.actor" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "provisionActor" ]
-       ] ) ;
        fhir:path [ fhir:v "Consent.provision.actor" ] ;
        fhir:short [ fhir:v "Who|what controlled by this rule (or group, by role)" ] ;
        fhir:definition [ fhir:v "Who or what is controlled by this rule. Use group to identify a set of actors by some property they share (e.g. 'admitting officers')." ] ;
@@ -1942,9 +1931,6 @@
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "SecurityLabels" ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Security Labels from the Healthcare Privacy and Security Classification System." ] ;
@@ -2107,10 +2093,6 @@
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Consent.provision.data" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "provisionData" ]
-       ] ) ;
        fhir:path [ fhir:v "Consent.provision.data" ] ;
        fhir:short [ fhir:v "Data controlled by this rule" ] ;
        fhir:definition [ fhir:v "The resources controlled by this rule if specific resources are referenced." ] ;

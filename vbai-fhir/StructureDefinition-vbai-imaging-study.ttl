@@ -20,11 +20,11 @@
      fhir:value [ fhir:v "patient" ]
   ] ) ; # 
   fhir:url [ fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-imaging-study"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:version [ fhir:v "1.4.0"] ; # 
   fhir:name [ fhir:v "VbaiImagingStudy"] ; # 
   fhir:title [ fhir:v "VBAI Imaging Study"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-10-04T15:51:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-15T14:38:18+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -269,9 +269,6 @@
          ] [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "Language" ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "A human language." ] ;
@@ -432,7 +429,7 @@
        fhir:path [ fhir:v "ImagingStudy.identifier" ] ;
        fhir:short [ fhir:v "Identifiers for the whole study" ] ;
        fhir:definition [ fhir:v "Identifiers for the ImagingStudy such as DICOM Study Instance UID, and Accession Number." ] ;
-       fhir:comment [ fhir:v "See discussion under [Imaging Study Implementation Notes](http://hl7.org/fhir/R4/imagingstudy.html#notes) for encoding of DICOM Study Instance UID. Accession Number should use ACSN Identifier type." ] ;
+       fhir:comment [ fhir:v "See discussion under [Imaging Study Implementation Notes](imagingstudy.html#notes) for encoding of DICOM Study Instance UID. Accession Number should use ACSN Identifier type." ] ;
        fhir:requirements [ fhir:v "If one or more series elements are present in the ImagingStudy, then there shall be one DICOM Study UID identifier (see [DICOM PS 3.3 C.7.2](http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.html)." ] ;
        fhir:alias ( [ fhir:v "StudyInstanceUID" ] [ fhir:v "AccessionNumber" ] ) ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;

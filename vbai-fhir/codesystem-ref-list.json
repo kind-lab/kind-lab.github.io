@@ -1,0 +1,2465 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-sexual-orientation.html" : "US Core Sexual Orientation",
+      "http://terminology.hl7.org/5.2.0/ValueSet-gender-identity.html" : "Gender Identity"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1048"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.2.0/ValueSet-gender-identity.html" : "Gender Identity"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "ExpandedYesNoIndicator",
+      "title" : "expandedYes-NoIndicator",
+      "description" : "HL7-defined code system of concepts used to specify an expansion on the original Yes/No indicator table by including \"flavors of null\".  It is intended to be applied to fields where the response is not limited to \"yes\" or \"no\".  Used in numerous locations in HL7 Version 2.x messaging.",
+      "oids" : ["2.16.840.1.113883.18.347"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.2.0/ValueSet-v2-0136.html" : "hl7VS-yes-no-Indicator"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-sexual-orientation.html" : "US Core Sexual Orientation",
+      "http://terminology.hl7.org/5.2.0/ValueSet-gender-identity.html" : "Gender Identity"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Who-Completed-Survey",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "WhoCompletedSurvey",
+      "title" : "Survey Completion Identifier Codes",
+      "description" : "This code system identifies who has completed a specific survey or questionnaire.",
+      "uses" : {
+      },
+      "ValueSet-whocompletedsurvey.html" : "whocompletedsurvey"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-1",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd1",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-1.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-10",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd10",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-10.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-100",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd100",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-100.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-101",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd101",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-101.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-102",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd102",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-102.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-103",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd103",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-103.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-104",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd104",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-104.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-105",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd105",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-105.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-106",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd106",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-106.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-107",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd107",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-107.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-108",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd108",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-108.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-109",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd109",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-109.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-11",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd11",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-11.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-110",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd110",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-110.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-111",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd111",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-111.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-112",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd112",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-112.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-113",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd113",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-113.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-114",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd114",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-114.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-115",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd115",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-115.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-116",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd116",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-116.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-117",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd117",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-117.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-118",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd118",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-118.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-119",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd119",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-119.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-12",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd12",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-12.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-120",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd120",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-120.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-121",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd121",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-121.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-122",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd122",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-122.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-123",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd123",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-123.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-124",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd124",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-124.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-125",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd125",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-125.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-126",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd126",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-126.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-127",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd127",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-127.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-128",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd128",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-128.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-129",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd129",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-129.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-13",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd13",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-13.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-130",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd130",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-130.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-131",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd131",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-131.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-132",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd132",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-132.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-133",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd133",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-133.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-134",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd134",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-134.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-135",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd135",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-135.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-136",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd136",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-136.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-137",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd137",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-137.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-138",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd138",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-138.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-14",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd14",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-14.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-15",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd15",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-15.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-16",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd16",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-16.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-17",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd17",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-17.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-18",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd18",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-18.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-19",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd19",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-19.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-2",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd2",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-2.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-20",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd20",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-20.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-21",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd21",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-21.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-22",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd22",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-22.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-23",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd23",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-23.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-24",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd24",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-24.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-25",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd25",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-25.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-26",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd26",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-26.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-27",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd27",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-27.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-28",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd28",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-28.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-29",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd29",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-29.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-3",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd3",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-3.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-30",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd30",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-30.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-31",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd31",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-31.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-32",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd32",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-32.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-33",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd33",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-33.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-34",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd34",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-34.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-35",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd35",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-35.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-36",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd36",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-36.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-37",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd37",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-37.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-38",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd38",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-38.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-39",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd39",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-39.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-4",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd4",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-4.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-40",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd40",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-40.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-41",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd41",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-41.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-42",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd42",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-42.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-43",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd43",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-43.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-44",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd44",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-44.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-45",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd45",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-45.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-46",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd46",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-46.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-47",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd47",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-47.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-48",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd48",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-48.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-49",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd49",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-49.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-5",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd5",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-5.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-50",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd50",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-50.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-51",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd51",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-51.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-52",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd52",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-52.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-53",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd53",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-53.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-54",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd54",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-54.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-55",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd55",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-55.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-56",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd56",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-56.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-57",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd57",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-57.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-58",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd58",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-58.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-59",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd59",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-59.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-6",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd6",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-6.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-60",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd60",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-60.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-61",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd61",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-61.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-62",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd62",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-62.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-63",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd63",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-63.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-64",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd64",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-64.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-65",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd65",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-65.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-66",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd66",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-66.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-67",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd67",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-67.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-68",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd68",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-68.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-69",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd69",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-69.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-7",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd7",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-7.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-70",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd70",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-70.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-71",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd71",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-71.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-72",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd72",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-72.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-73",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd73",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-73.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-74",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd74",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-74.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-75",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd75",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-75.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-76",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd76",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-76.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-77",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd77",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-77.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-78",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd78",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-78.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-79",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd79",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-79.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-8",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd8",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-8.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-80",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd80",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-80.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-81",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd81",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-81.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-82",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd82",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-82.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-83",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd83",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-83.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-84",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd84",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-84.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-85",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd85",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-85.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-86",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd86",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-86.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-87",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd87",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-87.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-88",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd88",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-88.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-89",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd89",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-89.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-9",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd9",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-9.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-90",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd90",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-90.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-91",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd91",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-91.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-92",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd92",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-92.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-93",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd93",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-93.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-94",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd94",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-94.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-95",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd95",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-95.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-96",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd96",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-96.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-97",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd97",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-97.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-98",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd98",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-98.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Winograd-99",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Winograd99",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-Winograd-99.html" : "Quesionnaire ValueSet For Winograd Scehema"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/Yes-No-Some",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "YesNoSome",
+      "title" : "Yes/No/Some Response Codes",
+      "description" : "A set of codes representing 'Yes', 'No', and 'Some' responses for questionnaires.",
+      "uses" : {
+      },
+      "ValueSet-yesnosome.html" : "Yes/No/Some"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/acoustic-task-status",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "AcousticTaskStatus",
+      "title" : "Status Codes for Acoustic Tasks",
+      "description" : "A comprehensive set of codes representing the status of Acoustic Tasks.",
+      "uses" : {
+      },
+      "ValueSet-acoustic-task-status.html" : "acoustic ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/adhd",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ADHD",
+      "title" : "adhd",
+      "description" : "The codes required for adhd questionnaire",
+      "uses" : {
+      },
+      "ValueSet-adhd.html" : "ADHD"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/alcohol-consumption-amount",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "AlcoholConsumptionAmount",
+      "title" : "Alcohol Consumption Frequency Codes",
+      "description" : "This code system defines the frequency of alcohol consumption for use in questionnaires.",
+      "uses" : {
+      },
+      "ValueSet-alcohol-consumption-amount.html" : "Drinking number ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/alcohol-consumption-frequency",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "AlcoholConsumptionFrequency",
+      "title" : "Alcohol Consumption Frequency Codes",
+      "description" : "This code system defines the frequency of alcohol consumption for use in questionnaires.",
+      "uses" : {
+      },
+      "ValueSet-alcohol-consumption-frequency.html" : "Alcohol Consumption ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/checked-unchecked",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "CheckedUnchecked",
+      "title" : "Enrollment Status Codes for Questionnaires",
+      "description" : "This code system defines the status codes used to indicate the enrollment condition in questionnaires.",
+      "uses" : {
+      },
+      "ValueSet-checked-unchecked.html" : "Conditions ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/child-education",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ChildEducation",
+      "title" : "Child Education Level Code System",
+      "description" : "A comprehensive code system for identifying the highest level of education attained by a child, used in questionnaire contexts.",
+      "uses" : {
+      },
+      "ValueSet-Highest-Education.html" : "Highest form of Education"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/comments",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Comments",
+      "title" : "Comments",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "uses" : {
+      },
+      "ValueSet-comments.html" : "Comments"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/consent-aggreement",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ConsentAgreement",
+      "title" : "Codes for Consent",
+      "description" : "This code system is designed for consent questionnaire.",
+      "uses" : {
+      },
+      "ValueSet-consent-agreement.html" : "Questionnaire codes for consent agreement"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/consent-signing",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ConsentSigning",
+      "title" : "Codes for Consent signing",
+      "description" : "This code system is designed for consent questionnaire.",
+      "uses" : {
+      },
+      "ValueSet-consent-signing.html" : "Questionnaire codes for consent signing"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/consent-status",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ConsentStatus",
+      "title" : "Consent Status Codes",
+      "description" : "Code system representing various statuses of patient consent",
+      "uses" : {
+      },
+      "ValueSet-consent-status.html" : "Consent status ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/consent-usf-question",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ConsentUsfQuestion",
+      "title" : "Consent Usf Question",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "uses" : {
+      },
+      "ValueSet-consent-usf-question.html" : "Consent Main ICF (USF)"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/decline-reason",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DeclineReason",
+      "title" : "Reasons for Declining Participation Codes",
+      "description" : "This code system specifies the various reasons an individual might decline participation in a study, as used in questionnaire enrollment.",
+      "uses" : {
+      },
+      "ValueSet-decline-reason.html" : "Decline Reason ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/degree",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Degree",
+      "title" : "Degree",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "uses" : {
+      },
+      "ValueSet-degree.html" : "Degree"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/difficulty-breathing",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DifficultyBreathing",
+      "title" : "Questionnaire codes for difficulty breahing",
+      "description" : "The codes required for Questionnaires",
+      "uses" : {
+      },
+      "ValueSet-difficulty-breathing.html" : "Questionnaire codes for difficulty breahing"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/disability-status",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DisabilityStatus",
+      "title" : "Disability Status Code System",
+      "description" : "A comprehensive code system for categorizing disability status in a questionnaire format.",
+      "uses" : {
+      },
+      "ValueSet-disability-status.html" : "Disability Status"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/disability-type",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DisabilityType",
+      "title" : "Disability Classification Codes",
+      "description" : "A comprehensive set of codes representing different types of disabilities for use in questionnaires.",
+      "uses" : {
+      },
+      "ValueSet-disability-type.html" : "Disability Type"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/dsm5",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DSM5",
+      "title" : "Diagnostic and Statistical Manual of Mental Disorders (DSM-5) Code System",
+      "description" : "This code system is designed for the DSM-5 questionnaire, providing severity codes for mental health conditions.",
+      "uses" : {
+      },
+      "ValueSet-dsm5.html" : "DSM5"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DSM5Phobia",
+      "title" : "dsm5 q5",
+      "description" : "The codes required for dsm5 phobia questionnaire",
+      "uses" : {
+      },
+      "ValueSet-dsm5-phobia.html" : "DSM5 Q5"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/dsm5-q1",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DSM5Q1",
+      "title" : "dsm5 q1",
+      "description" : "The codes required for dsm5 q1 questionnaire",
+      "uses" : {
+      },
+      "ValueSet-dsm5-q1.html" : "DSM5 Q1"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/dsm5-q2",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DSM5Q2",
+      "title" : "dsm5 q2",
+      "description" : "The codes required for dsm5 q2 questionnaire",
+      "uses" : {
+      },
+      "ValueSet-dsm5-q2.html" : "DSM5 Q3"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/dsm5-q3",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DSM5Q3",
+      "title" : "dsm5 q3",
+      "description" : "The codes required for dsm5 q3 questionnaire",
+      "uses" : {
+      },
+      "ValueSet-dsm5-q3.html" : "DSM5 Q3"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/dsm5-q4",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DSM5Q4",
+      "title" : "dsm5 q4",
+      "description" : "The codes required for dsm5 q4 questionnaire",
+      "uses" : {
+      },
+      "ValueSet-dsm5-q4.html" : "DSM5 Q4"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/dsm5-q5",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DSM5Q5",
+      "title" : "dsm5 q5",
+      "description" : "The codes required for dsm5 q5 questionnaire",
+      "uses" : {
+      },
+      "ValueSet-dsm5-q5.html" : "DSM5 Q5"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/dysnpea-index",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DysnpeaIndex",
+      "title" : "Codes for Dysnpea Index",
+      "description" : "This code system is designed for dysnpea index questionnaire.",
+      "uses" : {
+      },
+      "ValueSet-dysnpea-index.html" : "Dysnpea Index ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/education-level",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "EducationLevel",
+      "title" : "Education Level Code System",
+      "description" : "A comprehensive code system for identifying the highest level of education attained by a child, used in questionnaire contexts.",
+      "uses" : {
+      },
+      "ValueSet-EducationLevel.html" : "Highest form of Education"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/eligible-studies",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "EligibleStudies",
+      "title" : "Eligibility Criteria for Study Enrollment",
+      "description" : "A comprehensive set of codes representing different study fields for questionnaire enrollment.",
+      "uses" : {
+      },
+      "ValueSet-eligible-studies.html" : "Eligible studies ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/enroll",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Enroll",
+      "title" : "Eligibility Status Codes for Study Enrollment",
+      "description" : "This code system defines the possible status codes for study enrollment eligibility in a questionnaire.",
+      "uses" : {
+      },
+      "ValueSet-enroll.html" : "Enroll ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/enrollment-complete",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "EnrollmentComplete",
+      "title" : "Enrollment Status Codes",
+      "description" : "The set of codes representing the status of a Questionnaire enrollment",
+      "uses" : {
+      },
+      "ValueSet-enrollment-complete.html" : "Enrollment Complete ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/enrollment-institution",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "EnrollmentInstitution",
+      "title" : "Institution Enrollment Codes",
+      "description" : "Specific codes representing different institutions for questionnaire enrollment.",
+      "uses" : {
+      },
+      "ValueSet-enrollment-institution.html" : "Enrollment Institution ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/enrollment-select-language",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "EnrollmentSelectLanguage",
+      "title" : "Language Selection Codes for Enrollment Questionnaire",
+      "description" : "This code system defines the language options available for the enrollment questionnaire.",
+      "uses" : {
+      },
+      "ValueSet-select-language.html" : "Select ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/ent-history",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ENTHistory",
+      "title" : "Ear, Nose, and Throat (ENT) History Codes",
+      "description" : "This code system encompasses the complete set of codes used for documenting patient's ear, nose, and throat (ENT) history in questionnaires.",
+      "uses" : {
+      },
+      "ValueSet-ent-history.html" : "ENT History ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/etiology",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Etiology",
+      "title" : "etiology",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "uses" : {
+      },
+      "ValueSet-etiology.html" : "etiology"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/financial-assistance",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "FinancialAssistance",
+      "title" : "Financial Aid Programs Questionnaire Codes",
+      "description" : "Existence of a financial aid program.",
+      "uses" : {
+      },
+      "ValueSet-financial-assistance.html" : "Financial Assistance"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/fluent-language",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "FluentLanguage",
+      "title" : "Fluent Language Identification Codes",
+      "description" : "A set of codes identifying languages for questionnaire enrollment purposes.",
+      "uses" : {
+      },
+      "ValueSet-fluent-language.html" : "Fluent ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/frequency-of-smoking",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "SmokingTimes",
+      "title" : "Frequency of Smoking Codes for Questionnaires",
+      "description" : "This code system includes specific codes used in questionnaires to assess the frequency of a respondent's smoking habits.",
+      "uses" : {
+      },
+      "ValueSet-smoking-times.html" : "Smoking times ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/gender-identity",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "GenderIdentity",
+      "title" : "Comprehensive Gender Identity Codes",
+      "description" : "This code system provides a comprehensive list of gender identity codes for use in demographic questionnaires.",
+      "uses" : {
+      },
+      "ValueSet-gender-identity.html" : "Gender Identity"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/glottic-gap",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "GlotticGap",
+      "title" : "Tumor invading RLN ",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "uses" : {
+      },
+      "ValueSet-glottic-gap.html" : "Glottic Gap"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/household-makeup",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "HouseholdMakeup",
+      "title" : "Household Composition Classification Codes",
+      "description" : "A comprehensive set of codes defining different household compositions.",
+      "uses" : {
+      },
+      "ValueSet-household-makeup.html" : "Household Makeup"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/household-status",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "HouseholdStatus",
+      "title" : "Residential Status Code System",
+      "description" : "A comprehensive code system defining various residential statuses.",
+      "uses" : {
+      },
+      "ValueSet-household-status.html" : "Household Status"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/iatrogenic",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Iatrogenic",
+      "title" : "iatrogenic",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "uses" : {
+      },
+      "ValueSet-iatrogenic.html" : "Iatrogenic"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/immigration-status",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ImmigrationStatus",
+      "title" : "Immigration Status Classification Codes",
+      "description" : "A comprehensive set of codes representing different immigration statuses.",
+      "uses" : {
+      },
+      "ValueSet-immigration-status.html" : "Immigration Status"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/left-right",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "LeftRight",
+      "title" : "leftRight",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "uses" : {
+      },
+      "ValueSet-left-right.html" : "leftRight"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/leicester-cough",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "LeicesterCough",
+      "title" : "Codes for Leicester Cough",
+      "description" : "This code system is designed for leicester cough questionnaire.",
+      "uses" : {
+      },
+      "ValueSet-leicester-cough.html" : "Leicester Cough ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/marital-status",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "Marital Status Classification Codes",
+      "description" : "A comprehensive set of codes representing different marital statuses for use in questionnaires.",
+      "uses" : {
+      },
+      "ValueSet-marital-status.html" : "Marital Status"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/medication",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Medication",
+      "title" : "Comprehensive Medication Code System",
+      "description" : "This code system encompasses a broad range of medications used in questionnaires, including antibiotics, antihistamines, cocaine, diuretics, hormones, inhaled corticosteroids for asthma, pain medications, psychotropic medications, tricyclic antidepressants, vitamins, and others.",
+      "uses" : {
+      },
+      "ValueSet-medication.html" : "Medication ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/menstruation-menopause-status",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "MenstruationMenopauseStatus",
+      "title" : "Menstruation and Menopause Status Codes",
+      "description" : "This code system defines the possible responses for a questionnaire regarding menstruation and menopause status.",
+      "uses" : {
+      },
+      "ValueSet-menstruation-menopause-status.html" : "Menstratio / Menopause ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/neuro-consent",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "NeuroConsent",
+      "title" : "Questionnaire codes for neuro consent",
+      "description" : "The codes required for neuro consent",
+      "uses" : {
+      },
+      "ValueSet-neuro-consent.html" : "Questionnaire codes for neuro consent"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/neuro-participation-consent",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "NeuroParticipationConsent",
+      "title" : "Questionnaire codes for neuro consent",
+      "description" : "The codes required for neuro consent",
+      "uses" : {
+      },
+      "ValueSet-neuro-participation-consent.html" : "Questionnaire codes for neuro consent"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/neurological-history",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "NeurologicalHistory",
+      "title" : "Neurological History Questionnaire Codes",
+      "description" : "A comprehensive set of codes used for identifying and categorizing neurological conditions in a questionnaire.",
+      "uses" : {
+      },
+      "ValueSet-neurological-history.html" : "NeurologicalHistory ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/peds-enrollment",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PedsEnrollment",
+      "title" : "Pediatric Enrollment",
+      "description" : "The codes required for Pediatric enrollment pre-question questionnaire",
+      "uses" : {
+      },
+      "ValueSet-peds-enrollment.html" : "Pediatric Enrollment"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/peds-language-fluency",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PedsLanguageFluency",
+      "title" : "Pediatric Enrollment",
+      "description" : "The codes required for Pediatric enrollment pre-question questionnaire",
+      "uses" : {
+      },
+      "ValueSet-peds-language-fluency.html" : "Pediatric Language Fluency"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/peds-medical-history",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PedsMedicalHistory",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-peds-medical-history.html" : "Questionnaire codes"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/peds-reason-to-decline",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PedsReasonToDecline",
+      "title" : "Questionnaire codes for peds reason to decline",
+      "description" : "The codes required for Questionnaires",
+      "uses" : {
+      },
+      "ValueSet-peds-reason-to-decline.html" : "Questionnaire codes"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/peds-who-completed-survey",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PedsWhoCompletedSurvey",
+      "title" : "Questionnaire codes",
+      "description" : "The codes required for Questionnaires survey completion",
+      "uses" : {
+      },
+      "ValueSet-peds-who-completed-survey.html" : "Questionnaire codes"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/permission-to-share-with-doctor",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PermissionToShareWithDoctor",
+      "title" : "Questionnaire codes for neuro consent",
+      "description" : "The codes required for neuro consent",
+      "uses" : {
+      },
+      "ValueSet-permission-to-share-with-doctor.html" : "Questionnaire codes for neuro consent"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/permission-to-share-with-family",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PermissionToShareWithFamily",
+      "title" : "Questionnaire codes for neuro consent",
+      "description" : "The codes required for neuro consent",
+      "uses" : {
+      },
+      "ValueSet-permission-to-share-with-family.html" : "Questionnaire codes for neuro consent"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/perspiration-frequency",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PerspirationFrequency",
+      "title" : "Perspiration Frequency Codes for Questionnaires",
+      "description" : "This code system includes specific codes for indicating the frequency of perspiration in questionnaire responses.",
+      "uses" : {
+      },
+      "ValueSet-perspiration-frequency.html" : "Perspiration ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/psc-17",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PSC17",
+      "title" : "Pediatric Symptom Checklist (PSC-17)",
+      "description" : "The codes required for Pediatric Symptom Checklist (PSC-17) questionnaire",
+      "uses" : {
+      },
+      "ValueSet-psc-17.html" : "Pediatric Symptom Checklist (PSC-17) ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/psychiatric-history",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PsychiatricHistory",
+      "title" : "Psychiatric History Classification Codes",
+      "description" : "A comprehensive set of codes representing various psychiatric conditions, used in psychiatric history questionnaires.",
+      "uses" : {
+      },
+      "ValueSet-psychiatric-history.html" : "Psychiatric History ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/ptsd",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PTSD",
+      "title" : "ptsd",
+      "description" : "The codes required for ptsd questionnaire",
+      "uses" : {
+      },
+      "ValueSet-ptsd.html" : "PTSD"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/reading-ability",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ReadingAbility",
+      "title" : "Reading Proficiency Levels",
+      "description" : "A comprehensive set of codes representing different levels of reading proficiency for questionnaire respondents.",
+      "uses" : {
+      },
+      "ValueSet-reading-ability.html" : "Reading ability ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/recording",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Recording",
+      "title" : "Recording Version Codes",
+      "description" : "A comprehensive set of codes representing different versions of recordings.",
+      "uses" : {
+      },
+      "ValueSet-recording.html" : "recordig ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/seasonal-allergies",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "SeasonalAlergies",
+      "title" : "Codes for Confounders Season Allergies",
+      "description" : "This code system is designed for confounders questionnaire.",
+      "uses" : {
+      },
+      "ValueSet-seasonal-allergies.html" : "ValueSet for Confounders Season Allergies"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/session",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Session",
+      "title" : "Session Status Codes",
+      "description" : "A comprehensive set of codes representing the status of a session.",
+      "uses" : {
+      },
+      "ValueSet-session.html" : "session ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/smoking-status",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "SmokingStatus",
+      "title" : "Smoking Status Codes for Questionnaires",
+      "description" : "This code system defines the necessary codes for identifying smoking status in health questionnaires.",
+      "uses" : {
+      },
+      "ValueSet-smoking-status.html" : "Smoking Status ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/surgery-sub-category",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "SurgerySubCategory",
+      "title" : "surgery sub-category",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "uses" : {
+      },
+      "ValueSet-surgery-sub-category.html" : "Surgery Sub Category"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/survey-options",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "SurveyOptions",
+      "title" : "PHQ9 and GAD7 Survey Response Codes",
+      "description" : "This code system defines the response options for PHQ9 and GAD7 questionnaires.",
+      "uses" : {
+      },
+      "ValueSet-survey-options.html" : "SurveyOptions"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/thyroplasty",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Thyroplasty",
+      "title" : "Thyroplasty ",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "uses" : {
+      },
+      "ValueSet-thyroplasty.html" : "Thyroplasty"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/transportation-type",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "TransportationType",
+      "title" : "Transportation Mode Classification",
+      "description" : "A comprehensive code system categorizing various modes of transportation.",
+      "uses" : {
+      },
+      "ValueSet-transportation-type.html" : "Transportation Type"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/treatment",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Treatment",
+      "title" : "treatment",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "uses" : {
+      },
+      "ValueSet-treatment.html" : "treatment"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/tumor-rln",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "TumorRLN",
+      "title" : "Tumor invading RLN ",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "uses" : {
+      },
+      "ValueSet-tumor-rln.html" : "Tumor RLN"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/urge-to-cough",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "UrgeToCough",
+      "title" : "Codes for Urge to Cough",
+      "description" : "This code system is designed for urge to cough questionnaire.",
+      "uses" : {
+      },
+      "ValueSet-urge-to-cough.html" : "Urge to Cough ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/vocal-fold-injection-augmentation",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "VocalFoldInjectionAugmentation",
+      "title" : "Vocal Fold Injection Augmentation",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "uses" : {
+      },
+      "ValueSet-vocal-fold-injection-augmentation.html" : "Vocal Fold Injection Augmentation"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/vocal-profession",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "VocalProfessionCodes",
+      "title" : "Vocal Profession Codes",
+      "description" : "A comprehensive set of codes representing various professions that involve significant vocal activity.",
+      "uses" : {
+      },
+      "ValueSet-vocal-profession.html" : "Vocal Profession ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "VoiceHandicapIndex",
+      "title" : "Voice Handicap Index Assessment Codes",
+      "description" : "A comprehensive set of codes used for the Voice Handicap Index assessment.",
+      "uses" : {
+      },
+      "ValueSet-voice-handicap-index.html" : "Voice Handicap Index ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/whodas",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "WHODAS",
+      "title" : "WHODAS Questionnaire Code System",
+      "description" : "A comprehensive code system for categorizing responses in WHODAS Questionnaires.",
+      "uses" : {
+      },
+      "ValueSet-whodas.html" : "WHODAS ValueSet"
+    },
+    {
+      "url" : "https://voicecollab.ai/fhir/CodeSystem/yes-no-not-certain",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "YesNoNotCertain",
+      "title" : "YesNoNotCertain",
+      "description" : "The codes required for Diagnosis questionnaire",
+      "uses" : {
+      },
+      "ValueSet-yes-no-not-certain.html" : "YesNoNotCertain"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.2.0/ValueSet-v3-Country.html" : "Country"
+    }
+  ]
+}

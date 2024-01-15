@@ -32,7 +32,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Consent.identifier","Consent.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
 ","Identifier for this record (external references)","Unique identifier for this copy of the Consent Statement.","This identifier identifies this copy of the consent. Where this identifier is also used elsewhere as the identifier for a consent record (e.g. a CDA consent document) then the consent details are expected to be the same.","","","","","","<valueIdentifier xmlns=""http://hl7.org/fhir"">
-  <system value=""urn:ietf:rfc:3986""/>
+  <system value=""http://acme.org/identifier/local/eCMS""/>
   <value value=""Local eCMS identifier""/>
 </valueIdentifier>","","",,,,,"",,,,"Consent.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.identifier",".id","FiveWs.identifier"

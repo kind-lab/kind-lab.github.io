@@ -14,11 +14,11 @@
     "valueCode" : "business"
   }],
   "url" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-waveform-device",
-  "version" : "1.0.0",
+  "version" : "1.4.0",
   "name" : "VbaiWaveformDevice",
   "title" : "VBAI Waveform Device",
   "status" : "active",
-  "date" : "2023-10-04T15:51:42+00:00",
+  "date" : "2024-01-15T14:38:18+00:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -232,10 +232,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -458,7 +454,7 @@
       "path" : "Device.udiCarrier",
       "short" : "Unique Device Identifier (UDI) Barcode string",
       "definition" : "Unique device identifier (UDI) assigned to device label or package.  Note that the Device may include multiple udiCarriers as it either may include just the udiCarrier for the jurisdiction it is sold, or for multiple jurisdictions it could have been sold.",
-      "comment" : "UDI may identify an unique instance of a device, or it may only identify the type of the device.  See [UDI mappings](http://hl7.org/fhir/R4/device-mappings.html#udi) for a complete mapping of UDI parts to Device.",
+      "comment" : "UDI may identify an unique instance of a device, or it may only identify the type of the device.  See [UDI mappings](device-mappings.html#udi) for a complete mapping of UDI parts to Device.",
       "min" : 0,
       "max" : "*",
       "base" : {

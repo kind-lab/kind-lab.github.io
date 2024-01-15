@@ -14,11 +14,11 @@
     "valueCode" : "patient"
   }],
   "url" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire-response",
-  "version" : "1.0.0",
+  "version" : "1.4.0",
   "name" : "VbaiQuestionnaireResponse",
   "title" : "VBAI Questionnaire Response",
   "status" : "active",
-  "date" : "2023-10-04T15:51:42+00:00",
+  "date" : "2024-01-15T14:38:18+00:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -239,10 +239,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -1009,7 +1005,7 @@
       "path" : "QuestionnaireResponse.item.definition",
       "short" : "ElementDefinition - details for the item",
       "definition" : "A reference to an [ElementDefinition](http://hl7.org/fhir/R4/elementdefinition.html) that provides the details for the item.",
-      "comment" : "The ElementDefinition must be in a [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html#), and must have a fragment identifier that identifies the specific data element by its id (Element.id). E.g. http://hl7.org/fhir/StructureDefinition/Observation#Observation.value[x].\n\nThere is no need for this element if the item pointed to by the linkId has a definition listed.",
+      "comment" : "The ElementDefinition must be in a [StructureDefinition](structuredefinition.html#), and must have a fragment identifier that identifies the specific data element by its id (Element.id). E.g. http://hl7.org/fhir/StructureDefinition/Observation#Observation.value[x].\n\nThere is no need for this element if the item pointed to by the linkId has a definition listed.",
       "requirements" : "A common pattern is to define a set of data elements, and then build multiple different questionnaires for different circumstances to gather the data. This element provides traceability to the common definition.",
       "min" : 0,
       "max" : "1",
