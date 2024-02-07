@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <title>VoiceaBiomarkerforAI : Terminology Server Report</title>
@@ -11,26 +11,27 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for VoiceaBiomarkerforAI</h1>
- <p>Generated Mon Jan 15 14:41:46 UTC 2024, FHIR version 4.0.1 for kindlab.fhir.vbai#1.4.0 (canonical = <a href="https://voicecollab.ai/fhir">https://voicecollab.ai/fhir</a> (<a href="https://voicecollab.ai/fhir/history.html">history</a>))</p>
+ <p>Generated Wed Feb 07 17:15:20 UTC 2024, FHIR version 4.0.1 for kindlab.fhir.vbai#1.5.1 (canonical = <a href="https://voicecollab.ai/fhir">https://voicecollab.ai/fhir</a> (<a href="https://voicecollab.ai/fhir/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
-<h2>Internal Errors choosing Server using 'http://tx.fhir.org/tx-reg':</h2>
+<h2>Terminology Parameters</h2>
 <ul>
-  <li>Error resolving system http://unitsofmeasure.org: Not Found (http://tx.fhir.org/tx-reg/resolve?fhirVersion=5.0&amp;url=http://unitsofmeasure.org)</li>
-  <li>Error resolving system http://loinc.org: Not Found (http://tx.fhir.org/tx-reg/resolve?fhirVersion=5.0&amp;url=http://loinc.org)</li>
-  <li>Error resolving system http://snomed.info/sct: Not Found (http://tx.fhir.org/tx-reg/resolve?fhirVersion=5.0&amp;url=http://snomed.info/sct)</li>
-  <li>Error resolving system http://hl7.org/fhir/sid/icd-10-cm: Not Found (http://tx.fhir.org/tx-reg/resolve?fhirVersion=5.0&amp;url=http://hl7.org/fhir/sid/icd-10-cm)</li>
-  <li>Error resolving system http://hl7.org/fhir/sid/icd-9-cm: Not Found (http://tx.fhir.org/tx-reg/resolve?fhirVersion=5.0&amp;url=http://hl7.org/fhir/sid/icd-9-cm)</li>
-  <li>Error resolving system http://www.ama-assn.org/go/cpt: Not Found (http://tx.fhir.org/tx-reg/resolve?fhirVersion=5.0&amp;url=http://www.ama-assn.org/go/cpt)</li>
-  <li>Error resolving system urn:ietf:bcp:13: Not Found (http://tx.fhir.org/tx-reg/resolve?fhirVersion=5.0&amp;url=urn:ietf:bcp:13)</li>
-  <li>Error resolving system https://www.usps.com/: Not Found (http://tx.fhir.org/tx-reg/resolve?fhirVersion=5.0&amp;url=https://www.usps.com/)</li>
-  <li>Error resolving system urn:ietf:bcp:47: Not Found (http://tx.fhir.org/tx-reg/resolve?fhirVersion=5.0&amp;url=urn:ietf:bcp:47)</li>
-  <li>Error resolving system https://voicecollab.ai/fhir/CodeSystem/smoking-types: Not Found (http://tx.fhir.org/tx-reg/resolve?fhirVersion=5.0&amp;url=https://voicecollab.ai/fhir/CodeSystem/smoking-types)</li>
-  <li>Error resolving system urn:iso:std:iso:3166: Not Found (http://tx.fhir.org/tx-reg/resolve?fhirVersion=5.0&amp;url=urn:iso:std:iso:3166)</li>
-  <li>Error resolving system urn:oid:2.16.840.1.113883.6.238|1.2: Not Found (http://tx.fhir.org/tx-reg/resolve?fhirVersion=5.0&amp;url=urn:oid:2.16.840.1.113883.6.238|1.2)</li>
-  <li>Error resolving system http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2021-12-01: Not Found (http://tx.fhir.org/tx-reg/resolve?fhirVersion=5.0&amp;url=http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2021-12-01)</li>
+  <li>
+    <b>x-system-cache-id</b>
+:     <code>dc8fd4bc-091a-424a-8a3b-6198ef146891</code>
+  </li>
+</ul>
+<h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
+<ul>
+  <li>http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code|5.0.1 includes multiple systems [http://hl7.org/fhir/sid/icd-10-cm, http://hl7.org/fhir/sid/icd-9-cm, http://snomed.info/sct] best handled by multiple servers: [auth = http://tx.fhir.org/r4, candidates=, auth = http://tx.fhir.org/r4, candidates=, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>null uses the system [https://voicecollab.ai/fhir/CodeSystem/smoking-types] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>https://voicecollab.ai/fhir/ValueSet/smoking-types|1.5.1 uses the system [https://voicecollab.ai/fhir/CodeSystem/smoking-types] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity|5.0.1 includes multiple systems [urn:oid:2.16.840.1.113883.6.238|1.2, http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2021-12-01] best handled by multiple servers: [auth = , candidates=http://tx.fhir.org/r4, auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir]. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>http://hl7.org/fhir/us/core/ValueSet/detailed-race|5.0.1 includes multiple systems [urn:oid:2.16.840.1.113883.6.238|1.2, http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2021-12-01] best handled by multiple servers: [auth = , candidates=http://tx.fhir.org/r4, auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir]. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>null uses the system [https://voicecollab.ai/fhir/CodeSystem/smoking-types] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>https://voicecollab.ai/fhir/ValueSet/smoking-types|1.5.1 uses the system [https://voicecollab.ai/fhir/CodeSystem/smoking-types] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
 </ul>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
-<p>Use Count: 52. Code Systems used: </p>
+<p>Use Count: 53. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -63,7 +64,7 @@
   <tr>
     <td>http://loinc.org</td>
     <td>0</td>
-    <td>20</td>
+    <td>18</td>
     <td>
       <a href="http://terminology.hl7.org/5.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
     </td>
@@ -139,5 +140,11 @@
     <td/>
   </tr>
 </table>
+<p>ValueSets fetched:</p>
+<ul>
+  <li>
+    <a href="http://tx.fhir.org/r4/ValueSet/dicom-cid-29-AcquisitionModality">http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html</a>
+  </li>
+</ul>
 </body>
 </html>

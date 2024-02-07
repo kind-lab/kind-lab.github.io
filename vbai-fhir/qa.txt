@@ -1,9 +1,9 @@
-﻿VoiceaBiomarkerforAI : Validation Results
+VoiceaBiomarkerforAI : Validation Results
 =========================================
 
-err = 6, warn = 936, info = 9
-IG Publisher Version: 1.5.11
-Generated Mon Jan 15 14:41:46 UTC 2024. FHIR version 4.0.1 for kindlab.fhir.vbai#1.4.0 (canonical = https://voicecollab.ai/fhir)
+err = 6, warn = 933, info = 9
+IG Publisher Version: 1.5.16
+Generated Wed Feb 07 17:15:20 UTC 2024. FHIR version 4.0.1 for kindlab.fhir.vbai#1.5.1 (canonical = https://voicecollab.ai/fhir)
  Build Errors : 15 / 4 / 0
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-Who-Completed-Survey : 0 / 1 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/CodeSystem-Winograd-1 : 0 / 2 / 1
@@ -233,7 +233,7 @@ Generated Mon Jan 15 14:41:46 UTC 2024. FHIR version 4.0.1 for kindlab.fhir.vbai
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Consent-VbaiConsentExample : 0 / 0 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Device-VbaiWaveformDeviceExample : 0 / 0 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Encounter-VbaiEncounterExample : 0 / 0 / 1
- /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/ImagingStudy-VbaiImagingStudyExample : 0 / 1 / 1
+ /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/ImagingStudy-VbaiImagingStudyExample : 0 / 0 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/ImplementationGuide-kindlab.fhir.vbai : 0 / 4 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Media-VbaiImagingMediaExample : 0 / 0 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Media-VbaiWaveformMediaExample : 0 / 0 / 1
@@ -314,7 +314,7 @@ Generated Mon Jan 15 14:41:46 UTC 2024. FHIR version 4.0.1 for kindlab.fhir.vbai
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-consent : 0 / 0 / 8
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-encounter : 0 / 0 / 2
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-imaging-media : 0 / 0 / 1
- /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-imaging-study : 0 / 2 / 1
+ /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-imaging-study : 0 / 0 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-patient : 0 / 0 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-plan-definition : 0 / 0 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-questionnaire : 0 / 0 / 1
@@ -1168,7 +1168,6 @@ WARNING: Condition/VbaiConditionExample: Condition: Constraint failed: con-3: 'C
 == fsh-generated/resources/Device-VbaiWaveformDeviceExample.json ==
 == fsh-generated/resources/Encounter-VbaiEncounterExample.json ==
 == fsh-generated/resources/ImagingStudy-VbaiImagingStudyExample.json ==
-WARNING: ImagingStudy/VbaiImagingStudyExample: ImagingStudy.modality[0]: ValueSet http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html not found
 == fsh-generated/resources/ImplementationGuide-kindlab.fhir.vbai.json ==
 WARNING: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.resource[270].name: value should not start or finish with whitespace 'Tumor invading RLN '
 WARNING: ImplementationGuide/kindlab.fhir.vbai: ImplementationGuide.definition.resource[303].name: value should not start or finish with whitespace 'Thyroplasty '
@@ -1269,7 +1268,7 @@ WARNING: Questionnaire/NeuroConsent: Questionnaire.item[23].text: value should n
 WARNING: Questionnaire/NeuroConsent: Questionnaire.item[27].text: value should not start or finish with whitespace 'I understand that my family doctor/health care provider may be informed of study participation and provide my results if I agreed to this.\nReports about research tests done with your samples will be shared with members of the research team as well as to the doctor who referred you into the study or to your family physician and to you, if you wish to learn about the results. '
 WARNING: Questionnaire/NeuroConsent: Questionnaire.item[28].text: value should not start or finish with whitespace 'You will be asked if your family history information and medical information, including results of the genomic sequencing test, may be shared with a designated family member. '
 ERROR: Questionnaire/NeuroConsent: Questionnaire.item[30].enableWhen[0]: Constraint failed: que-7: 'If the operator is 'exists', the value must be a boolean' (defined in http://hl7.org/fhir/StructureDefinition/Questionnaire)
-ERROR: Questionnaire/NeuroConsent: Questionnaire.item[30].enableWhen[0]: Questionnaire.item.enableWhen.answer[x]: minimum required = 1, but only found 0 (from https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire|1.4.0)
+ERROR: Questionnaire/NeuroConsent: Questionnaire.item[30].enableWhen[0]: Questionnaire.item.enableWhen.answer[x]: minimum required = 1, but only found 0 (from https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire|1.5.1)
 WARNING: Questionnaire/NeuroConsent: Questionnaire.item[31].text: value should not start or finish with whitespace 'The following attestation must be provided if the participant is unable to read or requires an oral translation: \n\nIf the participant is assisted during the consent process, please check the relevant box and complete the signature space below: \n\nThe person signing below acted as an interpreter, and attests that the study as set out in the consent form was accurately sight translated and/or interpreted, and that interpretation was provided on questions, responses and additional discussion arising from this process.\n\nPrinted Name, Signiture, Date, and Language\n\nThe consent form was read to the participant. The person signing below attests that the study as set out in this form was accurately explained to the participant, and any questions have been answered.\nPRINT NAME of witness\tSignature\t Date\t\t\t\n\nRelationship to Participant\n\n'
 WARNING: Questionnaire/NeuroConsent: Questionnaire.item[33].text: value should not start or finish with whitespace 'Name of participant, Signature of Participant, and date/time. I have explained to the above-named participant the nature and purpose, the potential benefits, and possible risks associated with participation in this research study. I have answered all questions that have been raised about the study.\n'
 == fsh-generated/resources/Questionnaire-PANASQuestionnaire.json ==
@@ -1609,8 +1608,6 @@ INFORMATION: StructureDefinition/vbai-consent: StructureDefinition.snapshot.elem
 INFORMATION: StructureDefinition/vbai-encounter: StructureDefinition.snapshot.element[32].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-vbai-imaging-media.json ==
 == fsh-generated/resources/StructureDefinition-vbai-imaging-study.json ==
-WARNING: StructureDefinition/vbai-imaging-study: StructureDefinition.snapshot.element[22].binding: The valueSet reference http://www.rsna.org/RadLex_Playbook.aspx on element ImagingStudy.procedureCode could not be resolved
-WARNING: StructureDefinition/vbai-imaging-study: StructureDefinition.snapshot.element[53].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1 on element ImagingStudy.series.instance.sopClass could not be resolved
 == fsh-generated/resources/StructureDefinition-vbai-patient.json ==
 == fsh-generated/resources/StructureDefinition-vbai-plan-definition.json ==
 == fsh-generated/resources/StructureDefinition-vbai-questionnaire.json ==
