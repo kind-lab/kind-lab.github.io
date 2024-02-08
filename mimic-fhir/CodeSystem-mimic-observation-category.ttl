@@ -1,0 +1,201 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mimic-observation-category"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This  code system <code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Scores - APACHE II<a name=\"mimic-observation-category-Scores-APACHEII\"> </a></td></tr><tr><td style=\"white-space:nowrap\">6-Cultures<a name=\"mimic-observation-category-6-Cultures\"> </a></td></tr><tr><td style=\"white-space:nowrap\">4-Procedures<a name=\"mimic-observation-category-4-Procedures\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PA Line Insertion<a name=\"mimic-observation-category-PALineInsertion\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Thoracentesis<a name=\"mimic-observation-category-Thoracentesis\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Restraint/Support Systems<a name=\"mimic-observation-category-Restraint.47SupportSystems\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Research Enrollment Note<a name=\"mimic-observation-category-ResearchEnrollmentNote\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Scores - APACHE IV (2)<a name=\"mimic-observation-category-Scores-APACHEIV.402.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Impella<a name=\"mimic-observation-category-Impella\"> </a></td></tr><tr><td style=\"white-space:nowrap\">GI/GU<a name=\"mimic-observation-category-GI.47GU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Lumbar Puncture<a name=\"mimic-observation-category-LumbarPuncture\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Pulmonary<a name=\"mimic-observation-category-Pulmonary\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Swallow Evaluation<a name=\"mimic-observation-category-SwallowEvaluation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Dialysis<a name=\"mimic-observation-category-Dialysis\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OT Notes<a name=\"mimic-observation-category-OTNotes\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Output<a name=\"mimic-observation-category-Output\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Family Mtg Note<a name=\"mimic-observation-category-FamilyMtgNote\"> </a></td></tr><tr><td style=\"white-space:nowrap\">7-Communication<a name=\"mimic-observation-category-7-Communication\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Respiratory<a name=\"mimic-observation-category-Respiratory\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Access Lines - Peripheral<a name=\"mimic-observation-category-AccessLines-Peripheral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ADT<a name=\"mimic-observation-category-ADT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Medications<a name=\"mimic-observation-category-Medications\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Drains<a name=\"mimic-observation-category-Drains\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Cardiovascular<a name=\"mimic-observation-category-Cardiovascular\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RNTriggerNote<a name=\"mimic-observation-category-RNTriggerNote\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Skin - Impairment<a name=\"mimic-observation-category-Skin-Impairment\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Cardiovascular (Pacer Data)<a name=\"mimic-observation-category-Cardiovascular.40PacerData.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Intubation<a name=\"mimic-observation-category-Intubation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Centrimag<a name=\"mimic-observation-category-Centrimag\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Toxicology<a name=\"mimic-observation-category-Toxicology\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Hemodynamics<a name=\"mimic-observation-category-Hemodynamics\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Nutrition - Enteral<a name=\"mimic-observation-category-Nutrition-Enteral\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Ingredients - general (Not In Use)<a name=\"mimic-observation-category-Ingredients-general.40NotInUse.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Triggers Note<a name=\"mimic-observation-category-TriggersNote\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ApacheII Parameters<a name=\"mimic-observation-category-ApacheIIParameters\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Tandem Heart<a name=\"mimic-observation-category-TandemHeart\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ZIntake<a name=\"mimic-observation-category-ZIntake\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MD Progress Note<a name=\"mimic-observation-category-MDProgressNote\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Case Management<a name=\"mimic-observation-category-CaseManagement\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Fluids/Intake<a name=\"mimic-observation-category-Fluids.47Intake\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Antibiotics<a name=\"mimic-observation-category-Antibiotics\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Alarms<a name=\"mimic-observation-category-Alarms\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Neurological<a name=\"mimic-observation-category-Neurological\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Fluids - Other (Not In Use)<a name=\"mimic-observation-category-Fluids-Other.40NotInUse.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Access Lines - Invasive<a name=\"mimic-observation-category-AccessLines-Invasive\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ApacheIV Parameters<a name=\"mimic-observation-category-ApacheIVParameters\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Durable VAD<a name=\"mimic-observation-category-DurableVAD\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ECMO<a name=\"mimic-observation-category-ECMO\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Bronchoscopy<a name=\"mimic-observation-category-Bronchoscopy\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Paracentesis<a name=\"mimic-observation-category-Paracentesis\"> </a></td></tr><tr><td style=\"white-space:nowrap\">3-Significant Events<a name=\"mimic-observation-category-3-SignificantEvents\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IABP<a name=\"mimic-observation-category-IABP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RDOS<a name=\"mimic-observation-category-RDOS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">1-Intubation/Extubation<a name=\"mimic-observation-category-1-Intubation.47Extubation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NICOM<a name=\"mimic-observation-category-NICOM\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Routine Vital Signs<a name=\"mimic-observation-category-RoutineVitalSigns\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Heartware<a name=\"mimic-observation-category-Heartware\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Pain/Sedation<a name=\"mimic-observation-category-Pain.47Sedation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Generic Proc Note<a name=\"mimic-observation-category-GenericProcNote\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Cardiovascular (Pulses)<a name=\"mimic-observation-category-Cardiovascular.40Pulses.41\"> </a></td></tr><tr><td style=\"white-space:nowrap\">2-Ventilation<a name=\"mimic-observation-category-2-Ventilation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Adm History/FHPA<a name=\"mimic-observation-category-AdmHistory.47FHPA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CVL Insertion<a name=\"mimic-observation-category-CVLInsertion\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Nutrition - Supplements<a name=\"mimic-observation-category-Nutrition-Supplements\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PiCCO<a name=\"mimic-observation-category-PiCCO\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Treatments<a name=\"mimic-observation-category-Treatments\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PICC Line Insertion<a name=\"mimic-observation-category-PICCLineInsertion\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Pastoral Care Note<a name=\"mimic-observation-category-PastoralCareNote\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Skin - Incisions<a name=\"mimic-observation-category-Skin-Incisions\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Scores - APACHE IV<a name=\"mimic-observation-category-Scores-APACHEIV\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Labs<a name=\"mimic-observation-category-Labs\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Skin - Assessment<a name=\"mimic-observation-category-Skin-Assessment\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Blood Products/Colloids<a name=\"mimic-observation-category-BloodProducts.47Colloids\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SBNET<a name=\"mimic-observation-category-SBNET\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Arterial Line Insertion<a name=\"mimic-observation-category-ArterialLineInsertion\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Care Plans<a name=\"mimic-observation-category-CarePlans\"> </a></td></tr><tr><td style=\"white-space:nowrap\">5-Imaging<a name=\"mimic-observation-category-5-Imaging\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Ingredients<a name=\"mimic-observation-category-Ingredients\"> </a></td></tr><tr><td style=\"white-space:nowrap\">General<a name=\"mimic-observation-category-General\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OB-GYN<a name=\"mimic-observation-category-OB-GYN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Nutrition - Parenteral<a name=\"mimic-observation-category-Nutrition-Parenteral\"> </a></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.0"] ; # 
+  fhir:name [ fhir:v "MimicObservationCategory"] ; # 
+  fhir:title [ fhir:v "MimicObservationCategory"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-21T13:59:43-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The observation category codes for MIMIC"] ; # 
+  fhir:valueSet [
+     fhir:v "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-category"^^xsd:anyURI ;
+     fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-category>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Scores - APACHE II" ]
+  ] [
+     fhir:code [ fhir:v "6-Cultures" ]
+  ] [
+     fhir:code [ fhir:v "4-Procedures" ]
+  ] [
+     fhir:code [ fhir:v "PA Line Insertion" ]
+  ] [
+     fhir:code [ fhir:v "Thoracentesis" ]
+  ] [
+     fhir:code [ fhir:v "Restraint/Support Systems" ]
+  ] [
+     fhir:code [ fhir:v "Research Enrollment Note" ]
+  ] [
+     fhir:code [ fhir:v "Scores - APACHE IV (2)" ]
+  ] [
+     fhir:code [ fhir:v "Impella" ]
+  ] [
+     fhir:code [ fhir:v "GI/GU" ]
+  ] [
+     fhir:code [ fhir:v "Lumbar Puncture" ]
+  ] [
+     fhir:code [ fhir:v "Pulmonary" ]
+  ] [
+     fhir:code [ fhir:v "Swallow Evaluation" ]
+  ] [
+     fhir:code [ fhir:v "Dialysis" ]
+  ] [
+     fhir:code [ fhir:v "OT Notes" ]
+  ] [
+     fhir:code [ fhir:v "Output" ]
+  ] [
+     fhir:code [ fhir:v "Family Mtg Note" ]
+  ] [
+     fhir:code [ fhir:v "7-Communication" ]
+  ] [
+     fhir:code [ fhir:v "Respiratory" ]
+  ] [
+     fhir:code [ fhir:v "Access Lines - Peripheral" ]
+  ] [
+     fhir:code [ fhir:v "ADT" ]
+  ] [
+     fhir:code [ fhir:v "Medications" ]
+  ] [
+     fhir:code [ fhir:v "Drains" ]
+  ] [
+     fhir:code [ fhir:v "Cardiovascular" ]
+  ] [
+     fhir:code [ fhir:v "RNTriggerNote" ]
+  ] [
+     fhir:code [ fhir:v "Skin - Impairment" ]
+  ] [
+     fhir:code [ fhir:v "Cardiovascular (Pacer Data)" ]
+  ] [
+     fhir:code [ fhir:v "Intubation" ]
+  ] [
+     fhir:code [ fhir:v "Centrimag" ]
+  ] [
+     fhir:code [ fhir:v "Toxicology" ]
+  ] [
+     fhir:code [ fhir:v "Hemodynamics" ]
+  ] [
+     fhir:code [ fhir:v "Nutrition - Enteral" ]
+  ] [
+     fhir:code [ fhir:v "Ingredients - general (Not In Use)" ]
+  ] [
+     fhir:code [ fhir:v "Triggers Note" ]
+  ] [
+     fhir:code [ fhir:v "ApacheII Parameters" ]
+  ] [
+     fhir:code [ fhir:v "Tandem Heart" ]
+  ] [
+     fhir:code [ fhir:v "ZIntake" ]
+  ] [
+     fhir:code [ fhir:v "MD Progress Note" ]
+  ] [
+     fhir:code [ fhir:v "Case Management" ]
+  ] [
+     fhir:code [ fhir:v "Fluids/Intake" ]
+  ] [
+     fhir:code [ fhir:v "Antibiotics" ]
+  ] [
+     fhir:code [ fhir:v "Alarms" ]
+  ] [
+     fhir:code [ fhir:v "Neurological" ]
+  ] [
+     fhir:code [ fhir:v "Fluids - Other (Not In Use)" ]
+  ] [
+     fhir:code [ fhir:v "Access Lines - Invasive" ]
+  ] [
+     fhir:code [ fhir:v "ApacheIV Parameters" ]
+  ] [
+     fhir:code [ fhir:v "Durable VAD" ]
+  ] [
+     fhir:code [ fhir:v "ECMO" ]
+  ] [
+     fhir:code [ fhir:v "Bronchoscopy" ]
+  ] [
+     fhir:code [ fhir:v "Paracentesis" ]
+  ] [
+     fhir:code [ fhir:v "3-Significant Events" ]
+  ] [
+     fhir:code [ fhir:v "IABP" ]
+  ] [
+     fhir:code [ fhir:v "RDOS" ]
+  ] [
+     fhir:code [ fhir:v "1-Intubation/Extubation" ]
+  ] [
+     fhir:code [ fhir:v "NICOM" ]
+  ] [
+     fhir:code [ fhir:v "Routine Vital Signs" ]
+  ] [
+     fhir:code [ fhir:v "Heartware" ]
+  ] [
+     fhir:code [ fhir:v "Pain/Sedation" ]
+  ] [
+     fhir:code [ fhir:v "Generic Proc Note" ]
+  ] [
+     fhir:code [ fhir:v "Cardiovascular (Pulses)" ]
+  ] [
+     fhir:code [ fhir:v "2-Ventilation" ]
+  ] [
+     fhir:code [ fhir:v "Adm History/FHPA" ]
+  ] [
+     fhir:code [ fhir:v "CVL Insertion" ]
+  ] [
+     fhir:code [ fhir:v "Nutrition - Supplements" ]
+  ] [
+     fhir:code [ fhir:v "PiCCO" ]
+  ] [
+     fhir:code [ fhir:v "Treatments" ]
+  ] [
+     fhir:code [ fhir:v "PICC Line Insertion" ]
+  ] [
+     fhir:code [ fhir:v "Pastoral Care Note" ]
+  ] [
+     fhir:code [ fhir:v "Skin - Incisions" ]
+  ] [
+     fhir:code [ fhir:v "Scores - APACHE IV" ]
+  ] [
+     fhir:code [ fhir:v "Labs" ]
+  ] [
+     fhir:code [ fhir:v "Skin - Assessment" ]
+  ] [
+     fhir:code [ fhir:v "Blood Products/Colloids" ]
+  ] [
+     fhir:code [ fhir:v "SBNET" ]
+  ] [
+     fhir:code [ fhir:v "Arterial Line Insertion" ]
+  ] [
+     fhir:code [ fhir:v "Care Plans" ]
+  ] [
+     fhir:code [ fhir:v "5-Imaging" ]
+  ] [
+     fhir:code [ fhir:v "Ingredients" ]
+  ] [
+     fhir:code [ fhir:v "General" ]
+  ] [
+     fhir:code [ fhir:v "OB-GYN" ]
+  ] [
+     fhir:code [ fhir:v "Nutrition - Parenteral" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

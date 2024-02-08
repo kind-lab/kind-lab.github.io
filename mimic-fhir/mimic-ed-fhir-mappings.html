@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Mimic Ed Fhir Mappings - MIMIC Implementation Guide v1.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MIMIC Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.3.0 - Draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mimic-fhir-mappings.html">MIMIC-IV Mapping</a>
+      </li>
+      <li>
+        <a href="mimic-ed-fhir-mappings.html">MIMIC-ED Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General</a>
+      </li>
+      <li>
+        <a href="terminology-guide.html">Terminology</a>
+      </li>
+      <li>
+        <a href="applications.html">Applications</a>
+      </li>
+      <li>
+        <a href="tutorials.html">Tutorials</a>
+      </li>
+      <li>
+        <a href="future-work.html">Future Work</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Subsets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="microbiology-background.html">Microbiology data</a>
+      </li>
+      <li>
+        <a href="medication-background.html">Medication data</a>
+      </li>
+      <li>
+        <a href="emergency-department-subset.html">Emergency Department data</a>
+      </li>
+      <li>
+        <a href="intensive-care-unit-subset.html">Intensive Care Unit data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='mimic-fhir-mappings.html'><b>Mimic Fhir Mappings</b></a></li><li><b>Mimic Ed Fhir Mappings</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MIMIC Implementation Guide - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://mimic.mit.edu/fhir/mimic/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Mimic Ed Fhir Mappings</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#mimic-ed-to-fhir-mappings" id="markdown-toc-mimic-ed-to-fhir-mappings">MIMIC-ED to FHIR Mappings</a></li>
+  <li><a href="#condition" id="markdown-toc-condition">Condition</a></li>
+  <li><a href="#encounter" id="markdown-toc-encounter">Encounter</a></li>
+  <li><a href="#medicationdispense-ed" id="markdown-toc-medicationdispense-ed">MedicationDispense ED</a></li>
+  <li><a href="#medicationstatement-ed" id="markdown-toc-medicationstatement-ed">MedicationStatement ED</a></li>
+  <li><a href="#observation-ed" id="markdown-toc-observation-ed">Observation ED</a></li>
+  <li><a href="#observation-vital-signs" id="markdown-toc-observation-vital-signs">Observation Vital Signs</a></li>
+  <li><a href="#patient" id="markdown-toc-patient">Patient</a></li>
+  <li><a href="#procedure-ed" id="markdown-toc-procedure-ed">Procedure ED</a></li>
+</ul>
+
+</div>
+<h3 id="mimic-ed-to-fhir-mappings">MIMIC-ED to FHIR Mappings</h3>
+<p>The MIMIC-ED database was converted into FHIR. The tables from MIMIC-ED were each mapped to a one or more resources. The diagram below depicts these mappings:</p>
+
+<!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Overall mappings MIMIC-ED to FHIR</strong></figcaption>
+  <img src="mimic-ed-fhir-mappings.png" class="figure-img img-responsive img-rounded center-block" alt="mimic-ed-fhir-mappings.png" />
+</figure>
+
+<p></p>
+</div>
+
+<p>Custom profiles were created to house the tables coming into FHIR. This was necessary to handle the unique terminology coming from MIMIC-ED. In the following sections you will see tables detailing the mapping from each MIMIC-ED table to these MIMIC-FHIR profiles.</p>
+
+<h3 id="condition">Condition</h3>
+<p>One Condition resource per diagnosis (row in diagnosis table).</p>
+
+<table class="grid" id="grid">
+  <thead>
+    <tr>
+      <th>MIMIC-ED Table</th>
+      <th>MIMIC-ED Data Element</th>
+      <th>FHIR Data Element</th>
+      <th>FHIR Profile</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>diagnosis</td>
+      <td>stay_id, seq_num, icd_code</td>
+      <td>Condition.id</td>
+      <td><a href="StructureDefinition-mimic-condition.html">MimicCondition</a></td>
+      <td>Id made up of concatenation of stay_id, seq_num, and icd_code, converted to UUID5</td>
+    </tr>
+    <tr>
+      <td>diagnosis</td>
+      <td>icd_version</td>
+      <td>Condition.code.CodeableConcept.system</td>
+      <td><a href="StructureDefinition-mimic-condition.html">MimicCondition</a></td>
+      <td>If ‘9’ URI of ICD9 if ‘10’ URI of ICD10 (MIMIC code systems)</td>
+    </tr>
+    <tr>
+      <td>diagnosis</td>
+      <td>icd_code</td>
+      <td>Condition.code.CodeableConcept.code</td>
+      <td><a href="StructureDefinition-mimic-condition.html">MimicCondition</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>diagnosis</td>
+      <td>subject_id</td>
+      <td>Condition.subject</td>
+      <td><a href="StructureDefinition-mimic-condition.html">MimicCondition</a></td>
+      <td>Links to a MimicPatient with corresponding identifier</td>
+    </tr>
+    <tr>
+      <td>diagnosis</td>
+      <td>stay_id</td>
+      <td>Condition.encounter</td>
+      <td><a href="StructureDefinition-mimic-condition.html">MimicCondition</a></td>
+      <td>Links to a MimicEncounter with corresponding identifier</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Condition.category is fixed to ‘encounter-diagnosis’ (Encounter Diagnosis) for all MIMIC conditions</li>
+</ul>
+
+<h3 id="encounter">Encounter</h3>
+<p>One Encounter resource per stay_id (i.e., per ED visit / per row in the edstays table).</p>
+
+<table class="grid" id="grid">
+  <thead>
+    <tr>
+      <th>MIMIC-ED Table</th>
+      <th>MIMIC-ED Data Element</th>
+      <th>FHIR Data Element</th>
+      <th>FHIR Profile</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>edstays</td>
+      <td>stay_id</td>
+      <td>Encounter.identifier:ED_ID</td>
+      <td><a href="StructureDefinition-mimic-encounter.html">MimicEncounter</a></td>
+      <td>This is a sliced element, ED identifier is captured in the ED_ID slice.</td>
+    </tr>
+    <tr>
+      <td>edstays</td>
+      <td>subject_id</td>
+      <td>Encounter.subject</td>
+      <td><a href="StructureDefinition-mimic-encounter.html">MimicEncounter</a></td>
+      <td>Links to a MimicPatient with corresponding identifier</td>
+    </tr>
+    <tr>
+      <td>edstays</td>
+      <td>intime</td>
+      <td>Encounter.period.start</td>
+      <td><a href="StructureDefinition-mimic-encounter.html">MimicEncounter</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>edstays</td>
+      <td>outtime</td>
+      <td>Encounter.period.end</td>
+      <td><a href="StructureDefinition-mimic-encounter.html">MimicEncounter</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>edstays</td>
+      <td>arrival_transport</td>
+      <td>Encounter.hospitalization.admitSource</td>
+      <td><a href="StructureDefinition-mimic-encounter.html">MimicEncounter</a></td>
+      <td>MIMIC code system</td>
+    </tr>
+    <tr>
+      <td>edstays</td>
+      <td>disposition</td>
+      <td>Encounter.hospitalization.dischargeDisposition</td>
+      <td><a href="StructureDefinition-mimic-encounter.html">MimicEncounter</a></td>
+      <td>MIMIC code system</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Encounter.status is fixed to ‘finished’ (Finished) for all MIMIC encounters</li>
+  <li>Encounter.class should be ‘EMER’ (Emergency) for all MIMIC-ED encounters</li>
+</ul>
+
+<h3 id="medicationdispense-ed">MedicationDispense ED</h3>
+<p>One MedicationDispense resource per dispense in the pyxis table (ED medication dispensation). A dispense can consist of multiple rows with the same subject_id, stay_id, and charttime but multiple medication codes.</p>
+
+<table class="grid" id="grid">
+  <thead>
+    <tr>
+      <th>MIMIC-ED Table</th>
+      <th>MIMIC-ED Data Element</th>
+      <th>FHIR Data Element</th>
+      <th>FHIR Profile</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pyxis</td>
+      <td>stay_id, med_rn, gsn_rn</td>
+      <td>MedicationDispense.id</td>
+      <td><a href="StructureDefinition-mimic-medication-dispense-ed.html">MimicMedicationDispenseED</a></td>
+      <td>Concat MIMIC columns and convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>pyxis</td>
+      <td>subject_id</td>
+      <td>MedicationDispense.subject</td>
+      <td><a href="StructureDefinition-mimic-medication-dispense-ed.html">MimicMedicationDispenseED</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>pyxis</td>
+      <td>stay_id</td>
+      <td>MedicationDispense.context</td>
+      <td><a href="StructureDefinition-mimic-medication-dispense-ed.html">MimicMedicationDispenseED</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>pyxis</td>
+      <td>gsn</td>
+      <td>MedicationDispense.medicationCodeableConcept.coding</td>
+      <td><a href="StructureDefinition-mimic-medication-dispense-ed.html">MimicMedicationDispenseED</a></td>
+      <td>MIMIC code system</td>
+    </tr>
+    <tr>
+      <td>pyxis</td>
+      <td>name</td>
+      <td>MedicationDispense.medicationCodeableConcept.text</td>
+      <td><a href="StructureDefinition-mimic-medication-dispense-ed.html">MimicMedicationDispenseED</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>pyxis</td>
+      <td>charttime</td>
+      <td>MedicationDispense.whenHandedOver</td>
+      <td><a href="StructureDefinition-mimic-medication-dispense-ed.html">MimicMedicationDispenseED</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>MedicationDispense.status is fixed to ‘unknown’ (Unknown)</li>
+</ul>
+
+<h3 id="medicationstatement-ed">MedicationStatement ED</h3>
+<p>One MedicationStatement resource per medication that was taken by a patient. A drug can have multiple etccode values (one per row, multiple rows) and are delineated by etc_rn.</p>
+
+<table class="grid" id="grid">
+  <thead>
+    <tr>
+      <th>MIMIC-ED Table</th>
+      <th>MIMIC-ED Data Element</th>
+      <th>FHIR Data Element</th>
+      <th>FHIR Profile</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>medrecon</td>
+      <td>stay_id, charttime, name, gsn, ndc</td>
+      <td>MedicationStatement.id</td>
+      <td><a href="StructureDefinition-mimic-medication-statement-ed.html">MimicMedicationStatementED</a></td>
+      <td>Concat elements to make unique id and convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>medrecon</td>
+      <td>gsn</td>
+      <td>MedicationStatement.medicationCodeableConcept.coding:gsnCode</td>
+      <td><a href="StructureDefinition-mimic-medication-statement-ed.html">MimicMedicationStatementED</a></td>
+      <td>MIMIC code system. This is a sliced element, gsn codes are captured in the gsnCode slice.</td>
+    </tr>
+    <tr>
+      <td>medrecon</td>
+      <td>ndc</td>
+      <td>MedicationStatement.medicationCodeableConcept.coding:ndcCode</td>
+      <td><a href="StructureDefinition-mimic-medication-statement-ed.html">MimicMedicationStatementED</a></td>
+      <td>This is a sliced element, ndc codes are captured in the ndcCode slice.</td>
+    </tr>
+    <tr>
+      <td>medrecon</td>
+      <td>etccode</td>
+      <td>MedicationStatement.medicationCodeableConcept.coding:etccodeCode</td>
+      <td><a href="StructureDefinition-mimic-medication-statement-ed.html">MimicMedicationStatementED</a></td>
+      <td>MIMIC code system. This is a sliced element, etc codes are captured in the etccodeCode slice.</td>
+    </tr>
+    <tr>
+      <td>medrecon</td>
+      <td>name</td>
+      <td>MedicationStatement.medicationCodeableConcept.text</td>
+      <td><a href="StructureDefinition-mimic-medication-statement-ed.html">MimicMedicationStatementED</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>medrecon</td>
+      <td>subject_id</td>
+      <td>MedicationStatement.subject</td>
+      <td><a href="StructureDefinition-mimic-medication-statement-ed.html">MimicMedicationStatementED</a></td>
+      <td>Links to a MimicPatient with corresponding identifier</td>
+    </tr>
+    <tr>
+      <td>medrecon</td>
+      <td>stay_id</td>
+      <td>MedicationStatement.context</td>
+      <td><a href="StructureDefinition-mimic-medication-statement-ed.html">MimicMedicationStatementED</a></td>
+      <td>Links to a MimicEncounter with corresponding identifier</td>
+    </tr>
+    <tr>
+      <td>medrecon</td>
+      <td>charttime</td>
+      <td>MedicationStatement.dateAsserted</td>
+      <td><a href="StructureDefinition-mimic-medication-statement-ed.html">MimicMedicationStatementED</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>MedicationStatement.status is fixed to ‘unknown’ (Unknown)</li>
+  <li>MedicationStatement.medicationCodeableConcept.coding:etccodeCode has cardinality 0..*; allows multiple etc codes to be stored.</li>
+</ul>
+
+<h3 id="observation-ed">Observation ED</h3>
+<p>One Observation resource per single measurement from a row of the triage and vitalsign tables of MIMIC-ED. Only acuity, chiefcomplaint, rhythm, and pain.</p>
+
+<table class="grid" id="grid">
+  <thead>
+    <tr>
+      <th>MIMIC-ED Table</th>
+      <th>MIMIC-ED Data Element</th>
+      <th>FHIR Data Element</th>
+      <th>FHIR Profile</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>vitalsign</td>
+      <td>stay_id, charttime, key</td>
+      <td>Observation.id</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td>Concat elements and convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>rhythm</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td>If Observation captures rhythm</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>pain</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td>If Observation captures pain</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>subject_id</td>
+      <td>Observation.subject</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>stay_id</td>
+      <td>Observation.encounter</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>value</td>
+      <td>Observation.valueString</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>stay_id, charttime</td>
+      <td>Observation.partOf</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td>Concat elements and convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>stay_id, intime, key</td>
+      <td>Observation.id</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td>Concat elements and convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>acuity</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td>If Observation captures acuity</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>chiefcomplaint</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td>If Observation captures chiefcomplaint</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>pain</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td>If Observation captures pain</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>subject_id</td>
+      <td>Observation.subject</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>stay_id</td>
+      <td>Observation.encounter</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>value</td>
+      <td>Observation.valueString</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>stay_id, charttime</td>
+      <td>Observation.partOf</td>
+      <td><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></td>
+      <td>Concat elements and convert to UUID5</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Observation.status is fixed to ‘final’ (Final) for all MIMIC observations.</li>
+  <li>Only for rhytm: Observation.category is fixed to ‘exam’ (Exam). In all other cases a category is absent.</li>
+  <li>Observation.code corresponds to a LOINC code (from MIMIC-ED value set) for either an acuity, chiefcomplaint, or rhythm observation.</li>
+  <li>Observation.value[x] has a 0..1 cardinality, hence only one measurement (acuity, rhythm, or chiefcomplaint) is captured in an Observation resource. When a value is missing, an Observation.dataAbsentReason is given (always ‘unknown’ (Unknown)).</li>
+</ul>
+
+<h3 id="observation-vital-signs">Observation Vital Signs</h3>
+<p>One Observation resource per single measurement from a row of the triage and vitalsign tables of MIMIC-ED. Only temperature, heartrate, resprate, blood pressure sbp dbp, and o2sat.</p>
+
+<table class="grid" id="grid">
+  <thead>
+    <tr>
+      <th>MIMIC-ED Table</th>
+      <th>MIMIC-ED Data Element</th>
+      <th>FHIR Data Element</th>
+      <th>FHIR Profile</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>triage</td>
+      <td>stay_id</td>
+      <td>Observation.id</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>Concat the stay_id with the vital sign name captured</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>temperature</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>If observation is a temperature reading</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>resprate</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>If observation is a respiratory rate</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>heartrate</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>If observation is a heart rate reading</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>o2sat</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>If observation is a oxygen saturation reading</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>dbp</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>If observation is a blood pressure reading</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>sbp, dbp</td>
+      <td>Observation.component.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>If Observation captures blood pressure (component for sbp and dbp).</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>subject_id</td>
+      <td>Observation.subject</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>stay_id</td>
+      <td>Observation.encounter</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>stay_id</td>
+      <td>Observation.procedure</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>edstays</td>
+      <td>intime</td>
+      <td>Observation.effectiveDateTime</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>stay_id, charttime</td>
+      <td>Observation.id</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>Concat the stay_ida and charttime with the vital sign name captured, then convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>temperature</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>If observation is a temperature reading</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>resprate</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>If observation is a respiratory rate</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>heartrate</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>If observation is a heart rate reading</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>o2sat</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>If observation is a oxygen saturation reading</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>dbp</td>
+      <td>Observation.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>If observation is a blood pressure reading</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>sbp, dbp</td>
+      <td>Observation.component.value[x]</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>If Observation captures blood pressure (component for sbp and dbp).</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>subject_id</td>
+      <td>Observation.subject</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>stay_id</td>
+      <td>Observation.encounter</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>stay_id, charttime</td>
+      <td>Observation.procedure</td>
+      <td><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></td>
+      <td>Concat elements and convert to UUID5</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Observation.status is fixed to ‘final’ (Final) for all MIMIC observations.</li>
+  <li>Observation.category is fixed to ‘vital-signs’ (Vital Signs).</li>
+  <li>Observation.code corresponds to a LOINC code (from MIMIC-ED value set) for either temperateure, respiratory rate, heart rate, oxygen saturation, or blood pressure.</li>
+  <li>Observation.value[x] has a 0..1 cardinality, hence only one measurement (or sbp and dbp in the case of blood pressure) is captured in an Observation resource. When a value is missing, an Observation.dataAbsentReason is given (always ‘unknown’ (Unknown)).</li>
+</ul>
+
+<h3 id="patient">Patient</h3>
+<p>See MIMIC patient. MIMIC-ED only captures subject_id and gender.</p>
+
+<h3 id="procedure-ed">Procedure ED</h3>
+<p>One Procedure resource per row in the triage / vitalsign tables (= collection of Observations for a patient).</p>
+
+<table class="grid" id="grid">
+  <thead>
+    <tr>
+      <th>MIMIC-ED Table</th>
+      <th>MIMIC-ED Data Element</th>
+      <th>FHIR Data Element</th>
+      <th>FHIR Profile</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>triage</td>
+      <td>stay_id</td>
+      <td>Procedure.id</td>
+      <td><a href="StructureDefinition-mimic-procedure-ed.html">MimicProcedureED</a></td>
+      <td>Each stay_id has one triage associated with it</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>subject_id</td>
+      <td>Procedure.subject</td>
+      <td><a href="StructureDefinition-mimic-procedure-ed.html">MimicProcedureED</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>stay_id</td>
+      <td>Procedure.encounter</td>
+      <td><a href="StructureDefinition-mimic-procedure-ed.html">MimicProcedureED</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>triage</td>
+      <td>intime</td>
+      <td>Procedure.performedDateTime</td>
+      <td><a href="StructureDefinition-mimic-procedure-ed.html">MimicProcedureED</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>stay_id, charttime</td>
+      <td>Procedure.id</td>
+      <td><a href="StructureDefinition-mimic-procedure-ed.html">MimicProcedureED</a></td>
+      <td>Concat elements and convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>subject_id</td>
+      <td>Procedure.subject</td>
+      <td><a href="StructureDefinition-mimic-procedure-ed.html">MimicProcedureED</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>stay_id</td>
+      <td>Procedure.encounter</td>
+      <td><a href="StructureDefinition-mimic-procedure-ed.html">MimicProcedureED</a></td>
+      <td>Convert to UUID5</td>
+    </tr>
+    <tr>
+      <td>vitalsign</td>
+      <td>charttime</td>
+      <td>Procedure.performedDateTime</td>
+      <td><a href="StructureDefinition-mimic-procedure-ed.html">MimicProcedureED</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Procedure.status is fixed to ‘completed’ (Completed) for all MIMIC-ED procedures.</li>
+  <li>Procedure.code is either SNOMED CT 386478007 (Triage: emergency center (procedure)) when the Procedure describes observations from the triage table, or SNOMED CT 410188000 (Taking patient vital signs assessment (procedure)) when describing observations from the vitalsign table.</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.mimic#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:07-0500">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

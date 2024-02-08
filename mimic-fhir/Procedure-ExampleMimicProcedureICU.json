@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "ExampleMimicProcedureICU",
+  "meta" : {
+    "profile" : ["http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-icu"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"ExampleMimicProcedureICU\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;ExampleMimicProcedureICU&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-procedure-icu.html\">MIMIC Procedure ICU</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: Significant Events <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-procedure-category.html\">MimicProcedureCategory</a>#Significant Events)</span></p><p><b>code</b>: OR Received <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-d-items.html\">MimicDItems</a>#225469)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>encounter</b>: <a href=\"Encounter-ExampleMimicEncounter.html\">Encounter/ExampleMimicEncounter</a></p><p><b>performed</b>: 2130-10-27 17:00:00-0400 --&gt; 2130-10-27 17:01:00-0400</p></div>"
+  },
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-procedure-category",
+      "code" : "Significant Events"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items",
+      "code" : "225469",
+      "display" : "OR Received"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleMimicPatient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/ExampleMimicEncounter"
+  },
+  "performedPeriod" : {
+    "start" : "2130-10-27T17:00:00-04:00",
+    "end" : "2130-10-27T17:01:00-04:00"
+  }
+}

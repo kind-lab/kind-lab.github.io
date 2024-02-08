@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Condition",
+  "id" : "ExampleMimicCondition",
+  "meta" : {
+    "profile" : ["http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-condition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"ExampleMimicCondition\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;ExampleMimicCondition&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-condition.html\">MIMIC Condition</a></p></div><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Personal history of malignant neoplasm of prostate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-diagnosis-icd10.html\">MimicDiagnosisIcd10</a>#Z8546)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>encounter</b>: <a href=\"Encounter-ExampleMimicEncounter.html\">Encounter/ExampleMimicEncounter</a></p></div>"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis",
+      "display" : "Encounter Diagnosis"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-diagnosis-icd10",
+      "code" : "Z8546",
+      "display" : "Personal history of malignant neoplasm of prostate"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleMimicPatient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/ExampleMimicEncounter"
+  }
+}

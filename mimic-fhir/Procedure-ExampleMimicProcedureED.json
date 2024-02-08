@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "ExampleMimicProcedureED",
+  "meta" : {
+    "profile" : ["http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-ed"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"ExampleMimicProcedureED\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;ExampleMimicProcedureED&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-procedure-ed.html\">MIMIC Procedure ED</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Triage: emergency center (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#386478007)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatientED.html\">Patient/ExampleMimicPatientED</a> &quot;&quot;</p><p><b>encounter</b>: <a href=\"Encounter-ExampleMimicEncounterED.html\">Encounter/ExampleMimicEncounterED</a></p><p><b>performed</b>: 2116-06-10 00:32:00+0000</p></div>"
+  },
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "386478007",
+      "display" : "Triage: emergency center (procedure)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleMimicPatientED"
+  },
+  "encounter" : {
+    "reference" : "Encounter/ExampleMimicEncounterED"
+  },
+  "performedDateTime" : "2116-06-10T00:32:00.000Z"
+}

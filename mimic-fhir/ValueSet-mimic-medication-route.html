@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MimicMedicationRoute - MIMIC Implementation Guide v1.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.53"}
+    h3,h4,h5,h6{--heading-prefix:"7.53"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MIMIC Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.3.0 - Draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mimic-fhir-mappings.html">MIMIC-IV Mapping</a>
+      </li>
+      <li>
+        <a href="mimic-ed-fhir-mappings.html">MIMIC-ED Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General</a>
+      </li>
+      <li>
+        <a href="terminology-guide.html">Terminology</a>
+      </li>
+      <li>
+        <a href="applications.html">Applications</a>
+      </li>
+      <li>
+        <a href="tutorials.html">Tutorials</a>
+      </li>
+      <li>
+        <a href="future-work.html">Future Work</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Subsets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="microbiology-background.html">Microbiology data</a>
+      </li>
+      <li>
+        <a href="medication-background.html">Medication data</a>
+      </li>
+      <li>
+        <a href="emergency-department-subset.html">Emergency Department data</a>
+      </li>
+      <li>
+        <a href="intensive-care-unit-subset.html">Intensive Care Unit data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MimicMedicationRoute</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MIMIC Implementation Guide - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://mimic.mit.edu/fhir/mimic/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-medication-route.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-medication-route.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-medication-route.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: MimicMedicationRoute
+
+  </h2>
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-route<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-route"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-route|1.3.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2022-09-21
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MimicMedicationRoute</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>The medication route during administration for MIMIC</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-mimic-medication-administration.html">MIMIC Medication Administration</a></li>
+ <li><a href="StructureDefinition-mimic-medication-dispense.html">MIMIC Medication Dispense</a></li>
+ <li><a href="StructureDefinition-mimic-medication-request.html">MIMIC Medication Request</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><ul><li>Include all codes defined in <a href="CodeSystem-mimic-medication-route.html"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</code></a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-mimic-medication-route.html">codesystem MimicMedicationRoute v1.3.0 (CodeSystem)</a></p><p>This value set contains 106 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b> - English (English, en)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-AD"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-AD">AD</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IH"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IH">IH</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-G-TUBE"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-GTUBE">G TUBE</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-NG"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-NG">NG</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-AERO"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-AERO">AERO</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IL"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IL">IL</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IT"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IT">IT</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-PO"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-PO">PO</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-DWELL"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-DWELL">DWELL</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-RIGHT-EAR"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-RIGHTEAR">RIGHT EAR</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IU"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IU">IU</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-LEFT-EAR"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-LEFTEAR">LEFT EAR</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-PO-NG"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-PO.47NG">PO/NG</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-INTRAVITREAL"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-INTRAVITREAL">INTRAVITREAL</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-PO-OR-ENTERAL-TUBE"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-POORENTERALTUBE">PO OR ENTERAL TUBE</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-SIDE-PORT"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-SIDEPORT">SIDE PORT</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-FEMORAL-VEIN"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-FEMORALVEIN">FEMORAL VEIN</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IV"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IV">IV</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-REPLACE"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-REPLACE">REPLACE</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IA"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IA">IA</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-LEFT-EYE"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-LEFTEYE">LEFT EYE</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IV-FLUSH"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IVFLUSH">IV FLUSH</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IP"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IP">IP</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-ED"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-ED">ED</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-AS"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-AS">AS</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-INTRA-ARTERIALLY"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-INTRA-ARTERIALLY">INTRA-ARTERIALLY</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-ORAL"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-ORAL">ORAL</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-FLUSH"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-FLUSH">FLUSH</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-BOTH-EYES"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-BOTHEYES">BOTH EYES</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-DIALYS"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-DIALYS">DIALYS</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-INFUSION-VIA-ON-Q-PUMP"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-INFUSIONVIAON-QPUMP">INFUSION VIA ON-Q PUMP</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-PO-IV"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-PO.47IV">PO/IV</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IVPCA"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IVPCA">IVPCA</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-INHALATION"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-INHALATION">INHALATION</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-OD"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-OD">OD</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IV-INFUSION"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IVINFUSION">IV INFUSION</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-ND"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-ND">ND</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-PO-OG"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-PO.47OG">PO/OG</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-EDPCA"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-EDPCA">EDPCA</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-PEG"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-PEG">PEG</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-SL"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-SL">SL</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-BOTH-EARS"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-BOTHEARS">BOTH EARS</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IVS"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IVS">IVS</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IR"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IR">IR</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-NS"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-NS">NS</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-AU"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-AU">AU</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-OU"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-OU">OU</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IN"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IN">IN</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-INTRALESIONAL"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-INTRALESIONAL">INTRALESIONAL</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-P.O."> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-P.46O.46">P.O.</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-TD"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-TD">TD</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-NGT"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-NGT">NGT</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-INTRACORPOREAL"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-INTRACORPOREAL">INTRACORPOREAL</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-NAS"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-NAS">NAS</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-Po"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-Po">Po</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IMPELLA"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IMPELLA">IMPELLA</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-ET"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-ET">ET</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-EX-VIVO"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-EX-VIVO">EX-VIVO</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-NEB"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-NEB">NEB</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IRR"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IRR">IRR</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-SC-INFUSION"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-SCINFUSION">SC INFUSION</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-PL"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-PL">PL</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-ITPCA"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-ITPCA">ITPCA</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-LOCK"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-LOCK">LOCK</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IJ"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IJ">IJ</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IO"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IO">IO</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-OG"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-OG">OG</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-TRANSDERMAL"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-TRANSDERMAL">TRANSDERMAL</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-OGT"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-OGT">OGT</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-SUBCUT-INFUSION"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-SUBCUTINFUSION">SUBCUT INFUSION</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-VG"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-VG">VG</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-SCPCA"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-SCPCA">SCPCA</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IVCI"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IVCI">IVCI</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IV-FLUSH-"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IVFLUSH.42">IV FLUSH*</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-INTRAPLEURAL"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-INTRAPLEURAL">INTRAPLEURAL</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-OS"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-OS">OS</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-DLPICC"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-DLPICC">DLPICC</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IV-BOLUS"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IVBOLUS">IV BOLUS</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-SC"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-SC">SC</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-INTERSPACE"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-INTERSPACE">INTERSPACE</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-po"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-po">po</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-SCPUMP"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-SCPUMP">SCPUMP</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-TT"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-TT">TT</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IV-DRIP"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IVDRIP">IV DRIP</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-PB"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-PB">PB</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IVT"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IVT">IVT</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-RIGHT-EYE"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-RIGHTEYE">RIGHT EYE</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-PR"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-PR">PR</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-SUBCUT"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-SUBCUT">SUBCUT</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-BUCCAL"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-BUCCAL">BUCCAL</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-AC"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-AC">AC</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-TP"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-TP">TP</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-INTRAPERICARDIAL"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-INTRAPERICARDIAL">INTRAPERICARDIAL</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-AXILLARY"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-AXILLARY">AXILLARY</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-ng"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-ng">ng</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-PERIPHNERVE"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-PERIPHNERVE">PERIPHNERVE</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IC"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IC">IC</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-BU"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-BU">BU</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-PV"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-PV">PV</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-NU"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-NU">NU</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-ENTERAL-TUBE-ONLY---NOT-ORAL"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-ENTERALTUBEONLY.8211NOTORAL">ENTERAL TUBE ONLY – NOT ORAL</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-J-TUBE"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-JTUBE">J TUBE</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-LUMBAR-PLEXUS"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-LUMBARPLEXUS">LUMBAR PLEXUS</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-NG-OG"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-NG.47OG">NG/OG</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-ID"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-ID">ID</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-medication-route-IM"> </a>  <a href="CodeSystem-mimic-medication-route.html#mimic-medication-route-IM">IM</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</td><td/></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.mimic#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:07-0500">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="ExampleMimicSpecimen"/>
+  <meta>
+    <profile value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-specimen"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Specimen</b><a name="ExampleMimicSpecimen"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Specimen &quot;ExampleMimicSpecimen&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mimic-specimen.html">MIMIC Specimen</a></p></div><p><b>identifier</b>: <code>http://mimic.mit.edu/fhir/mimic/identifier/specimen-lab</code>/76856812</p><p><b>type</b>: Blood <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mimic-lab-fluid.html">MimicLabFluid</a>#Blood)</span></p><p><b>subject</b>: <a href="Patient-ExampleMimicPatient.html">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collected[x]</b></td></tr><tr><td style="display: none">*</td><td>2142-07-31 18:20:00-0400</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://mimic.mit.edu/fhir/mimic/identifier/specimen-lab"/>
+    <value value="76856812"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid"/>
+      <code value="Blood"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/ExampleMimicPatient"/>
+  </subject>
+  <collection>
+    <collectedDateTime value="2142-07-31T18:20:00-04:00"/>
+  </collection>
+</Specimen>

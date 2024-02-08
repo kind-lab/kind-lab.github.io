@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleMimicObservationOutputevents"/>
+  <meta>
+    <profile value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-outputevents"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ExampleMimicObservationOutputevents"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ExampleMimicObservationOutputevents&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mimic-observation-outputevents.html">MIMIC Observation Outputevents</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Output <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mimic-observation-category.html">MimicObservationCategory</a>#Output)</span></p><p><b>code</b>: Foley <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mimic-d-items.html">MimicDItems</a>#226559)</span></p><p><b>subject</b>: <a href="Patient-ExampleMimicPatient.html">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>encounter</b>: <a href="Encounter-ExampleMimicEncounter.html">Encounter/ExampleMimicEncounter</a></p><p><b>effective</b>: 2133-12-23 12:00:00-0500</p><p><b>issued</b>: Dec. 23, 2133, 11:55:00 a.m.</p><p><b>value</b>: 250 ml<span style="background: LightGoldenRodYellow"> (Details: http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units code ml = 'ml')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category"/>
+      <code value="Output"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items"/>
+      <code value="226559"/>
+      <display value="Foley"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExampleMimicPatient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/ExampleMimicEncounter"/>
+  </encounter>
+  <effectiveDateTime value="2133-12-23T12:00:00-05:00"/>
+  <issued value="2133-12-23T11:55:00-05:00"/>
+  <valueQuantity>
+    <value value="250"/>
+    <unit value="ml"/>
+    <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units"/>
+    <code value="ml"/>
+  </valueQuantity>
+</Observation>

@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/MedicationDispense/ExampleMimicMedicationDispense> a fhir:MedicationDispense ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleMimicMedicationDispense"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense"^^xsd:anyURI ;
+       fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationDispense</b><a name=\"ExampleMimicMedicationDispense\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationDispense &quot;ExampleMimicMedicationDispense&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-medication-dispense.html\">MIMIC Medication Dispense</a></p></div><p><b>identifier</b>: <code>http://mimic.mit.edu/fhir/mimic/identifier/medication-dispense</code>/29195459</p><p><b>status</b>: completed</p><p><b>medication</b>: Potassium Chloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-medication-name.html\">MimicMedicationName</a>#Potassium Chloride)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>context</b>: <a href=\"Encounter-ExampleMimicEncounter.html\">Encounter/ExampleMimicEncounter</a></p><p><b>authorizingPrescription</b>: <a href=\"MedicationRequest-ExampleMimicMedicationRequest.html\">MedicationRequest/ExampleMimicMedicationRequest</a></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Timing</b></td><td><b>Route</b></td></tr><tr><td style=\"display: none\">*</td><td>Code: ONCE</td><td>PO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-medication-route.html\">MimicMedicationRoute</a>#PO)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/identifier/medication-dispense"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "29195459" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-name"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Potassium Chloride" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Patient/ExampleMimicPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleMimicPatient" ]
+  ] ; # 
+  fhir:context [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Encounter/ExampleMimicEncounter> ;
+     fhir:reference [ fhir:v "Encounter/ExampleMimicEncounter" ]
+  ] ; # 
+  fhir:authorizingPrescription ( [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/MedicationRequest/ExampleMimicMedicationRequest> ;
+     fhir:reference [ fhir:v "MedicationRequest/ExampleMimicMedicationRequest" ]
+  ] ) ; # 
+  fhir:dosageInstruction ( [
+     fhir:timing [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-frequency"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ONCE" ]
+         ] )
+       ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PO" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

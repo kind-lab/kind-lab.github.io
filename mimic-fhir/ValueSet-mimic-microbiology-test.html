@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MimicMicrobiologyTest - MIMIC Implementation Guide v1.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.58"}
+    h3,h4,h5,h6{--heading-prefix:"7.58"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MIMIC Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.3.0 - Draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mimic-fhir-mappings.html">MIMIC-IV Mapping</a>
+      </li>
+      <li>
+        <a href="mimic-ed-fhir-mappings.html">MIMIC-ED Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General</a>
+      </li>
+      <li>
+        <a href="terminology-guide.html">Terminology</a>
+      </li>
+      <li>
+        <a href="applications.html">Applications</a>
+      </li>
+      <li>
+        <a href="tutorials.html">Tutorials</a>
+      </li>
+      <li>
+        <a href="future-work.html">Future Work</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Subsets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="microbiology-background.html">Microbiology data</a>
+      </li>
+      <li>
+        <a href="medication-background.html">Medication data</a>
+      </li>
+      <li>
+        <a href="emergency-department-subset.html">Emergency Department data</a>
+      </li>
+      <li>
+        <a href="intensive-care-unit-subset.html">Intensive Care Unit data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MimicMicrobiologyTest</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MIMIC Implementation Guide - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://mimic.mit.edu/fhir/mimic/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-microbiology-test.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-microbiology-test.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-microbiology-test.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: MimicMicrobiologyTest
+
+  </h2>
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-test<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-test"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-test|1.3.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2022-09-21
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MimicMicrobiologyTest</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>The microbiology test completed in MIMIC</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-mimic-observation-micro-test.html">MIMIC Observation Micro Test</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><ul><li>Include all codes defined in <a href="CodeSystem-mimic-microbiology-test.html"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</code></a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-mimic-microbiology-test.html">codesystem MimicMicrobiologyTest v1.3.0 (CodeSystem)</a></p><p>This value set contains 177 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b> - English (English, en)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90212"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90212">90212</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CLOSTRIDIUM DIFFICILE TOXIN A &amp; B TEST</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90054"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90054">90054</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>IMMUNOFLUORESCENT TEST FOR PNEUMOCYSTIS CARINII</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90261"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90261">90261</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>ANAEROBIC BOTTLE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90135"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90135">90135</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>EPSTEIN-BARR VIRUS EBNA IgG AB</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90241"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90241">90241</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>POTASSIUM HYDROXIDE PREPARATION</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90137"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90137">90137</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>QUANTITATIVE RPR</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90189"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90189">90189</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>MRSA SCREEN</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90218"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90218">90218</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Carbapenemase Resistant Enterobacteriaceae Screen</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90042"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90042">90042</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>TREPONEMAL ANTIBODY TEST</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90179"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90179">90179</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>POTASSIUM HYDROXIDE PREPARATION (HAIR/SKIN/NAILS)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90078"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90078">90078</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CHROMOSOME ANALYSIS-FLUID</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90106"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90106">90106</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>MICROSPORIDIA STAIN</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90168"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90168">90168</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>DIRECT INFLUENZA B ANTIGEN TEST</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90184"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90184">90184</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>STEM CELL - ANAEROBIC BOTTLE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90043"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90043">90043</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>POST MORTEM MYCOLOGY CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90066"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90066">90066</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>TISSUE CULTURE-LYMPHOCYTE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90232"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90232">90232</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Staph aureus Preop PCR</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90249"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90249">90249</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CRYPTOCOCCAL ANTIGEN</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90121"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90121">90121</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CYCLOSPORA STAIN</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90193"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90193">90193</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>voided</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90192"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90192">90192</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CMV Viral Load</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90075"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90075">90075</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CHROMOSOME ANALYSIS-BLOOD</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90158"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90158">90158</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>R/O GC Only</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90268"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90268">90268</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>FLUID CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90061"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90061">90061</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>BRUCELLA BLOOD CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90172"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90172">90172</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>HCV GENOTYPE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90170"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90170">90170</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>FISH ANALYSIS, 3-5 CELLS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90090"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90090">90090</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>POST-MORTEM VIRAL CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90185"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90185">90185</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>SMEAR FOR BACTERIAL VAGINOSIS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90210"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90210">90210</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Malaria Antigen Test</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90226"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90226">90226</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>RPR w/check for Prozone</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90203"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90203">90203</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Aerobic Bottle Gram Stain</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90161"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90161">90161</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>TRICHOMONAS SALINE PREP</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90254"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90254">90254</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>RUBELLA IgG SEROLOGY</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90050"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90050">90050</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>GRAM STAIN- R/O THRUSH</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90230"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90230">90230</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Stool Hold Request</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90116"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90116">90116</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Chlamydia trachomatis, Nucleic Acid Probe, with Amplification</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90065"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90065">90065</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>STOOL SMEAR FOR POLYMORPHONUCLEAR LEUKOCYTES</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90272"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90272">90272</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>TISSUE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90093"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90093">90093</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>ANAEROBIC BOTTLE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90191"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90191">90191</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>MUMPS IgG ANTIBODY</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90173"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90173">90173</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Acid Fast Stain for Cryptosporidium</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90148"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90148">90148</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Cryopreservation - Cells</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90202"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90202">90202</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Blood Culture, Neonate</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90269"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90269">90269</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>FUNGAL CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90095"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90095">90095</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>VARICELLA-ZOSTER CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90046"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90046">90046</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>WOUND CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90267"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90267">90267</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>FECAL CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90243"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90243">90243</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CAMPYLOBACTER CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90136"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90136">90136</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CMV IgM ANTIBODY</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90055"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90055">90055</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>RESPIRATORY CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90215"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90215">90215</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>M. furfur Blood Culture</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90265"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90265">90265</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>BLOOD/FUNGAL CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90071"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90071">90071</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CHROMOSOME ANALYSIS-CVS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90163"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90163">90163</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>INTERPHASE FISH ANALYSIS, 25-99 CELLS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90270"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90270">90270</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>GRAM STAIN</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90124"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90124">90124</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CVS NEEDLE ASPIRATION EVALUATION</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90164"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90164">90164</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>INTERPHASE FISH ANALYSIS, 100-300 CELLS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90186"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90186">90186</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>YEAST VAGINITIS CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90099"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90099">90099</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>NOCARDIA CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90264"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90264">90264</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>BLOOD/AFB CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90181"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90181">90181</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>O&amp;P MACROSCOPIC EXAM - ARTHROPOD</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90152"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90152">90152</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Tissue Culture - Neoplastic Blood</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90119"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90119">90119</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>HELICOBACTER PYLORI ANTIBODY TEST</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90205"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90205">90205</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Fluid Culture in Bottles</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90074"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90074">90074</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>FOCUSED ANALYSIS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90209"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90209">90209</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Pediatric Bottle Gram Stain</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90206"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90206">90206</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Blood Culture, Post Mortem</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90115"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90115">90115</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>R/O VANCOMYCIN RESISTANT ENTEROCOCCUS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90091"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90091">90091</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>VARICELLA-ZOSTER IgG SEROLOGY</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90224"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90224">90224</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Cipro Resistant Screen</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90109"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90109">90109</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>M.FURFUR CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90072"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90072">90072</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CHROMOSOME ANALYSIS-TISSUE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90260"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90260">90260</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>AEROBIC BOTTLE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90236"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90236">90236</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Anaerobic culture, Prosthetic Joint Fluid</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90201"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90201">90201</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Blood Culture, Routine</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90233"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90233">90233</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>C. difficile Toxin antigen assay</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90182"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90182">90182</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>STEM CELL - AEROBIC BOTTLE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90222"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90222">90222</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>MTB Direct Amplification</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90130"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90130">90130</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>R/O Beta Strep Group A</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90128"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90128">90128</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Legionella Urinary Antigen </td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90174"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90174">90174</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Concentration and Stain for Giardia</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90214"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90214">90214</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Respiratory Viral Culture</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90140"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90140">90140</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>QUANTITATIVE CRYPTOCOCCAL ANTIGEN</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90096"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90096">90096</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>DIRECT ANTIGEN TEST FOR VARICELLA-ZOSTER VIRUS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90039"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90039">90039</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>URINE CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90144"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90144">90144</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>TOXOPLASMA IgG ANTIBODY</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90207"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90207">90207</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Stem Cell Aer/Ana Culture</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90086"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90086">90086</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>FECAL CULTURE - R/O YERSINIA</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90190"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90190">90190</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Tissue culture for additional cells</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90068"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90068">90068</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>TISSUE CULTURE-FLUID</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90225"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90225">90225</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>ED Gram Stain for Yeast</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90255"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90255">90255</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>VIRAL CULTURE: R/O CYTOMEGALOVIRUS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90157"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90157">90157</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>DIRECT RSV ANTIGEN TEST</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90079"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90079">90079</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>TISSUE CULTURE-CVS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90049"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90049">90049</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>BRUCELLA CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90259"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90259">90259</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>SCOTCH TAPE PREP/PADDLE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90150"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90150">90150</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>MOLECULAR CYTOGENETICS - DNA PROBE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90219"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90219">90219</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CRE/ESBL/AMP-C Screening</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90104"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90104">90104</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Direct Antigen Test for Herpes Simplex Virus Types 1 &amp; 2</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90238"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90238">90238</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>POST-MORTEM ACID-FAST CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90160"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90160">90160</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Cryptosporidium/Giardia (DFA)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90194"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90194">90194</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>R/O Group B Strep - Penicillin Allergy</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90053"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90053">90053</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CYTOMEGALOVIRUS EARLY ANTIGEN TEST (SHELL VIAL METHOD)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90195"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90195">90195</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Reflex HCV Qual PCR</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90220"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90220">90220</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Deparaffinization, Lysis of Cells</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90131"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90131">90131</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>ASO TITER</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90105"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90105">90105</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Respiratory Viral Antigen Screen</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90235"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90235">90235</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>REFLEX URINE CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90154"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90154">90154</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>BARTONELLA BLOOD CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90083"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90083">90083</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>FECAL CULTURE - R/O VIBRIO</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90169"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90169">90169</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>GEN-PROBE AMPLIFIED M. TUBERCULOSIS DIRECT TEST (MTD)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90175"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90175">90175</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>HIV-1 Viral Load/Ultrasensitive</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90087"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90087">90087</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>FECAL CULTURE - R/O E.COLI 0157:H7</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90171"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90171">90171</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>FISH ANALYSIS, 10-30 CELLS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90245"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90245">90245</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>ANAEROBIC CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90097"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90097">90097</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>R/O GROUP B BETA STREP</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90200"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90200">90200</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>STAT OR Gram Stain</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90067"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90067">90067</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>TISSUE CULTURE-AMNIOTIC FLUID</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90252"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90252">90252</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>VIRAL CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90076"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90076">90076</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CHROMOSOME ANALYSIS-AMNIOTIC FLUID</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90155"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90155">90155</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>MOLECULAR CYTOGENETICS-DNA Probe</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90134"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90134">90134</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>EPSTEIN-BARR VIRUS VCA-IgM AB</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90256"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90256">90256</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>VIRAL CULTURE: R/O HERPES SIMPLEX VIRUS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90221"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90221">90221</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>C. difficile PCR</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90162"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90162">90162</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>ADDITIONAL CELLS COUNTED</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90038"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90038">90038</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>GENITAL CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90198"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90198">90198</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Staph aureus Screen</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90216"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90216">90216</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Malassezia furfur Culture</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90159"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90159">90159</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>POSTMORTEM CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90107"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90107">90107</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Respiratory Virus Identification</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90117"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90117">90117</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>ANAEROBIC BOTTLE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90101"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90101">90101</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>EPSTEIN-BARR VIRUS VCA-IgG AB</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90227"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90227">90227</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Sonication culture, prosthetic joint</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90080"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90080">90080</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>TISSUE CULTURE-TISSUE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90229"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90229">90229</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Lyme IgM</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90211"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90211">90211</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Rubella IgG/IgM Antibody</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90123"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90123">90123</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>HCV VIRAL LOAD</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90258"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90258">90258</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>AEROBIC BOTTLE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90143"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90143">90143</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CMV IgG ANTIBODY</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90250"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90250">90250</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>OVA + PARASITES</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90239"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90239">90239</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>POST-MORTEM DIRECT ACID-FAST STAIN</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90098"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90098">90098</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>SWAB- R/O YEAST</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90178"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90178">90178</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>FUNGAL CULTURE (HAIR/SKIN/NAILS)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90246"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90246">90246</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>ACID FAST SMEAR</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90142"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90142">90142</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>VIRAL CULTURE: R/O CYTOMEGALOVIRUS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90253"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90253">90253</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CLOSTRIDIUM DIFFICILE TOXIN ASSAY</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90208"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90208">90208</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Myco-F Bottle Gram Stain</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90153"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90153">90153</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Additional Cells and Karyotype</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90151"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90151">90151</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Tissue Culture-Bone Marrow</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90204"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90204">90204</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Anaerobic Bottle Gram Stain</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90111"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90111">90111</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CHROMOSOME ANALYSIS-BONE MARROW</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90133"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90133">90133</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>MONOSPOT</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90188"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90188">90188</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>NEISSERIA GONORRHOEAE (GC), NUCLEIC ACID PROBE, WITH AMPLIFICATION</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90177"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90177">90177</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>HBV Viral Load</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90156"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90156">90156</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>DIRECT INFLUENZA A ANTIGEN TEST</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90112"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90112">90112</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>MODIFIED ACID-FAST STAIN FOR NOCARDIA</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90213"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90213">90213</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Enterovirus Culture</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90231"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90231">90231</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Swab - R/O Yeast - IC</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90167"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90167">90167</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>ISOLATE FOR MIC</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90129"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90129">90129</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>ASO Screen</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90059"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90059">90059</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>LEGIONELLA CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90228"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90228">90228</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Lyme IgG</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90113"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90113">90113</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>URINE-GRAM STAIN - UNSPUN</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90240"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90240">90240</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>ACID FAST CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90248"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90248">90248</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>RAPID PLASMA REAGIN TEST</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90126"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90126">90126</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>TOXOPLASMA IgM ANTIBODY</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90088"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90088">90088</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CHROMOSOME ANALYSIS - ADDITIONAL KARYOTYPE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90166"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90166">90166</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Problem</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90187"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90187">90187</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>GENITAL CULTURE FOR TOXIC SHOCK</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90199"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90199">90199</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>Immunofluorescent test for Pneumocystis jirovecii (carinii)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90127"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90127">90127</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>RUBEOLA ANTIBODY, IgG</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90180"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90180">90180</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>O&amp;P MACROSCOPIC EXAM - WORM</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90262"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90262">90262</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CHLAMYDIA CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90092"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90092">90092</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>AEROBIC BOTTLE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90146"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90146">90146</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>CHROMOSOME ANALYSIS-NEOPLASTIC BLOOD</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-microbiology-test-90132"> </a>  <a href="CodeSystem-mimic-microbiology-test.html#mimic-microbiology-test-90132">90132</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</td><td>LYME SEROLOGY</td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.mimic#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:07-0500">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

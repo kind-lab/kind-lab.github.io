@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/Observation/ExampleMimicObservationOutputevents> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleMimicObservationOutputevents"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-outputevents"^^xsd:anyURI ;
+       fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-outputevents>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ExampleMimicObservationOutputevents\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ExampleMimicObservationOutputevents&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-observation-outputevents.html\">MIMIC Observation Outputevents</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Output <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-observation-category.html\">MimicObservationCategory</a>#Output)</span></p><p><b>code</b>: Foley <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-d-items.html\">MimicDItems</a>#226559)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>encounter</b>: <a href=\"Encounter-ExampleMimicEncounter.html\">Encounter/ExampleMimicEncounter</a></p><p><b>effective</b>: 2133-12-23 12:00:00-0500</p><p><b>issued</b>: Dec. 23, 2133, 11:55:00 a.m.</p><p><b>value</b>: 250 ml<span style=\"background: LightGoldenRodYellow\"> (Details: http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units code ml = 'ml')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Output" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "226559" ] ;
+       fhir:display [ fhir:v "Foley" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Patient/ExampleMimicPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleMimicPatient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Encounter/ExampleMimicEncounter> ;
+     fhir:reference [ fhir:v "Encounter/ExampleMimicEncounter" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2133-12-23T12:00:00-05:00"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2133-12-23T11:55:00-05:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "250"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "ml" ] ;
+     fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "ml" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

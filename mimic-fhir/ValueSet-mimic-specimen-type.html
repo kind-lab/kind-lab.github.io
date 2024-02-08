@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MimicSpecimenType - MIMIC Implementation Guide v1.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.65"}
+    h3,h4,h5,h6{--heading-prefix:"7.65"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MIMIC Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.3.0 - Draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mimic-fhir-mappings.html">MIMIC-IV Mapping</a>
+      </li>
+      <li>
+        <a href="mimic-ed-fhir-mappings.html">MIMIC-ED Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General</a>
+      </li>
+      <li>
+        <a href="terminology-guide.html">Terminology</a>
+      </li>
+      <li>
+        <a href="applications.html">Applications</a>
+      </li>
+      <li>
+        <a href="tutorials.html">Tutorials</a>
+      </li>
+      <li>
+        <a href="future-work.html">Future Work</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Subsets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="microbiology-background.html">Microbiology data</a>
+      </li>
+      <li>
+        <a href="medication-background.html">Medication data</a>
+      </li>
+      <li>
+        <a href="emergency-department-subset.html">Emergency Department data</a>
+      </li>
+      <li>
+        <a href="intensive-care-unit-subset.html">Intensive Care Unit data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MimicSpecimenType</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MIMIC Implementation Guide - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://mimic.mit.edu/fhir/mimic/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-specimen-type.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-specimen-type.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-specimen-type.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: MimicSpecimenType
+
+  </h2>
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-specimen-type<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-specimen-type"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-specimen-type|1.3.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2022-09-21
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MimicSpecimenType</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>The specimen type codes for both lab and micro specimen for MIMIC</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-mimic-specimen.html">MIMIC Specimen</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-mimic-lab-fluid.html"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid</code></a></li><li>Include all codes defined in <a href="CodeSystem-mimic-spec-type-desc.html"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</code></a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="CodeSystem-mimic-lab-fluid.html">codesystem MimicLabFluid v1.3.0 (CodeSystem)</a></li><li><a href="CodeSystem-mimic-spec-type-desc.html">codesystem MimicSpecTypeDesc v1.3.0 (CodeSystem)</a></li></ul></div><p>This value set contains 116 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b> - English (English, en)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-lab-fluid-I"> </a>  <a href="CodeSystem-mimic-lab-fluid.html#mimic-lab-fluid-I">I</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-lab-fluid-Joint-Fluid"> </a>  <a href="CodeSystem-mimic-lab-fluid.html#mimic-lab-fluid-JointFluid">Joint Fluid</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-lab-fluid-Pleural"> </a>  <a href="CodeSystem-mimic-lab-fluid.html#mimic-lab-fluid-Pleural">Pleural</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-lab-fluid-Bone-Marrow"> </a>  <a href="CodeSystem-mimic-lab-fluid.html#mimic-lab-fluid-BoneMarrow">Bone Marrow</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-lab-fluid-Ascites"> </a>  <a href="CodeSystem-mimic-lab-fluid.html#mimic-lab-fluid-Ascites">Ascites</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-lab-fluid-Fluid"> </a>  <a href="CodeSystem-mimic-lab-fluid.html#mimic-lab-fluid-Fluid">Fluid</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-lab-fluid-Stool"> </a>  <a href="CodeSystem-mimic-lab-fluid.html#mimic-lab-fluid-Stool">Stool</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-lab-fluid-Other-Body-Fluid"> </a>  <a href="CodeSystem-mimic-lab-fluid.html#mimic-lab-fluid-OtherBodyFluid">Other Body Fluid</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-lab-fluid-Q"> </a>  <a href="CodeSystem-mimic-lab-fluid.html#mimic-lab-fluid-Q">Q</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-lab-fluid-Cerebrospinal-Fluid"> </a>  <a href="CodeSystem-mimic-lab-fluid.html#mimic-lab-fluid-CerebrospinalFluid">Cerebrospinal Fluid</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-lab-fluid-Blood"> </a>  <a href="CodeSystem-mimic-lab-fluid.html#mimic-lab-fluid-Blood">Blood</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-lab-fluid-Urine"> </a>  <a href="CodeSystem-mimic-lab-fluid.html#mimic-lab-fluid-Urine">Urine</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90922"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90922">90922</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>MICRO PROBLEM PATIENT</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70014"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70014">70014</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BLOOD CULTURE - NEONATE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70043"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70043">70043</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Influenza A/B by DFA - Bronch Lavage</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70023"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70023">70023</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>CATHETER TIP-IV</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70009"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70009">70009</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BILE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70020"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70020">70020</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BRONCHIAL BRUSH</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70076"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70076">70076</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>TISSUE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90929"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90929">90929</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Swab R/O Yeast Screen</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90913"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90913">90913</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>HAIR</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70068"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70068">70068</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>SWAB</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70040"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70040">70040</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>SWAB</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70077"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70077">70077</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>URINE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70062"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70062">70062</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>SPUTUM</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70021"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70021">70021</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BRONCHOALVEOLAR LAVAGE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70032"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70032">70032</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Blood (EBV)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70046"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70046">70046</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>IMMUNOLOGY</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70056"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70056">70056</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>RECTAL - R/O GC</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70010"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70010">70010</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BIOPSY</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70092"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70092">70092</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>SWAB, R/O GC</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70049"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70049">70049</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>NEOPLASTIC BLOOD</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90919"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90919">90919</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Blood (LYME)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70022"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70022">70022</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BRONCHIAL WASHINGS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90906"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90906">90906</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>C, E, &amp; A Screening</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70078"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70078">70078</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>URINE,PROSTATIC MASSAGE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70090"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70090">70090</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Mini-BAL</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70082"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70082">70082</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>URINE,SUPRAPUBIC ASPIRATE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70041"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70041">70041</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>VIRAL CULTURE:R/O HERPES SIMPLEX VIRUS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70066"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70066">70066</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>STOOL (RECEIVED IN TRANSPORT SYSTEM)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70057"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70057">70057</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Rapid Respiratory Viral Screen &amp; Culture</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70011"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70011">70011</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BLOOD CULTURE ( MYCO/F LYTIC BOTTLE)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70003"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70003">70003</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>ABSCESS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70026"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70026">70026</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>CSF;SPINAL FLUID</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70080"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70080">70080</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>URINE,KIDNEY</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70047"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70047">70047</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>JOINT FLUID</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70053"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70053">70053</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>PERITONEAL FLUID</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70059"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70059">70059</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Staph aureus swab</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70051"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70051">70051</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>FLUID,OTHER</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70058"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70058">70058</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>RAPID RESPIRATORY VIRAL ANTIGEN TEST</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90920"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90920">90920</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>PROSTHETIC JOINT FLUID</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70048"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70048">70048</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>NAIL SCRAPINGS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70005"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70005">70005</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>ASPIRATE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70027"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70027">70027</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>CORNEAL EYE SCRAPINGS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90930"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90930">90930</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Touch Prep/Sections</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70029"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70029">70029</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>DIALYSIS FLUID</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70034"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70034">70034</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>FOREIGN BODY</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70025"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70025">70025</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>CRE Screen</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70073"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70073">70073</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>TISSUE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70061"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70061">70061</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>SKIN SCRAPINGS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70030"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70030">70030</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>DIRECT ANTIGEN TEST FOR VARICELLA-ZOSTER VIRUS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70037"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70037">70037</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>FOOT CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70083"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70083">70083</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>VARICELLA-ZOSTER CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70084"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70084">70084</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>SWAB</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70067"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70067">70067</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>SWAB</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90935"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90935">90935</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>VIRAL CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70052"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70052">70052</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>PERIPHERAL BLOOD LYMPHOCYTES</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90921"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90921">90921</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>POST-MORTEM VIRAL CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70065"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70065">70065</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>SCOTCH TAPE PREP/PADDLE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70075"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70075">70075</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>THROAT CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90908"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90908">90908</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Cipro Resistant Screen</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70017"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70017">70017</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>SEROLOGY/BLOOD</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70086"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70086">70086</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>XXX</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90909"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90909">90909</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>CHORIONIC VILLUS SAMPLE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70016"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70016">70016</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BLOOD CULTURE (POST-MORTEM)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70019"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70019">70019</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BONE MARROW - CYTOGENETICS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70042"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70042">70042</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Influenza A/B by DFA</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70013"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70013">70013</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>FLUID RECEIVED IN BLOOD CULTURE BOTTLES</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70002"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70002">70002</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>THROAT FOR STREP</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70085"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70085">70085</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>WORM</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70088"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70088">70088</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Blood (EBV)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70033"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70033">70033</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>EYE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70008"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70008">70008</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BRONCHIAL BRUSH - PROTECTED</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70007"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70007">70007</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BLOOD BAG FLUID</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70024"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70024">70024</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>VIRAL CULTURE: R/O CYTOMEGALOVIRUS</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70072"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70072">70072</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>TRACHEAL ASPIRATE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70035"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70035">70035</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>FLUID,OTHER</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70060"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70060">70060</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Stem Cell - Blood Culture</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70045"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70045">70045</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Immunology (CMV)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90915"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90915">90915</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Isolate</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70018"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70018">70018</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BONE MARROW</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70064"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70064">70064</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>STOOL</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70093"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70093">70093</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Blood (Toxo)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70081"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70081">70081</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>URINE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70031"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70031">70031</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>EAR</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70015"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70015">70015</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BLOOD</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70079"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70079">70079</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>URINE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70087"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70087">70087</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Blood (CMV AB)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70054"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70054">70054</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>PLEURAL FLUID</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70069"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70069">70069</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>SWAB</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70071"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70071">70071</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>SWAB - R/O YEAST</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70055"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70055">70055</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>POSTMORTEM CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70028"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70028">70028</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Direct Antigen Test for Herpes Simplex Virus Types 1 &amp; 2</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70091"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70091">70091</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>MRSA SCREEN</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90902"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90902">90902</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>AMNIOTIC FLUID</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70074"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70074">70074</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>THROAT</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90928"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90928">90928</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Swab</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70070"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70070">70070</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>SWAB</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70036"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70036">70036</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>FLUID WOUND</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90914"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90914">90914</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Infection Control Yeast</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70038"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70038">70038</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>FECAL SWAB</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70004"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70004">70004</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>ARTHROPOD</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70012"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70012">70012</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>BLOOD CULTURE</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70006"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70006">70006</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>ANORECTAL/VAGINAL</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-90912"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-90912">90912</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Foreign Body - Sonication Culture</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-spec-type-desc-70089"> </a>  <a href="CodeSystem-mimic-spec-type-desc.html#mimic-spec-type-desc-70089">70089</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc</td><td>Blood (Malaria)</td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.mimic#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:07-0500">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

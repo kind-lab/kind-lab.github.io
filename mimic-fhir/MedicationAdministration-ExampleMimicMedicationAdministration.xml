@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+  <id value="ExampleMimicMedicationAdministration"/>
+  <meta>
+    <profile value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationAdministration</b><a name="ExampleMimicMedicationAdministration"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationAdministration &quot;ExampleMimicMedicationAdministration&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mimic-medication-administration.html">MIMIC Medication Administration</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: Inpatient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/codesystem-medication-admin-category.html">Medication administration  category  codes</a>#inpatient)</span></p><p><b>medication</b>: GABA100 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mimic-medication-formulary-drug-cd.html">MimicMedicationFormularyDrugCd</a>#GABA100)</span></p><p><b>subject</b>: <a href="Patient-ExampleMimicPatient.html">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>context</b>: <a href="Encounter-ExampleMimicEncounter.html">Encounter/ExampleMimicEncounter</a></p><p><b>effective</b>: 2146-10-09 20:50:00-0400</p><p><b>request</b>: <a href="MedicationRequest-ExampleMimicMedicationRequest.html">MedicationRequest/ExampleMimicMedicationRequest</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Method</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>1</td><td>Administered <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mimic-medication-method.html">MimicMedicationMethod</a>#Administered)</span></td><td>100 mg<span style="background: LightGoldenRodYellow"> (Details: http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units code mg = 'mg')</span></td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medication-admin-category"/>
+      <code value="inpatient"/>
+      <display value="Inpatient"/>
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-formulary-drug-cd"/>
+      <code value="GABA100"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/ExampleMimicPatient"/>
+  </subject>
+  <context>
+    <reference value="Encounter/ExampleMimicEncounter"/>
+  </context>
+  <effectiveDateTime value="2146-10-09T20:50:00-04:00"/>
+  <request>
+    <reference value="MedicationRequest/ExampleMimicMedicationRequest"/>
+  </request>
+  <dosage>
+    <text value="1"/>
+    <method>
+      <coding>
+        <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-method"/>
+        <code value="Administered"/>
+      </coding>
+    </method>
+    <dose>
+      <value value="100"/>
+      <unit value="mg"/>
+      <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units"/>
+      <code value="mg"/>
+    </dose>
+  </dosage>
+</MedicationAdministration>

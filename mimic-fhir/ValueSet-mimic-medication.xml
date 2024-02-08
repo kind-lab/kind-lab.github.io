@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mimic-medication"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-mimic-medication-formulary-drug-cd.html"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-formulary-drug-cd</code></a></li><li>Include all codes defined in <a href="CodeSystem-mimic-medication-icu.html"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-icu</code></a></li><li>Include all codes defined in <a href="CodeSystem-mimic-medication-name.html"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-name</code></a></li><li>Include all codes defined in <a href="CodeSystem-mimic-medication-ndc.html"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-ndc</code></a></li><li>Include all codes defined in <a href="CodeSystem-mimic-medication-poe-iv.html"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-poe-iv</code></a></li></ul></div>
+  </text>
+  <url value="http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication"/>
+  <version value="1.3.0"/>
+  <name value="MimicMedication"/>
+  <title value="MimicMedication"/>
+  <status value="draft"/>
+  <date value="2022-09-21T13:59:43-04:00"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="All medication codesystems combined for MIMIC. Contains medication-formulary-drug-cd, medication-ndc, medication-name, medication-poe-iv, medication-icu"/>
+  <compose>
+    <include>
+      <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-formulary-drug-cd"/>
+    </include>
+    <include>
+      <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-icu"/>
+    </include>
+    <include>
+      <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-name"/>
+    </include>
+    <include>
+      <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-ndc"/>
+    </include>
+    <include>
+      <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-poe-iv"/>
+    </include>
+  </compose>
+</ValueSet>

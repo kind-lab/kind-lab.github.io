@@ -1,0 +1,2096 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MimicDItems - JSON Representation - MIMIC Implementation Guide v1.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.72"}
+    h3,h4,h5,h6{--heading-prefix:"7.72"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MIMIC Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.3.0 - Draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mimic-fhir-mappings.html">MIMIC-IV Mapping</a>
+      </li>
+      <li>
+        <a href="mimic-ed-fhir-mappings.html">MIMIC-ED Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General</a>
+      </li>
+      <li>
+        <a href="terminology-guide.html">Terminology</a>
+      </li>
+      <li>
+        <a href="applications.html">Applications</a>
+      </li>
+      <li>
+        <a href="tutorials.html">Tutorials</a>
+      </li>
+      <li>
+        <a href="future-work.html">Future Work</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Subsets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="microbiology-background.html">Microbiology data</a>
+      </li>
+      <li>
+        <a href="medication-background.html">Medication data</a>
+      </li>
+      <li>
+        <a href="emergency-department-subset.html">Emergency Department data</a>
+      </li>
+      <li>
+        <a href="intensive-care-unit-subset.html">Intensive Care Unit data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MimicDItems</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">MIMIC Implementation Guide - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://mimic.mit.edu/fhir/mimic/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-mimic-d-items.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mimic-d-items.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mimic-d-items.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: MimicDItems - JSON Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2022-09-21
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-mimic-d-items.json" no-download="true">Raw json</a> | <a href="CodeSystem-mimic-d-items.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
+{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "mimic-d-items",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.language">language</a>" : "en",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;p&gt;This  code system &lt;code&gt;http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227797&lt;a name=\&quot;mimic-d-items-227797\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impaired Skin  - Dressing Change #8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227795&lt;a name=\&quot;mimic-d-items-227795\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impaired Skin  - Dressing Change #6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225814&lt;a name=\&quot;mimic-d-items-225814\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stool Culture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225315&lt;a name=\&quot;mimic-d-items-225315\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tunneled (Hickman) Line&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;221223&lt;a name=\&quot;mimic-d-items-221223\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EEG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225437&lt;a name=\&quot;mimic-d-items-225437\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CSF Culture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225454&lt;a name=\&quot;mimic-d-items-225454\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urine Culture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228801&lt;a name=\&quot;mimic-d-items-228801\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure ulcer #9- Dressing change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225464&lt;a name=\&quot;mimic-d-items-225464\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardioversion/Defibrillation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224458&lt;a name=\&quot;mimic-d-items-224458\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drain Output_ingr&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225392&lt;a name=\&quot;mimic-d-items-225392\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Triple Introducer Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225802&lt;a name=\&quot;mimic-d-items-225802\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dialysis - CRRT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229352&lt;a name=\&quot;mimic-d-items-229352\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Foley Cath Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229298&lt;a name=\&quot;mimic-d-items-229298\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Speech and Swallow Evaluation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226582&lt;a name=\&quot;mimic-d-items-226582\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ostomy (output)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226605&lt;a name=\&quot;mimic-d-items-226605\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hemovac #2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228127&lt;a name=\&quot;mimic-d-items-228127\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Family met with Social Worker&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226560&lt;a name=\&quot;mimic-d-items-226560\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Void&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225356&lt;a name=\&quot;mimic-d-items-225356\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PA Catheter Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224263&lt;a name=\&quot;mimic-d-items-224263\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multi Lumen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225321&lt;a name=\&quot;mimic-d-items-225321\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dialysis Catheter Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224275&lt;a name=\&quot;mimic-d-items-224275\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;20 Gauge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226628&lt;a name=\&quot;mimic-d-items-226628\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PACU Drains&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227511&lt;a name=\&quot;mimic-d-items-227511\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TF Residual Output&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225393&lt;a name=\&quot;mimic-d-items-225393\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Triple Introducer Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225427&lt;a name=\&quot;mimic-d-items-225427\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Angiography&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225336&lt;a name=\&quot;mimic-d-items-225336\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IABP Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229529&lt;a name=\&quot;mimic-d-items-229529\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ECMO Inflow Line&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229528&lt;a name=\&quot;mimic-d-items-229528\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Centrimag Outflow Line&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225470&lt;a name=\&quot;mimic-d-items-225470\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OR Sent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229351&lt;a name=\&quot;mimic-d-items-229351\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Foley Catheter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227489&lt;a name=\&quot;mimic-d-items-227489\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GU Irrigant/Urine Volume Out&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224279&lt;a name=\&quot;mimic-d-items-224279\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multi Lumen Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226623&lt;a name=\&quot;mimic-d-items-226623\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Penrose #1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;223253&lt;a name=\&quot;mimic-d-items-223253\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Magnetic Resonance Imaging&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229579&lt;a name=\&quot;mimic-d-items-229579\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transfer Intercampus by Ambulance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225316&lt;a name=\&quot;mimic-d-items-225316\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CCO PAC Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225330&lt;a name=\&quot;mimic-d-items-225330\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tunneled (Hickman) Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225348&lt;a name=\&quot;mimic-d-items-225348\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Midline Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226602&lt;a name=\&quot;mimic-d-items-226602\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Jackson Pratt #4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224292&lt;a name=\&quot;mimic-d-items-224292\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cordis/Introducer Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229380&lt;a name=\&quot;mimic-d-items-229380\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nursing Water Swallow Screening&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226557&lt;a name=\&quot;mimic-d-items-226557\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;R Ureteral Stent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226574&lt;a name=\&quot;mimic-d-items-226574\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Jejunostomy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229736&lt;a name=\&quot;mimic-d-items-229736\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;14 Gauge Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225803&lt;a name=\&quot;mimic-d-items-225803\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dialysis - CVVHD&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225224&lt;a name=\&quot;mimic-d-items-225224\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CCO PAC Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226616&lt;a name=\&quot;mimic-d-items-226616\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anderson&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226515&lt;a name=\&quot;mimic-d-items-226515\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Date of Birth&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225463&lt;a name=\&quot;mimic-d-items-225463\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TLS Spine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229581&lt;a name=\&quot;mimic-d-items-229581\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Portable Chest X-Ray&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225345&lt;a name=\&quot;mimic-d-items-225345\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Midline Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227722&lt;a name=\&quot;mimic-d-items-227722\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AVA Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227199&lt;a name=\&quot;mimic-d-items-227199\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indwelling (PortaCath) Port #2 Date De-accessed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225436&lt;a name=\&quot;mimic-d-items-225436\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRRT Filter Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225221&lt;a name=\&quot;mimic-d-items-225221\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CCO PAC Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229555&lt;a name=\&quot;mimic-d-items-229555\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiac Assist Cannula Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229891&lt;a name=\&quot;mimic-d-items-229891\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure Ulcer #8- Date Indentified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226477&lt;a name=\&quot;mimic-d-items-226477\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Temporary Pacemaker Wires Inserted&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225447&lt;a name=\&quot;mimic-d-items-225447\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Percutaneous Drain Insertion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229580&lt;a name=\&quot;mimic-d-items-229580\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Line Placement at Bedside&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229755&lt;a name=\&quot;mimic-d-items-229755\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trigger Initiated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225369&lt;a name=\&quot;mimic-d-items-225369\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pheresis Catheter Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225428&lt;a name=\&quot;mimic-d-items-225428\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blakemore / Minnesota Tube D/C&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229577&lt;a name=\&quot;mimic-d-items-229577\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cath Lab (Received)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224296&lt;a name=\&quot;mimic-d-items-224296\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cordis/Introducer Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224288&lt;a name=\&quot;mimic-d-items-224288\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arterial line Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225794&lt;a name=\&quot;mimic-d-items-225794\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Non-invasive Ventilation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228169&lt;a name=\&quot;mimic-d-items-228169\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impella Line&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225335&lt;a name=\&quot;mimic-d-items-225335\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IABP Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227794&lt;a name=\&quot;mimic-d-items-227794\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impaired Skin  - Dressing Change #5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225352&lt;a name=\&quot;mimic-d-items-225352\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PA Catheter Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;221255&lt;a name=\&quot;mimic-d-items-221255\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trans Esophageal Echo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228201&lt;a name=\&quot;mimic-d-items-228201\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tandem Heart Inflow Line&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229728&lt;a name=\&quot;mimic-d-items-229728\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;18 Gauge Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226622&lt;a name=\&quot;mimic-d-items-226622\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Red Rubber&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228798&lt;a name=\&quot;mimic-d-items-228798\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure ulcer #6- Dressing change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225769&lt;a name=\&quot;mimic-d-items-225769\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sheath Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229738&lt;a name=\&quot;mimic-d-items-229738\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;20 Gauge Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226532&lt;a name=\&quot;mimic-d-items-226532\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Organ Bank Notified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224295&lt;a name=\&quot;mimic-d-items-224295\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cordis/Introducer Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;221217&lt;a name=\&quot;mimic-d-items-221217\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ultrasound&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225383&lt;a name=\&quot;mimic-d-items-225383\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Presep Catheter Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227911&lt;a name=\&quot;mimic-d-items-227911\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Date - Therapist&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229892&lt;a name=\&quot;mimic-d-items-229892\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure Ulcer #9- Date Indentified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227800&lt;a name=\&quot;mimic-d-items-227800\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impaired Skin  - Dressing Change #10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224560&lt;a name=\&quot;mimic-d-items-224560\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PA Catheter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229517&lt;a name=\&quot;mimic-d-items-229517\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multi Lumen Cooling Catheter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225442&lt;a name=\&quot;mimic-d-items-225442\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Liver Biopsy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225955&lt;a name=\&quot;mimic-d-items-225955\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dialysis - SCUF&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225343&lt;a name=\&quot;mimic-d-items-225343\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Midline Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228126&lt;a name=\&quot;mimic-d-items-228126\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Family met with Case Manager&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226563&lt;a name=\&quot;mimic-d-items-226563\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Suprapubic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225340&lt;a name=\&quot;mimic-d-items-225340\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IABP Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226719&lt;a name=\&quot;mimic-d-items-226719\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Last menses&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225396&lt;a name=\&quot;mimic-d-items-225396\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Triple Introducer Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228165&lt;a name=\&quot;mimic-d-items-228165\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impella Daily Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225429&lt;a name=\&quot;mimic-d-items-225429\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blakemore / MinnesotaTube Inserted&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225328&lt;a name=\&quot;mimic-d-items-225328\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tunneled (Hickman) Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225753&lt;a name=\&quot;mimic-d-items-225753\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;22 Gauge Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229471&lt;a name=\&quot;mimic-d-items-229471\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;24 Gauge Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227720&lt;a name=\&quot;mimic-d-items-227720\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AVA Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225763&lt;a name=\&quot;mimic-d-items-225763\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sheath Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227790&lt;a name=\&quot;mimic-d-items-227790\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impaired Skin  - Dressing Change #1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229522&lt;a name=\&quot;mimic-d-items-229522\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SEPS (Subdural Evacuating Port System)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229515&lt;a name=\&quot;mimic-d-items-229515\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avalon/Protek Duo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225443&lt;a name=\&quot;mimic-d-items-225443\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nuclear Medicine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229643&lt;a name=\&quot;mimic-d-items-229643\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stroke NCP - Ed Given Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229733&lt;a name=\&quot;mimic-d-items-229733\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;22 Gauge Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226583&lt;a name=\&quot;mimic-d-items-226583\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rectal Tube&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229885&lt;a name=\&quot;mimic-d-items-229885\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure Ulcer #2- Date Indentified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225386&lt;a name=\&quot;mimic-d-items-225386\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Presep Catheter Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229468&lt;a name=\&quot;mimic-d-items-229468\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;24 Gauge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229525&lt;a name=\&quot;mimic-d-items-229525\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sheath (Arterial)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226595&lt;a name=\&quot;mimic-d-items-226595\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;R Pleural #2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225758&lt;a name=\&quot;mimic-d-items-225758\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RIC Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225762&lt;a name=\&quot;mimic-d-items-225762\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sheath Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229527&lt;a name=\&quot;mimic-d-items-229527\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Centrimag Inflow Line&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228221&lt;a name=\&quot;mimic-d-items-228221\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tandem Heart Return Cannula Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224185&lt;a name=\&quot;mimic-d-items-224185\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PICC Line Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228136&lt;a name=\&quot;mimic-d-items-228136\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Family notified of transfer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227792&lt;a name=\&quot;mimic-d-items-227792\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impaired Skin  - Dressing Change #3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225400&lt;a name=\&quot;mimic-d-items-225400\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bronchoscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227724&lt;a name=\&quot;mimic-d-items-227724\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AVA Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226565&lt;a name=\&quot;mimic-d-items-226565\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;L Nephrostomy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229353&lt;a name=\&quot;mimic-d-items-229353\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Foley Cath Removal Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226599&lt;a name=\&quot;mimic-d-items-226599\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Jackson Pratt #1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226482&lt;a name=\&quot;mimic-d-items-226482\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blood Clot Outdates&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225218&lt;a name=\&quot;mimic-d-items-225218\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Line Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229585&lt;a name=\&quot;mimic-d-items-229585\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Surgical Procedure at Bedside&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227584&lt;a name=\&quot;mimic-d-items-227584\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GU Catheter D/C Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229520&lt;a name=\&quot;mimic-d-items-229520\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EVD #2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225214&lt;a name=\&quot;mimic-d-items-225214\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Line Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228331&lt;a name=\&quot;mimic-d-items-228331\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PC Time of visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225439&lt;a name=\&quot;mimic-d-items-225439\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Endoscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224276&lt;a name=\&quot;mimic-d-items-224276\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;16 Gauge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228128&lt;a name=\&quot;mimic-d-items-228128\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Family updated by MD&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226516&lt;a name=\&quot;mimic-d-items-226516\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Discharge Date/Time&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225351&lt;a name=\&quot;mimic-d-items-225351\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PA Catheter Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;220003&lt;a name=\&quot;mimic-d-items-220003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ICU Admission date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225478&lt;a name=\&quot;mimic-d-items-225478\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Operation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224186&lt;a name=\&quot;mimic-d-items-224186\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PICC Line Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227126&lt;a name=\&quot;mimic-d-items-227126\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indwelling (PortaCath) Port #1 Date Accessed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224878&lt;a name=\&quot;mimic-d-items-224878\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GU Catheter Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224267&lt;a name=\&quot;mimic-d-items-224267\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cordis/Introducer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229366&lt;a name=\&quot;mimic-d-items-229366\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Epoprostenol (Inhaled)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227715&lt;a name=\&quot;mimic-d-items-227715\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TLS Clearance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229584&lt;a name=\&quot;mimic-d-items-229584\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EMG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226558&lt;a name=\&quot;mimic-d-items-226558\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;L Ureteral Stent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226619&lt;a name=\&quot;mimic-d-items-226619\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pigtail #1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229883&lt;a name=\&quot;mimic-d-items-229883\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure ulcer #1- Date Indentified_OLD_1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226624&lt;a name=\&quot;mimic-d-items-226624\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Penrose #2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224264&lt;a name=\&quot;mimic-d-items-224264\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PICC Line&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229586&lt;a name=\&quot;mimic-d-items-229586\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;VAC Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224262&lt;a name=\&quot;mimic-d-items-224262\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multi Lumen Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226626&lt;a name=\&quot;mimic-d-items-226626\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OR EBL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229521&lt;a name=\&quot;mimic-d-items-229521\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ICP - PbtO2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226631&lt;a name=\&quot;mimic-d-items-226631\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PACU Urine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225377&lt;a name=\&quot;mimic-d-items-225377\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indwelling Port (PortaCath) Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226580&lt;a name=\&quot;mimic-d-items-226580\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fecal Bag&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229576&lt;a name=\&quot;mimic-d-items-229576\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ERCP (Done in unit)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225789&lt;a name=\&quot;mimic-d-items-225789\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sheath (Venous)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227721&lt;a name=\&quot;mimic-d-items-227721\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AVA Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225430&lt;a name=\&quot;mimic-d-items-225430\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiac Cath&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224277&lt;a name=\&quot;mimic-d-items-224277\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;18 Gauge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226586&lt;a name=\&quot;mimic-d-items-226586\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stool Estimate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224269&lt;a name=\&quot;mimic-d-items-224269\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CCO PAC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227714&lt;a name=\&quot;mimic-d-items-227714\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pericardial Drain Removed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225354&lt;a name=\&quot;mimic-d-items-225354\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PA Catheter Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225472&lt;a name=\&quot;mimic-d-items-225472\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pneumothorax&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227907&lt;a name=\&quot;mimic-d-items-227907\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Date - Student&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229735&lt;a name=\&quot;mimic-d-items-229735\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RIC Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228129&lt;a name=\&quot;mimic-d-items-228129\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Family updated by RN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227817&lt;a name=\&quot;mimic-d-items-227817\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Referral Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226724&lt;a name=\&quot;mimic-d-items-226724\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hospital Admit Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225765&lt;a name=\&quot;mimic-d-items-225765\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sheath Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225279&lt;a name=\&quot;mimic-d-items-225279\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Date of Admission to Hospital&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229655&lt;a name=\&quot;mimic-d-items-229655\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stroke NCP -  Fam Ed Given Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228793&lt;a name=\&quot;mimic-d-items-228793\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure ulcer #1- Dressing change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225477&lt;a name=\&quot;mimic-d-items-225477\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unplanned Extubation (non-patient initiated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225384&lt;a name=\&quot;mimic-d-items-225384\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Presep Catheter Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224268&lt;a name=\&quot;mimic-d-items-224268\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma line&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227194&lt;a name=\&quot;mimic-d-items-227194\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Extubation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225378&lt;a name=\&quot;mimic-d-items-225378\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indwelling Port (PortaCath) Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229514&lt;a name=\&quot;mimic-d-items-229514\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EKOS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226632&lt;a name=\&quot;mimic-d-items-226632\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cath Lab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228266&lt;a name=\&quot;mimic-d-items-228266\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FM Date/Time&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225444&lt;a name=\&quot;mimic-d-items-225444\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pan Culture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228799&lt;a name=\&quot;mimic-d-items-228799\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure ulcer #7- Dressing change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225368&lt;a name=\&quot;mimic-d-items-225368\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pheresis Catheter Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229739&lt;a name=\&quot;mimic-d-items-229739\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;22 Gauge Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229732&lt;a name=\&quot;mimic-d-items-229732\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;20 Gauge Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226126&lt;a name=\&quot;mimic-d-items-226126\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ICP Line Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229983&lt;a name=\&quot;mimic-d-items-229983\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Isoflurane (Inhaled)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225372&lt;a name=\&quot;mimic-d-items-225372\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pheresis Catheter Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229526&lt;a name=\&quot;mimic-d-items-229526\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MAC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225401&lt;a name=\&quot;mimic-d-items-225401\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blood Cultured&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229549&lt;a name=\&quot;mimic-d-items-229549\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avalon Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227198&lt;a name=\&quot;mimic-d-items-227198\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indwelling (PortaCath) Port #1 Date De-accessed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225451&lt;a name=\&quot;mimic-d-items-225451\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sputum Culture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226618&lt;a name=\&quot;mimic-d-items-226618\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sump #2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226570&lt;a name=\&quot;mimic-d-items-226570\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blakemore&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227798&lt;a name=\&quot;mimic-d-items-227798\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impaired Skin  - Dressing Change #9&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225390&lt;a name=\&quot;mimic-d-items-225390\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Presep Catheter Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229888&lt;a name=\&quot;mimic-d-items-229888\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure Ulcer #5- Date Indentified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226236&lt;a name=\&quot;mimic-d-items-226236\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Temporary Pacemaker Wires Discontinued&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229518&lt;a name=\&quot;mimic-d-items-229518\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ICP - Camino&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229887&lt;a name=\&quot;mimic-d-items-229887\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure Ulcer #4- Date Indentified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228800&lt;a name=\&quot;mimic-d-items-228800\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure ulcer #8- Dressing change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226128&lt;a name=\&quot;mimic-d-items-226128\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ICP Line Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229730&lt;a name=\&quot;mimic-d-items-229730\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;14 Gauge Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224385&lt;a name=\&quot;mimic-d-items-224385\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intubation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225766&lt;a name=\&quot;mimic-d-items-225766\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sheath Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225475&lt;a name=\&quot;mimic-d-items-225475\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Respiratory Arrest&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228291&lt;a name=\&quot;mimic-d-items-228291\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IO Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226613&lt;a name=\&quot;mimic-d-items-226613\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Wound Vac #1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225467&lt;a name=\&quot;mimic-d-items-225467\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chest Opened&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224287&lt;a name=\&quot;mimic-d-items-224287\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arterial Line Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229886&lt;a name=\&quot;mimic-d-items-229886\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure Ulcer #3- Date Indentified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227729&lt;a name=\&quot;mimic-d-items-227729\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AVA Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225816&lt;a name=\&quot;mimic-d-items-225816\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Wound Culture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225203&lt;a name=\&quot;mimic-d-items-225203\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pheresis Catheter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226592&lt;a name=\&quot;mimic-d-items-226592\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mediastinal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227796&lt;a name=\&quot;mimic-d-items-227796\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impaired Skin  - Dressing Change #7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226474&lt;a name=\&quot;mimic-d-items-226474\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ICP Bolt Inserted&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228228&lt;a name=\&quot;mimic-d-items-228228\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Family meeting attempted, unable&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229524&lt;a name=\&quot;mimic-d-items-229524\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lumbar Drain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229620&lt;a name=\&quot;mimic-d-items-229620\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Massive Transfusion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224285&lt;a name=\&quot;mimic-d-items-224285\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arterial line Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226124&lt;a name=\&quot;mimic-d-items-226124\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ICP Catheter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226476&lt;a name=\&quot;mimic-d-items-226476\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Esophogeal Balloon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225821&lt;a name=\&quot;mimic-d-items-225821\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unplanned Line/Catheter Removal (Patient Initiated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225202&lt;a name=\&quot;mimic-d-items-225202\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indwelling Port (PortaCath)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229889&lt;a name=\&quot;mimic-d-items-229889\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure Ulcer #6- Date Indentified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227510&lt;a name=\&quot;mimic-d-items-227510\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TF Residual&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225457&lt;a name=\&quot;mimic-d-items-225457\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abdominal X-Ray&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225222&lt;a name=\&quot;mimic-d-items-225222\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CCO PAC Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229531&lt;a name=\&quot;mimic-d-items-229531\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tunneled Access Line&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229532&lt;a name=\&quot;mimic-d-items-229532\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indwelling Port&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227541&lt;a name=\&quot;mimic-d-items-227541\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SvO2 Calibrated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226579&lt;a name=\&quot;mimic-d-items-226579\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stool&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225385&lt;a name=\&quot;mimic-d-items-225385\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Presep Catheter Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225450&lt;a name=\&quot;mimic-d-items-225450\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Radiation Therapy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225376&lt;a name=\&quot;mimic-d-items-225376\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indwelling Port (PortaCath) Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224290&lt;a name=\&quot;mimic-d-items-224290\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arterial line Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226633&lt;a name=\&quot;mimic-d-items-226633\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pre-Admission&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226612&lt;a name=\&quot;mimic-d-items-226612\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pericardial&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225756&lt;a name=\&quot;mimic-d-items-225756\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;16 Gauge Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228794&lt;a name=\&quot;mimic-d-items-228794\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure ulcer #2- Dressing change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229996&lt;a name=\&quot;mimic-d-items-229996\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nitrous Oxide (Inhaled)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225460&lt;a name=\&quot;mimic-d-items-225460\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cervical Spine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228715&lt;a name=\&quot;mimic-d-items-228715\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transcranial Doppler&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227712&lt;a name=\&quot;mimic-d-items-227712\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chest Tube Removed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225317&lt;a name=\&quot;mimic-d-items-225317\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Line Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225327&lt;a name=\&quot;mimic-d-items-225327\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tunneled (Hickman) Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228130&lt;a name=\&quot;mimic-d-items-228130\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NEOB notified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228795&lt;a name=\&quot;mimic-d-items-228795\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure ulcer #3- Dressing change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225370&lt;a name=\&quot;mimic-d-items-225370\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pheresis Catheter Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226617&lt;a name=\&quot;mimic-d-items-226617\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sump #1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225967&lt;a name=\&quot;mimic-d-items-225967\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rectal Swab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225449&lt;a name=\&quot;mimic-d-items-225449\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pericardiocentesis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228209&lt;a name=\&quot;mimic-d-items-228209\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tandem Heart Access Line Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225213&lt;a name=\&quot;mimic-d-items-225213\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Line Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226590&lt;a name=\&quot;mimic-d-items-226590\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;L Pleural #1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226559&lt;a name=\&quot;mimic-d-items-226559\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Foley&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229884&lt;a name=\&quot;mimic-d-items-229884\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure Ulcer #1- Date Indentified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226588&lt;a name=\&quot;mimic-d-items-226588\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chest Tube #1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225434&lt;a name=\&quot;mimic-d-items-225434\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Colonoscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225815&lt;a name=\&quot;mimic-d-items-225815\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Peritoneal Fluid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225456&lt;a name=\&quot;mimic-d-items-225456\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ventricular Drain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229729&lt;a name=\&quot;mimic-d-items-229729\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;18 Gauge Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225817&lt;a name=\&quot;mimic-d-items-225817\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BAL Fluid Culture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225805&lt;a name=\&quot;mimic-d-items-225805\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Peritoneal Dialysis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225479&lt;a name=\&quot;mimic-d-items-225479\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Thoracentesis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225461&lt;a name=\&quot;mimic-d-items-225461\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pelvis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228215&lt;a name=\&quot;mimic-d-items-228215\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tandem Heart Access Line Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224284&lt;a name=\&quot;mimic-d-items-224284\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arterial line Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224298&lt;a name=\&quot;mimic-d-items-224298\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cordis/Introducer Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227701&lt;a name=\&quot;mimic-d-items-227701\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drainage Bag&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229413&lt;a name=\&quot;mimic-d-items-229413\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chest Tube #3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225402&lt;a name=\&quot;mimic-d-items-225402\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EKG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229614&lt;a name=\&quot;mimic-d-items-229614\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EEG (Continuous)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225440&lt;a name=\&quot;mimic-d-items-225440\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fluoroscopy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229501&lt;a name=\&quot;mimic-d-items-229501\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Small Bore Nasal Enteral Tube Placement&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225757&lt;a name=\&quot;mimic-d-items-225757\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;14 Gauge Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;221214&lt;a name=\&quot;mimic-d-items-221214\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CT scan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226614&lt;a name=\&quot;mimic-d-items-226614\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Wound Vac #2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226593&lt;a name=\&quot;mimic-d-items-226593\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;R Pleural #1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225216&lt;a name=\&quot;mimic-d-items-225216\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Line Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226567&lt;a name=\&quot;mimic-d-items-226567\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Straight Cath&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225468&lt;a name=\&quot;mimic-d-items-225468\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unplanned Extubation (patient-initiated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229542&lt;a name=\&quot;mimic-d-items-229542\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EKOS Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226629&lt;a name=\&quot;mimic-d-items-226629\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PACU EBL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228202&lt;a name=\&quot;mimic-d-items-228202\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tandem Heart Outflow Line&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225329&lt;a name=\&quot;mimic-d-items-225329\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tunneled (Hickman) Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224261&lt;a name=\&quot;mimic-d-items-224261\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multi Lumen Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225353&lt;a name=\&quot;mimic-d-items-225353\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PA Catheter Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227793&lt;a name=\&quot;mimic-d-items-227793\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impaired Skin  - Dressing Change #4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225432&lt;a name=\&quot;mimic-d-items-225432\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transthoracic Echo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226597&lt;a name=\&quot;mimic-d-items-226597\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;JP Medial&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225761&lt;a name=\&quot;mimic-d-items-225761\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sheath Insertion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226572&lt;a name=\&quot;mimic-d-items-226572\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ewald&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224187&lt;a name=\&quot;mimic-d-items-224187\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PICC Line Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224184&lt;a name=\&quot;mimic-d-items-224184\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PICC Line Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229519&lt;a name=\&quot;mimic-d-items-229519\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EVD #1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225448&lt;a name=\&quot;mimic-d-items-225448\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Percutaneous Tracheostomy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226621&lt;a name=\&quot;mimic-d-items-226621\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Davol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229737&lt;a name=\&quot;mimic-d-items-229737\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;16 Gauge Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225446&lt;a name=\&quot;mimic-d-items-225446\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PEG Insertion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229533&lt;a name=\&quot;mimic-d-items-229533\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Camino&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229740&lt;a name=\&quot;mimic-d-items-229740\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;24 Gauge Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227488&lt;a name=\&quot;mimic-d-items-227488\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GU Irrigant Volume In&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229741&lt;a name=\&quot;mimic-d-items-229741\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RIC Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228321&lt;a name=\&quot;mimic-d-items-228321\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PC Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227550&lt;a name=\&quot;mimic-d-items-227550\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ERCP (Travel to)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225391&lt;a name=\&quot;mimic-d-items-225391\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Triple Introducer Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227713&lt;a name=\&quot;mimic-d-items-227713\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Epidural Placement&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225966&lt;a name=\&quot;mimic-d-items-225966\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nasal Swab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225818&lt;a name=\&quot;mimic-d-items-225818\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pleural Fluid Culture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226620&lt;a name=\&quot;mimic-d-items-226620\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pigtail #2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226600&lt;a name=\&quot;mimic-d-items-226600\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Jackson Pratt #2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226584&lt;a name=\&quot;mimic-d-items-226584\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ileoconduit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229414&lt;a name=\&quot;mimic-d-items-229414\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chest Tube #4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225406&lt;a name=\&quot;mimic-d-items-225406\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transferred to Floor&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226132&lt;a name=\&quot;mimic-d-items-226132\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ICP Line Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225755&lt;a name=\&quot;mimic-d-items-225755\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;18 Gauge Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226566&lt;a name=\&quot;mimic-d-items-226566\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urine and GU Irrigant Out&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226630&lt;a name=\&quot;mimic-d-items-226630\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PACU Gastric&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226564&lt;a name=\&quot;mimic-d-items-226564\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;R Nephrostomy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224272&lt;a name=\&quot;mimic-d-items-224272\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IABP line&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228797&lt;a name=\&quot;mimic-d-items-228797\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure ulcer #5- Dressing change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228168&lt;a name=\&quot;mimic-d-items-228168\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impella Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226627&lt;a name=\&quot;mimic-d-items-226627\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OR Urine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224270&lt;a name=\&quot;mimic-d-items-224270\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dialysis Catheter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226573&lt;a name=\&quot;mimic-d-items-226573\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gastric Tube&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229550&lt;a name=\&quot;mimic-d-items-229550\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avalon Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226598&lt;a name=\&quot;mimic-d-items-226598\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;JP Lateral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225337&lt;a name=\&quot;mimic-d-items-225337\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IABP Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229734&lt;a name=\&quot;mimic-d-items-229734\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;24 Gauge Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224273&lt;a name=\&quot;mimic-d-items-224273\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Presep Catheter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225754&lt;a name=\&quot;mimic-d-items-225754\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;20 Gauge Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226625&lt;a name=\&quot;mimic-d-items-226625\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tap&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229523&lt;a name=\&quot;mimic-d-items-229523\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Subdural Drain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228631&lt;a name=\&quot;mimic-d-items-228631\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Date signed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228218&lt;a name=\&quot;mimic-d-items-228218\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tandem Heart Return Cannula Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226713&lt;a name=\&quot;mimic-d-items-226713\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Incontinent/voids (estimate)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227487&lt;a name=\&quot;mimic-d-items-227487\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GU Irrigant Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229890&lt;a name=\&quot;mimic-d-items-229890\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure Ulcer #7- Date Indentified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225465&lt;a name=\&quot;mimic-d-items-225465\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chest Pain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225346&lt;a name=\&quot;mimic-d-items-225346\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Midline Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226569&lt;a name=\&quot;mimic-d-items-226569\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anderson (gastric)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226475&lt;a name=\&quot;mimic-d-items-226475\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraventricular Drain Inserted&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227719&lt;a name=\&quot;mimic-d-items-227719\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AVA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228802&lt;a name=\&quot;mimic-d-items-228802\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure ulcer #10- Dressing change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226607&lt;a name=\&quot;mimic-d-items-226607\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cerebral Ventricular #2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229651&lt;a name=\&quot;mimic-d-items-229651\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stroke NCP - Water Swallow Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229582&lt;a name=\&quot;mimic-d-items-229582\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Portable CT scan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226571&lt;a name=\&quot;mimic-d-items-226571\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emesis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224183&lt;a name=\&quot;mimic-d-items-224183\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PICC Line Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226561&lt;a name=\&quot;mimic-d-items-226561\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Condom Cath&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225332&lt;a name=\&quot;mimic-d-items-225332\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tunneled (Hickman) Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229578&lt;a name=\&quot;mimic-d-items-229578\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cath Lab (Sent)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225809&lt;a name=\&quot;mimic-d-items-225809\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dialysis - CVVHDF&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225466&lt;a name=\&quot;mimic-d-items-225466\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiac Arrest&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226589&lt;a name=\&quot;mimic-d-items-226589\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chest Tube #2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225375&lt;a name=\&quot;mimic-d-items-225375\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indwelling Port (PortaCath) Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229893&lt;a name=\&quot;mimic-d-items-229893\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure Ulcer #10- Date Indentified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226601&lt;a name=\&quot;mimic-d-items-226601\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Jackson Pratt #3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226576&lt;a name=\&quot;mimic-d-items-226576\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral Gastric&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226575&lt;a name=\&quot;mimic-d-items-226575\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nasogastric&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225820&lt;a name=\&quot;mimic-d-items-225820\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;C-Spine Clearance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225338&lt;a name=\&quot;mimic-d-items-225338\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IABP Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;221216&lt;a name=\&quot;mimic-d-items-221216\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;X-ray&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229575&lt;a name=\&quot;mimic-d-items-229575\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Travel to Radiology&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227361&lt;a name=\&quot;mimic-d-items-227361\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indwelling (PortaCath) Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226604&lt;a name=\&quot;mimic-d-items-226604\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hemovac #1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225462&lt;a name=\&quot;mimic-d-items-225462\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Interventional Radiology&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225318&lt;a name=\&quot;mimic-d-items-225318\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dialysis Catheter Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229541&lt;a name=\&quot;mimic-d-items-229541\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EKOS Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225322&lt;a name=\&quot;mimic-d-items-225322\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dialysis Catheter Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225367&lt;a name=\&quot;mimic-d-items-225367\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pheresis Catheter Cap Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228160&lt;a name=\&quot;mimic-d-items-228160\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impella Aortic Pressure Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226603&lt;a name=\&quot;mimic-d-items-226603\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;T Tube&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225199&lt;a name=\&quot;mimic-d-items-225199\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Triple Introducer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228103&lt;a name=\&quot;mimic-d-items-228103\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stool containment device placed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227791&lt;a name=\&quot;mimic-d-items-227791\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impaired Skin  - Dressing Change #2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227551&lt;a name=\&quot;mimic-d-items-227551\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Plasma Pheresis.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225433&lt;a name=\&quot;mimic-d-items-225433\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chest Tube Placed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224566&lt;a name=\&quot;mimic-d-items-224566\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;14 Gauge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227197&lt;a name=\&quot;mimic-d-items-227197\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indwelling (PortaCath) Port #2 Date Accessed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225752&lt;a name=\&quot;mimic-d-items-225752\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arterial Line&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226608&lt;a name=\&quot;mimic-d-items-226608\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cerebral Subdural #1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228166&lt;a name=\&quot;mimic-d-items-228166\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Impella Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225205&lt;a name=\&quot;mimic-d-items-225205\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RIC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224280&lt;a name=\&quot;mimic-d-items-224280\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multi Lumen Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224274&lt;a name=\&quot;mimic-d-items-224274\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;22 Gauge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229516&lt;a name=\&quot;mimic-d-items-229516\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Single Lumen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225469&lt;a name=\&quot;mimic-d-items-225469\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OR Received&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229731&lt;a name=\&quot;mimic-d-items-229731\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;16 Gauge Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225819&lt;a name=\&quot;mimic-d-items-225819\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Brain Death&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227711&lt;a name=\&quot;mimic-d-items-227711\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drain Removed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225459&lt;a name=\&quot;mimic-d-items-225459\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chest X-Ray&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225474&lt;a name=\&quot;mimic-d-items-225474\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fall&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225128&lt;a name=\&quot;mimic-d-items-225128\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Last dialysis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225399&lt;a name=\&quot;mimic-d-items-225399\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lumbar Puncture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225319&lt;a name=\&quot;mimic-d-items-225319\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dialysis Catheter Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225324&lt;a name=\&quot;mimic-d-items-225324\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dialysis CatheterTubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228207&lt;a name=\&quot;mimic-d-items-228207\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tandem Heart Access Line Dressing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225226&lt;a name=\&quot;mimic-d-items-225226\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CCO PAC Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226237&lt;a name=\&quot;mimic-d-items-226237\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Open Tracheostomy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225476&lt;a name=\&quot;mimic-d-items-225476\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unplanned Line/Catheter Removal (Non-Patient initated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225083&lt;a name=\&quot;mimic-d-items-225083\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pregnancy due date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226591&lt;a name=\&quot;mimic-d-items-226591\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;L Pleural #2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225204&lt;a name=\&quot;mimic-d-items-225204\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Midline&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227542&lt;a name=\&quot;mimic-d-items-227542\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ScvO2 (Presep) Calibrated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229556&lt;a name=\&quot;mimic-d-items-229556\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiac Assist Cannula Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225380&lt;a name=\&quot;mimic-d-items-225380\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indwelling Port (PortaCath)Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226609&lt;a name=\&quot;mimic-d-items-226609\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cerebral Subdural #2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226606&lt;a name=\&quot;mimic-d-items-226606\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cerebral Ventricular #1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225441&lt;a name=\&quot;mimic-d-items-225441\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hemodialysis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226518&lt;a name=\&quot;mimic-d-items-226518\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Expected Discharge Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225344&lt;a name=\&quot;mimic-d-items-225344\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Midline Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229984&lt;a name=\&quot;mimic-d-items-229984\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sevoflurane (Inhaled)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228125&lt;a name=\&quot;mimic-d-items-228125\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Family meeting held&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224293&lt;a name=\&quot;mimic-d-items-224293\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cordis/Introducer Change over Wire Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;221219&lt;a name=\&quot;mimic-d-items-221219\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Venogram&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228286&lt;a name=\&quot;mimic-d-items-228286\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraosseous Device&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225394&lt;a name=\&quot;mimic-d-items-225394\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Triple Introducer Insertion Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225792&lt;a name=\&quot;mimic-d-items-225792\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Invasive Ventilation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;225445&lt;a name=\&quot;mimic-d-items-225445\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Paracentesis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226610&lt;a name=\&quot;mimic-d-items-226610\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lumbar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229530&lt;a name=\&quot;mimic-d-items-229530\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ECMO Outflow Line&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;228796&lt;a name=\&quot;mimic-d-items-228796\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressure ulcer #4- Dressing change&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;224282&lt;a name=\&quot;mimic-d-items-224282\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multi Lumen Tubing Change&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "1.3.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "MimicDItems",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "MimicDItems",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-09-21T13:59:43-04:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "KinD Lab",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "KinD Lab",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "The item codes used throughout the ICU in MIMIC",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.valueSet">valueSet</a>" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-d-items",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227797",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impaired Skin  - Dressing Change #8"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227795",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impaired Skin  - Dressing Change #6"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225814",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stool Culture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225315",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tunneled (Hickman) Line"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "221223",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EEG"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225437",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CSF Culture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225454",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urine Culture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228801",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure ulcer #9- Dressing change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225464",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cardioversion/Defibrillation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224458",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Drain Output_ingr"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225392",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Triple Introducer Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225802",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dialysis - CRRT"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229352",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Foley Cath Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229298",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Speech and Swallow Evaluation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226582",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ostomy (output)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226605",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hemovac #2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228127",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Family met with Social Worker"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226560",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Void"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225356",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PA Catheter Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224263",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Multi Lumen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225321",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dialysis Catheter Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224275",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "20 Gauge"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226628",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PACU Drains"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227511",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TF Residual Output"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225393",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Triple Introducer Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225427",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Angiography"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225336",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IABP Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229529",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ECMO Inflow Line"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229528",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Centrimag Outflow Line"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225470",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "OR Sent"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229351",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Foley Catheter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227489",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GU Irrigant/Urine Volume Out"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224279",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Multi Lumen Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226623",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Penrose #1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "223253",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Magnetic Resonance Imaging"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229579",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Transfer Intercampus by Ambulance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225316",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CCO PAC Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225330",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tunneled (Hickman) Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225348",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Midline Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226602",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Jackson Pratt #4"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224292",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cordis/Introducer Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229380",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Nursing Water Swallow Screening"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226557",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "R Ureteral Stent"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226574",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Jejunostomy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229736",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "14 Gauge Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225803",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dialysis - CVVHD"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225224",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CCO PAC Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226616",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anderson"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226515",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Date of Birth"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225463",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TLS Spine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229581",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Portable Chest X-Ray"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225345",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Midline Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227722",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AVA Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227199",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indwelling (PortaCath) Port #2 Date De-accessed"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225436",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CRRT Filter Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225221",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CCO PAC Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229555",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cardiac Assist Cannula Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229891",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure Ulcer #8- Date Indentified"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226477",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Temporary Pacemaker Wires Inserted"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225447",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Percutaneous Drain Insertion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229580",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Line Placement at Bedside"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229755",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trigger Initiated"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225369",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pheresis Catheter Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225428",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Blakemore / Minnesota Tube D/C"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229577",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cath Lab (Received)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224296",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cordis/Introducer Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224288",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Arterial line Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225794",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Non-invasive Ventilation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228169",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impella Line"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225335",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IABP Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227794",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impaired Skin  - Dressing Change #5"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225352",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PA Catheter Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "221255",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trans Esophageal Echo"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228201",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tandem Heart Inflow Line"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229728",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "18 Gauge Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226622",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Red Rubber"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228798",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure ulcer #6- Dressing change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225769",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sheath Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229738",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "20 Gauge Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226532",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Organ Bank Notified"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224295",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cordis/Introducer Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "221217",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ultrasound"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225383",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Presep Catheter Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227911",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Date - Therapist"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229892",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure Ulcer #9- Date Indentified"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227800",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impaired Skin  - Dressing Change #10"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224560",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PA Catheter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229517",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Multi Lumen Cooling Catheter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225442",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Liver Biopsy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225955",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dialysis - SCUF"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225343",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Midline Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228126",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Family met with Case Manager"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226563",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Suprapubic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225340",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IABP Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226719",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Last menses"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225396",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Triple Introducer Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228165",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impella Daily Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225429",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Blakemore / MinnesotaTube Inserted"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225328",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tunneled (Hickman) Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225753",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "22 Gauge Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229471",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "24 Gauge Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227720",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AVA Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225763",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sheath Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227790",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impaired Skin  - Dressing Change #1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229522",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SEPS (Subdural Evacuating Port System)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229515",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Avalon/Protek Duo"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225443",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Nuclear Medicine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229643",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stroke NCP - Ed Given Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229733",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "22 Gauge Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226583",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rectal Tube"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229885",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure Ulcer #2- Date Indentified"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225386",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Presep Catheter Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229468",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "24 Gauge"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229525",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sheath (Arterial)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226595",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "R Pleural #2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225758",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RIC Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225762",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sheath Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229527",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Centrimag Inflow Line"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228221",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tandem Heart Return Cannula Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224185",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PICC Line Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228136",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Family notified of transfer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227792",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impaired Skin  - Dressing Change #3"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225400",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Bronchoscopy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227724",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AVA Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226565",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "L Nephrostomy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229353",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Foley Cath Removal Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226599",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Jackson Pratt #1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226482",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Blood Clot Outdates"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225218",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Line Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229585",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Surgical Procedure at Bedside"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227584",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GU Catheter D/C Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229520",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EVD #2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225214",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Line Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228331",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PC Time of visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225439",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Endoscopy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224276",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "16 Gauge"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228128",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Family updated by MD"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226516",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Discharge Date/Time"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225351",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PA Catheter Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "220003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ICU Admission date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225478",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Operation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224186",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PICC Line Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227126",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indwelling (PortaCath) Port #1 Date Accessed"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224878",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GU Catheter Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224267",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cordis/Introducer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229366",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Epoprostenol (Inhaled)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227715",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TLS Clearance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229584",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EMG"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226558",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "L Ureteral Stent"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226619",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pigtail #1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229883",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure ulcer #1- Date Indentified_OLD_1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226624",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Penrose #2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224264",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PICC Line"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229586",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "VAC Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224262",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Multi Lumen Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226626",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "OR EBL"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229521",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ICP - PbtO2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226631",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PACU Urine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225377",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indwelling Port (PortaCath) Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226580",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fecal Bag"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229576",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ERCP (Done in unit)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225789",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sheath (Venous)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227721",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AVA Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225430",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cardiac Cath"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224277",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "18 Gauge"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226586",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stool Estimate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224269",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CCO PAC"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227714",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pericardial Drain Removed"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225354",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PA Catheter Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225472",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pneumothorax"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227907",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Date - Student"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229735",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RIC Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228129",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Family updated by RN"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227817",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Referral Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226724",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hospital Admit Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225765",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sheath Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225279",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Date of Admission to Hospital"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229655",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stroke NCP -  Fam Ed Given Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228793",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure ulcer #1- Dressing change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225477",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Unplanned Extubation (non-patient initiated)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225384",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Presep Catheter Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224268",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma line"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227194",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Extubation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225378",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indwelling Port (PortaCath) Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229514",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EKOS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226632",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cath Lab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228266",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "FM Date/Time"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225444",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pan Culture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228799",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure ulcer #7- Dressing change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225368",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pheresis Catheter Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229739",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "22 Gauge Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229732",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "20 Gauge Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226126",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ICP Line Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229983",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Isoflurane (Inhaled)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225372",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pheresis Catheter Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229526",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MAC"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225401",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Blood Cultured"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229549",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Avalon Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227198",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indwelling (PortaCath) Port #1 Date De-accessed"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225451",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sputum Culture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226618",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sump #2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226570",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Blakemore"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227798",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impaired Skin  - Dressing Change #9"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225390",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Presep Catheter Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229888",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure Ulcer #5- Date Indentified"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226236",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Temporary Pacemaker Wires Discontinued"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229518",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ICP - Camino"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229887",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure Ulcer #4- Date Indentified"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228800",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure ulcer #8- Dressing change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226128",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ICP Line Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229730",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "14 Gauge Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224385",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intubation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225766",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sheath Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225475",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Respiratory Arrest"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228291",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IO Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226613",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Wound Vac #1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225467",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chest Opened"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224287",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Arterial Line Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229886",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure Ulcer #3- Date Indentified"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227729",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AVA Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225816",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Wound Culture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225203",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pheresis Catheter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226592",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mediastinal"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227796",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impaired Skin  - Dressing Change #7"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226474",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ICP Bolt Inserted"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228228",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Family meeting attempted, unable"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229524",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lumbar Drain"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229620",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Massive Transfusion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224285",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Arterial line Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226124",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ICP Catheter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226476",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Esophogeal Balloon"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225821",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Unplanned Line/Catheter Removal (Patient Initiated)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225202",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indwelling Port (PortaCath)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229889",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure Ulcer #6- Date Indentified"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227510",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TF Residual"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225457",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Abdominal X-Ray"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225222",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CCO PAC Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229531",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tunneled Access Line"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229532",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indwelling Port"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227541",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SvO2 Calibrated"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226579",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stool"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225385",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Presep Catheter Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225450",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Radiation Therapy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225376",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indwelling Port (PortaCath) Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224290",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Arterial line Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226633",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pre-Admission"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226612",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pericardial"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225756",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "16 Gauge Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228794",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure ulcer #2- Dressing change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229996",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Nitrous Oxide (Inhaled)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225460",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cervical Spine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228715",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Transcranial Doppler"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227712",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chest Tube Removed"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225317",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Line Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225327",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tunneled (Hickman) Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228130",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "NEOB notified"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228795",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure ulcer #3- Dressing change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225370",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pheresis Catheter Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226617",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sump #1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225967",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rectal Swab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225449",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pericardiocentesis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228209",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tandem Heart Access Line Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225213",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Line Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226590",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "L Pleural #1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226559",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Foley"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229884",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure Ulcer #1- Date Indentified"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226588",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chest Tube #1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225434",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Colonoscopy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225815",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Peritoneal Fluid"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225456",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ventricular Drain"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229729",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "18 Gauge Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225817",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "BAL Fluid Culture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225805",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Peritoneal Dialysis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225479",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Thoracentesis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225461",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pelvis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228215",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tandem Heart Access Line Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224284",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Arterial line Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224298",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cordis/Introducer Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227701",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Drainage Bag"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229413",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chest Tube #3"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225402",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EKG"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229614",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EEG (Continuous)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225440",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fluoroscopy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229501",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Small Bore Nasal Enteral Tube Placement"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225757",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "14 Gauge Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "221214",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CT scan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226614",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Wound Vac #2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226593",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "R Pleural #1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225216",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trauma Line Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226567",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Straight Cath"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225468",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Unplanned Extubation (patient-initiated)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229542",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EKOS Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226629",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PACU EBL"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228202",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tandem Heart Outflow Line"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225329",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tunneled (Hickman) Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224261",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Multi Lumen Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225353",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PA Catheter Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227793",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impaired Skin  - Dressing Change #4"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225432",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Transthoracic Echo"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226597",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "JP Medial"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225761",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sheath Insertion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226572",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ewald"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224187",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PICC Line Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224184",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PICC Line Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229519",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EVD #1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225448",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Percutaneous Tracheostomy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226621",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Davol"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229737",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "16 Gauge Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225446",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PEG Insertion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229533",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Camino"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229740",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "24 Gauge Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227488",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GU Irrigant Volume In"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229741",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RIC Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228321",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PC Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227550",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ERCP (Travel to)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225391",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Triple Introducer Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227713",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Epidural Placement"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225966",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Nasal Swab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225818",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pleural Fluid Culture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226620",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pigtail #2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226600",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Jackson Pratt #2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226584",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ileoconduit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229414",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chest Tube #4"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225406",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Transferred to Floor"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226132",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ICP Line Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225755",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "18 Gauge Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226566",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urine and GU Irrigant Out"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226630",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PACU Gastric"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226564",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "R Nephrostomy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224272",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IABP line"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228797",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure ulcer #5- Dressing change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228168",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impella Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226627",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "OR Urine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224270",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dialysis Catheter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226573",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Gastric Tube"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229550",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Avalon Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226598",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "JP Lateral"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225337",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IABP Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229734",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "24 Gauge Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224273",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Presep Catheter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225754",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "20 Gauge Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226625",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tap"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229523",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Subdural Drain"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228631",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Date signed"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228218",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tandem Heart Return Cannula Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226713",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Incontinent/voids (estimate)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227487",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GU Irrigant Type"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229890",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure Ulcer #7- Date Indentified"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225465",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chest Pain"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225346",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Midline Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226569",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anderson (gastric)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226475",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraventricular Drain Inserted"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227719",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AVA"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228802",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure ulcer #10- Dressing change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226607",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cerebral Ventricular #2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229651",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stroke NCP - Water Swallow Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229582",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Portable CT scan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226571",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Emesis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224183",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PICC Line Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226561",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Condom Cath"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225332",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tunneled (Hickman) Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229578",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cath Lab (Sent)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225809",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dialysis - CVVHDF"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225466",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cardiac Arrest"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226589",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chest Tube #2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225375",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indwelling Port (PortaCath) Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229893",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure Ulcer #10- Date Indentified"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226601",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Jackson Pratt #3"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226576",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral Gastric"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226575",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Nasogastric"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225820",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "C-Spine Clearance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225338",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IABP Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "221216",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "X-ray"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229575",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Travel to Radiology"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227361",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indwelling (PortaCath) Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226604",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hemovac #1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225462",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Interventional Radiology"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225318",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dialysis Catheter Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229541",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EKOS Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225322",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dialysis Catheter Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225367",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pheresis Catheter Cap Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228160",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impella Aortic Pressure Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226603",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "T Tube"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225199",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Triple Introducer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228103",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stool containment device placed"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227791",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impaired Skin  - Dressing Change #2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227551",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Plasma Pheresis."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225433",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chest Tube Placed"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224566",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "14 Gauge"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227197",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indwelling (PortaCath) Port #2 Date Accessed"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225752",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Arterial Line"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226608",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cerebral Subdural #1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228166",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Impella Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225205",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RIC"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224280",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Multi Lumen Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224274",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "22 Gauge"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229516",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Single Lumen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225469",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "OR Received"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229731",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "16 Gauge Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225819",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Brain Death"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227711",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Drain Removed"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225459",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chest X-Ray"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225474",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fall"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225128",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Last dialysis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225399",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lumbar Puncture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225319",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dialysis Catheter Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225324",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dialysis CatheterTubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228207",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tandem Heart Access Line Dressing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225226",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CCO PAC Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226237",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Open Tracheostomy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225476",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Unplanned Line/Catheter Removal (Non-Patient initated)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225083",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pregnancy due date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226591",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "L Pleural #2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225204",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Midline"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "227542",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ScvO2 (Presep) Calibrated"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229556",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cardiac Assist Cannula Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225380",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indwelling Port (PortaCath)Tubing Change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226609",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cerebral Subdural #2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226606",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cerebral Ventricular #1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225441",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hemodialysis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226518",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Expected Discharge Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225344",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Midline Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229984",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sevoflurane (Inhaled)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228125",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Family meeting held"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224293",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cordis/Introducer Change over Wire Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "221219",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Venogram"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228286",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraosseous Device"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225394",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Triple Introducer Insertion Date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225792",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Invasive Ventilation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "225445",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Paracentesis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "226610",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lumbar"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "229530",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ECMO Outflow Line"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "228796",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressure ulcer #4- Dressing change"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "224282",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Multi Lumen Tubing Change"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.mimic#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:07-0500">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

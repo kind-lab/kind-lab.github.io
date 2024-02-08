@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="ExampleMimicMedicationRequest"/>
+  <meta>
+    <profile value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-request"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationRequest</b><a name="ExampleMimicMedicationRequest"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationRequest &quot;ExampleMimicMedicationRequest&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mimic-medication-request.html">MIMIC Medication Request</a></p></div><p><b>identifier</b>: <code>http://mimic.mit.edu/fhir/mimic/identifier/medication-request-phid</code>/29195459</p><p><b>status</b>: stopped</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href="Medication-ExampleMimicMedication.html">Medication/ExampleMimicMedication</a></p><p><b>subject</b>: <a href="Patient-ExampleMimicPatient.html">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>encounter</b>: <a href="Encounter-ExampleMimicEncounter.html">Encounter/ExampleMimicEncounter</a></p><p><b>authoredOn</b>: 2130-11-01 09:43:48-0400</p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 10mEq ER Tablet</p><p><b>timing</b>: Code: ONCE</p><p><b>route</b>: PO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mimic-medication-route.html">MimicMedicationRoute</a>#PO)</span></p><blockquote><p><b>doseAndRate</b></p></blockquote></blockquote><h3>DispenseRequests</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ValidityPeriod</b></td></tr><tr><td style="display: none">*</td><td>2130-11-01 10:00:00-0400 --&gt; 2130-11-02 09:00:00-0400</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://mimic.mit.edu/fhir/mimic/identifier/medication-request-phid"/>
+    <value value="29195459"/>
+  </identifier>
+  <status value="stopped"/>
+  <intent value="order"/>
+  <medicationReference>
+    <reference value="Medication/ExampleMimicMedication"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/ExampleMimicPatient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/ExampleMimicEncounter"/>
+  </encounter>
+  <authoredOn value="2130-11-01T09:43:48-04:00"/>
+  <dosageInstruction>
+    <text value="10mEq ER Tablet"/>
+    <timing>
+      <code>
+        <coding>
+          <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-frequency"/>
+          <code value="ONCE"/>
+        </coding>
+      </code>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route"/>
+        <code value="PO"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="40"/>
+        <unit value="mEq"/>
+        <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units"/>
+        <code value="mEq"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dispenseRequest>
+    <validityPeriod>
+      <start value="2130-11-01T10:00:00-04:00"/>
+      <end value="2130-11-02T09:00:00-04:00"/>
+    </validityPeriod>
+  </dispenseRequest>
+</MedicationRequest>

@@ -1,0 +1,34 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ExampleMimicObservationDatetimeevents",
+  "meta" : {
+    "profile" : ["http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-datetimeevents"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ExampleMimicObservationDatetimeevents\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ExampleMimicObservationDatetimeevents&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-observation-datetimeevents.html\">MIMIC Observation Datetimeevents</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Access Lines - Invasive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-observation-category.html\">MimicObservationCategory</a>#Access Lines - Invasive)</span></p><p><b>code</b>: Impella Dressing Change <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-d-items.html\">MimicDItems</a>#228166)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>encounter</b>: <a href=\"Encounter-ExampleMimicEncounter.html\">Encounter/ExampleMimicEncounter</a></p><p><b>effective</b>: 2147-11-18 08:33:00-0500</p><p><b>issued</b>: Nov. 18, 2147, 12:33:00 p.m.</p><p><b>value</b>: 2147-11-18 00:00:00-0500</p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category",
+      "code" : "Access Lines - Invasive"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items",
+      "code" : "228166",
+      "display" : "Impella Dressing Change"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleMimicPatient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/ExampleMimicEncounter"
+  },
+  "effectiveDateTime" : "2147-11-18T08:33:00-05:00",
+  "issued" : "2147-11-18T12:33:00-05:00",
+  "valueDateTime" : "2147-11-18T00:00:00-05:00"
+}

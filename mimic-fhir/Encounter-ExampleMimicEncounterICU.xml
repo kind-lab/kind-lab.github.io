@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="ExampleMimicEncounterICU"/>
+  <meta>
+    <profile value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="ExampleMimicEncounterICU"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;ExampleMimicEncounterICU&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mimic-encounter.html">MIMIC Encounter</a></p></div><p><b>identifier</b>: <code>http://mimic.mit.edu/fhir/mimic/identifier/encounter-icu</code>/31552399</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'null')</p><p><b>type</b>: Patient encounter procedure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#308335008)</span></p><p><b>subject</b>: <a href="Patient-ExampleMimicPatient.html">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>period</b>: 2177-07-14 20:38:00-0400 --&gt; 2177-07-15 16:08:36-0400</p><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-ExampleLocation.html">Location/ExampleLocation</a> &quot;Trauma SICU (TSICU)&quot;</td><td>2177-07-14 20:38:00-0400 --&gt; 2177-07-15 16:08:36-0400</td></tr></table><p><b>partOf</b>: <a href="Encounter-ExampleMimicEncounter.html">Encounter/ExampleMimicEncounter</a></p></div>
+  </text>
+  <identifier>
+    <system value="http://mimic.mit.edu/fhir/mimic/identifier/encounter-icu"/>
+    <value value="31552399"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="ACUTE"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="308335008"/>
+      <display value="Patient encounter procedure"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/ExampleMimicPatient"/>
+  </subject>
+  <period>
+    <start value="2177-07-14T20:38:00-04:00"/>
+    <end value="2177-07-15T16:08:36-04:00"/>
+  </period>
+  <location>
+    <location>
+      <reference value="Location/ExampleLocation"/>
+    </location>
+    <period>
+      <start value="2177-07-14T20:38:00-04:00"/>
+      <end value="2177-07-15T16:08:36-04:00"/>
+    </period>
+  </location>
+  <partOf>
+    <reference value="Encounter/ExampleMimicEncounter"/>
+  </partOf>
+</Encounter>

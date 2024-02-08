@@ -1,0 +1,570 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mimic-microbiology-test"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This  code system <code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">90212<a name=\"mimic-microbiology-test-90212\"> </a></td><td>CLOSTRIDIUM DIFFICILE TOXIN A &amp; B TEST</td></tr><tr><td style=\"white-space:nowrap\">90054<a name=\"mimic-microbiology-test-90054\"> </a></td><td>IMMUNOFLUORESCENT TEST FOR PNEUMOCYSTIS CARINII</td></tr><tr><td style=\"white-space:nowrap\">90261<a name=\"mimic-microbiology-test-90261\"> </a></td><td>ANAEROBIC BOTTLE</td></tr><tr><td style=\"white-space:nowrap\">90135<a name=\"mimic-microbiology-test-90135\"> </a></td><td>EPSTEIN-BARR VIRUS EBNA IgG AB</td></tr><tr><td style=\"white-space:nowrap\">90241<a name=\"mimic-microbiology-test-90241\"> </a></td><td>POTASSIUM HYDROXIDE PREPARATION</td></tr><tr><td style=\"white-space:nowrap\">90137<a name=\"mimic-microbiology-test-90137\"> </a></td><td>QUANTITATIVE RPR</td></tr><tr><td style=\"white-space:nowrap\">90189<a name=\"mimic-microbiology-test-90189\"> </a></td><td>MRSA SCREEN</td></tr><tr><td style=\"white-space:nowrap\">90218<a name=\"mimic-microbiology-test-90218\"> </a></td><td>Carbapenemase Resistant Enterobacteriaceae Screen</td></tr><tr><td style=\"white-space:nowrap\">90042<a name=\"mimic-microbiology-test-90042\"> </a></td><td>TREPONEMAL ANTIBODY TEST</td></tr><tr><td style=\"white-space:nowrap\">90179<a name=\"mimic-microbiology-test-90179\"> </a></td><td>POTASSIUM HYDROXIDE PREPARATION (HAIR/SKIN/NAILS)</td></tr><tr><td style=\"white-space:nowrap\">90078<a name=\"mimic-microbiology-test-90078\"> </a></td><td>CHROMOSOME ANALYSIS-FLUID</td></tr><tr><td style=\"white-space:nowrap\">90106<a name=\"mimic-microbiology-test-90106\"> </a></td><td>MICROSPORIDIA STAIN</td></tr><tr><td style=\"white-space:nowrap\">90168<a name=\"mimic-microbiology-test-90168\"> </a></td><td>DIRECT INFLUENZA B ANTIGEN TEST</td></tr><tr><td style=\"white-space:nowrap\">90184<a name=\"mimic-microbiology-test-90184\"> </a></td><td>STEM CELL - ANAEROBIC BOTTLE</td></tr><tr><td style=\"white-space:nowrap\">90043<a name=\"mimic-microbiology-test-90043\"> </a></td><td>POST MORTEM MYCOLOGY CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90066<a name=\"mimic-microbiology-test-90066\"> </a></td><td>TISSUE CULTURE-LYMPHOCYTE</td></tr><tr><td style=\"white-space:nowrap\">90232<a name=\"mimic-microbiology-test-90232\"> </a></td><td>Staph aureus Preop PCR</td></tr><tr><td style=\"white-space:nowrap\">90249<a name=\"mimic-microbiology-test-90249\"> </a></td><td>CRYPTOCOCCAL ANTIGEN</td></tr><tr><td style=\"white-space:nowrap\">90121<a name=\"mimic-microbiology-test-90121\"> </a></td><td>CYCLOSPORA STAIN</td></tr><tr><td style=\"white-space:nowrap\">90193<a name=\"mimic-microbiology-test-90193\"> </a></td><td>voided</td></tr><tr><td style=\"white-space:nowrap\">90192<a name=\"mimic-microbiology-test-90192\"> </a></td><td>CMV Viral Load</td></tr><tr><td style=\"white-space:nowrap\">90075<a name=\"mimic-microbiology-test-90075\"> </a></td><td>CHROMOSOME ANALYSIS-BLOOD</td></tr><tr><td style=\"white-space:nowrap\">90158<a name=\"mimic-microbiology-test-90158\"> </a></td><td>R/O GC Only</td></tr><tr><td style=\"white-space:nowrap\">90268<a name=\"mimic-microbiology-test-90268\"> </a></td><td>FLUID CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90061<a name=\"mimic-microbiology-test-90061\"> </a></td><td>BRUCELLA BLOOD CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90172<a name=\"mimic-microbiology-test-90172\"> </a></td><td>HCV GENOTYPE</td></tr><tr><td style=\"white-space:nowrap\">90170<a name=\"mimic-microbiology-test-90170\"> </a></td><td>FISH ANALYSIS, 3-5 CELLS</td></tr><tr><td style=\"white-space:nowrap\">90090<a name=\"mimic-microbiology-test-90090\"> </a></td><td>POST-MORTEM VIRAL CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90185<a name=\"mimic-microbiology-test-90185\"> </a></td><td>SMEAR FOR BACTERIAL VAGINOSIS</td></tr><tr><td style=\"white-space:nowrap\">90210<a name=\"mimic-microbiology-test-90210\"> </a></td><td>Malaria Antigen Test</td></tr><tr><td style=\"white-space:nowrap\">90226<a name=\"mimic-microbiology-test-90226\"> </a></td><td>RPR w/check for Prozone</td></tr><tr><td style=\"white-space:nowrap\">90203<a name=\"mimic-microbiology-test-90203\"> </a></td><td>Aerobic Bottle Gram Stain</td></tr><tr><td style=\"white-space:nowrap\">90161<a name=\"mimic-microbiology-test-90161\"> </a></td><td>TRICHOMONAS SALINE PREP</td></tr><tr><td style=\"white-space:nowrap\">90254<a name=\"mimic-microbiology-test-90254\"> </a></td><td>RUBELLA IgG SEROLOGY</td></tr><tr><td style=\"white-space:nowrap\">90050<a name=\"mimic-microbiology-test-90050\"> </a></td><td>GRAM STAIN- R/O THRUSH</td></tr><tr><td style=\"white-space:nowrap\">90230<a name=\"mimic-microbiology-test-90230\"> </a></td><td>Stool Hold Request</td></tr><tr><td style=\"white-space:nowrap\">90116<a name=\"mimic-microbiology-test-90116\"> </a></td><td>Chlamydia trachomatis, Nucleic Acid Probe, with Amplification</td></tr><tr><td style=\"white-space:nowrap\">90065<a name=\"mimic-microbiology-test-90065\"> </a></td><td>STOOL SMEAR FOR POLYMORPHONUCLEAR LEUKOCYTES</td></tr><tr><td style=\"white-space:nowrap\">90272<a name=\"mimic-microbiology-test-90272\"> </a></td><td>TISSUE</td></tr><tr><td style=\"white-space:nowrap\">90093<a name=\"mimic-microbiology-test-90093\"> </a></td><td>ANAEROBIC BOTTLE</td></tr><tr><td style=\"white-space:nowrap\">90191<a name=\"mimic-microbiology-test-90191\"> </a></td><td>MUMPS IgG ANTIBODY</td></tr><tr><td style=\"white-space:nowrap\">90173<a name=\"mimic-microbiology-test-90173\"> </a></td><td>Acid Fast Stain for Cryptosporidium</td></tr><tr><td style=\"white-space:nowrap\">90148<a name=\"mimic-microbiology-test-90148\"> </a></td><td>Cryopreservation - Cells</td></tr><tr><td style=\"white-space:nowrap\">90202<a name=\"mimic-microbiology-test-90202\"> </a></td><td>Blood Culture, Neonate</td></tr><tr><td style=\"white-space:nowrap\">90269<a name=\"mimic-microbiology-test-90269\"> </a></td><td>FUNGAL CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90095<a name=\"mimic-microbiology-test-90095\"> </a></td><td>VARICELLA-ZOSTER CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90046<a name=\"mimic-microbiology-test-90046\"> </a></td><td>WOUND CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90267<a name=\"mimic-microbiology-test-90267\"> </a></td><td>FECAL CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90243<a name=\"mimic-microbiology-test-90243\"> </a></td><td>CAMPYLOBACTER CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90136<a name=\"mimic-microbiology-test-90136\"> </a></td><td>CMV IgM ANTIBODY</td></tr><tr><td style=\"white-space:nowrap\">90055<a name=\"mimic-microbiology-test-90055\"> </a></td><td>RESPIRATORY CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90215<a name=\"mimic-microbiology-test-90215\"> </a></td><td>M. furfur Blood Culture</td></tr><tr><td style=\"white-space:nowrap\">90265<a name=\"mimic-microbiology-test-90265\"> </a></td><td>BLOOD/FUNGAL CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90071<a name=\"mimic-microbiology-test-90071\"> </a></td><td>CHROMOSOME ANALYSIS-CVS</td></tr><tr><td style=\"white-space:nowrap\">90163<a name=\"mimic-microbiology-test-90163\"> </a></td><td>INTERPHASE FISH ANALYSIS, 25-99 CELLS</td></tr><tr><td style=\"white-space:nowrap\">90270<a name=\"mimic-microbiology-test-90270\"> </a></td><td>GRAM STAIN</td></tr><tr><td style=\"white-space:nowrap\">90124<a name=\"mimic-microbiology-test-90124\"> </a></td><td>CVS NEEDLE ASPIRATION EVALUATION</td></tr><tr><td style=\"white-space:nowrap\">90164<a name=\"mimic-microbiology-test-90164\"> </a></td><td>INTERPHASE FISH ANALYSIS, 100-300 CELLS</td></tr><tr><td style=\"white-space:nowrap\">90186<a name=\"mimic-microbiology-test-90186\"> </a></td><td>YEAST VAGINITIS CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90099<a name=\"mimic-microbiology-test-90099\"> </a></td><td>NOCARDIA CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90264<a name=\"mimic-microbiology-test-90264\"> </a></td><td>BLOOD/AFB CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90181<a name=\"mimic-microbiology-test-90181\"> </a></td><td>O&amp;P MACROSCOPIC EXAM - ARTHROPOD</td></tr><tr><td style=\"white-space:nowrap\">90152<a name=\"mimic-microbiology-test-90152\"> </a></td><td>Tissue Culture - Neoplastic Blood</td></tr><tr><td style=\"white-space:nowrap\">90119<a name=\"mimic-microbiology-test-90119\"> </a></td><td>HELICOBACTER PYLORI ANTIBODY TEST</td></tr><tr><td style=\"white-space:nowrap\">90205<a name=\"mimic-microbiology-test-90205\"> </a></td><td>Fluid Culture in Bottles</td></tr><tr><td style=\"white-space:nowrap\">90074<a name=\"mimic-microbiology-test-90074\"> </a></td><td>FOCUSED ANALYSIS</td></tr><tr><td style=\"white-space:nowrap\">90209<a name=\"mimic-microbiology-test-90209\"> </a></td><td>Pediatric Bottle Gram Stain</td></tr><tr><td style=\"white-space:nowrap\">90206<a name=\"mimic-microbiology-test-90206\"> </a></td><td>Blood Culture, Post Mortem</td></tr><tr><td style=\"white-space:nowrap\">90115<a name=\"mimic-microbiology-test-90115\"> </a></td><td>R/O VANCOMYCIN RESISTANT ENTEROCOCCUS</td></tr><tr><td style=\"white-space:nowrap\">90091<a name=\"mimic-microbiology-test-90091\"> </a></td><td>VARICELLA-ZOSTER IgG SEROLOGY</td></tr><tr><td style=\"white-space:nowrap\">90224<a name=\"mimic-microbiology-test-90224\"> </a></td><td>Cipro Resistant Screen</td></tr><tr><td style=\"white-space:nowrap\">90109<a name=\"mimic-microbiology-test-90109\"> </a></td><td>M.FURFUR CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90072<a name=\"mimic-microbiology-test-90072\"> </a></td><td>CHROMOSOME ANALYSIS-TISSUE</td></tr><tr><td style=\"white-space:nowrap\">90260<a name=\"mimic-microbiology-test-90260\"> </a></td><td>AEROBIC BOTTLE</td></tr><tr><td style=\"white-space:nowrap\">90236<a name=\"mimic-microbiology-test-90236\"> </a></td><td>Anaerobic culture, Prosthetic Joint Fluid</td></tr><tr><td style=\"white-space:nowrap\">90201<a name=\"mimic-microbiology-test-90201\"> </a></td><td>Blood Culture, Routine</td></tr><tr><td style=\"white-space:nowrap\">90233<a name=\"mimic-microbiology-test-90233\"> </a></td><td>C. difficile Toxin antigen assay</td></tr><tr><td style=\"white-space:nowrap\">90182<a name=\"mimic-microbiology-test-90182\"> </a></td><td>STEM CELL - AEROBIC BOTTLE</td></tr><tr><td style=\"white-space:nowrap\">90222<a name=\"mimic-microbiology-test-90222\"> </a></td><td>MTB Direct Amplification</td></tr><tr><td style=\"white-space:nowrap\">90130<a name=\"mimic-microbiology-test-90130\"> </a></td><td>R/O Beta Strep Group A</td></tr><tr><td style=\"white-space:nowrap\">90128<a name=\"mimic-microbiology-test-90128\"> </a></td><td>Legionella Urinary Antigen </td></tr><tr><td style=\"white-space:nowrap\">90174<a name=\"mimic-microbiology-test-90174\"> </a></td><td>Concentration and Stain for Giardia</td></tr><tr><td style=\"white-space:nowrap\">90214<a name=\"mimic-microbiology-test-90214\"> </a></td><td>Respiratory Viral Culture</td></tr><tr><td style=\"white-space:nowrap\">90140<a name=\"mimic-microbiology-test-90140\"> </a></td><td>QUANTITATIVE CRYPTOCOCCAL ANTIGEN</td></tr><tr><td style=\"white-space:nowrap\">90096<a name=\"mimic-microbiology-test-90096\"> </a></td><td>DIRECT ANTIGEN TEST FOR VARICELLA-ZOSTER VIRUS</td></tr><tr><td style=\"white-space:nowrap\">90039<a name=\"mimic-microbiology-test-90039\"> </a></td><td>URINE CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90144<a name=\"mimic-microbiology-test-90144\"> </a></td><td>TOXOPLASMA IgG ANTIBODY</td></tr><tr><td style=\"white-space:nowrap\">90207<a name=\"mimic-microbiology-test-90207\"> </a></td><td>Stem Cell Aer/Ana Culture</td></tr><tr><td style=\"white-space:nowrap\">90086<a name=\"mimic-microbiology-test-90086\"> </a></td><td>FECAL CULTURE - R/O YERSINIA</td></tr><tr><td style=\"white-space:nowrap\">90190<a name=\"mimic-microbiology-test-90190\"> </a></td><td>Tissue culture for additional cells</td></tr><tr><td style=\"white-space:nowrap\">90068<a name=\"mimic-microbiology-test-90068\"> </a></td><td>TISSUE CULTURE-FLUID</td></tr><tr><td style=\"white-space:nowrap\">90225<a name=\"mimic-microbiology-test-90225\"> </a></td><td>ED Gram Stain for Yeast</td></tr><tr><td style=\"white-space:nowrap\">90255<a name=\"mimic-microbiology-test-90255\"> </a></td><td>VIRAL CULTURE: R/O CYTOMEGALOVIRUS</td></tr><tr><td style=\"white-space:nowrap\">90157<a name=\"mimic-microbiology-test-90157\"> </a></td><td>DIRECT RSV ANTIGEN TEST</td></tr><tr><td style=\"white-space:nowrap\">90079<a name=\"mimic-microbiology-test-90079\"> </a></td><td>TISSUE CULTURE-CVS</td></tr><tr><td style=\"white-space:nowrap\">90049<a name=\"mimic-microbiology-test-90049\"> </a></td><td>BRUCELLA CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90259<a name=\"mimic-microbiology-test-90259\"> </a></td><td>SCOTCH TAPE PREP/PADDLE</td></tr><tr><td style=\"white-space:nowrap\">90150<a name=\"mimic-microbiology-test-90150\"> </a></td><td>MOLECULAR CYTOGENETICS - DNA PROBE</td></tr><tr><td style=\"white-space:nowrap\">90219<a name=\"mimic-microbiology-test-90219\"> </a></td><td>CRE/ESBL/AMP-C Screening</td></tr><tr><td style=\"white-space:nowrap\">90104<a name=\"mimic-microbiology-test-90104\"> </a></td><td>Direct Antigen Test for Herpes Simplex Virus Types 1 &amp; 2</td></tr><tr><td style=\"white-space:nowrap\">90238<a name=\"mimic-microbiology-test-90238\"> </a></td><td>POST-MORTEM ACID-FAST CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90160<a name=\"mimic-microbiology-test-90160\"> </a></td><td>Cryptosporidium/Giardia (DFA)</td></tr><tr><td style=\"white-space:nowrap\">90194<a name=\"mimic-microbiology-test-90194\"> </a></td><td>R/O Group B Strep - Penicillin Allergy</td></tr><tr><td style=\"white-space:nowrap\">90053<a name=\"mimic-microbiology-test-90053\"> </a></td><td>CYTOMEGALOVIRUS EARLY ANTIGEN TEST (SHELL VIAL METHOD)</td></tr><tr><td style=\"white-space:nowrap\">90195<a name=\"mimic-microbiology-test-90195\"> </a></td><td>Reflex HCV Qual PCR</td></tr><tr><td style=\"white-space:nowrap\">90220<a name=\"mimic-microbiology-test-90220\"> </a></td><td>Deparaffinization, Lysis of Cells</td></tr><tr><td style=\"white-space:nowrap\">90131<a name=\"mimic-microbiology-test-90131\"> </a></td><td>ASO TITER</td></tr><tr><td style=\"white-space:nowrap\">90105<a name=\"mimic-microbiology-test-90105\"> </a></td><td>Respiratory Viral Antigen Screen</td></tr><tr><td style=\"white-space:nowrap\">90235<a name=\"mimic-microbiology-test-90235\"> </a></td><td>REFLEX URINE CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90154<a name=\"mimic-microbiology-test-90154\"> </a></td><td>BARTONELLA BLOOD CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90083<a name=\"mimic-microbiology-test-90083\"> </a></td><td>FECAL CULTURE - R/O VIBRIO</td></tr><tr><td style=\"white-space:nowrap\">90169<a name=\"mimic-microbiology-test-90169\"> </a></td><td>GEN-PROBE AMPLIFIED M. TUBERCULOSIS DIRECT TEST (MTD)</td></tr><tr><td style=\"white-space:nowrap\">90175<a name=\"mimic-microbiology-test-90175\"> </a></td><td>HIV-1 Viral Load/Ultrasensitive</td></tr><tr><td style=\"white-space:nowrap\">90087<a name=\"mimic-microbiology-test-90087\"> </a></td><td>FECAL CULTURE - R/O E.COLI 0157:H7</td></tr><tr><td style=\"white-space:nowrap\">90171<a name=\"mimic-microbiology-test-90171\"> </a></td><td>FISH ANALYSIS, 10-30 CELLS</td></tr><tr><td style=\"white-space:nowrap\">90245<a name=\"mimic-microbiology-test-90245\"> </a></td><td>ANAEROBIC CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90097<a name=\"mimic-microbiology-test-90097\"> </a></td><td>R/O GROUP B BETA STREP</td></tr><tr><td style=\"white-space:nowrap\">90200<a name=\"mimic-microbiology-test-90200\"> </a></td><td>STAT OR Gram Stain</td></tr><tr><td style=\"white-space:nowrap\">90067<a name=\"mimic-microbiology-test-90067\"> </a></td><td>TISSUE CULTURE-AMNIOTIC FLUID</td></tr><tr><td style=\"white-space:nowrap\">90252<a name=\"mimic-microbiology-test-90252\"> </a></td><td>VIRAL CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90076<a name=\"mimic-microbiology-test-90076\"> </a></td><td>CHROMOSOME ANALYSIS-AMNIOTIC FLUID</td></tr><tr><td style=\"white-space:nowrap\">90155<a name=\"mimic-microbiology-test-90155\"> </a></td><td>MOLECULAR CYTOGENETICS-DNA Probe</td></tr><tr><td style=\"white-space:nowrap\">90134<a name=\"mimic-microbiology-test-90134\"> </a></td><td>EPSTEIN-BARR VIRUS VCA-IgM AB</td></tr><tr><td style=\"white-space:nowrap\">90256<a name=\"mimic-microbiology-test-90256\"> </a></td><td>VIRAL CULTURE: R/O HERPES SIMPLEX VIRUS</td></tr><tr><td style=\"white-space:nowrap\">90221<a name=\"mimic-microbiology-test-90221\"> </a></td><td>C. difficile PCR</td></tr><tr><td style=\"white-space:nowrap\">90162<a name=\"mimic-microbiology-test-90162\"> </a></td><td>ADDITIONAL CELLS COUNTED</td></tr><tr><td style=\"white-space:nowrap\">90038<a name=\"mimic-microbiology-test-90038\"> </a></td><td>GENITAL CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90198<a name=\"mimic-microbiology-test-90198\"> </a></td><td>Staph aureus Screen</td></tr><tr><td style=\"white-space:nowrap\">90216<a name=\"mimic-microbiology-test-90216\"> </a></td><td>Malassezia furfur Culture</td></tr><tr><td style=\"white-space:nowrap\">90159<a name=\"mimic-microbiology-test-90159\"> </a></td><td>POSTMORTEM CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90107<a name=\"mimic-microbiology-test-90107\"> </a></td><td>Respiratory Virus Identification</td></tr><tr><td style=\"white-space:nowrap\">90117<a name=\"mimic-microbiology-test-90117\"> </a></td><td>ANAEROBIC BOTTLE</td></tr><tr><td style=\"white-space:nowrap\">90101<a name=\"mimic-microbiology-test-90101\"> </a></td><td>EPSTEIN-BARR VIRUS VCA-IgG AB</td></tr><tr><td style=\"white-space:nowrap\">90227<a name=\"mimic-microbiology-test-90227\"> </a></td><td>Sonication culture, prosthetic joint</td></tr><tr><td style=\"white-space:nowrap\">90080<a name=\"mimic-microbiology-test-90080\"> </a></td><td>TISSUE CULTURE-TISSUE</td></tr><tr><td style=\"white-space:nowrap\">90229<a name=\"mimic-microbiology-test-90229\"> </a></td><td>Lyme IgM</td></tr><tr><td style=\"white-space:nowrap\">90211<a name=\"mimic-microbiology-test-90211\"> </a></td><td>Rubella IgG/IgM Antibody</td></tr><tr><td style=\"white-space:nowrap\">90123<a name=\"mimic-microbiology-test-90123\"> </a></td><td>HCV VIRAL LOAD</td></tr><tr><td style=\"white-space:nowrap\">90258<a name=\"mimic-microbiology-test-90258\"> </a></td><td>AEROBIC BOTTLE</td></tr><tr><td style=\"white-space:nowrap\">90143<a name=\"mimic-microbiology-test-90143\"> </a></td><td>CMV IgG ANTIBODY</td></tr><tr><td style=\"white-space:nowrap\">90250<a name=\"mimic-microbiology-test-90250\"> </a></td><td>OVA + PARASITES</td></tr><tr><td style=\"white-space:nowrap\">90239<a name=\"mimic-microbiology-test-90239\"> </a></td><td>POST-MORTEM DIRECT ACID-FAST STAIN</td></tr><tr><td style=\"white-space:nowrap\">90098<a name=\"mimic-microbiology-test-90098\"> </a></td><td>SWAB- R/O YEAST</td></tr><tr><td style=\"white-space:nowrap\">90178<a name=\"mimic-microbiology-test-90178\"> </a></td><td>FUNGAL CULTURE (HAIR/SKIN/NAILS)</td></tr><tr><td style=\"white-space:nowrap\">90246<a name=\"mimic-microbiology-test-90246\"> </a></td><td>ACID FAST SMEAR</td></tr><tr><td style=\"white-space:nowrap\">90142<a name=\"mimic-microbiology-test-90142\"> </a></td><td>VIRAL CULTURE: R/O CYTOMEGALOVIRUS</td></tr><tr><td style=\"white-space:nowrap\">90253<a name=\"mimic-microbiology-test-90253\"> </a></td><td>CLOSTRIDIUM DIFFICILE TOXIN ASSAY</td></tr><tr><td style=\"white-space:nowrap\">90208<a name=\"mimic-microbiology-test-90208\"> </a></td><td>Myco-F Bottle Gram Stain</td></tr><tr><td style=\"white-space:nowrap\">90153<a name=\"mimic-microbiology-test-90153\"> </a></td><td>Additional Cells and Karyotype</td></tr><tr><td style=\"white-space:nowrap\">90151<a name=\"mimic-microbiology-test-90151\"> </a></td><td>Tissue Culture-Bone Marrow</td></tr><tr><td style=\"white-space:nowrap\">90204<a name=\"mimic-microbiology-test-90204\"> </a></td><td>Anaerobic Bottle Gram Stain</td></tr><tr><td style=\"white-space:nowrap\">90111<a name=\"mimic-microbiology-test-90111\"> </a></td><td>CHROMOSOME ANALYSIS-BONE MARROW</td></tr><tr><td style=\"white-space:nowrap\">90133<a name=\"mimic-microbiology-test-90133\"> </a></td><td>MONOSPOT</td></tr><tr><td style=\"white-space:nowrap\">90188<a name=\"mimic-microbiology-test-90188\"> </a></td><td>NEISSERIA GONORRHOEAE (GC), NUCLEIC ACID PROBE, WITH AMPLIFICATION</td></tr><tr><td style=\"white-space:nowrap\">90177<a name=\"mimic-microbiology-test-90177\"> </a></td><td>HBV Viral Load</td></tr><tr><td style=\"white-space:nowrap\">90156<a name=\"mimic-microbiology-test-90156\"> </a></td><td>DIRECT INFLUENZA A ANTIGEN TEST</td></tr><tr><td style=\"white-space:nowrap\">90112<a name=\"mimic-microbiology-test-90112\"> </a></td><td>MODIFIED ACID-FAST STAIN FOR NOCARDIA</td></tr><tr><td style=\"white-space:nowrap\">90213<a name=\"mimic-microbiology-test-90213\"> </a></td><td>Enterovirus Culture</td></tr><tr><td style=\"white-space:nowrap\">90231<a name=\"mimic-microbiology-test-90231\"> </a></td><td>Swab - R/O Yeast - IC</td></tr><tr><td style=\"white-space:nowrap\">90167<a name=\"mimic-microbiology-test-90167\"> </a></td><td>ISOLATE FOR MIC</td></tr><tr><td style=\"white-space:nowrap\">90129<a name=\"mimic-microbiology-test-90129\"> </a></td><td>ASO Screen</td></tr><tr><td style=\"white-space:nowrap\">90059<a name=\"mimic-microbiology-test-90059\"> </a></td><td>LEGIONELLA CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90228<a name=\"mimic-microbiology-test-90228\"> </a></td><td>Lyme IgG</td></tr><tr><td style=\"white-space:nowrap\">90113<a name=\"mimic-microbiology-test-90113\"> </a></td><td>URINE-GRAM STAIN - UNSPUN</td></tr><tr><td style=\"white-space:nowrap\">90240<a name=\"mimic-microbiology-test-90240\"> </a></td><td>ACID FAST CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90248<a name=\"mimic-microbiology-test-90248\"> </a></td><td>RAPID PLASMA REAGIN TEST</td></tr><tr><td style=\"white-space:nowrap\">90126<a name=\"mimic-microbiology-test-90126\"> </a></td><td>TOXOPLASMA IgM ANTIBODY</td></tr><tr><td style=\"white-space:nowrap\">90088<a name=\"mimic-microbiology-test-90088\"> </a></td><td>CHROMOSOME ANALYSIS - ADDITIONAL KARYOTYPE</td></tr><tr><td style=\"white-space:nowrap\">90166<a name=\"mimic-microbiology-test-90166\"> </a></td><td>Problem</td></tr><tr><td style=\"white-space:nowrap\">90187<a name=\"mimic-microbiology-test-90187\"> </a></td><td>GENITAL CULTURE FOR TOXIC SHOCK</td></tr><tr><td style=\"white-space:nowrap\">90199<a name=\"mimic-microbiology-test-90199\"> </a></td><td>Immunofluorescent test for Pneumocystis jirovecii (carinii)</td></tr><tr><td style=\"white-space:nowrap\">90127<a name=\"mimic-microbiology-test-90127\"> </a></td><td>RUBEOLA ANTIBODY, IgG</td></tr><tr><td style=\"white-space:nowrap\">90180<a name=\"mimic-microbiology-test-90180\"> </a></td><td>O&amp;P MACROSCOPIC EXAM - WORM</td></tr><tr><td style=\"white-space:nowrap\">90262<a name=\"mimic-microbiology-test-90262\"> </a></td><td>CHLAMYDIA CULTURE</td></tr><tr><td style=\"white-space:nowrap\">90092<a name=\"mimic-microbiology-test-90092\"> </a></td><td>AEROBIC BOTTLE</td></tr><tr><td style=\"white-space:nowrap\">90146<a name=\"mimic-microbiology-test-90146\"> </a></td><td>CHROMOSOME ANALYSIS-NEOPLASTIC BLOOD</td></tr><tr><td style=\"white-space:nowrap\">90132<a name=\"mimic-microbiology-test-90132\"> </a></td><td>LYME SEROLOGY</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.0"] ; # 
+  fhir:name [ fhir:v "MimicMicrobiologyTest"] ; # 
+  fhir:title [ fhir:v "MimicMicrobiologyTest"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-21T13:59:43-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The microbiology test completed in MIMIC"] ; # 
+  fhir:valueSet [
+     fhir:v "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-test"^^xsd:anyURI ;
+     fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-test>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "90212" ] ;
+     fhir:display [ fhir:v "CLOSTRIDIUM DIFFICILE TOXIN A & B TEST" ]
+  ] [
+     fhir:code [ fhir:v "90054" ] ;
+     fhir:display [ fhir:v "IMMUNOFLUORESCENT TEST FOR PNEUMOCYSTIS CARINII" ]
+  ] [
+     fhir:code [ fhir:v "90261" ] ;
+     fhir:display [ fhir:v "ANAEROBIC BOTTLE" ]
+  ] [
+     fhir:code [ fhir:v "90135" ] ;
+     fhir:display [ fhir:v "EPSTEIN-BARR VIRUS EBNA IgG AB" ]
+  ] [
+     fhir:code [ fhir:v "90241" ] ;
+     fhir:display [ fhir:v "POTASSIUM HYDROXIDE PREPARATION" ]
+  ] [
+     fhir:code [ fhir:v "90137" ] ;
+     fhir:display [ fhir:v "QUANTITATIVE RPR" ]
+  ] [
+     fhir:code [ fhir:v "90189" ] ;
+     fhir:display [ fhir:v "MRSA SCREEN" ]
+  ] [
+     fhir:code [ fhir:v "90218" ] ;
+     fhir:display [ fhir:v "Carbapenemase Resistant Enterobacteriaceae Screen" ]
+  ] [
+     fhir:code [ fhir:v "90042" ] ;
+     fhir:display [ fhir:v "TREPONEMAL ANTIBODY TEST" ]
+  ] [
+     fhir:code [ fhir:v "90179" ] ;
+     fhir:display [ fhir:v "POTASSIUM HYDROXIDE PREPARATION (HAIR/SKIN/NAILS)" ]
+  ] [
+     fhir:code [ fhir:v "90078" ] ;
+     fhir:display [ fhir:v "CHROMOSOME ANALYSIS-FLUID" ]
+  ] [
+     fhir:code [ fhir:v "90106" ] ;
+     fhir:display [ fhir:v "MICROSPORIDIA STAIN" ]
+  ] [
+     fhir:code [ fhir:v "90168" ] ;
+     fhir:display [ fhir:v "DIRECT INFLUENZA B ANTIGEN TEST" ]
+  ] [
+     fhir:code [ fhir:v "90184" ] ;
+     fhir:display [ fhir:v "STEM CELL - ANAEROBIC BOTTLE" ]
+  ] [
+     fhir:code [ fhir:v "90043" ] ;
+     fhir:display [ fhir:v "POST MORTEM MYCOLOGY CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90066" ] ;
+     fhir:display [ fhir:v "TISSUE CULTURE-LYMPHOCYTE" ]
+  ] [
+     fhir:code [ fhir:v "90232" ] ;
+     fhir:display [ fhir:v "Staph aureus Preop PCR" ]
+  ] [
+     fhir:code [ fhir:v "90249" ] ;
+     fhir:display [ fhir:v "CRYPTOCOCCAL ANTIGEN" ]
+  ] [
+     fhir:code [ fhir:v "90121" ] ;
+     fhir:display [ fhir:v "CYCLOSPORA STAIN" ]
+  ] [
+     fhir:code [ fhir:v "90193" ] ;
+     fhir:display [ fhir:v "voided" ]
+  ] [
+     fhir:code [ fhir:v "90192" ] ;
+     fhir:display [ fhir:v "CMV Viral Load" ]
+  ] [
+     fhir:code [ fhir:v "90075" ] ;
+     fhir:display [ fhir:v "CHROMOSOME ANALYSIS-BLOOD" ]
+  ] [
+     fhir:code [ fhir:v "90158" ] ;
+     fhir:display [ fhir:v "R/O GC Only" ]
+  ] [
+     fhir:code [ fhir:v "90268" ] ;
+     fhir:display [ fhir:v "FLUID CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90061" ] ;
+     fhir:display [ fhir:v "BRUCELLA BLOOD CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90172" ] ;
+     fhir:display [ fhir:v "HCV GENOTYPE" ]
+  ] [
+     fhir:code [ fhir:v "90170" ] ;
+     fhir:display [ fhir:v "FISH ANALYSIS, 3-5 CELLS" ]
+  ] [
+     fhir:code [ fhir:v "90090" ] ;
+     fhir:display [ fhir:v "POST-MORTEM VIRAL CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90185" ] ;
+     fhir:display [ fhir:v "SMEAR FOR BACTERIAL VAGINOSIS" ]
+  ] [
+     fhir:code [ fhir:v "90210" ] ;
+     fhir:display [ fhir:v "Malaria Antigen Test" ]
+  ] [
+     fhir:code [ fhir:v "90226" ] ;
+     fhir:display [ fhir:v "RPR w/check for Prozone" ]
+  ] [
+     fhir:code [ fhir:v "90203" ] ;
+     fhir:display [ fhir:v "Aerobic Bottle Gram Stain" ]
+  ] [
+     fhir:code [ fhir:v "90161" ] ;
+     fhir:display [ fhir:v "TRICHOMONAS SALINE PREP" ]
+  ] [
+     fhir:code [ fhir:v "90254" ] ;
+     fhir:display [ fhir:v "RUBELLA IgG SEROLOGY" ]
+  ] [
+     fhir:code [ fhir:v "90050" ] ;
+     fhir:display [ fhir:v "GRAM STAIN- R/O THRUSH" ]
+  ] [
+     fhir:code [ fhir:v "90230" ] ;
+     fhir:display [ fhir:v "Stool Hold Request" ]
+  ] [
+     fhir:code [ fhir:v "90116" ] ;
+     fhir:display [ fhir:v "Chlamydia trachomatis, Nucleic Acid Probe, with Amplification" ]
+  ] [
+     fhir:code [ fhir:v "90065" ] ;
+     fhir:display [ fhir:v "STOOL SMEAR FOR POLYMORPHONUCLEAR LEUKOCYTES" ]
+  ] [
+     fhir:code [ fhir:v "90272" ] ;
+     fhir:display [ fhir:v "TISSUE" ]
+  ] [
+     fhir:code [ fhir:v "90093" ] ;
+     fhir:display [ fhir:v "ANAEROBIC BOTTLE" ]
+  ] [
+     fhir:code [ fhir:v "90191" ] ;
+     fhir:display [ fhir:v "MUMPS IgG ANTIBODY" ]
+  ] [
+     fhir:code [ fhir:v "90173" ] ;
+     fhir:display [ fhir:v "Acid Fast Stain for Cryptosporidium" ]
+  ] [
+     fhir:code [ fhir:v "90148" ] ;
+     fhir:display [ fhir:v "Cryopreservation - Cells" ]
+  ] [
+     fhir:code [ fhir:v "90202" ] ;
+     fhir:display [ fhir:v "Blood Culture, Neonate" ]
+  ] [
+     fhir:code [ fhir:v "90269" ] ;
+     fhir:display [ fhir:v "FUNGAL CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90095" ] ;
+     fhir:display [ fhir:v "VARICELLA-ZOSTER CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90046" ] ;
+     fhir:display [ fhir:v "WOUND CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90267" ] ;
+     fhir:display [ fhir:v "FECAL CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90243" ] ;
+     fhir:display [ fhir:v "CAMPYLOBACTER CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90136" ] ;
+     fhir:display [ fhir:v "CMV IgM ANTIBODY" ]
+  ] [
+     fhir:code [ fhir:v "90055" ] ;
+     fhir:display [ fhir:v "RESPIRATORY CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90215" ] ;
+     fhir:display [ fhir:v "M. furfur Blood Culture" ]
+  ] [
+     fhir:code [ fhir:v "90265" ] ;
+     fhir:display [ fhir:v "BLOOD/FUNGAL CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90071" ] ;
+     fhir:display [ fhir:v "CHROMOSOME ANALYSIS-CVS" ]
+  ] [
+     fhir:code [ fhir:v "90163" ] ;
+     fhir:display [ fhir:v "INTERPHASE FISH ANALYSIS, 25-99 CELLS" ]
+  ] [
+     fhir:code [ fhir:v "90270" ] ;
+     fhir:display [ fhir:v "GRAM STAIN" ]
+  ] [
+     fhir:code [ fhir:v "90124" ] ;
+     fhir:display [ fhir:v "CVS NEEDLE ASPIRATION EVALUATION" ]
+  ] [
+     fhir:code [ fhir:v "90164" ] ;
+     fhir:display [ fhir:v "INTERPHASE FISH ANALYSIS, 100-300 CELLS" ]
+  ] [
+     fhir:code [ fhir:v "90186" ] ;
+     fhir:display [ fhir:v "YEAST VAGINITIS CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90099" ] ;
+     fhir:display [ fhir:v "NOCARDIA CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90264" ] ;
+     fhir:display [ fhir:v "BLOOD/AFB CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90181" ] ;
+     fhir:display [ fhir:v "O&P MACROSCOPIC EXAM - ARTHROPOD" ]
+  ] [
+     fhir:code [ fhir:v "90152" ] ;
+     fhir:display [ fhir:v "Tissue Culture - Neoplastic Blood" ]
+  ] [
+     fhir:code [ fhir:v "90119" ] ;
+     fhir:display [ fhir:v "HELICOBACTER PYLORI ANTIBODY TEST" ]
+  ] [
+     fhir:code [ fhir:v "90205" ] ;
+     fhir:display [ fhir:v "Fluid Culture in Bottles" ]
+  ] [
+     fhir:code [ fhir:v "90074" ] ;
+     fhir:display [ fhir:v "FOCUSED ANALYSIS" ]
+  ] [
+     fhir:code [ fhir:v "90209" ] ;
+     fhir:display [ fhir:v "Pediatric Bottle Gram Stain" ]
+  ] [
+     fhir:code [ fhir:v "90206" ] ;
+     fhir:display [ fhir:v "Blood Culture, Post Mortem" ]
+  ] [
+     fhir:code [ fhir:v "90115" ] ;
+     fhir:display [ fhir:v "R/O VANCOMYCIN RESISTANT ENTEROCOCCUS" ]
+  ] [
+     fhir:code [ fhir:v "90091" ] ;
+     fhir:display [ fhir:v "VARICELLA-ZOSTER IgG SEROLOGY" ]
+  ] [
+     fhir:code [ fhir:v "90224" ] ;
+     fhir:display [ fhir:v "Cipro Resistant Screen" ]
+  ] [
+     fhir:code [ fhir:v "90109" ] ;
+     fhir:display [ fhir:v "M.FURFUR CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90072" ] ;
+     fhir:display [ fhir:v "CHROMOSOME ANALYSIS-TISSUE" ]
+  ] [
+     fhir:code [ fhir:v "90260" ] ;
+     fhir:display [ fhir:v "AEROBIC BOTTLE" ]
+  ] [
+     fhir:code [ fhir:v "90236" ] ;
+     fhir:display [ fhir:v "Anaerobic culture, Prosthetic Joint Fluid" ]
+  ] [
+     fhir:code [ fhir:v "90201" ] ;
+     fhir:display [ fhir:v "Blood Culture, Routine" ]
+  ] [
+     fhir:code [ fhir:v "90233" ] ;
+     fhir:display [ fhir:v "C. difficile Toxin antigen assay" ]
+  ] [
+     fhir:code [ fhir:v "90182" ] ;
+     fhir:display [ fhir:v "STEM CELL - AEROBIC BOTTLE" ]
+  ] [
+     fhir:code [ fhir:v "90222" ] ;
+     fhir:display [ fhir:v "MTB Direct Amplification" ]
+  ] [
+     fhir:code [ fhir:v "90130" ] ;
+     fhir:display [ fhir:v "R/O Beta Strep Group A" ]
+  ] [
+     fhir:code [ fhir:v "90128" ] ;
+     fhir:display [ fhir:v "Legionella Urinary Antigen " ]
+  ] [
+     fhir:code [ fhir:v "90174" ] ;
+     fhir:display [ fhir:v "Concentration and Stain for Giardia" ]
+  ] [
+     fhir:code [ fhir:v "90214" ] ;
+     fhir:display [ fhir:v "Respiratory Viral Culture" ]
+  ] [
+     fhir:code [ fhir:v "90140" ] ;
+     fhir:display [ fhir:v "QUANTITATIVE CRYPTOCOCCAL ANTIGEN" ]
+  ] [
+     fhir:code [ fhir:v "90096" ] ;
+     fhir:display [ fhir:v "DIRECT ANTIGEN TEST FOR VARICELLA-ZOSTER VIRUS" ]
+  ] [
+     fhir:code [ fhir:v "90039" ] ;
+     fhir:display [ fhir:v "URINE CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90144" ] ;
+     fhir:display [ fhir:v "TOXOPLASMA IgG ANTIBODY" ]
+  ] [
+     fhir:code [ fhir:v "90207" ] ;
+     fhir:display [ fhir:v "Stem Cell Aer/Ana Culture" ]
+  ] [
+     fhir:code [ fhir:v "90086" ] ;
+     fhir:display [ fhir:v "FECAL CULTURE - R/O YERSINIA" ]
+  ] [
+     fhir:code [ fhir:v "90190" ] ;
+     fhir:display [ fhir:v "Tissue culture for additional cells" ]
+  ] [
+     fhir:code [ fhir:v "90068" ] ;
+     fhir:display [ fhir:v "TISSUE CULTURE-FLUID" ]
+  ] [
+     fhir:code [ fhir:v "90225" ] ;
+     fhir:display [ fhir:v "ED Gram Stain for Yeast" ]
+  ] [
+     fhir:code [ fhir:v "90255" ] ;
+     fhir:display [ fhir:v "VIRAL CULTURE: R/O CYTOMEGALOVIRUS" ]
+  ] [
+     fhir:code [ fhir:v "90157" ] ;
+     fhir:display [ fhir:v "DIRECT RSV ANTIGEN TEST" ]
+  ] [
+     fhir:code [ fhir:v "90079" ] ;
+     fhir:display [ fhir:v "TISSUE CULTURE-CVS" ]
+  ] [
+     fhir:code [ fhir:v "90049" ] ;
+     fhir:display [ fhir:v "BRUCELLA CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90259" ] ;
+     fhir:display [ fhir:v "SCOTCH TAPE PREP/PADDLE" ]
+  ] [
+     fhir:code [ fhir:v "90150" ] ;
+     fhir:display [ fhir:v "MOLECULAR CYTOGENETICS - DNA PROBE" ]
+  ] [
+     fhir:code [ fhir:v "90219" ] ;
+     fhir:display [ fhir:v "CRE/ESBL/AMP-C Screening" ]
+  ] [
+     fhir:code [ fhir:v "90104" ] ;
+     fhir:display [ fhir:v "Direct Antigen Test for Herpes Simplex Virus Types 1 & 2" ]
+  ] [
+     fhir:code [ fhir:v "90238" ] ;
+     fhir:display [ fhir:v "POST-MORTEM ACID-FAST CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90160" ] ;
+     fhir:display [ fhir:v "Cryptosporidium/Giardia (DFA)" ]
+  ] [
+     fhir:code [ fhir:v "90194" ] ;
+     fhir:display [ fhir:v "R/O Group B Strep - Penicillin Allergy" ]
+  ] [
+     fhir:code [ fhir:v "90053" ] ;
+     fhir:display [ fhir:v "CYTOMEGALOVIRUS EARLY ANTIGEN TEST (SHELL VIAL METHOD)" ]
+  ] [
+     fhir:code [ fhir:v "90195" ] ;
+     fhir:display [ fhir:v "Reflex HCV Qual PCR" ]
+  ] [
+     fhir:code [ fhir:v "90220" ] ;
+     fhir:display [ fhir:v "Deparaffinization, Lysis of Cells" ]
+  ] [
+     fhir:code [ fhir:v "90131" ] ;
+     fhir:display [ fhir:v "ASO TITER" ]
+  ] [
+     fhir:code [ fhir:v "90105" ] ;
+     fhir:display [ fhir:v "Respiratory Viral Antigen Screen" ]
+  ] [
+     fhir:code [ fhir:v "90235" ] ;
+     fhir:display [ fhir:v "REFLEX URINE CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90154" ] ;
+     fhir:display [ fhir:v "BARTONELLA BLOOD CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90083" ] ;
+     fhir:display [ fhir:v "FECAL CULTURE - R/O VIBRIO" ]
+  ] [
+     fhir:code [ fhir:v "90169" ] ;
+     fhir:display [ fhir:v "GEN-PROBE AMPLIFIED M. TUBERCULOSIS DIRECT TEST (MTD)" ]
+  ] [
+     fhir:code [ fhir:v "90175" ] ;
+     fhir:display [ fhir:v "HIV-1 Viral Load/Ultrasensitive" ]
+  ] [
+     fhir:code [ fhir:v "90087" ] ;
+     fhir:display [ fhir:v "FECAL CULTURE - R/O E.COLI 0157:H7" ]
+  ] [
+     fhir:code [ fhir:v "90171" ] ;
+     fhir:display [ fhir:v "FISH ANALYSIS, 10-30 CELLS" ]
+  ] [
+     fhir:code [ fhir:v "90245" ] ;
+     fhir:display [ fhir:v "ANAEROBIC CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90097" ] ;
+     fhir:display [ fhir:v "R/O GROUP B BETA STREP" ]
+  ] [
+     fhir:code [ fhir:v "90200" ] ;
+     fhir:display [ fhir:v "STAT OR Gram Stain" ]
+  ] [
+     fhir:code [ fhir:v "90067" ] ;
+     fhir:display [ fhir:v "TISSUE CULTURE-AMNIOTIC FLUID" ]
+  ] [
+     fhir:code [ fhir:v "90252" ] ;
+     fhir:display [ fhir:v "VIRAL CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90076" ] ;
+     fhir:display [ fhir:v "CHROMOSOME ANALYSIS-AMNIOTIC FLUID" ]
+  ] [
+     fhir:code [ fhir:v "90155" ] ;
+     fhir:display [ fhir:v "MOLECULAR CYTOGENETICS-DNA Probe" ]
+  ] [
+     fhir:code [ fhir:v "90134" ] ;
+     fhir:display [ fhir:v "EPSTEIN-BARR VIRUS VCA-IgM AB" ]
+  ] [
+     fhir:code [ fhir:v "90256" ] ;
+     fhir:display [ fhir:v "VIRAL CULTURE: R/O HERPES SIMPLEX VIRUS" ]
+  ] [
+     fhir:code [ fhir:v "90221" ] ;
+     fhir:display [ fhir:v "C. difficile PCR" ]
+  ] [
+     fhir:code [ fhir:v "90162" ] ;
+     fhir:display [ fhir:v "ADDITIONAL CELLS COUNTED" ]
+  ] [
+     fhir:code [ fhir:v "90038" ] ;
+     fhir:display [ fhir:v "GENITAL CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90198" ] ;
+     fhir:display [ fhir:v "Staph aureus Screen" ]
+  ] [
+     fhir:code [ fhir:v "90216" ] ;
+     fhir:display [ fhir:v "Malassezia furfur Culture" ]
+  ] [
+     fhir:code [ fhir:v "90159" ] ;
+     fhir:display [ fhir:v "POSTMORTEM CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90107" ] ;
+     fhir:display [ fhir:v "Respiratory Virus Identification" ]
+  ] [
+     fhir:code [ fhir:v "90117" ] ;
+     fhir:display [ fhir:v "ANAEROBIC BOTTLE" ]
+  ] [
+     fhir:code [ fhir:v "90101" ] ;
+     fhir:display [ fhir:v "EPSTEIN-BARR VIRUS VCA-IgG AB" ]
+  ] [
+     fhir:code [ fhir:v "90227" ] ;
+     fhir:display [ fhir:v "Sonication culture, prosthetic joint" ]
+  ] [
+     fhir:code [ fhir:v "90080" ] ;
+     fhir:display [ fhir:v "TISSUE CULTURE-TISSUE" ]
+  ] [
+     fhir:code [ fhir:v "90229" ] ;
+     fhir:display [ fhir:v "Lyme IgM" ]
+  ] [
+     fhir:code [ fhir:v "90211" ] ;
+     fhir:display [ fhir:v "Rubella IgG/IgM Antibody" ]
+  ] [
+     fhir:code [ fhir:v "90123" ] ;
+     fhir:display [ fhir:v "HCV VIRAL LOAD" ]
+  ] [
+     fhir:code [ fhir:v "90258" ] ;
+     fhir:display [ fhir:v "AEROBIC BOTTLE" ]
+  ] [
+     fhir:code [ fhir:v "90143" ] ;
+     fhir:display [ fhir:v "CMV IgG ANTIBODY" ]
+  ] [
+     fhir:code [ fhir:v "90250" ] ;
+     fhir:display [ fhir:v "OVA + PARASITES" ]
+  ] [
+     fhir:code [ fhir:v "90239" ] ;
+     fhir:display [ fhir:v "POST-MORTEM DIRECT ACID-FAST STAIN" ]
+  ] [
+     fhir:code [ fhir:v "90098" ] ;
+     fhir:display [ fhir:v "SWAB- R/O YEAST" ]
+  ] [
+     fhir:code [ fhir:v "90178" ] ;
+     fhir:display [ fhir:v "FUNGAL CULTURE (HAIR/SKIN/NAILS)" ]
+  ] [
+     fhir:code [ fhir:v "90246" ] ;
+     fhir:display [ fhir:v "ACID FAST SMEAR" ]
+  ] [
+     fhir:code [ fhir:v "90142" ] ;
+     fhir:display [ fhir:v "VIRAL CULTURE: R/O CYTOMEGALOVIRUS" ]
+  ] [
+     fhir:code [ fhir:v "90253" ] ;
+     fhir:display [ fhir:v "CLOSTRIDIUM DIFFICILE TOXIN ASSAY" ]
+  ] [
+     fhir:code [ fhir:v "90208" ] ;
+     fhir:display [ fhir:v "Myco-F Bottle Gram Stain" ]
+  ] [
+     fhir:code [ fhir:v "90153" ] ;
+     fhir:display [ fhir:v "Additional Cells and Karyotype" ]
+  ] [
+     fhir:code [ fhir:v "90151" ] ;
+     fhir:display [ fhir:v "Tissue Culture-Bone Marrow" ]
+  ] [
+     fhir:code [ fhir:v "90204" ] ;
+     fhir:display [ fhir:v "Anaerobic Bottle Gram Stain" ]
+  ] [
+     fhir:code [ fhir:v "90111" ] ;
+     fhir:display [ fhir:v "CHROMOSOME ANALYSIS-BONE MARROW" ]
+  ] [
+     fhir:code [ fhir:v "90133" ] ;
+     fhir:display [ fhir:v "MONOSPOT" ]
+  ] [
+     fhir:code [ fhir:v "90188" ] ;
+     fhir:display [ fhir:v "NEISSERIA GONORRHOEAE (GC), NUCLEIC ACID PROBE, WITH AMPLIFICATION" ]
+  ] [
+     fhir:code [ fhir:v "90177" ] ;
+     fhir:display [ fhir:v "HBV Viral Load" ]
+  ] [
+     fhir:code [ fhir:v "90156" ] ;
+     fhir:display [ fhir:v "DIRECT INFLUENZA A ANTIGEN TEST" ]
+  ] [
+     fhir:code [ fhir:v "90112" ] ;
+     fhir:display [ fhir:v "MODIFIED ACID-FAST STAIN FOR NOCARDIA" ]
+  ] [
+     fhir:code [ fhir:v "90213" ] ;
+     fhir:display [ fhir:v "Enterovirus Culture" ]
+  ] [
+     fhir:code [ fhir:v "90231" ] ;
+     fhir:display [ fhir:v "Swab - R/O Yeast - IC" ]
+  ] [
+     fhir:code [ fhir:v "90167" ] ;
+     fhir:display [ fhir:v "ISOLATE FOR MIC" ]
+  ] [
+     fhir:code [ fhir:v "90129" ] ;
+     fhir:display [ fhir:v "ASO Screen" ]
+  ] [
+     fhir:code [ fhir:v "90059" ] ;
+     fhir:display [ fhir:v "LEGIONELLA CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90228" ] ;
+     fhir:display [ fhir:v "Lyme IgG" ]
+  ] [
+     fhir:code [ fhir:v "90113" ] ;
+     fhir:display [ fhir:v "URINE-GRAM STAIN - UNSPUN" ]
+  ] [
+     fhir:code [ fhir:v "90240" ] ;
+     fhir:display [ fhir:v "ACID FAST CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90248" ] ;
+     fhir:display [ fhir:v "RAPID PLASMA REAGIN TEST" ]
+  ] [
+     fhir:code [ fhir:v "90126" ] ;
+     fhir:display [ fhir:v "TOXOPLASMA IgM ANTIBODY" ]
+  ] [
+     fhir:code [ fhir:v "90088" ] ;
+     fhir:display [ fhir:v "CHROMOSOME ANALYSIS - ADDITIONAL KARYOTYPE" ]
+  ] [
+     fhir:code [ fhir:v "90166" ] ;
+     fhir:display [ fhir:v "Problem" ]
+  ] [
+     fhir:code [ fhir:v "90187" ] ;
+     fhir:display [ fhir:v "GENITAL CULTURE FOR TOXIC SHOCK" ]
+  ] [
+     fhir:code [ fhir:v "90199" ] ;
+     fhir:display [ fhir:v "Immunofluorescent test for Pneumocystis jirovecii (carinii)" ]
+  ] [
+     fhir:code [ fhir:v "90127" ] ;
+     fhir:display [ fhir:v "RUBEOLA ANTIBODY, IgG" ]
+  ] [
+     fhir:code [ fhir:v "90180" ] ;
+     fhir:display [ fhir:v "O&P MACROSCOPIC EXAM - WORM" ]
+  ] [
+     fhir:code [ fhir:v "90262" ] ;
+     fhir:display [ fhir:v "CHLAMYDIA CULTURE" ]
+  ] [
+     fhir:code [ fhir:v "90092" ] ;
+     fhir:display [ fhir:v "AEROBIC BOTTLE" ]
+  ] [
+     fhir:code [ fhir:v "90146" ] ;
+     fhir:display [ fhir:v "CHROMOSOME ANALYSIS-NEOPLASTIC BLOOD" ]
+  ] [
+     fhir:code [ fhir:v "90132" ] ;
+     fhir:display [ fhir:v "LYME SEROLOGY" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

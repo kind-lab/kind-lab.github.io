@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/MedicationAdministration/ExampleMimicMedicationAdministrationICU> a fhir:MedicationAdministration ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleMimicMedicationAdministrationICU"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration-icu"^^xsd:anyURI ;
+       fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration-icu>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationAdministration</b><a name=\"ExampleMimicMedicationAdministrationICU\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationAdministration &quot;ExampleMimicMedicationAdministrationICU&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-medication-administration-icu.html\">MIMIC Medication Administration ICU</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: 08-Antibiotics (IV) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-medadmin-category-icu.html\">MimicMedadminCategoryIcu</a>#08-Antibiotics (IV))</span></p><p><b>medication</b>: Dextrose 5% <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-medication-icu.html\">MimicMedicationIcu</a>#220949)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>context</b>: <a href=\"Encounter-ExampleMimicEncounter.html\">Encounter/ExampleMimicEncounter</a></p><p><b>effective</b>: 2201-11-11 08:55:00-0500</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Method</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>Drug Push <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-medication-method-icu.html\">MimicMedicationMethodIcu</a>#Drug Push)</span></td><td>100 ml<span style=\"background: LightGoldenRodYellow\"> (Details: http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units code ml = 'ml')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medadmin-category-icu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "08-Antibiotics (IV)" ]
+     ] )
+  ] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-icu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "220949" ] ;
+       fhir:display [ fhir:v "Dextrose 5%" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Patient/ExampleMimicPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleMimicPatient" ]
+  ] ; # 
+  fhir:context [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Encounter/ExampleMimicEncounter> ;
+     fhir:reference [ fhir:v "Encounter/ExampleMimicEncounter" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2201-11-11T08:55:00-05:00"^^xsd:dateTime] ; # 
+  fhir:dosage [
+     fhir:method [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-method-icu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Drug Push" ]
+       ] )
+     ] ;
+     fhir:dose [
+       fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "ml" ] ;
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ml" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

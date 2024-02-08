@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/Observation/ExampleMimicObservationChartevents> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleMimicObservationChartevents"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-chartevents"^^xsd:anyURI ;
+       fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-chartevents>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ExampleMimicObservationChartevents\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ExampleMimicObservationChartevents&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-observation-chartevents.html\">MIMIC Observation Chartevents</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Care Plans <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-observation-category.html\">MimicObservationCategory</a>#Care Plans)</span></p><p><b>code</b>: Safety Restraints NCP - Interventions <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-chartevents-d-items.html\">MimicCharteventsDItems</a>#228988)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>encounter</b>: <a href=\"Encounter-ExampleMimicEncounter.html\">Encounter/ExampleMimicEncounter</a></p><p><b>effective</b>: 2175-03-25 13:52:00-0400</p><p><b>issued</b>: Mar. 25, 2175, 1:55:00 p.m.</p><p><b>value</b>: Clear patient's environment of safety hazards (conceal tubing, cords, etc. and overdress IVs)</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Care Plans" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-chartevents-d-items"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "228988" ] ;
+       fhir:display [ fhir:v "Safety Restraints NCP - Interventions" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Patient/ExampleMimicPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleMimicPatient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Encounter/ExampleMimicEncounter> ;
+     fhir:reference [ fhir:v "Encounter/ExampleMimicEncounter" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2175-03-25T13:52:00-04:00"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2175-03-25T13:55:00-04:00"^^xsd:dateTime] ; # 
+  fhir:value [ fhir:v "Clear patient's environment of safety hazards (conceal tubing, cords, etc. and overdress IVs)"] . # 
+
+# -------------------------------------------------------------------------------------
+

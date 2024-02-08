@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MimicMedicationRoute - MIMIC Implementation Guide v1.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.91"}
+    h3,h4,h5,h6{--heading-prefix:"7.91"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MIMIC Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.3.0 - Draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mimic-fhir-mappings.html">MIMIC-IV Mapping</a>
+      </li>
+      <li>
+        <a href="mimic-ed-fhir-mappings.html">MIMIC-ED Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General</a>
+      </li>
+      <li>
+        <a href="terminology-guide.html">Terminology</a>
+      </li>
+      <li>
+        <a href="applications.html">Applications</a>
+      </li>
+      <li>
+        <a href="tutorials.html">Tutorials</a>
+      </li>
+      <li>
+        <a href="future-work.html">Future Work</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Subsets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="microbiology-background.html">Microbiology data</a>
+      </li>
+      <li>
+        <a href="medication-background.html">Medication data</a>
+      </li>
+      <li>
+        <a href="emergency-department-subset.html">Emergency Department data</a>
+      </li>
+      <li>
+        <a href="intensive-care-unit-subset.html">Intensive Care Unit data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MimicMedicationRoute</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MIMIC Implementation Guide - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://mimic.mit.edu/fhir/mimic/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mimic-medication-route.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mimic-medication-route.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mimic-medication-route.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: MimicMedicationRoute
+
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route|1.3.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2022-09-21
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MimicMedicationRoute</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>The medication route during administration for MIMIC</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-mimic-medication-route.html">MimicMedicationRoute</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p>This  code system <code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">AD<a name="mimic-medication-route-AD"> </a></td></tr><tr><td style="white-space:nowrap">IH<a name="mimic-medication-route-IH"> </a></td></tr><tr><td style="white-space:nowrap">G TUBE<a name="mimic-medication-route-GTUBE"> </a></td></tr><tr><td style="white-space:nowrap">NG<a name="mimic-medication-route-NG"> </a></td></tr><tr><td style="white-space:nowrap">AERO<a name="mimic-medication-route-AERO"> </a></td></tr><tr><td style="white-space:nowrap">IL<a name="mimic-medication-route-IL"> </a></td></tr><tr><td style="white-space:nowrap">IT<a name="mimic-medication-route-IT"> </a></td></tr><tr><td style="white-space:nowrap">PO<a name="mimic-medication-route-PO"> </a></td></tr><tr><td style="white-space:nowrap">DWELL<a name="mimic-medication-route-DWELL"> </a></td></tr><tr><td style="white-space:nowrap">RIGHT EAR<a name="mimic-medication-route-RIGHTEAR"> </a></td></tr><tr><td style="white-space:nowrap">IU<a name="mimic-medication-route-IU"> </a></td></tr><tr><td style="white-space:nowrap">LEFT EAR<a name="mimic-medication-route-LEFTEAR"> </a></td></tr><tr><td style="white-space:nowrap">PO/NG<a name="mimic-medication-route-PO.47NG"> </a></td></tr><tr><td style="white-space:nowrap">INTRAVITREAL<a name="mimic-medication-route-INTRAVITREAL"> </a></td></tr><tr><td style="white-space:nowrap">PO OR ENTERAL TUBE<a name="mimic-medication-route-POORENTERALTUBE"> </a></td></tr><tr><td style="white-space:nowrap">SIDE PORT<a name="mimic-medication-route-SIDEPORT"> </a></td></tr><tr><td style="white-space:nowrap">FEMORAL VEIN<a name="mimic-medication-route-FEMORALVEIN"> </a></td></tr><tr><td style="white-space:nowrap">IV<a name="mimic-medication-route-IV"> </a></td></tr><tr><td style="white-space:nowrap">REPLACE<a name="mimic-medication-route-REPLACE"> </a></td></tr><tr><td style="white-space:nowrap">IA<a name="mimic-medication-route-IA"> </a></td></tr><tr><td style="white-space:nowrap">LEFT EYE<a name="mimic-medication-route-LEFTEYE"> </a></td></tr><tr><td style="white-space:nowrap">IV FLUSH<a name="mimic-medication-route-IVFLUSH"> </a></td></tr><tr><td style="white-space:nowrap">IP<a name="mimic-medication-route-IP"> </a></td></tr><tr><td style="white-space:nowrap">ED<a name="mimic-medication-route-ED"> </a></td></tr><tr><td style="white-space:nowrap">AS<a name="mimic-medication-route-AS"> </a></td></tr><tr><td style="white-space:nowrap">INTRA-ARTERIALLY<a name="mimic-medication-route-INTRA-ARTERIALLY"> </a></td></tr><tr><td style="white-space:nowrap">ORAL<a name="mimic-medication-route-ORAL"> </a></td></tr><tr><td style="white-space:nowrap">FLUSH<a name="mimic-medication-route-FLUSH"> </a></td></tr><tr><td style="white-space:nowrap">BOTH EYES<a name="mimic-medication-route-BOTHEYES"> </a></td></tr><tr><td style="white-space:nowrap">DIALYS<a name="mimic-medication-route-DIALYS"> </a></td></tr><tr><td style="white-space:nowrap">INFUSION VIA ON-Q PUMP<a name="mimic-medication-route-INFUSIONVIAON-QPUMP"> </a></td></tr><tr><td style="white-space:nowrap">PO/IV<a name="mimic-medication-route-PO.47IV"> </a></td></tr><tr><td style="white-space:nowrap">IVPCA<a name="mimic-medication-route-IVPCA"> </a></td></tr><tr><td style="white-space:nowrap">INHALATION<a name="mimic-medication-route-INHALATION"> </a></td></tr><tr><td style="white-space:nowrap">OD<a name="mimic-medication-route-OD"> </a></td></tr><tr><td style="white-space:nowrap">IV INFUSION<a name="mimic-medication-route-IVINFUSION"> </a></td></tr><tr><td style="white-space:nowrap">ND<a name="mimic-medication-route-ND"> </a></td></tr><tr><td style="white-space:nowrap">PO/OG<a name="mimic-medication-route-PO.47OG"> </a></td></tr><tr><td style="white-space:nowrap">EDPCA<a name="mimic-medication-route-EDPCA"> </a></td></tr><tr><td style="white-space:nowrap">PEG<a name="mimic-medication-route-PEG"> </a></td></tr><tr><td style="white-space:nowrap">SL<a name="mimic-medication-route-SL"> </a></td></tr><tr><td style="white-space:nowrap">BOTH EARS<a name="mimic-medication-route-BOTHEARS"> </a></td></tr><tr><td style="white-space:nowrap">IVS<a name="mimic-medication-route-IVS"> </a></td></tr><tr><td style="white-space:nowrap">IR<a name="mimic-medication-route-IR"> </a></td></tr><tr><td style="white-space:nowrap">NS<a name="mimic-medication-route-NS"> </a></td></tr><tr><td style="white-space:nowrap">AU<a name="mimic-medication-route-AU"> </a></td></tr><tr><td style="white-space:nowrap">OU<a name="mimic-medication-route-OU"> </a></td></tr><tr><td style="white-space:nowrap">IN<a name="mimic-medication-route-IN"> </a></td></tr><tr><td style="white-space:nowrap">INTRALESIONAL<a name="mimic-medication-route-INTRALESIONAL"> </a></td></tr><tr><td style="white-space:nowrap">P.O.<a name="mimic-medication-route-P.46O.46"> </a></td></tr><tr><td style="white-space:nowrap">TD<a name="mimic-medication-route-TD"> </a></td></tr><tr><td style="white-space:nowrap">NGT<a name="mimic-medication-route-NGT"> </a></td></tr><tr><td style="white-space:nowrap">INTRACORPOREAL<a name="mimic-medication-route-INTRACORPOREAL"> </a></td></tr><tr><td style="white-space:nowrap">NAS<a name="mimic-medication-route-NAS"> </a></td></tr><tr><td style="white-space:nowrap">Po<a name="mimic-medication-route-Po"> </a></td></tr><tr><td style="white-space:nowrap">IMPELLA<a name="mimic-medication-route-IMPELLA"> </a></td></tr><tr><td style="white-space:nowrap">ET<a name="mimic-medication-route-ET"> </a></td></tr><tr><td style="white-space:nowrap">EX-VIVO<a name="mimic-medication-route-EX-VIVO"> </a></td></tr><tr><td style="white-space:nowrap">NEB<a name="mimic-medication-route-NEB"> </a></td></tr><tr><td style="white-space:nowrap">IRR<a name="mimic-medication-route-IRR"> </a></td></tr><tr><td style="white-space:nowrap">SC INFUSION<a name="mimic-medication-route-SCINFUSION"> </a></td></tr><tr><td style="white-space:nowrap">PL<a name="mimic-medication-route-PL"> </a></td></tr><tr><td style="white-space:nowrap">ITPCA<a name="mimic-medication-route-ITPCA"> </a></td></tr><tr><td style="white-space:nowrap">LOCK<a name="mimic-medication-route-LOCK"> </a></td></tr><tr><td style="white-space:nowrap">IJ<a name="mimic-medication-route-IJ"> </a></td></tr><tr><td style="white-space:nowrap">IO<a name="mimic-medication-route-IO"> </a></td></tr><tr><td style="white-space:nowrap">OG<a name="mimic-medication-route-OG"> </a></td></tr><tr><td style="white-space:nowrap">TRANSDERMAL<a name="mimic-medication-route-TRANSDERMAL"> </a></td></tr><tr><td style="white-space:nowrap">OGT<a name="mimic-medication-route-OGT"> </a></td></tr><tr><td style="white-space:nowrap">SUBCUT INFUSION<a name="mimic-medication-route-SUBCUTINFUSION"> </a></td></tr><tr><td style="white-space:nowrap">VG<a name="mimic-medication-route-VG"> </a></td></tr><tr><td style="white-space:nowrap">SCPCA<a name="mimic-medication-route-SCPCA"> </a></td></tr><tr><td style="white-space:nowrap">IVCI<a name="mimic-medication-route-IVCI"> </a></td></tr><tr><td style="white-space:nowrap">IV FLUSH*<a name="mimic-medication-route-IVFLUSH.42"> </a></td></tr><tr><td style="white-space:nowrap">INTRAPLEURAL<a name="mimic-medication-route-INTRAPLEURAL"> </a></td></tr><tr><td style="white-space:nowrap">OS<a name="mimic-medication-route-OS"> </a></td></tr><tr><td style="white-space:nowrap">DLPICC<a name="mimic-medication-route-DLPICC"> </a></td></tr><tr><td style="white-space:nowrap">IV BOLUS<a name="mimic-medication-route-IVBOLUS"> </a></td></tr><tr><td style="white-space:nowrap">SC<a name="mimic-medication-route-SC"> </a></td></tr><tr><td style="white-space:nowrap">INTERSPACE<a name="mimic-medication-route-INTERSPACE"> </a></td></tr><tr><td style="white-space:nowrap">po<a name="mimic-medication-route-po"> </a></td></tr><tr><td style="white-space:nowrap">SCPUMP<a name="mimic-medication-route-SCPUMP"> </a></td></tr><tr><td style="white-space:nowrap">TT<a name="mimic-medication-route-TT"> </a></td></tr><tr><td style="white-space:nowrap">IV DRIP<a name="mimic-medication-route-IVDRIP"> </a></td></tr><tr><td style="white-space:nowrap">PB<a name="mimic-medication-route-PB"> </a></td></tr><tr><td style="white-space:nowrap">IVT<a name="mimic-medication-route-IVT"> </a></td></tr><tr><td style="white-space:nowrap">RIGHT EYE<a name="mimic-medication-route-RIGHTEYE"> </a></td></tr><tr><td style="white-space:nowrap">PR<a name="mimic-medication-route-PR"> </a></td></tr><tr><td style="white-space:nowrap">SUBCUT<a name="mimic-medication-route-SUBCUT"> </a></td></tr><tr><td style="white-space:nowrap">BUCCAL<a name="mimic-medication-route-BUCCAL"> </a></td></tr><tr><td style="white-space:nowrap">AC<a name="mimic-medication-route-AC"> </a></td></tr><tr><td style="white-space:nowrap">TP<a name="mimic-medication-route-TP"> </a></td></tr><tr><td style="white-space:nowrap">INTRAPERICARDIAL<a name="mimic-medication-route-INTRAPERICARDIAL"> </a></td></tr><tr><td style="white-space:nowrap">AXILLARY<a name="mimic-medication-route-AXILLARY"> </a></td></tr><tr><td style="white-space:nowrap">ng<a name="mimic-medication-route-ng"> </a></td></tr><tr><td style="white-space:nowrap">PERIPHNERVE<a name="mimic-medication-route-PERIPHNERVE"> </a></td></tr><tr><td style="white-space:nowrap">IC<a name="mimic-medication-route-IC"> </a></td></tr><tr><td style="white-space:nowrap">BU<a name="mimic-medication-route-BU"> </a></td></tr><tr><td style="white-space:nowrap">PV<a name="mimic-medication-route-PV"> </a></td></tr><tr><td style="white-space:nowrap">NU<a name="mimic-medication-route-NU"> </a></td></tr><tr><td style="white-space:nowrap">ENTERAL TUBE ONLY – NOT ORAL<a name="mimic-medication-route-ENTERALTUBEONLY.8211NOTORAL"> </a></td></tr><tr><td style="white-space:nowrap">J TUBE<a name="mimic-medication-route-JTUBE"> </a></td></tr><tr><td style="white-space:nowrap">LUMBAR PLEXUS<a name="mimic-medication-route-LUMBARPLEXUS"> </a></td></tr><tr><td style="white-space:nowrap">NG/OG<a name="mimic-medication-route-NG.47OG"> </a></td></tr><tr><td style="white-space:nowrap">ID<a name="mimic-medication-route-ID"> </a></td></tr><tr><td style="white-space:nowrap">IM<a name="mimic-medication-route-IM"> </a></td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.mimic#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:07-0500">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

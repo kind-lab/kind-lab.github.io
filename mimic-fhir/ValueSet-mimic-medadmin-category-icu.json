@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mimic-medadmin-category-icu",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><ul><li>Include all codes defined in <a href=\"CodeSystem-mimic-medadmin-category-icu.html\"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medadmin-category-icu</code></a></li></ul></div>"
+  },
+  "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medadmin-category-icu",
+  "version" : "1.3.0",
+  "name" : "MimicMedadminCategoryIcu",
+  "title" : "MimicMedadminCategoryIcu",
+  "status" : "draft",
+  "date" : "2022-09-21T13:59:43-04:00",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "The medication administration category for the ICU for MIMIC",
+  "compose" : {
+    "include" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medadmin-category-icu"
+    }]
+  }
+}

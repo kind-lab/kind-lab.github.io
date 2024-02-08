@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ExampleMimicObservationOutputevents",
+  "meta" : {
+    "profile" : ["http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-outputevents"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ExampleMimicObservationOutputevents\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ExampleMimicObservationOutputevents&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-observation-outputevents.html\">MIMIC Observation Outputevents</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Output <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-observation-category.html\">MimicObservationCategory</a>#Output)</span></p><p><b>code</b>: Foley <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-d-items.html\">MimicDItems</a>#226559)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>encounter</b>: <a href=\"Encounter-ExampleMimicEncounter.html\">Encounter/ExampleMimicEncounter</a></p><p><b>effective</b>: 2133-12-23 12:00:00-0500</p><p><b>issued</b>: Dec. 23, 2133, 11:55:00 a.m.</p><p><b>value</b>: 250 ml<span style=\"background: LightGoldenRodYellow\"> (Details: http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units code ml = 'ml')</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category",
+      "code" : "Output"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items",
+      "code" : "226559",
+      "display" : "Foley"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleMimicPatient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/ExampleMimicEncounter"
+  },
+  "effectiveDateTime" : "2133-12-23T12:00:00-05:00",
+  "issued" : "2133-12-23T11:55:00-05:00",
+  "valueQuantity" : {
+    "value" : 250,
+    "unit" : "ml",
+    "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units",
+    "code" : "ml"
+  }
+}

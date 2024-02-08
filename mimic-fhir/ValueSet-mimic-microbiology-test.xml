@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mimic-microbiology-test"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><ul><li>Include all codes defined in <a href="CodeSystem-mimic-microbiology-test.html"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test</code></a></li></ul></div>
+  </text>
+  <url value="http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-test"/>
+  <version value="1.3.0"/>
+  <name value="MimicMicrobiologyTest"/>
+  <title value="MimicMicrobiologyTest"/>
+  <status value="draft"/>
+  <date value="2022-09-21T13:59:43-04:00"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="The microbiology test completed in MIMIC"/>
+  <compose>
+    <include>
+      <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test"/>
+    </include>
+  </compose>
+</ValueSet>

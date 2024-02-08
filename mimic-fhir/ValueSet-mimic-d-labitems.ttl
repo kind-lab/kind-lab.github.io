@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-d-labitems> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mimic-d-labitems"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><ul><li>Include all codes defined in <a href=\"CodeSystem-mimic-d-labitems.html\"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-labitems</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-d-labitems"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.0"] ; # 
+  fhir:name [ fhir:v "MimicDLabitems"] ; # 
+  fhir:title [ fhir:v "MimicDLabitems"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-21T13:59:43-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The lab item codes used in MIMIC"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-labitems"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

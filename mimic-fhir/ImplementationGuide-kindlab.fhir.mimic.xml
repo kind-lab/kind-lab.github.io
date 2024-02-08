@@ -1,0 +1,2072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="kindlab.fhir.mimic"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MIMIC</h2><p>The official URL for this implementation guide is: </p><pre>http://mimic.mit.edu/fhir/mimic/ImplementationGuide/kindlab.fhir.mimic</pre></div>
+  </text>
+  <url value="http://mimic.mit.edu/fhir/mimic/ImplementationGuide/kindlab.fhir.mimic"/>
+  <version value="1.3.0"/>
+  <name value="MIMIC"/>
+  <title value="MIMIC Implementation Guide"/>
+  <status value="draft"/>
+  <date value="2024-02-08T11:07:36-05:00"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <packageId value="kindlab.fhir.mimic"/>
+  <license value="MIT"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="5.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="uscore">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="4.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2022+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Draft"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://mimic.mit.edu/fhir/mimic/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2022+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Draft"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://mimic.mit.edu/fhir/mimic/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-condition"/>
+      </reference>
+      <name value="MIMIC Condition"/>
+      <description value="A MIMIC condition profile based on FHIR R4 Condition."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-encounter"/>
+      </reference>
+      <name value="MIMIC Encounter"/>
+      <description value="A MIMIC encounter profile based on FHIR R4 Encounter."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-location"/>
+      </reference>
+      <name value="MIMIC Location"/>
+      <description value="A MIMIC location profile based on FHIR R4 Location."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-medication"/>
+      </reference>
+      <name value="MIMIC Medication"/>
+      <description value="A MIMIC medication profile based on the FHIR R4 medication resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-medication-administration"/>
+      </reference>
+      <name value="MIMIC Medication Administration"/>
+      <description value="A MIMIC medication administration profile based on the base FHIR R4 medication administration resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-medication-administration-icu"/>
+      </reference>
+      <name value="MIMIC Medication Administration ICU"/>
+      <description value="A MIMIC medication administration ICU profile based on the FHIR R4 medication administration resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-medication-dispense"/>
+      </reference>
+      <name value="MIMIC Medication Dispense"/>
+      <description value="A MIMIC medication dispense profile based on the FHIR R4 medication dispense resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-medication-dispense-ed"/>
+      </reference>
+      <name value="MIMIC-ED MedicationDispense"/>
+      <description value="A MedicationDispense resource that represents each record in the pyxis (ED medication dispensation) table of MIMIC-ED."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-medication-request"/>
+      </reference>
+      <name value="MIMIC Medication Request"/>
+      <description value="A MIMIC medication request profile based on the FHIR R4 medication request resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-medication-statement-ed"/>
+      </reference>
+      <name value="MIMIC-ED MedicationStatement"/>
+      <description value="A MedicationStatement resource that represents each record in the medrecon table of MIMIC-ED."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-observation-chartevents"/>
+      </reference>
+      <name value="MIMIC Observation Chartevents"/>
+      <description value="A MIMIC observation chartevents profile based on the base observation resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-observation-datetimeevents"/>
+      </reference>
+      <name value="MIMIC Observation Datetimeevents"/>
+      <description value="A MIMIC observation datetimeevents profile based on the base observation resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-observation-ed"/>
+      </reference>
+      <name value="MIMIC-ED Observation"/>
+      <description value="An Observation resource that represents a single measurement from a row of the triage and vitalsign tables of MIMIC-ED: only acuity, chiefcomplaint, and rhythm."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-observation-labevents"/>
+      </reference>
+      <name value="MIMIC Observation Labevents"/>
+      <description value="A MIMIC observation labevents profile based on FHIR R4 observation resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-observation-micro-org"/>
+      </reference>
+      <name value="MIMIC Observation Micro Org"/>
+      <description value="A MIMIC observation microbiology organism profile based on the FHIR R4 observation resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-observation-micro-susc"/>
+      </reference>
+      <name value="MIMIC Observation Micro Susc"/>
+      <description value="A MIMIC observation microbiology susceptiblity profile based on the FHIR R4 observation resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-observation-micro-test"/>
+      </reference>
+      <name value="MIMIC Observation Micro Test"/>
+      <description value="A MIMIC observation microbiology test profile based on the FHIR R4 observation resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-observation-outputevents"/>
+      </reference>
+      <name value="MIMIC Observation Outputevents"/>
+      <description value="A MIMIC observation outputevents profile based on the FHIR R4 observation resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-observation-vital-signs"/>
+      </reference>
+      <name value="MIMIC-ED Observation Vital Signs"/>
+      <description value="An Observation resource (based on FHIR R4 Observation) that represents a single measurement from a row of the triage and vitalsign tables of MIMIC-ED: only pain, temperature, heartrate, resprate, blood pressure sbp dbp, and o2sat."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-organization"/>
+      </reference>
+      <name value="MIMIC Organization"/>
+      <description value="A MIMIC organization profile based on FHIR R4 Organization."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-patient"/>
+      </reference>
+      <name value="MIMIC Patient"/>
+      <description value="A MIMIC patient based on FHIR R4 Patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-procedure"/>
+      </reference>
+      <name value="MIMIC Procedure"/>
+      <description value="A MIMIC procedure profile based on FHIR R4 Procedure resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-procedure-ed"/>
+      </reference>
+      <name value="MIMIC Procedure ED"/>
+      <description value="A MIMIC procedure ED profile based on FHIR R4 Procedure."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-procedure-icu"/>
+      </reference>
+      <name value="MIMIC Procedure ICU"/>
+      <description value="A MIMIC procedure ICU profile based on FHIR R4 Procedure resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mimic-specimen"/>
+      </reference>
+      <name value="MIMIC Specimen"/>
+      <description value="A MIMIC lab specimen profile based on the baes FHIR R4 Specimen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dilution-details"/>
+      </reference>
+      <name value="Dilution Details"/>
+      <description value="The dilution details for microbiology susceptiblity tests"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lab-priority"/>
+      </reference>
+      <name value="Lab Priority"/>
+      <description value="The priority of a lab item in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-dateAbsentReason"/>
+      </reference>
+      <name value="MIMIC-ED Data Absent Reason"/>
+      <description value="Selected code from the DataAbsentReason value set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-lab-interpretation"/>
+      </reference>
+      <name value="MIMIC Observation Lab interpretation Value Set"/>
+      <description value="Selected codes from ObservationInterpretation that represent interpretations in MIMIC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-micro-interpretation"/>
+      </reference>
+      <name value="MIMIC Observation Lab interpretation Value Set"/>
+      <description value="Selected codes from ObservationInterpretation that represent interpretations in MIMIC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-observation-category-ed"/>
+      </reference>
+      <name value="MIMIC-ED Observation Resource Category Value Set"/>
+      <description value="Selected codes from the ObservationCategoryCodes value set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-observation-type-ed"/>
+      </reference>
+      <name value="MIMIC-ED Observation Resource Types Value Set"/>
+      <description value="Selected codes from LOINC that represent values from the triage table in MIMIC-ED."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-observation-type-vital"/>
+      </reference>
+      <name value="MIMIC-ED Observation Resource Types Value Set"/>
+      <description value="Selected codes from LOINC that represent values from the triage or vitalsigns tables of MIMIC-ED."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-procedure-types-ed"/>
+      </reference>
+      <name value="MIMIC-ED Procedure Code Types Value Set"/>
+      <description value="Selected codes from SNOMED CT that represent either triage or vitalsign measurements."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-unit-quantity"/>
+      </reference>
+      <name value="MIMIC-ED Observation Quantity Units Value Set"/>
+      <description value="Selected codes from UCUM that represent quantity units."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/ExampleLocation"/>
+      </reference>
+      <name value="Example Location resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Location resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ExampleMimicCondition"/>
+      </reference>
+      <name value="Example Condition resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Condition resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ExampleMimicConditionED"/>
+      </reference>
+      <name value="Example Condition resource MIMIC-IV-ED"/>
+      <description value="An example of how a MIMIC-IV-ED Condition resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ExampleMimicEncounter"/>
+      </reference>
+      <name value="Example Encounter resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Encounter resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ExampleMimicEncounterED"/>
+      </reference>
+      <name value="Example Encounter resource MIMIC-IV-ED"/>
+      <description value="An example of how a MIMIC-IV-ED Encounter resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ExampleMimicEncounterICU"/>
+      </reference>
+      <name value="Example Encounter resource MIMIC-IV-ICU"/>
+      <description value="An example of how a MIMIC-IV-ICU Encounter resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/ExampleMimicMedication"/>
+      </reference>
+      <name value="Example Location resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Location resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/ExampleMimicMedicationAdministration"/>
+      </reference>
+      <name value="Example MedicationAdministration resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV MedicationAdministration resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/ExampleMimicMedicationAdministrationICU"/>
+      </reference>
+      <name value="Example MedicationAdministration resource MIMIC-IV-ICU"/>
+      <description value="An example of how a MIMIC-IV-ICU MedicationAdministration resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration-icu"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/ExampleMimicMedicationDispense"/>
+      </reference>
+      <name value="Example MedicationDispense resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV MedicationDispense resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/ExampleMimicMedicationDispenseED"/>
+      </reference>
+      <name value="Example MedicationDispense resource MIMIC-ED"/>
+      <description value="An example of how a MIMIC-ED MedicationDispense resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense-ed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/ExampleMimicMedicationRequest"/>
+      </reference>
+      <name value="Example MedicationRequest resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV MedicationRequest resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/ExampleMimicMedicationStatementED"/>
+      </reference>
+      <name value="Example MedicationStatement resource MIMIC-ED"/>
+      <description value="An example of how a MIMIC-ED MedicationStatement resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-statement-ed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleMimicObservationChartevents"/>
+      </reference>
+      <name value="Example Observation chartevents resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Observation chartevents resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-chartevents"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleMimicObservationDatetimeevents"/>
+      </reference>
+      <name value="Example Observation datetimeevents resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Observation datetimeevents resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-datetimeevents"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleMimicObservationED"/>
+      </reference>
+      <name value="Example Observation resource MIMIC-IV-ED"/>
+      <description value="An example of how a MIMIC-IV-ED Observation resource would look like with data from the triage table (chiefcomplaint)."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-ed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleMimicObservationLabevents"/>
+      </reference>
+      <name value="Example Observation labevents resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Observation labevents resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-labevents"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleMimicObservationMicroOrg"/>
+      </reference>
+      <name value="Example Observation microbiology organism resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Observation microbiology organism resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-org"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleMimicObservationMicroSusc"/>
+      </reference>
+      <name value="Example Observation microbiology susceptiblity resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Observation microbiology susceptiblity resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-susc"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleMimicObservationMicroTest"/>
+      </reference>
+      <name value="Example Observation microbiology test resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Observation microbiology test resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-test"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleMimicObservationOutputevents"/>
+      </reference>
+      <name value="Example Observation outputevents resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Observation outputevents resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-outputevents"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleMimicObservationVitalSigns"/>
+      </reference>
+      <name value="Example Observation resource for a MIMIC-IV-ED vital sign measurement"/>
+      <description value="An example of how a MIMIC-IV-ED Observation resource would look like with data from the vitalsigns table."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-vital-signs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/ExampleMimicOrganization"/>
+      </reference>
+      <name value="Example Organization resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Organization resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ExampleMimicPatient"/>
+      </reference>
+      <name value="Example Patient resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Patient resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ExampleMimicPatientED"/>
+      </reference>
+      <name value="Example Patient resource MIMIC-IV-ED"/>
+      <description value="An example of how a MIMIC-IV-ED Patient resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ExampleMimicProcedure"/>
+      </reference>
+      <name value="Example Procedure resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Procedure resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ExampleMimicProcedureED"/>
+      </reference>
+      <name value="Example Procedure resource MIMIC-IV-ED"/>
+      <description value="An example of how a MIMIC-IV-ED Procedure resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-ed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ExampleMimicProcedureICU"/>
+      </reference>
+      <name value="Example Procedure resource MIMIC-IV-ICU"/>
+      <description value="An example of how a MIMIC-IV-ICU Procedure resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-icu"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/ExampleMimicSpecimen"/>
+      </reference>
+      <name value="Example Specimen resource MIMIC-IV"/>
+      <description value="An example of how a MIMIC-IV Specimen resource would look like."/>
+      <exampleCanonical value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-admission-class"/>
+      </reference>
+      <name value="MimicAdmissionClass"/>
+      <description value="The admission class for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-admission-type"/>
+      </reference>
+      <name value="MimicAdmissionType"/>
+      <description value="The admission type for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-admit-source"/>
+      </reference>
+      <name value="MimicAdmitSource"/>
+      <description value="The admission source for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-bodysite"/>
+      </reference>
+      <name value="MimicBodysite"/>
+      <description value="The bodysite codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-chartevents-d-items"/>
+      </reference>
+      <name value="MimicCharteventsDItems"/>
+      <description value="The chartevents item codes used in the ICU for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-d-items"/>
+      </reference>
+      <name value="MimicDItems"/>
+      <description value="The item codes used throughout the ICU in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-d-labitems"/>
+      </reference>
+      <name value="MimicDLabitems"/>
+      <description value="The lab item codes used in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-diagnosis-icd10"/>
+      </reference>
+      <name value="MimicDiagnosisIcd10"/>
+      <description value="The diagnosis ICD10 codes used for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-diagnosis-icd9"/>
+      </reference>
+      <name value="MimicDiagnosisIcd9"/>
+      <description value="The diagnosis ICD9 codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-discharge-disposition"/>
+      </reference>
+      <name value="MimicDischargeDisposition"/>
+      <description value="The discharge disposition for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-hcpcs-cd"/>
+      </reference>
+      <name value="MimicHcpcsCd"/>
+      <description value="The HCPCS codes used for encounters in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-lab-fluid"/>
+      </reference>
+      <name value="MimicLabFluid"/>
+      <description value="The lab fluid that is captured for the specimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-lab-priority"/>
+      </reference>
+      <name value="MimicLabPriority"/>
+      <description value="The priority of the lab item in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-medadmin-category-icu"/>
+      </reference>
+      <name value="MimicMedadminCategoryIcu"/>
+      <description value="The medication administration category for the ICU for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-medication-etc"/>
+      </reference>
+      <name value="MimicMedicationEtc"/>
+      <description value="The medication ETC (enhanced therapeutic class) codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-medication-formulary-drug-cd"/>
+      </reference>
+      <name value="MimicMedicationFormularyDrugCd"/>
+      <description value="Medication formulary drug codes for use in prescriptions and emar"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-medication-frequency"/>
+      </reference>
+      <name value="MimicMedicationFrequency"/>
+      <description value="The medication frequency reported for medication delivery in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-medication-gsn"/>
+      </reference>
+      <name value="MimicMedicationGsn"/>
+      <description value="The medication GSN codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-medication-icu"/>
+      </reference>
+      <name value="MimicMedicationIcu"/>
+      <description value="All medication found in the ICU, derived from mimic_icu.d_items"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-medication-method-icu"/>
+      </reference>
+      <name value="MimicMedicationMethodIcu"/>
+      <description value="The medication delivery method used in the ICU for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-medication-method"/>
+      </reference>
+      <name value="MimicMedicationMethod"/>
+      <description value="The medication delivery method for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-medication-name"/>
+      </reference>
+      <name value="MimicMedicationName"/>
+      <description value="The standard medication name used in MIMIC. Used in pharmacy, prescriptions, and emar"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-medication-ndc"/>
+      </reference>
+      <name value="MimicMedicationNdc"/>
+      <description value="Medication National Drug Codes (NDC) for use in prescriptions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-medication-poe-iv"/>
+      </reference>
+      <name value="MimicMedicationPoeIv"/>
+      <description value="The IV medication that is ordered through POE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-medication-route"/>
+      </reference>
+      <name value="MimicMedicationRoute"/>
+      <description value="The medication route during administration for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-medication-site"/>
+      </reference>
+      <name value="MimicMedicationSite"/>
+      <description value="The medication site for administration in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-microbiology-antibiotic"/>
+      </reference>
+      <name value="MimicMicrobiologyAntibiotic"/>
+      <description value="The microbiology antibiotic being tested on an organism in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-microbiology-organism"/>
+      </reference>
+      <name value="MimicMicrobiologyOrganism"/>
+      <description value="The microbiology organism being tested in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-microbiology-test"/>
+      </reference>
+      <name value="MimicMicrobiologyTest"/>
+      <description value="The microbiology test completed in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-observation-category"/>
+      </reference>
+      <name value="MimicObservationCategory"/>
+      <description value="The observation category codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-procedure-category"/>
+      </reference>
+      <name value="MimicProcedureCategory"/>
+      <description value="The procedure category codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-procedure-icd10"/>
+      </reference>
+      <name value="MimicProcedureIcd10"/>
+      <description value="The procedure ICD10 codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-procedure-icd9"/>
+      </reference>
+      <name value="MimicProcedureIcd9"/>
+      <description value="The procedure ICD9 codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-services"/>
+      </reference>
+      <name value="MimicServices"/>
+      <description value="The hospital services for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-spec-type-desc"/>
+      </reference>
+      <name value="MimicSpecTypeDesc"/>
+      <description value="The specimen type codes for microbiologyevents"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mimic-units"/>
+      </reference>
+      <name value="MimicUnits"/>
+      <description value="The units used throughout MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-admission-class"/>
+      </reference>
+      <name value="MimicAdmissionClass"/>
+      <description value="The admission class for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-admission-type"/>
+      </reference>
+      <name value="MimicAdmissionType"/>
+      <description value="The admission type for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-admit-source"/>
+      </reference>
+      <name value="MimicAdmitSource"/>
+      <description value="The admission source for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-bodysite"/>
+      </reference>
+      <name value="MimicBodysite"/>
+      <description value="The bodysite codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-chartevents-d-items"/>
+      </reference>
+      <name value="MimicCharteventsDItems"/>
+      <description value="The item codes for chartevents used in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-d-labitems"/>
+      </reference>
+      <name value="MimicDLabitems"/>
+      <description value="The lab item codes used in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-datetimeevents-d-items"/>
+      </reference>
+      <name value="MimicDatetimeeventsDItems"/>
+      <description value="The datetime item codes used in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-diagnosis-icd"/>
+      </reference>
+      <name value="MimicDiagnosisIcd"/>
+      <description value="The diagnosis ICD9 and ICD10 codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-discharge-disposition"/>
+      </reference>
+      <name value="MimicDischargeDisposition"/>
+      <description value="The discharge disposition for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-encounter-type"/>
+      </reference>
+      <name value="MimicEncounterType"/>
+      <description value="The encounter type for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-lab-priority"/>
+      </reference>
+      <name value="MimicLabPriority"/>
+      <description value="The priority of the lab item in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-medadmin-category-icu"/>
+      </reference>
+      <name value="MimicMedadminCategoryIcu"/>
+      <description value="The medication administration category for the ICU for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-medication-etc"/>
+      </reference>
+      <name value="MimicMedicationEtc"/>
+      <description value="The medication ETC (enhanced therapeutic class) codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-medication-frequency"/>
+      </reference>
+      <name value="MimicMedicationFrequency"/>
+      <description value="The medication frequency reported for medication delivery in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-medication-gsn"/>
+      </reference>
+      <name value="MimicMedicationGsn"/>
+      <description value="The medication GSN codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-medication-method-icu"/>
+      </reference>
+      <name value="MimicMedicationMethodIcu"/>
+      <description value="The medication delivery method used in the ICU for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-medication-method"/>
+      </reference>
+      <name value="MimicMedicationMethod"/>
+      <description value="The medication delivery method for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-medication-route"/>
+      </reference>
+      <name value="MimicMedicationRoute"/>
+      <description value="The medication route during administration for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-medication-site"/>
+      </reference>
+      <name value="MimicMedicationSite"/>
+      <description value="The medication site for administration in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-medication"/>
+      </reference>
+      <name value="MimicMedication"/>
+      <description value="All medication codesystems combined for MIMIC. Contains medication-formulary-drug-cd, medication-ndc, medication-name, medication-poe-iv, medication-icu"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-microbiology-antibiotic"/>
+      </reference>
+      <name value="MimicMicrobiologyAntibiotic"/>
+      <description value="The microbiology antibiotic being tested on an organism in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-microbiology-organism"/>
+      </reference>
+      <name value="MimicMicrobiologyOrganism"/>
+      <description value="The microbiology organism being tested in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-microbiology-test"/>
+      </reference>
+      <name value="MimicMicrobiologyTest"/>
+      <description value="The microbiology test completed in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-observation-category"/>
+      </reference>
+      <name value="MimicObservationCategory"/>
+      <description value="The observation category codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-outputevents-d-items"/>
+      </reference>
+      <name value="MimicOutputeventsDItems"/>
+      <description value="The item codes for outputevents used in MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-procedure-category"/>
+      </reference>
+      <name value="MimicProcedureCategory"/>
+      <description value="The procedure category codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-procedure-icd"/>
+      </reference>
+      <name value="MimicProcedureIcd"/>
+      <description value="The procedure ICD9 and ICD10 codes for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-procedureevents-d-items"/>
+      </reference>
+      <name value="MimicProcedureeventsDItems"/>
+      <description value="The procedure item codes used in the ICU for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-services"/>
+      </reference>
+      <name value="MimicServices"/>
+      <description value="The hospital services for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-specimen-type"/>
+      </reference>
+      <name value="MimicSpecimenType"/>
+      <description value="The specimen type codes for both lab and micro specimen for MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mimic-units"/>
+      </reference>
+      <name value="MimicUnits"/>
+      <description value="The units used throughout MIMIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Index"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="mimic-fhir-mappings.html"/>
+        </extension>
+        <nameUrl value="mimic-fhir-mappings.html"/>
+        <title value="Mimic Fhir Mappings"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="mimic-ed-fhir-mappings.html"/>
+          </extension>
+          <nameUrl value="mimic-ed-fhir-mappings.html"/>
+          <title value="Mimic Ed Fhir Mappings"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="guidance.html"/>
+        </extension>
+        <nameUrl value="guidance.html"/>
+        <title value="Guidance"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="terminology-guide.html"/>
+          </extension>
+          <nameUrl value="terminology-guide.html"/>
+          <title value="Terminology Guide"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="applications.html"/>
+          </extension>
+          <nameUrl value="applications.html"/>
+          <title value="Applications"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="tutorials.html"/>
+          </extension>
+          <nameUrl value="tutorials.html"/>
+          <title value="Tutorials"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="future-work.html"/>
+          </extension>
+          <nameUrl value="future-work.html"/>
+          <title value="Future Work"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="microbiology-background.html"/>
+        </extension>
+        <nameUrl value="microbiology-background.html"/>
+        <title value="Microbiology Background"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="medication-background.html"/>
+          </extension>
+          <nameUrl value="medication-background.html"/>
+          <title value="Medication Background"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="emergency-department-subset.html"/>
+          </extension>
+          <nameUrl value="emergency-department-subset.html"/>
+          <title value="Emergency Department Subset"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="intensive-care-unit-subset.html"/>
+          </extension>
+          <nameUrl value="intensive-care-unit-subset.html"/>
+          <title value="Intensive Care Unit Subset"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="changelog.html"/>
+        </extension>
+        <nameUrl value="changelog.html"/>
+        <title value="Changelog"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

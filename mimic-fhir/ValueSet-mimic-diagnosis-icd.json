@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mimic-diagnosis-icd",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-mimic-diagnosis-icd9.html\"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-diagnosis-icd9</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-mimic-diagnosis-icd10.html\"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-diagnosis-icd10</code></a></li></ul></div>"
+  },
+  "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-diagnosis-icd",
+  "version" : "1.3.0",
+  "name" : "MimicDiagnosisIcd",
+  "title" : "MimicDiagnosisIcd",
+  "status" : "draft",
+  "date" : "2022-09-21T13:59:43-04:00",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "The diagnosis ICD9 and ICD10 codes for MIMIC",
+  "compose" : {
+    "include" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-diagnosis-icd9"
+    },
+    {
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-diagnosis-icd10"
+    }]
+  }
+}

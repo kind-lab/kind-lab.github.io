@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MimicMedicationFrequency - MIMIC Implementation Guide v1.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.83"}
+    h3,h4,h5,h6{--heading-prefix:"7.83"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MIMIC Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.3.0 - Draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mimic-fhir-mappings.html">MIMIC-IV Mapping</a>
+      </li>
+      <li>
+        <a href="mimic-ed-fhir-mappings.html">MIMIC-ED Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General</a>
+      </li>
+      <li>
+        <a href="terminology-guide.html">Terminology</a>
+      </li>
+      <li>
+        <a href="applications.html">Applications</a>
+      </li>
+      <li>
+        <a href="tutorials.html">Tutorials</a>
+      </li>
+      <li>
+        <a href="future-work.html">Future Work</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Subsets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="microbiology-background.html">Microbiology data</a>
+      </li>
+      <li>
+        <a href="medication-background.html">Medication data</a>
+      </li>
+      <li>
+        <a href="emergency-department-subset.html">Emergency Department data</a>
+      </li>
+      <li>
+        <a href="intensive-care-unit-subset.html">Intensive Care Unit data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MimicMedicationFrequency</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MIMIC Implementation Guide - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://mimic.mit.edu/fhir/mimic/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mimic-medication-frequency.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mimic-medication-frequency.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mimic-medication-frequency.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: MimicMedicationFrequency
+
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-frequency<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-frequency"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-frequency|1.3.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2022-09-21
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MimicMedicationFrequency</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>The medication frequency reported for medication delivery in MIMIC</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-mimic-medication-frequency.html">MimicMedicationFrequency</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p>This  code system <code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-frequency</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Q36H<a name="mimic-medication-frequency-Q36H"> </a></td></tr><tr><td style="white-space:nowrap">PRE &amp; POST HYDRATION<a name="mimic-medication-frequency-PRE.38POSTHYDRATION"> </a></td></tr><tr><td style="white-space:nowrap">Q4-6H:PRN<a name="mimic-medication-frequency-Q4-6H.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">X1:PRN<a name="mimic-medication-frequency-X1.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">QTUTHUR<a name="mimic-medication-frequency-QTUTHUR"> </a></td></tr><tr><td style="white-space:nowrap">Q12H:PRN<a name="mimic-medication-frequency-Q12H.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">ONCE:STAT<a name="mimic-medication-frequency-ONCE.58STAT"> </a></td></tr><tr><td style="white-space:nowrap">Q6H<a name="mimic-medication-frequency-Q6H"> </a></td></tr><tr><td style="white-space:nowrap">Q6H:PRN<a name="mimic-medication-frequency-Q6H.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">Q18H<a name="mimic-medication-frequency-Q18H"> </a></td></tr><tr><td style="white-space:nowrap">3X/DAY<a name="mimic-medication-frequency-3X.47DAY"> </a></td></tr><tr><td style="white-space:nowrap">Q1MO<a name="mimic-medication-frequency-Q1MO"> </a></td></tr><tr><td style="white-space:nowrap">DAILY<a name="mimic-medication-frequency-DAILY"> </a></td></tr><tr><td style="white-space:nowrap">POST HD<a name="mimic-medication-frequency-POSTHD"> </a></td></tr><tr><td style="white-space:nowrap">EVERY 3 DAYS<a name="mimic-medication-frequency-EVERY3DAYS"> </a></td></tr><tr><td style="white-space:nowrap">BOLUS<a name="mimic-medication-frequency-BOLUS"> </a></td></tr><tr><td style="white-space:nowrap">X1, THEN POST HD<a name="mimic-medication-frequency-X1.44THENPOSTHD"> </a></td></tr><tr><td style="white-space:nowrap">Q6WEEKS<a name="mimic-medication-frequency-Q6WEEKS"> </a></td></tr><tr><td style="white-space:nowrap">DAYS<a name="mimic-medication-frequency-DAYS"> </a></td></tr><tr><td style="white-space:nowrap">1X/WEEK<a name="mimic-medication-frequency-1X.47WEEK"> </a></td></tr><tr><td style="white-space:nowrap">Q6-8H:PRN<a name="mimic-medication-frequency-Q6-8H.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">Q3H<a name="mimic-medication-frequency-Q3H"> </a></td></tr><tr><td style="white-space:nowrap">Q48H<a name="mimic-medication-frequency-Q48H"> </a></td></tr><tr><td style="white-space:nowrap">BIDWM<a name="mimic-medication-frequency-BIDWM"> </a></td></tr><tr><td style="white-space:nowrap">Q96H<a name="mimic-medication-frequency-Q96H"> </a></td></tr><tr><td style="white-space:nowrap">Q15MIN:PRN<a name="mimic-medication-frequency-Q15MIN.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">Q24H<a name="mimic-medication-frequency-Q24H"> </a></td></tr><tr><td style="white-space:nowrap">MR X1<a name="mimic-medication-frequency-MRX1"> </a></td></tr><tr><td style="white-space:nowrap">HS<a name="mimic-medication-frequency-HS"> </a></td></tr><tr><td style="white-space:nowrap">X1<a name="mimic-medication-frequency-X1"> </a></td></tr><tr><td style="white-space:nowrap">Q72H<a name="mimic-medication-frequency-Q72H"> </a></td></tr><tr><td style="white-space:nowrap">DAILY:PRN<a name="mimic-medication-frequency-DAILY.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">ONCE MR1:PRN<a name="mimic-medication-frequency-ONCEMR1.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">QODHS<a name="mimic-medication-frequency-QODHS"> </a></td></tr><tr><td style="white-space:nowrap">6X/WEEK<a name="mimic-medication-frequency-6X.47WEEK"> </a></td></tr><tr><td style="white-space:nowrap">Q 12H<a name="mimic-medication-frequency-Q12H"> </a></td></tr><tr><td style="white-space:nowrap">QTUTHSA<a name="mimic-medication-frequency-QTUTHSA"> </a></td></tr><tr><td style="white-space:nowrap">EVERY OTHER DAY:PRN<a name="mimic-medication-frequency-EVERYOTHERDAY.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">TITRATE TO RASS<a name="mimic-medication-frequency-TITRATETORASS"> </a></td></tr><tr><td style="white-space:nowrap">Q5H:PRN<a name="mimic-medication-frequency-Q5H.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">QPM:PRN<a name="mimic-medication-frequency-QPM.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">ONCE:PRN<a name="mimic-medication-frequency-ONCE.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">ON CALL TO OR<a name="mimic-medication-frequency-ONCALLTOOR"> </a></td></tr><tr><td style="white-space:nowrap">PRE-HYDRATION<a name="mimic-medication-frequency-PRE-HYDRATION"> </a></td></tr><tr><td style="white-space:nowrap">QID<a name="mimic-medication-frequency-QID"> </a></td></tr><tr><td style="white-space:nowrap">BREAKFAST<a name="mimic-medication-frequency-BREAKFAST"> </a></td></tr><tr><td style="white-space:nowrap">INFUSION<a name="mimic-medication-frequency-INFUSION"> </a></td></tr><tr><td style="white-space:nowrap">TID<a name="mimic-medication-frequency-TID"> </a></td></tr><tr><td style="white-space:nowrap">2X/DAY<a name="mimic-medication-frequency-2X.47DAY"> </a></td></tr><tr><td style="white-space:nowrap">Q6H:ASDIR<a name="mimic-medication-frequency-Q6H.58ASDIR"> </a></td></tr><tr><td style="white-space:nowrap">2X/WEEK<a name="mimic-medication-frequency-2X.47WEEK"> </a></td></tr><tr><td style="white-space:nowrap">7X/DAY<a name="mimic-medication-frequency-7X.47DAY"> </a></td></tr><tr><td style="white-space:nowrap">QHS:PRN<a name="mimic-medication-frequency-QHS.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">QOW<a name="mimic-medication-frequency-QOW"> </a></td></tr><tr><td style="white-space:nowrap">X2 PRN<a name="mimic-medication-frequency-X2PRN"> </a></td></tr><tr><td style="white-space:nowrap">3X/WEEK<a name="mimic-medication-frequency-3X.47WEEK"> </a></td></tr><tr><td style="white-space:nowrap">QID:PRN<a name="mimic-medication-frequency-QID.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">1X<a name="mimic-medication-frequency-1X"> </a></td></tr><tr><td style="white-space:nowrap">QSUN<a name="mimic-medication-frequency-QSUN"> </a></td></tr><tr><td style="white-space:nowrap">ASDIR<a name="mimic-medication-frequency-ASDIR"> </a></td></tr><tr><td style="white-space:nowrap">QPM<a name="mimic-medication-frequency-QPM"> </a></td></tr><tr><td style="white-space:nowrap">TITRATE TO<a name="mimic-medication-frequency-TITRATETO"> </a></td></tr><tr><td style="white-space:nowrap">DAILY16<a name="mimic-medication-frequency-DAILY16"> </a></td></tr><tr><td style="white-space:nowrap">MRX3:PRN<a name="mimic-medication-frequency-MRX3.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">QTUES<a name="mimic-medication-frequency-QTUES"> </a></td></tr><tr><td style="white-space:nowrap">QAM:PRN<a name="mimic-medication-frequency-QAM.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">POST-HYDRATION<a name="mimic-medication-frequency-POST-HYDRATION"> </a></td></tr><tr><td style="white-space:nowrap">Q16H<a name="mimic-medication-frequency-Q16H"> </a></td></tr><tr><td style="white-space:nowrap">5X/WEEK<a name="mimic-medication-frequency-5X.47WEEK"> </a></td></tr><tr><td style="white-space:nowrap">QMOWEFR<a name="mimic-medication-frequency-QMOWEFR"> </a></td></tr><tr><td style="white-space:nowrap">X1 PRN SHIVERING<a name="mimic-medication-frequency-X1PRNSHIVERING"> </a></td></tr><tr><td style="white-space:nowrap">Q4HWA<a name="mimic-medication-frequency-Q4HWA"> </a></td></tr><tr><td style="white-space:nowrap">ONCE<a name="mimic-medication-frequency-ONCE"> </a></td></tr><tr><td style="white-space:nowrap">EVERY 4 WEEKS<a name="mimic-medication-frequency-EVERY4WEEKS"> </a></td></tr><tr><td style="white-space:nowrap">PRN PAIN Q5MIN<a name="mimic-medication-frequency-PRNPAINQ5MIN"> </a></td></tr><tr><td style="white-space:nowrap">QHD<a name="mimic-medication-frequency-QHD"> </a></td></tr><tr><td style="white-space:nowrap">MWF<a name="mimic-medication-frequency-MWF"> </a></td></tr><tr><td style="white-space:nowrap">Q5MIN<a name="mimic-medication-frequency-Q5MIN"> </a></td></tr><tr><td style="white-space:nowrap">Q12H<a name="mimic-medication-frequency-Q12H"> </a></td></tr><tr><td style="white-space:nowrap">1X/DAY<a name="mimic-medication-frequency-1X.47DAY"> </a></td></tr><tr><td style="white-space:nowrap">Q8H:PRN<a name="mimic-medication-frequency-Q8H.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">QAM<a name="mimic-medication-frequency-QAM"> </a></td></tr><tr><td style="white-space:nowrap">Q 24H<a name="mimic-medication-frequency-Q24H"> </a></td></tr><tr><td style="white-space:nowrap">Q2H<a name="mimic-medication-frequency-Q2H"> </a></td></tr><tr><td style="white-space:nowrap">NOON<a name="mimic-medication-frequency-NOON"> </a></td></tr><tr><td style="white-space:nowrap">HD PROTOCOL<a name="mimic-medication-frequency-HDPROTOCOL"> </a></td></tr><tr><td style="white-space:nowrap">QHS<a name="mimic-medication-frequency-QHS"> </a></td></tr><tr><td style="white-space:nowrap">ONCE PER LUMEN (2 LUMEN)<a name="mimic-medication-frequency-ONCEPERLUMEN.402LUMEN.41"> </a></td></tr><tr><td style="white-space:nowrap">Q5 MIN<a name="mimic-medication-frequency-Q5MIN"> </a></td></tr><tr><td style="white-space:nowrap">QMONTHUR<a name="mimic-medication-frequency-QMONTHUR"> </a></td></tr><tr><td style="white-space:nowrap">1XHS<a name="mimic-medication-frequency-1XHS"> </a></td></tr><tr><td style="white-space:nowrap">Q1H PER MOVIPREP PROTOCOL<a name="mimic-medication-frequency-Q1HPERMOVIPREPPROTOCOL"> </a></td></tr><tr><td style="white-space:nowrap">4X/DAY<a name="mimic-medication-frequency-4X.47DAY"> </a></td></tr><tr><td style="white-space:nowrap">PREOP ONCE:PRN, MR1:PRN<a name="mimic-medication-frequency-PREOPONCE.58PRN.44MR1.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">ON CALL<a name="mimic-medication-frequency-ONCALL"> </a></td></tr><tr><td style="white-space:nowrap">BID<a name="mimic-medication-frequency-BID"> </a></td></tr><tr><td style="white-space:nowrap">Q4H<a name="mimic-medication-frequency-Q4H"> </a></td></tr><tr><td style="white-space:nowrap">Q4H:PRN<a name="mimic-medication-frequency-Q4H.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">Q8H<a name="mimic-medication-frequency-Q8H"> </a></td></tr><tr><td style="white-space:nowrap">ONCE PER LUMEN (1 LUMEN)<a name="mimic-medication-frequency-ONCEPERLUMEN.401LUMEN.41"> </a></td></tr><tr><td style="white-space:nowrap">5X/DAY<a name="mimic-medication-frequency-5X.47DAY"> </a></td></tr><tr><td style="white-space:nowrap">PREOP<a name="mimic-medication-frequency-PREOP"> </a></td></tr><tr><td style="white-space:nowrap">Q3H:PRN<a name="mimic-medication-frequency-Q3H.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">SEE INSULIN CHART<a name="mimic-medication-frequency-SEEINSULINCHART"> </a></td></tr><tr><td style="white-space:nowrap">ASDIR8<a name="mimic-medication-frequency-ASDIR8"> </a></td></tr><tr><td style="white-space:nowrap">Q5MIN:PRN<a name="mimic-medication-frequency-Q5MIN.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">MRX1:PRN<a name="mimic-medication-frequency-MRX1.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">TID:PRN<a name="mimic-medication-frequency-TID.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">STAT<a name="mimic-medication-frequency-STAT"> </a></td></tr><tr><td style="white-space:nowrap">TITRATE TO EFFECT<a name="mimic-medication-frequency-TITRATETOEFFECT"> </a></td></tr><tr><td style="white-space:nowrap">ONCE PER LUMEN (3 LUMEN)<a name="mimic-medication-frequency-ONCEPERLUMEN.403LUMEN.41"> </a></td></tr><tr><td style="white-space:nowrap">QIDWMHS<a name="mimic-medication-frequency-QIDWMHS"> </a></td></tr><tr><td style="white-space:nowrap">Q 8H<a name="mimic-medication-frequency-Q8H"> </a></td></tr><tr><td style="white-space:nowrap">QIDPCHS<a name="mimic-medication-frequency-QIDPCHS"> </a></td></tr><tr><td style="white-space:nowrap">QIDACHS<a name="mimic-medication-frequency-QIDACHS"> </a></td></tr><tr><td style="white-space:nowrap">QSAT<a name="mimic-medication-frequency-QSAT"> </a></td></tr><tr><td style="white-space:nowrap">BID:PRN<a name="mimic-medication-frequency-BID.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">PREOP ONCE, MR1:PRN<a name="mimic-medication-frequency-PREOPONCE.44MR1.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">Q30MIN<a name="mimic-medication-frequency-Q30MIN"> </a></td></tr><tr><td style="white-space:nowrap">6X/DAY<a name="mimic-medication-frequency-6X.47DAY"> </a></td></tr><tr><td style="white-space:nowrap">Q2W<a name="mimic-medication-frequency-Q2W"> </a></td></tr><tr><td style="white-space:nowrap">2X<a name="mimic-medication-frequency-2X"> </a></td></tr><tr><td style="white-space:nowrap">LUNCH<a name="mimic-medication-frequency-LUNCH"> </a></td></tr><tr><td style="white-space:nowrap">MRX2:PRN<a name="mimic-medication-frequency-MRX2.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">1X:ASDIR<a name="mimic-medication-frequency-1X.58ASDIR"> </a></td></tr><tr><td style="white-space:nowrap">PRN<a name="mimic-medication-frequency-PRN"> </a></td></tr><tr><td style="white-space:nowrap">IV DRIP<a name="mimic-medication-frequency-IVDRIP"> </a></td></tr><tr><td style="white-space:nowrap">QTHUR<a name="mimic-medication-frequency-QTHUR"> </a></td></tr><tr><td style="white-space:nowrap">ONCE NOW<a name="mimic-medication-frequency-ONCENOW"> </a></td></tr><tr><td style="white-space:nowrap">Q2H PER MOVIPREP PROTOCOL<a name="mimic-medication-frequency-Q2HPERMOVIPREPPROTOCOL"> </a></td></tr><tr><td style="white-space:nowrap">ONCE MR1<a name="mimic-medication-frequency-ONCEMR1"> </a></td></tr><tr><td style="white-space:nowrap">EVERY 5 WEEKS<a name="mimic-medication-frequency-EVERY5WEEKS"> </a></td></tr><tr><td style="white-space:nowrap">Q1H:PRN<a name="mimic-medication-frequency-Q1H.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">Q3MO<a name="mimic-medication-frequency-Q3MO"> </a></td></tr><tr><td style="white-space:nowrap">Q2H:PRN<a name="mimic-medication-frequency-Q2H.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">Q4WEEKS<a name="mimic-medication-frequency-Q4WEEKS"> </a></td></tr><tr><td style="white-space:nowrap">DINNER<a name="mimic-medication-frequency-DINNER"> </a></td></tr><tr><td style="white-space:nowrap">Q6H AND PRN<a name="mimic-medication-frequency-Q6HANDPRN"> </a></td></tr><tr><td style="white-space:nowrap">EVERY 2 WEEKS<a name="mimic-medication-frequency-EVERY2WEEKS"> </a></td></tr><tr><td style="white-space:nowrap">4X/WEEK<a name="mimic-medication-frequency-4X.47WEEK"> </a></td></tr><tr><td style="white-space:nowrap">QMON<a name="mimic-medication-frequency-QMON"> </a></td></tr><tr><td style="white-space:nowrap">TIDAC<a name="mimic-medication-frequency-TIDAC"> </a></td></tr><tr><td style="white-space:nowrap">Q8WEEKS<a name="mimic-medication-frequency-Q8WEEKS"> </a></td></tr><tr><td style="white-space:nowrap">ONCE MR2<a name="mimic-medication-frequency-ONCEMR2"> </a></td></tr><tr><td style="white-space:nowrap">BIDPC<a name="mimic-medication-frequency-BIDPC"> </a></td></tr><tr><td style="white-space:nowrap">Q1H<a name="mimic-medication-frequency-Q1H"> </a></td></tr><tr><td style="white-space:nowrap">8X/DAY<a name="mimic-medication-frequency-8X.47DAY"> </a></td></tr><tr><td style="white-space:nowrap">Q8H:ASDIR<a name="mimic-medication-frequency-Q8H.58ASDIR"> </a></td></tr><tr><td style="white-space:nowrap">QFRI<a name="mimic-medication-frequency-QFRI"> </a></td></tr><tr><td style="white-space:nowrap">NOW X1<a name="mimic-medication-frequency-NOWX1"> </a></td></tr><tr><td style="white-space:nowrap">5X/DAY:PRN<a name="mimic-medication-frequency-5X.47DAY.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">EVERY OTHER DAY<a name="mimic-medication-frequency-EVERYOTHERDAY"> </a></td></tr><tr><td style="white-space:nowrap">Q9WEEKS<a name="mimic-medication-frequency-Q9WEEKS"> </a></td></tr><tr><td style="white-space:nowrap">HS:PRN<a name="mimic-medication-frequency-HS.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">X1 PRN<a name="mimic-medication-frequency-X1PRN"> </a></td></tr><tr><td style="white-space:nowrap">Q30MIN:PRN<a name="mimic-medication-frequency-Q30MIN.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">ONCE PER LUMEN (4 LUMEN)<a name="mimic-medication-frequency-ONCEPERLUMEN.404LUMEN.41"> </a></td></tr><tr><td style="white-space:nowrap">TID W/MEALS<a name="mimic-medication-frequency-TIDW.47MEALS"> </a></td></tr><tr><td style="white-space:nowrap">TIDPC<a name="mimic-medication-frequency-TIDPC"> </a></td></tr><tr><td style="white-space:nowrap">QWED<a name="mimic-medication-frequency-QWED"> </a></td></tr><tr><td style="white-space:nowrap">Q3-4H:PRN<a name="mimic-medication-frequency-Q3-4H.58PRN"> </a></td></tr><tr><td style="white-space:nowrap">DAILY18<a name="mimic-medication-frequency-DAILY18"> </a></td></tr><tr><td style="white-space:nowrap">EVERY 8 WEEKS<a name="mimic-medication-frequency-EVERY8WEEKS"> </a></td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.mimic#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:07-0500">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/Encounter/ExampleMimicEncounterICU> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleMimicEncounterICU"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"^^xsd:anyURI ;
+       fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"ExampleMimicEncounterICU\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;ExampleMimicEncounterICU&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-encounter.html\">MIMIC Encounter</a></p></div><p><b>identifier</b>: <code>http://mimic.mit.edu/fhir/mimic/identifier/encounter-icu</code>/31552399</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'null')</p><p><b>type</b>: Patient encounter procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#308335008)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>period</b>: 2177-07-14 20:38:00-0400 --&gt; 2177-07-15 16:08:36-0400</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-ExampleLocation.html\">Location/ExampleLocation</a> &quot;Trauma SICU (TSICU)&quot;</td><td>2177-07-14 20:38:00-0400 --&gt; 2177-07-15 16:08:36-0400</td></tr></table><p><b>partOf</b>: <a href=\"Encounter-ExampleMimicEncounter.html\">Encounter/ExampleMimicEncounter</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/identifier/encounter-icu"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "31552399" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "ACUTE" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a sct:308335008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "308335008" ] ;
+       fhir:display [ fhir:v "Patient encounter procedure" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Patient/ExampleMimicPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleMimicPatient" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2177-07-14T20:38:00-04:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2177-07-15T16:08:36-04:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <http://mimic.mit.edu/fhir/mimic/Location/ExampleLocation> ;
+       fhir:reference [ fhir:v "Location/ExampleLocation" ]
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2177-07-14T20:38:00-04:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2177-07-15T16:08:36-04:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:partOf [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Encounter/ExampleMimicEncounter> ;
+     fhir:reference [ fhir:v "Encounter/ExampleMimicEncounter" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

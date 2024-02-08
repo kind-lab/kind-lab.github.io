@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleMimicObservationMicroSusc"/>
+  <meta>
+    <profile value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-susc"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ExampleMimicObservationMicroSusc"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ExampleMimicObservationMicroSusc&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mimic-observation-micro-susc.html">MIMIC Observation Micro Susc</a></p></div><p><b>Dilution Details</b>: &lt;=4</p><p><b>identifier</b>: <code>http://mimic.mit.edu/fhir/mimic/identifier/observation-micro-susc</code>/12345</p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: CEFAZOLIN <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mimic-microbiology-antibiotic.html">MimicMicrobiologyAntibiotic</a>#90005)</span></p><p><b>subject</b>: <a href="Patient-ExampleMimicPatient.html">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>effective</b>: 2181-08-25 12:56:00-0400</p><p><b>value</b>: Susceptible <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#S)</span></p><p><b>derivedFrom</b>: <a href="Observation-ExampleMimicObservationMicroOrg.html">Observation/ExampleMimicObservationMicroOrg</a></p></div>
+  </text>
+  <extension url="http://mimic.mit.edu/fhir/mimic/StructureDefinition/dilution-details">
+    <valueQuantity>
+      <value value="4"/>
+      <comparator value="&lt;="/>
+    </valueQuantity>
+  </extension>
+  <identifier>
+    <system value="http://mimic.mit.edu/fhir/mimic/identifier/observation-micro-susc"/>
+    <value value="12345"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-antibiotic"/>
+      <code value="90005"/>
+      <display value="CEFAZOLIN"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExampleMimicPatient"/>
+  </subject>
+  <effectiveDateTime value="2181-08-25T12:56:00-04:00"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="S"/>
+    </coding>
+  </valueCodeableConcept>
+  <derivedFrom>
+    <reference value="Observation/ExampleMimicObservationMicroOrg"/>
+  </derivedFrom>
+</Observation>

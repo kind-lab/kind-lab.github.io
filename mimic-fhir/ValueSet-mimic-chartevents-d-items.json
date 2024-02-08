@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mimic-chartevents-d-items",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><ul><li>Include all codes defined in <a href=\"CodeSystem-mimic-chartevents-d-items.html\"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-chartevents-d-items</code></a></li></ul></div>"
+  },
+  "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-chartevents-d-items",
+  "version" : "1.3.0",
+  "name" : "MimicCharteventsDItems",
+  "title" : "MimicCharteventsDItems",
+  "status" : "draft",
+  "date" : "2022-09-21T13:59:43-04:00",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "The item codes for chartevents used in MIMIC",
+  "compose" : {
+    "include" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-chartevents-d-items"
+    }]
+  }
+}

@@ -1,0 +1,546 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedureevents-d-items> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mimic-procedureevents-d-items"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-mimic-d-items.html\"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-221255\">221255</a></td><td>Trans Esophageal Echo</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225478\">225478</a></td><td>Operation</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-221214\">221214</a></td><td>CT scan</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228169\">228169</a></td><td>Impella Line</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225789\">225789</a></td><td>Sheath (Venous)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229530\">229530</a></td><td>ECMO Outflow Line</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224267\">224267</a></td><td>Cordis/Introducer</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228125\">228125</a></td><td>Family meeting held</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229582\">229582</a></td><td>Portable CT scan</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228228\">228228</a></td><td>Family meeting attempted, unable</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225204\">225204</a></td><td>Midline</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227712\">227712</a></td><td>Chest Tube Removed</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225817\">225817</a></td><td>BAL Fluid Culture</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225448\">225448</a></td><td>Percutaneous Tracheostomy</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225459\">225459</a></td><td>Chest X-Ray</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226124\">226124</a></td><td>ICP Catheter</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225805\">225805</a></td><td>Peritoneal Dialysis</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225432\">225432</a></td><td>Transthoracic Echo</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225440\">225440</a></td><td>Fluoroscopy</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229984\">229984</a></td><td>Sevoflurane (Inhaled)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226476\">226476</a></td><td>Esophogeal Balloon</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225429\">225429</a></td><td>Blakemore / MinnesotaTube Inserted</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229581\">229581</a></td><td>Portable Chest X-Ray</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226236\">226236</a></td><td>Temporary Pacemaker Wires Discontinued</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225470\">225470</a></td><td>OR Sent</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229532\">229532</a></td><td>Indwelling Port</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227711\">227711</a></td><td>Drain Removed</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225428\">225428</a></td><td>Blakemore / Minnesota Tube D/C</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225819\">225819</a></td><td>Brain Death</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224276\">224276</a></td><td>16 Gauge</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225821\">225821</a></td><td>Unplanned Line/Catheter Removal (Patient Initiated)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225477\">225477</a></td><td>Unplanned Extubation (non-patient initiated)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225441\">225441</a></td><td>Hemodialysis</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227551\">227551</a></td><td>Plasma Pheresis.</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228128\">228128</a></td><td>Family updated by MD</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225460\">225460</a></td><td>Cervical Spine</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225203\">225203</a></td><td>Pheresis Catheter</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229983\">229983</a></td><td>Isoflurane (Inhaled)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228130\">228130</a></td><td>NEOB notified</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225399\">225399</a></td><td>Lumbar Puncture</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229578\">229578</a></td><td>Cath Lab (Sent)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225454\">225454</a></td><td>Urine Culture</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227194\">227194</a></td><td>Extubation</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229585\">229585</a></td><td>Surgical Procedure at Bedside</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225444\">225444</a></td><td>Pan Culture</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225406\">225406</a></td><td>Transferred to Floor</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227550\">227550</a></td><td>ERCP (Travel to)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225966\">225966</a></td><td>Nasal Swab</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229525\">229525</a></td><td>Sheath (Arterial)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228126\">228126</a></td><td>Family met with Case Manager</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224560\">224560</a></td><td>PA Catheter</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224268\">224268</a></td><td>Trauma line</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225442\">225442</a></td><td>Liver Biopsy</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229576\">229576</a></td><td>ERCP (Done in unit)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229366\">229366</a></td><td>Epoprostenol (Inhaled)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225794\">225794</a></td><td>Non-invasive Ventilation</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224270\">224270</a></td><td>Dialysis Catheter</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224273\">224273</a></td><td>Presep Catheter</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229996\">229996</a></td><td>Nitrous Oxide (Inhaled)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229614\">229614</a></td><td>EEG (Continuous)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229519\">229519</a></td><td>EVD #1</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225475\">225475</a></td><td>Respiratory Arrest</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228127\">228127</a></td><td>Family met with Social Worker</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225462\">225462</a></td><td>Interventional Radiology</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226474\">226474</a></td><td>ICP Bolt Inserted</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229521\">229521</a></td><td>ICP - PbtO2</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229351\">229351</a></td><td>Foley Catheter</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225437\">225437</a></td><td>CSF Culture</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225199\">225199</a></td><td>Triple Introducer</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229522\">229522</a></td><td>SEPS (Subdural Evacuating Port System)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229516\">229516</a></td><td>Single Lumen</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226237\">226237</a></td><td>Open Tracheostomy</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-221216\">221216</a></td><td>X-ray</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225792\">225792</a></td><td>Invasive Ventilation</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229531\">229531</a></td><td>Tunneled Access Line</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225443\">225443</a></td><td>Nuclear Medicine</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228201\">228201</a></td><td>Tandem Heart Inflow Line</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227719\">227719</a></td><td>AVA</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-221219\">221219</a></td><td>Venogram</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229533\">229533</a></td><td>Camino</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229468\">229468</a></td><td>24 Gauge</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227714\">227714</a></td><td>Pericardial Drain Removed</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225467\">225467</a></td><td>Chest Opened</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229380\">229380</a></td><td>Nursing Water Swallow Screening</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229579\">229579</a></td><td>Transfer Intercampus by Ambulance</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225461\">225461</a></td><td>Pelvis</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225967\">225967</a></td><td>Rectal Swab</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229514\">229514</a></td><td>EKOS</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225451\">225451</a></td><td>Sputum Culture</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224566\">224566</a></td><td>14 Gauge</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225752\">225752</a></td><td>Arterial Line</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225818\">225818</a></td><td>Pleural Fluid Culture</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225465\">225465</a></td><td>Chest Pain</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224272\">224272</a></td><td>IABP line</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229575\">229575</a></td><td>Travel to Radiology</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225474\">225474</a></td><td>Fall</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224274\">224274</a></td><td>22 Gauge</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225476\">225476</a></td><td>Unplanned Line/Catheter Removal (Non-Patient initated)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224263\">224263</a></td><td>Multi Lumen</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225427\">225427</a></td><td>Angiography</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229755\">229755</a></td><td>Trigger Initiated</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225430\">225430</a></td><td>Cardiac Cath</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229527\">229527</a></td><td>Centrimag Inflow Line</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225456\">225456</a></td><td>Ventricular Drain</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-221217\">221217</a></td><td>Ultrasound</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229620\">229620</a></td><td>Massive Transfusion</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225449\">225449</a></td><td>Pericardiocentesis</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224269\">224269</a></td><td>CCO PAC</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225433\">225433</a></td><td>Chest Tube Placed</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225315\">225315</a></td><td>Tunneled (Hickman) Line</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225814\">225814</a></td><td>Stool Culture</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225479\">225479</a></td><td>Thoracentesis</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229584\">229584</a></td><td>EMG</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229524\">229524</a></td><td>Lumbar Drain</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225803\">225803</a></td><td>Dialysis - CVVHD</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227715\">227715</a></td><td>TLS Clearance</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225468\">225468</a></td><td>Unplanned Extubation (patient-initiated)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229515\">229515</a></td><td>Avalon/Protek Duo</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229520\">229520</a></td><td>EVD #2</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225445\">225445</a></td><td>Paracentesis</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224385\">224385</a></td><td>Intubation</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224264\">224264</a></td><td>PICC Line</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228136\">228136</a></td><td>Family notified of transfer</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225434\">225434</a></td><td>Colonoscopy</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229518\">229518</a></td><td>ICP - Camino</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229577\">229577</a></td><td>Cath Lab (Received)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225464\">225464</a></td><td>Cardioversion/Defibrillation</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225463\">225463</a></td><td>TLS Spine</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226475\">226475</a></td><td>Intraventricular Drain Inserted</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225202\">225202</a></td><td>Indwelling Port (PortaCath)</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225802\">225802</a></td><td>Dialysis - CRRT</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225809\">225809</a></td><td>Dialysis - CVVHDF</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225401\">225401</a></td><td>Blood Cultured</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225815\">225815</a></td><td>Peritoneal Fluid</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229580\">229580</a></td><td>Line Placement at Bedside</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225447\">225447</a></td><td>Percutaneous Drain Insertion</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227713\">227713</a></td><td>Epidural Placement</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226477\">226477</a></td><td>Temporary Pacemaker Wires Inserted</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225439\">225439</a></td><td>Endoscopy</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229517\">229517</a></td><td>Multi Lumen Cooling Catheter</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225955\">225955</a></td><td>Dialysis - SCUF</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225472\">225472</a></td><td>Pneumothorax</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225446\">225446</a></td><td>PEG Insertion</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225450\">225450</a></td><td>Radiation Therapy</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225436\">225436</a></td><td>CRRT Filter Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225469\">225469</a></td><td>OR Received</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229528\">229528</a></td><td>Centrimag Outflow Line</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225761\">225761</a></td><td>Sheath Insertion</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229526\">229526</a></td><td>MAC</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225820\">225820</a></td><td>C-Spine Clearance</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229523\">229523</a></td><td>Subdural Drain</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228129\">228129</a></td><td>Family updated by RN</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-221223\">221223</a></td><td>EEG</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229529\">229529</a></td><td>ECMO Inflow Line</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224275\">224275</a></td><td>20 Gauge</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-223253\">223253</a></td><td>Magnetic Resonance Imaging</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225400\">225400</a></td><td>Bronchoscopy</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229501\">229501</a></td><td>Small Bore Nasal Enteral Tube Placement</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229298\">229298</a></td><td>Speech and Swallow Evaluation</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225402\">225402</a></td><td>EKG</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228202\">228202</a></td><td>Tandem Heart Outflow Line</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228286\">228286</a></td><td>Intraosseous Device</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225457\">225457</a></td><td>Abdominal X-Ray</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228715\">228715</a></td><td>Transcranial Doppler</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225205\">225205</a></td><td>RIC</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229586\">229586</a></td><td>VAC Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224277\">224277</a></td><td>18 Gauge</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225466\">225466</a></td><td>Cardiac Arrest</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225816\">225816</a></td><td>Wound Culture</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedureevents-d-items"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.0"] ; # 
+  fhir:name [ fhir:v "MimicProcedureeventsDItems"] ; # 
+  fhir:title [ fhir:v "MimicProcedureeventsDItems"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-21T13:59:43-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The procedure item codes used in the ICU for MIMIC"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "221255" ] ;
+         fhir:display [ fhir:v "Trans Esophageal Echo" ]
+       ] [
+         fhir:code [ fhir:v "225478" ] ;
+         fhir:display [ fhir:v "Operation" ]
+       ] [
+         fhir:code [ fhir:v "221214" ] ;
+         fhir:display [ fhir:v "CT scan" ]
+       ] [
+         fhir:code [ fhir:v "228169" ] ;
+         fhir:display [ fhir:v "Impella Line" ]
+       ] [
+         fhir:code [ fhir:v "225789" ] ;
+         fhir:display [ fhir:v "Sheath (Venous)" ]
+       ] [
+         fhir:code [ fhir:v "229530" ] ;
+         fhir:display [ fhir:v "ECMO Outflow Line" ]
+       ] [
+         fhir:code [ fhir:v "224267" ] ;
+         fhir:display [ fhir:v "Cordis/Introducer" ]
+       ] [
+         fhir:code [ fhir:v "228125" ] ;
+         fhir:display [ fhir:v "Family meeting held" ]
+       ] [
+         fhir:code [ fhir:v "229582" ] ;
+         fhir:display [ fhir:v "Portable CT scan" ]
+       ] [
+         fhir:code [ fhir:v "228228" ] ;
+         fhir:display [ fhir:v "Family meeting attempted, unable" ]
+       ] [
+         fhir:code [ fhir:v "225204" ] ;
+         fhir:display [ fhir:v "Midline" ]
+       ] [
+         fhir:code [ fhir:v "227712" ] ;
+         fhir:display [ fhir:v "Chest Tube Removed" ]
+       ] [
+         fhir:code [ fhir:v "225817" ] ;
+         fhir:display [ fhir:v "BAL Fluid Culture" ]
+       ] [
+         fhir:code [ fhir:v "225448" ] ;
+         fhir:display [ fhir:v "Percutaneous Tracheostomy" ]
+       ] [
+         fhir:code [ fhir:v "225459" ] ;
+         fhir:display [ fhir:v "Chest X-Ray" ]
+       ] [
+         fhir:code [ fhir:v "226124" ] ;
+         fhir:display [ fhir:v "ICP Catheter" ]
+       ] [
+         fhir:code [ fhir:v "225805" ] ;
+         fhir:display [ fhir:v "Peritoneal Dialysis" ]
+       ] [
+         fhir:code [ fhir:v "225432" ] ;
+         fhir:display [ fhir:v "Transthoracic Echo" ]
+       ] [
+         fhir:code [ fhir:v "225440" ] ;
+         fhir:display [ fhir:v "Fluoroscopy" ]
+       ] [
+         fhir:code [ fhir:v "229984" ] ;
+         fhir:display [ fhir:v "Sevoflurane (Inhaled)" ]
+       ] [
+         fhir:code [ fhir:v "226476" ] ;
+         fhir:display [ fhir:v "Esophogeal Balloon" ]
+       ] [
+         fhir:code [ fhir:v "225429" ] ;
+         fhir:display [ fhir:v "Blakemore / MinnesotaTube Inserted" ]
+       ] [
+         fhir:code [ fhir:v "229581" ] ;
+         fhir:display [ fhir:v "Portable Chest X-Ray" ]
+       ] [
+         fhir:code [ fhir:v "226236" ] ;
+         fhir:display [ fhir:v "Temporary Pacemaker Wires Discontinued" ]
+       ] [
+         fhir:code [ fhir:v "225470" ] ;
+         fhir:display [ fhir:v "OR Sent" ]
+       ] [
+         fhir:code [ fhir:v "229532" ] ;
+         fhir:display [ fhir:v "Indwelling Port" ]
+       ] [
+         fhir:code [ fhir:v "227711" ] ;
+         fhir:display [ fhir:v "Drain Removed" ]
+       ] [
+         fhir:code [ fhir:v "225428" ] ;
+         fhir:display [ fhir:v "Blakemore / Minnesota Tube D/C" ]
+       ] [
+         fhir:code [ fhir:v "225819" ] ;
+         fhir:display [ fhir:v "Brain Death" ]
+       ] [
+         fhir:code [ fhir:v "224276" ] ;
+         fhir:display [ fhir:v "16 Gauge" ]
+       ] [
+         fhir:code [ fhir:v "225821" ] ;
+         fhir:display [ fhir:v "Unplanned Line/Catheter Removal (Patient Initiated)" ]
+       ] [
+         fhir:code [ fhir:v "225477" ] ;
+         fhir:display [ fhir:v "Unplanned Extubation (non-patient initiated)" ]
+       ] [
+         fhir:code [ fhir:v "225441" ] ;
+         fhir:display [ fhir:v "Hemodialysis" ]
+       ] [
+         fhir:code [ fhir:v "227551" ] ;
+         fhir:display [ fhir:v "Plasma Pheresis." ]
+       ] [
+         fhir:code [ fhir:v "228128" ] ;
+         fhir:display [ fhir:v "Family updated by MD" ]
+       ] [
+         fhir:code [ fhir:v "225460" ] ;
+         fhir:display [ fhir:v "Cervical Spine" ]
+       ] [
+         fhir:code [ fhir:v "225203" ] ;
+         fhir:display [ fhir:v "Pheresis Catheter" ]
+       ] [
+         fhir:code [ fhir:v "229983" ] ;
+         fhir:display [ fhir:v "Isoflurane (Inhaled)" ]
+       ] [
+         fhir:code [ fhir:v "228130" ] ;
+         fhir:display [ fhir:v "NEOB notified" ]
+       ] [
+         fhir:code [ fhir:v "225399" ] ;
+         fhir:display [ fhir:v "Lumbar Puncture" ]
+       ] [
+         fhir:code [ fhir:v "229578" ] ;
+         fhir:display [ fhir:v "Cath Lab (Sent)" ]
+       ] [
+         fhir:code [ fhir:v "225454" ] ;
+         fhir:display [ fhir:v "Urine Culture" ]
+       ] [
+         fhir:code [ fhir:v "227194" ] ;
+         fhir:display [ fhir:v "Extubation" ]
+       ] [
+         fhir:code [ fhir:v "229585" ] ;
+         fhir:display [ fhir:v "Surgical Procedure at Bedside" ]
+       ] [
+         fhir:code [ fhir:v "225444" ] ;
+         fhir:display [ fhir:v "Pan Culture" ]
+       ] [
+         fhir:code [ fhir:v "225406" ] ;
+         fhir:display [ fhir:v "Transferred to Floor" ]
+       ] [
+         fhir:code [ fhir:v "227550" ] ;
+         fhir:display [ fhir:v "ERCP (Travel to)" ]
+       ] [
+         fhir:code [ fhir:v "225966" ] ;
+         fhir:display [ fhir:v "Nasal Swab" ]
+       ] [
+         fhir:code [ fhir:v "229525" ] ;
+         fhir:display [ fhir:v "Sheath (Arterial)" ]
+       ] [
+         fhir:code [ fhir:v "228126" ] ;
+         fhir:display [ fhir:v "Family met with Case Manager" ]
+       ] [
+         fhir:code [ fhir:v "224560" ] ;
+         fhir:display [ fhir:v "PA Catheter" ]
+       ] [
+         fhir:code [ fhir:v "224268" ] ;
+         fhir:display [ fhir:v "Trauma line" ]
+       ] [
+         fhir:code [ fhir:v "225442" ] ;
+         fhir:display [ fhir:v "Liver Biopsy" ]
+       ] [
+         fhir:code [ fhir:v "229576" ] ;
+         fhir:display [ fhir:v "ERCP (Done in unit)" ]
+       ] [
+         fhir:code [ fhir:v "229366" ] ;
+         fhir:display [ fhir:v "Epoprostenol (Inhaled)" ]
+       ] [
+         fhir:code [ fhir:v "225794" ] ;
+         fhir:display [ fhir:v "Non-invasive Ventilation" ]
+       ] [
+         fhir:code [ fhir:v "224270" ] ;
+         fhir:display [ fhir:v "Dialysis Catheter" ]
+       ] [
+         fhir:code [ fhir:v "224273" ] ;
+         fhir:display [ fhir:v "Presep Catheter" ]
+       ] [
+         fhir:code [ fhir:v "229996" ] ;
+         fhir:display [ fhir:v "Nitrous Oxide (Inhaled)" ]
+       ] [
+         fhir:code [ fhir:v "229614" ] ;
+         fhir:display [ fhir:v "EEG (Continuous)" ]
+       ] [
+         fhir:code [ fhir:v "229519" ] ;
+         fhir:display [ fhir:v "EVD #1" ]
+       ] [
+         fhir:code [ fhir:v "225475" ] ;
+         fhir:display [ fhir:v "Respiratory Arrest" ]
+       ] [
+         fhir:code [ fhir:v "228127" ] ;
+         fhir:display [ fhir:v "Family met with Social Worker" ]
+       ] [
+         fhir:code [ fhir:v "225462" ] ;
+         fhir:display [ fhir:v "Interventional Radiology" ]
+       ] [
+         fhir:code [ fhir:v "226474" ] ;
+         fhir:display [ fhir:v "ICP Bolt Inserted" ]
+       ] [
+         fhir:code [ fhir:v "229521" ] ;
+         fhir:display [ fhir:v "ICP - PbtO2" ]
+       ] [
+         fhir:code [ fhir:v "229351" ] ;
+         fhir:display [ fhir:v "Foley Catheter" ]
+       ] [
+         fhir:code [ fhir:v "225437" ] ;
+         fhir:display [ fhir:v "CSF Culture" ]
+       ] [
+         fhir:code [ fhir:v "225199" ] ;
+         fhir:display [ fhir:v "Triple Introducer" ]
+       ] [
+         fhir:code [ fhir:v "229522" ] ;
+         fhir:display [ fhir:v "SEPS (Subdural Evacuating Port System)" ]
+       ] [
+         fhir:code [ fhir:v "229516" ] ;
+         fhir:display [ fhir:v "Single Lumen" ]
+       ] [
+         fhir:code [ fhir:v "226237" ] ;
+         fhir:display [ fhir:v "Open Tracheostomy" ]
+       ] [
+         fhir:code [ fhir:v "221216" ] ;
+         fhir:display [ fhir:v "X-ray" ]
+       ] [
+         fhir:code [ fhir:v "225792" ] ;
+         fhir:display [ fhir:v "Invasive Ventilation" ]
+       ] [
+         fhir:code [ fhir:v "229531" ] ;
+         fhir:display [ fhir:v "Tunneled Access Line" ]
+       ] [
+         fhir:code [ fhir:v "225443" ] ;
+         fhir:display [ fhir:v "Nuclear Medicine" ]
+       ] [
+         fhir:code [ fhir:v "228201" ] ;
+         fhir:display [ fhir:v "Tandem Heart Inflow Line" ]
+       ] [
+         fhir:code [ fhir:v "227719" ] ;
+         fhir:display [ fhir:v "AVA" ]
+       ] [
+         fhir:code [ fhir:v "221219" ] ;
+         fhir:display [ fhir:v "Venogram" ]
+       ] [
+         fhir:code [ fhir:v "229533" ] ;
+         fhir:display [ fhir:v "Camino" ]
+       ] [
+         fhir:code [ fhir:v "229468" ] ;
+         fhir:display [ fhir:v "24 Gauge" ]
+       ] [
+         fhir:code [ fhir:v "227714" ] ;
+         fhir:display [ fhir:v "Pericardial Drain Removed" ]
+       ] [
+         fhir:code [ fhir:v "225467" ] ;
+         fhir:display [ fhir:v "Chest Opened" ]
+       ] [
+         fhir:code [ fhir:v "229380" ] ;
+         fhir:display [ fhir:v "Nursing Water Swallow Screening" ]
+       ] [
+         fhir:code [ fhir:v "229579" ] ;
+         fhir:display [ fhir:v "Transfer Intercampus by Ambulance" ]
+       ] [
+         fhir:code [ fhir:v "225461" ] ;
+         fhir:display [ fhir:v "Pelvis" ]
+       ] [
+         fhir:code [ fhir:v "225967" ] ;
+         fhir:display [ fhir:v "Rectal Swab" ]
+       ] [
+         fhir:code [ fhir:v "229514" ] ;
+         fhir:display [ fhir:v "EKOS" ]
+       ] [
+         fhir:code [ fhir:v "225451" ] ;
+         fhir:display [ fhir:v "Sputum Culture" ]
+       ] [
+         fhir:code [ fhir:v "224566" ] ;
+         fhir:display [ fhir:v "14 Gauge" ]
+       ] [
+         fhir:code [ fhir:v "225752" ] ;
+         fhir:display [ fhir:v "Arterial Line" ]
+       ] [
+         fhir:code [ fhir:v "225818" ] ;
+         fhir:display [ fhir:v "Pleural Fluid Culture" ]
+       ] [
+         fhir:code [ fhir:v "225465" ] ;
+         fhir:display [ fhir:v "Chest Pain" ]
+       ] [
+         fhir:code [ fhir:v "224272" ] ;
+         fhir:display [ fhir:v "IABP line" ]
+       ] [
+         fhir:code [ fhir:v "229575" ] ;
+         fhir:display [ fhir:v "Travel to Radiology" ]
+       ] [
+         fhir:code [ fhir:v "225474" ] ;
+         fhir:display [ fhir:v "Fall" ]
+       ] [
+         fhir:code [ fhir:v "224274" ] ;
+         fhir:display [ fhir:v "22 Gauge" ]
+       ] [
+         fhir:code [ fhir:v "225476" ] ;
+         fhir:display [ fhir:v "Unplanned Line/Catheter Removal (Non-Patient initated)" ]
+       ] [
+         fhir:code [ fhir:v "224263" ] ;
+         fhir:display [ fhir:v "Multi Lumen" ]
+       ] [
+         fhir:code [ fhir:v "225427" ] ;
+         fhir:display [ fhir:v "Angiography" ]
+       ] [
+         fhir:code [ fhir:v "229755" ] ;
+         fhir:display [ fhir:v "Trigger Initiated" ]
+       ] [
+         fhir:code [ fhir:v "225430" ] ;
+         fhir:display [ fhir:v "Cardiac Cath" ]
+       ] [
+         fhir:code [ fhir:v "229527" ] ;
+         fhir:display [ fhir:v "Centrimag Inflow Line" ]
+       ] [
+         fhir:code [ fhir:v "225456" ] ;
+         fhir:display [ fhir:v "Ventricular Drain" ]
+       ] [
+         fhir:code [ fhir:v "221217" ] ;
+         fhir:display [ fhir:v "Ultrasound" ]
+       ] [
+         fhir:code [ fhir:v "229620" ] ;
+         fhir:display [ fhir:v "Massive Transfusion" ]
+       ] [
+         fhir:code [ fhir:v "225449" ] ;
+         fhir:display [ fhir:v "Pericardiocentesis" ]
+       ] [
+         fhir:code [ fhir:v "224269" ] ;
+         fhir:display [ fhir:v "CCO PAC" ]
+       ] [
+         fhir:code [ fhir:v "225433" ] ;
+         fhir:display [ fhir:v "Chest Tube Placed" ]
+       ] [
+         fhir:code [ fhir:v "225315" ] ;
+         fhir:display [ fhir:v "Tunneled (Hickman) Line" ]
+       ] [
+         fhir:code [ fhir:v "225814" ] ;
+         fhir:display [ fhir:v "Stool Culture" ]
+       ] [
+         fhir:code [ fhir:v "225479" ] ;
+         fhir:display [ fhir:v "Thoracentesis" ]
+       ] [
+         fhir:code [ fhir:v "229584" ] ;
+         fhir:display [ fhir:v "EMG" ]
+       ] [
+         fhir:code [ fhir:v "229524" ] ;
+         fhir:display [ fhir:v "Lumbar Drain" ]
+       ] [
+         fhir:code [ fhir:v "225803" ] ;
+         fhir:display [ fhir:v "Dialysis - CVVHD" ]
+       ] [
+         fhir:code [ fhir:v "227715" ] ;
+         fhir:display [ fhir:v "TLS Clearance" ]
+       ] [
+         fhir:code [ fhir:v "225468" ] ;
+         fhir:display [ fhir:v "Unplanned Extubation (patient-initiated)" ]
+       ] [
+         fhir:code [ fhir:v "229515" ] ;
+         fhir:display [ fhir:v "Avalon/Protek Duo" ]
+       ] [
+         fhir:code [ fhir:v "229520" ] ;
+         fhir:display [ fhir:v "EVD #2" ]
+       ] [
+         fhir:code [ fhir:v "225445" ] ;
+         fhir:display [ fhir:v "Paracentesis" ]
+       ] [
+         fhir:code [ fhir:v "224385" ] ;
+         fhir:display [ fhir:v "Intubation" ]
+       ] [
+         fhir:code [ fhir:v "224264" ] ;
+         fhir:display [ fhir:v "PICC Line" ]
+       ] [
+         fhir:code [ fhir:v "228136" ] ;
+         fhir:display [ fhir:v "Family notified of transfer" ]
+       ] [
+         fhir:code [ fhir:v "225434" ] ;
+         fhir:display [ fhir:v "Colonoscopy" ]
+       ] [
+         fhir:code [ fhir:v "229518" ] ;
+         fhir:display [ fhir:v "ICP - Camino" ]
+       ] [
+         fhir:code [ fhir:v "229577" ] ;
+         fhir:display [ fhir:v "Cath Lab (Received)" ]
+       ] [
+         fhir:code [ fhir:v "225464" ] ;
+         fhir:display [ fhir:v "Cardioversion/Defibrillation" ]
+       ] [
+         fhir:code [ fhir:v "225463" ] ;
+         fhir:display [ fhir:v "TLS Spine" ]
+       ] [
+         fhir:code [ fhir:v "226475" ] ;
+         fhir:display [ fhir:v "Intraventricular Drain Inserted" ]
+       ] [
+         fhir:code [ fhir:v "225202" ] ;
+         fhir:display [ fhir:v "Indwelling Port (PortaCath)" ]
+       ] [
+         fhir:code [ fhir:v "225802" ] ;
+         fhir:display [ fhir:v "Dialysis - CRRT" ]
+       ] [
+         fhir:code [ fhir:v "225809" ] ;
+         fhir:display [ fhir:v "Dialysis - CVVHDF" ]
+       ] [
+         fhir:code [ fhir:v "225401" ] ;
+         fhir:display [ fhir:v "Blood Cultured" ]
+       ] [
+         fhir:code [ fhir:v "225815" ] ;
+         fhir:display [ fhir:v "Peritoneal Fluid" ]
+       ] [
+         fhir:code [ fhir:v "229580" ] ;
+         fhir:display [ fhir:v "Line Placement at Bedside" ]
+       ] [
+         fhir:code [ fhir:v "225447" ] ;
+         fhir:display [ fhir:v "Percutaneous Drain Insertion" ]
+       ] [
+         fhir:code [ fhir:v "227713" ] ;
+         fhir:display [ fhir:v "Epidural Placement" ]
+       ] [
+         fhir:code [ fhir:v "226477" ] ;
+         fhir:display [ fhir:v "Temporary Pacemaker Wires Inserted" ]
+       ] [
+         fhir:code [ fhir:v "225439" ] ;
+         fhir:display [ fhir:v "Endoscopy" ]
+       ] [
+         fhir:code [ fhir:v "229517" ] ;
+         fhir:display [ fhir:v "Multi Lumen Cooling Catheter" ]
+       ] [
+         fhir:code [ fhir:v "225955" ] ;
+         fhir:display [ fhir:v "Dialysis - SCUF" ]
+       ] [
+         fhir:code [ fhir:v "225472" ] ;
+         fhir:display [ fhir:v "Pneumothorax" ]
+       ] [
+         fhir:code [ fhir:v "225446" ] ;
+         fhir:display [ fhir:v "PEG Insertion" ]
+       ] [
+         fhir:code [ fhir:v "225450" ] ;
+         fhir:display [ fhir:v "Radiation Therapy" ]
+       ] [
+         fhir:code [ fhir:v "225436" ] ;
+         fhir:display [ fhir:v "CRRT Filter Change" ]
+       ] [
+         fhir:code [ fhir:v "225469" ] ;
+         fhir:display [ fhir:v "OR Received" ]
+       ] [
+         fhir:code [ fhir:v "229528" ] ;
+         fhir:display [ fhir:v "Centrimag Outflow Line" ]
+       ] [
+         fhir:code [ fhir:v "225761" ] ;
+         fhir:display [ fhir:v "Sheath Insertion" ]
+       ] [
+         fhir:code [ fhir:v "229526" ] ;
+         fhir:display [ fhir:v "MAC" ]
+       ] [
+         fhir:code [ fhir:v "225820" ] ;
+         fhir:display [ fhir:v "C-Spine Clearance" ]
+       ] [
+         fhir:code [ fhir:v "229523" ] ;
+         fhir:display [ fhir:v "Subdural Drain" ]
+       ] [
+         fhir:code [ fhir:v "228129" ] ;
+         fhir:display [ fhir:v "Family updated by RN" ]
+       ] [
+         fhir:code [ fhir:v "221223" ] ;
+         fhir:display [ fhir:v "EEG" ]
+       ] [
+         fhir:code [ fhir:v "229529" ] ;
+         fhir:display [ fhir:v "ECMO Inflow Line" ]
+       ] [
+         fhir:code [ fhir:v "224275" ] ;
+         fhir:display [ fhir:v "20 Gauge" ]
+       ] [
+         fhir:code [ fhir:v "223253" ] ;
+         fhir:display [ fhir:v "Magnetic Resonance Imaging" ]
+       ] [
+         fhir:code [ fhir:v "225400" ] ;
+         fhir:display [ fhir:v "Bronchoscopy" ]
+       ] [
+         fhir:code [ fhir:v "229501" ] ;
+         fhir:display [ fhir:v "Small Bore Nasal Enteral Tube Placement" ]
+       ] [
+         fhir:code [ fhir:v "229298" ] ;
+         fhir:display [ fhir:v "Speech and Swallow Evaluation" ]
+       ] [
+         fhir:code [ fhir:v "225402" ] ;
+         fhir:display [ fhir:v "EKG" ]
+       ] [
+         fhir:code [ fhir:v "228202" ] ;
+         fhir:display [ fhir:v "Tandem Heart Outflow Line" ]
+       ] [
+         fhir:code [ fhir:v "228286" ] ;
+         fhir:display [ fhir:v "Intraosseous Device" ]
+       ] [
+         fhir:code [ fhir:v "225457" ] ;
+         fhir:display [ fhir:v "Abdominal X-Ray" ]
+       ] [
+         fhir:code [ fhir:v "228715" ] ;
+         fhir:display [ fhir:v "Transcranial Doppler" ]
+       ] [
+         fhir:code [ fhir:v "225205" ] ;
+         fhir:display [ fhir:v "RIC" ]
+       ] [
+         fhir:code [ fhir:v "229586" ] ;
+         fhir:display [ fhir:v "VAC Change" ]
+       ] [
+         fhir:code [ fhir:v "224277" ] ;
+         fhir:display [ fhir:v "18 Gauge" ]
+       ] [
+         fhir:code [ fhir:v "225466" ] ;
+         fhir:display [ fhir:v "Cardiac Arrest" ]
+       ] [
+         fhir:code [ fhir:v "225816" ] ;
+         fhir:display [ fhir:v "Wound Culture" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

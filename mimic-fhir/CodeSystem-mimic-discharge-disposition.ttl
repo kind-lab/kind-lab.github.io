@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-discharge-disposition> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mimic-discharge-disposition"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This  code system <code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-discharge-disposition</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">ACUTE HOSPITAL<a name=\"mimic-discharge-disposition-ACUTEHOSPITAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">REHAB<a name=\"mimic-discharge-disposition-REHAB\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LEFT AGAINST MEDICAL ADVICE<a name=\"mimic-discharge-disposition-LEFTAGAINSTMEDICALADVICE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OTHER<a name=\"mimic-discharge-disposition-OTHER\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PSYCH FACILITY<a name=\"mimic-discharge-disposition-PSYCHFACILITY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EXPIRED<a name=\"mimic-discharge-disposition-EXPIRED\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HOME<a name=\"mimic-discharge-disposition-HOME\"> </a></td></tr><tr><td style=\"white-space:nowrap\">AGAINST ADVICE<a name=\"mimic-discharge-disposition-AGAINSTADVICE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TRANSFER<a name=\"mimic-discharge-disposition-TRANSFER\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HOSPICE<a name=\"mimic-discharge-disposition-HOSPICE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ELOPED<a name=\"mimic-discharge-disposition-ELOPED\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SKILLED NURSING FACILITY<a name=\"mimic-discharge-disposition-SKILLEDNURSINGFACILITY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OTHER FACILITY<a name=\"mimic-discharge-disposition-OTHERFACILITY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CHRONIC/LONG TERM ACUTE CARE<a name=\"mimic-discharge-disposition-CHRONIC.47LONGTERMACUTECARE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HOME HEALTH CARE<a name=\"mimic-discharge-disposition-HOMEHEALTHCARE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HEALTHCARE FACILITY<a name=\"mimic-discharge-disposition-HEALTHCAREFACILITY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LEFT WITHOUT BEING SEEN<a name=\"mimic-discharge-disposition-LEFTWITHOUTBEINGSEEN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ADMITTED<a name=\"mimic-discharge-disposition-ADMITTED\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ASSISTED LIVING<a name=\"mimic-discharge-disposition-ASSISTEDLIVING\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DIED<a name=\"mimic-discharge-disposition-DIED\"> </a></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-discharge-disposition"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.0"] ; # 
+  fhir:name [ fhir:v "MimicDischargeDisposition"] ; # 
+  fhir:title [ fhir:v "MimicDischargeDisposition"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-21T13:59:43-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The discharge disposition for MIMIC"] ; # 
+  fhir:valueSet [
+     fhir:v "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-discharge-disposition"^^xsd:anyURI ;
+     fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-discharge-disposition>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ACUTE HOSPITAL" ]
+  ] [
+     fhir:code [ fhir:v "REHAB" ]
+  ] [
+     fhir:code [ fhir:v "LEFT AGAINST MEDICAL ADVICE" ]
+  ] [
+     fhir:code [ fhir:v "OTHER" ]
+  ] [
+     fhir:code [ fhir:v "PSYCH FACILITY" ]
+  ] [
+     fhir:code [ fhir:v "EXPIRED" ]
+  ] [
+     fhir:code [ fhir:v "HOME" ]
+  ] [
+     fhir:code [ fhir:v "AGAINST ADVICE" ]
+  ] [
+     fhir:code [ fhir:v "TRANSFER" ]
+  ] [
+     fhir:code [ fhir:v "HOSPICE" ]
+  ] [
+     fhir:code [ fhir:v "ELOPED" ]
+  ] [
+     fhir:code [ fhir:v "SKILLED NURSING FACILITY" ]
+  ] [
+     fhir:code [ fhir:v "OTHER FACILITY" ]
+  ] [
+     fhir:code [ fhir:v "CHRONIC/LONG TERM ACUTE CARE" ]
+  ] [
+     fhir:code [ fhir:v "HOME HEALTH CARE" ]
+  ] [
+     fhir:code [ fhir:v "HEALTHCARE FACILITY" ]
+  ] [
+     fhir:code [ fhir:v "LEFT WITHOUT BEING SEEN" ]
+  ] [
+     fhir:code [ fhir:v "ADMITTED" ]
+  ] [
+     fhir:code [ fhir:v "ASSISTED LIVING" ]
+  ] [
+     fhir:code [ fhir:v "DIED" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

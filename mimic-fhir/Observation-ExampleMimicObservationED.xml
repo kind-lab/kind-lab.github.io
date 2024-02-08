@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleMimicObservationED"/>
+  <meta>
+    <profile value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-ed"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ExampleMimicObservationED"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ExampleMimicObservationED&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mimic-observation-ed.html">MIMIC-ED Observation</a></p></div><p><b>partOf</b>: <a href="Procedure-ExampleMimicProcedureED.html">Procedure/ExampleMimicProcedureED</a></p><p><b>status</b>: final</p><p><b>code</b>: Chief complaint - Reported <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8661-1)</span></p><p><b>subject</b>: <a href="Patient-ExampleMimicPatientED.html">Patient/ExampleMimicPatientED</a> &quot;&quot;</p><p><b>encounter</b>: <a href="Encounter-ExampleMimicEncounterED.html">Encounter/ExampleMimicEncounterED</a></p><p><b>effective</b>: 2154-12-10 02:04:00+0000</p><p><b>value</b>: Abdominal distention</p></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/ExampleMimicProcedureED"/>
+  </partOf>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8661-1"/>
+      <display value="Chief complaint - Reported"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExampleMimicPatientED"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/ExampleMimicEncounterED"/>
+  </encounter>
+  <effectiveDateTime value="2154-12-10T02:04:00.000Z"/>
+  <valueString value="Abdominal distention"/>
+</Observation>

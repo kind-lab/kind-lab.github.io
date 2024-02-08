@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/MedicationRequest/ExampleMimicMedicationRequest> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleMimicMedicationRequest"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-request"^^xsd:anyURI ;
+       fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-request>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"ExampleMimicMedicationRequest\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;ExampleMimicMedicationRequest&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-medication-request.html\">MIMIC Medication Request</a></p></div><p><b>identifier</b>: <code>http://mimic.mit.edu/fhir/mimic/identifier/medication-request-phid</code>/29195459</p><p><b>status</b>: stopped</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href=\"Medication-ExampleMimicMedication.html\">Medication/ExampleMimicMedication</a></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>encounter</b>: <a href=\"Encounter-ExampleMimicEncounter.html\">Encounter/ExampleMimicEncounter</a></p><p><b>authoredOn</b>: 2130-11-01 09:43:48-0400</p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 10mEq ER Tablet</p><p><b>timing</b>: Code: ONCE</p><p><b>route</b>: PO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-medication-route.html\">MimicMedicationRoute</a>#PO)</span></p><blockquote><p><b>doseAndRate</b></p></blockquote></blockquote><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>2130-11-01 10:00:00-0400 --&gt; 2130-11-02 09:00:00-0400</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/identifier/medication-request-phid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "29195459" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "stopped"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Medication/ExampleMimicMedication> ;
+     fhir:reference [ fhir:v "Medication/ExampleMimicMedication" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Patient/ExampleMimicPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleMimicPatient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Encounter/ExampleMimicEncounter> ;
+     fhir:reference [ fhir:v "Encounter/ExampleMimicEncounter" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2130-11-01T09:43:48-04:00"^^xsd:dateTime] ; # 
+  fhir:dosageInstruction ( [
+     fhir:text [ fhir:v "10mEq ER Tablet" ] ;
+     fhir:timing [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-frequency"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ONCE" ]
+         ] )
+       ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PO" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "40"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mEq" ] ;
+         fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mEq" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:validityPeriod [
+       fhir:start [ fhir:v "2130-11-01T10:00:00-04:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2130-11-02T09:00:00-04:00"^^xsd:dateTime ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

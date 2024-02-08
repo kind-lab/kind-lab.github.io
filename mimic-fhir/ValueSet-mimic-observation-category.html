@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MimicObservationCategory - MIMIC Implementation Guide v1.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.59"}
+    h3,h4,h5,h6{--heading-prefix:"7.59"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MIMIC Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.3.0 - Draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mimic-fhir-mappings.html">MIMIC-IV Mapping</a>
+      </li>
+      <li>
+        <a href="mimic-ed-fhir-mappings.html">MIMIC-ED Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General</a>
+      </li>
+      <li>
+        <a href="terminology-guide.html">Terminology</a>
+      </li>
+      <li>
+        <a href="applications.html">Applications</a>
+      </li>
+      <li>
+        <a href="tutorials.html">Tutorials</a>
+      </li>
+      <li>
+        <a href="future-work.html">Future Work</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Subsets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="microbiology-background.html">Microbiology data</a>
+      </li>
+      <li>
+        <a href="medication-background.html">Medication data</a>
+      </li>
+      <li>
+        <a href="emergency-department-subset.html">Emergency Department data</a>
+      </li>
+      <li>
+        <a href="intensive-care-unit-subset.html">Intensive Care Unit data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MimicObservationCategory</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MIMIC Implementation Guide - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://mimic.mit.edu/fhir/mimic/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-observation-category.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-observation-category.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-observation-category.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: MimicObservationCategory
+
+  </h2>
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-category<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-category"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-category|1.3.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2022-09-21
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MimicObservationCategory</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>The observation category codes for MIMIC</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-mimic-observation-chartevents.html">MIMIC Observation Chartevents</a></li>
+ <li><a href="StructureDefinition-mimic-observation-datetimeevents.html">MIMIC Observation Datetimeevents</a></li>
+ <li><a href="StructureDefinition-mimic-observation-outputevents.html">MIMIC Observation Outputevents</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><ul><li>Include all codes defined in <a href="CodeSystem-mimic-observation-category.html"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</code></a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-mimic-observation-category.html">codesystem MimicObservationCategory v1.3.0 (CodeSystem)</a></p><p>This value set contains 81 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b> - English (English, en)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Scores---APACHE-II"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Scores-APACHEII">Scores - APACHE II</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-6-Cultures"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-6-Cultures">6-Cultures</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-4-Procedures"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-4-Procedures">4-Procedures</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-PA-Line-Insertion"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-PALineInsertion">PA Line Insertion</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Thoracentesis"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Thoracentesis">Thoracentesis</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Restraint-Support-Systems"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Restraint.47SupportSystems">Restraint/Support Systems</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Research-Enrollment-Note"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-ResearchEnrollmentNote">Research Enrollment Note</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Scores---APACHE-IV--2-"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Scores-APACHEIV.402.41">Scores - APACHE IV (2)</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Impella"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Impella">Impella</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-GI-GU"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-GI.47GU">GI/GU</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Lumbar-Puncture"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-LumbarPuncture">Lumbar Puncture</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Pulmonary"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Pulmonary">Pulmonary</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Swallow-Evaluation"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-SwallowEvaluation">Swallow Evaluation</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Dialysis"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Dialysis">Dialysis</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-OT-Notes"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-OTNotes">OT Notes</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Output"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Output">Output</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Family-Mtg-Note"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-FamilyMtgNote">Family Mtg Note</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-7-Communication"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-7-Communication">7-Communication</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Respiratory"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Respiratory">Respiratory</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Access-Lines---Peripheral"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-AccessLines-Peripheral">Access Lines - Peripheral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-ADT"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-ADT">ADT</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Medications"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Medications">Medications</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Drains"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Drains">Drains</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Cardiovascular"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Cardiovascular">Cardiovascular</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-RNTriggerNote"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-RNTriggerNote">RNTriggerNote</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Skin---Impairment"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Skin-Impairment">Skin - Impairment</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Cardiovascular--Pacer-Data-"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Cardiovascular.40PacerData.41">Cardiovascular (Pacer Data)</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Intubation"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Intubation">Intubation</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Centrimag"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Centrimag">Centrimag</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Toxicology"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Toxicology">Toxicology</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Hemodynamics"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Hemodynamics">Hemodynamics</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Nutrition---Enteral"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Nutrition-Enteral">Nutrition - Enteral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Ingredients---general--Not-In-Use-"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Ingredients-general.40NotInUse.41">Ingredients - general (Not In Use)</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Triggers-Note"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-TriggersNote">Triggers Note</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-ApacheII-Parameters"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-ApacheIIParameters">ApacheII Parameters</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Tandem-Heart"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-TandemHeart">Tandem Heart</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-ZIntake"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-ZIntake">ZIntake</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-MD-Progress-Note"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-MDProgressNote">MD Progress Note</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Case-Management"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-CaseManagement">Case Management</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Fluids-Intake"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Fluids.47Intake">Fluids/Intake</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Antibiotics"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Antibiotics">Antibiotics</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Alarms"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Alarms">Alarms</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Neurological"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Neurological">Neurological</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Fluids---Other--Not-In-Use-"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Fluids-Other.40NotInUse.41">Fluids - Other (Not In Use)</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Access-Lines---Invasive"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-AccessLines-Invasive">Access Lines - Invasive</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-ApacheIV-Parameters"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-ApacheIVParameters">ApacheIV Parameters</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Durable-VAD"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-DurableVAD">Durable VAD</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-ECMO"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-ECMO">ECMO</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Bronchoscopy"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Bronchoscopy">Bronchoscopy</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Paracentesis"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Paracentesis">Paracentesis</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-3-Significant-Events"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-3-SignificantEvents">3-Significant Events</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-IABP"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-IABP">IABP</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-RDOS"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-RDOS">RDOS</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-1-Intubation-Extubation"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-1-Intubation.47Extubation">1-Intubation/Extubation</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-NICOM"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-NICOM">NICOM</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Routine-Vital-Signs"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-RoutineVitalSigns">Routine Vital Signs</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Heartware"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Heartware">Heartware</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Pain-Sedation"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Pain.47Sedation">Pain/Sedation</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Generic-Proc-Note"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-GenericProcNote">Generic Proc Note</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Cardiovascular--Pulses-"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Cardiovascular.40Pulses.41">Cardiovascular (Pulses)</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-2-Ventilation"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-2-Ventilation">2-Ventilation</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Adm-History-FHPA"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-AdmHistory.47FHPA">Adm History/FHPA</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-CVL-Insertion"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-CVLInsertion">CVL Insertion</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Nutrition---Supplements"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Nutrition-Supplements">Nutrition - Supplements</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-PiCCO"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-PiCCO">PiCCO</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Treatments"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Treatments">Treatments</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-PICC-Line-Insertion"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-PICCLineInsertion">PICC Line Insertion</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Pastoral-Care-Note"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-PastoralCareNote">Pastoral Care Note</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Skin---Incisions"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Skin-Incisions">Skin - Incisions</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Scores---APACHE-IV"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Scores-APACHEIV">Scores - APACHE IV</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Labs"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Labs">Labs</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Skin---Assessment"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Skin-Assessment">Skin - Assessment</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Blood-Products-Colloids"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-BloodProducts.47Colloids">Blood Products/Colloids</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-SBNET"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-SBNET">SBNET</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Arterial-Line-Insertion"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-ArterialLineInsertion">Arterial Line Insertion</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Care-Plans"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-CarePlans">Care Plans</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-5-Imaging"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-5-Imaging">5-Imaging</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Ingredients"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Ingredients">Ingredients</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-General"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-General">General</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-OB-GYN"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-OB-GYN">OB-GYN</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-observation-category-Nutrition---Parenteral"> </a>  <a href="CodeSystem-mimic-observation-category.html#mimic-observation-category-Nutrition-Parenteral">Nutrition - Parenteral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category</td><td/></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.mimic#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:07-0500">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

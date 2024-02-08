@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mimic-medication-etc",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><ul><li>Include all codes defined in <a href=\"CodeSystem-mimic-medication-etc.html\"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-etc</code></a></li></ul></div>"
+  },
+  "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-etc",
+  "version" : "1.3.0",
+  "name" : "MimicMedicationEtc",
+  "title" : "MimicMedicationEtc",
+  "status" : "draft",
+  "date" : "2022-09-21T13:59:43-04:00",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "The medication ETC (enhanced therapeutic class) codes for MIMIC",
+  "compose" : {
+    "include" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-etc"
+    }]
+  }
+}

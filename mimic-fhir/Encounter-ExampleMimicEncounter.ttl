@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/Encounter/ExampleMimicEncounter> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleMimicEncounter"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"^^xsd:anyURI ;
+       fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"ExampleMimicEncounter\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;ExampleMimicEncounter&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-encounter.html\">MIMIC Encounter</a></p></div><p><b>identifier</b>: <code>http://mimic.mit.edu/fhir/mimic/identifier/encounter-hosp</code>/22429197</p><p><b>status</b>: finished</p><p><b>class</b>: EW EMER. (Details: http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admission-class code EW EMER. = 'EW EMER.', stated as 'null')</p><p><b>type</b>: Patient encounter procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#308335008)</span></p><p><b>serviceType</b>: TRAUM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-services.html\">MimicServices</a>#TRAUM)</span></p><p><b>priority</b>: EW EMER. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-admission-type.html\">MimicAdmissionType</a>#EW EMER.)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>period</b>: 2147-12-30 08:40:00-0500 --&gt; 2148-01-11 17:55:00-0500</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td>EMERGENCY ROOM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-admit-source.html\">MimicAdmitSource</a>#EMERGENCY ROOM)</span></td><td>REHAB <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-discharge-disposition.html\">MimicDischargeDisposition</a>#REHAB)</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-ExampleLocation.html\">Location/ExampleLocation</a> &quot;Trauma SICU (TSICU)&quot;</td><td>2147-12-30 06:45:00-0500 --&gt; 2147-12-30 09:33:00-0500</td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-ExampleMimicOrganization.html\">Organization/ExampleMimicOrganization</a> &quot;Beth Israel Deaconess Medical Center&quot;</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/identifier/encounter-hosp"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "22429197" ] ;
+     fhir:assigner [
+       fhir:link <http://mimic.mit.edu/fhir/mimic/Organization/ExampleMimicOrganization> ;
+       fhir:reference [ fhir:v "Organization/ExampleMimicOrganization" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admission-class"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "EW EMER." ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a sct:308335008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "308335008" ] ;
+       fhir:display [ fhir:v "Patient encounter procedure" ]
+     ] )
+  ] ) ; # 
+  fhir:serviceType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-services"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TRAUM" ]
+     ] )
+  ] ; # 
+  fhir:priority [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admission-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EW EMER." ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Patient/ExampleMimicPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleMimicPatient" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2147-12-30T08:40:00-05:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2148-01-11T17:55:00-05:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:hospitalization [
+     fhir:admitSource [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admit-source"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "EMERGENCY ROOM" ]
+       ] )
+     ] ;
+     fhir:dischargeDisposition [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-discharge-disposition"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "REHAB" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <http://mimic.mit.edu/fhir/mimic/Location/ExampleLocation> ;
+       fhir:reference [ fhir:v "Location/ExampleLocation" ]
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2147-12-30T06:45:00-05:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2147-12-30T09:33:00-05:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Organization/ExampleMimicOrganization> ;
+     fhir:reference [ fhir:v "Organization/ExampleMimicOrganization" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

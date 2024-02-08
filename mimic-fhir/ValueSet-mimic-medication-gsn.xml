@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mimic-medication-gsn"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><ul><li>Include all codes defined in <a href="CodeSystem-mimic-medication-gsn.html"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-gsn</code></a></li></ul></div>
+  </text>
+  <url value="http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-gsn"/>
+  <version value="1.3.0"/>
+  <name value="MimicMedicationGsn"/>
+  <title value="MimicMedicationGsn"/>
+  <status value="draft"/>
+  <date value="2022-09-21T13:59:43-04:00"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <description value="The medication GSN codes for MIMIC"/>
+  <compose>
+    <include>
+      <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-gsn"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MimicMedicationSite - MIMIC Implementation Guide v1.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.92"}
+    h3,h4,h5,h6{--heading-prefix:"7.92"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MIMIC Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.3.0 - Draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mimic-fhir-mappings.html">MIMIC-IV Mapping</a>
+      </li>
+      <li>
+        <a href="mimic-ed-fhir-mappings.html">MIMIC-ED Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General</a>
+      </li>
+      <li>
+        <a href="terminology-guide.html">Terminology</a>
+      </li>
+      <li>
+        <a href="applications.html">Applications</a>
+      </li>
+      <li>
+        <a href="tutorials.html">Tutorials</a>
+      </li>
+      <li>
+        <a href="future-work.html">Future Work</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Subsets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="microbiology-background.html">Microbiology data</a>
+      </li>
+      <li>
+        <a href="medication-background.html">Medication data</a>
+      </li>
+      <li>
+        <a href="emergency-department-subset.html">Emergency Department data</a>
+      </li>
+      <li>
+        <a href="intensive-care-unit-subset.html">Intensive Care Unit data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MimicMedicationSite</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MIMIC Implementation Guide - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://mimic.mit.edu/fhir/mimic/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mimic-medication-site.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mimic-medication-site.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mimic-medication-site.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: MimicMedicationSite
+
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-site<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-site"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-site|1.3.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2022-09-21
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MimicMedicationSite</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>The medication site for administration in MIMIC</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-mimic-medication-site.html">MimicMedicationSite</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p>This  code system <code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-site</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">___<a name="mimic-medication-site-___"> </a></td></tr><tr><td style="white-space:nowrap">a<a name="mimic-medication-site-a"> </a></td></tr><tr><td style="white-space:nowrap">ab<a name="mimic-medication-site-ab"> </a></td></tr><tr><td style="white-space:nowrap">ABD<a name="mimic-medication-site-ABD"> </a></td></tr><tr><td style="white-space:nowrap">Abd<a name="mimic-medication-site-Abd"> </a></td></tr><tr><td style="white-space:nowrap">abd<a name="mimic-medication-site-abd"> </a></td></tr><tr><td style="white-space:nowrap">abd.<a name="mimic-medication-site-abd.46"> </a></td></tr><tr><td style="white-space:nowrap">abd and back<a name="mimic-medication-site-abdandback"> </a></td></tr><tr><td style="white-space:nowrap">abd/back<a name="mimic-medication-site-abd.47back"> </a></td></tr><tr><td style="white-space:nowrap">ABDOMEN<a name="mimic-medication-site-ABDOMEN"> </a></td></tr><tr><td style="white-space:nowrap">Abdomen<a name="mimic-medication-site-Abdomen"> </a></td></tr><tr><td style="white-space:nowrap">abdomen<a name="mimic-medication-site-abdomen"> </a></td></tr><tr><td style="white-space:nowrap">abdomen and back<a name="mimic-medication-site-abdomenandback"> </a></td></tr><tr><td style="white-space:nowrap">abdomen/back<a name="mimic-medication-site-abdomen.47back"> </a></td></tr><tr><td style="white-space:nowrap">above knee<a name="mimic-medication-site-aboveknee"> </a></td></tr><tr><td style="white-space:nowrap">Ankle<a name="mimic-medication-site-Ankle"> </a></td></tr><tr><td style="white-space:nowrap">ankle<a name="mimic-medication-site-ankle"> </a></td></tr><tr><td style="white-space:nowrap">ant chest<a name="mimic-medication-site-antchest"> </a></td></tr><tr><td style="white-space:nowrap">anterior chest<a name="mimic-medication-site-anteriorchest"> </a></td></tr><tr><td style="white-space:nowrap">anterior shoulder<a name="mimic-medication-site-anteriorshoulder"> </a></td></tr><tr><td style="white-space:nowrap">anterior thigh<a name="mimic-medication-site-anteriorthigh"> </a></td></tr><tr><td style="white-space:nowrap">ARM<a name="mimic-medication-site-ARM"> </a></td></tr><tr><td style="white-space:nowrap">Arm<a name="mimic-medication-site-Arm"> </a></td></tr><tr><td style="white-space:nowrap">arm<a name="mimic-medication-site-arm"> </a></td></tr><tr><td style="white-space:nowrap">arm,<a name="mimic-medication-site-arm.44"> </a></td></tr><tr><td style="white-space:nowrap">arm/shoulder<a name="mimic-medication-site-arm.47shoulder"> </a></td></tr><tr><td style="white-space:nowrap">arn<a name="mimic-medication-site-arn"> </a></td></tr><tr><td style="white-space:nowrap">axilla<a name="mimic-medication-site-axilla"> </a></td></tr><tr><td style="white-space:nowrap">axillary<a name="mimic-medication-site-axillary"> </a></td></tr><tr><td style="white-space:nowrap">BACK<a name="mimic-medication-site-BACK"> </a></td></tr><tr><td style="white-space:nowrap">Back<a name="mimic-medication-site-Back"> </a></td></tr><tr><td style="white-space:nowrap">bACK<a name="mimic-medication-site-bACK"> </a></td></tr><tr><td style="white-space:nowrap">baCK<a name="mimic-medication-site-baCK"> </a></td></tr><tr><td style="white-space:nowrap">b ack<a name="mimic-medication-site-back"> </a></td></tr><tr><td style="white-space:nowrap">back<a name="mimic-medication-site-back"> </a></td></tr><tr><td style="white-space:nowrap">back/abdomen<a name="mimic-medication-site-back.47abdomen"> </a></td></tr><tr><td style="white-space:nowrap">back and abdomen<a name="mimic-medication-site-backandabdomen"> </a></td></tr><tr><td style="white-space:nowrap">back and neck<a name="mimic-medication-site-backandneck"> </a></td></tr><tr><td style="white-space:nowrap">back/flank<a name="mimic-medication-site-back.47flank"> </a></td></tr><tr><td style="white-space:nowrap">back/hip<a name="mimic-medication-site-back.47hip"> </a></td></tr><tr><td style="white-space:nowrap">back lower<a name="mimic-medication-site-backlower"> </a></td></tr><tr><td style="white-space:nowrap">back neck<a name="mimic-medication-site-backneck"> </a></td></tr><tr><td style="white-space:nowrap">back/neck<a name="mimic-medication-site-back.47neck"> </a></td></tr><tr><td style="white-space:nowrap">back of arm<a name="mimic-medication-site-backofarm"> </a></td></tr><tr><td style="white-space:nowrap">back of ear<a name="mimic-medication-site-backofear"> </a></td></tr><tr><td style="white-space:nowrap">back of neck<a name="mimic-medication-site-backofneck"> </a></td></tr><tr><td style="white-space:nowrap">back of shoulder<a name="mimic-medication-site-backofshoulder"> </a></td></tr><tr><td style="white-space:nowrap">back of thigh<a name="mimic-medication-site-backofthigh"> </a></td></tr><tr><td style="white-space:nowrap">back/ribs<a name="mimic-medication-site-back.47ribs"> </a></td></tr><tr><td style="white-space:nowrap">back shoulder<a name="mimic-medication-site-backshoulder"> </a></td></tr><tr><td style="white-space:nowrap">back/shoulder<a name="mimic-medication-site-back.47shoulder"> </a></td></tr><tr><td style="white-space:nowrap">back/side<a name="mimic-medication-site-back.47side"> </a></td></tr><tr><td style="white-space:nowrap">bacl<a name="mimic-medication-site-bacl"> </a></td></tr><tr><td style="white-space:nowrap">bak<a name="mimic-medication-site-bak"> </a></td></tr><tr><td style="white-space:nowrap">bCK<a name="mimic-medication-site-bCK"> </a></td></tr><tr><td style="white-space:nowrap">bck<a name="mimic-medication-site-bck"> </a></td></tr><tr><td style="white-space:nowrap">Behind ear<a name="mimic-medication-site-Behindear"> </a></td></tr><tr><td style="white-space:nowrap">behind ear<a name="mimic-medication-site-behindear"> </a></td></tr><tr><td style="white-space:nowrap">behind left ear<a name="mimic-medication-site-behindleftear"> </a></td></tr><tr><td style="white-space:nowrap">behind R ear<a name="mimic-medication-site-behindRear"> </a></td></tr><tr><td style="white-space:nowrap">behind right ear<a name="mimic-medication-site-behindrightear"> </a></td></tr><tr><td style="white-space:nowrap">behind the ear<a name="mimic-medication-site-behindtheear"> </a></td></tr><tr><td style="white-space:nowrap">belly<a name="mimic-medication-site-belly"> </a></td></tr><tr><td style="white-space:nowrap">Bicep<a name="mimic-medication-site-Bicep"> </a></td></tr><tr><td style="white-space:nowrap">bicep<a name="mimic-medication-site-bicep"> </a></td></tr><tr><td style="white-space:nowrap">bicept<a name="mimic-medication-site-bicept"> </a></td></tr><tr><td style="white-space:nowrap">bilat chest<a name="mimic-medication-site-bilatchest"> </a></td></tr><tr><td style="white-space:nowrap">bilateral feet<a name="mimic-medication-site-bilateralfeet"> </a></td></tr><tr><td style="white-space:nowrap">bilateral hips<a name="mimic-medication-site-bilateralhips"> </a></td></tr><tr><td style="white-space:nowrap">Bilateral knees<a name="mimic-medication-site-Bilateralknees"> </a></td></tr><tr><td style="white-space:nowrap">bilateral knees<a name="mimic-medication-site-bilateralknees"> </a></td></tr><tr><td style="white-space:nowrap">bilateral legs<a name="mimic-medication-site-bilaterallegs"> </a></td></tr><tr><td style="white-space:nowrap">bilateral shoulders<a name="mimic-medication-site-bilateralshoulders"> </a></td></tr><tr><td style="white-space:nowrap">bilateral thighs<a name="mimic-medication-site-bilateralthighs"> </a></td></tr><tr><td style="white-space:nowrap">bilat feet<a name="mimic-medication-site-bilatfeet"> </a></td></tr><tr><td style="white-space:nowrap">bilat hips<a name="mimic-medication-site-bilathips"> </a></td></tr><tr><td style="white-space:nowrap">bilat knees<a name="mimic-medication-site-bilatknees"> </a></td></tr><tr><td style="white-space:nowrap">bilat legs<a name="mimic-medication-site-bilatlegs"> </a></td></tr><tr><td style="white-space:nowrap">bilat shoulders<a name="mimic-medication-site-bilatshoulders"> </a></td></tr><tr><td style="white-space:nowrap">BLE<a name="mimic-medication-site-BLE"> </a></td></tr><tr><td style="white-space:nowrap">b/l knees<a name="mimic-medication-site-b.47lknees"> </a></td></tr><tr><td style="white-space:nowrap">both knees<a name="mimic-medication-site-bothknees"> </a></td></tr><tr><td style="white-space:nowrap">both shoulders<a name="mimic-medication-site-bothshoulders"> </a></td></tr><tr><td style="white-space:nowrap">bottom<a name="mimic-medication-site-bottom"> </a></td></tr><tr><td style="white-space:nowrap">breast<a name="mimic-medication-site-breast"> </a></td></tr><tr><td style="white-space:nowrap">butt<a name="mimic-medication-site-butt"> </a></td></tr><tr><td style="white-space:nowrap">Buttock<a name="mimic-medication-site-Buttock"> </a></td></tr><tr><td style="white-space:nowrap">buttock<a name="mimic-medication-site-buttock"> </a></td></tr><tr><td style="white-space:nowrap">Buttocks<a name="mimic-medication-site-Buttocks"> </a></td></tr><tr><td style="white-space:nowrap">buttocks<a name="mimic-medication-site-buttocks"> </a></td></tr><tr><td style="white-space:nowrap">Calf<a name="mimic-medication-site-Calf"> </a></td></tr><tr><td style="white-space:nowrap">calf<a name="mimic-medication-site-calf"> </a></td></tr><tr><td style="white-space:nowrap">center<a name="mimic-medication-site-center"> </a></td></tr><tr><td style="white-space:nowrap">center back<a name="mimic-medication-site-centerback"> </a></td></tr><tr><td style="white-space:nowrap">center lower back<a name="mimic-medication-site-centerlowerback"> </a></td></tr><tr><td style="white-space:nowrap">cervical spine<a name="mimic-medication-site-cervicalspine"> </a></td></tr><tr><td style="white-space:nowrap">CHEST<a name="mimic-medication-site-CHEST"> </a></td></tr><tr><td style="white-space:nowrap">Chest<a name="mimic-medication-site-Chest"> </a></td></tr><tr><td style="white-space:nowrap">chest<a name="mimic-medication-site-chest"> </a></td></tr><tr><td style="white-space:nowrap">chest and back<a name="mimic-medication-site-chestandback"> </a></td></tr><tr><td style="white-space:nowrap">chest/back<a name="mimic-medication-site-chest.47back"> </a></td></tr><tr><td style="white-space:nowrap">chest/flank<a name="mimic-medication-site-chest.47flank"> </a></td></tr><tr><td style="white-space:nowrap">chest/ribs<a name="mimic-medication-site-chest.47ribs"> </a></td></tr><tr><td style="white-space:nowrap">chest/shoulder<a name="mimic-medication-site-chest.47shoulder"> </a></td></tr><tr><td style="white-space:nowrap">chest/side<a name="mimic-medication-site-chest.47side"> </a></td></tr><tr><td style="white-space:nowrap">chest tube site<a name="mimic-medication-site-chesttubesite"> </a></td></tr><tr><td style="white-space:nowrap">Chest wall<a name="mimic-medication-site-Chestwall"> </a></td></tr><tr><td style="white-space:nowrap">chest wall<a name="mimic-medication-site-chestwall"> </a></td></tr><tr><td style="white-space:nowrap">clavicle<a name="mimic-medication-site-clavicle"> </a></td></tr><tr><td style="white-space:nowrap">coccyx<a name="mimic-medication-site-coccyx"> </a></td></tr><tr><td style="white-space:nowrap">CT<a name="mimic-medication-site-CT"> </a></td></tr><tr><td style="white-space:nowrap">CT site<a name="mimic-medication-site-CTsite"> </a></td></tr><tr><td style="white-space:nowrap">ct site<a name="mimic-medication-site-ctsite"> </a></td></tr><tr><td style="white-space:nowrap">CW<a name="mimic-medication-site-CW"> </a></td></tr><tr><td style="white-space:nowrap">cw<a name="mimic-medication-site-cw"> </a></td></tr><tr><td style="white-space:nowrap">Delt<a name="mimic-medication-site-Delt"> </a></td></tr><tr><td style="white-space:nowrap">delt<a name="mimic-medication-site-delt"> </a></td></tr><tr><td style="white-space:nowrap">deltiod<a name="mimic-medication-site-deltiod"> </a></td></tr><tr><td style="white-space:nowrap">DELTOID<a name="mimic-medication-site-DELTOID"> </a></td></tr><tr><td style="white-space:nowrap">Deltoid<a name="mimic-medication-site-Deltoid"> </a></td></tr><tr><td style="white-space:nowrap">deltoid<a name="mimic-medication-site-deltoid"> </a></td></tr><tr><td style="white-space:nowrap">Deltoid area<a name="mimic-medication-site-Deltoidarea"> </a></td></tr><tr><td style="white-space:nowrap">deltoid area<a name="mimic-medication-site-deltoidarea"> </a></td></tr><tr><td style="white-space:nowrap">dorsal foot<a name="mimic-medication-site-dorsalfoot"> </a></td></tr><tr><td style="white-space:nowrap">drain site<a name="mimic-medication-site-drainsite"> </a></td></tr><tr><td style="white-space:nowrap">EAR<a name="mimic-medication-site-EAR"> </a></td></tr><tr><td style="white-space:nowrap">Ear<a name="mimic-medication-site-Ear"> </a></td></tr><tr><td style="white-space:nowrap">ear<a name="mimic-medication-site-ear"> </a></td></tr><tr><td style="white-space:nowrap">elbow<a name="mimic-medication-site-elbow"> </a></td></tr><tr><td style="white-space:nowrap">epigastric<a name="mimic-medication-site-epigastric"> </a></td></tr><tr><td style="white-space:nowrap">FA<a name="mimic-medication-site-FA"> </a></td></tr><tr><td style="white-space:nowrap">feet<a name="mimic-medication-site-feet"> </a></td></tr><tr><td style="white-space:nowrap">femur<a name="mimic-medication-site-femur"> </a></td></tr><tr><td style="white-space:nowrap">FLANK<a name="mimic-medication-site-FLANK"> </a></td></tr><tr><td style="white-space:nowrap">Flank<a name="mimic-medication-site-Flank"> </a></td></tr><tr><td style="white-space:nowrap">flank<a name="mimic-medication-site-flank"> </a></td></tr><tr><td style="white-space:nowrap">flank area<a name="mimic-medication-site-flankarea"> </a></td></tr><tr><td style="white-space:nowrap">flank/back<a name="mimic-medication-site-flank.47back"> </a></td></tr><tr><td style="white-space:nowrap">flank/chest<a name="mimic-medication-site-flank.47chest"> </a></td></tr><tr><td style="white-space:nowrap">FOOT<a name="mimic-medication-site-FOOT"> </a></td></tr><tr><td style="white-space:nowrap">Foot<a name="mimic-medication-site-Foot"> </a></td></tr><tr><td style="white-space:nowrap">foot<a name="mimic-medication-site-foot"> </a></td></tr><tr><td style="white-space:nowrap">Forearm<a name="mimic-medication-site-Forearm"> </a></td></tr><tr><td style="white-space:nowrap">forearm<a name="mimic-medication-site-forearm"> </a></td></tr><tr><td style="white-space:nowrap">glute<a name="mimic-medication-site-glute"> </a></td></tr><tr><td style="white-space:nowrap">gluteal<a name="mimic-medication-site-gluteal"> </a></td></tr><tr><td style="white-space:nowrap">gluteus<a name="mimic-medication-site-gluteus"> </a></td></tr><tr><td style="white-space:nowrap">Groin<a name="mimic-medication-site-Groin"> </a></td></tr><tr><td style="white-space:nowrap">groin<a name="mimic-medication-site-groin"> </a></td></tr><tr><td style="white-space:nowrap">hand<a name="mimic-medication-site-hand"> </a></td></tr><tr><td style="white-space:nowrap">hands<a name="mimic-medication-site-hands"> </a></td></tr><tr><td style="white-space:nowrap">heel<a name="mimic-medication-site-heel"> </a></td></tr><tr><td style="white-space:nowrap">heels<a name="mimic-medication-site-heels"> </a></td></tr><tr><td style="white-space:nowrap">HIP<a name="mimic-medication-site-HIP"> </a></td></tr><tr><td style="white-space:nowrap">Hip<a name="mimic-medication-site-Hip"> </a></td></tr><tr><td style="white-space:nowrap">hip<a name="mimic-medication-site-hip"> </a></td></tr><tr><td style="white-space:nowrap">hip and thigh<a name="mimic-medication-site-hipandthigh"> </a></td></tr><tr><td style="white-space:nowrap">hip/back<a name="mimic-medication-site-hip.47back"> </a></td></tr><tr><td style="white-space:nowrap">hip/buttock<a name="mimic-medication-site-hip.47buttock"> </a></td></tr><tr><td style="white-space:nowrap">hips<a name="mimic-medication-site-hips"> </a></td></tr><tr><td style="white-space:nowrap">hip/thigh<a name="mimic-medication-site-hip.47thigh"> </a></td></tr><tr><td style="white-space:nowrap">incision<a name="mimic-medication-site-incision"> </a></td></tr><tr><td style="white-space:nowrap">inner thigh<a name="mimic-medication-site-innerthigh"> </a></td></tr><tr><td style="white-space:nowrap">KNEE<a name="mimic-medication-site-KNEE"> </a></td></tr><tr><td style="white-space:nowrap">Knee<a name="mimic-medication-site-Knee"> </a></td></tr><tr><td style="white-space:nowrap">knee<a name="mimic-medication-site-knee"> </a></td></tr><tr><td style="white-space:nowrap">kneee<a name="mimic-medication-site-kneee"> </a></td></tr><tr><td style="white-space:nowrap">knees<a name="mimic-medication-site-knees"> </a></td></tr><tr><td style="white-space:nowrap">L arm<a name="mimic-medication-site-Larm"> </a></td></tr><tr><td style="white-space:nowrap">lateral<a name="mimic-medication-site-lateral"> </a></td></tr><tr><td style="white-space:nowrap">lateral abdomen<a name="mimic-medication-site-lateralabdomen"> </a></td></tr><tr><td style="white-space:nowrap">lateral back<a name="mimic-medication-site-lateralback"> </a></td></tr><tr><td style="white-space:nowrap">lateral chest<a name="mimic-medication-site-lateralchest"> </a></td></tr><tr><td style="white-space:nowrap">lateral chest wall<a name="mimic-medication-site-lateralchestwall"> </a></td></tr><tr><td style="white-space:nowrap">lateral side<a name="mimic-medication-site-lateralside"> </a></td></tr><tr><td style="white-space:nowrap">lateral thigh<a name="mimic-medication-site-lateralthigh"> </a></td></tr><tr><td style="white-space:nowrap">LB<a name="mimic-medication-site-LB"> </a></td></tr><tr><td style="white-space:nowrap">lb<a name="mimic-medication-site-lb"> </a></td></tr><tr><td style="white-space:nowrap">LE<a name="mimic-medication-site-LE"> </a></td></tr><tr><td style="white-space:nowrap">le<a name="mimic-medication-site-le"> </a></td></tr><tr><td style="white-space:nowrap">left<a name="mimic-medication-site-left"> </a></td></tr><tr><td style="white-space:nowrap">left arm<a name="mimic-medication-site-leftarm"> </a></td></tr><tr><td style="white-space:nowrap">left back<a name="mimic-medication-site-leftback"> </a></td></tr><tr><td style="white-space:nowrap">left deltoid<a name="mimic-medication-site-leftdeltoid"> </a></td></tr><tr><td style="white-space:nowrap">left ear<a name="mimic-medication-site-leftear"> </a></td></tr><tr><td style="white-space:nowrap">left flank<a name="mimic-medication-site-leftflank"> </a></td></tr><tr><td style="white-space:nowrap">left hip<a name="mimic-medication-site-lefthip"> </a></td></tr><tr><td style="white-space:nowrap">left knee<a name="mimic-medication-site-leftknee"> </a></td></tr><tr><td style="white-space:nowrap">left lower back<a name="mimic-medication-site-leftlowerback"> </a></td></tr><tr><td style="white-space:nowrap">left shoulder<a name="mimic-medication-site-leftshoulder"> </a></td></tr><tr><td style="white-space:nowrap">left side<a name="mimic-medication-site-leftside"> </a></td></tr><tr><td style="white-space:nowrap">left upper arm<a name="mimic-medication-site-leftupperarm"> </a></td></tr><tr><td style="white-space:nowrap">LEG<a name="mimic-medication-site-LEG"> </a></td></tr><tr><td style="white-space:nowrap">Leg<a name="mimic-medication-site-Leg"> </a></td></tr><tr><td style="white-space:nowrap">leg<a name="mimic-medication-site-leg"> </a></td></tr><tr><td style="white-space:nowrap">legs<a name="mimic-medication-site-legs"> </a></td></tr><tr><td style="white-space:nowrap">L flank<a name="mimic-medication-site-Lflank"> </a></td></tr><tr><td style="white-space:nowrap">LLE<a name="mimic-medication-site-LLE"> </a></td></tr><tr><td style="white-space:nowrap">LLQ<a name="mimic-medication-site-LLQ"> </a></td></tr><tr><td style="white-space:nowrap">llq<a name="mimic-medication-site-llq"> </a></td></tr><tr><td style="white-space:nowrap">lolwer back<a name="mimic-medication-site-lolwerback"> </a></td></tr><tr><td style="white-space:nowrap">Low Back<a name="mimic-medication-site-LowBack"> </a></td></tr><tr><td style="white-space:nowrap">Low back<a name="mimic-medication-site-Lowback"> </a></td></tr><tr><td style="white-space:nowrap">low back<a name="mimic-medication-site-lowback"> </a></td></tr><tr><td style="white-space:nowrap">lowe back<a name="mimic-medication-site-loweback"> </a></td></tr><tr><td style="white-space:nowrap">lower<a name="mimic-medication-site-lower"> </a></td></tr><tr><td style="white-space:nowrap">lower abd<a name="mimic-medication-site-lowerabd"> </a></td></tr><tr><td style="white-space:nowrap">lower abdomen<a name="mimic-medication-site-lowerabdomen"> </a></td></tr><tr><td style="white-space:nowrap">LOWER BACK<a name="mimic-medication-site-LOWERBACK"> </a></td></tr><tr><td style="white-space:nowrap">Lower Back<a name="mimic-medication-site-LowerBack"> </a></td></tr><tr><td style="white-space:nowrap">Lower back<a name="mimic-medication-site-Lowerback"> </a></td></tr><tr><td style="white-space:nowrap">lower baCK<a name="mimic-medication-site-lowerbaCK"> </a></td></tr><tr><td style="white-space:nowrap">lower back<a name="mimic-medication-site-lowerback"> </a></td></tr><tr><td style="white-space:nowrap">lowerback<a name="mimic-medication-site-lowerback"> </a></td></tr><tr><td style="white-space:nowrap">lower back/hip<a name="mimic-medication-site-lowerback.47hip"> </a></td></tr><tr><td style="white-space:nowrap">lower chest<a name="mimic-medication-site-lowerchest"> </a></td></tr><tr><td style="white-space:nowrap">lower flank<a name="mimic-medication-site-lowerflank"> </a></td></tr><tr><td style="white-space:nowrap">lower leg<a name="mimic-medication-site-lowerleg"> </a></td></tr><tr><td style="white-space:nowrap">lower lumbar<a name="mimic-medication-site-lowerlumbar"> </a></td></tr><tr><td style="white-space:nowrap">lower quadrant<a name="mimic-medication-site-lowerquadrant"> </a></td></tr><tr><td style="white-space:nowrap">lower rib<a name="mimic-medication-site-lowerrib"> </a></td></tr><tr><td style="white-space:nowrap">lower ribs<a name="mimic-medication-site-lowerribs"> </a></td></tr><tr><td style="white-space:nowrap">lower spine<a name="mimic-medication-site-lowerspine"> </a></td></tr><tr><td style="white-space:nowrap">LQ<a name="mimic-medication-site-LQ"> </a></td></tr><tr><td style="white-space:nowrap">L shoulder<a name="mimic-medication-site-Lshoulder"> </a></td></tr><tr><td style="white-space:nowrap">LUE<a name="mimic-medication-site-LUE"> </a></td></tr><tr><td style="white-space:nowrap">lue<a name="mimic-medication-site-lue"> </a></td></tr><tr><td style="white-space:nowrap">Lumbar<a name="mimic-medication-site-Lumbar"> </a></td></tr><tr><td style="white-space:nowrap">lumbar<a name="mimic-medication-site-lumbar"> </a></td></tr><tr><td style="white-space:nowrap">lumbar area<a name="mimic-medication-site-lumbararea"> </a></td></tr><tr><td style="white-space:nowrap">lumbar back<a name="mimic-medication-site-lumbarback"> </a></td></tr><tr><td style="white-space:nowrap">lumbar spine<a name="mimic-medication-site-lumbarspine"> </a></td></tr><tr><td style="white-space:nowrap">LUQ<a name="mimic-medication-site-LUQ"> </a></td></tr><tr><td style="white-space:nowrap">mid abdomen<a name="mimic-medication-site-midabdomen"> </a></td></tr><tr><td style="white-space:nowrap">Mid back<a name="mimic-medication-site-Midback"> </a></td></tr><tr><td style="white-space:nowrap">mid back<a name="mimic-medication-site-midback"> </a></td></tr><tr><td style="white-space:nowrap">mid-back<a name="mimic-medication-site-mid-back"> </a></td></tr><tr><td style="white-space:nowrap">midback<a name="mimic-medication-site-midback"> </a></td></tr><tr><td style="white-space:nowrap">middle<a name="mimic-medication-site-middle"> </a></td></tr><tr><td style="white-space:nowrap">middle back<a name="mimic-medication-site-middleback"> </a></td></tr><tr><td style="white-space:nowrap">middle lower back<a name="mimic-medication-site-middlelowerback"> </a></td></tr><tr><td style="white-space:nowrap">mid lower back<a name="mimic-medication-site-midlowerback"> </a></td></tr><tr><td style="white-space:nowrap">NECK<a name="mimic-medication-site-NECK"> </a></td></tr><tr><td style="white-space:nowrap">Neck<a name="mimic-medication-site-Neck"> </a></td></tr><tr><td style="white-space:nowrap">neck<a name="mimic-medication-site-neck"> </a></td></tr><tr><td style="white-space:nowrap">neck and back<a name="mimic-medication-site-neckandback"> </a></td></tr><tr><td style="white-space:nowrap">neck/back<a name="mimic-medication-site-neck.47back"> </a></td></tr><tr><td style="white-space:nowrap">neck/shoulder<a name="mimic-medication-site-neck.47shoulder"> </a></td></tr><tr><td style="white-space:nowrap">outer thigh<a name="mimic-medication-site-outerthigh"> </a></td></tr><tr><td style="white-space:nowrap">parasternal<a name="mimic-medication-site-parasternal"> </a></td></tr><tr><td style="white-space:nowrap">post ear<a name="mimic-medication-site-postear"> </a></td></tr><tr><td style="white-space:nowrap">posterior back<a name="mimic-medication-site-posteriorback"> </a></td></tr><tr><td style="white-space:nowrap">posterior chest<a name="mimic-medication-site-posteriorchest"> </a></td></tr><tr><td style="white-space:nowrap">posterior ear<a name="mimic-medication-site-posteriorear"> </a></td></tr><tr><td style="white-space:nowrap">posterior hip<a name="mimic-medication-site-posteriorhip"> </a></td></tr><tr><td style="white-space:nowrap">posterior knee<a name="mimic-medication-site-posteriorknee"> </a></td></tr><tr><td style="white-space:nowrap">posterior neck<a name="mimic-medication-site-posteriorneck"> </a></td></tr><tr><td style="white-space:nowrap">posterior ribs<a name="mimic-medication-site-posteriorribs"> </a></td></tr><tr><td style="white-space:nowrap">posterior shoulder<a name="mimic-medication-site-posteriorshoulder"> </a></td></tr><tr><td style="white-space:nowrap">posterior thigh<a name="mimic-medication-site-posteriorthigh"> </a></td></tr><tr><td style="white-space:nowrap">post neck<a name="mimic-medication-site-postneck"> </a></td></tr><tr><td style="white-space:nowrap">post shoulder<a name="mimic-medication-site-postshoulder"> </a></td></tr><tr><td style="white-space:nowrap">R arm<a name="mimic-medication-site-Rarm"> </a></td></tr><tr><td style="white-space:nowrap">r arm<a name="mimic-medication-site-rarm"> </a></td></tr><tr><td style="white-space:nowrap">R hip<a name="mimic-medication-site-Rhip"> </a></td></tr><tr><td style="white-space:nowrap">RIB<a name="mimic-medication-site-RIB"> </a></td></tr><tr><td style="white-space:nowrap">Rib<a name="mimic-medication-site-Rib"> </a></td></tr><tr><td style="white-space:nowrap">rib<a name="mimic-medication-site-rib"> </a></td></tr><tr><td style="white-space:nowrap">rib area<a name="mimic-medication-site-ribarea"> </a></td></tr><tr><td style="white-space:nowrap">Rib cage<a name="mimic-medication-site-Ribcage"> </a></td></tr><tr><td style="white-space:nowrap">rib cage<a name="mimic-medication-site-ribcage"> </a></td></tr><tr><td style="white-space:nowrap">ribcage<a name="mimic-medication-site-ribcage"> </a></td></tr><tr><td style="white-space:nowrap">RIBS<a name="mimic-medication-site-RIBS"> </a></td></tr><tr><td style="white-space:nowrap">Ribs<a name="mimic-medication-site-Ribs"> </a></td></tr><tr><td style="white-space:nowrap">ribs<a name="mimic-medication-site-ribs"> </a></td></tr><tr><td style="white-space:nowrap">right<a name="mimic-medication-site-right"> </a></td></tr><tr><td style="white-space:nowrap">right arm<a name="mimic-medication-site-rightarm"> </a></td></tr><tr><td style="white-space:nowrap">right back<a name="mimic-medication-site-rightback"> </a></td></tr><tr><td style="white-space:nowrap">right flank<a name="mimic-medication-site-rightflank"> </a></td></tr><tr><td style="white-space:nowrap">right hip<a name="mimic-medication-site-righthip"> </a></td></tr><tr><td style="white-space:nowrap">right knee<a name="mimic-medication-site-rightknee"> </a></td></tr><tr><td style="white-space:nowrap">right lower back<a name="mimic-medication-site-rightlowerback"> </a></td></tr><tr><td style="white-space:nowrap">right shoulder<a name="mimic-medication-site-rightshoulder"> </a></td></tr><tr><td style="white-space:nowrap">RLE<a name="mimic-medication-site-RLE"> </a></td></tr><tr><td style="white-space:nowrap">R lower back<a name="mimic-medication-site-Rlowerback"> </a></td></tr><tr><td style="white-space:nowrap">RLQ<a name="mimic-medication-site-RLQ"> </a></td></tr><tr><td style="white-space:nowrap">rlq<a name="mimic-medication-site-rlq"> </a></td></tr><tr><td style="white-space:nowrap">RLQ abdomen<a name="mimic-medication-site-RLQabdomen"> </a></td></tr><tr><td style="white-space:nowrap">R shoulder<a name="mimic-medication-site-Rshoulder"> </a></td></tr><tr><td style="white-space:nowrap">r shoulder<a name="mimic-medication-site-rshoulder"> </a></td></tr><tr><td style="white-space:nowrap">RUA<a name="mimic-medication-site-RUA"> </a></td></tr><tr><td style="white-space:nowrap">RUE<a name="mimic-medication-site-RUE"> </a></td></tr><tr><td style="white-space:nowrap">rue<a name="mimic-medication-site-rue"> </a></td></tr><tr><td style="white-space:nowrap">RUQ<a name="mimic-medication-site-RUQ"> </a></td></tr><tr><td style="white-space:nowrap">ruq<a name="mimic-medication-site-ruq"> </a></td></tr><tr><td style="white-space:nowrap">RUQ abd<a name="mimic-medication-site-RUQabd"> </a></td></tr><tr><td style="white-space:nowrap">RUQ abdomen<a name="mimic-medication-site-RUQabdomen"> </a></td></tr><tr><td style="white-space:nowrap">sacral<a name="mimic-medication-site-sacral"> </a></td></tr><tr><td style="white-space:nowrap">sacrum<a name="mimic-medication-site-sacrum"> </a></td></tr><tr><td style="white-space:nowrap">Scapula<a name="mimic-medication-site-Scapula"> </a></td></tr><tr><td style="white-space:nowrap">scapula<a name="mimic-medication-site-scapula"> </a></td></tr><tr><td style="white-space:nowrap">scapular<a name="mimic-medication-site-scapular"> </a></td></tr><tr><td style="white-space:nowrap">schoulder<a name="mimic-medication-site-schoulder"> </a></td></tr><tr><td style="white-space:nowrap">sh<a name="mimic-medication-site-sh"> </a></td></tr><tr><td style="white-space:nowrap">shin<a name="mimic-medication-site-shin"> </a></td></tr><tr><td style="white-space:nowrap">shld<a name="mimic-medication-site-shld"> </a></td></tr><tr><td style="white-space:nowrap">shldr<a name="mimic-medication-site-shldr"> </a></td></tr><tr><td style="white-space:nowrap">sholder<a name="mimic-medication-site-sholder"> </a></td></tr><tr><td style="white-space:nowrap">shouder<a name="mimic-medication-site-shouder"> </a></td></tr><tr><td style="white-space:nowrap">shoudler<a name="mimic-medication-site-shoudler"> </a></td></tr><tr><td style="white-space:nowrap">shouilder<a name="mimic-medication-site-shouilder"> </a></td></tr><tr><td style="white-space:nowrap">shoukder<a name="mimic-medication-site-shoukder"> </a></td></tr><tr><td style="white-space:nowrap">shouklder<a name="mimic-medication-site-shouklder"> </a></td></tr><tr><td style="white-space:nowrap">SHOULDER<a name="mimic-medication-site-SHOULDER"> </a></td></tr><tr><td style="white-space:nowrap">Shoulder<a name="mimic-medication-site-Shoulder"> </a></td></tr><tr><td style="white-space:nowrap">shoulder<a name="mimic-medication-site-shoulder"> </a></td></tr><tr><td style="white-space:nowrap">shoulder.<a name="mimic-medication-site-shoulder.46"> </a></td></tr><tr><td style="white-space:nowrap">shoulder and back<a name="mimic-medication-site-shoulderandback"> </a></td></tr><tr><td style="white-space:nowrap">shoulder and hip<a name="mimic-medication-site-shoulderandhip"> </a></td></tr><tr><td style="white-space:nowrap">shoulder/arm<a name="mimic-medication-site-shoulder.47arm"> </a></td></tr><tr><td style="white-space:nowrap">shoulder/back<a name="mimic-medication-site-shoulder.47back"> </a></td></tr><tr><td style="white-space:nowrap">shoulder blade<a name="mimic-medication-site-shoulderblade"> </a></td></tr><tr><td style="white-space:nowrap">shoulder blades<a name="mimic-medication-site-shoulderblades"> </a></td></tr><tr><td style="white-space:nowrap">shoulder/chest<a name="mimic-medication-site-shoulder.47chest"> </a></td></tr><tr><td style="white-space:nowrap">shoulder/neck<a name="mimic-medication-site-shoulder.47neck"> </a></td></tr><tr><td style="white-space:nowrap">shoulders<a name="mimic-medication-site-shoulders"> </a></td></tr><tr><td style="white-space:nowrap">shouldert<a name="mimic-medication-site-shouldert"> </a></td></tr><tr><td style="white-space:nowrap">shoulder/upper back<a name="mimic-medication-site-shoulder.47upperback"> </a></td></tr><tr><td style="white-space:nowrap">shouler<a name="mimic-medication-site-shouler"> </a></td></tr><tr><td style="white-space:nowrap">Side<a name="mimic-medication-site-Side"> </a></td></tr><tr><td style="white-space:nowrap">side<a name="mimic-medication-site-side"> </a></td></tr><tr><td style="white-space:nowrap">side/back<a name="mimic-medication-site-side.47back"> </a></td></tr><tr><td style="white-space:nowrap">spine<a name="mimic-medication-site-spine"> </a></td></tr><tr><td style="white-space:nowrap">sternal<a name="mimic-medication-site-sternal"> </a></td></tr><tr><td style="white-space:nowrap">sternal incision<a name="mimic-medication-site-sternalincision"> </a></td></tr><tr><td style="white-space:nowrap">Sternum<a name="mimic-medication-site-Sternum"> </a></td></tr><tr><td style="white-space:nowrap">sternum<a name="mimic-medication-site-sternum"> </a></td></tr><tr><td style="white-space:nowrap">stomach<a name="mimic-medication-site-stomach"> </a></td></tr><tr><td style="white-space:nowrap">stomach and back<a name="mimic-medication-site-stomachandback"> </a></td></tr><tr><td style="white-space:nowrap">stump<a name="mimic-medication-site-stump"> </a></td></tr><tr><td style="white-space:nowrap">tailbone<a name="mimic-medication-site-tailbone"> </a></td></tr><tr><td style="white-space:nowrap">Thigh<a name="mimic-medication-site-Thigh"> </a></td></tr><tr><td style="white-space:nowrap">thigh<a name="mimic-medication-site-thigh"> </a></td></tr><tr><td style="white-space:nowrap">thoracic<a name="mimic-medication-site-thoracic"> </a></td></tr><tr><td style="white-space:nowrap">thoracotomy<a name="mimic-medication-site-thoracotomy"> </a></td></tr><tr><td style="white-space:nowrap">thoracotomy site<a name="mimic-medication-site-thoracotomysite"> </a></td></tr><tr><td style="white-space:nowrap">thorax<a name="mimic-medication-site-thorax"> </a></td></tr><tr><td style="white-space:nowrap">top of foot<a name="mimic-medication-site-topoffoot"> </a></td></tr><tr><td style="white-space:nowrap">torso<a name="mimic-medication-site-torso"> </a></td></tr><tr><td style="white-space:nowrap">trap<a name="mimic-medication-site-trap"> </a></td></tr><tr><td style="white-space:nowrap">trunk<a name="mimic-medication-site-trunk"> </a></td></tr><tr><td style="white-space:nowrap">UA<a name="mimic-medication-site-UA"> </a></td></tr><tr><td style="white-space:nowrap">UE<a name="mimic-medication-site-UE"> </a></td></tr><tr><td style="white-space:nowrap">ue<a name="mimic-medication-site-ue"> </a></td></tr><tr><td style="white-space:nowrap">underarm<a name="mimic-medication-site-underarm"> </a></td></tr><tr><td style="white-space:nowrap">under breast<a name="mimic-medication-site-underbreast"> </a></td></tr><tr><td style="white-space:nowrap">under ear<a name="mimic-medication-site-underear"> </a></td></tr><tr><td style="white-space:nowrap">upper<a name="mimic-medication-site-upper"> </a></td></tr><tr><td style="white-space:nowrap">upper abd<a name="mimic-medication-site-upperabd"> </a></td></tr><tr><td style="white-space:nowrap">upper abdomen<a name="mimic-medication-site-upperabdomen"> </a></td></tr><tr><td style="white-space:nowrap">upper and lower back<a name="mimic-medication-site-upperandlowerback"> </a></td></tr><tr><td style="white-space:nowrap">Upper Arm<a name="mimic-medication-site-UpperArm"> </a></td></tr><tr><td style="white-space:nowrap">Upper arm<a name="mimic-medication-site-Upperarm"> </a></td></tr><tr><td style="white-space:nowrap">upper arm<a name="mimic-medication-site-upperarm"> </a></td></tr><tr><td style="white-space:nowrap">Upper Back<a name="mimic-medication-site-UpperBack"> </a></td></tr><tr><td style="white-space:nowrap">Upper back<a name="mimic-medication-site-Upperback"> </a></td></tr><tr><td style="white-space:nowrap">upper back<a name="mimic-medication-site-upperback"> </a></td></tr><tr><td style="white-space:nowrap">upper back/neck<a name="mimic-medication-site-upperback.47neck"> </a></td></tr><tr><td style="white-space:nowrap">upper back/shoulder<a name="mimic-medication-site-upperback.47shoulder"> </a></td></tr><tr><td style="white-space:nowrap">upper chest<a name="mimic-medication-site-upperchest"> </a></td></tr><tr><td style="white-space:nowrap">upper extremity<a name="mimic-medication-site-upperextremity"> </a></td></tr><tr><td style="white-space:nowrap">upper leg<a name="mimic-medication-site-upperleg"> </a></td></tr><tr><td style="white-space:nowrap">upper quad<a name="mimic-medication-site-upperquad"> </a></td></tr><tr><td style="white-space:nowrap">upper quadrant<a name="mimic-medication-site-upperquadrant"> </a></td></tr><tr><td style="white-space:nowrap">upper shoulder<a name="mimic-medication-site-uppershoulder"> </a></td></tr><tr><td style="white-space:nowrap">Upper thigh<a name="mimic-medication-site-Upperthigh"> </a></td></tr><tr><td style="white-space:nowrap">upper thigh<a name="mimic-medication-site-upperthigh"> </a></td></tr><tr><td style="white-space:nowrap">UQ<a name="mimic-medication-site-UQ"> </a></td></tr><tr><td style="white-space:nowrap">wrist<a name="mimic-medication-site-wrist"> </a></td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.mimic#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:07-0500">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

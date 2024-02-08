@@ -1,0 +1,50 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ExampleMimicObservationMicroSusc",
+  "meta" : {
+    "profile" : ["http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-susc"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ExampleMimicObservationMicroSusc\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ExampleMimicObservationMicroSusc&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-observation-micro-susc.html\">MIMIC Observation Micro Susc</a></p></div><p><b>Dilution Details</b>: &lt;=4</p><p><b>identifier</b>: <code>http://mimic.mit.edu/fhir/mimic/identifier/observation-micro-susc</code>/12345</p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: CEFAZOLIN <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-microbiology-antibiotic.html\">MimicMicrobiologyAntibiotic</a>#90005)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>effective</b>: 2181-08-25 12:56:00-0400</p><p><b>value</b>: Susceptible <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ObservationInterpretation.html\">ObservationInterpretation</a>#S)</span></p><p><b>derivedFrom</b>: <a href=\"Observation-ExampleMimicObservationMicroOrg.html\">Observation/ExampleMimicObservationMicroOrg</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/dilution-details",
+    "valueQuantity" : {
+      "value" : 4,
+      "comparator" : "<="
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://mimic.mit.edu/fhir/mimic/identifier/observation-micro-susc",
+    "value" : "12345"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-antibiotic",
+      "code" : "90005",
+      "display" : "CEFAZOLIN"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleMimicPatient"
+  },
+  "effectiveDateTime" : "2181-08-25T12:56:00-04:00",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "S"
+    }]
+  },
+  "derivedFrom" : [{
+    "reference" : "Observation/ExampleMimicObservationMicroOrg"
+  }]
+}

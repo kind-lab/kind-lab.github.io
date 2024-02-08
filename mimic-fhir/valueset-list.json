@@ -1,0 +1,419 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-admission-class",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicAdmissionClass",
+      "title" : "MimicAdmissionClass",
+      "description" : "The admission class for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admission-class",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-admission-type",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicAdmissionType",
+      "title" : "MimicAdmissionType",
+      "description" : "The admission type for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admission-type",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-admit-source",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicAdmitSource",
+      "title" : "MimicAdmitSource",
+      "description" : "The admission source for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admit-source"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-bodysite",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicBodysite",
+      "title" : "MimicBodysite",
+      "description" : "The bodysite codes for MIMIC",
+      "systems" : ["http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite"]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-chartevents-d-items",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicCharteventsDItems",
+      "title" : "MimicCharteventsDItems",
+      "description" : "The item codes for chartevents used in MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-chartevents-d-items"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-d-labitems",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicDLabitems",
+      "title" : "MimicDLabitems",
+      "description" : "The lab item codes used in MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-labitems"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-dateAbsentReason",
+      "version" : "1.3.0",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "MIMIC-ED Data Absent Reason",
+      "description" : "Selected code from the DataAbsentReason value set.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-datetimeevents-d-items",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicDatetimeeventsDItems",
+      "title" : "MimicDatetimeeventsDItems",
+      "description" : "The datetime item codes used in MIMIC",
+      "systems" : ["http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items"]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-diagnosis-icd",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicDiagnosisIcd",
+      "title" : "MimicDiagnosisIcd",
+      "description" : "The diagnosis ICD9 and ICD10 codes for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-diagnosis-icd10",
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-diagnosis-icd9"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-discharge-disposition",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicDischargeDisposition",
+      "title" : "MimicDischargeDisposition",
+      "description" : "The discharge disposition for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-discharge-disposition"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-encounter-type",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicEncounterType",
+      "title" : "MimicEncounterType",
+      "description" : "The encounter type for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-hcpcs-cd",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-lab-interpretation",
+      "version" : "1.3.0",
+      "status" : "active",
+      "name" : "MimicLabInterpretation",
+      "title" : "MIMIC Observation Lab interpretation Value Set",
+      "description" : "Selected codes from ObservationInterpretation that represent interpretations in MIMIC.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-lab-priority",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicLabPriority",
+      "title" : "MimicLabPriority",
+      "description" : "The priority of the lab item in MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-priority"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medadmin-category-icu",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicMedadminCategoryIcu",
+      "title" : "MimicMedadminCategoryIcu",
+      "description" : "The medication administration category for the ICU for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medadmin-category-icu"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicMedication",
+      "title" : "MimicMedication",
+      "description" : "All medication codesystems combined for MIMIC. Contains medication-formulary-drug-cd, medication-ndc, medication-name, medication-poe-iv, medication-icu",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-ndc",
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-name",
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-poe-iv",
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-formulary-drug-cd",
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-icu"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-etc",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicMedicationEtc",
+      "title" : "MimicMedicationEtc",
+      "description" : "The medication ETC (enhanced therapeutic class) codes for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-etc"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-frequency",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicMedicationFrequency",
+      "title" : "MimicMedicationFrequency",
+      "description" : "The medication frequency reported for medication delivery in MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-frequency"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-gsn",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicMedicationGsn",
+      "title" : "MimicMedicationGsn",
+      "description" : "The medication GSN codes for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-gsn"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-method",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicMedicationMethod",
+      "title" : "MimicMedicationMethod",
+      "description" : "The medication delivery method for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-method"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-method-icu",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicMedicationMethodIcu",
+      "title" : "MimicMedicationMethodIcu",
+      "description" : "The medication delivery method used in the ICU for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-method-icu"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-route",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicMedicationRoute",
+      "title" : "MimicMedicationRoute",
+      "description" : "The medication route during administration for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-site",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicMedicationSite",
+      "title" : "MimicMedicationSite",
+      "description" : "The medication site for administration in MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-site"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-micro-interpretation",
+      "version" : "1.3.0",
+      "status" : "active",
+      "name" : "MimicMicroInterpretation",
+      "title" : "MIMIC Observation Lab interpretation Value Set",
+      "description" : "Selected codes from ObservationInterpretation that represent interpretations in MIMIC.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-antibiotic",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicMicrobiologyAntibiotic",
+      "title" : "MimicMicrobiologyAntibiotic",
+      "description" : "The microbiology antibiotic being tested on an organism in MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-antibiotic"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-organism",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicMicrobiologyOrganism",
+      "title" : "MimicMicrobiologyOrganism",
+      "description" : "The microbiology organism being tested in MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-organism"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-test",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicMicrobiologyTest",
+      "title" : "MimicMicrobiologyTest",
+      "description" : "The microbiology test completed in MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-category",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicObservationCategory",
+      "title" : "MimicObservationCategory",
+      "description" : "The observation category codes for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-category-ed",
+      "version" : "1.3.0",
+      "status" : "active",
+      "name" : "MimicObservationCategoryED",
+      "title" : "MIMIC-ED Observation Resource Category Value Set",
+      "description" : "Selected codes from the ObservationCategoryCodes value set.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-type-ed",
+      "version" : "1.3.0",
+      "status" : "active",
+      "name" : "MimicObservationTypeED",
+      "title" : "MIMIC-ED Observation Resource Types Value Set",
+      "description" : "Selected codes from LOINC that represent values from the triage table in MIMIC-ED.",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-type-vital",
+      "version" : "1.3.0",
+      "status" : "active",
+      "name" : "MimicObservationTypeVital",
+      "title" : "MIMIC-ED Observation Resource Types Value Set",
+      "description" : "Selected codes from LOINC that represent values from the triage or vitalsigns tables of MIMIC-ED.",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-outputevents-d-items",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicOutputeventsDItems",
+      "title" : "MimicOutputeventsDItems",
+      "description" : "The item codes for outputevents used in MIMIC",
+      "systems" : ["http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items"]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedure-category",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicProcedureCategory",
+      "title" : "MimicProcedureCategory",
+      "description" : "The procedure category codes for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-procedure-category"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedure-icd",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicProcedureIcd",
+      "title" : "MimicProcedureIcd",
+      "description" : "The procedure ICD9 and ICD10 codes for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-procedure-icd10",
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-procedure-icd9"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedure-types-ed",
+      "version" : "1.3.0",
+      "status" : "active",
+      "name" : "MimicProcedureTypesED",
+      "title" : "MIMIC-ED Procedure Code Types Value Set",
+      "description" : "Selected codes from SNOMED CT that represent either triage or vitalsign measurements.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedureevents-d-items",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicProcedureeventsDItems",
+      "title" : "MimicProcedureeventsDItems",
+      "description" : "The procedure item codes used in the ICU for MIMIC",
+      "systems" : ["http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items"]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-services",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicServices",
+      "title" : "MimicServices",
+      "description" : "The hospital services for MIMIC",
+      "systems" : ["http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-services"]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-specimen-type",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicSpecimenType",
+      "title" : "MimicSpecimenType",
+      "description" : "The specimen type codes for both lab and micro specimen for MIMIC",
+      "systems" : [
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc",
+        "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid"
+      ]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-unit-quantity",
+      "version" : "1.3.0",
+      "status" : "active",
+      "name" : "MimicQuantityUnit",
+      "title" : "MIMIC-ED Observation Quantity Units Value Set",
+      "description" : "Selected codes from UCUM that represent quantity units.",
+      "systems" : ["http://unitsofmeasure.org"]
+    },
+    {
+      "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-units",
+      "version" : "1.3.0",
+      "status" : "draft",
+      "name" : "MimicUnits",
+      "title" : "MimicUnits",
+      "description" : "The units used throughout MIMIC",
+      "systems" : ["http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units"]
+    }
+  ]
+}

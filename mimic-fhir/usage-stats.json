@@ -1,0 +1,217 @@
+{
+  "package": "kindlab.fhir.mimic",
+  "version": "1.3.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/dilution-details",
+      "title": "Dilution Details",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/lab-priority",
+      "title": "Lab Priority",
+      "types": [
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Condition": [
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-condition",
+        "title": "MIMIC Condition"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter",
+        "title": "MIMIC Encounter"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-location",
+        "title": "MIMIC Location"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication",
+        "title": "MIMIC Medication"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration",
+        "title": "MIMIC Medication Administration"
+      },
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration-icu",
+        "title": "MIMIC Medication Administration ICU"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense",
+        "title": "MIMIC Medication Dispense"
+      },
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense-ed",
+        "title": "MIMIC-ED MedicationDispense"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-request",
+        "title": "MIMIC Medication Request"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-statement-ed",
+        "title": "MIMIC-ED MedicationStatement"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-chartevents",
+        "title": "MIMIC Observation Chartevents"
+      },
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-datetimeevents",
+        "title": "MIMIC Observation Datetimeevents"
+      },
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-ed",
+        "title": "MIMIC-ED Observation"
+      },
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-labevents",
+        "title": "MIMIC Observation Labevents"
+      },
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-org",
+        "title": "MIMIC Observation Micro Org"
+      },
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-susc",
+        "title": "MIMIC Observation Micro Susc"
+      },
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-test",
+        "title": "MIMIC Observation Micro Test"
+      },
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-outputevents",
+        "title": "MIMIC Observation Outputevents"
+      },
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-vital-signs",
+        "title": "MIMIC-ED Observation Vital Signs"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-organization",
+        "title": "MIMIC Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-patient",
+        "title": "MIMIC Patient"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure",
+        "title": "MIMIC Procedure"
+      },
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-ed",
+        "title": "MIMIC Procedure ED"
+      },
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-icu",
+        "title": "MIMIC Procedure ICU"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-specimen",
+        "title": "MIMIC Specimen"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Patient.name.given"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ],
+    "http://mimic.mit.edu/fhir/mimic/StructureDefinition/dilution-details": [
+      "Observation"
+    ],
+    "http://mimic.mit.edu/fhir/mimic/StructureDefinition/lab-priority": [
+      "Observation"
+    ]
+  }
+}

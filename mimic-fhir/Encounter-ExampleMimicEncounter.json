@@ -1,0 +1,75 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "ExampleMimicEncounter",
+  "meta" : {
+    "profile" : ["http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"ExampleMimicEncounter\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;ExampleMimicEncounter&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-encounter.html\">MIMIC Encounter</a></p></div><p><b>identifier</b>: <code>http://mimic.mit.edu/fhir/mimic/identifier/encounter-hosp</code>/22429197</p><p><b>status</b>: finished</p><p><b>class</b>: EW EMER. (Details: http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admission-class code EW EMER. = 'EW EMER.', stated as 'null')</p><p><b>type</b>: Patient encounter procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#308335008)</span></p><p><b>serviceType</b>: TRAUM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-services.html\">MimicServices</a>#TRAUM)</span></p><p><b>priority</b>: EW EMER. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-admission-type.html\">MimicAdmissionType</a>#EW EMER.)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>period</b>: 2147-12-30 08:40:00-0500 --&gt; 2148-01-11 17:55:00-0500</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td>EMERGENCY ROOM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-admit-source.html\">MimicAdmitSource</a>#EMERGENCY ROOM)</span></td><td>REHAB <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-discharge-disposition.html\">MimicDischargeDisposition</a>#REHAB)</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-ExampleLocation.html\">Location/ExampleLocation</a> &quot;Trauma SICU (TSICU)&quot;</td><td>2147-12-30 06:45:00-0500 --&gt; 2147-12-30 09:33:00-0500</td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-ExampleMimicOrganization.html\">Organization/ExampleMimicOrganization</a> &quot;Beth Israel Deaconess Medical Center&quot;</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://mimic.mit.edu/fhir/mimic/identifier/encounter-hosp",
+    "value" : "22429197",
+    "assigner" : {
+      "reference" : "Organization/ExampleMimicOrganization"
+    }
+  }],
+  "status" : "finished",
+  "class" : {
+    "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admission-class",
+    "code" : "EW EMER."
+  },
+  "type" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "308335008",
+      "display" : "Patient encounter procedure"
+    }]
+  }],
+  "serviceType" : {
+    "coding" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-services",
+      "code" : "TRAUM"
+    }]
+  },
+  "priority" : {
+    "coding" : [{
+      "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admission-type",
+      "code" : "EW EMER."
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleMimicPatient"
+  },
+  "period" : {
+    "start" : "2147-12-30T08:40:00-05:00",
+    "end" : "2148-01-11T17:55:00-05:00"
+  },
+  "hospitalization" : {
+    "admitSource" : {
+      "coding" : [{
+        "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admit-source",
+        "code" : "EMERGENCY ROOM"
+      }]
+    },
+    "dischargeDisposition" : {
+      "coding" : [{
+        "system" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-discharge-disposition",
+        "code" : "REHAB"
+      }]
+    }
+  },
+  "location" : [{
+    "location" : {
+      "reference" : "Location/ExampleLocation"
+    },
+    "period" : {
+      "start" : "2147-12-30T06:45:00-05:00",
+      "end" : "2147-12-30T09:33:00-05:00"
+    }
+  }],
+  "serviceProvider" : {
+    "reference" : "Organization/ExampleMimicOrganization"
+  }
+}

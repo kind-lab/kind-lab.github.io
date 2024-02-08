@@ -1,0 +1,251 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mimic-medication-route"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This  code system <code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">AD<a name=\"mimic-medication-route-AD\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IH<a name=\"mimic-medication-route-IH\"> </a></td></tr><tr><td style=\"white-space:nowrap\">G TUBE<a name=\"mimic-medication-route-GTUBE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NG<a name=\"mimic-medication-route-NG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">AERO<a name=\"mimic-medication-route-AERO\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IL<a name=\"mimic-medication-route-IL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IT<a name=\"mimic-medication-route-IT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PO<a name=\"mimic-medication-route-PO\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DWELL<a name=\"mimic-medication-route-DWELL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RIGHT EAR<a name=\"mimic-medication-route-RIGHTEAR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IU<a name=\"mimic-medication-route-IU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LEFT EAR<a name=\"mimic-medication-route-LEFTEAR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PO/NG<a name=\"mimic-medication-route-PO.47NG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INTRAVITREAL<a name=\"mimic-medication-route-INTRAVITREAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PO OR ENTERAL TUBE<a name=\"mimic-medication-route-POORENTERALTUBE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SIDE PORT<a name=\"mimic-medication-route-SIDEPORT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">FEMORAL VEIN<a name=\"mimic-medication-route-FEMORALVEIN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IV<a name=\"mimic-medication-route-IV\"> </a></td></tr><tr><td style=\"white-space:nowrap\">REPLACE<a name=\"mimic-medication-route-REPLACE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IA<a name=\"mimic-medication-route-IA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LEFT EYE<a name=\"mimic-medication-route-LEFTEYE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IV FLUSH<a name=\"mimic-medication-route-IVFLUSH\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IP<a name=\"mimic-medication-route-IP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ED<a name=\"mimic-medication-route-ED\"> </a></td></tr><tr><td style=\"white-space:nowrap\">AS<a name=\"mimic-medication-route-AS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INTRA-ARTERIALLY<a name=\"mimic-medication-route-INTRA-ARTERIALLY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ORAL<a name=\"mimic-medication-route-ORAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">FLUSH<a name=\"mimic-medication-route-FLUSH\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BOTH EYES<a name=\"mimic-medication-route-BOTHEYES\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DIALYS<a name=\"mimic-medication-route-DIALYS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INFUSION VIA ON-Q PUMP<a name=\"mimic-medication-route-INFUSIONVIAON-QPUMP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PO/IV<a name=\"mimic-medication-route-PO.47IV\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IVPCA<a name=\"mimic-medication-route-IVPCA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INHALATION<a name=\"mimic-medication-route-INHALATION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OD<a name=\"mimic-medication-route-OD\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IV INFUSION<a name=\"mimic-medication-route-IVINFUSION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ND<a name=\"mimic-medication-route-ND\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PO/OG<a name=\"mimic-medication-route-PO.47OG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EDPCA<a name=\"mimic-medication-route-EDPCA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PEG<a name=\"mimic-medication-route-PEG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SL<a name=\"mimic-medication-route-SL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BOTH EARS<a name=\"mimic-medication-route-BOTHEARS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IVS<a name=\"mimic-medication-route-IVS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IR<a name=\"mimic-medication-route-IR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NS<a name=\"mimic-medication-route-NS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">AU<a name=\"mimic-medication-route-AU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OU<a name=\"mimic-medication-route-OU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IN<a name=\"mimic-medication-route-IN\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INTRALESIONAL<a name=\"mimic-medication-route-INTRALESIONAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">P.O.<a name=\"mimic-medication-route-P.46O.46\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TD<a name=\"mimic-medication-route-TD\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NGT<a name=\"mimic-medication-route-NGT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INTRACORPOREAL<a name=\"mimic-medication-route-INTRACORPOREAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NAS<a name=\"mimic-medication-route-NAS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Po<a name=\"mimic-medication-route-Po\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IMPELLA<a name=\"mimic-medication-route-IMPELLA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ET<a name=\"mimic-medication-route-ET\"> </a></td></tr><tr><td style=\"white-space:nowrap\">EX-VIVO<a name=\"mimic-medication-route-EX-VIVO\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NEB<a name=\"mimic-medication-route-NEB\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IRR<a name=\"mimic-medication-route-IRR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SC INFUSION<a name=\"mimic-medication-route-SCINFUSION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PL<a name=\"mimic-medication-route-PL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ITPCA<a name=\"mimic-medication-route-ITPCA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LOCK<a name=\"mimic-medication-route-LOCK\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IJ<a name=\"mimic-medication-route-IJ\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IO<a name=\"mimic-medication-route-IO\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OG<a name=\"mimic-medication-route-OG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TRANSDERMAL<a name=\"mimic-medication-route-TRANSDERMAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OGT<a name=\"mimic-medication-route-OGT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SUBCUT INFUSION<a name=\"mimic-medication-route-SUBCUTINFUSION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">VG<a name=\"mimic-medication-route-VG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SCPCA<a name=\"mimic-medication-route-SCPCA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IVCI<a name=\"mimic-medication-route-IVCI\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IV FLUSH*<a name=\"mimic-medication-route-IVFLUSH.42\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INTRAPLEURAL<a name=\"mimic-medication-route-INTRAPLEURAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OS<a name=\"mimic-medication-route-OS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DLPICC<a name=\"mimic-medication-route-DLPICC\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IV BOLUS<a name=\"mimic-medication-route-IVBOLUS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SC<a name=\"mimic-medication-route-SC\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INTERSPACE<a name=\"mimic-medication-route-INTERSPACE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">po<a name=\"mimic-medication-route-po\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SCPUMP<a name=\"mimic-medication-route-SCPUMP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TT<a name=\"mimic-medication-route-TT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IV DRIP<a name=\"mimic-medication-route-IVDRIP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PB<a name=\"mimic-medication-route-PB\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IVT<a name=\"mimic-medication-route-IVT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">RIGHT EYE<a name=\"mimic-medication-route-RIGHTEYE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PR<a name=\"mimic-medication-route-PR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">SUBCUT<a name=\"mimic-medication-route-SUBCUT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BUCCAL<a name=\"mimic-medication-route-BUCCAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">AC<a name=\"mimic-medication-route-AC\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TP<a name=\"mimic-medication-route-TP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">INTRAPERICARDIAL<a name=\"mimic-medication-route-INTRAPERICARDIAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">AXILLARY<a name=\"mimic-medication-route-AXILLARY\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ng<a name=\"mimic-medication-route-ng\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PERIPHNERVE<a name=\"mimic-medication-route-PERIPHNERVE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IC<a name=\"mimic-medication-route-IC\"> </a></td></tr><tr><td style=\"white-space:nowrap\">BU<a name=\"mimic-medication-route-BU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PV<a name=\"mimic-medication-route-PV\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NU<a name=\"mimic-medication-route-NU\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ENTERAL TUBE ONLY – NOT ORAL<a name=\"mimic-medication-route-ENTERALTUBEONLY.8211NOTORAL\"> </a></td></tr><tr><td style=\"white-space:nowrap\">J TUBE<a name=\"mimic-medication-route-JTUBE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LUMBAR PLEXUS<a name=\"mimic-medication-route-LUMBARPLEXUS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NG/OG<a name=\"mimic-medication-route-NG.47OG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ID<a name=\"mimic-medication-route-ID\"> </a></td></tr><tr><td style=\"white-space:nowrap\">IM<a name=\"mimic-medication-route-IM\"> </a></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.0"] ; # 
+  fhir:name [ fhir:v "MimicMedicationRoute"] ; # 
+  fhir:title [ fhir:v "MimicMedicationRoute"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-21T13:59:43-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The medication route during administration for MIMIC"] ; # 
+  fhir:valueSet [
+     fhir:v "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-route"^^xsd:anyURI ;
+     fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-route>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AD" ]
+  ] [
+     fhir:code [ fhir:v "IH" ]
+  ] [
+     fhir:code [ fhir:v "G TUBE" ]
+  ] [
+     fhir:code [ fhir:v "NG" ]
+  ] [
+     fhir:code [ fhir:v "AERO" ]
+  ] [
+     fhir:code [ fhir:v "IL" ]
+  ] [
+     fhir:code [ fhir:v "IT" ]
+  ] [
+     fhir:code [ fhir:v "PO" ]
+  ] [
+     fhir:code [ fhir:v "DWELL" ]
+  ] [
+     fhir:code [ fhir:v "RIGHT EAR" ]
+  ] [
+     fhir:code [ fhir:v "IU" ]
+  ] [
+     fhir:code [ fhir:v "LEFT EAR" ]
+  ] [
+     fhir:code [ fhir:v "PO/NG" ]
+  ] [
+     fhir:code [ fhir:v "INTRAVITREAL" ]
+  ] [
+     fhir:code [ fhir:v "PO OR ENTERAL TUBE" ]
+  ] [
+     fhir:code [ fhir:v "SIDE PORT" ]
+  ] [
+     fhir:code [ fhir:v "FEMORAL VEIN" ]
+  ] [
+     fhir:code [ fhir:v "IV" ]
+  ] [
+     fhir:code [ fhir:v "REPLACE" ]
+  ] [
+     fhir:code [ fhir:v "IA" ]
+  ] [
+     fhir:code [ fhir:v "LEFT EYE" ]
+  ] [
+     fhir:code [ fhir:v "IV FLUSH" ]
+  ] [
+     fhir:code [ fhir:v "IP" ]
+  ] [
+     fhir:code [ fhir:v "ED" ]
+  ] [
+     fhir:code [ fhir:v "AS" ]
+  ] [
+     fhir:code [ fhir:v "INTRA-ARTERIALLY" ]
+  ] [
+     fhir:code [ fhir:v "ORAL" ]
+  ] [
+     fhir:code [ fhir:v "FLUSH" ]
+  ] [
+     fhir:code [ fhir:v "BOTH EYES" ]
+  ] [
+     fhir:code [ fhir:v "DIALYS" ]
+  ] [
+     fhir:code [ fhir:v "INFUSION VIA ON-Q PUMP" ]
+  ] [
+     fhir:code [ fhir:v "PO/IV" ]
+  ] [
+     fhir:code [ fhir:v "IVPCA" ]
+  ] [
+     fhir:code [ fhir:v "INHALATION" ]
+  ] [
+     fhir:code [ fhir:v "OD" ]
+  ] [
+     fhir:code [ fhir:v "IV INFUSION" ]
+  ] [
+     fhir:code [ fhir:v "ND" ]
+  ] [
+     fhir:code [ fhir:v "PO/OG" ]
+  ] [
+     fhir:code [ fhir:v "EDPCA" ]
+  ] [
+     fhir:code [ fhir:v "PEG" ]
+  ] [
+     fhir:code [ fhir:v "SL" ]
+  ] [
+     fhir:code [ fhir:v "BOTH EARS" ]
+  ] [
+     fhir:code [ fhir:v "IVS" ]
+  ] [
+     fhir:code [ fhir:v "IR" ]
+  ] [
+     fhir:code [ fhir:v "NS" ]
+  ] [
+     fhir:code [ fhir:v "AU" ]
+  ] [
+     fhir:code [ fhir:v "OU" ]
+  ] [
+     fhir:code [ fhir:v "IN" ]
+  ] [
+     fhir:code [ fhir:v "INTRALESIONAL" ]
+  ] [
+     fhir:code [ fhir:v "P.O." ]
+  ] [
+     fhir:code [ fhir:v "TD" ]
+  ] [
+     fhir:code [ fhir:v "NGT" ]
+  ] [
+     fhir:code [ fhir:v "INTRACORPOREAL" ]
+  ] [
+     fhir:code [ fhir:v "NAS" ]
+  ] [
+     fhir:code [ fhir:v "Po" ]
+  ] [
+     fhir:code [ fhir:v "IMPELLA" ]
+  ] [
+     fhir:code [ fhir:v "ET" ]
+  ] [
+     fhir:code [ fhir:v "EX-VIVO" ]
+  ] [
+     fhir:code [ fhir:v "NEB" ]
+  ] [
+     fhir:code [ fhir:v "IRR" ]
+  ] [
+     fhir:code [ fhir:v "SC INFUSION" ]
+  ] [
+     fhir:code [ fhir:v "PL" ]
+  ] [
+     fhir:code [ fhir:v "ITPCA" ]
+  ] [
+     fhir:code [ fhir:v "LOCK" ]
+  ] [
+     fhir:code [ fhir:v "IJ" ]
+  ] [
+     fhir:code [ fhir:v "IO" ]
+  ] [
+     fhir:code [ fhir:v "OG" ]
+  ] [
+     fhir:code [ fhir:v "TRANSDERMAL" ]
+  ] [
+     fhir:code [ fhir:v "OGT" ]
+  ] [
+     fhir:code [ fhir:v "SUBCUT INFUSION" ]
+  ] [
+     fhir:code [ fhir:v "VG" ]
+  ] [
+     fhir:code [ fhir:v "SCPCA" ]
+  ] [
+     fhir:code [ fhir:v "IVCI" ]
+  ] [
+     fhir:code [ fhir:v "IV FLUSH*" ]
+  ] [
+     fhir:code [ fhir:v "INTRAPLEURAL" ]
+  ] [
+     fhir:code [ fhir:v "OS" ]
+  ] [
+     fhir:code [ fhir:v "DLPICC" ]
+  ] [
+     fhir:code [ fhir:v "IV BOLUS" ]
+  ] [
+     fhir:code [ fhir:v "SC" ]
+  ] [
+     fhir:code [ fhir:v "INTERSPACE" ]
+  ] [
+     fhir:code [ fhir:v "po" ]
+  ] [
+     fhir:code [ fhir:v "SCPUMP" ]
+  ] [
+     fhir:code [ fhir:v "TT" ]
+  ] [
+     fhir:code [ fhir:v "IV DRIP" ]
+  ] [
+     fhir:code [ fhir:v "PB" ]
+  ] [
+     fhir:code [ fhir:v "IVT" ]
+  ] [
+     fhir:code [ fhir:v "RIGHT EYE" ]
+  ] [
+     fhir:code [ fhir:v "PR" ]
+  ] [
+     fhir:code [ fhir:v "SUBCUT" ]
+  ] [
+     fhir:code [ fhir:v "BUCCAL" ]
+  ] [
+     fhir:code [ fhir:v "AC" ]
+  ] [
+     fhir:code [ fhir:v "TP" ]
+  ] [
+     fhir:code [ fhir:v "INTRAPERICARDIAL" ]
+  ] [
+     fhir:code [ fhir:v "AXILLARY" ]
+  ] [
+     fhir:code [ fhir:v "ng" ]
+  ] [
+     fhir:code [ fhir:v "PERIPHNERVE" ]
+  ] [
+     fhir:code [ fhir:v "IC" ]
+  ] [
+     fhir:code [ fhir:v "BU" ]
+  ] [
+     fhir:code [ fhir:v "PV" ]
+  ] [
+     fhir:code [ fhir:v "NU" ]
+  ] [
+     fhir:code [ fhir:v "ENTERAL TUBE ONLY – NOT ORAL" ]
+  ] [
+     fhir:code [ fhir:v "J TUBE" ]
+  ] [
+     fhir:code [ fhir:v "LUMBAR PLEXUS" ]
+  ] [
+     fhir:code [ fhir:v "NG/OG" ]
+  ] [
+     fhir:code [ fhir:v "ID" ]
+  ] [
+     fhir:code [ fhir:v "IM" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

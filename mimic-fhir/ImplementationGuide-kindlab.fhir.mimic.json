@@ -1,0 +1,2374 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "kindlab.fhir.mimic",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MIMIC</h2><p>The official URL for this implementation guide is: </p><pre>http://mimic.mit.edu/fhir/mimic/ImplementationGuide/kindlab.fhir.mimic</pre></div>"
+  },
+  "url" : "http://mimic.mit.edu/fhir/mimic/ImplementationGuide/kindlab.fhir.mimic",
+  "version" : "1.3.0",
+  "name" : "MIMIC",
+  "title" : "MIMIC Implementation Guide",
+  "status" : "draft",
+  "date" : "2024-02-08T11:07:36-05:00",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "packageId" : "kindlab.fhir.mimic",
+  "license" : "MIT",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "5.3.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "uscore",
+    "uri" : "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+    "packageId" : "hl7.fhir.us.core",
+    "version" : "4.0.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2022+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "Draft"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://mimic.mit.edu/fhir/mimic/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2022+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "Draft"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://mimic.mit.edu/fhir/mimic/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-condition"
+      },
+      "name" : "MIMIC Condition",
+      "description" : "A MIMIC condition profile based on FHIR R4 Condition.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-encounter"
+      },
+      "name" : "MIMIC Encounter",
+      "description" : "A MIMIC encounter profile based on FHIR R4 Encounter.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-location"
+      },
+      "name" : "MIMIC Location",
+      "description" : "A MIMIC location profile based on FHIR R4 Location.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-medication"
+      },
+      "name" : "MIMIC Medication",
+      "description" : "A MIMIC medication profile based on the FHIR R4 medication resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-medication-administration"
+      },
+      "name" : "MIMIC Medication Administration",
+      "description" : "A MIMIC medication administration profile based on the base FHIR R4 medication administration resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-medication-administration-icu"
+      },
+      "name" : "MIMIC Medication Administration ICU",
+      "description" : "A MIMIC medication administration ICU profile based on the FHIR R4 medication administration resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-medication-dispense"
+      },
+      "name" : "MIMIC Medication Dispense",
+      "description" : "A MIMIC medication dispense profile based on the FHIR R4 medication dispense resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-medication-dispense-ed"
+      },
+      "name" : "MIMIC-ED MedicationDispense",
+      "description" : "A MedicationDispense resource that represents each record in the pyxis (ED medication dispensation) table of MIMIC-ED.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-medication-request"
+      },
+      "name" : "MIMIC Medication Request",
+      "description" : "A MIMIC medication request profile based on the FHIR R4 medication request resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-medication-statement-ed"
+      },
+      "name" : "MIMIC-ED MedicationStatement",
+      "description" : "A MedicationStatement resource that represents each record in the medrecon table of MIMIC-ED.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-observation-chartevents"
+      },
+      "name" : "MIMIC Observation Chartevents",
+      "description" : "A MIMIC observation chartevents profile based on the base observation resource",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-observation-datetimeevents"
+      },
+      "name" : "MIMIC Observation Datetimeevents",
+      "description" : "A MIMIC observation datetimeevents profile based on the base observation resource",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-observation-ed"
+      },
+      "name" : "MIMIC-ED Observation",
+      "description" : "An Observation resource that represents a single measurement from a row of the triage and vitalsign tables of MIMIC-ED: only acuity, chiefcomplaint, and rhythm.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-observation-labevents"
+      },
+      "name" : "MIMIC Observation Labevents",
+      "description" : "A MIMIC observation labevents profile based on FHIR R4 observation resource",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-observation-micro-org"
+      },
+      "name" : "MIMIC Observation Micro Org",
+      "description" : "A MIMIC observation microbiology organism profile based on the FHIR R4 observation resource",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-observation-micro-susc"
+      },
+      "name" : "MIMIC Observation Micro Susc",
+      "description" : "A MIMIC observation microbiology susceptiblity profile based on the FHIR R4 observation resource",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-observation-micro-test"
+      },
+      "name" : "MIMIC Observation Micro Test",
+      "description" : "A MIMIC observation microbiology test profile based on the FHIR R4 observation resource",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-observation-outputevents"
+      },
+      "name" : "MIMIC Observation Outputevents",
+      "description" : "A MIMIC observation outputevents profile based on the FHIR R4 observation resource",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-observation-vital-signs"
+      },
+      "name" : "MIMIC-ED Observation Vital Signs",
+      "description" : "An Observation resource (based on FHIR R4 Observation) that represents a single measurement from a row of the triage and vitalsign tables of MIMIC-ED: only pain, temperature, heartrate, resprate, blood pressure sbp dbp, and o2sat.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-organization"
+      },
+      "name" : "MIMIC Organization",
+      "description" : "A MIMIC organization profile based on FHIR R4 Organization.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-patient"
+      },
+      "name" : "MIMIC Patient",
+      "description" : "A MIMIC patient based on FHIR R4 Patient.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-procedure"
+      },
+      "name" : "MIMIC Procedure",
+      "description" : "A MIMIC procedure profile based on FHIR R4 Procedure resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-procedure-ed"
+      },
+      "name" : "MIMIC Procedure ED",
+      "description" : "A MIMIC procedure ED profile based on FHIR R4 Procedure.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-procedure-icu"
+      },
+      "name" : "MIMIC Procedure ICU",
+      "description" : "A MIMIC procedure ICU profile based on FHIR R4 Procedure resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mimic-specimen"
+      },
+      "name" : "MIMIC Specimen",
+      "description" : "A MIMIC lab specimen profile based on the baes FHIR R4 Specimen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dilution-details"
+      },
+      "name" : "Dilution Details",
+      "description" : "The dilution details for microbiology susceptiblity tests",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lab-priority"
+      },
+      "name" : "Lab Priority",
+      "description" : "The priority of a lab item in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-dateAbsentReason"
+      },
+      "name" : "MIMIC-ED Data Absent Reason",
+      "description" : "Selected code from the DataAbsentReason value set.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-lab-interpretation"
+      },
+      "name" : "MIMIC Observation Lab interpretation Value Set",
+      "description" : "Selected codes from ObservationInterpretation that represent interpretations in MIMIC.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-micro-interpretation"
+      },
+      "name" : "MIMIC Observation Lab interpretation Value Set",
+      "description" : "Selected codes from ObservationInterpretation that represent interpretations in MIMIC.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-observation-category-ed"
+      },
+      "name" : "MIMIC-ED Observation Resource Category Value Set",
+      "description" : "Selected codes from the ObservationCategoryCodes value set.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-observation-type-ed"
+      },
+      "name" : "MIMIC-ED Observation Resource Types Value Set",
+      "description" : "Selected codes from LOINC that represent values from the triage table in MIMIC-ED.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-observation-type-vital"
+      },
+      "name" : "MIMIC-ED Observation Resource Types Value Set",
+      "description" : "Selected codes from LOINC that represent values from the triage or vitalsigns tables of MIMIC-ED.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-procedure-types-ed"
+      },
+      "name" : "MIMIC-ED Procedure Code Types Value Set",
+      "description" : "Selected codes from SNOMED CT that represent either triage or vitalsign measurements.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-unit-quantity"
+      },
+      "name" : "MIMIC-ED Observation Quantity Units Value Set",
+      "description" : "Selected codes from UCUM that represent quantity units.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/ExampleLocation"
+      },
+      "name" : "Example Location resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Location resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/ExampleMimicCondition"
+      },
+      "name" : "Example Condition resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Condition resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/ExampleMimicConditionED"
+      },
+      "name" : "Example Condition resource MIMIC-IV-ED",
+      "description" : "An example of how a MIMIC-IV-ED Condition resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/ExampleMimicEncounter"
+      },
+      "name" : "Example Encounter resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Encounter resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/ExampleMimicEncounterED"
+      },
+      "name" : "Example Encounter resource MIMIC-IV-ED",
+      "description" : "An example of how a MIMIC-IV-ED Encounter resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/ExampleMimicEncounterICU"
+      },
+      "name" : "Example Encounter resource MIMIC-IV-ICU",
+      "description" : "An example of how a MIMIC-IV-ICU Encounter resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/ExampleMimicMedication"
+      },
+      "name" : "Example Location resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Location resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/ExampleMimicMedicationAdministration"
+      },
+      "name" : "Example MedicationAdministration resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV MedicationAdministration resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/ExampleMimicMedicationAdministrationICU"
+      },
+      "name" : "Example MedicationAdministration resource MIMIC-IV-ICU",
+      "description" : "An example of how a MIMIC-IV-ICU MedicationAdministration resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration-icu"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationDispense"
+      }],
+      "reference" : {
+        "reference" : "MedicationDispense/ExampleMimicMedicationDispense"
+      },
+      "name" : "Example MedicationDispense resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV MedicationDispense resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationDispense"
+      }],
+      "reference" : {
+        "reference" : "MedicationDispense/ExampleMimicMedicationDispenseED"
+      },
+      "name" : "Example MedicationDispense resource MIMIC-ED",
+      "description" : "An example of how a MIMIC-ED MedicationDispense resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense-ed"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/ExampleMimicMedicationRequest"
+      },
+      "name" : "Example MedicationRequest resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV MedicationRequest resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationStatement"
+      }],
+      "reference" : {
+        "reference" : "MedicationStatement/ExampleMimicMedicationStatementED"
+      },
+      "name" : "Example MedicationStatement resource MIMIC-ED",
+      "description" : "An example of how a MIMIC-ED MedicationStatement resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-statement-ed"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleMimicObservationChartevents"
+      },
+      "name" : "Example Observation chartevents resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Observation chartevents resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-chartevents"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleMimicObservationDatetimeevents"
+      },
+      "name" : "Example Observation datetimeevents resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Observation datetimeevents resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-datetimeevents"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleMimicObservationED"
+      },
+      "name" : "Example Observation resource MIMIC-IV-ED",
+      "description" : "An example of how a MIMIC-IV-ED Observation resource would look like with data from the triage table (chiefcomplaint).",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-ed"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleMimicObservationLabevents"
+      },
+      "name" : "Example Observation labevents resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Observation labevents resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-labevents"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleMimicObservationMicroOrg"
+      },
+      "name" : "Example Observation microbiology organism resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Observation microbiology organism resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-org"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleMimicObservationMicroSusc"
+      },
+      "name" : "Example Observation microbiology susceptiblity resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Observation microbiology susceptiblity resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-susc"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleMimicObservationMicroTest"
+      },
+      "name" : "Example Observation microbiology test resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Observation microbiology test resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-test"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleMimicObservationOutputevents"
+      },
+      "name" : "Example Observation outputevents resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Observation outputevents resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-outputevents"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleMimicObservationVitalSigns"
+      },
+      "name" : "Example Observation resource for a MIMIC-IV-ED vital sign measurement",
+      "description" : "An example of how a MIMIC-IV-ED Observation resource would look like with data from the vitalsigns table.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-vital-signs"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/ExampleMimicOrganization"
+      },
+      "name" : "Example Organization resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Organization resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ExampleMimicPatient"
+      },
+      "name" : "Example Patient resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Patient resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ExampleMimicPatientED"
+      },
+      "name" : "Example Patient resource MIMIC-IV-ED",
+      "description" : "An example of how a MIMIC-IV-ED Patient resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ExampleMimicProcedure"
+      },
+      "name" : "Example Procedure resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Procedure resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ExampleMimicProcedureED"
+      },
+      "name" : "Example Procedure resource MIMIC-IV-ED",
+      "description" : "An example of how a MIMIC-IV-ED Procedure resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-ed"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ExampleMimicProcedureICU"
+      },
+      "name" : "Example Procedure resource MIMIC-IV-ICU",
+      "description" : "An example of how a MIMIC-IV-ICU Procedure resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-icu"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      }],
+      "reference" : {
+        "reference" : "Specimen/ExampleMimicSpecimen"
+      },
+      "name" : "Example Specimen resource MIMIC-IV",
+      "description" : "An example of how a MIMIC-IV Specimen resource would look like.",
+      "exampleCanonical" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-specimen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-admission-class"
+      },
+      "name" : "MimicAdmissionClass",
+      "description" : "The admission class for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-admission-type"
+      },
+      "name" : "MimicAdmissionType",
+      "description" : "The admission type for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-admit-source"
+      },
+      "name" : "MimicAdmitSource",
+      "description" : "The admission source for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-bodysite"
+      },
+      "name" : "MimicBodysite",
+      "description" : "The bodysite codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-chartevents-d-items"
+      },
+      "name" : "MimicCharteventsDItems",
+      "description" : "The chartevents item codes used in the ICU for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-d-items"
+      },
+      "name" : "MimicDItems",
+      "description" : "The item codes used throughout the ICU in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-d-labitems"
+      },
+      "name" : "MimicDLabitems",
+      "description" : "The lab item codes used in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-diagnosis-icd10"
+      },
+      "name" : "MimicDiagnosisIcd10",
+      "description" : "The diagnosis ICD10 codes used for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-diagnosis-icd9"
+      },
+      "name" : "MimicDiagnosisIcd9",
+      "description" : "The diagnosis ICD9 codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-discharge-disposition"
+      },
+      "name" : "MimicDischargeDisposition",
+      "description" : "The discharge disposition for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-hcpcs-cd"
+      },
+      "name" : "MimicHcpcsCd",
+      "description" : "The HCPCS codes used for encounters in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-lab-fluid"
+      },
+      "name" : "MimicLabFluid",
+      "description" : "The lab fluid that is captured for the specimen",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-lab-priority"
+      },
+      "name" : "MimicLabPriority",
+      "description" : "The priority of the lab item in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-medadmin-category-icu"
+      },
+      "name" : "MimicMedadminCategoryIcu",
+      "description" : "The medication administration category for the ICU for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-medication-etc"
+      },
+      "name" : "MimicMedicationEtc",
+      "description" : "The medication ETC (enhanced therapeutic class) codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-medication-formulary-drug-cd"
+      },
+      "name" : "MimicMedicationFormularyDrugCd",
+      "description" : "Medication formulary drug codes for use in prescriptions and emar",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-medication-frequency"
+      },
+      "name" : "MimicMedicationFrequency",
+      "description" : "The medication frequency reported for medication delivery in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-medication-gsn"
+      },
+      "name" : "MimicMedicationGsn",
+      "description" : "The medication GSN codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-medication-icu"
+      },
+      "name" : "MimicMedicationIcu",
+      "description" : "All medication found in the ICU, derived from mimic_icu.d_items",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-medication-method-icu"
+      },
+      "name" : "MimicMedicationMethodIcu",
+      "description" : "The medication delivery method used in the ICU for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-medication-method"
+      },
+      "name" : "MimicMedicationMethod",
+      "description" : "The medication delivery method for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-medication-name"
+      },
+      "name" : "MimicMedicationName",
+      "description" : "The standard medication name used in MIMIC. Used in pharmacy, prescriptions, and emar",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-medication-ndc"
+      },
+      "name" : "MimicMedicationNdc",
+      "description" : "Medication National Drug Codes (NDC) for use in prescriptions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-medication-poe-iv"
+      },
+      "name" : "MimicMedicationPoeIv",
+      "description" : "The IV medication that is ordered through POE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-medication-route"
+      },
+      "name" : "MimicMedicationRoute",
+      "description" : "The medication route during administration for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-medication-site"
+      },
+      "name" : "MimicMedicationSite",
+      "description" : "The medication site for administration in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-microbiology-antibiotic"
+      },
+      "name" : "MimicMicrobiologyAntibiotic",
+      "description" : "The microbiology antibiotic being tested on an organism in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-microbiology-organism"
+      },
+      "name" : "MimicMicrobiologyOrganism",
+      "description" : "The microbiology organism being tested in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-microbiology-test"
+      },
+      "name" : "MimicMicrobiologyTest",
+      "description" : "The microbiology test completed in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-observation-category"
+      },
+      "name" : "MimicObservationCategory",
+      "description" : "The observation category codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-procedure-category"
+      },
+      "name" : "MimicProcedureCategory",
+      "description" : "The procedure category codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-procedure-icd10"
+      },
+      "name" : "MimicProcedureIcd10",
+      "description" : "The procedure ICD10 codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-procedure-icd9"
+      },
+      "name" : "MimicProcedureIcd9",
+      "description" : "The procedure ICD9 codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-services"
+      },
+      "name" : "MimicServices",
+      "description" : "The hospital services for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-spec-type-desc"
+      },
+      "name" : "MimicSpecTypeDesc",
+      "description" : "The specimen type codes for microbiologyevents",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mimic-units"
+      },
+      "name" : "MimicUnits",
+      "description" : "The units used throughout MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-admission-class"
+      },
+      "name" : "MimicAdmissionClass",
+      "description" : "The admission class for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-admission-type"
+      },
+      "name" : "MimicAdmissionType",
+      "description" : "The admission type for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-admit-source"
+      },
+      "name" : "MimicAdmitSource",
+      "description" : "The admission source for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-bodysite"
+      },
+      "name" : "MimicBodysite",
+      "description" : "The bodysite codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-chartevents-d-items"
+      },
+      "name" : "MimicCharteventsDItems",
+      "description" : "The item codes for chartevents used in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-d-labitems"
+      },
+      "name" : "MimicDLabitems",
+      "description" : "The lab item codes used in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-datetimeevents-d-items"
+      },
+      "name" : "MimicDatetimeeventsDItems",
+      "description" : "The datetime item codes used in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-diagnosis-icd"
+      },
+      "name" : "MimicDiagnosisIcd",
+      "description" : "The diagnosis ICD9 and ICD10 codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-discharge-disposition"
+      },
+      "name" : "MimicDischargeDisposition",
+      "description" : "The discharge disposition for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-encounter-type"
+      },
+      "name" : "MimicEncounterType",
+      "description" : "The encounter type for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-lab-priority"
+      },
+      "name" : "MimicLabPriority",
+      "description" : "The priority of the lab item in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-medadmin-category-icu"
+      },
+      "name" : "MimicMedadminCategoryIcu",
+      "description" : "The medication administration category for the ICU for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-medication-etc"
+      },
+      "name" : "MimicMedicationEtc",
+      "description" : "The medication ETC (enhanced therapeutic class) codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-medication-frequency"
+      },
+      "name" : "MimicMedicationFrequency",
+      "description" : "The medication frequency reported for medication delivery in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-medication-gsn"
+      },
+      "name" : "MimicMedicationGsn",
+      "description" : "The medication GSN codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-medication-method-icu"
+      },
+      "name" : "MimicMedicationMethodIcu",
+      "description" : "The medication delivery method used in the ICU for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-medication-method"
+      },
+      "name" : "MimicMedicationMethod",
+      "description" : "The medication delivery method for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-medication-route"
+      },
+      "name" : "MimicMedicationRoute",
+      "description" : "The medication route during administration for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-medication-site"
+      },
+      "name" : "MimicMedicationSite",
+      "description" : "The medication site for administration in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-medication"
+      },
+      "name" : "MimicMedication",
+      "description" : "All medication codesystems combined for MIMIC. Contains medication-formulary-drug-cd, medication-ndc, medication-name, medication-poe-iv, medication-icu",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-microbiology-antibiotic"
+      },
+      "name" : "MimicMicrobiologyAntibiotic",
+      "description" : "The microbiology antibiotic being tested on an organism in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-microbiology-organism"
+      },
+      "name" : "MimicMicrobiologyOrganism",
+      "description" : "The microbiology organism being tested in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-microbiology-test"
+      },
+      "name" : "MimicMicrobiologyTest",
+      "description" : "The microbiology test completed in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-observation-category"
+      },
+      "name" : "MimicObservationCategory",
+      "description" : "The observation category codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-outputevents-d-items"
+      },
+      "name" : "MimicOutputeventsDItems",
+      "description" : "The item codes for outputevents used in MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-procedure-category"
+      },
+      "name" : "MimicProcedureCategory",
+      "description" : "The procedure category codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-procedure-icd"
+      },
+      "name" : "MimicProcedureIcd",
+      "description" : "The procedure ICD9 and ICD10 codes for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-procedureevents-d-items"
+      },
+      "name" : "MimicProcedureeventsDItems",
+      "description" : "The procedure item codes used in the ICU for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-services"
+      },
+      "name" : "MimicServices",
+      "description" : "The hospital services for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-specimen-type"
+      },
+      "name" : "MimicSpecimenType",
+      "description" : "The specimen type codes for both lab and micro specimen for MIMIC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mimic-units"
+      },
+      "name" : "MimicUnits",
+      "description" : "The units used throughout MIMIC",
+      "exampleBoolean" : false
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Index",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "mimic-fhir-mappings.html"
+        }],
+        "nameUrl" : "mimic-fhir-mappings.html",
+        "title" : "Mimic Fhir Mappings",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "mimic-ed-fhir-mappings.html"
+          }],
+          "nameUrl" : "mimic-ed-fhir-mappings.html",
+          "title" : "Mimic Ed Fhir Mappings",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "guidance.html"
+        }],
+        "nameUrl" : "guidance.html",
+        "title" : "Guidance",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "terminology-guide.html"
+          }],
+          "nameUrl" : "terminology-guide.html",
+          "title" : "Terminology Guide",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "applications.html"
+          }],
+          "nameUrl" : "applications.html",
+          "title" : "Applications",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "tutorials.html"
+          }],
+          "nameUrl" : "tutorials.html",
+          "title" : "Tutorials",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "future-work.html"
+          }],
+          "nameUrl" : "future-work.html",
+          "title" : "Future Work",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "microbiology-background.html"
+        }],
+        "nameUrl" : "microbiology-background.html",
+        "title" : "Microbiology Background",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "medication-background.html"
+          }],
+          "nameUrl" : "medication-background.html",
+          "title" : "Medication Background",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "emergency-department-subset.html"
+          }],
+          "nameUrl" : "emergency-department-subset.html",
+          "title" : "Emergency Department Subset",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "intensive-care-unit-subset.html"
+          }],
+          "nameUrl" : "intensive-care-unit-subset.html",
+          "title" : "Intensive Care Unit Subset",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
+        "nameUrl" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "changelog.html"
+        }],
+        "nameUrl" : "changelog.html",
+        "title" : "Changelog",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
+  }
+}

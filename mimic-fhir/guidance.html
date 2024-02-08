@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Guidance - MIMIC Implementation Guide v1.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MIMIC Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.3.0 - Draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mimic-fhir-mappings.html">MIMIC-IV Mapping</a>
+      </li>
+      <li>
+        <a href="mimic-ed-fhir-mappings.html">MIMIC-ED Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General</a>
+      </li>
+      <li>
+        <a href="terminology-guide.html">Terminology</a>
+      </li>
+      <li>
+        <a href="applications.html">Applications</a>
+      </li>
+      <li>
+        <a href="tutorials.html">Tutorials</a>
+      </li>
+      <li>
+        <a href="future-work.html">Future Work</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Subsets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="microbiology-background.html">Microbiology data</a>
+      </li>
+      <li>
+        <a href="medication-background.html">Medication data</a>
+      </li>
+      <li>
+        <a href="emergency-department-subset.html">Emergency Department data</a>
+      </li>
+      <li>
+        <a href="intensive-care-unit-subset.html">Intensive Care Unit data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Guidance</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MIMIC Implementation Guide - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://mimic.mit.edu/fhir/mimic/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Guidance</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#administration-profiles" id="markdown-toc-administration-profiles">Administration Profiles</a></li>
+  <li><a href="#organizationl-profiles" id="markdown-toc-organizationl-profiles">Organizationl Profiles</a></li>
+  <li><a href="#charted-observations-profiles" id="markdown-toc-charted-observations-profiles">Charted Observations Profiles</a></li>
+  <li><a href="#specimen-observations-profiles" id="markdown-toc-specimen-observations-profiles">Specimen Observations Profiles</a></li>
+  <li><a href="#medication-profiles" id="markdown-toc-medication-profiles">Medication Profiles</a></li>
+  <li><a href="#order-profiles" id="markdown-toc-order-profiles">Order Profiles</a></li>
+</ul>
+
+</div>
+<h3 id="introduction">Introduction</h3>
+<p>This guide walks through the profiles found in the MIMIC-IV Profiles.</p>
+
+<p>An exemplar patient generated using the MIMIC-IV profiles will appear as Figure 1. The profiles fall into one of 6 categories:</p>
+<ol>
+  <li>Administration: Resources related to patient information and visit encounters.</li>
+  <li>Organizational: Resources related to careunit location and hospital organizations.</li>
+  <li>Charted Observations: Resources related to charted events occuring in the ED and ICU.</li>
+  <li>Specimen Observations: Resources related specimen collected samples.</li>
+  <li>Medications: Resources related to the medication workflow.</li>
+  <li>Orders: Resources related to condition and procedure orders</li>
+</ol>
+
+<div>
+    <figure class="figure" style="text-align: center">
+    <figcaption class="figure-caption"><strong>Exemplar MIMIC-IV FHIR Patient with their resources</strong></figcaption>
+      <img src="average-mimic-fhir-patient.png" style="width: 70%; display: inline-block" class="figure-img img-responsive img-rounded center-block" alt="average-mimic-fhir-patient.png" />
+    </figure>
+    <p></p>
+</div>
+
+<p>Modelling was completed to map the MIMIC-IV tables into FHIR. More detail can be found on the <a href="mimic-fhir-mappings.html">MIMIC-IV Mappings</a> and <a href="mimic-ed-fhir-mappings.html">MIMIC-IV-ED Mappings</a> pages.</p>
+
+<h3 id="administration-profiles">Administration Profiles</h3>
+<p>The majority of profiles reference MimicPatient and MimicEncounter. The referencing is useful to group together patient related resources or encounter specific resources.</p>
+
+<h4 id="mimicpatient"><a href="StructureDefinition-mimic-patient.html">MimicPatient</a></h4>
+<p>The MimicPatient resource was heavily influenced by the US Core Patient profile. The extensions for ethncity, race, and birthsex have been added to MimicPatient to capture the US related context. These extensions being present will make future mappings to US Core smoother.</p>
+
+<h4 id="mimicencounter"><a href="StructureDefinition-mimic-encounter.html">MimicEncounter</a></h4>
+<p>The MimicEncounter resource combines encounter from the ED, ICU and main hospital for MIMIC-IV.</p>
+
+<h3 id="organizationl-profiles">Organizationl Profiles</h3>
+<h4 id="mimiclocation"><a href="StructureDefinition-mimic-location.html">MimicLocation</a></h4>
+<p>The careunits found in MIMIC-IV were created as MimicLocation instances. The MimicLocation resource is often referenced by MimicEncounter in a list of all the careunits a patient has visited.</p>
+
+<h4 id="mimicorganization"><a href="StructureDefinition-mimic-organization.html">MimicOrganization</a></h4>
+<p>The single hospital Beth Isreal Deaconess Medical Center(BIDMC) is captured as a MimicOrganization. The MimicOrganization is referenced by MimicPatient to specify the organization responsible for maintaining patient records.</p>
+
+<h3 id="charted-observations-profiles">Charted Observations Profiles</h3>
+<p>Charted observations capture the momement to moment documentation that occurs in both the emergency department and the ICU. Profiles were kept distinct to keep the provenance of information clear.</p>
+
+<h4 id="mimicobservationchartevents"><a href="StructureDefinition-mimic-observation-chartevents.html">MimicObservationChartevents</a></h4>
+<p>Charted events in the ICU include over 60 categories of entries. The events can include alarms, dialysis, line insertions and much more. The codes used for these are specific to the source hospital systems so are not in a standardized SNOMED codes.</p>
+
+<h4 id="mimicobservationdatetimeevents"><a href="StructureDefinition-mimic-observation-datetimeevents.html">MimicObservationDatetimeevents</a></h4>
+<p>Datetime events occur in the ICU and document time sensitive information. For example timing for care plans and access line insertions can be documented here.</p>
+
+<h4 id="mimicobservationed"><a href="StructureDefinition-mimic-observation-ed.html">MimicObservationED</a></h4>
+<p>Additional observations captured in the ED are stored in MimicObservationED. The current events captured are:</p>
+<ul>
+  <li>Pain assessment</li>
+  <li>Heart rate rhythm</li>
+  <li>Chief complaint</li>
+  <li>Accuity assessment</li>
+</ul>
+
+<h4 id="mimicobservationoutputevents"><a href="StructureDefinition-mimic-observation-outputevents.html">MimicObservationOutputevents</a></h4>
+<p>Outputevents in the ICU primarily include output and drain events. These events are documented by a timestamp and event code.</p>
+
+<h4 id="mimicobservationvitalsigns"><a href="StructureDefinition-mimic-observation-vital-signs.html">MimicObservationVitalSigns</a></h4>
+<p>Vital signs that are captured in the ED are documented in MimicObservationVitalSigns. The vital signs currently captured are:</p>
+<ul>
+  <li>Body temperature</li>
+  <li>Heart rate</li>
+  <li>Respiratory rate</li>
+  <li>Oxygen saturation</li>
+  <li>Blood pressure</li>
+</ul>
+
+<h3 id="specimen-observations-profiles">Specimen Observations Profiles</h3>
+<h4 id="mimicobservationlabevents"><a href="StructureDefinition-mimic-observation-labevents.html">MimicObservationLabevents</a></h4>
+<p>Laboratory tests are captured in MimicObservationLabevents. The codes used in the MIMIC-IV were specific to the source hospital, so the lab codes are bound to a custom ValueSet.</p>
+
+<h4 id="mimicobservationmicrotest"><a href="StructureDefinition-mimic-observation-micro-test.html">MimicObservationMicroTest</a></h4>
+<p>Microbiology reports are divided among three resources. The top level resource is MimicObservationMicroTest which captures the microbiology test that was run. the MimicObservationMicroTest then points to the MimicObservationMicroOrg to specify which organism were tested.</p>
+
+<h4 id="mimicobservationmicroorg"><a href="StructureDefinition-mimic-observation-micro-org.html">MimicObservationMicroOrg</a></h4>
+<p>The MimicObservationMicroOrg profile captures the microbiology information about an organism. The MimicObservationMicroOrg references the parent test in MimicObservationMicroTest and points to the many antiobitic susceptibilty events in MimicObservationMicroSusc.</p>
+
+<h4 id="mimicobservationmicrosusc"><a href="StructureDefinition-mimic-observation-micro-susc.html">MimicObservationMicroSusc</a></h4>
+<p>The MimicObservationMicroSusc profile captures the antibiotic information and the susceptiblity to said antibiotic. MimicObservaitonMicroSusc references the parent organism that is being testd in MimicObservationMicroOrg.</p>
+
+<h4 id="mimicspecimen"><a href="StructureDefinition-mimic-specimen.html">MimicSpecimen</a></h4>
+<p>The MimicSpecimen profile captures information on the patient specimen collected for laboratory or microbiology testing. The main informtion stored are the specimen identifier and the specimen type (ie blood or urine).</p>
+
+<h3 id="medication-profiles">Medication Profiles</h3>
+<p>The medication workflow found in the MIMIC-IV Profiles are used in one of 3 main ways in MIMIC-IV-on-FHIR:</p>
+<ul>
+  <li>Full view: MedicationRequest -&gt; MedicationDispense -&gt; MedicationAdminsitration</li>
+  <li>Historical view: MedicationStatement only</li>
+  <li>Point of care view: MedicationAdministration only</li>
+</ul>
+
+<h4 id="mimicmedication"><a href="ValueSet-mimic-medication.html">MimicMedication</a></h4>
+<p>The medication found in the electronic medication administration records (EMAR) and during documented bedside events are all captured in MimicMedication. Further detail on the medication can be found on the <a href="medication-background.html">Medication Subset</a> page.</p>
+
+<h4 id="mimicmedicationrequest"><a href="StructureDefinition-mimic-medication-request.html">MimicMedicationRequest</a></h4>
+<p>The medication orders received in the EMAR or logged in the pharmacy are captured in MimicMedicationRequest. This will include details of the medication and timing for delivery.</p>
+
+<h4 id="mimicmedicationdispense"><a href="StructureDefinition-mimic-medication-dispense.html">MimicMedicationDispense</a></h4>
+<p>MimicMedicationDispense references back to the MimicMedicationRequest that started the medication workflow. At the point of the pharmacy the MimicMedicationDispense instance is created to document the medication dispensation.</p>
+
+<h4 id="mimicmedicationadministration"><a href="StructureDefinition-mimic-medication-administration.html">MimicMedicationAdministration</a></h4>
+<p>MimicMedicationAdministration can be a stand alone instance or part of a full medicaiton workflow from request, dispense, and to administration. The profile captures the medication details and timing of administration (and details of infusion of necessary).</p>
+
+<h4 id="mimicmedicationadministrationicu"><a href="StructureDefinition-mimic-medication-administration-icu.html">MimicMedicationAdministrationICU</a></h4>
+<p>A small subset of medication are delivered at the point of care in the ICU without prior requests necessary. These medication are primarily fluids and very common medications (ie acetaminophen).</p>
+
+<h4 id="mimicmedicationdispenseed"><a href="StructureDefinition-mimic-medication-dispense-ed.html">MimicMedicationDispenseED</a></h4>
+<p>In the ED, medication can be dispensed if necessary. This process is captured in MimicMedicationDispenseED with timestamps and medicaiton details.</p>
+
+<h4 id="mimicmedicationstatemented"><a href="StructureDefinition-mimic-medication-statement-ed.html">MimicMedicationStatementED</a></h4>
+<p>Medicaiton history that is discoverd in the ED is stored in MimicMedicationStatementED.</p>
+
+<h3 id="order-profiles">Order Profiles</h3>
+<h4 id="mimiccondition"><a href="StructureDefinition-mimic-condition.html">MimicCondition</a></h4>
+<p>Disease and diagnsois that are documented throughout a patients hospital stay are captured in MimicCondition. The diagnoses codes are either ICD9 or ICD10.</p>
+
+<h4 id="mimicprocedure"><a href="StructureDefinition-mimic-procedure.html">MimicProcedure</a></h4>
+<p>The procedure profiles were kept separate to make the provenance of information clear (main vs ED vs ICU). The procedure orders are captured as either ICD9 or ICD10.</p>
+
+<h4 id="mimicprocedureed"><a href="StructureDefinition-mimic-procedure-ed.html">MimicProcedureED</a></h4>
+<p>The MimicProcedureED profile only captures ED specific procedures. In MIMIC-IV the only procedures that occur are either triaging or vital sign taking. These codes are captured as SNOMED-CT codes.</p>
+
+<h4 id="mimicprocedureicu"><a href="StructureDefinition-mimic-procedure-icu.html">MimicProcedureICU</a></h4>
+<p>A small subset of procedures are specifically documented in the ICU for the MIMIC-IV database. These procedures are captured in MimicProcedureICU and include imaging, ventalation, and intubation. The information collected is primarily timing and procedure codes in ICD9 or ICD10.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.mimic#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:07-0500">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

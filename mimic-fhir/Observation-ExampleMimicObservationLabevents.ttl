@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/Observation/ExampleMimicObservationLabevents> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleMimicObservationLabevents"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-labevents"^^xsd:anyURI ;
+       fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-labevents>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ExampleMimicObservationLabevents\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ExampleMimicObservationLabevents&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-observation-labevents.html\">MIMIC Observation Labevents</a></p></div><p><b>Lab Priority</b>: STAT</p><p><b>identifier</b>: <code>http://mimic.mit.edu/fhir/mimic/identifier/observation-labevents</code>/284911</p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Bilirubin, Total <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-d-labitems.html\">MimicDLabitems</a>#50885)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatient.html\">Patient/ExampleMimicPatient</a> &quot; PATIENT_10000032&quot;</p><p><b>encounter</b>: <a href=\"Encounter-ExampleMimicEncounter.html\">Encounter/ExampleMimicEncounter</a></p><p><b>effective</b>: 2174-12-16 15:20:00-0500</p><p><b>issued</b>: Dec. 16, 2174, 5:10:00 p.m.</p><p><b>value</b>: 1.3 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units code mg/dL = 'mg/dL')</span></p><p><b>specimen</b>: <a href=\"Specimen-ExampleMimicSpecimen.html\">Specimen/ExampleMimicSpecimen</a></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>0 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units code mg/dL = 'mg/dL')</span></td><td>1.5 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units code mg/dL = 'mg/dL')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/lab-priority"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "STAT" ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/identifier/observation-labevents"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "284911" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ] ;
+       fhir:display [ fhir:v "Laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-labitems"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "50885" ] ;
+       fhir:display [ fhir:v "Bilirubin, Total" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Patient/ExampleMimicPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleMimicPatient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Encounter/ExampleMimicEncounter> ;
+     fhir:reference [ fhir:v "Encounter/ExampleMimicEncounter" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2174-12-16T15:20:00-05:00"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2174-12-16T17:10:00-05:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "1.3"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mg/dL" ] ;
+     fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "mg/dL" ]
+  ] ; # 
+  fhir:specimen [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Specimen/ExampleMimicSpecimen> ;
+     fhir:reference [ fhir:v "Specimen/ExampleMimicSpecimen" ]
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dL" ] ;
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mg/dL" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "1.5"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dL" ] ;
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mg/dL" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

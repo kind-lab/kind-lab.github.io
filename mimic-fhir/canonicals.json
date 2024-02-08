@@ -1,0 +1,723 @@
+[
+  {
+    "id" : "mimic-admission-class",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admission-class",
+    "version" : "1.3.0",
+    "name" : "MimicAdmissionClass"
+  },
+  {
+    "id" : "mimic-admission-type",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admission-type",
+    "version" : "1.3.0",
+    "name" : "MimicAdmissionType"
+  },
+  {
+    "id" : "mimic-admit-source",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admit-source",
+    "version" : "1.3.0",
+    "name" : "MimicAdmitSource"
+  },
+  {
+    "id" : "mimic-bodysite",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite",
+    "version" : "1.3.0",
+    "name" : "MimicBodysite"
+  },
+  {
+    "id" : "mimic-chartevents-d-items",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-chartevents-d-items",
+    "version" : "1.3.0",
+    "name" : "MimicCharteventsDItems"
+  },
+  {
+    "id" : "mimic-d-items",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items",
+    "version" : "1.3.0",
+    "name" : "MimicDItems"
+  },
+  {
+    "id" : "mimic-d-labitems",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-labitems",
+    "version" : "1.3.0",
+    "name" : "MimicDLabitems"
+  },
+  {
+    "id" : "mimic-diagnosis-icd10",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-diagnosis-icd10",
+    "version" : "1.3.0",
+    "name" : "MimicDiagnosisIcd10"
+  },
+  {
+    "id" : "mimic-diagnosis-icd9",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-diagnosis-icd9",
+    "version" : "1.3.0",
+    "name" : "MimicDiagnosisIcd9"
+  },
+  {
+    "id" : "mimic-discharge-disposition",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-discharge-disposition",
+    "version" : "1.3.0",
+    "name" : "MimicDischargeDisposition"
+  },
+  {
+    "id" : "mimic-hcpcs-cd",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-hcpcs-cd",
+    "version" : "1.3.0",
+    "name" : "MimicHcpcsCd"
+  },
+  {
+    "id" : "mimic-lab-fluid",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid",
+    "version" : "1.3.0",
+    "name" : "MimicLabFluid"
+  },
+  {
+    "id" : "mimic-lab-priority",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-priority",
+    "version" : "1.3.0",
+    "name" : "MimicLabPriority"
+  },
+  {
+    "id" : "mimic-medadmin-category-icu",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medadmin-category-icu",
+    "version" : "1.3.0",
+    "name" : "MimicMedadminCategoryIcu"
+  },
+  {
+    "id" : "mimic-medication-etc",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-etc",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationEtc"
+  },
+  {
+    "id" : "mimic-medication-formulary-drug-cd",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-formulary-drug-cd",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationFormularyDrugCd"
+  },
+  {
+    "id" : "mimic-medication-frequency",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-frequency",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationFrequency"
+  },
+  {
+    "id" : "mimic-medication-gsn",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-gsn",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationGsn"
+  },
+  {
+    "id" : "mimic-medication-icu",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-icu",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationIcu"
+  },
+  {
+    "id" : "mimic-medication-method",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-method",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationMethod"
+  },
+  {
+    "id" : "mimic-medication-method-icu",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-method-icu",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationMethodIcu"
+  },
+  {
+    "id" : "mimic-medication-name",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-name",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationName"
+  },
+  {
+    "id" : "mimic-medication-ndc",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-ndc",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationNdc"
+  },
+  {
+    "id" : "mimic-medication-poe-iv",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-poe-iv",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationPoeIv"
+  },
+  {
+    "id" : "mimic-medication-route",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationRoute"
+  },
+  {
+    "id" : "mimic-medication-site",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-site",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationSite"
+  },
+  {
+    "id" : "mimic-microbiology-antibiotic",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-antibiotic",
+    "version" : "1.3.0",
+    "name" : "MimicMicrobiologyAntibiotic"
+  },
+  {
+    "id" : "mimic-microbiology-organism",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-organism",
+    "version" : "1.3.0",
+    "name" : "MimicMicrobiologyOrganism"
+  },
+  {
+    "id" : "mimic-microbiology-test",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test",
+    "version" : "1.3.0",
+    "name" : "MimicMicrobiologyTest"
+  },
+  {
+    "id" : "mimic-observation-category",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category",
+    "version" : "1.3.0",
+    "name" : "MimicObservationCategory"
+  },
+  {
+    "id" : "mimic-procedure-category",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-procedure-category",
+    "version" : "1.3.0",
+    "name" : "MimicProcedureCategory"
+  },
+  {
+    "id" : "mimic-procedure-icd10",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-procedure-icd10",
+    "version" : "1.3.0",
+    "name" : "MimicProcedureIcd10"
+  },
+  {
+    "id" : "mimic-procedure-icd9",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-procedure-icd9",
+    "version" : "1.3.0",
+    "name" : "MimicProcedureIcd9"
+  },
+  {
+    "id" : "mimic-services",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-services",
+    "version" : "1.3.0",
+    "name" : "MimicServices"
+  },
+  {
+    "id" : "mimic-spec-type-desc",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc",
+    "version" : "1.3.0",
+    "name" : "MimicSpecTypeDesc"
+  },
+  {
+    "id" : "mimic-units",
+    "type" : "CodeSystem",
+    "url" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units",
+    "version" : "1.3.0",
+    "name" : "MimicUnits"
+  },
+  {
+    "id" : "kindlab.fhir.mimic",
+    "type" : "ImplementationGuide",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ImplementationGuide/kindlab.fhir.mimic",
+    "version" : "1.3.0",
+    "name" : "MIMIC"
+  },
+  {
+    "id" : "dilution-details",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/dilution-details",
+    "version" : "1.3.0",
+    "name" : "DilutionDetails"
+  },
+  {
+    "id" : "lab-priority",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/lab-priority",
+    "version" : "1.3.0",
+    "name" : "LabPriority"
+  },
+  {
+    "id" : "mimic-condition",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-condition",
+    "version" : "1.3.0",
+    "name" : "MimicCondition"
+  },
+  {
+    "id" : "mimic-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter",
+    "version" : "1.3.0",
+    "name" : "MimicEncounter"
+  },
+  {
+    "id" : "mimic-location",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-location",
+    "version" : "1.3.0",
+    "name" : "MimicLocation"
+  },
+  {
+    "id" : "mimic-medication",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication",
+    "version" : "1.3.0",
+    "name" : "MimicMedication"
+  },
+  {
+    "id" : "mimic-medication-administration",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationAdministration"
+  },
+  {
+    "id" : "mimic-medication-administration-icu",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration-icu",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationAdministrationICU"
+  },
+  {
+    "id" : "mimic-medication-dispense",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationDispense"
+  },
+  {
+    "id" : "mimic-medication-dispense-ed",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense-ed",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationDispenseED"
+  },
+  {
+    "id" : "mimic-medication-request",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-request",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationRequest"
+  },
+  {
+    "id" : "mimic-medication-statement-ed",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-statement-ed",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationStatementED"
+  },
+  {
+    "id" : "mimic-observation-chartevents",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-chartevents",
+    "version" : "1.3.0",
+    "name" : "MimicObservationChartevents"
+  },
+  {
+    "id" : "mimic-observation-datetimeevents",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-datetimeevents",
+    "version" : "1.3.0",
+    "name" : "MimicObservationDatetimeevents"
+  },
+  {
+    "id" : "mimic-observation-ed",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-ed",
+    "version" : "1.3.0",
+    "name" : "MimicObservationED"
+  },
+  {
+    "id" : "mimic-observation-labevents",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-labevents",
+    "version" : "1.3.0",
+    "name" : "MimicObservationLabevents"
+  },
+  {
+    "id" : "mimic-observation-micro-org",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-org",
+    "version" : "1.3.0",
+    "name" : "MimicObservationMicroOrg"
+  },
+  {
+    "id" : "mimic-observation-micro-susc",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-susc",
+    "version" : "1.3.0",
+    "name" : "MimicObservationMicroSusc"
+  },
+  {
+    "id" : "mimic-observation-micro-test",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-test",
+    "version" : "1.3.0",
+    "name" : "MimicObservationMicroTest"
+  },
+  {
+    "id" : "mimic-observation-outputevents",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-outputevents",
+    "version" : "1.3.0",
+    "name" : "MimicObservationOutputevents"
+  },
+  {
+    "id" : "mimic-observation-vital-signs",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-vital-signs",
+    "version" : "1.3.0",
+    "name" : "MimicObservationVitalSigns"
+  },
+  {
+    "id" : "mimic-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-organization",
+    "version" : "1.3.0",
+    "name" : "MimicOrganization"
+  },
+  {
+    "id" : "mimic-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-patient",
+    "version" : "1.3.0",
+    "name" : "MimicPatient"
+  },
+  {
+    "id" : "mimic-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure",
+    "version" : "1.3.0",
+    "name" : "MimicProcedure"
+  },
+  {
+    "id" : "mimic-procedure-ed",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-ed",
+    "version" : "1.3.0",
+    "name" : "MimicProcedureED"
+  },
+  {
+    "id" : "mimic-procedure-icu",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-icu",
+    "version" : "1.3.0",
+    "name" : "MimicProcedureICU"
+  },
+  {
+    "id" : "mimic-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-specimen",
+    "version" : "1.3.0",
+    "name" : "MimicSpecimen"
+  },
+  {
+    "id" : "mimic-admission-class",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-admission-class",
+    "version" : "1.3.0",
+    "name" : "MimicAdmissionClass"
+  },
+  {
+    "id" : "mimic-admission-type",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-admission-type",
+    "version" : "1.3.0",
+    "name" : "MimicAdmissionType"
+  },
+  {
+    "id" : "mimic-admit-source",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-admit-source",
+    "version" : "1.3.0",
+    "name" : "MimicAdmitSource"
+  },
+  {
+    "id" : "mimic-bodysite",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-bodysite",
+    "version" : "1.3.0",
+    "name" : "MimicBodysite"
+  },
+  {
+    "id" : "mimic-chartevents-d-items",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-chartevents-d-items",
+    "version" : "1.3.0",
+    "name" : "MimicCharteventsDItems"
+  },
+  {
+    "id" : "mimic-d-labitems",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-d-labitems",
+    "version" : "1.3.0",
+    "name" : "MimicDLabitems"
+  },
+  {
+    "id" : "mimic-dateAbsentReason",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-dateAbsentReason",
+    "version" : "1.3.0",
+    "name" : "DataAbsentReason"
+  },
+  {
+    "id" : "mimic-datetimeevents-d-items",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-datetimeevents-d-items",
+    "version" : "1.3.0",
+    "name" : "MimicDatetimeeventsDItems"
+  },
+  {
+    "id" : "mimic-diagnosis-icd",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-diagnosis-icd",
+    "version" : "1.3.0",
+    "name" : "MimicDiagnosisIcd"
+  },
+  {
+    "id" : "mimic-discharge-disposition",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-discharge-disposition",
+    "version" : "1.3.0",
+    "name" : "MimicDischargeDisposition"
+  },
+  {
+    "id" : "mimic-encounter-type",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-encounter-type",
+    "version" : "1.3.0",
+    "name" : "MimicEncounterType"
+  },
+  {
+    "id" : "mimic-lab-interpretation",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-lab-interpretation",
+    "version" : "1.3.0",
+    "name" : "MimicLabInterpretation"
+  },
+  {
+    "id" : "mimic-lab-priority",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-lab-priority",
+    "version" : "1.3.0",
+    "name" : "MimicLabPriority"
+  },
+  {
+    "id" : "mimic-medadmin-category-icu",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medadmin-category-icu",
+    "version" : "1.3.0",
+    "name" : "MimicMedadminCategoryIcu"
+  },
+  {
+    "id" : "mimic-medication",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication",
+    "version" : "1.3.0",
+    "name" : "MimicMedication"
+  },
+  {
+    "id" : "mimic-medication-etc",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-etc",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationEtc"
+  },
+  {
+    "id" : "mimic-medication-frequency",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-frequency",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationFrequency"
+  },
+  {
+    "id" : "mimic-medication-gsn",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-gsn",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationGsn"
+  },
+  {
+    "id" : "mimic-medication-method",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-method",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationMethod"
+  },
+  {
+    "id" : "mimic-medication-method-icu",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-method-icu",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationMethodIcu"
+  },
+  {
+    "id" : "mimic-medication-route",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-route",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationRoute"
+  },
+  {
+    "id" : "mimic-medication-site",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-site",
+    "version" : "1.3.0",
+    "name" : "MimicMedicationSite"
+  },
+  {
+    "id" : "mimic-micro-interpretation",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-micro-interpretation",
+    "version" : "1.3.0",
+    "name" : "MimicMicroInterpretation"
+  },
+  {
+    "id" : "mimic-microbiology-antibiotic",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-antibiotic",
+    "version" : "1.3.0",
+    "name" : "MimicMicrobiologyAntibiotic"
+  },
+  {
+    "id" : "mimic-microbiology-organism",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-organism",
+    "version" : "1.3.0",
+    "name" : "MimicMicrobiologyOrganism"
+  },
+  {
+    "id" : "mimic-microbiology-test",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-test",
+    "version" : "1.3.0",
+    "name" : "MimicMicrobiologyTest"
+  },
+  {
+    "id" : "mimic-observation-category",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-category",
+    "version" : "1.3.0",
+    "name" : "MimicObservationCategory"
+  },
+  {
+    "id" : "mimic-observation-category-ed",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-category-ed",
+    "version" : "1.3.0",
+    "name" : "MimicObservationCategoryED"
+  },
+  {
+    "id" : "mimic-observation-type-ed",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-type-ed",
+    "version" : "1.3.0",
+    "name" : "MimicObservationTypeED"
+  },
+  {
+    "id" : "mimic-observation-type-vital",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-type-vital",
+    "version" : "1.3.0",
+    "name" : "MimicObservationTypeVital"
+  },
+  {
+    "id" : "mimic-outputevents-d-items",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-outputevents-d-items",
+    "version" : "1.3.0",
+    "name" : "MimicOutputeventsDItems"
+  },
+  {
+    "id" : "mimic-procedure-category",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedure-category",
+    "version" : "1.3.0",
+    "name" : "MimicProcedureCategory"
+  },
+  {
+    "id" : "mimic-procedure-icd",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedure-icd",
+    "version" : "1.3.0",
+    "name" : "MimicProcedureIcd"
+  },
+  {
+    "id" : "mimic-procedure-types-ed",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedure-types-ed",
+    "version" : "1.3.0",
+    "name" : "MimicProcedureTypesED"
+  },
+  {
+    "id" : "mimic-procedureevents-d-items",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedureevents-d-items",
+    "version" : "1.3.0",
+    "name" : "MimicProcedureeventsDItems"
+  },
+  {
+    "id" : "mimic-services",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-services",
+    "version" : "1.3.0",
+    "name" : "MimicServices"
+  },
+  {
+    "id" : "mimic-specimen-type",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-specimen-type",
+    "version" : "1.3.0",
+    "name" : "MimicSpecimenType"
+  },
+  {
+    "id" : "mimic-unit-quantity",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-unit-quantity",
+    "version" : "1.3.0",
+    "name" : "MimicQuantityUnit"
+  },
+  {
+    "id" : "mimic-units",
+    "type" : "ValueSet",
+    "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-units",
+    "version" : "1.3.0",
+    "name" : "MimicUnits"
+  }
+]

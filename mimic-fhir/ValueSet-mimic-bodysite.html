@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MimicBodysite - MIMIC Implementation Guide v1.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.39"}
+    h3,h4,h5,h6{--heading-prefix:"7.39"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MIMIC Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.3.0 - Draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mimic-fhir-mappings.html">MIMIC-IV Mapping</a>
+      </li>
+      <li>
+        <a href="mimic-ed-fhir-mappings.html">MIMIC-ED Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General</a>
+      </li>
+      <li>
+        <a href="terminology-guide.html">Terminology</a>
+      </li>
+      <li>
+        <a href="applications.html">Applications</a>
+      </li>
+      <li>
+        <a href="tutorials.html">Tutorials</a>
+      </li>
+      <li>
+        <a href="future-work.html">Future Work</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Subsets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="microbiology-background.html">Microbiology data</a>
+      </li>
+      <li>
+        <a href="medication-background.html">Medication data</a>
+      </li>
+      <li>
+        <a href="emergency-department-subset.html">Emergency Department data</a>
+      </li>
+      <li>
+        <a href="intensive-care-unit-subset.html">Intensive Care Unit data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MimicBodysite</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MIMIC Implementation Guide - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://mimic.mit.edu/fhir/mimic/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-bodysite.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-bodysite.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-mimic-bodysite.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: MimicBodysite
+
+  </h2>
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-bodysite<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-bodysite"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-bodysite|1.3.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2022-09-21
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MimicBodysite</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>The bodysite codes for MIMIC</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-mimic-procedure-icu.html">MIMIC Procedure ICU</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><ul><li>Include all codes defined in <a href="CodeSystem-mimic-bodysite.html"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</code></a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-mimic-bodysite.html">codesystem MimicBodysite v1.3.0 (CodeSystem)</a></p><p>This value set contains 109 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b> - English (English, en)</td></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Ulnar"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightUlnar">Right Ulnar</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-L-Ventricular"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LVentricular">L Ventricular</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Humeral-Head"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftHumeralHead">Left Humeral Head</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-RL-Ant-Forearm-Lateral"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RLAntForearmLateral">RL Ant Forearm Lateral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Subclavian"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightSubclavian">Right Subclavian</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-LU-Ant-Forearm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LUAntForearm">LU Ant Forearm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-R-Hand-Medial"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RHandMedial">R Hand Medial</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Other"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-Other">Other</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Antecube"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightAntecube">Right Antecube</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-R-Wrist"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RWrist">R Wrist</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Accessory-Cephalic"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightAccessoryCephalic">Right Accessory Cephalic</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Cephalic-Lower-Arm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightCephalicLowerArm">Right Cephalic Lower Arm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Axilla."> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftAxilla.46">Left Axilla.</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Digital"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftDigital">Left Digital</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Basilic-Upper-Arm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftBasilicUpperArm">Left Basilic Upper Arm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Basilic-Lower-Arm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftBasilicLowerArm">Left Basilic Lower Arm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Foot"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightFoot">Right Foot</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-RL-Post-Forearm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RLPostForearm">RL Post Forearm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-R-Subclavian"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RSubclavian">R Subclavian</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-R-Hand-Lateral"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RHandLateral">R Hand Lateral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Axilla."> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightAxilla.46">Right Axilla.</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Basilic-Upper-Arm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightBasilicUpperArm">Right Basilic Upper Arm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-L-Intraparenchymal"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LIntraparenchymal">L Intraparenchymal</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Radial"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftRadial">Left Radial</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Central."> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-Central.46">Central.</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Antecubital"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftAntecubital">Left Antecubital</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-R-Wrist-Lateral"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RWristLateral">R Wrist Lateral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Femoral"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftFemoral">Left Femoral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-R-Antecube"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RAntecube">R Antecube</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-R-Ventricular"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RVentricular">R Ventricular</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Femoral."> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftFemoral.46">Left Femoral.</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-R-Wrist-Medial"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RWristMedial">R Wrist Medial</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-IJ."> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftIJ.46">Left IJ.</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Antecube"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftAntecube">Left Antecube</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Upper-Arm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftUpperArm">Left Upper Arm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Metacarpal"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftMetacarpal">Left Metacarpal</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-EJ"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightEJ">Right EJ</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Accessory-Basilic"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftAccessoryBasilic">Left Accessory Basilic</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Central"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-Central">Central</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-RU-Ant-Forearm-Lateral"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RUAntForearmLateral">RU Ant Forearm Lateral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-LL-Ant-Forearm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LLAntForearm">LL Ant Forearm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-IJ."> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightIJ.46">Right IJ.</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-above-Antecubital"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightaboveAntecubital">Right above Antecubital</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-RU-Ant-Forearm-Medial"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RUAntForearmMedial">RU Ant Forearm Medial</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Axilla"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightAxilla">Right Axilla</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Metacarpal"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightMetacarpal">Right Metacarpal</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-L-Subclavian"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LSubclavian">L Subclavian</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Accessory-Basilic"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightAccessoryBasilic">Right Accessory Basilic</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-IJ"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightIJ">Right IJ</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Median-Cubital"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftMedianCubital">Left Median Cubital</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-LU-Ant-Forearm-Lateral"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LUAntForearmLateral">LU Ant Forearm Lateral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Proximal-Tibia"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftProximalTibia">Left Proximal Tibia</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Radial"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightRadial">Right Radial</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-above-Antecubital"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftaboveAntecubital">Left above Antecubital</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-RU-Post-Forearm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RUPostForearm">RU Post Forearm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-R-Femoral"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RFemoral">R Femoral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-L-Foot"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LFoot">L Foot</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Brachial"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightBrachial">Right Brachial</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Proximal-Tibia"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightProximalTibia">Right Proximal Tibia</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Side-Head"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftSideHead">Left Side Head</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-LL-Ant-Forearm-Medial"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LLAntForearmMedial">LL Ant Forearm Medial</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-L-Hand"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LHand">L Hand</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Cephalic-Upper-Arm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftCephalicUpperArm">Left Cephalic Upper Arm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Accessory-Cephalic"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftAccessoryCephalic">Left Accessory Cephalic</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-R-Intraparenchymal"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RIntraparenchymal">R Intraparenchymal</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Basilic-Lower-Arm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightBasilicLowerArm">Right Basilic Lower Arm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Urethral"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-Urethral">Urethral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-L-Wrist-Medial"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LWristMedial">L Wrist Medial</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-RL-Ant-Forearm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RLAntForearm">RL Ant Forearm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Brachial."> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightBrachial.46">Right Brachial.</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-L-Hand-Medial"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LHandMedial">L Hand Medial</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Femoral"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightFemoral">Right Femoral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Ostomy"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-Ostomy">Ostomy</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Digital"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightDigital">Right Digital</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Antecubital"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightAntecubital">Right Antecubital</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-LU-Post-Forearm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LUPostForearm">LU Post Forearm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-LL-Ant-Forearm-Lateral"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LLAntForearmLateral">LL Ant Forearm Lateral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Side-Head"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightSideHead">Right Side Head</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-R-Foot"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RFoot">R Foot</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-R-Hand"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RHand">R Hand</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-L-Femoral"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LFemoral">L Femoral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Lumbar"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-Lumbar">Lumbar</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Humeral-Head"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightHumeralHead">Right Humeral Head</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Upper-Quadrant"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightUpperQuadrant">Right Upper Quadrant</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-External-Jugular"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightExternalJugular">Right External Jugular</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Brachial."> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftBrachial.46">Left Brachial.</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Foot"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftFoot">Left Foot</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-RL-Ant-Forearm-Medial"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RLAntForearmMedial">RL Ant Forearm Medial</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-External-Jugular"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftExternalJugular">Left External Jugular</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-RU-Ant-Forearm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RUAntForearm">RU Ant Forearm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Brachial"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftBrachial">Left Brachial</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Femoral."> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightFemoral.46">Right Femoral.</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Lower-Quadrant"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftLowerQuadrant">Left Lower Quadrant</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-L-Wrist-Lateral"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LWristLateral">L Wrist Lateral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Cephalic-Lower-Arm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftCephalicLowerArm">Left Cephalic Lower Arm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Median-Cubital"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightMedianCubital">Right Median Cubital</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-L-Wrist"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LWrist">L Wrist</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Subclavian"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftSubclavian">Left Subclavian</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-L-Antecube"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LAntecube">L Antecube</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Upper-Arm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightUpperArm">Right Upper Arm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Upper-Quadrant"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftUpperQuadrant">Left Upper Quadrant</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Lower-Quadrant"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightLowerQuadrant">Right Lower Quadrant</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Right-Cephalic-Upper-Arm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-RightCephalicUpperArm">Right Cephalic Upper Arm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-EJ"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftEJ">Left EJ</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-L-Hand-Lateral"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LHandLateral">L Hand Lateral</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-Axilla"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftAxilla">Left Axilla</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-LU-Ant-Forearm-Medial"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LUAntForearmMedial">LU Ant Forearm Medial</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-LL-Post-Forearm"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LLPostForearm">LL Post Forearm</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---mimic.mit.edu-fhir-mimic-CodeSystem-mimic-bodysite-Left-IJ"> </a>  <a href="CodeSystem-mimic-bodysite.html#mimic-bodysite-LeftIJ">Left IJ</a></td><td>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite</td><td/></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.mimic#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:07-0500">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,603 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-datetimeevents-d-items> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mimic-datetimeevents-d-items"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-mimic-d-items.html\"><code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228800\">228800</a></td><td>Pressure ulcer #8- Dressing change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225756\">225756</a></td><td>16 Gauge Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228631\">228631</a></td><td>Date signed</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229886\">229886</a></td><td>Pressure Ulcer #3- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226719\">226719</a></td><td>Last menses</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228215\">228215</a></td><td>Tandem Heart Access Line Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226132\">226132</a></td><td>ICP Line Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225386\">225386</a></td><td>Presep Catheter Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225224\">225224</a></td><td>CCO PAC Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224296\">224296</a></td><td>Cordis/Introducer Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229550\">229550</a></td><td>Avalon Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228796\">228796</a></td><td>Pressure ulcer #4- Dressing change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225352\">225352</a></td><td>PA Catheter Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224185\">224185</a></td><td>PICC Line Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225319\">225319</a></td><td>Dialysis Catheter Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225222\">225222</a></td><td>CCO PAC Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229643\">229643</a></td><td>Stroke NCP - Ed Given Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225392\">225392</a></td><td>Triple Introducer Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225218\">225218</a></td><td>Trauma Line Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229735\">229735</a></td><td>RIC Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225340\">225340</a></td><td>IABP Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225396\">225396</a></td><td>Triple Introducer Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225348\">225348</a></td><td>Midline Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229892\">229892</a></td><td>Pressure Ulcer #9- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225214\">225214</a></td><td>Trauma Line Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229731\">229731</a></td><td>16 Gauge Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227126\">227126</a></td><td>Indwelling (PortaCath) Port #1 Date Accessed</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227542\">227542</a></td><td>ScvO2 (Presep) Calibrated</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225216\">225216</a></td><td>Trauma Line Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227793\">227793</a></td><td>Impaired Skin  - Dressing Change #4</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225328\">225328</a></td><td>Tunneled (Hickman) Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225375\">225375</a></td><td>Indwelling Port (PortaCath) Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229733\">229733</a></td><td>22 Gauge Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225330\">225330</a></td><td>Tunneled (Hickman) Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225383\">225383</a></td><td>Presep Catheter Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224295\">224295</a></td><td>Cordis/Introducer Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225369\">225369</a></td><td>Pheresis Catheter Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227198\">227198</a></td><td>Indwelling (PortaCath) Port #1 Date De-accessed</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229738\">229738</a></td><td>20 Gauge Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229885\">229885</a></td><td>Pressure Ulcer #2- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227796\">227796</a></td><td>Impaired Skin  - Dressing Change #7</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227791\">227791</a></td><td>Impaired Skin  - Dressing Change #2</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225338\">225338</a></td><td>IABP Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227721\">227721</a></td><td>AVA Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229893\">229893</a></td><td>Pressure Ulcer #10- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225368\">225368</a></td><td>Pheresis Catheter Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226516\">226516</a></td><td>Discharge Date/Time</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229555\">229555</a></td><td>Cardiac Assist Cannula Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228795\">228795</a></td><td>Pressure ulcer #3- Dressing change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227800\">227800</a></td><td>Impaired Skin  - Dressing Change #10</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229737\">229737</a></td><td>16 Gauge Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228798\">228798</a></td><td>Pressure ulcer #6- Dressing change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229884\">229884</a></td><td>Pressure Ulcer #1- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225370\">225370</a></td><td>Pheresis Catheter Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227720\">227720</a></td><td>AVA Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225378\">225378</a></td><td>Indwelling Port (PortaCath) Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229352\">229352</a></td><td>Foley Cath Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227911\">227911</a></td><td>Date - Therapist</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224282\">224282</a></td><td>Multi Lumen Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225763\">225763</a></td><td>Sheath Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229471\">229471</a></td><td>24 Gauge Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225351\">225351</a></td><td>PA Catheter Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229729\">229729</a></td><td>18 Gauge Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228799\">228799</a></td><td>Pressure ulcer #7- Dressing change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227729\">227729</a></td><td>AVA Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225765\">225765</a></td><td>Sheath Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229883\">229883</a></td><td>Pressure ulcer #1- Date Indentified_OLD_1</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229889\">229889</a></td><td>Pressure Ulcer #6- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228794\">228794</a></td><td>Pressure ulcer #2- Dressing change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225354\">225354</a></td><td>PA Catheter Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228291\">228291</a></td><td>IO Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227817\">227817</a></td><td>Referral Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225327\">225327</a></td><td>Tunneled (Hickman) Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228797\">228797</a></td><td>Pressure ulcer #5- Dressing change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228209\">228209</a></td><td>Tandem Heart Access Line Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225376\">225376</a></td><td>Indwelling Port (PortaCath) Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226724\">226724</a></td><td>Hospital Admit Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227798\">227798</a></td><td>Impaired Skin  - Dressing Change #9</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225384\">225384</a></td><td>Presep Catheter Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224261\">224261</a></td><td>Multi Lumen Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229741\">229741</a></td><td>RIC Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225321\">225321</a></td><td>Dialysis Catheter Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228218\">228218</a></td><td>Tandem Heart Return Cannula Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225380\">225380</a></td><td>Indwelling Port (PortaCath)Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225390\">225390</a></td><td>Presep Catheter Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229549\">229549</a></td><td>Avalon Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225226\">225226</a></td><td>CCO PAC Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229734\">229734</a></td><td>24 Gauge Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225335\">225335</a></td><td>IABP Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226128\">226128</a></td><td>ICP Line Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224290\">224290</a></td><td>Arterial line Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226532\">226532</a></td><td>Organ Bank Notified</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225391\">225391</a></td><td>Triple Introducer Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225324\">225324</a></td><td>Dialysis CatheterTubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-220003\">220003</a></td><td>ICU Admission date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229730\">229730</a></td><td>14 Gauge Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224184\">224184</a></td><td>PICC Line Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228160\">228160</a></td><td>Impella Aortic Pressure Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226126\">226126</a></td><td>ICP Line Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224186\">224186</a></td><td>PICC Line Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224285\">224285</a></td><td>Arterial line Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224262\">224262</a></td><td>Multi Lumen Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227197\">227197</a></td><td>Indwelling (PortaCath) Port #2 Date Accessed</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224187\">224187</a></td><td>PICC Line Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228793\">228793</a></td><td>Pressure ulcer #1- Dressing change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229651\">229651</a></td><td>Stroke NCP - Water Swallow Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225755\">225755</a></td><td>18 Gauge Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229655\">229655</a></td><td>Stroke NCP -  Fam Ed Given Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228802\">228802</a></td><td>Pressure ulcer #10- Dressing change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225336\">225336</a></td><td>IABP Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225279\">225279</a></td><td>Date of Admission to Hospital</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225322\">225322</a></td><td>Dialysis Catheter Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229728\">229728</a></td><td>18 Gauge Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225332\">225332</a></td><td>Tunneled (Hickman) Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225221\">225221</a></td><td>CCO PAC Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229736\">229736</a></td><td>14 Gauge Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227722\">227722</a></td><td>AVA Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224293\">224293</a></td><td>Cordis/Introducer Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228207\">228207</a></td><td>Tandem Heart Access Line Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228166\">228166</a></td><td>Impella Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228221\">228221</a></td><td>Tandem Heart Return Cannula Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229739\">229739</a></td><td>22 Gauge Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227797\">227797</a></td><td>Impaired Skin  - Dressing Change #8</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225317\">225317</a></td><td>Trauma Line Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225083\">225083</a></td><td>Pregnancy due date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225318\">225318</a></td><td>Dialysis Catheter Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227584\">227584</a></td><td>GU Catheter D/C Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224287\">224287</a></td><td>Arterial Line Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227795\">227795</a></td><td>Impaired Skin  - Dressing Change #6</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225766\">225766</a></td><td>Sheath Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229353\">229353</a></td><td>Foley Cath Removal Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225758\">225758</a></td><td>RIC Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225757\">225757</a></td><td>14 Gauge Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224183\">224183</a></td><td>PICC Line Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225367\">225367</a></td><td>Pheresis Catheter Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225128\">225128</a></td><td>Last dialysis</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225753\">225753</a></td><td>22 Gauge Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229542\">229542</a></td><td>EKOS Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225769\">225769</a></td><td>Sheath Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224288\">224288</a></td><td>Arterial line Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229740\">229740</a></td><td>24 Gauge Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229888\">229888</a></td><td>Pressure Ulcer #5- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227541\">227541</a></td><td>SvO2 Calibrated</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226482\">226482</a></td><td>Blood Clot Outdates</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228165\">228165</a></td><td>Impella Daily Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226518\">226518</a></td><td>Expected Discharge Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225754\">225754</a></td><td>20 Gauge Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225346\">225346</a></td><td>Midline Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225353\">225353</a></td><td>PA Catheter Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225343\">225343</a></td><td>Midline Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225372\">225372</a></td><td>Pheresis Catheter Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225762\">225762</a></td><td>Sheath Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225394\">225394</a></td><td>Triple Introducer Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227790\">227790</a></td><td>Impaired Skin  - Dressing Change #1</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224292\">224292</a></td><td>Cordis/Introducer Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228266\">228266</a></td><td>FM Date/Time</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225377\">225377</a></td><td>Indwelling Port (PortaCath) Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225356\">225356</a></td><td>PA Catheter Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225213\">225213</a></td><td>Trauma Line Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229890\">229890</a></td><td>Pressure Ulcer #7- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224298\">224298</a></td><td>Cordis/Introducer Tubing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229556\">229556</a></td><td>Cardiac Assist Cannula Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229887\">229887</a></td><td>Pressure Ulcer #4- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225393\">225393</a></td><td>Triple Introducer Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228331\">228331</a></td><td>PC Time of visit</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227724\">227724</a></td><td>AVA Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227199\">227199</a></td><td>Indwelling (PortaCath) Port #2 Date De-accessed</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225329\">225329</a></td><td>Tunneled (Hickman) Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225345\">225345</a></td><td>Midline Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224878\">224878</a></td><td>GU Catheter Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228321\">228321</a></td><td>PC Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228801\">228801</a></td><td>Pressure ulcer #9- Dressing change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227907\">227907</a></td><td>Date - Student</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225316\">225316</a></td><td>CCO PAC Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224280\">224280</a></td><td>Multi Lumen Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229732\">229732</a></td><td>20 Gauge Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227792\">227792</a></td><td>Impaired Skin  - Dressing Change #3</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-228168\">228168</a></td><td>Impella Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224279\">224279</a></td><td>Multi Lumen Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225344\">225344</a></td><td>Midline Change over Wire Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-224284\">224284</a></td><td>Arterial line Cap Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-226515\">226515</a></td><td>Date of Birth</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225337\">225337</a></td><td>IABP Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227361\">227361</a></td><td>Indwelling (PortaCath) Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-225385\">225385</a></td><td>Presep Catheter Dressing Change</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229891\">229891</a></td><td>Pressure Ulcer #8- Date Indentified</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-229541\">229541</a></td><td>EKOS Insertion Date</td></tr><tr><td><a href=\"CodeSystem-mimic-d-items.html#mimic-d-items-227794\">227794</a></td><td>Impaired Skin  - Dressing Change #5</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-datetimeevents-d-items"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.0"] ; # 
+  fhir:name [ fhir:v "MimicDatetimeeventsDItems"] ; # 
+  fhir:title [ fhir:v "MimicDatetimeeventsDItems"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-21T13:59:43-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The datetime item codes used in MIMIC"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "228800" ] ;
+         fhir:display [ fhir:v "Pressure ulcer #8- Dressing change" ]
+       ] [
+         fhir:code [ fhir:v "225756" ] ;
+         fhir:display [ fhir:v "16 Gauge Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "228631" ] ;
+         fhir:display [ fhir:v "Date signed" ]
+       ] [
+         fhir:code [ fhir:v "229886" ] ;
+         fhir:display [ fhir:v "Pressure Ulcer #3- Date Indentified" ]
+       ] [
+         fhir:code [ fhir:v "226719" ] ;
+         fhir:display [ fhir:v "Last menses" ]
+       ] [
+         fhir:code [ fhir:v "228215" ] ;
+         fhir:display [ fhir:v "Tandem Heart Access Line Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "226132" ] ;
+         fhir:display [ fhir:v "ICP Line Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "225386" ] ;
+         fhir:display [ fhir:v "Presep Catheter Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "225224" ] ;
+         fhir:display [ fhir:v "CCO PAC Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "224296" ] ;
+         fhir:display [ fhir:v "Cordis/Introducer Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "229550" ] ;
+         fhir:display [ fhir:v "Avalon Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "228796" ] ;
+         fhir:display [ fhir:v "Pressure ulcer #4- Dressing change" ]
+       ] [
+         fhir:code [ fhir:v "225352" ] ;
+         fhir:display [ fhir:v "PA Catheter Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "224185" ] ;
+         fhir:display [ fhir:v "PICC Line Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "225319" ] ;
+         fhir:display [ fhir:v "Dialysis Catheter Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "225222" ] ;
+         fhir:display [ fhir:v "CCO PAC Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "229643" ] ;
+         fhir:display [ fhir:v "Stroke NCP - Ed Given Date" ]
+       ] [
+         fhir:code [ fhir:v "225392" ] ;
+         fhir:display [ fhir:v "Triple Introducer Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "225218" ] ;
+         fhir:display [ fhir:v "Trauma Line Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "229735" ] ;
+         fhir:display [ fhir:v "RIC Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "225340" ] ;
+         fhir:display [ fhir:v "IABP Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "225396" ] ;
+         fhir:display [ fhir:v "Triple Introducer Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "225348" ] ;
+         fhir:display [ fhir:v "Midline Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "229892" ] ;
+         fhir:display [ fhir:v "Pressure Ulcer #9- Date Indentified" ]
+       ] [
+         fhir:code [ fhir:v "225214" ] ;
+         fhir:display [ fhir:v "Trauma Line Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "229731" ] ;
+         fhir:display [ fhir:v "16 Gauge Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "227126" ] ;
+         fhir:display [ fhir:v "Indwelling (PortaCath) Port #1 Date Accessed" ]
+       ] [
+         fhir:code [ fhir:v "227542" ] ;
+         fhir:display [ fhir:v "ScvO2 (Presep) Calibrated" ]
+       ] [
+         fhir:code [ fhir:v "225216" ] ;
+         fhir:display [ fhir:v "Trauma Line Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "227793" ] ;
+         fhir:display [ fhir:v "Impaired Skin  - Dressing Change #4" ]
+       ] [
+         fhir:code [ fhir:v "225328" ] ;
+         fhir:display [ fhir:v "Tunneled (Hickman) Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "225375" ] ;
+         fhir:display [ fhir:v "Indwelling Port (PortaCath) Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "229733" ] ;
+         fhir:display [ fhir:v "22 Gauge Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "225330" ] ;
+         fhir:display [ fhir:v "Tunneled (Hickman) Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "225383" ] ;
+         fhir:display [ fhir:v "Presep Catheter Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "224295" ] ;
+         fhir:display [ fhir:v "Cordis/Introducer Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "225369" ] ;
+         fhir:display [ fhir:v "Pheresis Catheter Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "227198" ] ;
+         fhir:display [ fhir:v "Indwelling (PortaCath) Port #1 Date De-accessed" ]
+       ] [
+         fhir:code [ fhir:v "229738" ] ;
+         fhir:display [ fhir:v "20 Gauge Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "229885" ] ;
+         fhir:display [ fhir:v "Pressure Ulcer #2- Date Indentified" ]
+       ] [
+         fhir:code [ fhir:v "227796" ] ;
+         fhir:display [ fhir:v "Impaired Skin  - Dressing Change #7" ]
+       ] [
+         fhir:code [ fhir:v "227791" ] ;
+         fhir:display [ fhir:v "Impaired Skin  - Dressing Change #2" ]
+       ] [
+         fhir:code [ fhir:v "225338" ] ;
+         fhir:display [ fhir:v "IABP Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "227721" ] ;
+         fhir:display [ fhir:v "AVA Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "229893" ] ;
+         fhir:display [ fhir:v "Pressure Ulcer #10- Date Indentified" ]
+       ] [
+         fhir:code [ fhir:v "225368" ] ;
+         fhir:display [ fhir:v "Pheresis Catheter Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "226516" ] ;
+         fhir:display [ fhir:v "Discharge Date/Time" ]
+       ] [
+         fhir:code [ fhir:v "229555" ] ;
+         fhir:display [ fhir:v "Cardiac Assist Cannula Change" ]
+       ] [
+         fhir:code [ fhir:v "228795" ] ;
+         fhir:display [ fhir:v "Pressure ulcer #3- Dressing change" ]
+       ] [
+         fhir:code [ fhir:v "227800" ] ;
+         fhir:display [ fhir:v "Impaired Skin  - Dressing Change #10" ]
+       ] [
+         fhir:code [ fhir:v "229737" ] ;
+         fhir:display [ fhir:v "16 Gauge Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "228798" ] ;
+         fhir:display [ fhir:v "Pressure ulcer #6- Dressing change" ]
+       ] [
+         fhir:code [ fhir:v "229884" ] ;
+         fhir:display [ fhir:v "Pressure Ulcer #1- Date Indentified" ]
+       ] [
+         fhir:code [ fhir:v "225370" ] ;
+         fhir:display [ fhir:v "Pheresis Catheter Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "227720" ] ;
+         fhir:display [ fhir:v "AVA Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "225378" ] ;
+         fhir:display [ fhir:v "Indwelling Port (PortaCath) Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "229352" ] ;
+         fhir:display [ fhir:v "Foley Cath Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "227911" ] ;
+         fhir:display [ fhir:v "Date - Therapist" ]
+       ] [
+         fhir:code [ fhir:v "224282" ] ;
+         fhir:display [ fhir:v "Multi Lumen Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "225763" ] ;
+         fhir:display [ fhir:v "Sheath Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "229471" ] ;
+         fhir:display [ fhir:v "24 Gauge Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "225351" ] ;
+         fhir:display [ fhir:v "PA Catheter Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "229729" ] ;
+         fhir:display [ fhir:v "18 Gauge Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "228799" ] ;
+         fhir:display [ fhir:v "Pressure ulcer #7- Dressing change" ]
+       ] [
+         fhir:code [ fhir:v "227729" ] ;
+         fhir:display [ fhir:v "AVA Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "225765" ] ;
+         fhir:display [ fhir:v "Sheath Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "229883" ] ;
+         fhir:display [ fhir:v "Pressure ulcer #1- Date Indentified_OLD_1" ]
+       ] [
+         fhir:code [ fhir:v "229889" ] ;
+         fhir:display [ fhir:v "Pressure Ulcer #6- Date Indentified" ]
+       ] [
+         fhir:code [ fhir:v "228794" ] ;
+         fhir:display [ fhir:v "Pressure ulcer #2- Dressing change" ]
+       ] [
+         fhir:code [ fhir:v "225354" ] ;
+         fhir:display [ fhir:v "PA Catheter Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "228291" ] ;
+         fhir:display [ fhir:v "IO Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "227817" ] ;
+         fhir:display [ fhir:v "Referral Date" ]
+       ] [
+         fhir:code [ fhir:v "225327" ] ;
+         fhir:display [ fhir:v "Tunneled (Hickman) Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "228797" ] ;
+         fhir:display [ fhir:v "Pressure ulcer #5- Dressing change" ]
+       ] [
+         fhir:code [ fhir:v "228209" ] ;
+         fhir:display [ fhir:v "Tandem Heart Access Line Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "225376" ] ;
+         fhir:display [ fhir:v "Indwelling Port (PortaCath) Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "226724" ] ;
+         fhir:display [ fhir:v "Hospital Admit Date" ]
+       ] [
+         fhir:code [ fhir:v "227798" ] ;
+         fhir:display [ fhir:v "Impaired Skin  - Dressing Change #9" ]
+       ] [
+         fhir:code [ fhir:v "225384" ] ;
+         fhir:display [ fhir:v "Presep Catheter Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "224261" ] ;
+         fhir:display [ fhir:v "Multi Lumen Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "229741" ] ;
+         fhir:display [ fhir:v "RIC Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "225321" ] ;
+         fhir:display [ fhir:v "Dialysis Catheter Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "228218" ] ;
+         fhir:display [ fhir:v "Tandem Heart Return Cannula Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "225380" ] ;
+         fhir:display [ fhir:v "Indwelling Port (PortaCath)Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "225390" ] ;
+         fhir:display [ fhir:v "Presep Catheter Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "229549" ] ;
+         fhir:display [ fhir:v "Avalon Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "225226" ] ;
+         fhir:display [ fhir:v "CCO PAC Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "229734" ] ;
+         fhir:display [ fhir:v "24 Gauge Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "225335" ] ;
+         fhir:display [ fhir:v "IABP Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "226128" ] ;
+         fhir:display [ fhir:v "ICP Line Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "224290" ] ;
+         fhir:display [ fhir:v "Arterial line Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "226532" ] ;
+         fhir:display [ fhir:v "Organ Bank Notified" ]
+       ] [
+         fhir:code [ fhir:v "225391" ] ;
+         fhir:display [ fhir:v "Triple Introducer Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "225324" ] ;
+         fhir:display [ fhir:v "Dialysis CatheterTubing Change" ]
+       ] [
+         fhir:code [ fhir:v "220003" ] ;
+         fhir:display [ fhir:v "ICU Admission date" ]
+       ] [
+         fhir:code [ fhir:v "229730" ] ;
+         fhir:display [ fhir:v "14 Gauge Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "224184" ] ;
+         fhir:display [ fhir:v "PICC Line Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "228160" ] ;
+         fhir:display [ fhir:v "Impella Aortic Pressure Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "226126" ] ;
+         fhir:display [ fhir:v "ICP Line Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "224186" ] ;
+         fhir:display [ fhir:v "PICC Line Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "224285" ] ;
+         fhir:display [ fhir:v "Arterial line Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "224262" ] ;
+         fhir:display [ fhir:v "Multi Lumen Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "227197" ] ;
+         fhir:display [ fhir:v "Indwelling (PortaCath) Port #2 Date Accessed" ]
+       ] [
+         fhir:code [ fhir:v "224187" ] ;
+         fhir:display [ fhir:v "PICC Line Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "228793" ] ;
+         fhir:display [ fhir:v "Pressure ulcer #1- Dressing change" ]
+       ] [
+         fhir:code [ fhir:v "229651" ] ;
+         fhir:display [ fhir:v "Stroke NCP - Water Swallow Date" ]
+       ] [
+         fhir:code [ fhir:v "225755" ] ;
+         fhir:display [ fhir:v "18 Gauge Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "229655" ] ;
+         fhir:display [ fhir:v "Stroke NCP -  Fam Ed Given Date" ]
+       ] [
+         fhir:code [ fhir:v "228802" ] ;
+         fhir:display [ fhir:v "Pressure ulcer #10- Dressing change" ]
+       ] [
+         fhir:code [ fhir:v "225336" ] ;
+         fhir:display [ fhir:v "IABP Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "225279" ] ;
+         fhir:display [ fhir:v "Date of Admission to Hospital" ]
+       ] [
+         fhir:code [ fhir:v "225322" ] ;
+         fhir:display [ fhir:v "Dialysis Catheter Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "229728" ] ;
+         fhir:display [ fhir:v "18 Gauge Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "225332" ] ;
+         fhir:display [ fhir:v "Tunneled (Hickman) Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "225221" ] ;
+         fhir:display [ fhir:v "CCO PAC Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "229736" ] ;
+         fhir:display [ fhir:v "14 Gauge Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "227722" ] ;
+         fhir:display [ fhir:v "AVA Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "224293" ] ;
+         fhir:display [ fhir:v "Cordis/Introducer Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "228207" ] ;
+         fhir:display [ fhir:v "Tandem Heart Access Line Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "228166" ] ;
+         fhir:display [ fhir:v "Impella Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "228221" ] ;
+         fhir:display [ fhir:v "Tandem Heart Return Cannula Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "229739" ] ;
+         fhir:display [ fhir:v "22 Gauge Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "227797" ] ;
+         fhir:display [ fhir:v "Impaired Skin  - Dressing Change #8" ]
+       ] [
+         fhir:code [ fhir:v "225317" ] ;
+         fhir:display [ fhir:v "Trauma Line Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "225083" ] ;
+         fhir:display [ fhir:v "Pregnancy due date" ]
+       ] [
+         fhir:code [ fhir:v "225318" ] ;
+         fhir:display [ fhir:v "Dialysis Catheter Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "227584" ] ;
+         fhir:display [ fhir:v "GU Catheter D/C Date" ]
+       ] [
+         fhir:code [ fhir:v "224287" ] ;
+         fhir:display [ fhir:v "Arterial Line Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "227795" ] ;
+         fhir:display [ fhir:v "Impaired Skin  - Dressing Change #6" ]
+       ] [
+         fhir:code [ fhir:v "225766" ] ;
+         fhir:display [ fhir:v "Sheath Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "229353" ] ;
+         fhir:display [ fhir:v "Foley Cath Removal Date" ]
+       ] [
+         fhir:code [ fhir:v "225758" ] ;
+         fhir:display [ fhir:v "RIC Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "225757" ] ;
+         fhir:display [ fhir:v "14 Gauge Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "224183" ] ;
+         fhir:display [ fhir:v "PICC Line Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "225367" ] ;
+         fhir:display [ fhir:v "Pheresis Catheter Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "225128" ] ;
+         fhir:display [ fhir:v "Last dialysis" ]
+       ] [
+         fhir:code [ fhir:v "225753" ] ;
+         fhir:display [ fhir:v "22 Gauge Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "229542" ] ;
+         fhir:display [ fhir:v "EKOS Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "225769" ] ;
+         fhir:display [ fhir:v "Sheath Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "224288" ] ;
+         fhir:display [ fhir:v "Arterial line Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "229740" ] ;
+         fhir:display [ fhir:v "24 Gauge Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "229888" ] ;
+         fhir:display [ fhir:v "Pressure Ulcer #5- Date Indentified" ]
+       ] [
+         fhir:code [ fhir:v "227541" ] ;
+         fhir:display [ fhir:v "SvO2 Calibrated" ]
+       ] [
+         fhir:code [ fhir:v "226482" ] ;
+         fhir:display [ fhir:v "Blood Clot Outdates" ]
+       ] [
+         fhir:code [ fhir:v "228165" ] ;
+         fhir:display [ fhir:v "Impella Daily Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "226518" ] ;
+         fhir:display [ fhir:v "Expected Discharge Date" ]
+       ] [
+         fhir:code [ fhir:v "225754" ] ;
+         fhir:display [ fhir:v "20 Gauge Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "225346" ] ;
+         fhir:display [ fhir:v "Midline Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "225353" ] ;
+         fhir:display [ fhir:v "PA Catheter Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "225343" ] ;
+         fhir:display [ fhir:v "Midline Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "225372" ] ;
+         fhir:display [ fhir:v "Pheresis Catheter Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "225762" ] ;
+         fhir:display [ fhir:v "Sheath Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "225394" ] ;
+         fhir:display [ fhir:v "Triple Introducer Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "227790" ] ;
+         fhir:display [ fhir:v "Impaired Skin  - Dressing Change #1" ]
+       ] [
+         fhir:code [ fhir:v "224292" ] ;
+         fhir:display [ fhir:v "Cordis/Introducer Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "228266" ] ;
+         fhir:display [ fhir:v "FM Date/Time" ]
+       ] [
+         fhir:code [ fhir:v "225377" ] ;
+         fhir:display [ fhir:v "Indwelling Port (PortaCath) Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "225356" ] ;
+         fhir:display [ fhir:v "PA Catheter Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "225213" ] ;
+         fhir:display [ fhir:v "Trauma Line Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "229890" ] ;
+         fhir:display [ fhir:v "Pressure Ulcer #7- Date Indentified" ]
+       ] [
+         fhir:code [ fhir:v "224298" ] ;
+         fhir:display [ fhir:v "Cordis/Introducer Tubing Change" ]
+       ] [
+         fhir:code [ fhir:v "229556" ] ;
+         fhir:display [ fhir:v "Cardiac Assist Cannula Date" ]
+       ] [
+         fhir:code [ fhir:v "229887" ] ;
+         fhir:display [ fhir:v "Pressure Ulcer #4- Date Indentified" ]
+       ] [
+         fhir:code [ fhir:v "225393" ] ;
+         fhir:display [ fhir:v "Triple Introducer Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "228331" ] ;
+         fhir:display [ fhir:v "PC Time of visit" ]
+       ] [
+         fhir:code [ fhir:v "227724" ] ;
+         fhir:display [ fhir:v "AVA Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "227199" ] ;
+         fhir:display [ fhir:v "Indwelling (PortaCath) Port #2 Date De-accessed" ]
+       ] [
+         fhir:code [ fhir:v "225329" ] ;
+         fhir:display [ fhir:v "Tunneled (Hickman) Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "225345" ] ;
+         fhir:display [ fhir:v "Midline Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "224878" ] ;
+         fhir:display [ fhir:v "GU Catheter Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "228321" ] ;
+         fhir:display [ fhir:v "PC Date" ]
+       ] [
+         fhir:code [ fhir:v "228801" ] ;
+         fhir:display [ fhir:v "Pressure ulcer #9- Dressing change" ]
+       ] [
+         fhir:code [ fhir:v "227907" ] ;
+         fhir:display [ fhir:v "Date - Student" ]
+       ] [
+         fhir:code [ fhir:v "225316" ] ;
+         fhir:display [ fhir:v "CCO PAC Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "224280" ] ;
+         fhir:display [ fhir:v "Multi Lumen Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "229732" ] ;
+         fhir:display [ fhir:v "20 Gauge Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "227792" ] ;
+         fhir:display [ fhir:v "Impaired Skin  - Dressing Change #3" ]
+       ] [
+         fhir:code [ fhir:v "228168" ] ;
+         fhir:display [ fhir:v "Impella Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "224279" ] ;
+         fhir:display [ fhir:v "Multi Lumen Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "225344" ] ;
+         fhir:display [ fhir:v "Midline Change over Wire Date" ]
+       ] [
+         fhir:code [ fhir:v "224284" ] ;
+         fhir:display [ fhir:v "Arterial line Cap Change" ]
+       ] [
+         fhir:code [ fhir:v "226515" ] ;
+         fhir:display [ fhir:v "Date of Birth" ]
+       ] [
+         fhir:code [ fhir:v "225337" ] ;
+         fhir:display [ fhir:v "IABP Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "227361" ] ;
+         fhir:display [ fhir:v "Indwelling (PortaCath) Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "225385" ] ;
+         fhir:display [ fhir:v "Presep Catheter Dressing Change" ]
+       ] [
+         fhir:code [ fhir:v "229891" ] ;
+         fhir:display [ fhir:v "Pressure Ulcer #8- Date Indentified" ]
+       ] [
+         fhir:code [ fhir:v "229541" ] ;
+         fhir:display [ fhir:v "EKOS Insertion Date" ]
+       ] [
+         fhir:code [ fhir:v "227794" ] ;
+         fhir:display [ fhir:v "Impaired Skin  - Dressing Change #5" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

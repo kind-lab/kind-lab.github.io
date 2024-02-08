@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/MedicationDispense/ExampleMimicMedicationDispenseED> a fhir:MedicationDispense ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleMimicMedicationDispenseED"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense-ed"^^xsd:anyURI ;
+       fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense-ed>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationDispense</b><a name=\"ExampleMimicMedicationDispenseED\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationDispense &quot;ExampleMimicMedicationDispenseED&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mimic-medication-dispense-ed.html\">MIMIC-ED MedicationDispense</a></p></div><p><b>status</b>: unknown</p><p><b>medication</b>: Ondansetron ODT <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mimic-medication-gsn.html\">MimicMedicationGsn</a>#041562)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleMimicPatientED.html\">Patient/ExampleMimicPatientED</a> &quot;&quot;</p><p><b>context</b>: <a href=\"Encounter-ExampleMimicEncounterED.html\">Encounter/ExampleMimicEncounterED</a></p><p><b>whenHandedOver</b>: 2118-07-10 21:22:00+0000</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "unknown"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-gsn"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "041562" ]
+     ] ) ;
+     fhir:text [ fhir:v "Ondansetron ODT" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Patient/ExampleMimicPatientED> ;
+     fhir:reference [ fhir:v "Patient/ExampleMimicPatientED" ]
+  ] ; # 
+  fhir:context [
+     fhir:link <http://mimic.mit.edu/fhir/mimic/Encounter/ExampleMimicEncounterED> ;
+     fhir:reference [ fhir:v "Encounter/ExampleMimicEncounterED" ]
+  ] ; # 
+  fhir:whenHandedOver [ fhir:v "2118-07-10T21:22:00.000Z"^^xsd:dateTime] . # 
+
+# -------------------------------------------------------------------------------------
+

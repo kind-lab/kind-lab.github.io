@@ -1,0 +1,1068 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MimicMicrobiologyTest - JSON Representation - MIMIC Implementation Guide v1.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kindlab.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.95"}
+    h3,h4,h5,h6{--heading-prefix:"7.95"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://alistairewj.github.io/">
+            <img height="50" alt="Visit the KinD Lab website" src="assets/images/kindlab_logo_small.jpg"/>
+          </a>
+        </div>        
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MIMIC Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.3.0 - Draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mimic-fhir-mappings.html">MIMIC-IV Mapping</a>
+      </li>
+      <li>
+        <a href="mimic-ed-fhir-mappings.html">MIMIC-ED Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General</a>
+      </li>
+      <li>
+        <a href="terminology-guide.html">Terminology</a>
+      </li>
+      <li>
+        <a href="applications.html">Applications</a>
+      </li>
+      <li>
+        <a href="tutorials.html">Tutorials</a>
+      </li>
+      <li>
+        <a href="future-work.html">Future Work</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Subsets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="microbiology-background.html">Microbiology data</a>
+      </li>
+      <li>
+        <a href="medication-background.html">Medication data</a>
+      </li>
+      <li>
+        <a href="emergency-department-subset.html">Emergency Department data</a>
+      </li>
+      <li>
+        <a href="intensive-care-unit-subset.html">Intensive Care Unit data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MimicMicrobiologyTest</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">MIMIC Implementation Guide - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://mimic.mit.edu/fhir/mimic/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-mimic-microbiology-test.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mimic-microbiology-test.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mimic-microbiology-test.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: MimicMicrobiologyTest - JSON Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2022-09-21
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-mimic-microbiology-test.json" no-download="true">Raw json</a> | <a href="CodeSystem-mimic-microbiology-test.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
+{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "mimic-microbiology-test",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.language">language</a>" : "en",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;p&gt;This  code system &lt;code&gt;http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90212&lt;a name=\&quot;mimic-microbiology-test-90212\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CLOSTRIDIUM DIFFICILE TOXIN A &amp;amp; B TEST&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90054&lt;a name=\&quot;mimic-microbiology-test-90054\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IMMUNOFLUORESCENT TEST FOR PNEUMOCYSTIS CARINII&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90261&lt;a name=\&quot;mimic-microbiology-test-90261\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ANAEROBIC BOTTLE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90135&lt;a name=\&quot;mimic-microbiology-test-90135\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EPSTEIN-BARR VIRUS EBNA IgG AB&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90241&lt;a name=\&quot;mimic-microbiology-test-90241\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;POTASSIUM HYDROXIDE PREPARATION&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90137&lt;a name=\&quot;mimic-microbiology-test-90137\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;QUANTITATIVE RPR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90189&lt;a name=\&quot;mimic-microbiology-test-90189\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MRSA SCREEN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90218&lt;a name=\&quot;mimic-microbiology-test-90218\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Carbapenemase Resistant Enterobacteriaceae Screen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90042&lt;a name=\&quot;mimic-microbiology-test-90042\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TREPONEMAL ANTIBODY TEST&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90179&lt;a name=\&quot;mimic-microbiology-test-90179\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;POTASSIUM HYDROXIDE PREPARATION (HAIR/SKIN/NAILS)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90078&lt;a name=\&quot;mimic-microbiology-test-90078\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHROMOSOME ANALYSIS-FLUID&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90106&lt;a name=\&quot;mimic-microbiology-test-90106\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MICROSPORIDIA STAIN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90168&lt;a name=\&quot;mimic-microbiology-test-90168\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;DIRECT INFLUENZA B ANTIGEN TEST&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90184&lt;a name=\&quot;mimic-microbiology-test-90184\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;STEM CELL - ANAEROBIC BOTTLE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90043&lt;a name=\&quot;mimic-microbiology-test-90043\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;POST MORTEM MYCOLOGY CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90066&lt;a name=\&quot;mimic-microbiology-test-90066\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TISSUE CULTURE-LYMPHOCYTE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90232&lt;a name=\&quot;mimic-microbiology-test-90232\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Staph aureus Preop PCR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90249&lt;a name=\&quot;mimic-microbiology-test-90249\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRYPTOCOCCAL ANTIGEN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90121&lt;a name=\&quot;mimic-microbiology-test-90121\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CYCLOSPORA STAIN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90193&lt;a name=\&quot;mimic-microbiology-test-90193\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;voided&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90192&lt;a name=\&quot;mimic-microbiology-test-90192\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CMV Viral Load&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90075&lt;a name=\&quot;mimic-microbiology-test-90075\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHROMOSOME ANALYSIS-BLOOD&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90158&lt;a name=\&quot;mimic-microbiology-test-90158\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;R/O GC Only&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90268&lt;a name=\&quot;mimic-microbiology-test-90268\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FLUID CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90061&lt;a name=\&quot;mimic-microbiology-test-90061\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BRUCELLA BLOOD CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90172&lt;a name=\&quot;mimic-microbiology-test-90172\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HCV GENOTYPE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90170&lt;a name=\&quot;mimic-microbiology-test-90170\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FISH ANALYSIS, 3-5 CELLS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90090&lt;a name=\&quot;mimic-microbiology-test-90090\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;POST-MORTEM VIRAL CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90185&lt;a name=\&quot;mimic-microbiology-test-90185\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SMEAR FOR BACTERIAL VAGINOSIS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90210&lt;a name=\&quot;mimic-microbiology-test-90210\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Malaria Antigen Test&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90226&lt;a name=\&quot;mimic-microbiology-test-90226\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RPR w/check for Prozone&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90203&lt;a name=\&quot;mimic-microbiology-test-90203\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aerobic Bottle Gram Stain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90161&lt;a name=\&quot;mimic-microbiology-test-90161\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TRICHOMONAS SALINE PREP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90254&lt;a name=\&quot;mimic-microbiology-test-90254\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RUBELLA IgG SEROLOGY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90050&lt;a name=\&quot;mimic-microbiology-test-90050\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GRAM STAIN- R/O THRUSH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90230&lt;a name=\&quot;mimic-microbiology-test-90230\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stool Hold Request&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90116&lt;a name=\&quot;mimic-microbiology-test-90116\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis, Nucleic Acid Probe, with Amplification&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90065&lt;a name=\&quot;mimic-microbiology-test-90065\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;STOOL SMEAR FOR POLYMORPHONUCLEAR LEUKOCYTES&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90272&lt;a name=\&quot;mimic-microbiology-test-90272\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TISSUE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90093&lt;a name=\&quot;mimic-microbiology-test-90093\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ANAEROBIC BOTTLE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90191&lt;a name=\&quot;mimic-microbiology-test-90191\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MUMPS IgG ANTIBODY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90173&lt;a name=\&quot;mimic-microbiology-test-90173\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acid Fast Stain for Cryptosporidium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90148&lt;a name=\&quot;mimic-microbiology-test-90148\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cryopreservation - Cells&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90202&lt;a name=\&quot;mimic-microbiology-test-90202\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blood Culture, Neonate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90269&lt;a name=\&quot;mimic-microbiology-test-90269\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FUNGAL CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90095&lt;a name=\&quot;mimic-microbiology-test-90095\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;VARICELLA-ZOSTER CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90046&lt;a name=\&quot;mimic-microbiology-test-90046\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;WOUND CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90267&lt;a name=\&quot;mimic-microbiology-test-90267\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FECAL CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90243&lt;a name=\&quot;mimic-microbiology-test-90243\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CAMPYLOBACTER CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90136&lt;a name=\&quot;mimic-microbiology-test-90136\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CMV IgM ANTIBODY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90055&lt;a name=\&quot;mimic-microbiology-test-90055\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RESPIRATORY CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90215&lt;a name=\&quot;mimic-microbiology-test-90215\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;M. furfur Blood Culture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90265&lt;a name=\&quot;mimic-microbiology-test-90265\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BLOOD/FUNGAL CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90071&lt;a name=\&quot;mimic-microbiology-test-90071\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHROMOSOME ANALYSIS-CVS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90163&lt;a name=\&quot;mimic-microbiology-test-90163\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;INTERPHASE FISH ANALYSIS, 25-99 CELLS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90270&lt;a name=\&quot;mimic-microbiology-test-90270\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GRAM STAIN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90124&lt;a name=\&quot;mimic-microbiology-test-90124\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CVS NEEDLE ASPIRATION EVALUATION&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90164&lt;a name=\&quot;mimic-microbiology-test-90164\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;INTERPHASE FISH ANALYSIS, 100-300 CELLS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90186&lt;a name=\&quot;mimic-microbiology-test-90186\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;YEAST VAGINITIS CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90099&lt;a name=\&quot;mimic-microbiology-test-90099\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NOCARDIA CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90264&lt;a name=\&quot;mimic-microbiology-test-90264\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BLOOD/AFB CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90181&lt;a name=\&quot;mimic-microbiology-test-90181\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;O&amp;amp;P MACROSCOPIC EXAM - ARTHROPOD&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90152&lt;a name=\&quot;mimic-microbiology-test-90152\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tissue Culture - Neoplastic Blood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90119&lt;a name=\&quot;mimic-microbiology-test-90119\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HELICOBACTER PYLORI ANTIBODY TEST&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90205&lt;a name=\&quot;mimic-microbiology-test-90205\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fluid Culture in Bottles&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90074&lt;a name=\&quot;mimic-microbiology-test-90074\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FOCUSED ANALYSIS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90209&lt;a name=\&quot;mimic-microbiology-test-90209\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pediatric Bottle Gram Stain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90206&lt;a name=\&quot;mimic-microbiology-test-90206\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blood Culture, Post Mortem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90115&lt;a name=\&quot;mimic-microbiology-test-90115\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;R/O VANCOMYCIN RESISTANT ENTEROCOCCUS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90091&lt;a name=\&quot;mimic-microbiology-test-90091\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;VARICELLA-ZOSTER IgG SEROLOGY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90224&lt;a name=\&quot;mimic-microbiology-test-90224\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cipro Resistant Screen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90109&lt;a name=\&quot;mimic-microbiology-test-90109\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;M.FURFUR CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90072&lt;a name=\&quot;mimic-microbiology-test-90072\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHROMOSOME ANALYSIS-TISSUE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90260&lt;a name=\&quot;mimic-microbiology-test-90260\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AEROBIC BOTTLE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90236&lt;a name=\&quot;mimic-microbiology-test-90236\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anaerobic culture, Prosthetic Joint Fluid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90201&lt;a name=\&quot;mimic-microbiology-test-90201\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blood Culture, Routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90233&lt;a name=\&quot;mimic-microbiology-test-90233\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;C. difficile Toxin antigen assay&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90182&lt;a name=\&quot;mimic-microbiology-test-90182\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;STEM CELL - AEROBIC BOTTLE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90222&lt;a name=\&quot;mimic-microbiology-test-90222\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MTB Direct Amplification&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90130&lt;a name=\&quot;mimic-microbiology-test-90130\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;R/O Beta Strep Group A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90128&lt;a name=\&quot;mimic-microbiology-test-90128\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Legionella Urinary Antigen &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90174&lt;a name=\&quot;mimic-microbiology-test-90174\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Concentration and Stain for Giardia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90214&lt;a name=\&quot;mimic-microbiology-test-90214\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Respiratory Viral Culture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90140&lt;a name=\&quot;mimic-microbiology-test-90140\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;QUANTITATIVE CRYPTOCOCCAL ANTIGEN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90096&lt;a name=\&quot;mimic-microbiology-test-90096\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;DIRECT ANTIGEN TEST FOR VARICELLA-ZOSTER VIRUS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90039&lt;a name=\&quot;mimic-microbiology-test-90039\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;URINE CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90144&lt;a name=\&quot;mimic-microbiology-test-90144\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TOXOPLASMA IgG ANTIBODY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90207&lt;a name=\&quot;mimic-microbiology-test-90207\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stem Cell Aer/Ana Culture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90086&lt;a name=\&quot;mimic-microbiology-test-90086\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FECAL CULTURE - R/O YERSINIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90190&lt;a name=\&quot;mimic-microbiology-test-90190\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tissue culture for additional cells&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90068&lt;a name=\&quot;mimic-microbiology-test-90068\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TISSUE CULTURE-FLUID&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90225&lt;a name=\&quot;mimic-microbiology-test-90225\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ED Gram Stain for Yeast&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90255&lt;a name=\&quot;mimic-microbiology-test-90255\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;VIRAL CULTURE: R/O CYTOMEGALOVIRUS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90157&lt;a name=\&quot;mimic-microbiology-test-90157\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;DIRECT RSV ANTIGEN TEST&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90079&lt;a name=\&quot;mimic-microbiology-test-90079\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TISSUE CULTURE-CVS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90049&lt;a name=\&quot;mimic-microbiology-test-90049\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BRUCELLA CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90259&lt;a name=\&quot;mimic-microbiology-test-90259\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SCOTCH TAPE PREP/PADDLE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90150&lt;a name=\&quot;mimic-microbiology-test-90150\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MOLECULAR CYTOGENETICS - DNA PROBE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90219&lt;a name=\&quot;mimic-microbiology-test-90219\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRE/ESBL/AMP-C Screening&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90104&lt;a name=\&quot;mimic-microbiology-test-90104\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Direct Antigen Test for Herpes Simplex Virus Types 1 &amp;amp; 2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90238&lt;a name=\&quot;mimic-microbiology-test-90238\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;POST-MORTEM ACID-FAST CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90160&lt;a name=\&quot;mimic-microbiology-test-90160\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cryptosporidium/Giardia (DFA)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90194&lt;a name=\&quot;mimic-microbiology-test-90194\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;R/O Group B Strep - Penicillin Allergy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90053&lt;a name=\&quot;mimic-microbiology-test-90053\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CYTOMEGALOVIRUS EARLY ANTIGEN TEST (SHELL VIAL METHOD)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90195&lt;a name=\&quot;mimic-microbiology-test-90195\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Reflex HCV Qual PCR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90220&lt;a name=\&quot;mimic-microbiology-test-90220\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deparaffinization, Lysis of Cells&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90131&lt;a name=\&quot;mimic-microbiology-test-90131\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ASO TITER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90105&lt;a name=\&quot;mimic-microbiology-test-90105\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Respiratory Viral Antigen Screen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90235&lt;a name=\&quot;mimic-microbiology-test-90235\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;REFLEX URINE CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90154&lt;a name=\&quot;mimic-microbiology-test-90154\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BARTONELLA BLOOD CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90083&lt;a name=\&quot;mimic-microbiology-test-90083\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FECAL CULTURE - R/O VIBRIO&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90169&lt;a name=\&quot;mimic-microbiology-test-90169\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GEN-PROBE AMPLIFIED M. TUBERCULOSIS DIRECT TEST (MTD)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90175&lt;a name=\&quot;mimic-microbiology-test-90175\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV-1 Viral Load/Ultrasensitive&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90087&lt;a name=\&quot;mimic-microbiology-test-90087\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FECAL CULTURE - R/O E.COLI 0157:H7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90171&lt;a name=\&quot;mimic-microbiology-test-90171\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FISH ANALYSIS, 10-30 CELLS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90245&lt;a name=\&quot;mimic-microbiology-test-90245\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ANAEROBIC CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90097&lt;a name=\&quot;mimic-microbiology-test-90097\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;R/O GROUP B BETA STREP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90200&lt;a name=\&quot;mimic-microbiology-test-90200\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;STAT OR Gram Stain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90067&lt;a name=\&quot;mimic-microbiology-test-90067\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TISSUE CULTURE-AMNIOTIC FLUID&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90252&lt;a name=\&quot;mimic-microbiology-test-90252\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;VIRAL CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90076&lt;a name=\&quot;mimic-microbiology-test-90076\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHROMOSOME ANALYSIS-AMNIOTIC FLUID&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90155&lt;a name=\&quot;mimic-microbiology-test-90155\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MOLECULAR CYTOGENETICS-DNA Probe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90134&lt;a name=\&quot;mimic-microbiology-test-90134\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EPSTEIN-BARR VIRUS VCA-IgM AB&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90256&lt;a name=\&quot;mimic-microbiology-test-90256\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;VIRAL CULTURE: R/O HERPES SIMPLEX VIRUS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90221&lt;a name=\&quot;mimic-microbiology-test-90221\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;C. difficile PCR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90162&lt;a name=\&quot;mimic-microbiology-test-90162\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ADDITIONAL CELLS COUNTED&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90038&lt;a name=\&quot;mimic-microbiology-test-90038\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GENITAL CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90198&lt;a name=\&quot;mimic-microbiology-test-90198\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Staph aureus Screen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90216&lt;a name=\&quot;mimic-microbiology-test-90216\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Malassezia furfur Culture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90159&lt;a name=\&quot;mimic-microbiology-test-90159\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;POSTMORTEM CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90107&lt;a name=\&quot;mimic-microbiology-test-90107\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Respiratory Virus Identification&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90117&lt;a name=\&quot;mimic-microbiology-test-90117\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ANAEROBIC BOTTLE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90101&lt;a name=\&quot;mimic-microbiology-test-90101\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EPSTEIN-BARR VIRUS VCA-IgG AB&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90227&lt;a name=\&quot;mimic-microbiology-test-90227\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sonication culture, prosthetic joint&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90080&lt;a name=\&quot;mimic-microbiology-test-90080\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TISSUE CULTURE-TISSUE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90229&lt;a name=\&quot;mimic-microbiology-test-90229\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lyme IgM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90211&lt;a name=\&quot;mimic-microbiology-test-90211\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rubella IgG/IgM Antibody&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90123&lt;a name=\&quot;mimic-microbiology-test-90123\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HCV VIRAL LOAD&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90258&lt;a name=\&quot;mimic-microbiology-test-90258\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AEROBIC BOTTLE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90143&lt;a name=\&quot;mimic-microbiology-test-90143\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CMV IgG ANTIBODY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90250&lt;a name=\&quot;mimic-microbiology-test-90250\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OVA + PARASITES&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90239&lt;a name=\&quot;mimic-microbiology-test-90239\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;POST-MORTEM DIRECT ACID-FAST STAIN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90098&lt;a name=\&quot;mimic-microbiology-test-90098\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SWAB- R/O YEAST&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90178&lt;a name=\&quot;mimic-microbiology-test-90178\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FUNGAL CULTURE (HAIR/SKIN/NAILS)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90246&lt;a name=\&quot;mimic-microbiology-test-90246\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACID FAST SMEAR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90142&lt;a name=\&quot;mimic-microbiology-test-90142\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;VIRAL CULTURE: R/O CYTOMEGALOVIRUS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90253&lt;a name=\&quot;mimic-microbiology-test-90253\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CLOSTRIDIUM DIFFICILE TOXIN ASSAY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90208&lt;a name=\&quot;mimic-microbiology-test-90208\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Myco-F Bottle Gram Stain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90153&lt;a name=\&quot;mimic-microbiology-test-90153\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Additional Cells and Karyotype&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90151&lt;a name=\&quot;mimic-microbiology-test-90151\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tissue Culture-Bone Marrow&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90204&lt;a name=\&quot;mimic-microbiology-test-90204\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anaerobic Bottle Gram Stain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90111&lt;a name=\&quot;mimic-microbiology-test-90111\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHROMOSOME ANALYSIS-BONE MARROW&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90133&lt;a name=\&quot;mimic-microbiology-test-90133\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MONOSPOT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90188&lt;a name=\&quot;mimic-microbiology-test-90188\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NEISSERIA GONORRHOEAE (GC), NUCLEIC ACID PROBE, WITH AMPLIFICATION&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90177&lt;a name=\&quot;mimic-microbiology-test-90177\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HBV Viral Load&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90156&lt;a name=\&quot;mimic-microbiology-test-90156\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;DIRECT INFLUENZA A ANTIGEN TEST&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90112&lt;a name=\&quot;mimic-microbiology-test-90112\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MODIFIED ACID-FAST STAIN FOR NOCARDIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90213&lt;a name=\&quot;mimic-microbiology-test-90213\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enterovirus Culture&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90231&lt;a name=\&quot;mimic-microbiology-test-90231\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Swab - R/O Yeast - IC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90167&lt;a name=\&quot;mimic-microbiology-test-90167\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ISOLATE FOR MIC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90129&lt;a name=\&quot;mimic-microbiology-test-90129\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ASO Screen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90059&lt;a name=\&quot;mimic-microbiology-test-90059\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LEGIONELLA CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90228&lt;a name=\&quot;mimic-microbiology-test-90228\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lyme IgG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90113&lt;a name=\&quot;mimic-microbiology-test-90113\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;URINE-GRAM STAIN - UNSPUN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90240&lt;a name=\&quot;mimic-microbiology-test-90240\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACID FAST CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90248&lt;a name=\&quot;mimic-microbiology-test-90248\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RAPID PLASMA REAGIN TEST&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90126&lt;a name=\&quot;mimic-microbiology-test-90126\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TOXOPLASMA IgM ANTIBODY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90088&lt;a name=\&quot;mimic-microbiology-test-90088\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHROMOSOME ANALYSIS - ADDITIONAL KARYOTYPE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90166&lt;a name=\&quot;mimic-microbiology-test-90166\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Problem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90187&lt;a name=\&quot;mimic-microbiology-test-90187\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GENITAL CULTURE FOR TOXIC SHOCK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90199&lt;a name=\&quot;mimic-microbiology-test-90199\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Immunofluorescent test for Pneumocystis jirovecii (carinii)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90127&lt;a name=\&quot;mimic-microbiology-test-90127\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RUBEOLA ANTIBODY, IgG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90180&lt;a name=\&quot;mimic-microbiology-test-90180\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;O&amp;amp;P MACROSCOPIC EXAM - WORM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90262&lt;a name=\&quot;mimic-microbiology-test-90262\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHLAMYDIA CULTURE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90092&lt;a name=\&quot;mimic-microbiology-test-90092\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AEROBIC BOTTLE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90146&lt;a name=\&quot;mimic-microbiology-test-90146\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHROMOSOME ANALYSIS-NEOPLASTIC BLOOD&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;90132&lt;a name=\&quot;mimic-microbiology-test-90132\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LYME SEROLOGY&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "1.3.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "MimicMicrobiologyTest",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "MimicMicrobiologyTest",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-09-21T13:59:43-04:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "KinD Lab",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "KinD Lab",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://fhir.kindlab.sickkids.ca"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "The microbiology test completed in MIMIC",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.valueSet">valueSet</a>" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-test",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90212",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CLOSTRIDIUM DIFFICILE TOXIN A &amp; B TEST"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90054",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IMMUNOFLUORESCENT TEST FOR PNEUMOCYSTIS CARINII"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90261",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ANAEROBIC BOTTLE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90135",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EPSTEIN-BARR VIRUS EBNA IgG AB"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90241",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "POTASSIUM HYDROXIDE PREPARATION"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90137",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "QUANTITATIVE RPR"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90189",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MRSA SCREEN"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90218",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Carbapenemase Resistant Enterobacteriaceae Screen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90042",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TREPONEMAL ANTIBODY TEST"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90179",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "POTASSIUM HYDROXIDE PREPARATION (HAIR/SKIN/NAILS)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90078",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CHROMOSOME ANALYSIS-FLUID"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90106",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MICROSPORIDIA STAIN"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90168",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "DIRECT INFLUENZA B ANTIGEN TEST"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90184",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "STEM CELL - ANAEROBIC BOTTLE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90043",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "POST MORTEM MYCOLOGY CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90066",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TISSUE CULTURE-LYMPHOCYTE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90232",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Staph aureus Preop PCR"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90249",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CRYPTOCOCCAL ANTIGEN"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90121",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CYCLOSPORA STAIN"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90193",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "voided"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90192",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CMV Viral Load"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90075",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CHROMOSOME ANALYSIS-BLOOD"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90158",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "R/O GC Only"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90268",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "FLUID CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90061",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "BRUCELLA BLOOD CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90172",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HCV GENOTYPE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90170",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "FISH ANALYSIS, 3-5 CELLS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90090",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "POST-MORTEM VIRAL CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90185",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SMEAR FOR BACTERIAL VAGINOSIS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90210",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Malaria Antigen Test"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90226",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RPR w/check for Prozone"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90203",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Aerobic Bottle Gram Stain"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90161",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TRICHOMONAS SALINE PREP"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90254",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RUBELLA IgG SEROLOGY"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90050",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GRAM STAIN- R/O THRUSH"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90230",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stool Hold Request"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90116",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chlamydia trachomatis, Nucleic Acid Probe, with Amplification"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90065",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "STOOL SMEAR FOR POLYMORPHONUCLEAR LEUKOCYTES"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90272",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TISSUE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90093",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ANAEROBIC BOTTLE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90191",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MUMPS IgG ANTIBODY"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90173",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Acid Fast Stain for Cryptosporidium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90148",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cryopreservation - Cells"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90202",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Blood Culture, Neonate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90269",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "FUNGAL CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90095",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "VARICELLA-ZOSTER CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90046",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "WOUND CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90267",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "FECAL CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90243",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CAMPYLOBACTER CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90136",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CMV IgM ANTIBODY"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90055",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RESPIRATORY CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90215",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "M. furfur Blood Culture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90265",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "BLOOD/FUNGAL CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90071",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CHROMOSOME ANALYSIS-CVS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90163",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "INTERPHASE FISH ANALYSIS, 25-99 CELLS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90270",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GRAM STAIN"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90124",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CVS NEEDLE ASPIRATION EVALUATION"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90164",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "INTERPHASE FISH ANALYSIS, 100-300 CELLS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90186",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "YEAST VAGINITIS CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90099",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "NOCARDIA CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90264",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "BLOOD/AFB CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90181",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "O&amp;P MACROSCOPIC EXAM - ARTHROPOD"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90152",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tissue Culture - Neoplastic Blood"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90119",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HELICOBACTER PYLORI ANTIBODY TEST"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90205",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fluid Culture in Bottles"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90074",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "FOCUSED ANALYSIS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90209",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pediatric Bottle Gram Stain"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90206",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Blood Culture, Post Mortem"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90115",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "R/O VANCOMYCIN RESISTANT ENTEROCOCCUS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90091",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "VARICELLA-ZOSTER IgG SEROLOGY"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90224",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cipro Resistant Screen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90109",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "M.FURFUR CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90072",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CHROMOSOME ANALYSIS-TISSUE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90260",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AEROBIC BOTTLE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90236",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anaerobic culture, Prosthetic Joint Fluid"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90201",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Blood Culture, Routine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90233",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "C. difficile Toxin antigen assay"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90182",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "STEM CELL - AEROBIC BOTTLE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90222",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MTB Direct Amplification"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90130",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "R/O Beta Strep Group A"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90128",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Legionella Urinary Antigen "
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90174",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Concentration and Stain for Giardia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90214",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Respiratory Viral Culture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90140",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "QUANTITATIVE CRYPTOCOCCAL ANTIGEN"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90096",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "DIRECT ANTIGEN TEST FOR VARICELLA-ZOSTER VIRUS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90039",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "URINE CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90144",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TOXOPLASMA IgG ANTIBODY"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90207",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stem Cell Aer/Ana Culture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90086",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "FECAL CULTURE - R/O YERSINIA"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90190",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tissue culture for additional cells"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90068",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TISSUE CULTURE-FLUID"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90225",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ED Gram Stain for Yeast"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90255",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "VIRAL CULTURE: R/O CYTOMEGALOVIRUS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90157",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "DIRECT RSV ANTIGEN TEST"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90079",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TISSUE CULTURE-CVS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90049",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "BRUCELLA CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90259",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SCOTCH TAPE PREP/PADDLE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90150",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MOLECULAR CYTOGENETICS - DNA PROBE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90219",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CRE/ESBL/AMP-C Screening"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90104",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Direct Antigen Test for Herpes Simplex Virus Types 1 &amp; 2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90238",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "POST-MORTEM ACID-FAST CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90160",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cryptosporidium/Giardia (DFA)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90194",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "R/O Group B Strep - Penicillin Allergy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90053",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CYTOMEGALOVIRUS EARLY ANTIGEN TEST (SHELL VIAL METHOD)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90195",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Reflex HCV Qual PCR"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90220",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Deparaffinization, Lysis of Cells"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90131",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ASO TITER"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90105",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Respiratory Viral Antigen Screen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90235",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "REFLEX URINE CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90154",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "BARTONELLA BLOOD CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90083",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "FECAL CULTURE - R/O VIBRIO"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90169",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GEN-PROBE AMPLIFIED M. TUBERCULOSIS DIRECT TEST (MTD)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90175",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HIV-1 Viral Load/Ultrasensitive"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90087",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "FECAL CULTURE - R/O E.COLI 0157:H7"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90171",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "FISH ANALYSIS, 10-30 CELLS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90245",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ANAEROBIC CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90097",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "R/O GROUP B BETA STREP"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90200",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "STAT OR Gram Stain"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90067",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TISSUE CULTURE-AMNIOTIC FLUID"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90252",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "VIRAL CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90076",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CHROMOSOME ANALYSIS-AMNIOTIC FLUID"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90155",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MOLECULAR CYTOGENETICS-DNA Probe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90134",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EPSTEIN-BARR VIRUS VCA-IgM AB"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90256",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "VIRAL CULTURE: R/O HERPES SIMPLEX VIRUS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90221",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "C. difficile PCR"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90162",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ADDITIONAL CELLS COUNTED"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90038",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GENITAL CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90198",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Staph aureus Screen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90216",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Malassezia furfur Culture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90159",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "POSTMORTEM CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90107",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Respiratory Virus Identification"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90117",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ANAEROBIC BOTTLE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90101",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EPSTEIN-BARR VIRUS VCA-IgG AB"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90227",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sonication culture, prosthetic joint"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90080",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TISSUE CULTURE-TISSUE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90229",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lyme IgM"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90211",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rubella IgG/IgM Antibody"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90123",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HCV VIRAL LOAD"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90258",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AEROBIC BOTTLE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90143",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CMV IgG ANTIBODY"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90250",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "OVA + PARASITES"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90239",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "POST-MORTEM DIRECT ACID-FAST STAIN"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90098",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SWAB- R/O YEAST"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90178",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "FUNGAL CULTURE (HAIR/SKIN/NAILS)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90246",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ACID FAST SMEAR"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90142",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "VIRAL CULTURE: R/O CYTOMEGALOVIRUS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90253",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CLOSTRIDIUM DIFFICILE TOXIN ASSAY"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90208",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Myco-F Bottle Gram Stain"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90153",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Additional Cells and Karyotype"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90151",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tissue Culture-Bone Marrow"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90204",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anaerobic Bottle Gram Stain"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90111",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CHROMOSOME ANALYSIS-BONE MARROW"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90133",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MONOSPOT"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90188",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "NEISSERIA GONORRHOEAE (GC), NUCLEIC ACID PROBE, WITH AMPLIFICATION"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90177",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HBV Viral Load"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90156",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "DIRECT INFLUENZA A ANTIGEN TEST"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90112",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MODIFIED ACID-FAST STAIN FOR NOCARDIA"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90213",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Enterovirus Culture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90231",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Swab - R/O Yeast - IC"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90167",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ISOLATE FOR MIC"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90129",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ASO Screen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90059",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LEGIONELLA CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90228",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lyme IgG"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90113",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "URINE-GRAM STAIN - UNSPUN"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90240",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ACID FAST CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90248",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RAPID PLASMA REAGIN TEST"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90126",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TOXOPLASMA IgM ANTIBODY"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90088",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CHROMOSOME ANALYSIS - ADDITIONAL KARYOTYPE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90166",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Problem"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90187",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GENITAL CULTURE FOR TOXIC SHOCK"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90199",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Immunofluorescent test for Pneumocystis jirovecii (carinii)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90127",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RUBEOLA ANTIBODY, IgG"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90180",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "O&amp;P MACROSCOPIC EXAM - WORM"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90262",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CHLAMYDIA CULTURE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90092",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AEROBIC BOTTLE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90146",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CHROMOSOME ANALYSIS-NEOPLASTIC BLOOD"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90132",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LYME SEROLOGY"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.mimic#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:07-0500">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

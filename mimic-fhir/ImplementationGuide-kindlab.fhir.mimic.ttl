@@ -1,0 +1,2354 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/ImplementationGuide/kindlab.fhir.mimic> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "kindlab.fhir.mimic"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MIMIC</h2><p>The official URL for this implementation guide is: </p><pre>http://mimic.mit.edu/fhir/mimic/ImplementationGuide/kindlab.fhir.mimic</pre></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://mimic.mit.edu/fhir/mimic/ImplementationGuide/kindlab.fhir.mimic"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.0"] ; # 
+  fhir:name [ fhir:v "MIMIC"] ; # 
+  fhir:title [ fhir:v "MIMIC Implementation Guide"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-02-08T11:07:36-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "kindlab.fhir.mimic"] ; # 
+  fhir:license [ fhir:v "MIT"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "5.3.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] [
+     fhir:id [ fhir:v "uscore" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.core" ] ;
+     fhir:version [ fhir:v "4.0.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2022+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Draft" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://mimic.mit.edu/fhir/mimic/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2022+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Draft" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://mimic.mit.edu/fhir/mimic/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-condition> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-condition" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Condition" ] ;
+       fhir:description [ fhir:v "A MIMIC condition profile based on FHIR R4 Condition." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Encounter" ] ;
+       fhir:description [ fhir:v "A MIMIC encounter profile based on FHIR R4 Encounter." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-location" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Location" ] ;
+       fhir:description [ fhir:v "A MIMIC location profile based on FHIR R4 Location." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-medication" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Medication" ] ;
+       fhir:description [ fhir:v "A MIMIC medication profile based on the FHIR R4 medication resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-medication-administration" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Medication Administration" ] ;
+       fhir:description [ fhir:v "A MIMIC medication administration profile based on the base FHIR R4 medication administration resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration-icu> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-medication-administration-icu" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Medication Administration ICU" ] ;
+       fhir:description [ fhir:v "A MIMIC medication administration ICU profile based on the FHIR R4 medication administration resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-medication-dispense" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Medication Dispense" ] ;
+       fhir:description [ fhir:v "A MIMIC medication dispense profile based on the FHIR R4 medication dispense resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense-ed> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-medication-dispense-ed" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC-ED MedicationDispense" ] ;
+       fhir:description [ fhir:v "A MedicationDispense resource that represents each record in the pyxis (ED medication dispensation) table of MIMIC-ED." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-request> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-medication-request" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Medication Request" ] ;
+       fhir:description [ fhir:v "A MIMIC medication request profile based on the FHIR R4 medication request resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-statement-ed> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-medication-statement-ed" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC-ED MedicationStatement" ] ;
+       fhir:description [ fhir:v "A MedicationStatement resource that represents each record in the medrecon table of MIMIC-ED." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-chartevents> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-observation-chartevents" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Observation Chartevents" ] ;
+       fhir:description [ fhir:v "A MIMIC observation chartevents profile based on the base observation resource" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-datetimeevents> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-observation-datetimeevents" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Observation Datetimeevents" ] ;
+       fhir:description [ fhir:v "A MIMIC observation datetimeevents profile based on the base observation resource" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-ed> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-observation-ed" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC-ED Observation" ] ;
+       fhir:description [ fhir:v "An Observation resource that represents a single measurement from a row of the triage and vitalsign tables of MIMIC-ED: only acuity, chiefcomplaint, and rhythm." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-labevents> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-observation-labevents" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Observation Labevents" ] ;
+       fhir:description [ fhir:v "A MIMIC observation labevents profile based on FHIR R4 observation resource" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-org> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-observation-micro-org" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Observation Micro Org" ] ;
+       fhir:description [ fhir:v "A MIMIC observation microbiology organism profile based on the FHIR R4 observation resource" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-susc> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-observation-micro-susc" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Observation Micro Susc" ] ;
+       fhir:description [ fhir:v "A MIMIC observation microbiology susceptiblity profile based on the FHIR R4 observation resource" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-test> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-observation-micro-test" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Observation Micro Test" ] ;
+       fhir:description [ fhir:v "A MIMIC observation microbiology test profile based on the FHIR R4 observation resource" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-outputevents> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-observation-outputevents" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Observation Outputevents" ] ;
+       fhir:description [ fhir:v "A MIMIC observation outputevents profile based on the FHIR R4 observation resource" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-vital-signs> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-observation-vital-signs" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC-ED Observation Vital Signs" ] ;
+       fhir:description [ fhir:v "An Observation resource (based on FHIR R4 Observation) that represents a single measurement from a row of the triage and vitalsign tables of MIMIC-ED: only pain, temperature, heartrate, resprate, blood pressure sbp dbp, and o2sat." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-organization" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Organization" ] ;
+       fhir:description [ fhir:v "A MIMIC organization profile based on FHIR R4 Organization." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-patient" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Patient" ] ;
+       fhir:description [ fhir:v "A MIMIC patient based on FHIR R4 Patient." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Procedure" ] ;
+       fhir:description [ fhir:v "A MIMIC procedure profile based on FHIR R4 Procedure resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-ed> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-procedure-ed" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Procedure ED" ] ;
+       fhir:description [ fhir:v "A MIMIC procedure ED profile based on FHIR R4 Procedure." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-icu> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-procedure-icu" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Procedure ICU" ] ;
+       fhir:description [ fhir:v "A MIMIC procedure ICU profile based on FHIR R4 Procedure resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-specimen> ;
+         fhir:reference [ fhir:v "StructureDefinition/mimic-specimen" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Specimen" ] ;
+       fhir:description [ fhir:v "A MIMIC lab specimen profile based on the baes FHIR R4 Specimen." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/dilution-details> ;
+         fhir:reference [ fhir:v "StructureDefinition/dilution-details" ]
+       ] ;
+       fhir:name [ fhir:v "Dilution Details" ] ;
+       fhir:description [ fhir:v "The dilution details for microbiology susceptiblity tests" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/lab-priority> ;
+         fhir:reference [ fhir:v "StructureDefinition/lab-priority" ]
+       ] ;
+       fhir:name [ fhir:v "Lab Priority" ] ;
+       fhir:description [ fhir:v "The priority of a lab item in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-dateAbsentReason> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-dateAbsentReason" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC-ED Data Absent Reason" ] ;
+       fhir:description [ fhir:v "Selected code from the DataAbsentReason value set." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-lab-interpretation> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-lab-interpretation" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Observation Lab interpretation Value Set" ] ;
+       fhir:description [ fhir:v "Selected codes from ObservationInterpretation that represent interpretations in MIMIC." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-micro-interpretation> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-micro-interpretation" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC Observation Lab interpretation Value Set" ] ;
+       fhir:description [ fhir:v "Selected codes from ObservationInterpretation that represent interpretations in MIMIC." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-category-ed> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-observation-category-ed" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC-ED Observation Resource Category Value Set" ] ;
+       fhir:description [ fhir:v "Selected codes from the ObservationCategoryCodes value set." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-type-ed> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-observation-type-ed" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC-ED Observation Resource Types Value Set" ] ;
+       fhir:description [ fhir:v "Selected codes from LOINC that represent values from the triage table in MIMIC-ED." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-type-vital> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-observation-type-vital" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC-ED Observation Resource Types Value Set" ] ;
+       fhir:description [ fhir:v "Selected codes from LOINC that represent values from the triage or vitalsigns tables of MIMIC-ED." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedure-types-ed> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-procedure-types-ed" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC-ED Procedure Code Types Value Set" ] ;
+       fhir:description [ fhir:v "Selected codes from SNOMED CT that represent either triage or vitalsign measurements." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-unit-quantity> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-unit-quantity" ]
+       ] ;
+       fhir:name [ fhir:v "MIMIC-ED Observation Quantity Units Value Set" ] ;
+       fhir:description [ fhir:v "Selected codes from UCUM that represent quantity units." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Location/ExampleLocation> ;
+         fhir:reference [ fhir:v "Location/ExampleLocation" ]
+       ] ;
+       fhir:name [ fhir:v "Example Location resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Location resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-location"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Condition/ExampleMimicCondition> ;
+         fhir:reference [ fhir:v "Condition/ExampleMimicCondition" ]
+       ] ;
+       fhir:name [ fhir:v "Example Condition resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Condition resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-condition"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-condition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Condition/ExampleMimicConditionED> ;
+         fhir:reference [ fhir:v "Condition/ExampleMimicConditionED" ]
+       ] ;
+       fhir:name [ fhir:v "Example Condition resource MIMIC-IV-ED" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV-ED Condition resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-condition"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-condition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Encounter/ExampleMimicEncounter> ;
+         fhir:reference [ fhir:v "Encounter/ExampleMimicEncounter" ]
+       ] ;
+       fhir:name [ fhir:v "Example Encounter resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Encounter resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Encounter/ExampleMimicEncounterED> ;
+         fhir:reference [ fhir:v "Encounter/ExampleMimicEncounterED" ]
+       ] ;
+       fhir:name [ fhir:v "Example Encounter resource MIMIC-IV-ED" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV-ED Encounter resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Encounter/ExampleMimicEncounterICU> ;
+         fhir:reference [ fhir:v "Encounter/ExampleMimicEncounterICU" ]
+       ] ;
+       fhir:name [ fhir:v "Example Encounter resource MIMIC-IV-ICU" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV-ICU Encounter resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Medication/ExampleMimicMedication> ;
+         fhir:reference [ fhir:v "Medication/ExampleMimicMedication" ]
+       ] ;
+       fhir:name [ fhir:v "Example Location resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Location resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationAdministration" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/MedicationAdministration/ExampleMimicMedicationAdministration> ;
+         fhir:reference [ fhir:v "MedicationAdministration/ExampleMimicMedicationAdministration" ]
+       ] ;
+       fhir:name [ fhir:v "Example MedicationAdministration resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV MedicationAdministration resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationAdministration" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/MedicationAdministration/ExampleMimicMedicationAdministrationICU> ;
+         fhir:reference [ fhir:v "MedicationAdministration/ExampleMimicMedicationAdministrationICU" ]
+       ] ;
+       fhir:name [ fhir:v "Example MedicationAdministration resource MIMIC-IV-ICU" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV-ICU MedicationAdministration resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration-icu"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-administration-icu>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationDispense" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/MedicationDispense/ExampleMimicMedicationDispense> ;
+         fhir:reference [ fhir:v "MedicationDispense/ExampleMimicMedicationDispense" ]
+       ] ;
+       fhir:name [ fhir:v "Example MedicationDispense resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV MedicationDispense resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationDispense" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/MedicationDispense/ExampleMimicMedicationDispenseED> ;
+         fhir:reference [ fhir:v "MedicationDispense/ExampleMimicMedicationDispenseED" ]
+       ] ;
+       fhir:name [ fhir:v "Example MedicationDispense resource MIMIC-ED" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-ED MedicationDispense resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense-ed"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-dispense-ed>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/MedicationRequest/ExampleMimicMedicationRequest> ;
+         fhir:reference [ fhir:v "MedicationRequest/ExampleMimicMedicationRequest" ]
+       ] ;
+       fhir:name [ fhir:v "Example MedicationRequest resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV MedicationRequest resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-request"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-request>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/MedicationStatement/ExampleMimicMedicationStatementED> ;
+         fhir:reference [ fhir:v "MedicationStatement/ExampleMimicMedicationStatementED" ]
+       ] ;
+       fhir:name [ fhir:v "Example MedicationStatement resource MIMIC-ED" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-ED MedicationStatement resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-statement-ed"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-medication-statement-ed>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Observation/ExampleMimicObservationChartevents> ;
+         fhir:reference [ fhir:v "Observation/ExampleMimicObservationChartevents" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation chartevents resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Observation chartevents resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-chartevents"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-chartevents>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Observation/ExampleMimicObservationDatetimeevents> ;
+         fhir:reference [ fhir:v "Observation/ExampleMimicObservationDatetimeevents" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation datetimeevents resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Observation datetimeevents resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-datetimeevents"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-datetimeevents>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Observation/ExampleMimicObservationED> ;
+         fhir:reference [ fhir:v "Observation/ExampleMimicObservationED" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation resource MIMIC-IV-ED" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV-ED Observation resource would look like with data from the triage table (chiefcomplaint)." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-ed"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-ed>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Observation/ExampleMimicObservationLabevents> ;
+         fhir:reference [ fhir:v "Observation/ExampleMimicObservationLabevents" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation labevents resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Observation labevents resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-labevents"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-labevents>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Observation/ExampleMimicObservationMicroOrg> ;
+         fhir:reference [ fhir:v "Observation/ExampleMimicObservationMicroOrg" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation microbiology organism resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Observation microbiology organism resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-org"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-org>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Observation/ExampleMimicObservationMicroSusc> ;
+         fhir:reference [ fhir:v "Observation/ExampleMimicObservationMicroSusc" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation microbiology susceptiblity resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Observation microbiology susceptiblity resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-susc"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-susc>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Observation/ExampleMimicObservationMicroTest> ;
+         fhir:reference [ fhir:v "Observation/ExampleMimicObservationMicroTest" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation microbiology test resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Observation microbiology test resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-test"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-micro-test>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Observation/ExampleMimicObservationOutputevents> ;
+         fhir:reference [ fhir:v "Observation/ExampleMimicObservationOutputevents" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation outputevents resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Observation outputevents resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-outputevents"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-outputevents>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Observation/ExampleMimicObservationVitalSigns> ;
+         fhir:reference [ fhir:v "Observation/ExampleMimicObservationVitalSigns" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation resource for a MIMIC-IV-ED vital sign measurement" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV-ED Observation resource would look like with data from the vitalsigns table." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-vital-signs"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-observation-vital-signs>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Organization/ExampleMimicOrganization> ;
+         fhir:reference [ fhir:v "Organization/ExampleMimicOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "Example Organization resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Organization resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-organization"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-organization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Patient/ExampleMimicPatient> ;
+         fhir:reference [ fhir:v "Patient/ExampleMimicPatient" ]
+       ] ;
+       fhir:name [ fhir:v "Example Patient resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Patient resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-patient"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Patient/ExampleMimicPatientED> ;
+         fhir:reference [ fhir:v "Patient/ExampleMimicPatientED" ]
+       ] ;
+       fhir:name [ fhir:v "Example Patient resource MIMIC-IV-ED" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV-ED Patient resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-patient"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Procedure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Procedure/ExampleMimicProcedure> ;
+         fhir:reference [ fhir:v "Procedure/ExampleMimicProcedure" ]
+       ] ;
+       fhir:name [ fhir:v "Example Procedure resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Procedure resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Procedure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Procedure/ExampleMimicProcedureED> ;
+         fhir:reference [ fhir:v "Procedure/ExampleMimicProcedureED" ]
+       ] ;
+       fhir:name [ fhir:v "Example Procedure resource MIMIC-IV-ED" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV-ED Procedure resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-ed"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-ed>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Procedure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Procedure/ExampleMimicProcedureICU> ;
+         fhir:reference [ fhir:v "Procedure/ExampleMimicProcedureICU" ]
+       ] ;
+       fhir:name [ fhir:v "Example Procedure resource MIMIC-IV-ICU" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV-ICU Procedure resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-icu"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-procedure-icu>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Specimen" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/Specimen/ExampleMimicSpecimen> ;
+         fhir:reference [ fhir:v "Specimen/ExampleMimicSpecimen" ]
+       ] ;
+       fhir:name [ fhir:v "Example Specimen resource MIMIC-IV" ] ;
+       fhir:description [ fhir:v "An example of how a MIMIC-IV Specimen resource would look like." ] ;
+       fhir:example [
+         fhir:v "http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-specimen"^^xsd:anyURI ;
+         fhir:link <http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-specimen>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admission-class> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-admission-class" ]
+       ] ;
+       fhir:name [ fhir:v "MimicAdmissionClass" ] ;
+       fhir:description [ fhir:v "The admission class for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admission-type> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-admission-type" ]
+       ] ;
+       fhir:name [ fhir:v "MimicAdmissionType" ] ;
+       fhir:description [ fhir:v "The admission type for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admit-source> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-admit-source" ]
+       ] ;
+       fhir:name [ fhir:v "MimicAdmitSource" ] ;
+       fhir:description [ fhir:v "The admission source for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-bodysite> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-bodysite" ]
+       ] ;
+       fhir:name [ fhir:v "MimicBodysite" ] ;
+       fhir:description [ fhir:v "The bodysite codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-chartevents-d-items> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-chartevents-d-items" ]
+       ] ;
+       fhir:name [ fhir:v "MimicCharteventsDItems" ] ;
+       fhir:description [ fhir:v "The chartevents item codes used in the ICU for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-items> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-d-items" ]
+       ] ;
+       fhir:name [ fhir:v "MimicDItems" ] ;
+       fhir:description [ fhir:v "The item codes used throughout the ICU in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-d-labitems> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-d-labitems" ]
+       ] ;
+       fhir:name [ fhir:v "MimicDLabitems" ] ;
+       fhir:description [ fhir:v "The lab item codes used in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-diagnosis-icd10> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-diagnosis-icd10" ]
+       ] ;
+       fhir:name [ fhir:v "MimicDiagnosisIcd10" ] ;
+       fhir:description [ fhir:v "The diagnosis ICD10 codes used for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-diagnosis-icd9> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-diagnosis-icd9" ]
+       ] ;
+       fhir:name [ fhir:v "MimicDiagnosisIcd9" ] ;
+       fhir:description [ fhir:v "The diagnosis ICD9 codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-discharge-disposition> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-discharge-disposition" ]
+       ] ;
+       fhir:name [ fhir:v "MimicDischargeDisposition" ] ;
+       fhir:description [ fhir:v "The discharge disposition for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-hcpcs-cd> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-hcpcs-cd" ]
+       ] ;
+       fhir:name [ fhir:v "MimicHcpcsCd" ] ;
+       fhir:description [ fhir:v "The HCPCS codes used for encounters in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-fluid> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-lab-fluid" ]
+       ] ;
+       fhir:name [ fhir:v "MimicLabFluid" ] ;
+       fhir:description [ fhir:v "The lab fluid that is captured for the specimen" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-lab-priority> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-lab-priority" ]
+       ] ;
+       fhir:name [ fhir:v "MimicLabPriority" ] ;
+       fhir:description [ fhir:v "The priority of the lab item in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medadmin-category-icu> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-medadmin-category-icu" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedadminCategoryIcu" ] ;
+       fhir:description [ fhir:v "The medication administration category for the ICU for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-etc> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-medication-etc" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationEtc" ] ;
+       fhir:description [ fhir:v "The medication ETC (enhanced therapeutic class) codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-formulary-drug-cd> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-medication-formulary-drug-cd" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationFormularyDrugCd" ] ;
+       fhir:description [ fhir:v "Medication formulary drug codes for use in prescriptions and emar" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-frequency> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-medication-frequency" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationFrequency" ] ;
+       fhir:description [ fhir:v "The medication frequency reported for medication delivery in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-gsn> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-medication-gsn" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationGsn" ] ;
+       fhir:description [ fhir:v "The medication GSN codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-icu> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-medication-icu" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationIcu" ] ;
+       fhir:description [ fhir:v "All medication found in the ICU, derived from mimic_icu.d_items" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-method-icu> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-medication-method-icu" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationMethodIcu" ] ;
+       fhir:description [ fhir:v "The medication delivery method used in the ICU for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-method> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-medication-method" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationMethod" ] ;
+       fhir:description [ fhir:v "The medication delivery method for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-name> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-medication-name" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationName" ] ;
+       fhir:description [ fhir:v "The standard medication name used in MIMIC. Used in pharmacy, prescriptions, and emar" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-ndc> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-medication-ndc" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationNdc" ] ;
+       fhir:description [ fhir:v "Medication National Drug Codes (NDC) for use in prescriptions" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-poe-iv> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-medication-poe-iv" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationPoeIv" ] ;
+       fhir:description [ fhir:v "The IV medication that is ordered through POE" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-route> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-medication-route" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationRoute" ] ;
+       fhir:description [ fhir:v "The medication route during administration for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-medication-site> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-medication-site" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationSite" ] ;
+       fhir:description [ fhir:v "The medication site for administration in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-antibiotic> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-microbiology-antibiotic" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMicrobiologyAntibiotic" ] ;
+       fhir:description [ fhir:v "The microbiology antibiotic being tested on an organism in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-organism> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-microbiology-organism" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMicrobiologyOrganism" ] ;
+       fhir:description [ fhir:v "The microbiology organism being tested in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-test> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-microbiology-test" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMicrobiologyTest" ] ;
+       fhir:description [ fhir:v "The microbiology test completed in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-observation-category> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-observation-category" ]
+       ] ;
+       fhir:name [ fhir:v "MimicObservationCategory" ] ;
+       fhir:description [ fhir:v "The observation category codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-procedure-category> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-procedure-category" ]
+       ] ;
+       fhir:name [ fhir:v "MimicProcedureCategory" ] ;
+       fhir:description [ fhir:v "The procedure category codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-procedure-icd10> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-procedure-icd10" ]
+       ] ;
+       fhir:name [ fhir:v "MimicProcedureIcd10" ] ;
+       fhir:description [ fhir:v "The procedure ICD10 codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-procedure-icd9> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-procedure-icd9" ]
+       ] ;
+       fhir:name [ fhir:v "MimicProcedureIcd9" ] ;
+       fhir:description [ fhir:v "The procedure ICD9 codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-services> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-services" ]
+       ] ;
+       fhir:name [ fhir:v "MimicServices" ] ;
+       fhir:description [ fhir:v "The hospital services for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-spec-type-desc> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-spec-type-desc" ]
+       ] ;
+       fhir:name [ fhir:v "MimicSpecTypeDesc" ] ;
+       fhir:description [ fhir:v "The specimen type codes for microbiologyevents" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units> ;
+         fhir:reference [ fhir:v "CodeSystem/mimic-units" ]
+       ] ;
+       fhir:name [ fhir:v "MimicUnits" ] ;
+       fhir:description [ fhir:v "The units used throughout MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-admission-class> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-admission-class" ]
+       ] ;
+       fhir:name [ fhir:v "MimicAdmissionClass" ] ;
+       fhir:description [ fhir:v "The admission class for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-admission-type> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-admission-type" ]
+       ] ;
+       fhir:name [ fhir:v "MimicAdmissionType" ] ;
+       fhir:description [ fhir:v "The admission type for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-admit-source> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-admit-source" ]
+       ] ;
+       fhir:name [ fhir:v "MimicAdmitSource" ] ;
+       fhir:description [ fhir:v "The admission source for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-bodysite> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-bodysite" ]
+       ] ;
+       fhir:name [ fhir:v "MimicBodysite" ] ;
+       fhir:description [ fhir:v "The bodysite codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-chartevents-d-items> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-chartevents-d-items" ]
+       ] ;
+       fhir:name [ fhir:v "MimicCharteventsDItems" ] ;
+       fhir:description [ fhir:v "The item codes for chartevents used in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-d-labitems> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-d-labitems" ]
+       ] ;
+       fhir:name [ fhir:v "MimicDLabitems" ] ;
+       fhir:description [ fhir:v "The lab item codes used in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-datetimeevents-d-items> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-datetimeevents-d-items" ]
+       ] ;
+       fhir:name [ fhir:v "MimicDatetimeeventsDItems" ] ;
+       fhir:description [ fhir:v "The datetime item codes used in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-diagnosis-icd> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-diagnosis-icd" ]
+       ] ;
+       fhir:name [ fhir:v "MimicDiagnosisIcd" ] ;
+       fhir:description [ fhir:v "The diagnosis ICD9 and ICD10 codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-discharge-disposition> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-discharge-disposition" ]
+       ] ;
+       fhir:name [ fhir:v "MimicDischargeDisposition" ] ;
+       fhir:description [ fhir:v "The discharge disposition for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-encounter-type> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-encounter-type" ]
+       ] ;
+       fhir:name [ fhir:v "MimicEncounterType" ] ;
+       fhir:description [ fhir:v "The encounter type for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-lab-priority> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-lab-priority" ]
+       ] ;
+       fhir:name [ fhir:v "MimicLabPriority" ] ;
+       fhir:description [ fhir:v "The priority of the lab item in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medadmin-category-icu> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-medadmin-category-icu" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedadminCategoryIcu" ] ;
+       fhir:description [ fhir:v "The medication administration category for the ICU for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-etc> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-medication-etc" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationEtc" ] ;
+       fhir:description [ fhir:v "The medication ETC (enhanced therapeutic class) codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-frequency> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-medication-frequency" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationFrequency" ] ;
+       fhir:description [ fhir:v "The medication frequency reported for medication delivery in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-gsn> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-medication-gsn" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationGsn" ] ;
+       fhir:description [ fhir:v "The medication GSN codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-method-icu> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-medication-method-icu" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationMethodIcu" ] ;
+       fhir:description [ fhir:v "The medication delivery method used in the ICU for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-method> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-medication-method" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationMethod" ] ;
+       fhir:description [ fhir:v "The medication delivery method for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-route> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-medication-route" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationRoute" ] ;
+       fhir:description [ fhir:v "The medication route during administration for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication-site> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-medication-site" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedicationSite" ] ;
+       fhir:description [ fhir:v "The medication site for administration in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-medication> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-medication" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMedication" ] ;
+       fhir:description [ fhir:v "All medication codesystems combined for MIMIC. Contains medication-formulary-drug-cd, medication-ndc, medication-name, medication-poe-iv, medication-icu" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-antibiotic> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-microbiology-antibiotic" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMicrobiologyAntibiotic" ] ;
+       fhir:description [ fhir:v "The microbiology antibiotic being tested on an organism in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-organism> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-microbiology-organism" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMicrobiologyOrganism" ] ;
+       fhir:description [ fhir:v "The microbiology organism being tested in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-test> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-microbiology-test" ]
+       ] ;
+       fhir:name [ fhir:v "MimicMicrobiologyTest" ] ;
+       fhir:description [ fhir:v "The microbiology test completed in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-observation-category> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-observation-category" ]
+       ] ;
+       fhir:name [ fhir:v "MimicObservationCategory" ] ;
+       fhir:description [ fhir:v "The observation category codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-outputevents-d-items> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-outputevents-d-items" ]
+       ] ;
+       fhir:name [ fhir:v "MimicOutputeventsDItems" ] ;
+       fhir:description [ fhir:v "The item codes for outputevents used in MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedure-category> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-procedure-category" ]
+       ] ;
+       fhir:name [ fhir:v "MimicProcedureCategory" ] ;
+       fhir:description [ fhir:v "The procedure category codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedure-icd> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-procedure-icd" ]
+       ] ;
+       fhir:name [ fhir:v "MimicProcedureIcd" ] ;
+       fhir:description [ fhir:v "The procedure ICD9 and ICD10 codes for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedureevents-d-items> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-procedureevents-d-items" ]
+       ] ;
+       fhir:name [ fhir:v "MimicProcedureeventsDItems" ] ;
+       fhir:description [ fhir:v "The procedure item codes used in the ICU for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-services> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-services" ]
+       ] ;
+       fhir:name [ fhir:v "MimicServices" ] ;
+       fhir:description [ fhir:v "The hospital services for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-specimen-type> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-specimen-type" ]
+       ] ;
+       fhir:name [ fhir:v "MimicSpecimenType" ] ;
+       fhir:description [ fhir:v "The specimen type codes for both lab and micro specimen for MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-units> ;
+         fhir:reference [ fhir:v "ValueSet/mimic-units" ]
+       ] ;
+       fhir:name [ fhir:v "MimicUnits" ] ;
+       fhir:description [ fhir:v "The units used throughout MIMIC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
+       ] ) ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Index" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "mimic-fhir-mappings.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "mimic-fhir-mappings.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Mimic Fhir Mappings" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "mimic-ed-fhir-mappings.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "mimic-ed-fhir-mappings.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Mimic Ed Fhir Mappings" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "guidance.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "guidance.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Guidance" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "terminology-guide.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "terminology-guide.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Terminology Guide" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "applications.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "applications.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Applications" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "tutorials.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "tutorials.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Tutorials" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "future-work.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "future-work.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Future Work" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "microbiology-background.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "microbiology-background.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Microbiology Background" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "medication-background.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "medication-background.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Medication Background" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "emergency-department-subset.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "emergency-department-subset.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Emergency Department Subset" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "intensive-care-unit-subset.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "intensive-care-unit-subset.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Intensive Care Unit Subset" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "downloads.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "changelog.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "changelog.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Changelog" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

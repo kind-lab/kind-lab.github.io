@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mimic-procedure-types-ed",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/386478007\">386478007</a></td><td>Triage: emergency center (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/410188000\">410188000</a></td><td>Taking patient vital signs assessment (procedure)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-procedure-types-ed",
+  "version" : "1.3.0",
+  "name" : "MimicProcedureTypesED",
+  "title" : "MIMIC-ED Procedure Code Types Value Set",
+  "status" : "active",
+  "date" : "2024-02-08T11:07:36-05:00",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "description" : "Selected codes from SNOMED CT that represent either triage or vitalsign measurements.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "386478007",
+        "display" : "Triage: emergency center (procedure)"
+      },
+      {
+        "code" : "410188000",
+        "display" : "Taking patient vital signs assessment (procedure)"
+      }]
+    }]
+  }
+}

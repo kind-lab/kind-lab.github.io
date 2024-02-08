@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="ExampleMimicEncounterED"/>
+  <meta>
+    <profile value="http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="ExampleMimicEncounterED"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;ExampleMimicEncounterED&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mimic-encounter.html">MIMIC Encounter</a></p></div><p><b>identifier</b>: <code>http://mimic.mit.edu/fhir/mimic/identifier/encounter-ed</code>/22429197</p><p><b>status</b>: finished</p><p><b>class</b>: emergency (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code EMER = 'emergency', stated as 'emergency')</p><p><b>type</b>: Patient encounter procedure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#308335008)</span></p><p><b>subject</b>: <a href="Patient-ExampleMimicPatientED.html">Patient/ExampleMimicPatientED</a> &quot;&quot;</p><p><b>period</b>: 2147-12-30 06:45:00-0500 --&gt; 2147-12-30 09:33:00-0500</p><h3>Diagnoses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Condition</b></td><td><b>Rank</b></td></tr><tr><td style="display: none">*</td><td><a href="Condition-ExampleMimicConditionED.html">Condition/ExampleMimicConditionED</a></td><td>1</td></tr></table><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style="display: none">*</td><td>AMBULANCE <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mimic-admit-source.html">MimicAdmitSource</a>#AMBULANCE)</span></td><td>ADMITTED <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mimic-discharge-disposition.html">MimicDischargeDisposition</a>#ADMITTED)</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://mimic.mit.edu/fhir/mimic/identifier/encounter-ed"/>
+    <value value="22429197"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="EMER"/>
+    <display value="emergency"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="308335008"/>
+      <display value="Patient encounter procedure"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/ExampleMimicPatientED"/>
+  </subject>
+  <period>
+    <start value="2147-12-30T06:45:00-05:00"/>
+    <end value="2147-12-30T09:33:00-05:00"/>
+  </period>
+  <diagnosis>
+    <condition>
+      <reference value="Condition/ExampleMimicConditionED"/>
+    </condition>
+    <rank value="1"/>
+  </diagnosis>
+  <hospitalization>
+    <admitSource>
+      <coding>
+        <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-admit-source"/>
+        <code value="AMBULANCE"/>
+      </coding>
+    </admitSource>
+    <dischargeDisposition>
+      <coding>
+        <system value="http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-discharge-disposition"/>
+        <code value="ADMITTED"/>
+      </coding>
+    </dischargeDisposition>
+  </hospitalization>
+</Encounter>

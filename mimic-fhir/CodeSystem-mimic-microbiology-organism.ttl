@@ -1,0 +1,1992 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-organism> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mimic-microbiology-organism"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This  code system <code>http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-organism</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">90795<a name=\"mimic-microbiology-organism-90795\"> </a></td><td>CANDIDA FAMATA</td></tr><tr><td style=\"white-space:nowrap\">80040<a name=\"mimic-microbiology-organism-80040\"> </a></td><td>NEISSERIA GONORRHOEAE</td></tr><tr><td style=\"white-space:nowrap\">90645<a name=\"mimic-microbiology-organism-90645\"> </a></td><td>PINWORM EGG(S) SEEN</td></tr><tr><td style=\"white-space:nowrap\">90783<a name=\"mimic-microbiology-organism-90783\"> </a></td><td>STREPTOCOCCUS BOVIS GROUP</td></tr><tr><td style=\"white-space:nowrap\">90846<a name=\"mimic-microbiology-organism-90846\"> </a></td><td>CUTIBACTERIUM ACNES</td></tr><tr><td style=\"white-space:nowrap\">80237<a name=\"mimic-microbiology-organism-80237\"> </a></td><td>PRESUMPTIVE CLOSTRIDIUM SEPTICUM</td></tr><tr><td style=\"white-space:nowrap\">90766<a name=\"mimic-microbiology-organism-90766\"> </a></td><td>SLACKIA EXIGUA</td></tr><tr><td style=\"white-space:nowrap\">90845<a name=\"mimic-microbiology-organism-90845\"> </a></td><td>MYCOBACTERIUM LENTIFLAVUM</td></tr><tr><td style=\"white-space:nowrap\">80012<a name=\"mimic-microbiology-organism-80012\"> </a></td><td>CRONOBACTER (ENTEROBACTER) SAKAZAKII</td></tr><tr><td style=\"white-space:nowrap\">90655<a name=\"mimic-microbiology-organism-90655\"> </a></td><td>ROSEOMONAS MUCOSA</td></tr><tr><td style=\"white-space:nowrap\">90831<a name=\"mimic-microbiology-organism-90831\"> </a></td><td>MUCOR IRREGULARIS</td></tr><tr><td style=\"white-space:nowrap\">80185<a name=\"mimic-microbiology-organism-80185\"> </a></td><td>CAMPYLOBACTER JEJUNI</td></tr><tr><td style=\"white-space:nowrap\">80200<a name=\"mimic-microbiology-organism-80200\"> </a></td><td>CHAETOMIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90386<a name=\"mimic-microbiology-organism-90386\"> </a></td><td>ACTINOMYCES NAESLUNDII</td></tr><tr><td style=\"white-space:nowrap\">80183<a name=\"mimic-microbiology-organism-80183\"> </a></td><td>GEMELLA MORBILLORUM</td></tr><tr><td style=\"white-space:nowrap\">80278<a name=\"mimic-microbiology-organism-80278\"> </a></td><td>DEMATIACEOUS MOLD</td></tr><tr><td style=\"white-space:nowrap\">90657<a name=\"mimic-microbiology-organism-90657\"> </a></td><td>SALMONELLA ANATUM</td></tr><tr><td style=\"white-space:nowrap\">80039<a name=\"mimic-microbiology-organism-80039\"> </a></td><td>CLOSTRIDIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90302<a name=\"mimic-microbiology-organism-90302\"> </a></td><td>ANAEROBIC GRAM NEGATIVE COCCI</td></tr><tr><td style=\"white-space:nowrap\">80207<a name=\"mimic-microbiology-organism-80207\"> </a></td><td>STREPTOCOCCUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80075<a name=\"mimic-microbiology-organism-80075\"> </a></td><td>YEAST</td></tr><tr><td style=\"white-space:nowrap\">90489<a name=\"mimic-microbiology-organism-90489\"> </a></td><td>MYCOBACTERIUM SZULGAI</td></tr><tr><td style=\"white-space:nowrap\">80065<a name=\"mimic-microbiology-organism-80065\"> </a></td><td>CRYPTOCOCCUS NEOFORMANS</td></tr><tr><td style=\"white-space:nowrap\">90331<a name=\"mimic-microbiology-organism-90331\"> </a></td><td>SERRATIA ODORIFERA</td></tr><tr><td style=\"white-space:nowrap\">80291<a name=\"mimic-microbiology-organism-80291\"> </a></td><td>BASIDIOMYCETE</td></tr><tr><td style=\"white-space:nowrap\">90501<a name=\"mimic-microbiology-organism-90501\"> </a></td><td>PEPTOSTREPTOCOCCUS SP.</td></tr><tr><td style=\"white-space:nowrap\">80125<a name=\"mimic-microbiology-organism-80125\"> </a></td><td>FUSOBACTERIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90802<a name=\"mimic-microbiology-organism-90802\"> </a></td><td>ALACALIGENES SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90815<a name=\"mimic-microbiology-organism-90815\"> </a></td><td>RAOULTELLA PLANTICOLA</td></tr><tr><td style=\"white-space:nowrap\">90809<a name=\"mimic-microbiology-organism-90809\"> </a></td><td>STAPHYLOCOCCUS PSEUDINTERMEDIUS</td></tr><tr><td style=\"white-space:nowrap\">90723<a name=\"mimic-microbiology-organism-90723\"> </a></td><td>POSITIVE FOR PARAINFLUENZA TYPE 3</td></tr><tr><td style=\"white-space:nowrap\">80141<a name=\"mimic-microbiology-organism-80141\"> </a></td><td>CORYNEBACTERIUM JEIKEIUM (C.D.C. GROUP JK)</td></tr><tr><td style=\"white-space:nowrap\">90592<a name=\"mimic-microbiology-organism-90592\"> </a></td><td>TSUKAMURELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90427<a name=\"mimic-microbiology-organism-90427\"> </a></td><td>SALMONELLA THOMPSON</td></tr><tr><td style=\"white-space:nowrap\">80262<a name=\"mimic-microbiology-organism-80262\"> </a></td><td>STAPHYLOCOCCUS, COAGULASE NEGATIVE, PRESUMPTIVELY NOT S. SAPROPHYTICUS</td></tr><tr><td style=\"white-space:nowrap\">90378<a name=\"mimic-microbiology-organism-90378\"> </a></td><td>ROTHIA DENTOCARIOSA</td></tr><tr><td style=\"white-space:nowrap\">80119<a name=\"mimic-microbiology-organism-80119\"> </a></td><td>NUTRITIONALLY VARIANT STREPTOCOCCUS</td></tr><tr><td style=\"white-space:nowrap\">80201<a name=\"mimic-microbiology-organism-80201\"> </a></td><td>CITROBACTER KOSERI</td></tr><tr><td style=\"white-space:nowrap\">90803<a name=\"mimic-microbiology-organism-90803\"> </a></td><td>STREPTOCOCCUS PORCINUS</td></tr><tr><td style=\"white-space:nowrap\">80156<a name=\"mimic-microbiology-organism-80156\"> </a></td><td>CORYNEBACTERIUM STRIATUM</td></tr><tr><td style=\"white-space:nowrap\">90426<a name=\"mimic-microbiology-organism-90426\"> </a></td><td>TAENIA SAGINATA</td></tr><tr><td style=\"white-space:nowrap\">80210<a name=\"mimic-microbiology-organism-80210\"> </a></td><td>CAPNOCYTOPHAGA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80268<a name=\"mimic-microbiology-organism-80268\"> </a></td><td>PITHOMYCES SP.</td></tr><tr><td style=\"white-space:nowrap\">80145<a name=\"mimic-microbiology-organism-80145\"> </a></td><td>HERPES SIMPLEX VIRUS TYPE 2</td></tr><tr><td style=\"white-space:nowrap\">90688<a name=\"mimic-microbiology-organism-90688\"> </a></td><td>ERYSIPELOTHRIX RHUSIOPATHIAE</td></tr><tr><td style=\"white-space:nowrap\">80218<a name=\"mimic-microbiology-organism-80218\"> </a></td><td>ENTEROBACTERIACEAE</td></tr><tr><td style=\"white-space:nowrap\">90890<a name=\"mimic-microbiology-organism-90890\"> </a></td><td>BREVUNDIMONAS DIMINUTA/VESICULARIS</td></tr><tr><td style=\"white-space:nowrap\">90785<a name=\"mimic-microbiology-organism-90785\"> </a></td><td>MIXED BACTERIAL FLORA</td></tr><tr><td style=\"white-space:nowrap\">80180<a name=\"mimic-microbiology-organism-80180\"> </a></td><td>PARAINFLUENZA VIRUS TYPE 1</td></tr><tr><td style=\"white-space:nowrap\">90574<a name=\"mimic-microbiology-organism-90574\"> </a></td><td>ENTEROVIRUS</td></tr><tr><td style=\"white-space:nowrap\">80198<a name=\"mimic-microbiology-organism-80198\"> </a></td><td>HAEMOPHILUS INFLUENZAE</td></tr><tr><td style=\"white-space:nowrap\">80205<a name=\"mimic-microbiology-organism-80205\"> </a></td><td>BACTEROIDES UREOLYTICUS GROUP</td></tr><tr><td style=\"white-space:nowrap\">80019<a name=\"mimic-microbiology-organism-80019\"> </a></td><td>PROVIDENCIA STUARTII</td></tr><tr><td style=\"white-space:nowrap\">90884<a name=\"mimic-microbiology-organism-90884\"> </a></td><td>CLOSTRIDIUM SAUDIENSE</td></tr><tr><td style=\"white-space:nowrap\">80020<a name=\"mimic-microbiology-organism-80020\"> </a></td><td>PROVIDENCIA RETTGERI</td></tr><tr><td style=\"white-space:nowrap\">80250<a name=\"mimic-microbiology-organism-80250\"> </a></td><td>MODERATE BLASTOCYSTIS HOMINIS</td></tr><tr><td style=\"white-space:nowrap\">80249<a name=\"mimic-microbiology-organism-80249\"> </a></td><td>FEW BLASTOCYSTIS HOMINIS</td></tr><tr><td style=\"white-space:nowrap\">80285<a name=\"mimic-microbiology-organism-80285\"> </a></td><td>CANDIDA KEFYR</td></tr><tr><td style=\"white-space:nowrap\">90870<a name=\"mimic-microbiology-organism-90870\"> </a></td><td>STREPTOCOCCUS SALIVARIUS SSP. SALIVARIUS</td></tr><tr><td style=\"white-space:nowrap\">90360<a name=\"mimic-microbiology-organism-90360\"> </a></td><td>STREPTOCOCCUS UBERIS</td></tr><tr><td style=\"white-space:nowrap\">80236<a name=\"mimic-microbiology-organism-80236\"> </a></td><td>PRESUMPTIVE CLOSTRIDIUM PERFRINGENS</td></tr><tr><td style=\"white-space:nowrap\">80148<a name=\"mimic-microbiology-organism-80148\"> </a></td><td>ASPERGILLUS VERSICOLOR GROUP </td></tr><tr><td style=\"white-space:nowrap\">90502<a name=\"mimic-microbiology-organism-90502\"> </a></td><td>TRICHOSPORON SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80121<a name=\"mimic-microbiology-organism-80121\"> </a></td><td>BACTEROIDES FRAGILIS</td></tr><tr><td style=\"white-space:nowrap\">80059<a name=\"mimic-microbiology-organism-80059\"> </a></td><td>CANDIDA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80168<a name=\"mimic-microbiology-organism-80168\"> </a></td><td>ENTEROCOCCUS FAECIUM</td></tr><tr><td style=\"white-space:nowrap\">90705<a name=\"mimic-microbiology-organism-90705\"> </a></td><td>PSEUDOMONAS ORYZIHABITANS</td></tr><tr><td style=\"white-space:nowrap\">90772<a name=\"mimic-microbiology-organism-90772\"> </a></td><td>GRAPHIUM EUMORPHUM</td></tr><tr><td style=\"white-space:nowrap\">90821<a name=\"mimic-microbiology-organism-90821\"> </a></td><td>MYCOBACTERIUM CHIMAERA INTRACELLULARE GROUP</td></tr><tr><td style=\"white-space:nowrap\">80150<a name=\"mimic-microbiology-organism-80150\"> </a></td><td>TRICHODERMA SP.</td></tr><tr><td style=\"white-space:nowrap\">90807<a name=\"mimic-microbiology-organism-90807\"> </a></td><td>ACHROMOBACTER SP.</td></tr><tr><td style=\"white-space:nowrap\">90584<a name=\"mimic-microbiology-organism-90584\"> </a></td><td>ANAEROBIC GRAM POSITIVE BACTERIA</td></tr><tr><td style=\"white-space:nowrap\">90744<a name=\"mimic-microbiology-organism-90744\"> </a></td><td>STAPHYLOCOCCUS HOMINIS</td></tr><tr><td style=\"white-space:nowrap\">90513<a name=\"mimic-microbiology-organism-90513\"> </a></td><td>TRICHOMONAS VAGINALIS</td></tr><tr><td style=\"white-space:nowrap\">90532<a name=\"mimic-microbiology-organism-90532\"> </a></td><td>CAMPYLOBACTER COLI</td></tr><tr><td style=\"white-space:nowrap\">90498<a name=\"mimic-microbiology-organism-90498\"> </a></td><td>MYCOBACTERIUM XENOPI</td></tr><tr><td style=\"white-space:nowrap\">90453<a name=\"mimic-microbiology-organism-90453\"> </a></td><td>ESCHERICHIA HERMANNII</td></tr><tr><td style=\"white-space:nowrap\">90856<a name=\"mimic-microbiology-organism-90856\"> </a></td><td>NEGATIVE</td></tr><tr><td style=\"white-space:nowrap\">80073<a name=\"mimic-microbiology-organism-80073\"> </a></td><td>GRAM NEGATIVE ROD #4</td></tr><tr><td style=\"white-space:nowrap\">90530<a name=\"mimic-microbiology-organism-90530\"> </a></td><td>PSEUDOMONAS FLUORESCENS</td></tr><tr><td style=\"white-space:nowrap\">90865<a name=\"mimic-microbiology-organism-90865\"> </a></td><td>STAPHYLOCOCCUS LENTUS</td></tr><tr><td style=\"white-space:nowrap\">80229<a name=\"mimic-microbiology-organism-80229\"> </a></td><td>PRESUMPTIVE STREPTOCOCCUS BOVIS</td></tr><tr><td style=\"white-space:nowrap\">90336<a name=\"mimic-microbiology-organism-90336\"> </a></td><td>CANDIDA RUGOSA</td></tr><tr><td style=\"white-space:nowrap\">90811<a name=\"mimic-microbiology-organism-90811\"> </a></td><td>COCCIDIOIDES IMMITIS/POSADASII</td></tr><tr><td style=\"white-space:nowrap\">80216<a name=\"mimic-microbiology-organism-80216\"> </a></td><td>ACINETOBACTER SP.</td></tr><tr><td style=\"white-space:nowrap\">90794<a name=\"mimic-microbiology-organism-90794\"> </a></td><td>BREVIBACTERIUM CASEI</td></tr><tr><td style=\"white-space:nowrap\">90715<a name=\"mimic-microbiology-organism-90715\"> </a></td><td>SALMONELLA BARRANQUILLA</td></tr><tr><td style=\"white-space:nowrap\">90708<a name=\"mimic-microbiology-organism-90708\"> </a></td><td>BETA STREP NOT GROUP A, B OR ANGINOSUS (MILLERI)</td></tr><tr><td style=\"white-space:nowrap\">90709<a name=\"mimic-microbiology-organism-90709\"> </a></td><td>CHRYSEOBACTERIUM INDOLOGENES</td></tr><tr><td style=\"white-space:nowrap\">90635<a name=\"mimic-microbiology-organism-90635\"> </a></td><td>SALMONELLA OSLO</td></tr><tr><td style=\"white-space:nowrap\">90461<a name=\"mimic-microbiology-organism-90461\"> </a></td><td>KINGELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80052<a name=\"mimic-microbiology-organism-80052\"> </a></td><td>ALPHA STREPTOCOCCI</td></tr><tr><td style=\"white-space:nowrap\">80008<a name=\"mimic-microbiology-organism-80008\"> </a></td><td>ENTEROBACTER CLOACAE</td></tr><tr><td style=\"white-space:nowrap\">90359<a name=\"mimic-microbiology-organism-90359\"> </a></td><td>NEISSERIA SUBFLAVA</td></tr><tr><td style=\"white-space:nowrap\">90383<a name=\"mimic-microbiology-organism-90383\"> </a></td><td>ACTINOBACILLUS ACTINOMYCETEMCOMITANS</td></tr><tr><td style=\"white-space:nowrap\">80228<a name=\"mimic-microbiology-organism-80228\"> </a></td><td>CANDIDA GLABRATA</td></tr><tr><td style=\"white-space:nowrap\">80301<a name=\"mimic-microbiology-organism-80301\"> </a></td><td>CHRYSEOBACTERIUM MENINGOSEPTICUM</td></tr><tr><td style=\"white-space:nowrap\">80113<a name=\"mimic-microbiology-organism-80113\"> </a></td><td>ENTEROBACTER SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90350<a name=\"mimic-microbiology-organism-90350\"> </a></td><td>STREPTOCOCCUS MUTANS</td></tr><tr><td style=\"white-space:nowrap\">90812<a name=\"mimic-microbiology-organism-90812\"> </a></td><td>AEROCOCCUS URINAE</td></tr><tr><td style=\"white-space:nowrap\">80095<a name=\"mimic-microbiology-organism-80095\"> </a></td><td>MYCOBACTERIUM FORTUITUM</td></tr><tr><td style=\"white-space:nowrap\">90292<a name=\"mimic-microbiology-organism-90292\"> </a></td><td>SPHINGOMONAS PAUCIMOBILIS</td></tr><tr><td style=\"white-space:nowrap\">80064<a name=\"mimic-microbiology-organism-80064\"> </a></td><td>PENICILLIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80265<a name=\"mimic-microbiology-organism-80265\"> </a></td><td>2ND ISOLATE</td></tr><tr><td style=\"white-space:nowrap\">80028<a name=\"mimic-microbiology-organism-80028\"> </a></td><td>BURKHOLDERIA CEPACIA</td></tr><tr><td style=\"white-space:nowrap\">80241<a name=\"mimic-microbiology-organism-80241\"> </a></td><td>PROBABLE MICROCOCCUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80094<a name=\"mimic-microbiology-organism-80094\"> </a></td><td>KLEBSIELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90757<a name=\"mimic-microbiology-organism-90757\"> </a></td><td>ROSEOMONAS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90492<a name=\"mimic-microbiology-organism-90492\"> </a></td><td>RHODOTORULA GLUTINIS</td></tr><tr><td style=\"white-space:nowrap\">80259<a name=\"mimic-microbiology-organism-80259\"> </a></td><td>POSITIVE FOR M. TUBERCULOSIS BY MTD</td></tr><tr><td style=\"white-space:nowrap\">90724<a name=\"mimic-microbiology-organism-90724\"> </a></td><td>POSITIVE FOR ADENOVIRUS</td></tr><tr><td style=\"white-space:nowrap\">80140<a name=\"mimic-microbiology-organism-80140\"> </a></td><td>BLASTOCYSTIS HOMINIS</td></tr><tr><td style=\"white-space:nowrap\">80220<a name=\"mimic-microbiology-organism-80220\"> </a></td><td>AFB GROWN IN CULTURE; ADDITIONAL INFORMATION TO FOLLOW</td></tr><tr><td style=\"white-space:nowrap\">90392<a name=\"mimic-microbiology-organism-90392\"> </a></td><td>ARCANOBACTERIUM HAEMOLYTICUM</td></tr><tr><td style=\"white-space:nowrap\">90832<a name=\"mimic-microbiology-organism-90832\"> </a></td><td>BACTEROIDES DOREI/VULGATUS</td></tr><tr><td style=\"white-space:nowrap\">90698<a name=\"mimic-microbiology-organism-90698\"> </a></td><td>HUMICOLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90771<a name=\"mimic-microbiology-organism-90771\"> </a></td><td>OCHROBACTRUM INTERMEDIUM</td></tr><tr><td style=\"white-space:nowrap\">80124<a name=\"mimic-microbiology-organism-80124\"> </a></td><td>EXOPHIALA JEANSELMEI COMPLEX</td></tr><tr><td style=\"white-space:nowrap\">90828<a name=\"mimic-microbiology-organism-90828\"> </a></td><td>ZYGOSACCHAROMYCES FERMENTATI</td></tr><tr><td style=\"white-space:nowrap\">90634<a name=\"mimic-microbiology-organism-90634\"> </a></td><td>POSITIVE FOR MICROSPORIDIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90606<a name=\"mimic-microbiology-organism-90606\"> </a></td><td>CORYNEBACTERIUM ACCOLANS (CDC GROUP 6)</td></tr><tr><td style=\"white-space:nowrap\">90882<a name=\"mimic-microbiology-organism-90882\"> </a></td><td>KLEBSIELLA (RAOULTELLA) PLANTICOLA</td></tr><tr><td style=\"white-space:nowrap\">80007<a name=\"mimic-microbiology-organism-80007\"> </a></td><td>ENTEROBACTER AEROGENES</td></tr><tr><td style=\"white-space:nowrap\">90447<a name=\"mimic-microbiology-organism-90447\"> </a></td><td>ENTEROBIUS VERMICULARIS</td></tr><tr><td style=\"white-space:nowrap\">80100<a name=\"mimic-microbiology-organism-80100\"> </a></td><td>CANDIDA GUILLIERMONDII</td></tr><tr><td style=\"white-space:nowrap\">90444<a name=\"mimic-microbiology-organism-90444\"> </a></td><td>EPIDERMOPHYTON FLOCCOSUM</td></tr><tr><td style=\"white-space:nowrap\">90287<a name=\"mimic-microbiology-organism-90287\"> </a></td><td>ACINETOBACTER LWOFFII</td></tr><tr><td style=\"white-space:nowrap\">90843<a name=\"mimic-microbiology-organism-90843\"> </a></td><td>CITROBACTER SEDLAKII</td></tr><tr><td style=\"white-space:nowrap\">80011<a name=\"mimic-microbiology-organism-80011\"> </a></td><td>ENTEROBACTER GERGOVIAE</td></tr><tr><td style=\"white-space:nowrap\">80311<a name=\"mimic-microbiology-organism-80311\"> </a></td><td>POSITIVE FOR HERPES SIMPLEX TYPE 2 (HSV2)</td></tr><tr><td style=\"white-space:nowrap\">80264<a name=\"mimic-microbiology-organism-80264\"> </a></td><td>ACTINOMYCETE</td></tr><tr><td style=\"white-space:nowrap\">90457<a name=\"mimic-microbiology-organism-90457\"> </a></td><td>AGROBACTERIUM RADIOBACTER</td></tr><tr><td style=\"white-space:nowrap\">80289<a name=\"mimic-microbiology-organism-80289\"> </a></td><td>MORAXELLA CATARRHALIS</td></tr><tr><td style=\"white-space:nowrap\">80192<a name=\"mimic-microbiology-organism-80192\"> </a></td><td>HAEMOPHILUS INFLUENZAE, BETA-LACTAMASE NEGATIVE</td></tr><tr><td style=\"white-space:nowrap\">90706<a name=\"mimic-microbiology-organism-90706\"> </a></td><td>CUNNINGHAMELLA BERTHOLLETIAE</td></tr><tr><td style=\"white-space:nowrap\">90405<a name=\"mimic-microbiology-organism-90405\"> </a></td><td>SALMONELLA MONTEVIDEO</td></tr><tr><td style=\"white-space:nowrap\">80032<a name=\"mimic-microbiology-organism-80032\"> </a></td><td>AEROMONAS HYDROPHILA</td></tr><tr><td style=\"white-space:nowrap\">90667<a name=\"mimic-microbiology-organism-90667\"> </a></td><td>TRICHOSPORON MUCOIDES</td></tr><tr><td style=\"white-space:nowrap\">80294<a name=\"mimic-microbiology-organism-80294\"> </a></td><td>BURKHOLDERIA CEPACIA GROUP</td></tr><tr><td style=\"white-space:nowrap\">90773<a name=\"mimic-microbiology-organism-90773\"> </a></td><td>GEMELLA HAEMOLYSANS</td></tr><tr><td style=\"white-space:nowrap\">80165<a name=\"mimic-microbiology-organism-80165\"> </a></td><td>TRICHOPHYTON SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90779<a name=\"mimic-microbiology-organism-90779\"> </a></td><td>ACHROMOBACTER  DENTRIFICANS</td></tr><tr><td style=\"white-space:nowrap\">80146<a name=\"mimic-microbiology-organism-80146\"> </a></td><td>ADENOVIRUS</td></tr><tr><td style=\"white-space:nowrap\">90494<a name=\"mimic-microbiology-organism-90494\"> </a></td><td>ASPERGILLUS TERREUS</td></tr><tr><td style=\"white-space:nowrap\">90406<a name=\"mimic-microbiology-organism-90406\"> </a></td><td>SALMONELLA AGONA</td></tr><tr><td style=\"white-space:nowrap\">90979<a name=\"mimic-microbiology-organism-90979\"> </a></td><td>NEUROSPORA SITOPHILA (FORMERLY CHRYSONILLA SITOPHILA)</td></tr><tr><td style=\"white-space:nowrap\">90778<a name=\"mimic-microbiology-organism-90778\"> </a></td><td>ACHROMOBACTER SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80058<a name=\"mimic-microbiology-organism-80058\"> </a></td><td>GRAM NEGATIVE ROD(S)</td></tr><tr><td style=\"white-space:nowrap\">90896<a name=\"mimic-microbiology-organism-90896\"> </a></td><td>WAUTERSIELLA FALSENII</td></tr><tr><td style=\"white-space:nowrap\">80023<a name=\"mimic-microbiology-organism-80023\"> </a></td><td>STAPH AUREUS COAG +</td></tr><tr><td style=\"white-space:nowrap\">80155<a name=\"mimic-microbiology-organism-80155\"> </a></td><td>STAPHYLOCOCCUS, COAGULASE NEGATIVE</td></tr><tr><td style=\"white-space:nowrap\">90968<a name=\"mimic-microbiology-organism-90968\"> </a></td><td>STREPTOCOCCUS ALACTOLYTICUS</td></tr><tr><td style=\"white-space:nowrap\">90476<a name=\"mimic-microbiology-organism-90476\"> </a></td><td>MYCOBACTERIUM AVIUM</td></tr><tr><td style=\"white-space:nowrap\">80086<a name=\"mimic-microbiology-organism-80086\"> </a></td><td>ACIDFAST BACILLI</td></tr><tr><td style=\"white-space:nowrap\">80223<a name=\"mimic-microbiology-organism-80223\"> </a></td><td>PROBABLE ENTEROCOCCUS</td></tr><tr><td style=\"white-space:nowrap\">90579<a name=\"mimic-microbiology-organism-90579\"> </a></td><td>DIPHYLLOBOTHRIUM SP.</td></tr><tr><td style=\"white-space:nowrap\">80036<a name=\"mimic-microbiology-organism-80036\"> </a></td><td>ANAEROBIC GRAM NEGATIVE ROD(S)</td></tr><tr><td style=\"white-space:nowrap\">90824<a name=\"mimic-microbiology-organism-90824\"> </a></td><td>STREPTOCOCCUS SANGUINIS</td></tr><tr><td style=\"white-space:nowrap\">80045<a name=\"mimic-microbiology-organism-80045\"> </a></td><td>BETA STREPTOCOCCUS GROUP B</td></tr><tr><td style=\"white-space:nowrap\">80070<a name=\"mimic-microbiology-organism-80070\"> </a></td><td>GRAM NEGATIVE ROD #1</td></tr><tr><td style=\"white-space:nowrap\">90620<a name=\"mimic-microbiology-organism-90620\"> </a></td><td>TICK CONSISTENT WITH IXODES SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80274<a name=\"mimic-microbiology-organism-80274\"> </a></td><td>NO GROWTH</td></tr><tr><td style=\"white-space:nowrap\">90609<a name=\"mimic-microbiology-organism-90609\"> </a></td><td>WORM</td></tr><tr><td style=\"white-space:nowrap\">90362<a name=\"mimic-microbiology-organism-90362\"> </a></td><td>VERTICILLIUM SP.</td></tr><tr><td style=\"white-space:nowrap\">80206<a name=\"mimic-microbiology-organism-80206\"> </a></td><td>RHINOVIRUS</td></tr><tr><td style=\"white-space:nowrap\">90500<a name=\"mimic-microbiology-organism-90500\"> </a></td><td>STAPHYLOCOCCUS SCHLEIFERI</td></tr><tr><td style=\"white-space:nowrap\">80129<a name=\"mimic-microbiology-organism-80129\"> </a></td><td>CLOSTRIDIUM SEPTICUM</td></tr><tr><td style=\"white-space:nowrap\">90747<a name=\"mimic-microbiology-organism-90747\"> </a></td><td>STREPTOCOCCUS MITIS/ORALIS</td></tr><tr><td style=\"white-space:nowrap\">80076<a name=\"mimic-microbiology-organism-80076\"> </a></td><td>STREPTOCOCCUS PNEUMONIAE</td></tr><tr><td style=\"white-space:nowrap\">90585<a name=\"mimic-microbiology-organism-90585\"> </a></td><td>PENICILLIUM MARNEFFEI</td></tr><tr><td style=\"white-space:nowrap\">80240<a name=\"mimic-microbiology-organism-80240\"> </a></td><td>PRESUMPTIVE FUSOBACTERIUM MORTIFERUM/VARIUM GROUP</td></tr><tr><td style=\"white-space:nowrap\">80186<a name=\"mimic-microbiology-organism-80186\"> </a></td><td>PSEUDALLESCHERIA BOYDII </td></tr><tr><td style=\"white-space:nowrap\">90650<a name=\"mimic-microbiology-organism-90650\"> </a></td><td>SCOPULARIOPSIS BREVICAULIS</td></tr><tr><td style=\"white-space:nowrap\">80208<a name=\"mimic-microbiology-organism-80208\"> </a></td><td>BURKHOLDERIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80217<a name=\"mimic-microbiology-organism-80217\"> </a></td><td>ENTAMOEBA HISTOLYTICA/DISPAR</td></tr><tr><td style=\"white-space:nowrap\">90418<a name=\"mimic-microbiology-organism-90418\"> </a></td><td>SALMONELLA MUENCHEN</td></tr><tr><td style=\"white-space:nowrap\">80071<a name=\"mimic-microbiology-organism-80071\"> </a></td><td>GRAM NEGATIVE ROD #2</td></tr><tr><td style=\"white-space:nowrap\">80175<a name=\"mimic-microbiology-organism-80175\"> </a></td><td>VIRUS</td></tr><tr><td style=\"white-space:nowrap\">90407<a name=\"mimic-microbiology-organism-90407\"> </a></td><td>CLOSTRIDIUM INNOCUUM</td></tr><tr><td style=\"white-space:nowrap\">90557<a name=\"mimic-microbiology-organism-90557\"> </a></td><td>NOCARDIA OTITIDISCAVIARUM (CAVIAE)</td></tr><tr><td style=\"white-space:nowrap\">90897<a name=\"mimic-microbiology-organism-90897\"> </a></td><td>LACTOBACILLUS FERMENTUM</td></tr><tr><td style=\"white-space:nowrap\">80026<a name=\"mimic-microbiology-organism-80026\"> </a></td><td>PSEUDOMONAS AERUGINOSA</td></tr><tr><td style=\"white-space:nowrap\">80122<a name=\"mimic-microbiology-organism-80122\"> </a></td><td>KLUYVERA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90707<a name=\"mimic-microbiology-organism-90707\"> </a></td><td>BETA STREP NOT GROUP A OR ANGINOSUS (MILLERI)</td></tr><tr><td style=\"white-space:nowrap\">90749<a name=\"mimic-microbiology-organism-90749\"> </a></td><td>STREPTOCOCCUS SALIVARUS</td></tr><tr><td style=\"white-space:nowrap\">80295<a name=\"mimic-microbiology-organism-80295\"> </a></td><td>PRESUMPTIVE GARDNERELLA VAGINALIS</td></tr><tr><td style=\"white-space:nowrap\">90740<a name=\"mimic-microbiology-organism-90740\"> </a></td><td>LACTOCOCCUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90448<a name=\"mimic-microbiology-organism-90448\"> </a></td><td>SALMONELLA BRAENDERUP</td></tr><tr><td style=\"white-space:nowrap\">80171<a name=\"mimic-microbiology-organism-80171\"> </a></td><td>STREPTOCOCCUS ANGINOSUS</td></tr><tr><td style=\"white-space:nowrap\">90984<a name=\"mimic-microbiology-organism-90984\"> </a></td><td>IRPEX LACTEUS</td></tr><tr><td style=\"white-space:nowrap\">90835<a name=\"mimic-microbiology-organism-90835\"> </a></td><td>PARACOCCUS YEEI</td></tr><tr><td style=\"white-space:nowrap\">80093<a name=\"mimic-microbiology-organism-80093\"> </a></td><td>MYCOBACTERIUM GORDONAE</td></tr><tr><td style=\"white-space:nowrap\">90601<a name=\"mimic-microbiology-organism-90601\"> </a></td><td>MYCOBACTERIUM MALMOENSE</td></tr><tr><td style=\"white-space:nowrap\">80179<a name=\"mimic-microbiology-organism-80179\"> </a></td><td>INFLUENZA B VIRUS</td></tr><tr><td style=\"white-space:nowrap\">90410<a name=\"mimic-microbiology-organism-90410\"> </a></td><td>CHILOMASTIX MESNILI</td></tr><tr><td style=\"white-space:nowrap\">90626<a name=\"mimic-microbiology-organism-90626\"> </a></td><td>STAPHYLOCOCCUS SIMULANS</td></tr><tr><td style=\"white-space:nowrap\">90372<a name=\"mimic-microbiology-organism-90372\"> </a></td><td>YERSINIA INTERMEDIA</td></tr><tr><td style=\"white-space:nowrap\">90891<a name=\"mimic-microbiology-organism-90891\"> </a></td><td>CIMEX SPECIES (BEDBUG)</td></tr><tr><td style=\"white-space:nowrap\">80123<a name=\"mimic-microbiology-organism-80123\"> </a></td><td>ANAEROBIC BACTERIA</td></tr><tr><td style=\"white-space:nowrap\">80139<a name=\"mimic-microbiology-organism-80139\"> </a></td><td>CLOSTRIDIUM DIFFICILE</td></tr><tr><td style=\"white-space:nowrap\">80016<a name=\"mimic-microbiology-organism-80016\"> </a></td><td>PROTEUS VULGARIS</td></tr><tr><td style=\"white-space:nowrap\">90503<a name=\"mimic-microbiology-organism-90503\"> </a></td><td>SALMONELLA INFANTIS</td></tr><tr><td style=\"white-space:nowrap\">80169<a name=\"mimic-microbiology-organism-80169\"> </a></td><td>ENTAMOEBA HARTMANNI</td></tr><tr><td style=\"white-space:nowrap\">90725<a name=\"mimic-microbiology-organism-90725\"> </a></td><td>POSITIVE FOR RESPIRATORY SYNCYTIAL VIRUS (RSV)</td></tr><tr><td style=\"white-space:nowrap\">90421<a name=\"mimic-microbiology-organism-90421\"> </a></td><td>STRONGYLOIDES</td></tr><tr><td style=\"white-space:nowrap\">80267<a name=\"mimic-microbiology-organism-80267\"> </a></td><td>CRYPTOSPORIDIUM PARVUM OOCYSTS SEEN</td></tr><tr><td style=\"white-space:nowrap\">90404<a name=\"mimic-microbiology-organism-90404\"> </a></td><td>SALMONELLA MUENSTER</td></tr><tr><td style=\"white-space:nowrap\">90324<a name=\"mimic-microbiology-organism-90324\"> </a></td><td>PSEUDOMONAS STUTZERI</td></tr><tr><td style=\"white-space:nowrap\">80227<a name=\"mimic-microbiology-organism-80227\"> </a></td><td>PROBABLE GARDNERELLA VAGINALIS</td></tr><tr><td style=\"white-space:nowrap\">90296<a name=\"mimic-microbiology-organism-90296\"> </a></td><td>VIBRIO ALGINOLYTICUS</td></tr><tr><td style=\"white-space:nowrap\">90764<a name=\"mimic-microbiology-organism-90764\"> </a></td><td>LEPTOTRICHIA HOFSTADII</td></tr><tr><td style=\"white-space:nowrap\">90679<a name=\"mimic-microbiology-organism-90679\"> </a></td><td>STAPHYLOCOCCUS HAEMOLYTICUS</td></tr><tr><td style=\"white-space:nowrap\">90786<a name=\"mimic-microbiology-organism-90786\"> </a></td><td>STREPTOCOCCUS MITIS GROUP</td></tr><tr><td style=\"white-space:nowrap\">80114<a name=\"mimic-microbiology-organism-80114\"> </a></td><td>ASPERGILLUS FLAVUS</td></tr><tr><td style=\"white-space:nowrap\">80157<a name=\"mimic-microbiology-organism-80157\"> </a></td><td>ACREMONIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80025<a name=\"mimic-microbiology-organism-80025\"> </a></td><td>CITROBACTER AMALONATICUS</td></tr><tr><td style=\"white-space:nowrap\">90743<a name=\"mimic-microbiology-organism-90743\"> </a></td><td>STAPHYLOCOCCUS CAPRAE</td></tr><tr><td style=\"white-space:nowrap\">80074<a name=\"mimic-microbiology-organism-80074\"> </a></td><td>ANAEROBIC GRAM NEGATIVE ROD #2</td></tr><tr><td style=\"white-space:nowrap\">80138<a name=\"mimic-microbiology-organism-80138\"> </a></td><td>STAPHYLOCOCCUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90567<a name=\"mimic-microbiology-organism-90567\"> </a></td><td>CYCLOSPORA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90718<a name=\"mimic-microbiology-organism-90718\"> </a></td><td>AEROCOCCUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90363<a name=\"mimic-microbiology-organism-90363\"> </a></td><td>HAEMOPHILUS PARAHAEMOLYTICUS</td></tr><tr><td style=\"white-space:nowrap\">80284<a name=\"mimic-microbiology-organism-80284\"> </a></td><td>ACHROMOBACTER (ALCALIGENES) XYLOSOXIDANS SS DENTRIFICANS</td></tr><tr><td style=\"white-space:nowrap\">90887<a name=\"mimic-microbiology-organism-90887\"> </a></td><td>BACILLUS CEREUS/THURINGIENSIS</td></tr><tr><td style=\"white-space:nowrap\">90768<a name=\"mimic-microbiology-organism-90768\"> </a></td><td>TICK</td></tr><tr><td style=\"white-space:nowrap\">80047<a name=\"mimic-microbiology-organism-80047\"> </a></td><td>BETA STREPTOCOCCUS GROUP G</td></tr><tr><td style=\"white-space:nowrap\">80252<a name=\"mimic-microbiology-organism-80252\"> </a></td><td>ALCALIGENES XYLOSOXIDANS</td></tr><tr><td style=\"white-space:nowrap\">80258<a name=\"mimic-microbiology-organism-80258\"> </a></td><td>MICROSPORIDIUM SPECIES SEEN</td></tr><tr><td style=\"white-space:nowrap\">90820<a name=\"mimic-microbiology-organism-90820\"> </a></td><td>BREVUNDIMONAS VESICULARIS</td></tr><tr><td style=\"white-space:nowrap\">90837<a name=\"mimic-microbiology-organism-90837\"> </a></td><td>PROTEUS HAUSERI</td></tr><tr><td style=\"white-space:nowrap\">80096<a name=\"mimic-microbiology-organism-80096\"> </a></td><td>STREPTOMYCES SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80069<a name=\"mimic-microbiology-organism-80069\"> </a></td><td>MYCOBACTERIUM TUBERCULOSIS</td></tr><tr><td style=\"white-space:nowrap\">90719<a name=\"mimic-microbiology-organism-90719\"> </a></td><td>PHAEOACREMONIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80144<a name=\"mimic-microbiology-organism-80144\"> </a></td><td>HERPES SIMPLEX VIRUS TYPE 1</td></tr><tr><td style=\"white-space:nowrap\">90819<a name=\"mimic-microbiology-organism-90819\"> </a></td><td>POSITIVE FOR CRYPTOCOCCAL ANTIGEN</td></tr><tr><td style=\"white-space:nowrap\">80256<a name=\"mimic-microbiology-organism-80256\"> </a></td><td>HAEMOPHILUS SPECIES NOT INFLUENZAE</td></tr><tr><td style=\"white-space:nowrap\">90761<a name=\"mimic-microbiology-organism-90761\"> </a></td><td>MYCOBATERIUM HAEMOPHILUM</td></tr><tr><td style=\"white-space:nowrap\">90838<a name=\"mimic-microbiology-organism-90838\"> </a></td><td>MYCOBACTERIUM ASIATICUM</td></tr><tr><td style=\"white-space:nowrap\">80111<a name=\"mimic-microbiology-organism-80111\"> </a></td><td>ENTEROCOCCUS AVIUM</td></tr><tr><td style=\"white-space:nowrap\">90639<a name=\"mimic-microbiology-organism-90639\"> </a></td><td>BACTEROIDIES THETAIOTAOMICRON</td></tr><tr><td style=\"white-space:nowrap\">80087<a name=\"mimic-microbiology-organism-80087\"> </a></td><td>STENOTROPHOMONAS MALTOPHILIA</td></tr><tr><td style=\"white-space:nowrap\">80196<a name=\"mimic-microbiology-organism-80196\"> </a></td><td>SALMONELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90509<a name=\"mimic-microbiology-organism-90509\"> </a></td><td>YERSINIA SP.</td></tr><tr><td style=\"white-space:nowrap\">90408<a name=\"mimic-microbiology-organism-90408\"> </a></td><td>ENTAMOEBA SP.</td></tr><tr><td style=\"white-space:nowrap\">80072<a name=\"mimic-microbiology-organism-80072\"> </a></td><td>GRAM NEGATIVE ROD #3</td></tr><tr><td style=\"white-space:nowrap\">80195<a name=\"mimic-microbiology-organism-80195\"> </a></td><td>AEROMONAS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90327<a name=\"mimic-microbiology-organism-90327\"> </a></td><td>CARDIOBACTERIUM HOMINIS</td></tr><tr><td style=\"white-space:nowrap\">80152<a name=\"mimic-microbiology-organism-80152\"> </a></td><td>ESCHERICHIA FERGUSONII</td></tr><tr><td style=\"white-space:nowrap\">90759<a name=\"mimic-microbiology-organism-90759\"> </a></td><td>RAOULTELLA ORNITHINOLYTICA</td></tr><tr><td style=\"white-space:nowrap\">80302<a name=\"mimic-microbiology-organism-80302\"> </a></td><td>PANTOEA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80033<a name=\"mimic-microbiology-organism-80033\"> </a></td><td>VIBRIO SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90368<a name=\"mimic-microbiology-organism-90368\"> </a></td><td>SALMONELLA PARATYPHI A</td></tr><tr><td style=\"white-space:nowrap\">90486<a name=\"mimic-microbiology-organism-90486\"> </a></td><td>STAPHYLOCOCCUS SACCHAROLYTICUS</td></tr><tr><td style=\"white-space:nowrap\">90859<a name=\"mimic-microbiology-organism-90859\"> </a></td><td>RHODATORULA MUCILAGINOSA</td></tr><tr><td style=\"white-space:nowrap\">80304<a name=\"mimic-microbiology-organism-80304\"> </a></td><td>ACINETOBACTER BAUMANNII COMPLEX</td></tr><tr><td style=\"white-space:nowrap\">90853<a name=\"mimic-microbiology-organism-90853\"> </a></td><td>EUBACTERIUM LIMOSUM</td></tr><tr><td style=\"white-space:nowrap\">80172<a name=\"mimic-microbiology-organism-80172\"> </a></td><td>ENTEROCOCCUS FAECALIS</td></tr><tr><td style=\"white-space:nowrap\">90702<a name=\"mimic-microbiology-organism-90702\"> </a></td><td>ENTEROBACTER CANCEROGENUS</td></tr><tr><td style=\"white-space:nowrap\">90861<a name=\"mimic-microbiology-organism-90861\"> </a></td><td>CUPRIAVIDUS PAUCULUS</td></tr><tr><td style=\"white-space:nowrap\">90796<a name=\"mimic-microbiology-organism-90796\"> </a></td><td>SPOROTHRIX SCHENCKII COMPLEX</td></tr><tr><td style=\"white-space:nowrap\">90825<a name=\"mimic-microbiology-organism-90825\"> </a></td><td>RHINOCLADIELLA SP.</td></tr><tr><td style=\"white-space:nowrap\">80190<a name=\"mimic-microbiology-organism-80190\"> </a></td><td>SYNCEPHALASTRUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80163<a name=\"mimic-microbiology-organism-80163\"> </a></td><td>MOLD</td></tr><tr><td style=\"white-space:nowrap\">80187<a name=\"mimic-microbiology-organism-80187\"> </a></td><td>NOCARDIA ASTEROIDES COMPLEX </td></tr><tr><td style=\"white-space:nowrap\">80135<a name=\"mimic-microbiology-organism-80135\"> </a></td><td>ASCARIS LUMBRICOIDES</td></tr><tr><td style=\"white-space:nowrap\">80193<a name=\"mimic-microbiology-organism-80193\"> </a></td><td>CORYNEBACTERIUM UREALYTICUM SP. NOV.</td></tr><tr><td style=\"white-space:nowrap\">80022<a name=\"mimic-microbiology-organism-80022\"> </a></td><td>SALMONELLA ENTERITIDIS</td></tr><tr><td style=\"white-space:nowrap\">90313<a name=\"mimic-microbiology-organism-90313\"> </a></td><td>BACTEROIDES SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80253<a name=\"mimic-microbiology-organism-80253\"> </a></td><td>YEAST, PRESUMPTIVELY NOT C. ALBICANS</td></tr><tr><td style=\"white-space:nowrap\">90983<a name=\"mimic-microbiology-organism-90983\"> </a></td><td>ROTHIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90431<a name=\"mimic-microbiology-organism-90431\"> </a></td><td>LEGIONELLA PNEUMOPHILA, GROUP 1</td></tr><tr><td style=\"white-space:nowrap\">90301<a name=\"mimic-microbiology-organism-90301\"> </a></td><td>BRUCELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80160<a name=\"mimic-microbiology-organism-80160\"> </a></td><td>BACILLUS SUBTILIS </td></tr><tr><td style=\"white-space:nowrap\">90804<a name=\"mimic-microbiology-organism-90804\"> </a></td><td>STREPTOCOCCUS PORCINUS/PSEUDOPORCINUS</td></tr><tr><td style=\"white-space:nowrap\">80270<a name=\"mimic-microbiology-organism-80270\"> </a></td><td>CANDIDA DUBLINIENSIS</td></tr><tr><td style=\"white-space:nowrap\">90712<a name=\"mimic-microbiology-organism-90712\"> </a></td><td>MYROIDES SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90877<a name=\"mimic-microbiology-organism-90877\"> </a></td><td>LEPTOTRICHIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90805<a name=\"mimic-microbiology-organism-90805\"> </a></td><td>PASTEURELLA CANIS</td></tr><tr><td style=\"white-space:nowrap\">80110<a name=\"mimic-microbiology-organism-80110\"> </a></td><td>MUCOR SP.</td></tr><tr><td style=\"white-space:nowrap\">80044<a name=\"mimic-microbiology-organism-80044\"> </a></td><td>HAEMOPHILUS SP</td></tr><tr><td style=\"white-space:nowrap\">90282<a name=\"mimic-microbiology-organism-90282\"> </a></td><td>SALMONELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80081<a name=\"mimic-microbiology-organism-80081\"> </a></td><td>GRAM POSITIVE BACTERIA</td></tr><tr><td style=\"white-space:nowrap\">80055<a name=\"mimic-microbiology-organism-80055\"> </a></td><td>GRAM POSITIVE COCCUS(COCCI)</td></tr><tr><td style=\"white-space:nowrap\">80221<a name=\"mimic-microbiology-organism-80221\"> </a></td><td>CORYNEBCATERIUM AMYCOLATUM</td></tr><tr><td style=\"white-space:nowrap\">90737<a name=\"mimic-microbiology-organism-90737\"> </a></td><td>ALCALIGENES SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90571<a name=\"mimic-microbiology-organism-90571\"> </a></td><td>BURKHOLDERIA GLADIOLI</td></tr><tr><td style=\"white-space:nowrap\">80054<a name=\"mimic-microbiology-organism-80054\"> </a></td><td>BETA STREPTOCOCCUS GROUP A</td></tr><tr><td style=\"white-space:nowrap\">90456<a name=\"mimic-microbiology-organism-90456\"> </a></td><td>LECLERCIA ADECARBOXYLATA</td></tr><tr><td style=\"white-space:nowrap\">80271<a name=\"mimic-microbiology-organism-80271\"> </a></td><td>STREPTOCOCCUS ORALIS</td></tr><tr><td style=\"white-space:nowrap\">80307<a name=\"mimic-microbiology-organism-80307\"> </a></td><td>LEPTOTRICHIA TREVISANII</td></tr><tr><td style=\"white-space:nowrap\">90881<a name=\"mimic-microbiology-organism-90881\"> </a></td><td>KLEBSIELLA (RAOULTELLA) ORNITHINOLYTICA</td></tr><tr><td style=\"white-space:nowrap\">90462<a name=\"mimic-microbiology-organism-90462\"> </a></td><td>MICROSPORUM CANIS</td></tr><tr><td style=\"white-space:nowrap\">80027<a name=\"mimic-microbiology-organism-80027\"> </a></td><td>PSEUDOMONAS PUTIDA </td></tr><tr><td style=\"white-space:nowrap\">80280<a name=\"mimic-microbiology-organism-80280\"> </a></td><td>VIRIDANS STREPTOCOCCI</td></tr><tr><td style=\"white-space:nowrap\">80189<a name=\"mimic-microbiology-organism-80189\"> </a></td><td>PEDIOCOCCUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80222<a name=\"mimic-microbiology-organism-80222\"> </a></td><td>POSITIVE FOR GROUP B BETA STREPTOCOCCI</td></tr><tr><td style=\"white-space:nowrap\">80309<a name=\"mimic-microbiology-organism-80309\"> </a></td><td>POSITIVE FOR VARICELLA ZOSTER</td></tr><tr><td style=\"white-space:nowrap\">80049<a name=\"mimic-microbiology-organism-80049\"> </a></td><td>STREPTOCOCCUS MITIS</td></tr><tr><td style=\"white-space:nowrap\">90653<a name=\"mimic-microbiology-organism-90653\"> </a></td><td>SALMONELLA MBANDAKA</td></tr><tr><td style=\"white-space:nowrap\">90596<a name=\"mimic-microbiology-organism-90596\"> </a></td><td>CAMPYLOBACTER LARI</td></tr><tr><td style=\"white-space:nowrap\">80310<a name=\"mimic-microbiology-organism-80310\"> </a></td><td>POSITIVE FOR HERPES SIMPLEX TYPE 1 (HSV1)</td></tr><tr><td style=\"white-space:nowrap\">80041<a name=\"mimic-microbiology-organism-80041\"> </a></td><td>NEISSERIA MENINGITIDIS</td></tr><tr><td style=\"white-space:nowrap\">90528<a name=\"mimic-microbiology-organism-90528\"> </a></td><td>PREVOTELLA (BACTEROIDES) SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90900<a name=\"mimic-microbiology-organism-90900\"> </a></td><td>MYCOBACTERIUM NEOAURUM</td></tr><tr><td style=\"white-space:nowrap\">80303<a name=\"mimic-microbiology-organism-80303\"> </a></td><td>ABIOTROPHIA/GRANULICATELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80211<a name=\"mimic-microbiology-organism-80211\"> </a></td><td>STACHYBOTRYS SPP.</td></tr><tr><td style=\"white-space:nowrap\">90866<a name=\"mimic-microbiology-organism-90866\"> </a></td><td>MYCOBACTERIUM TRIPLEX</td></tr><tr><td style=\"white-space:nowrap\">80002<a name=\"mimic-microbiology-organism-80002\"> </a></td><td>ESCHERICHIA COLI</td></tr><tr><td style=\"white-space:nowrap\">90787<a name=\"mimic-microbiology-organism-90787\"> </a></td><td>STREPTOCCUS SALIVARIUS GROUP</td></tr><tr><td style=\"white-space:nowrap\">90797<a name=\"mimic-microbiology-organism-90797\"> </a></td><td>NOCARDIA TRANSVALENSIS COMPLEX</td></tr><tr><td style=\"white-space:nowrap\">80061<a name=\"mimic-microbiology-organism-80061\"> </a></td><td>RHODOTORULA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80038<a name=\"mimic-microbiology-organism-80038\"> </a></td><td>CLOSTRIDIUM PERFRINGENS</td></tr><tr><td style=\"white-space:nowrap\">90450<a name=\"mimic-microbiology-organism-90450\"> </a></td><td>MORAXELLA NONLIQUIFACIENS </td></tr><tr><td style=\"white-space:nowrap\">80048<a name=\"mimic-microbiology-organism-80048\"> </a></td><td>BETA STREPTOCOCCUS</td></tr><tr><td style=\"white-space:nowrap\">90716<a name=\"mimic-microbiology-organism-90716\"> </a></td><td>CUPRIAVIDUS METALLIDURANS</td></tr><tr><td style=\"white-space:nowrap\">80112<a name=\"mimic-microbiology-organism-80112\"> </a></td><td>BACTEROIDES FRAGILIS GROUP</td></tr><tr><td style=\"white-space:nowrap\">90878<a name=\"mimic-microbiology-organism-90878\"> </a></td><td>CAMPYLOBACTER UREOLYTICUS</td></tr><tr><td style=\"white-space:nowrap\">90729<a name=\"mimic-microbiology-organism-90729\"> </a></td><td>DESULFOVIBRIO DESULFURICANS</td></tr><tr><td style=\"white-space:nowrap\">90801<a name=\"mimic-microbiology-organism-90801\"> </a></td><td>LACTOBACILLUS RHAMNOSUS</td></tr><tr><td style=\"white-space:nowrap\">80153<a name=\"mimic-microbiology-organism-80153\"> </a></td><td>MORAXELLA OSLOENSIS</td></tr><tr><td style=\"white-space:nowrap\">90422<a name=\"mimic-microbiology-organism-90422\"> </a></td><td>HOOKWORM</td></tr><tr><td style=\"white-space:nowrap\">90305<a name=\"mimic-microbiology-organism-90305\"> </a></td><td>MYCOBACTERIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90745<a name=\"mimic-microbiology-organism-90745\"> </a></td><td>STAPHYLOCOCCUS SAPROPHYTICUS</td></tr><tr><td style=\"white-space:nowrap\">80130<a name=\"mimic-microbiology-organism-80130\"> </a></td><td>MYCELIA STERILIA</td></tr><tr><td style=\"white-space:nowrap\">80300<a name=\"mimic-microbiology-organism-80300\"> </a></td><td>POSITIVE FOR PNEUMOCYSTIS JIROVECII (CARINII)</td></tr><tr><td style=\"white-space:nowrap\">90280<a name=\"mimic-microbiology-organism-90280\"> </a></td><td>SHIGELLA SONNEI</td></tr><tr><td style=\"white-space:nowrap\">90736<a name=\"mimic-microbiology-organism-90736\"> </a></td><td>AGGREGATIBACTER (HAEMOPHILUS) APHROPHILUS</td></tr><tr><td style=\"white-space:nowrap\">80254<a name=\"mimic-microbiology-organism-80254\"> </a></td><td>CANDIDA ALBICANS, PRESUMPTIVE IDENTIFICATION</td></tr><tr><td style=\"white-space:nowrap\">80005<a name=\"mimic-microbiology-organism-80005\"> </a></td><td>KLEBSIELLA OXYTOCA</td></tr><tr><td style=\"white-space:nowrap\">90758<a name=\"mimic-microbiology-organism-90758\"> </a></td><td>STAPHYLOCOCCUS WARNERI/PASTEURI</td></tr><tr><td style=\"white-space:nowrap\">90818<a name=\"mimic-microbiology-organism-90818\"> </a></td><td>PRESUMPTIVE POSITIVE FOR LEGIONELLA SEROGROUP 1 ANTIGEN</td></tr><tr><td style=\"white-space:nowrap\">90672<a name=\"mimic-microbiology-organism-90672\"> </a></td><td>NIGROSPORA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80245<a name=\"mimic-microbiology-organism-80245\"> </a></td><td>FUSOBACTERIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80030<a name=\"mimic-microbiology-organism-80030\"> </a></td><td>BORDETELLA BRONCHISEPTICA</td></tr><tr><td style=\"white-space:nowrap\">90621<a name=\"mimic-microbiology-organism-90621\"> </a></td><td>TICK NOT CONSISTENT WITH IXODES SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90864<a name=\"mimic-microbiology-organism-90864\"> </a></td><td>LACTOBACILLUS CASEI/PARACASEI/ZEAE</td></tr><tr><td style=\"white-space:nowrap\">90322<a name=\"mimic-microbiology-organism-90322\"> </a></td><td>MYCOPLASMA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90660<a name=\"mimic-microbiology-organism-90660\"> </a></td><td>PHOMA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80224<a name=\"mimic-microbiology-organism-80224\"> </a></td><td>BETA STREPTOCOCCUS NOT GROUP A OR B</td></tr><tr><td style=\"white-space:nowrap\">80213<a name=\"mimic-microbiology-organism-80213\"> </a></td><td>BETA STREPTOCOCCI, NOT GROUP A</td></tr><tr><td style=\"white-space:nowrap\">90412<a name=\"mimic-microbiology-organism-90412\"> </a></td><td>SALMONELLA HEIDELBERG</td></tr><tr><td style=\"white-space:nowrap\">80255<a name=\"mimic-microbiology-organism-80255\"> </a></td><td>STAPHYLOCOCCUS SAPROPHYTICUS, PRESUMPTIVE IDENTIFICATION</td></tr><tr><td style=\"white-space:nowrap\">90533<a name=\"mimic-microbiology-organism-90533\"> </a></td><td>HYMENOLEPIS NANA</td></tr><tr><td style=\"white-space:nowrap\">90752<a name=\"mimic-microbiology-organism-90752\"> </a></td><td>MALASSEZIA PACHYDERMATIS</td></tr><tr><td style=\"white-space:nowrap\">80142<a name=\"mimic-microbiology-organism-80142\"> </a></td><td>FUSOBACTERIUM NECROPHORUM</td></tr><tr><td style=\"white-space:nowrap\">90550<a name=\"mimic-microbiology-organism-90550\"> </a></td><td>MALASSEZIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90817<a name=\"mimic-microbiology-organism-90817\"> </a></td><td>GRANULICATELLA ADIACENS</td></tr><tr><td style=\"white-space:nowrap\">90851<a name=\"mimic-microbiology-organism-90851\"> </a></td><td>SCEDOSPORIUM APIOSPERMUM COMPLEX</td></tr><tr><td style=\"white-space:nowrap\">90776<a name=\"mimic-microbiology-organism-90776\"> </a></td><td>STREPTOCOCCUS GALLOLYTICUS SSP. GALLOLYTICUS (STREPTOCOCCUS BOVIS)</td></tr><tr><td style=\"white-space:nowrap\">90339<a name=\"mimic-microbiology-organism-90339\"> </a></td><td>CRYPTOCOCCUS LAURENTII</td></tr><tr><td style=\"white-space:nowrap\">80035<a name=\"mimic-microbiology-organism-80035\"> </a></td><td>EIKENELLA CORRODENS</td></tr><tr><td style=\"white-space:nowrap\">80017<a name=\"mimic-microbiology-organism-80017\"> </a></td><td>PROTEUS MIRABILIS</td></tr><tr><td style=\"white-space:nowrap\">80306<a name=\"mimic-microbiology-organism-80306\"> </a></td><td>MICROCOCCUS/STOMATOCOCCUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80178<a name=\"mimic-microbiology-organism-80178\"> </a></td><td>INFLUENZA A VIRUS</td></tr><tr><td style=\"white-space:nowrap\">90374<a name=\"mimic-microbiology-organism-90374\"> </a></td><td>CLOSTRIDIUM TERTIUM</td></tr><tr><td style=\"white-space:nowrap\">90750<a name=\"mimic-microbiology-organism-90750\"> </a></td><td>RHIZOBIUM RADIOBACTER</td></tr><tr><td style=\"white-space:nowrap\">90763<a name=\"mimic-microbiology-organism-90763\"> </a></td><td>ENTEROBACTER CLOACAE COMPLEX</td></tr><tr><td style=\"white-space:nowrap\">80164<a name=\"mimic-microbiology-organism-80164\"> </a></td><td>ENTEROBACTER ASBURIAE</td></tr><tr><td style=\"white-space:nowrap\">90440<a name=\"mimic-microbiology-organism-90440\"> </a></td><td>SALMONELLA SCHWARZENGRUND</td></tr><tr><td style=\"white-space:nowrap\">90826<a name=\"mimic-microbiology-organism-90826\"> </a></td><td>STAPHYLOCOCCUS AURICULARIS</td></tr><tr><td style=\"white-space:nowrap\">80042<a name=\"mimic-microbiology-organism-80042\"> </a></td><td>NEISSERIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90430<a name=\"mimic-microbiology-organism-90430\"> </a></td><td>SALMONELLA DUBLIN</td></tr><tr><td style=\"white-space:nowrap\">90454<a name=\"mimic-microbiology-organism-90454\"> </a></td><td>PROTEUS PENNERI</td></tr><tr><td style=\"white-space:nowrap\">80107<a name=\"mimic-microbiology-organism-80107\"> </a></td><td>CAMPYLOBACTER SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90784<a name=\"mimic-microbiology-organism-90784\"> </a></td><td>PSEUDOMONAS MENDOCINA</td></tr><tr><td style=\"white-space:nowrap\">80014<a name=\"mimic-microbiology-organism-80014\"> </a></td><td>SERRATIA MARCESCENS</td></tr><tr><td style=\"white-space:nowrap\">90760<a name=\"mimic-microbiology-organism-90760\"> </a></td><td>CANCELLED</td></tr><tr><td style=\"white-space:nowrap\">90844<a name=\"mimic-microbiology-organism-90844\"> </a></td><td>GEMELLA BERGERI</td></tr><tr><td style=\"white-space:nowrap\">80103<a name=\"mimic-microbiology-organism-80103\"> </a></td><td>SPOROBOLOMYCES SALMONICOLOR</td></tr><tr><td style=\"white-space:nowrap\">90352<a name=\"mimic-microbiology-organism-90352\"> </a></td><td>CLOSTRIDIUM CLOSTRIDIIFORME</td></tr><tr><td style=\"white-space:nowrap\">90377<a name=\"mimic-microbiology-organism-90377\"> </a></td><td>CLOSTRIDIUM RAMOSUM</td></tr><tr><td style=\"white-space:nowrap\">90871<a name=\"mimic-microbiology-organism-90871\"> </a></td><td>GLOBICATELLA SANGUINIS</td></tr><tr><td style=\"white-space:nowrap\">90497<a name=\"mimic-microbiology-organism-90497\"> </a></td><td>MICROCOCCUS LUTEUS</td></tr><tr><td style=\"white-space:nowrap\">80182<a name=\"mimic-microbiology-organism-80182\"> </a></td><td>OCHROBACTRUM ANTHROPI</td></tr><tr><td style=\"white-space:nowrap\">90644<a name=\"mimic-microbiology-organism-90644\"> </a></td><td>GIARDIA LAMBLIA SEEN</td></tr><tr><td style=\"white-space:nowrap\">90840<a name=\"mimic-microbiology-organism-90840\"> </a></td><td>S. AUREUS POSITIVE; MRSA POSITIVE</td></tr><tr><td style=\"white-space:nowrap\">90814<a name=\"mimic-microbiology-organism-90814\"> </a></td><td>ARTHROGRAPHIS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90640<a name=\"mimic-microbiology-organism-90640\"> </a></td><td>BIPOLARIS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90680<a name=\"mimic-microbiology-organism-90680\"> </a></td><td>SALMONELLA CORVALLIS</td></tr><tr><td style=\"white-space:nowrap\">80204<a name=\"mimic-microbiology-organism-80204\"> </a></td><td>ENTEROCOCCUS CASSELIFLAVUS</td></tr><tr><td style=\"white-space:nowrap\">80060<a name=\"mimic-microbiology-organism-80060\"> </a></td><td>CANDIDA ALBICANS</td></tr><tr><td style=\"white-space:nowrap\">80158<a name=\"mimic-microbiology-organism-80158\"> </a></td><td>MYCOBACTERIUM AVIUM COMPLEX</td></tr><tr><td style=\"white-space:nowrap\">80085<a name=\"mimic-microbiology-organism-80085\"> </a></td><td>CORYNEBACTERIUM SPECIES (DIPHTHEROIDS)</td></tr><tr><td style=\"white-space:nowrap\">90452<a name=\"mimic-microbiology-organism-90452\"> </a></td><td>ENTEROBACTER AMNIGENUS 2 </td></tr><tr><td style=\"white-space:nowrap\">90748<a name=\"mimic-microbiology-organism-90748\"> </a></td><td>STREPTOCOCCUS INFANTARIUS SSP. COLI (STREPTOCOCCUS BOVIS)</td></tr><tr><td style=\"white-space:nowrap\">90799<a name=\"mimic-microbiology-organism-90799\"> </a></td><td>STREPTOCOCCUS INFANTARIUS SSP. INFANTARIUS (STREPTOCOCCUS BOVIS)</td></tr><tr><td style=\"white-space:nowrap\">90874<a name=\"mimic-microbiology-organism-90874\"> </a></td><td>KOCURIA ROSEA</td></tr><tr><td style=\"white-space:nowrap\">90665<a name=\"mimic-microbiology-organism-90665\"> </a></td><td>EPICOCCUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90885<a name=\"mimic-microbiology-organism-90885\"> </a></td><td>ACETOBACTER SP.</td></tr><tr><td style=\"white-space:nowrap\">90765<a name=\"mimic-microbiology-organism-90765\"> </a></td><td>DOLOSIGRANULUM PIGRUM</td></tr><tr><td style=\"white-space:nowrap\">80251<a name=\"mimic-microbiology-organism-80251\"> </a></td><td>MANY BLASTOCYSTIS HOMINIS</td></tr><tr><td style=\"white-space:nowrap\">80106<a name=\"mimic-microbiology-organism-80106\"> </a></td><td>CANDIDA TROPICALIS</td></tr><tr><td style=\"white-space:nowrap\">90330<a name=\"mimic-microbiology-organism-90330\"> </a></td><td>MYCOBACTERIUM CHELONAE</td></tr><tr><td style=\"white-space:nowrap\">90827<a name=\"mimic-microbiology-organism-90827\"> </a></td><td>CANDIDA AURIS</td></tr><tr><td style=\"white-space:nowrap\">80143<a name=\"mimic-microbiology-organism-80143\"> </a></td><td>CYTOMEGALOVIRUS </td></tr><tr><td style=\"white-space:nowrap\">80225<a name=\"mimic-microbiology-organism-80225\"> </a></td><td>NON-FERMENTER, NOT PSEUDOMONAS AERUGINOSA</td></tr><tr><td style=\"white-space:nowrap\">90646<a name=\"mimic-microbiology-organism-90646\"> </a></td><td>TRICHOMONAS VAGINALIS SEEN</td></tr><tr><td style=\"white-space:nowrap\">90774<a name=\"mimic-microbiology-organism-90774\"> </a></td><td>ENTEROCOCCUS HIRAE</td></tr><tr><td style=\"white-space:nowrap\">90713<a name=\"mimic-microbiology-organism-90713\"> </a></td><td>MYCOBACTERIUM MUCOGENICUM</td></tr><tr><td style=\"white-space:nowrap\">80199<a name=\"mimic-microbiology-organism-80199\"> </a></td><td>MALASSEZIA FURFUR</td></tr><tr><td style=\"white-space:nowrap\">90808<a name=\"mimic-microbiology-organism-90808\"> </a></td><td>MICROMONOSPORA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80290<a name=\"mimic-microbiology-organism-80290\"> </a></td><td>SHEWANELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90387<a name=\"mimic-microbiology-organism-90387\"> </a></td><td>MYCOBACTERIUM BOVIS</td></tr><tr><td style=\"white-space:nowrap\">80009<a name=\"mimic-microbiology-organism-80009\"> </a></td><td>HAFNIA ALVEI</td></tr><tr><td style=\"white-space:nowrap\">80197<a name=\"mimic-microbiology-organism-80197\"> </a></td><td>CITROBACTER YOUNGAE</td></tr><tr><td style=\"white-space:nowrap\">90836<a name=\"mimic-microbiology-organism-90836\"> </a></td><td>STREPTOCOCCUS PARASANGUINIS</td></tr><tr><td style=\"white-space:nowrap\">90420<a name=\"mimic-microbiology-organism-90420\"> </a></td><td>TAENIA SP.</td></tr><tr><td style=\"white-space:nowrap\">90693<a name=\"mimic-microbiology-organism-90693\"> </a></td><td>BEAUVERIA BASSIANA</td></tr><tr><td style=\"white-space:nowrap\">80181<a name=\"mimic-microbiology-organism-80181\"> </a></td><td>PARAINFLUENZA VIRUS TYPE 3</td></tr><tr><td style=\"white-space:nowrap\">80149<a name=\"mimic-microbiology-organism-80149\"> </a></td><td>PAECILOMYCES SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80046<a name=\"mimic-microbiology-organism-80046\"> </a></td><td>BETA STREPTOCOCCUS GROUP C</td></tr><tr><td style=\"white-space:nowrap\">90627<a name=\"mimic-microbiology-organism-90627\"> </a></td><td>LEGIONELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90671<a name=\"mimic-microbiology-organism-90671\"> </a></td><td>STEMPHYLIUM SP.</td></tr><tr><td style=\"white-space:nowrap\">90816<a name=\"mimic-microbiology-organism-90816\"> </a></td><td>ACHROMOBACTER XYLOSOXIDANS</td></tr><tr><td style=\"white-space:nowrap\">80050<a name=\"mimic-microbiology-organism-80050\"> </a></td><td>STREPTOCOCCUS BOVIS </td></tr><tr><td style=\"white-space:nowrap\">90683<a name=\"mimic-microbiology-organism-90683\"> </a></td><td>PROTEUS VULGARIS GROUP</td></tr><tr><td style=\"white-space:nowrap\">80018<a name=\"mimic-microbiology-organism-80018\"> </a></td><td>MORGANELLA MORGANII</td></tr><tr><td style=\"white-space:nowrap\">90379<a name=\"mimic-microbiology-organism-90379\"> </a></td><td>CAPNOCYTOPHAGA OCHRACEA</td></tr><tr><td style=\"white-space:nowrap\">80286<a name=\"mimic-microbiology-organism-80286\"> </a></td><td>GORDONIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90590<a name=\"mimic-microbiology-organism-90590\"> </a></td><td>PREVOTELLA ORALIS</td></tr><tr><td style=\"white-space:nowrap\">80173<a name=\"mimic-microbiology-organism-80173\"> </a></td><td>VEILLONELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80298<a name=\"mimic-microbiology-organism-80298\"> </a></td><td>GEMELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90390<a name=\"mimic-microbiology-organism-90390\"> </a></td><td>TRICHOPHYTON RUBRUM</td></tr><tr><td style=\"white-space:nowrap\">80127<a name=\"mimic-microbiology-organism-80127\"> </a></td><td>FUNGUS</td></tr><tr><td style=\"white-space:nowrap\">90415<a name=\"mimic-microbiology-organism-90415\"> </a></td><td>SALMONELLA NEWPORT</td></tr><tr><td style=\"white-space:nowrap\">90741<a name=\"mimic-microbiology-organism-90741\"> </a></td><td>ROTHIA MUCILAGINOSA</td></tr><tr><td style=\"white-space:nowrap\">90511<a name=\"mimic-microbiology-organism-90511\"> </a></td><td>STAPHYLOCOCCUS INTERMEDIUS</td></tr><tr><td style=\"white-space:nowrap\">80161<a name=\"mimic-microbiology-organism-80161\"> </a></td><td>STRONGYLOIDES STERCORALIS </td></tr><tr><td style=\"white-space:nowrap\">90850<a name=\"mimic-microbiology-organism-90850\"> </a></td><td>BACILLUS CIRCULANS GROUP</td></tr><tr><td style=\"white-space:nowrap\">80243<a name=\"mimic-microbiology-organism-80243\"> </a></td><td>PORPHYROMONAS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80102<a name=\"mimic-microbiology-organism-80102\"> </a></td><td>SACCHAROMYCES CEREVISIAE</td></tr><tr><td style=\"white-space:nowrap\">90564<a name=\"mimic-microbiology-organism-90564\"> </a></td><td>NOCARDIA BRASILIENSIS</td></tr><tr><td style=\"white-space:nowrap\">90775<a name=\"mimic-microbiology-organism-90775\"> </a></td><td>USTILAGO SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80105<a name=\"mimic-microbiology-organism-80105\"> </a></td><td>RHIZOPUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90769<a name=\"mimic-microbiology-organism-90769\"> </a></td><td>NOCARDIA FARCINICA</td></tr><tr><td style=\"white-space:nowrap\">80272<a name=\"mimic-microbiology-organism-80272\"> </a></td><td>STREPTOCOCCUS VESTIBULARIS</td></tr><tr><td style=\"white-space:nowrap\">80053<a name=\"mimic-microbiology-organism-80053\"> </a></td><td>ENTEROCOCCUS SP.</td></tr><tr><td style=\"white-space:nowrap\">80004<a name=\"mimic-microbiology-organism-80004\"> </a></td><td>KLEBSIELLA PNEUMONIAE</td></tr><tr><td style=\"white-space:nowrap\">90295<a name=\"mimic-microbiology-organism-90295\"> </a></td><td>VIBRIO CHOLERAE</td></tr><tr><td style=\"white-space:nowrap\">90780<a name=\"mimic-microbiology-organism-90780\"> </a></td><td>ACHROMOBACTER (ALCALIGENES) XYLOSOXIDANS</td></tr><tr><td style=\"white-space:nowrap\">90742<a name=\"mimic-microbiology-organism-90742\"> </a></td><td>STAPHYLOCOCCUS CAPITIS</td></tr><tr><td style=\"white-space:nowrap\">90543<a name=\"mimic-microbiology-organism-90543\"> </a></td><td>OLIGELLA URETHRALIS</td></tr><tr><td style=\"white-space:nowrap\">80097<a name=\"mimic-microbiology-organism-80097\"> </a></td><td>PROVIDENCIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90868<a name=\"mimic-microbiology-organism-90868\"> </a></td><td>YOKENELLA REGENSBURGEI</td></tr><tr><td style=\"white-space:nowrap\">80080<a name=\"mimic-microbiology-organism-80080\"> </a></td><td>BACTERIA</td></tr><tr><td style=\"white-space:nowrap\">90544<a name=\"mimic-microbiology-organism-90544\"> </a></td><td>STAPHYLOCOCCUS SCIURI</td></tr><tr><td style=\"white-space:nowrap\">90512<a name=\"mimic-microbiology-organism-90512\"> </a></td><td>DERMATOPHYTE</td></tr><tr><td style=\"white-space:nowrap\">90508<a name=\"mimic-microbiology-organism-90508\"> </a></td><td>ACTINOMYCES SP.</td></tr><tr><td style=\"white-space:nowrap\">90678<a name=\"mimic-microbiology-organism-90678\"> </a></td><td>MICROBACTERIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80176<a name=\"mimic-microbiology-organism-80176\"> </a></td><td>VARICELLA-ZOSTER VIRUS</td></tr><tr><td style=\"white-space:nowrap\">80015<a name=\"mimic-microbiology-organism-80015\"> </a></td><td>SERRATIA RUBIDAEA</td></tr><tr><td style=\"white-space:nowrap\">80282<a name=\"mimic-microbiology-organism-80282\"> </a></td><td>FONSECAEA PEDROSOI</td></tr><tr><td style=\"white-space:nowrap\">90889<a name=\"mimic-microbiology-organism-90889\"> </a></td><td>CUTIBACTERIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90767<a name=\"mimic-microbiology-organism-90767\"> </a></td><td>OCHROBACTRUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90443<a name=\"mimic-microbiology-organism-90443\"> </a></td><td>ALTERNARIA SP.</td></tr><tr><td style=\"white-space:nowrap\">90281<a name=\"mimic-microbiology-organism-90281\"> </a></td><td>EDWARDSIELLA TARDA</td></tr><tr><td style=\"white-space:nowrap\">90398<a name=\"mimic-microbiology-organism-90398\"> </a></td><td>ACTINOMYCES ISRAELII</td></tr><tr><td style=\"white-space:nowrap\">80226<a name=\"mimic-microbiology-organism-80226\"> </a></td><td>PROBABLE LACTOBACILLUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90552<a name=\"mimic-microbiology-organism-90552\"> </a></td><td>ROSEOMONAS GILARDII</td></tr><tr><td style=\"white-space:nowrap\">80092<a name=\"mimic-microbiology-organism-80092\"> </a></td><td>AEROCOCCUS VIRIDANS</td></tr><tr><td style=\"white-space:nowrap\">80013<a name=\"mimic-microbiology-organism-80013\"> </a></td><td>SERRATIA LIQUEFACIENS</td></tr><tr><td style=\"white-space:nowrap\">80066<a name=\"mimic-microbiology-organism-80066\"> </a></td><td>ASPERGILLUS FUMIGATUS</td></tr><tr><td style=\"white-space:nowrap\">90855<a name=\"mimic-microbiology-organism-90855\"> </a></td><td>POSITIVE</td></tr><tr><td style=\"white-space:nowrap\">90340<a name=\"mimic-microbiology-organism-90340\"> </a></td><td>GEOTRICHIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80299<a name=\"mimic-microbiology-organism-80299\"> </a></td><td>MYCOPLASMA HOMINIS</td></tr><tr><td style=\"white-space:nowrap\">80248<a name=\"mimic-microbiology-organism-80248\"> </a></td><td>CITROBACTER FREUNDII COMPLEX</td></tr><tr><td style=\"white-space:nowrap\">80292<a name=\"mimic-microbiology-organism-80292\"> </a></td><td>NEISSERIA SPECIES, NOT GONORRHOEAE</td></tr><tr><td style=\"white-space:nowrap\">90370<a name=\"mimic-microbiology-organism-90370\"> </a></td><td>SERRATIA FONTICOLA</td></tr><tr><td style=\"white-space:nowrap\">90623<a name=\"mimic-microbiology-organism-90623\"> </a></td><td>SALMONELLA SANDIEGO</td></tr><tr><td style=\"white-space:nowrap\">90734<a name=\"mimic-microbiology-organism-90734\"> </a></td><td>FINEGOLDIA (PEPTOSTREPTOCOCCUS) SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80147<a name=\"mimic-microbiology-organism-80147\"> </a></td><td>CHLAMYDIA TRACHOMATIS</td></tr><tr><td style=\"white-space:nowrap\">90514<a name=\"mimic-microbiology-organism-90514\"> </a></td><td>MYCOBACTERIUM MARINUM</td></tr><tr><td style=\"white-space:nowrap\">90695<a name=\"mimic-microbiology-organism-90695\"> </a></td><td>DELFTIA ACIDOVORANS</td></tr><tr><td style=\"white-space:nowrap\">90681<a name=\"mimic-microbiology-organism-90681\"> </a></td><td>STAPHYLOCOCCUS CAPRAE/CAPITIS</td></tr><tr><td style=\"white-space:nowrap\">80170<a name=\"mimic-microbiology-organism-80170\"> </a></td><td>LEUCONOSTOC SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90829<a name=\"mimic-microbiology-organism-90829\"> </a></td><td>ACRODONTIUM SALMONEUM</td></tr><tr><td style=\"white-space:nowrap\">90472<a name=\"mimic-microbiology-organism-90472\"> </a></td><td>ALCALIGENES FAECALIS</td></tr><tr><td style=\"white-space:nowrap\">90738<a name=\"mimic-microbiology-organism-90738\"> </a></td><td>ELIZABETHKINGIA (CHRYSEOBACTERIUM) MENIGOSEPTICA</td></tr><tr><td style=\"white-space:nowrap\">90470<a name=\"mimic-microbiology-organism-90470\"> </a></td><td>GARDNERELLA  VAGINALIS</td></tr><tr><td style=\"white-space:nowrap\">90522<a name=\"mimic-microbiology-organism-90522\"> </a></td><td>CAMPYLOBACTER UPSALIENSIS</td></tr><tr><td style=\"white-space:nowrap\">90333<a name=\"mimic-microbiology-organism-90333\"> </a></td><td>MYCOBACTERIUM KANSASII</td></tr><tr><td style=\"white-space:nowrap\">90863<a name=\"mimic-microbiology-organism-90863\"> </a></td><td>NOCARDIA CYRIACIGEORGICA</td></tr><tr><td style=\"white-space:nowrap\">90310<a name=\"mimic-microbiology-organism-90310\"> </a></td><td>HAEMOPHILUS APHROPHILUS</td></tr><tr><td style=\"white-space:nowrap\">80234<a name=\"mimic-microbiology-organism-80234\"> </a></td><td>PRESUMPTIVE PROPIONIBACTERIUM ACNES</td></tr><tr><td style=\"white-space:nowrap\">90791<a name=\"mimic-microbiology-organism-90791\"> </a></td><td>GORDONIA SPUTI</td></tr><tr><td style=\"white-space:nowrap\">80077<a name=\"mimic-microbiology-organism-80077\"> </a></td><td>CRYPTOCOCCUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90888<a name=\"mimic-microbiology-organism-90888\"> </a></td><td>DIALISTER MICRAEROPHILUS</td></tr><tr><td style=\"white-space:nowrap\">90697<a name=\"mimic-microbiology-organism-90697\"> </a></td><td>ACTINOMYCES TURICENSIS</td></tr><tr><td style=\"white-space:nowrap\">90549<a name=\"mimic-microbiology-organism-90549\"> </a></td><td>ENTEROCOCCUS DURANS</td></tr><tr><td style=\"white-space:nowrap\">90487<a name=\"mimic-microbiology-organism-90487\"> </a></td><td>ACHROMOBACTER (ALCALIGENES) DENTRIFICANS</td></tr><tr><td style=\"white-space:nowrap\">90361<a name=\"mimic-microbiology-organism-90361\"> </a></td><td>HEMOPHILUS HEMOLYTICUS</td></tr><tr><td style=\"white-space:nowrap\">90839<a name=\"mimic-microbiology-organism-90839\"> </a></td><td>ACTINOTIGNUM SANGUINIS</td></tr><tr><td style=\"white-space:nowrap\">90756<a name=\"mimic-microbiology-organism-90756\"> </a></td><td>HERBASPIRILLUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80244<a name=\"mimic-microbiology-organism-80244\"> </a></td><td>PREVOTELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80116<a name=\"mimic-microbiology-organism-80116\"> </a></td><td>FUSARIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80177<a name=\"mimic-microbiology-organism-80177\"> </a></td><td>RESPIRATORY SYNCYTIAL VIRUS (RSV)</td></tr><tr><td style=\"white-space:nowrap\">90977<a name=\"mimic-microbiology-organism-90977\"> </a></td><td>PHIALEMONIUM INFLATUM</td></tr><tr><td style=\"white-space:nowrap\">90279<a name=\"mimic-microbiology-organism-90279\"> </a></td><td>SHIGELLA BOYDII</td></tr><tr><td style=\"white-space:nowrap\">80137<a name=\"mimic-microbiology-organism-80137\"> </a></td><td>CANDIDA LUSITANIAE</td></tr><tr><td style=\"white-space:nowrap\">80288<a name=\"mimic-microbiology-organism-80288\"> </a></td><td>CANDIDA KRUSEI / CANDIDA INCONSPICUA</td></tr><tr><td style=\"white-space:nowrap\">90798<a name=\"mimic-microbiology-organism-90798\"> </a></td><td>ALLOIOCOCCUS OTITIS</td></tr><tr><td style=\"white-space:nowrap\">90411<a name=\"mimic-microbiology-organism-90411\"> </a></td><td>GIARDIA CYSTS</td></tr><tr><td style=\"white-space:nowrap\">90755<a name=\"mimic-microbiology-organism-90755\"> </a></td><td>STREPTOCOCCUS GALLOLYTICUS SSP. PASTEURIANUS (STREPTOCOCCUS BOVIS)</td></tr><tr><td style=\"white-space:nowrap\">90380<a name=\"mimic-microbiology-organism-90380\"> </a></td><td>SCOPULARIOPSIS SP.</td></tr><tr><td style=\"white-space:nowrap\">90466<a name=\"mimic-microbiology-organism-90466\"> </a></td><td>LACTOBACILLUS SALIVARIUS SS. SALIVARIUS</td></tr><tr><td style=\"white-space:nowrap\">80235<a name=\"mimic-microbiology-organism-80235\"> </a></td><td>STREPTOCOCCUS ANGINOSUS (MILLERI) GROUP</td></tr><tr><td style=\"white-space:nowrap\">80056<a name=\"mimic-microbiology-organism-80056\"> </a></td><td>GRAM POSITIVE RODS</td></tr><tr><td style=\"white-space:nowrap\">90710<a name=\"mimic-microbiology-organism-90710\"> </a></td><td>SYTALIDIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80239<a name=\"mimic-microbiology-organism-80239\"> </a></td><td>ASPERGILLUS SP. NOT FUMIGATUS, FLAVUS OR NIGER</td></tr><tr><td style=\"white-space:nowrap\">90739<a name=\"mimic-microbiology-organism-90739\"> </a></td><td>GLOBICATELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80101<a name=\"mimic-microbiology-organism-80101\"> </a></td><td>CANDIDA KRUSEI</td></tr><tr><td style=\"white-space:nowrap\">90566<a name=\"mimic-microbiology-organism-90566\"> </a></td><td>NOCARDIA NOVA</td></tr><tr><td style=\"white-space:nowrap\">80037<a name=\"mimic-microbiology-organism-80037\"> </a></td><td>GRAM VARIABLE RODS</td></tr><tr><td style=\"white-space:nowrap\">80078<a name=\"mimic-microbiology-organism-80078\"> </a></td><td>ANAEROBIC GRAM POSITIVE COCCUS(I)</td></tr><tr><td style=\"white-space:nowrap\">90892<a name=\"mimic-microbiology-organism-90892\"> </a></td><td>KOCURIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90518<a name=\"mimic-microbiology-organism-90518\"> </a></td><td>ENTEROCOCCUS RAFFINOSUS</td></tr><tr><td style=\"white-space:nowrap\">90560<a name=\"mimic-microbiology-organism-90560\"> </a></td><td>MYCOBACTERIUM CELATUM</td></tr><tr><td style=\"white-space:nowrap\">80194<a name=\"mimic-microbiology-organism-80194\"> </a></td><td>ACINETOBACTER BAUMANNII</td></tr><tr><td style=\"white-space:nowrap\">90714<a name=\"mimic-microbiology-organism-90714\"> </a></td><td>CONIDIOBOLUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90598<a name=\"mimic-microbiology-organism-90598\"> </a></td><td>EXOPHIALA (WANGIELLA) DERMATITIDIS</td></tr><tr><td style=\"white-space:nowrap\">90581<a name=\"mimic-microbiology-organism-90581\"> </a></td><td>EXOPHIALA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90733<a name=\"mimic-microbiology-organism-90733\"> </a></td><td>PEPTONIPHILUS (PEPTOSTREPTOCOCCUS) SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90537<a name=\"mimic-microbiology-organism-90537\"> </a></td><td>SPHINGOBACTERIUM MULTIVORUM</td></tr><tr><td style=\"white-space:nowrap\">90873<a name=\"mimic-microbiology-organism-90873\"> </a></td><td>HAEMOPHILUS HAEMOLYTICUS</td></tr><tr><td style=\"white-space:nowrap\">80079<a name=\"mimic-microbiology-organism-80079\"> </a></td><td>ANAEROBIC GRAM POSITIVE ROD(S)</td></tr><tr><td style=\"white-space:nowrap\">90346<a name=\"mimic-microbiology-organism-90346\"> </a></td><td>PREVOTELLA MELANINOGENICA</td></tr><tr><td style=\"white-space:nowrap\">90711<a name=\"mimic-microbiology-organism-90711\"> </a></td><td>AEROMONAS HYDROPHILA COMPLEX</td></tr><tr><td style=\"white-space:nowrap\">80057<a name=\"mimic-microbiology-organism-80057\"> </a></td><td>GRAM NEGATIVE DIPLOCOCCI</td></tr><tr><td style=\"white-space:nowrap\">80232<a name=\"mimic-microbiology-organism-80232\"> </a></td><td>PRESUMPTIVE VEILLONELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90355<a name=\"mimic-microbiology-organism-90355\"> </a></td><td>STREPTOCOCCUS INTERMEDIUS</td></tr><tr><td style=\"white-space:nowrap\">80188<a name=\"mimic-microbiology-organism-80188\"> </a></td><td>SCEDOSPORIUM (APIOSPERMUM) BOYDII COMPLEX</td></tr><tr><td style=\"white-space:nowrap\">80108<a name=\"mimic-microbiology-organism-80108\"> </a></td><td>PROPIONIBACTERIUM ACNES</td></tr><tr><td style=\"white-space:nowrap\">80021<a name=\"mimic-microbiology-organism-80021\"> </a></td><td>SHIGELLA FLEXNERI</td></tr><tr><td style=\"white-space:nowrap\">80128<a name=\"mimic-microbiology-organism-80128\"> </a></td><td>FUSOBACTERIUM NUCLEATUM</td></tr><tr><td style=\"white-space:nowrap\">90728<a name=\"mimic-microbiology-organism-90728\"> </a></td><td>SERRATIA LIQUEFACIENS COMPLEX</td></tr><tr><td style=\"white-space:nowrap\">80238<a name=\"mimic-microbiology-organism-80238\"> </a></td><td>CLOSTRIDIUM SPECIES NOT C. PERFRINGENS OR C. SEPTICUM</td></tr><tr><td style=\"white-space:nowrap\">90484<a name=\"mimic-microbiology-organism-90484\"> </a></td><td>SALMONELLA ORANIENBURG</td></tr><tr><td style=\"white-space:nowrap\">90893<a name=\"mimic-microbiology-organism-90893\"> </a></td><td>PAENIBACILLUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80184<a name=\"mimic-microbiology-organism-80184\"> </a></td><td>ENTEROCOCCUS GALLINARUM</td></tr><tr><td style=\"white-space:nowrap\">90491<a name=\"mimic-microbiology-organism-90491\"> </a></td><td>ULOCLADIUM SP.</td></tr><tr><td style=\"white-space:nowrap\">80212<a name=\"mimic-microbiology-organism-80212\"> </a></td><td>PORPHYROMONAS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90526<a name=\"mimic-microbiology-organism-90526\"> </a></td><td>PARAINFLUENZA VIRUS TYPE 2</td></tr><tr><td style=\"white-space:nowrap\">80191<a name=\"mimic-microbiology-organism-80191\"> </a></td><td>HAEMOPHILUS INFLUENZAE, BETA-LACTAMASE POSITIVE</td></tr><tr><td style=\"white-space:nowrap\">90727<a name=\"mimic-microbiology-organism-90727\"> </a></td><td>POSITIVE FOR HERPES SIMPLEX (HSV)</td></tr><tr><td style=\"white-space:nowrap\">80090<a name=\"mimic-microbiology-organism-80090\"> </a></td><td>SERRATIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80151<a name=\"mimic-microbiology-organism-80151\"> </a></td><td>CITROBACTER KOSERI</td></tr><tr><td style=\"white-space:nowrap\">80063<a name=\"mimic-microbiology-organism-80063\"> </a></td><td>ASPERGILLUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90439<a name=\"mimic-microbiology-organism-90439\"> </a></td><td>CUNNINGHAMELLA SP.</td></tr><tr><td style=\"white-space:nowrap\">80281<a name=\"mimic-microbiology-organism-80281\"> </a></td><td>BACILLUS SPECIES; NOT ANTHRACIS</td></tr><tr><td style=\"white-space:nowrap\">80126<a name=\"mimic-microbiology-organism-80126\"> </a></td><td>CLADOSPORIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90848<a name=\"mimic-microbiology-organism-90848\"> </a></td><td>KOCURIA KRISTINAE</td></tr><tr><td style=\"white-space:nowrap\">80024<a name=\"mimic-microbiology-organism-80024\"> </a></td><td>STAPHYLOCOCCUS EPIDERMIDIS</td></tr><tr><td style=\"white-space:nowrap\">80031<a name=\"mimic-microbiology-organism-80031\"> </a></td><td>MORAXELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80233<a name=\"mimic-microbiology-organism-80233\"> </a></td><td>PRESUMPTIVE PEPTOSTREPTOCOCCUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80162<a name=\"mimic-microbiology-organism-80162\"> </a></td><td>STAPHYLOCOCCUS LUGDUNENSIS</td></tr><tr><td style=\"white-space:nowrap\">90754<a name=\"mimic-microbiology-organism-90754\"> </a></td><td>PASTEURELLA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90656<a name=\"mimic-microbiology-organism-90656\"> </a></td><td>SPHINGOMONAS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80293<a name=\"mimic-microbiology-organism-80293\"> </a></td><td>POSITIVE FOR METHICILLIN RESISTANT STAPH AUREUS</td></tr><tr><td style=\"white-space:nowrap\">90689<a name=\"mimic-microbiology-organism-90689\"> </a></td><td>SALMONELLA KIAMBU</td></tr><tr><td style=\"white-space:nowrap\">80117<a name=\"mimic-microbiology-organism-80117\"> </a></td><td>AUREOBASIDIUM PULLULANS</td></tr><tr><td style=\"white-space:nowrap\">90883<a name=\"mimic-microbiology-organism-90883\"> </a></td><td>PERONEUTYPA SCOPARIA</td></tr><tr><td style=\"white-space:nowrap\">80029<a name=\"mimic-microbiology-organism-80029\"> </a></td><td>PSEUDOMONAS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90353<a name=\"mimic-microbiology-organism-90353\"> </a></td><td>MYCOBACTERIUM SCROFULACEUM</td></tr><tr><td style=\"white-space:nowrap\">90536<a name=\"mimic-microbiology-organism-90536\"> </a></td><td>ESCHERICHIA COLI O157:H7</td></tr><tr><td style=\"white-space:nowrap\">90869<a name=\"mimic-microbiology-organism-90869\"> </a></td><td>STREPTOCOCCUS CONSTELLATUS SSP. CONSTELLATUS</td></tr><tr><td style=\"white-space:nowrap\">80257<a name=\"mimic-microbiology-organism-80257\"> </a></td><td>POSITIVE FOR INFLUENZA B VIRAL ANTIGEN</td></tr><tr><td style=\"white-space:nowrap\">90519<a name=\"mimic-microbiology-organism-90519\"> </a></td><td>LEUCONOSTOC MESENTEROIDES</td></tr><tr><td style=\"white-space:nowrap\">90862<a name=\"mimic-microbiology-organism-90862\"> </a></td><td>MYCOBACTERIUM MARSEILLENSE</td></tr><tr><td style=\"white-space:nowrap\">90854<a name=\"mimic-microbiology-organism-90854\"> </a></td><td>DESULFOVIBRIO LEGALLII</td></tr><tr><td style=\"white-space:nowrap\">80159<a name=\"mimic-microbiology-organism-80159\"> </a></td><td>MYCOBACTERIUM TUBERCULOSIS COMPLEX</td></tr><tr><td style=\"white-space:nowrap\">90834<a name=\"mimic-microbiology-organism-90834\"> </a></td><td>ASPERGILLUS FUMIGATUS COMPLEX</td></tr><tr><td style=\"white-space:nowrap\">90283<a name=\"mimic-microbiology-organism-90283\"> </a></td><td>SALMONELLA TYPHI</td></tr><tr><td style=\"white-space:nowrap\">90559<a name=\"mimic-microbiology-organism-90559\"> </a></td><td>ESCHERICHIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90847<a name=\"mimic-microbiology-organism-90847\"> </a></td><td>CUTIBACTERIUM AVIDUM</td></tr><tr><td style=\"white-space:nowrap\">90823<a name=\"mimic-microbiology-organism-90823\"> </a></td><td>LOMENTOSPORA PROLIFICANS (FORMERLY SCEDOSPORIUM PROLIFICANS)</td></tr><tr><td style=\"white-space:nowrap\">80067<a name=\"mimic-microbiology-organism-80067\"> </a></td><td>NOCARDIA ASTEROIDES</td></tr><tr><td style=\"white-space:nowrap\">90872<a name=\"mimic-microbiology-organism-90872\"> </a></td><td>STREPTOCOCCUS INFANTARIUS SSP. COLI (STR. LUTETIENSIS)</td></tr><tr><td style=\"white-space:nowrap\">90399<a name=\"mimic-microbiology-organism-90399\"> </a></td><td>SALMONELLA TYPHIMURIUM</td></tr><tr><td style=\"white-space:nowrap\">90822<a name=\"mimic-microbiology-organism-90822\"> </a></td><td>MYCOBACTERIUM MAGERITENSE</td></tr><tr><td style=\"white-space:nowrap\">80131<a name=\"mimic-microbiology-organism-80131\"> </a></td><td>SALMONELLA HADAR</td></tr><tr><td style=\"white-space:nowrap\">90830<a name=\"mimic-microbiology-organism-90830\"> </a></td><td>STREPTOCOCCUS GORDONII</td></tr><tr><td style=\"white-space:nowrap\">80312<a name=\"mimic-microbiology-organism-80312\"> </a></td><td>PSEUDOMONAS PUTIDA/FLUORESCENS</td></tr><tr><td style=\"white-space:nowrap\">90722<a name=\"mimic-microbiology-organism-90722\"> </a></td><td>POSITIVE FOR PARAINFLUENZA TYPE 2</td></tr><tr><td style=\"white-space:nowrap\">90294<a name=\"mimic-microbiology-organism-90294\"> </a></td><td>PLESIOMONAS SHIGELLOIDES</td></tr><tr><td style=\"white-space:nowrap\">90297<a name=\"mimic-microbiology-organism-90297\"> </a></td><td>VIBRIO PARAHAEMOLYTICUS</td></tr><tr><td style=\"white-space:nowrap\">80118<a name=\"mimic-microbiology-organism-80118\"> </a></td><td>STREPTOCOCCUS SALIVARIUS</td></tr><tr><td style=\"white-space:nowrap\">90746<a name=\"mimic-microbiology-organism-90746\"> </a></td><td>STAPHYLOCOCCUS WARNERI</td></tr><tr><td style=\"white-space:nowrap\">80134<a name=\"mimic-microbiology-organism-80134\"> </a></td><td>ENDOLIMAX NANA</td></tr><tr><td style=\"white-space:nowrap\">90875<a name=\"mimic-microbiology-organism-90875\"> </a></td><td>ATOPOBIUM RIMAE</td></tr><tr><td style=\"white-space:nowrap\">90464<a name=\"mimic-microbiology-organism-90464\"> </a></td><td>SALMONELLA JAVIANA</td></tr><tr><td style=\"white-space:nowrap\">90403<a name=\"mimic-microbiology-organism-90403\"> </a></td><td>ESCHERICHIA VULNERIS</td></tr><tr><td style=\"white-space:nowrap\">90753<a name=\"mimic-microbiology-organism-90753\"> </a></td><td>IXODES SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80082<a name=\"mimic-microbiology-organism-80082\"> </a></td><td>BACILLUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80115<a name=\"mimic-microbiology-organism-80115\"> </a></td><td>PROPIONIBACTERIUM SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90735<a name=\"mimic-microbiology-organism-90735\"> </a></td><td>AGGREGATIBACTER SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80202<a name=\"mimic-microbiology-organism-80202\"> </a></td><td>LEGIONELLA PNEUMOPHILA </td></tr><tr><td style=\"white-space:nowrap\">90762<a name=\"mimic-microbiology-organism-90762\"> </a></td><td>NEOSCYTALIDIUM DIMIDIATUM</td></tr><tr><td style=\"white-space:nowrap\">80089<a name=\"mimic-microbiology-organism-80089\"> </a></td><td>GAMMA(I.E. NON-HEMOLYTIC) STREPTOCOCCUS</td></tr><tr><td style=\"white-space:nowrap\">80308<a name=\"mimic-microbiology-organism-80308\"> </a></td><td>POSITIVE FOR CYTOMEGALOVIRUS</td></tr><tr><td style=\"white-space:nowrap\">90852<a name=\"mimic-microbiology-organism-90852\"> </a></td><td>BIFIDOBACTERIUM LONGUM</td></tr><tr><td style=\"white-space:nowrap\">90425<a name=\"mimic-microbiology-organism-90425\"> </a></td><td>DIENTAMOEBA FRAGILIS</td></tr><tr><td style=\"white-space:nowrap\">80043<a name=\"mimic-microbiology-organism-80043\"> </a></td><td>HAEMOPHILUS PARAINFLUENZAE</td></tr><tr><td style=\"white-space:nowrap\">90879<a name=\"mimic-microbiology-organism-90879\"> </a></td><td>PENICILLIUM FELLUTANUM</td></tr><tr><td style=\"white-space:nowrap\">80062<a name=\"mimic-microbiology-organism-80062\"> </a></td><td>ASPERGILLUS NIGER</td></tr><tr><td style=\"white-space:nowrap\">80091<a name=\"mimic-microbiology-organism-80091\"> </a></td><td>LISTERIA MONOCYTOGENES</td></tr><tr><td style=\"white-space:nowrap\">90434<a name=\"mimic-microbiology-organism-90434\"> </a></td><td>SALMONELLA SAINTPAUL</td></tr><tr><td style=\"white-space:nowrap\">90636<a name=\"mimic-microbiology-organism-90636\"> </a></td><td>IODAMOEBA BUTSCHLII</td></tr><tr><td style=\"white-space:nowrap\">90429<a name=\"mimic-microbiology-organism-90429\"> </a></td><td>HERPES SIMPLEX VIRUS</td></tr><tr><td style=\"white-space:nowrap\">90438<a name=\"mimic-microbiology-organism-90438\"> </a></td><td>FRANCISELLA TULARENSIS</td></tr><tr><td style=\"white-space:nowrap\">90841<a name=\"mimic-microbiology-organism-90841\"> </a></td><td>SAPROCHAETE (FORMERLY GEOTRICHUM) CAPITATA</td></tr><tr><td style=\"white-space:nowrap\">80084<a name=\"mimic-microbiology-organism-80084\"> </a></td><td>PROTEUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90541<a name=\"mimic-microbiology-organism-90541\"> </a></td><td>COMAMONAS TESTOSTERONI</td></tr><tr><td style=\"white-space:nowrap\">90858<a name=\"mimic-microbiology-organism-90858\"> </a></td><td>NEOASCOCHYTA DESMAZIERI</td></tr><tr><td style=\"white-space:nowrap\">90276<a name=\"mimic-microbiology-organism-90276\"> </a></td><td>YERSINIA ENTEROCOLITICA</td></tr><tr><td style=\"white-space:nowrap\">80305<a name=\"mimic-microbiology-organism-80305\"> </a></td><td>PSEUDOMONAS LUTEOLA</td></tr><tr><td style=\"white-space:nowrap\">80034<a name=\"mimic-microbiology-organism-80034\"> </a></td><td>PASTEURELLA MULTOCIDA</td></tr><tr><td style=\"white-space:nowrap\">80266<a name=\"mimic-microbiology-organism-80266\"> </a></td><td>PANTOEA (ENTEROBACTER) AGGLOMERANS</td></tr><tr><td style=\"white-space:nowrap\">90669<a name=\"mimic-microbiology-organism-90669\"> </a></td><td>SALMONELLA TELELKEBIR</td></tr><tr><td style=\"white-space:nowrap\">90880<a name=\"mimic-microbiology-organism-90880\"> </a></td><td>CUTIBACTERIUM (PROPIONIBACTERIUM) ACNES</td></tr><tr><td style=\"white-space:nowrap\">90894<a name=\"mimic-microbiology-organism-90894\"> </a></td><td>CORYNEBACTERIUM GLUCURONOLYTICUM</td></tr><tr><td style=\"white-space:nowrap\">90899<a name=\"mimic-microbiology-organism-90899\"> </a></td><td>CORYNEBACTERIUM PYRUVICIPRODUCENS</td></tr><tr><td style=\"white-space:nowrap\">90860<a name=\"mimic-microbiology-organism-90860\"> </a></td><td>DESULFOVIBRIO SP.</td></tr><tr><td style=\"white-space:nowrap\">80099<a name=\"mimic-microbiology-organism-80099\"> </a></td><td>CANDIDA PARAPSILOSIS</td></tr><tr><td style=\"white-space:nowrap\">90459<a name=\"mimic-microbiology-organism-90459\"> </a></td><td>NEISSERIA MUCOSA</td></tr><tr><td style=\"white-space:nowrap\">90789<a name=\"mimic-microbiology-organism-90789\"> </a></td><td>MYCOBACTERIUM ABSCESSUS GROUP</td></tr><tr><td style=\"white-space:nowrap\">90813<a name=\"mimic-microbiology-organism-90813\"> </a></td><td>ACINETOBACTER RADIORESISTENS</td></tr><tr><td style=\"white-space:nowrap\">80174<a name=\"mimic-microbiology-organism-80174\"> </a></td><td>CURVULARIA SP.</td></tr><tr><td style=\"white-space:nowrap\">80068<a name=\"mimic-microbiology-organism-80068\"> </a></td><td>NOCARDIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90849<a name=\"mimic-microbiology-organism-90849\"> </a></td><td>S. AUREUS POSITIVE; MRSA NEGATIVE</td></tr><tr><td style=\"white-space:nowrap\">80242<a name=\"mimic-microbiology-organism-80242\"> </a></td><td>RESEMBLING MICROCOCCUS/STOMATOCOCCUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90507<a name=\"mimic-microbiology-organism-90507\"> </a></td><td>SALMONELLA STANLEY</td></tr><tr><td style=\"white-space:nowrap\">90717<a name=\"mimic-microbiology-organism-90717\"> </a></td><td>LACTOBACILLUS GASSERI</td></tr><tr><td style=\"white-space:nowrap\">80132<a name=\"mimic-microbiology-organism-80132\"> </a></td><td>ENTAMOEBA COLI</td></tr><tr><td style=\"white-space:nowrap\">80133<a name=\"mimic-microbiology-organism-80133\"> </a></td><td>GIARDIA LAMBLIA</td></tr><tr><td style=\"white-space:nowrap\">80215<a name=\"mimic-microbiology-organism-80215\"> </a></td><td>ASPERGILLUS NIDULANS</td></tr><tr><td style=\"white-space:nowrap\">90638<a name=\"mimic-microbiology-organism-90638\"> </a></td><td>RARE BLASTOCYSTIS HOMINIS</td></tr><tr><td style=\"white-space:nowrap\">80136<a name=\"mimic-microbiology-organism-80136\"> </a></td><td>ACTINOMYCES ODONTOLYTICUS</td></tr><tr><td style=\"white-space:nowrap\">90793<a name=\"mimic-microbiology-organism-90793\"> </a></td><td>EMMONSIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90641<a name=\"mimic-microbiology-organism-90641\"> </a></td><td>MYCOBACTERIUM ABSCESSUS</td></tr><tr><td style=\"white-space:nowrap\">80098<a name=\"mimic-microbiology-organism-80098\"> </a></td><td>CITROBACTER SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90349<a name=\"mimic-microbiology-organism-90349\"> </a></td><td>MYCOBACTERIUM TERRAE</td></tr><tr><td style=\"white-space:nowrap\">80209<a name=\"mimic-microbiology-organism-80209\"> </a></td><td>LISTERIA SPECIES</td></tr><tr><td style=\"white-space:nowrap\">90721<a name=\"mimic-microbiology-organism-90721\"> </a></td><td>POSITIVE FOR PARAINFLUENZA TYPE 1</td></tr><tr><td style=\"white-space:nowrap\">90730<a name=\"mimic-microbiology-organism-90730\"> </a></td><td>BURKHOLDERIA XENOVORANS</td></tr><tr><td style=\"white-space:nowrap\">90806<a name=\"mimic-microbiology-organism-90806\"> </a></td><td>SHEWANELLA ALGAE</td></tr><tr><td style=\"white-space:nowrap\">80088<a name=\"mimic-microbiology-organism-80088\"> </a></td><td>LACTOBACILLUS SPECIES</td></tr><tr><td style=\"white-space:nowrap\">80279<a name=\"mimic-microbiology-organism-80279\"> </a></td><td>STREPTOCOCCUS MILLERI GROUP</td></tr><tr><td style=\"white-space:nowrap\">80263<a name=\"mimic-microbiology-organism-80263\"> </a></td><td>ORGANISM</td></tr><tr><td style=\"white-space:nowrap\">90433<a name=\"mimic-microbiology-organism-90433\"> </a></td><td>MYCOBACTERIUM FLAVESCENS</td></tr><tr><td style=\"white-space:nowrap\">90726<a name=\"mimic-microbiology-organism-90726\"> </a></td><td>POSITIVE FOR PARAINFLUENZA VIRUS</td></tr><tr><td style=\"white-space:nowrap\">80230<a name=\"mimic-microbiology-organism-80230\"> </a></td><td>POSITIVE FOR INFLUENZA A VIRAL ANTIGEN</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-microbiology-organism"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.0"] ; # 
+  fhir:name [ fhir:v "MimicMicrobiologyOrganism"] ; # 
+  fhir:title [ fhir:v "MimicMicrobiologyOrganism"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-21T13:59:43-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The microbiology organism being tested in MIMIC"] ; # 
+  fhir:valueSet [
+     fhir:v "http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-organism"^^xsd:anyURI ;
+     fhir:link <http://mimic.mit.edu/fhir/mimic/ValueSet/mimic-microbiology-organism>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "90795" ] ;
+     fhir:display [ fhir:v "CANDIDA FAMATA" ]
+  ] [
+     fhir:code [ fhir:v "80040" ] ;
+     fhir:display [ fhir:v "NEISSERIA GONORRHOEAE" ]
+  ] [
+     fhir:code [ fhir:v "90645" ] ;
+     fhir:display [ fhir:v "PINWORM EGG(S) SEEN" ]
+  ] [
+     fhir:code [ fhir:v "90783" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS BOVIS GROUP" ]
+  ] [
+     fhir:code [ fhir:v "90846" ] ;
+     fhir:display [ fhir:v "CUTIBACTERIUM ACNES" ]
+  ] [
+     fhir:code [ fhir:v "80237" ] ;
+     fhir:display [ fhir:v "PRESUMPTIVE CLOSTRIDIUM SEPTICUM" ]
+  ] [
+     fhir:code [ fhir:v "90766" ] ;
+     fhir:display [ fhir:v "SLACKIA EXIGUA" ]
+  ] [
+     fhir:code [ fhir:v "90845" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM LENTIFLAVUM" ]
+  ] [
+     fhir:code [ fhir:v "80012" ] ;
+     fhir:display [ fhir:v "CRONOBACTER (ENTEROBACTER) SAKAZAKII" ]
+  ] [
+     fhir:code [ fhir:v "90655" ] ;
+     fhir:display [ fhir:v "ROSEOMONAS MUCOSA" ]
+  ] [
+     fhir:code [ fhir:v "90831" ] ;
+     fhir:display [ fhir:v "MUCOR IRREGULARIS" ]
+  ] [
+     fhir:code [ fhir:v "80185" ] ;
+     fhir:display [ fhir:v "CAMPYLOBACTER JEJUNI" ]
+  ] [
+     fhir:code [ fhir:v "80200" ] ;
+     fhir:display [ fhir:v "CHAETOMIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90386" ] ;
+     fhir:display [ fhir:v "ACTINOMYCES NAESLUNDII" ]
+  ] [
+     fhir:code [ fhir:v "80183" ] ;
+     fhir:display [ fhir:v "GEMELLA MORBILLORUM" ]
+  ] [
+     fhir:code [ fhir:v "80278" ] ;
+     fhir:display [ fhir:v "DEMATIACEOUS MOLD" ]
+  ] [
+     fhir:code [ fhir:v "90657" ] ;
+     fhir:display [ fhir:v "SALMONELLA ANATUM" ]
+  ] [
+     fhir:code [ fhir:v "80039" ] ;
+     fhir:display [ fhir:v "CLOSTRIDIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90302" ] ;
+     fhir:display [ fhir:v "ANAEROBIC GRAM NEGATIVE COCCI" ]
+  ] [
+     fhir:code [ fhir:v "80207" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80075" ] ;
+     fhir:display [ fhir:v "YEAST" ]
+  ] [
+     fhir:code [ fhir:v "90489" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM SZULGAI" ]
+  ] [
+     fhir:code [ fhir:v "80065" ] ;
+     fhir:display [ fhir:v "CRYPTOCOCCUS NEOFORMANS" ]
+  ] [
+     fhir:code [ fhir:v "90331" ] ;
+     fhir:display [ fhir:v "SERRATIA ODORIFERA" ]
+  ] [
+     fhir:code [ fhir:v "80291" ] ;
+     fhir:display [ fhir:v "BASIDIOMYCETE" ]
+  ] [
+     fhir:code [ fhir:v "90501" ] ;
+     fhir:display [ fhir:v "PEPTOSTREPTOCOCCUS SP." ]
+  ] [
+     fhir:code [ fhir:v "80125" ] ;
+     fhir:display [ fhir:v "FUSOBACTERIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90802" ] ;
+     fhir:display [ fhir:v "ALACALIGENES SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90815" ] ;
+     fhir:display [ fhir:v "RAOULTELLA PLANTICOLA" ]
+  ] [
+     fhir:code [ fhir:v "90809" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS PSEUDINTERMEDIUS" ]
+  ] [
+     fhir:code [ fhir:v "90723" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR PARAINFLUENZA TYPE 3" ]
+  ] [
+     fhir:code [ fhir:v "80141" ] ;
+     fhir:display [ fhir:v "CORYNEBACTERIUM JEIKEIUM (C.D.C. GROUP JK)" ]
+  ] [
+     fhir:code [ fhir:v "90592" ] ;
+     fhir:display [ fhir:v "TSUKAMURELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90427" ] ;
+     fhir:display [ fhir:v "SALMONELLA THOMPSON" ]
+  ] [
+     fhir:code [ fhir:v "80262" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS, COAGULASE NEGATIVE, PRESUMPTIVELY NOT S. SAPROPHYTICUS" ]
+  ] [
+     fhir:code [ fhir:v "90378" ] ;
+     fhir:display [ fhir:v "ROTHIA DENTOCARIOSA" ]
+  ] [
+     fhir:code [ fhir:v "80119" ] ;
+     fhir:display [ fhir:v "NUTRITIONALLY VARIANT STREPTOCOCCUS" ]
+  ] [
+     fhir:code [ fhir:v "80201" ] ;
+     fhir:display [ fhir:v "CITROBACTER KOSERI" ]
+  ] [
+     fhir:code [ fhir:v "90803" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS PORCINUS" ]
+  ] [
+     fhir:code [ fhir:v "80156" ] ;
+     fhir:display [ fhir:v "CORYNEBACTERIUM STRIATUM" ]
+  ] [
+     fhir:code [ fhir:v "90426" ] ;
+     fhir:display [ fhir:v "TAENIA SAGINATA" ]
+  ] [
+     fhir:code [ fhir:v "80210" ] ;
+     fhir:display [ fhir:v "CAPNOCYTOPHAGA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80268" ] ;
+     fhir:display [ fhir:v "PITHOMYCES SP." ]
+  ] [
+     fhir:code [ fhir:v "80145" ] ;
+     fhir:display [ fhir:v "HERPES SIMPLEX VIRUS TYPE 2" ]
+  ] [
+     fhir:code [ fhir:v "90688" ] ;
+     fhir:display [ fhir:v "ERYSIPELOTHRIX RHUSIOPATHIAE" ]
+  ] [
+     fhir:code [ fhir:v "80218" ] ;
+     fhir:display [ fhir:v "ENTEROBACTERIACEAE" ]
+  ] [
+     fhir:code [ fhir:v "90890" ] ;
+     fhir:display [ fhir:v "BREVUNDIMONAS DIMINUTA/VESICULARIS" ]
+  ] [
+     fhir:code [ fhir:v "90785" ] ;
+     fhir:display [ fhir:v "MIXED BACTERIAL FLORA" ]
+  ] [
+     fhir:code [ fhir:v "80180" ] ;
+     fhir:display [ fhir:v "PARAINFLUENZA VIRUS TYPE 1" ]
+  ] [
+     fhir:code [ fhir:v "90574" ] ;
+     fhir:display [ fhir:v "ENTEROVIRUS" ]
+  ] [
+     fhir:code [ fhir:v "80198" ] ;
+     fhir:display [ fhir:v "HAEMOPHILUS INFLUENZAE" ]
+  ] [
+     fhir:code [ fhir:v "80205" ] ;
+     fhir:display [ fhir:v "BACTEROIDES UREOLYTICUS GROUP" ]
+  ] [
+     fhir:code [ fhir:v "80019" ] ;
+     fhir:display [ fhir:v "PROVIDENCIA STUARTII" ]
+  ] [
+     fhir:code [ fhir:v "90884" ] ;
+     fhir:display [ fhir:v "CLOSTRIDIUM SAUDIENSE" ]
+  ] [
+     fhir:code [ fhir:v "80020" ] ;
+     fhir:display [ fhir:v "PROVIDENCIA RETTGERI" ]
+  ] [
+     fhir:code [ fhir:v "80250" ] ;
+     fhir:display [ fhir:v "MODERATE BLASTOCYSTIS HOMINIS" ]
+  ] [
+     fhir:code [ fhir:v "80249" ] ;
+     fhir:display [ fhir:v "FEW BLASTOCYSTIS HOMINIS" ]
+  ] [
+     fhir:code [ fhir:v "80285" ] ;
+     fhir:display [ fhir:v "CANDIDA KEFYR" ]
+  ] [
+     fhir:code [ fhir:v "90870" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS SALIVARIUS SSP. SALIVARIUS" ]
+  ] [
+     fhir:code [ fhir:v "90360" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS UBERIS" ]
+  ] [
+     fhir:code [ fhir:v "80236" ] ;
+     fhir:display [ fhir:v "PRESUMPTIVE CLOSTRIDIUM PERFRINGENS" ]
+  ] [
+     fhir:code [ fhir:v "80148" ] ;
+     fhir:display [ fhir:v "ASPERGILLUS VERSICOLOR GROUP " ]
+  ] [
+     fhir:code [ fhir:v "90502" ] ;
+     fhir:display [ fhir:v "TRICHOSPORON SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80121" ] ;
+     fhir:display [ fhir:v "BACTEROIDES FRAGILIS" ]
+  ] [
+     fhir:code [ fhir:v "80059" ] ;
+     fhir:display [ fhir:v "CANDIDA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80168" ] ;
+     fhir:display [ fhir:v "ENTEROCOCCUS FAECIUM" ]
+  ] [
+     fhir:code [ fhir:v "90705" ] ;
+     fhir:display [ fhir:v "PSEUDOMONAS ORYZIHABITANS" ]
+  ] [
+     fhir:code [ fhir:v "90772" ] ;
+     fhir:display [ fhir:v "GRAPHIUM EUMORPHUM" ]
+  ] [
+     fhir:code [ fhir:v "90821" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM CHIMAERA INTRACELLULARE GROUP" ]
+  ] [
+     fhir:code [ fhir:v "80150" ] ;
+     fhir:display [ fhir:v "TRICHODERMA SP." ]
+  ] [
+     fhir:code [ fhir:v "90807" ] ;
+     fhir:display [ fhir:v "ACHROMOBACTER SP." ]
+  ] [
+     fhir:code [ fhir:v "90584" ] ;
+     fhir:display [ fhir:v "ANAEROBIC GRAM POSITIVE BACTERIA" ]
+  ] [
+     fhir:code [ fhir:v "90744" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS HOMINIS" ]
+  ] [
+     fhir:code [ fhir:v "90513" ] ;
+     fhir:display [ fhir:v "TRICHOMONAS VAGINALIS" ]
+  ] [
+     fhir:code [ fhir:v "90532" ] ;
+     fhir:display [ fhir:v "CAMPYLOBACTER COLI" ]
+  ] [
+     fhir:code [ fhir:v "90498" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM XENOPI" ]
+  ] [
+     fhir:code [ fhir:v "90453" ] ;
+     fhir:display [ fhir:v "ESCHERICHIA HERMANNII" ]
+  ] [
+     fhir:code [ fhir:v "90856" ] ;
+     fhir:display [ fhir:v "NEGATIVE" ]
+  ] [
+     fhir:code [ fhir:v "80073" ] ;
+     fhir:display [ fhir:v "GRAM NEGATIVE ROD #4" ]
+  ] [
+     fhir:code [ fhir:v "90530" ] ;
+     fhir:display [ fhir:v "PSEUDOMONAS FLUORESCENS" ]
+  ] [
+     fhir:code [ fhir:v "90865" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS LENTUS" ]
+  ] [
+     fhir:code [ fhir:v "80229" ] ;
+     fhir:display [ fhir:v "PRESUMPTIVE STREPTOCOCCUS BOVIS" ]
+  ] [
+     fhir:code [ fhir:v "90336" ] ;
+     fhir:display [ fhir:v "CANDIDA RUGOSA" ]
+  ] [
+     fhir:code [ fhir:v "90811" ] ;
+     fhir:display [ fhir:v "COCCIDIOIDES IMMITIS/POSADASII" ]
+  ] [
+     fhir:code [ fhir:v "80216" ] ;
+     fhir:display [ fhir:v "ACINETOBACTER SP." ]
+  ] [
+     fhir:code [ fhir:v "90794" ] ;
+     fhir:display [ fhir:v "BREVIBACTERIUM CASEI" ]
+  ] [
+     fhir:code [ fhir:v "90715" ] ;
+     fhir:display [ fhir:v "SALMONELLA BARRANQUILLA" ]
+  ] [
+     fhir:code [ fhir:v "90708" ] ;
+     fhir:display [ fhir:v "BETA STREP NOT GROUP A, B OR ANGINOSUS (MILLERI)" ]
+  ] [
+     fhir:code [ fhir:v "90709" ] ;
+     fhir:display [ fhir:v "CHRYSEOBACTERIUM INDOLOGENES" ]
+  ] [
+     fhir:code [ fhir:v "90635" ] ;
+     fhir:display [ fhir:v "SALMONELLA OSLO" ]
+  ] [
+     fhir:code [ fhir:v "90461" ] ;
+     fhir:display [ fhir:v "KINGELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80052" ] ;
+     fhir:display [ fhir:v "ALPHA STREPTOCOCCI" ]
+  ] [
+     fhir:code [ fhir:v "80008" ] ;
+     fhir:display [ fhir:v "ENTEROBACTER CLOACAE" ]
+  ] [
+     fhir:code [ fhir:v "90359" ] ;
+     fhir:display [ fhir:v "NEISSERIA SUBFLAVA" ]
+  ] [
+     fhir:code [ fhir:v "90383" ] ;
+     fhir:display [ fhir:v "ACTINOBACILLUS ACTINOMYCETEMCOMITANS" ]
+  ] [
+     fhir:code [ fhir:v "80228" ] ;
+     fhir:display [ fhir:v "CANDIDA GLABRATA" ]
+  ] [
+     fhir:code [ fhir:v "80301" ] ;
+     fhir:display [ fhir:v "CHRYSEOBACTERIUM MENINGOSEPTICUM" ]
+  ] [
+     fhir:code [ fhir:v "80113" ] ;
+     fhir:display [ fhir:v "ENTEROBACTER SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90350" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS MUTANS" ]
+  ] [
+     fhir:code [ fhir:v "90812" ] ;
+     fhir:display [ fhir:v "AEROCOCCUS URINAE" ]
+  ] [
+     fhir:code [ fhir:v "80095" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM FORTUITUM" ]
+  ] [
+     fhir:code [ fhir:v "90292" ] ;
+     fhir:display [ fhir:v "SPHINGOMONAS PAUCIMOBILIS" ]
+  ] [
+     fhir:code [ fhir:v "80064" ] ;
+     fhir:display [ fhir:v "PENICILLIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80265" ] ;
+     fhir:display [ fhir:v "2ND ISOLATE" ]
+  ] [
+     fhir:code [ fhir:v "80028" ] ;
+     fhir:display [ fhir:v "BURKHOLDERIA CEPACIA" ]
+  ] [
+     fhir:code [ fhir:v "80241" ] ;
+     fhir:display [ fhir:v "PROBABLE MICROCOCCUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80094" ] ;
+     fhir:display [ fhir:v "KLEBSIELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90757" ] ;
+     fhir:display [ fhir:v "ROSEOMONAS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90492" ] ;
+     fhir:display [ fhir:v "RHODOTORULA GLUTINIS" ]
+  ] [
+     fhir:code [ fhir:v "80259" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR M. TUBERCULOSIS BY MTD" ]
+  ] [
+     fhir:code [ fhir:v "90724" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR ADENOVIRUS" ]
+  ] [
+     fhir:code [ fhir:v "80140" ] ;
+     fhir:display [ fhir:v "BLASTOCYSTIS HOMINIS" ]
+  ] [
+     fhir:code [ fhir:v "80220" ] ;
+     fhir:display [ fhir:v "AFB GROWN IN CULTURE; ADDITIONAL INFORMATION TO FOLLOW" ]
+  ] [
+     fhir:code [ fhir:v "90392" ] ;
+     fhir:display [ fhir:v "ARCANOBACTERIUM HAEMOLYTICUM" ]
+  ] [
+     fhir:code [ fhir:v "90832" ] ;
+     fhir:display [ fhir:v "BACTEROIDES DOREI/VULGATUS" ]
+  ] [
+     fhir:code [ fhir:v "90698" ] ;
+     fhir:display [ fhir:v "HUMICOLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90771" ] ;
+     fhir:display [ fhir:v "OCHROBACTRUM INTERMEDIUM" ]
+  ] [
+     fhir:code [ fhir:v "80124" ] ;
+     fhir:display [ fhir:v "EXOPHIALA JEANSELMEI COMPLEX" ]
+  ] [
+     fhir:code [ fhir:v "90828" ] ;
+     fhir:display [ fhir:v "ZYGOSACCHAROMYCES FERMENTATI" ]
+  ] [
+     fhir:code [ fhir:v "90634" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR MICROSPORIDIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90606" ] ;
+     fhir:display [ fhir:v "CORYNEBACTERIUM ACCOLANS (CDC GROUP 6)" ]
+  ] [
+     fhir:code [ fhir:v "90882" ] ;
+     fhir:display [ fhir:v "KLEBSIELLA (RAOULTELLA) PLANTICOLA" ]
+  ] [
+     fhir:code [ fhir:v "80007" ] ;
+     fhir:display [ fhir:v "ENTEROBACTER AEROGENES" ]
+  ] [
+     fhir:code [ fhir:v "90447" ] ;
+     fhir:display [ fhir:v "ENTEROBIUS VERMICULARIS" ]
+  ] [
+     fhir:code [ fhir:v "80100" ] ;
+     fhir:display [ fhir:v "CANDIDA GUILLIERMONDII" ]
+  ] [
+     fhir:code [ fhir:v "90444" ] ;
+     fhir:display [ fhir:v "EPIDERMOPHYTON FLOCCOSUM" ]
+  ] [
+     fhir:code [ fhir:v "90287" ] ;
+     fhir:display [ fhir:v "ACINETOBACTER LWOFFII" ]
+  ] [
+     fhir:code [ fhir:v "90843" ] ;
+     fhir:display [ fhir:v "CITROBACTER SEDLAKII" ]
+  ] [
+     fhir:code [ fhir:v "80011" ] ;
+     fhir:display [ fhir:v "ENTEROBACTER GERGOVIAE" ]
+  ] [
+     fhir:code [ fhir:v "80311" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR HERPES SIMPLEX TYPE 2 (HSV2)" ]
+  ] [
+     fhir:code [ fhir:v "80264" ] ;
+     fhir:display [ fhir:v "ACTINOMYCETE" ]
+  ] [
+     fhir:code [ fhir:v "90457" ] ;
+     fhir:display [ fhir:v "AGROBACTERIUM RADIOBACTER" ]
+  ] [
+     fhir:code [ fhir:v "80289" ] ;
+     fhir:display [ fhir:v "MORAXELLA CATARRHALIS" ]
+  ] [
+     fhir:code [ fhir:v "80192" ] ;
+     fhir:display [ fhir:v "HAEMOPHILUS INFLUENZAE, BETA-LACTAMASE NEGATIVE" ]
+  ] [
+     fhir:code [ fhir:v "90706" ] ;
+     fhir:display [ fhir:v "CUNNINGHAMELLA BERTHOLLETIAE" ]
+  ] [
+     fhir:code [ fhir:v "90405" ] ;
+     fhir:display [ fhir:v "SALMONELLA MONTEVIDEO" ]
+  ] [
+     fhir:code [ fhir:v "80032" ] ;
+     fhir:display [ fhir:v "AEROMONAS HYDROPHILA" ]
+  ] [
+     fhir:code [ fhir:v "90667" ] ;
+     fhir:display [ fhir:v "TRICHOSPORON MUCOIDES" ]
+  ] [
+     fhir:code [ fhir:v "80294" ] ;
+     fhir:display [ fhir:v "BURKHOLDERIA CEPACIA GROUP" ]
+  ] [
+     fhir:code [ fhir:v "90773" ] ;
+     fhir:display [ fhir:v "GEMELLA HAEMOLYSANS" ]
+  ] [
+     fhir:code [ fhir:v "80165" ] ;
+     fhir:display [ fhir:v "TRICHOPHYTON SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90779" ] ;
+     fhir:display [ fhir:v "ACHROMOBACTER  DENTRIFICANS" ]
+  ] [
+     fhir:code [ fhir:v "80146" ] ;
+     fhir:display [ fhir:v "ADENOVIRUS" ]
+  ] [
+     fhir:code [ fhir:v "90494" ] ;
+     fhir:display [ fhir:v "ASPERGILLUS TERREUS" ]
+  ] [
+     fhir:code [ fhir:v "90406" ] ;
+     fhir:display [ fhir:v "SALMONELLA AGONA" ]
+  ] [
+     fhir:code [ fhir:v "90979" ] ;
+     fhir:display [ fhir:v "NEUROSPORA SITOPHILA (FORMERLY CHRYSONILLA SITOPHILA)" ]
+  ] [
+     fhir:code [ fhir:v "90778" ] ;
+     fhir:display [ fhir:v "ACHROMOBACTER SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80058" ] ;
+     fhir:display [ fhir:v "GRAM NEGATIVE ROD(S)" ]
+  ] [
+     fhir:code [ fhir:v "90896" ] ;
+     fhir:display [ fhir:v "WAUTERSIELLA FALSENII" ]
+  ] [
+     fhir:code [ fhir:v "80023" ] ;
+     fhir:display [ fhir:v "STAPH AUREUS COAG +" ]
+  ] [
+     fhir:code [ fhir:v "80155" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS, COAGULASE NEGATIVE" ]
+  ] [
+     fhir:code [ fhir:v "90968" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS ALACTOLYTICUS" ]
+  ] [
+     fhir:code [ fhir:v "90476" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM AVIUM" ]
+  ] [
+     fhir:code [ fhir:v "80086" ] ;
+     fhir:display [ fhir:v "ACIDFAST BACILLI" ]
+  ] [
+     fhir:code [ fhir:v "80223" ] ;
+     fhir:display [ fhir:v "PROBABLE ENTEROCOCCUS" ]
+  ] [
+     fhir:code [ fhir:v "90579" ] ;
+     fhir:display [ fhir:v "DIPHYLLOBOTHRIUM SP." ]
+  ] [
+     fhir:code [ fhir:v "80036" ] ;
+     fhir:display [ fhir:v "ANAEROBIC GRAM NEGATIVE ROD(S)" ]
+  ] [
+     fhir:code [ fhir:v "90824" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS SANGUINIS" ]
+  ] [
+     fhir:code [ fhir:v "80045" ] ;
+     fhir:display [ fhir:v "BETA STREPTOCOCCUS GROUP B" ]
+  ] [
+     fhir:code [ fhir:v "80070" ] ;
+     fhir:display [ fhir:v "GRAM NEGATIVE ROD #1" ]
+  ] [
+     fhir:code [ fhir:v "90620" ] ;
+     fhir:display [ fhir:v "TICK CONSISTENT WITH IXODES SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80274" ] ;
+     fhir:display [ fhir:v "NO GROWTH" ]
+  ] [
+     fhir:code [ fhir:v "90609" ] ;
+     fhir:display [ fhir:v "WORM" ]
+  ] [
+     fhir:code [ fhir:v "90362" ] ;
+     fhir:display [ fhir:v "VERTICILLIUM SP." ]
+  ] [
+     fhir:code [ fhir:v "80206" ] ;
+     fhir:display [ fhir:v "RHINOVIRUS" ]
+  ] [
+     fhir:code [ fhir:v "90500" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS SCHLEIFERI" ]
+  ] [
+     fhir:code [ fhir:v "80129" ] ;
+     fhir:display [ fhir:v "CLOSTRIDIUM SEPTICUM" ]
+  ] [
+     fhir:code [ fhir:v "90747" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS MITIS/ORALIS" ]
+  ] [
+     fhir:code [ fhir:v "80076" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS PNEUMONIAE" ]
+  ] [
+     fhir:code [ fhir:v "90585" ] ;
+     fhir:display [ fhir:v "PENICILLIUM MARNEFFEI" ]
+  ] [
+     fhir:code [ fhir:v "80240" ] ;
+     fhir:display [ fhir:v "PRESUMPTIVE FUSOBACTERIUM MORTIFERUM/VARIUM GROUP" ]
+  ] [
+     fhir:code [ fhir:v "80186" ] ;
+     fhir:display [ fhir:v "PSEUDALLESCHERIA BOYDII " ]
+  ] [
+     fhir:code [ fhir:v "90650" ] ;
+     fhir:display [ fhir:v "SCOPULARIOPSIS BREVICAULIS" ]
+  ] [
+     fhir:code [ fhir:v "80208" ] ;
+     fhir:display [ fhir:v "BURKHOLDERIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80217" ] ;
+     fhir:display [ fhir:v "ENTAMOEBA HISTOLYTICA/DISPAR" ]
+  ] [
+     fhir:code [ fhir:v "90418" ] ;
+     fhir:display [ fhir:v "SALMONELLA MUENCHEN" ]
+  ] [
+     fhir:code [ fhir:v "80071" ] ;
+     fhir:display [ fhir:v "GRAM NEGATIVE ROD #2" ]
+  ] [
+     fhir:code [ fhir:v "80175" ] ;
+     fhir:display [ fhir:v "VIRUS" ]
+  ] [
+     fhir:code [ fhir:v "90407" ] ;
+     fhir:display [ fhir:v "CLOSTRIDIUM INNOCUUM" ]
+  ] [
+     fhir:code [ fhir:v "90557" ] ;
+     fhir:display [ fhir:v "NOCARDIA OTITIDISCAVIARUM (CAVIAE)" ]
+  ] [
+     fhir:code [ fhir:v "90897" ] ;
+     fhir:display [ fhir:v "LACTOBACILLUS FERMENTUM" ]
+  ] [
+     fhir:code [ fhir:v "80026" ] ;
+     fhir:display [ fhir:v "PSEUDOMONAS AERUGINOSA" ]
+  ] [
+     fhir:code [ fhir:v "80122" ] ;
+     fhir:display [ fhir:v "KLUYVERA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90707" ] ;
+     fhir:display [ fhir:v "BETA STREP NOT GROUP A OR ANGINOSUS (MILLERI)" ]
+  ] [
+     fhir:code [ fhir:v "90749" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS SALIVARUS" ]
+  ] [
+     fhir:code [ fhir:v "80295" ] ;
+     fhir:display [ fhir:v "PRESUMPTIVE GARDNERELLA VAGINALIS" ]
+  ] [
+     fhir:code [ fhir:v "90740" ] ;
+     fhir:display [ fhir:v "LACTOCOCCUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90448" ] ;
+     fhir:display [ fhir:v "SALMONELLA BRAENDERUP" ]
+  ] [
+     fhir:code [ fhir:v "80171" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS ANGINOSUS" ]
+  ] [
+     fhir:code [ fhir:v "90984" ] ;
+     fhir:display [ fhir:v "IRPEX LACTEUS" ]
+  ] [
+     fhir:code [ fhir:v "90835" ] ;
+     fhir:display [ fhir:v "PARACOCCUS YEEI" ]
+  ] [
+     fhir:code [ fhir:v "80093" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM GORDONAE" ]
+  ] [
+     fhir:code [ fhir:v "90601" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM MALMOENSE" ]
+  ] [
+     fhir:code [ fhir:v "80179" ] ;
+     fhir:display [ fhir:v "INFLUENZA B VIRUS" ]
+  ] [
+     fhir:code [ fhir:v "90410" ] ;
+     fhir:display [ fhir:v "CHILOMASTIX MESNILI" ]
+  ] [
+     fhir:code [ fhir:v "90626" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS SIMULANS" ]
+  ] [
+     fhir:code [ fhir:v "90372" ] ;
+     fhir:display [ fhir:v "YERSINIA INTERMEDIA" ]
+  ] [
+     fhir:code [ fhir:v "90891" ] ;
+     fhir:display [ fhir:v "CIMEX SPECIES (BEDBUG)" ]
+  ] [
+     fhir:code [ fhir:v "80123" ] ;
+     fhir:display [ fhir:v "ANAEROBIC BACTERIA" ]
+  ] [
+     fhir:code [ fhir:v "80139" ] ;
+     fhir:display [ fhir:v "CLOSTRIDIUM DIFFICILE" ]
+  ] [
+     fhir:code [ fhir:v "80016" ] ;
+     fhir:display [ fhir:v "PROTEUS VULGARIS" ]
+  ] [
+     fhir:code [ fhir:v "90503" ] ;
+     fhir:display [ fhir:v "SALMONELLA INFANTIS" ]
+  ] [
+     fhir:code [ fhir:v "80169" ] ;
+     fhir:display [ fhir:v "ENTAMOEBA HARTMANNI" ]
+  ] [
+     fhir:code [ fhir:v "90725" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR RESPIRATORY SYNCYTIAL VIRUS (RSV)" ]
+  ] [
+     fhir:code [ fhir:v "90421" ] ;
+     fhir:display [ fhir:v "STRONGYLOIDES" ]
+  ] [
+     fhir:code [ fhir:v "80267" ] ;
+     fhir:display [ fhir:v "CRYPTOSPORIDIUM PARVUM OOCYSTS SEEN" ]
+  ] [
+     fhir:code [ fhir:v "90404" ] ;
+     fhir:display [ fhir:v "SALMONELLA MUENSTER" ]
+  ] [
+     fhir:code [ fhir:v "90324" ] ;
+     fhir:display [ fhir:v "PSEUDOMONAS STUTZERI" ]
+  ] [
+     fhir:code [ fhir:v "80227" ] ;
+     fhir:display [ fhir:v "PROBABLE GARDNERELLA VAGINALIS" ]
+  ] [
+     fhir:code [ fhir:v "90296" ] ;
+     fhir:display [ fhir:v "VIBRIO ALGINOLYTICUS" ]
+  ] [
+     fhir:code [ fhir:v "90764" ] ;
+     fhir:display [ fhir:v "LEPTOTRICHIA HOFSTADII" ]
+  ] [
+     fhir:code [ fhir:v "90679" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS HAEMOLYTICUS" ]
+  ] [
+     fhir:code [ fhir:v "90786" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS MITIS GROUP" ]
+  ] [
+     fhir:code [ fhir:v "80114" ] ;
+     fhir:display [ fhir:v "ASPERGILLUS FLAVUS" ]
+  ] [
+     fhir:code [ fhir:v "80157" ] ;
+     fhir:display [ fhir:v "ACREMONIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80025" ] ;
+     fhir:display [ fhir:v "CITROBACTER AMALONATICUS" ]
+  ] [
+     fhir:code [ fhir:v "90743" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS CAPRAE" ]
+  ] [
+     fhir:code [ fhir:v "80074" ] ;
+     fhir:display [ fhir:v "ANAEROBIC GRAM NEGATIVE ROD #2" ]
+  ] [
+     fhir:code [ fhir:v "80138" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90567" ] ;
+     fhir:display [ fhir:v "CYCLOSPORA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90718" ] ;
+     fhir:display [ fhir:v "AEROCOCCUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90363" ] ;
+     fhir:display [ fhir:v "HAEMOPHILUS PARAHAEMOLYTICUS" ]
+  ] [
+     fhir:code [ fhir:v "80284" ] ;
+     fhir:display [ fhir:v "ACHROMOBACTER (ALCALIGENES) XYLOSOXIDANS SS DENTRIFICANS" ]
+  ] [
+     fhir:code [ fhir:v "90887" ] ;
+     fhir:display [ fhir:v "BACILLUS CEREUS/THURINGIENSIS" ]
+  ] [
+     fhir:code [ fhir:v "90768" ] ;
+     fhir:display [ fhir:v "TICK" ]
+  ] [
+     fhir:code [ fhir:v "80047" ] ;
+     fhir:display [ fhir:v "BETA STREPTOCOCCUS GROUP G" ]
+  ] [
+     fhir:code [ fhir:v "80252" ] ;
+     fhir:display [ fhir:v "ALCALIGENES XYLOSOXIDANS" ]
+  ] [
+     fhir:code [ fhir:v "80258" ] ;
+     fhir:display [ fhir:v "MICROSPORIDIUM SPECIES SEEN" ]
+  ] [
+     fhir:code [ fhir:v "90820" ] ;
+     fhir:display [ fhir:v "BREVUNDIMONAS VESICULARIS" ]
+  ] [
+     fhir:code [ fhir:v "90837" ] ;
+     fhir:display [ fhir:v "PROTEUS HAUSERI" ]
+  ] [
+     fhir:code [ fhir:v "80096" ] ;
+     fhir:display [ fhir:v "STREPTOMYCES SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80069" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM TUBERCULOSIS" ]
+  ] [
+     fhir:code [ fhir:v "90719" ] ;
+     fhir:display [ fhir:v "PHAEOACREMONIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80144" ] ;
+     fhir:display [ fhir:v "HERPES SIMPLEX VIRUS TYPE 1" ]
+  ] [
+     fhir:code [ fhir:v "90819" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR CRYPTOCOCCAL ANTIGEN" ]
+  ] [
+     fhir:code [ fhir:v "80256" ] ;
+     fhir:display [ fhir:v "HAEMOPHILUS SPECIES NOT INFLUENZAE" ]
+  ] [
+     fhir:code [ fhir:v "90761" ] ;
+     fhir:display [ fhir:v "MYCOBATERIUM HAEMOPHILUM" ]
+  ] [
+     fhir:code [ fhir:v "90838" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM ASIATICUM" ]
+  ] [
+     fhir:code [ fhir:v "80111" ] ;
+     fhir:display [ fhir:v "ENTEROCOCCUS AVIUM" ]
+  ] [
+     fhir:code [ fhir:v "90639" ] ;
+     fhir:display [ fhir:v "BACTEROIDIES THETAIOTAOMICRON" ]
+  ] [
+     fhir:code [ fhir:v "80087" ] ;
+     fhir:display [ fhir:v "STENOTROPHOMONAS MALTOPHILIA" ]
+  ] [
+     fhir:code [ fhir:v "80196" ] ;
+     fhir:display [ fhir:v "SALMONELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90509" ] ;
+     fhir:display [ fhir:v "YERSINIA SP." ]
+  ] [
+     fhir:code [ fhir:v "90408" ] ;
+     fhir:display [ fhir:v "ENTAMOEBA SP." ]
+  ] [
+     fhir:code [ fhir:v "80072" ] ;
+     fhir:display [ fhir:v "GRAM NEGATIVE ROD #3" ]
+  ] [
+     fhir:code [ fhir:v "80195" ] ;
+     fhir:display [ fhir:v "AEROMONAS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90327" ] ;
+     fhir:display [ fhir:v "CARDIOBACTERIUM HOMINIS" ]
+  ] [
+     fhir:code [ fhir:v "80152" ] ;
+     fhir:display [ fhir:v "ESCHERICHIA FERGUSONII" ]
+  ] [
+     fhir:code [ fhir:v "90759" ] ;
+     fhir:display [ fhir:v "RAOULTELLA ORNITHINOLYTICA" ]
+  ] [
+     fhir:code [ fhir:v "80302" ] ;
+     fhir:display [ fhir:v "PANTOEA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80033" ] ;
+     fhir:display [ fhir:v "VIBRIO SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90368" ] ;
+     fhir:display [ fhir:v "SALMONELLA PARATYPHI A" ]
+  ] [
+     fhir:code [ fhir:v "90486" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS SACCHAROLYTICUS" ]
+  ] [
+     fhir:code [ fhir:v "90859" ] ;
+     fhir:display [ fhir:v "RHODATORULA MUCILAGINOSA" ]
+  ] [
+     fhir:code [ fhir:v "80304" ] ;
+     fhir:display [ fhir:v "ACINETOBACTER BAUMANNII COMPLEX" ]
+  ] [
+     fhir:code [ fhir:v "90853" ] ;
+     fhir:display [ fhir:v "EUBACTERIUM LIMOSUM" ]
+  ] [
+     fhir:code [ fhir:v "80172" ] ;
+     fhir:display [ fhir:v "ENTEROCOCCUS FAECALIS" ]
+  ] [
+     fhir:code [ fhir:v "90702" ] ;
+     fhir:display [ fhir:v "ENTEROBACTER CANCEROGENUS" ]
+  ] [
+     fhir:code [ fhir:v "90861" ] ;
+     fhir:display [ fhir:v "CUPRIAVIDUS PAUCULUS" ]
+  ] [
+     fhir:code [ fhir:v "90796" ] ;
+     fhir:display [ fhir:v "SPOROTHRIX SCHENCKII COMPLEX" ]
+  ] [
+     fhir:code [ fhir:v "90825" ] ;
+     fhir:display [ fhir:v "RHINOCLADIELLA SP." ]
+  ] [
+     fhir:code [ fhir:v "80190" ] ;
+     fhir:display [ fhir:v "SYNCEPHALASTRUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80163" ] ;
+     fhir:display [ fhir:v "MOLD" ]
+  ] [
+     fhir:code [ fhir:v "80187" ] ;
+     fhir:display [ fhir:v "NOCARDIA ASTEROIDES COMPLEX " ]
+  ] [
+     fhir:code [ fhir:v "80135" ] ;
+     fhir:display [ fhir:v "ASCARIS LUMBRICOIDES" ]
+  ] [
+     fhir:code [ fhir:v "80193" ] ;
+     fhir:display [ fhir:v "CORYNEBACTERIUM UREALYTICUM SP. NOV." ]
+  ] [
+     fhir:code [ fhir:v "80022" ] ;
+     fhir:display [ fhir:v "SALMONELLA ENTERITIDIS" ]
+  ] [
+     fhir:code [ fhir:v "90313" ] ;
+     fhir:display [ fhir:v "BACTEROIDES SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80253" ] ;
+     fhir:display [ fhir:v "YEAST, PRESUMPTIVELY NOT C. ALBICANS" ]
+  ] [
+     fhir:code [ fhir:v "90983" ] ;
+     fhir:display [ fhir:v "ROTHIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90431" ] ;
+     fhir:display [ fhir:v "LEGIONELLA PNEUMOPHILA, GROUP 1" ]
+  ] [
+     fhir:code [ fhir:v "90301" ] ;
+     fhir:display [ fhir:v "BRUCELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80160" ] ;
+     fhir:display [ fhir:v "BACILLUS SUBTILIS " ]
+  ] [
+     fhir:code [ fhir:v "90804" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS PORCINUS/PSEUDOPORCINUS" ]
+  ] [
+     fhir:code [ fhir:v "80270" ] ;
+     fhir:display [ fhir:v "CANDIDA DUBLINIENSIS" ]
+  ] [
+     fhir:code [ fhir:v "90712" ] ;
+     fhir:display [ fhir:v "MYROIDES SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90877" ] ;
+     fhir:display [ fhir:v "LEPTOTRICHIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90805" ] ;
+     fhir:display [ fhir:v "PASTEURELLA CANIS" ]
+  ] [
+     fhir:code [ fhir:v "80110" ] ;
+     fhir:display [ fhir:v "MUCOR SP." ]
+  ] [
+     fhir:code [ fhir:v "80044" ] ;
+     fhir:display [ fhir:v "HAEMOPHILUS SP" ]
+  ] [
+     fhir:code [ fhir:v "90282" ] ;
+     fhir:display [ fhir:v "SALMONELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80081" ] ;
+     fhir:display [ fhir:v "GRAM POSITIVE BACTERIA" ]
+  ] [
+     fhir:code [ fhir:v "80055" ] ;
+     fhir:display [ fhir:v "GRAM POSITIVE COCCUS(COCCI)" ]
+  ] [
+     fhir:code [ fhir:v "80221" ] ;
+     fhir:display [ fhir:v "CORYNEBCATERIUM AMYCOLATUM" ]
+  ] [
+     fhir:code [ fhir:v "90737" ] ;
+     fhir:display [ fhir:v "ALCALIGENES SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90571" ] ;
+     fhir:display [ fhir:v "BURKHOLDERIA GLADIOLI" ]
+  ] [
+     fhir:code [ fhir:v "80054" ] ;
+     fhir:display [ fhir:v "BETA STREPTOCOCCUS GROUP A" ]
+  ] [
+     fhir:code [ fhir:v "90456" ] ;
+     fhir:display [ fhir:v "LECLERCIA ADECARBOXYLATA" ]
+  ] [
+     fhir:code [ fhir:v "80271" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS ORALIS" ]
+  ] [
+     fhir:code [ fhir:v "80307" ] ;
+     fhir:display [ fhir:v "LEPTOTRICHIA TREVISANII" ]
+  ] [
+     fhir:code [ fhir:v "90881" ] ;
+     fhir:display [ fhir:v "KLEBSIELLA (RAOULTELLA) ORNITHINOLYTICA" ]
+  ] [
+     fhir:code [ fhir:v "90462" ] ;
+     fhir:display [ fhir:v "MICROSPORUM CANIS" ]
+  ] [
+     fhir:code [ fhir:v "80027" ] ;
+     fhir:display [ fhir:v "PSEUDOMONAS PUTIDA " ]
+  ] [
+     fhir:code [ fhir:v "80280" ] ;
+     fhir:display [ fhir:v "VIRIDANS STREPTOCOCCI" ]
+  ] [
+     fhir:code [ fhir:v "80189" ] ;
+     fhir:display [ fhir:v "PEDIOCOCCUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80222" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR GROUP B BETA STREPTOCOCCI" ]
+  ] [
+     fhir:code [ fhir:v "80309" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR VARICELLA ZOSTER" ]
+  ] [
+     fhir:code [ fhir:v "80049" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS MITIS" ]
+  ] [
+     fhir:code [ fhir:v "90653" ] ;
+     fhir:display [ fhir:v "SALMONELLA MBANDAKA" ]
+  ] [
+     fhir:code [ fhir:v "90596" ] ;
+     fhir:display [ fhir:v "CAMPYLOBACTER LARI" ]
+  ] [
+     fhir:code [ fhir:v "80310" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR HERPES SIMPLEX TYPE 1 (HSV1)" ]
+  ] [
+     fhir:code [ fhir:v "80041" ] ;
+     fhir:display [ fhir:v "NEISSERIA MENINGITIDIS" ]
+  ] [
+     fhir:code [ fhir:v "90528" ] ;
+     fhir:display [ fhir:v "PREVOTELLA (BACTEROIDES) SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90900" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM NEOAURUM" ]
+  ] [
+     fhir:code [ fhir:v "80303" ] ;
+     fhir:display [ fhir:v "ABIOTROPHIA/GRANULICATELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80211" ] ;
+     fhir:display [ fhir:v "STACHYBOTRYS SPP." ]
+  ] [
+     fhir:code [ fhir:v "90866" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM TRIPLEX" ]
+  ] [
+     fhir:code [ fhir:v "80002" ] ;
+     fhir:display [ fhir:v "ESCHERICHIA COLI" ]
+  ] [
+     fhir:code [ fhir:v "90787" ] ;
+     fhir:display [ fhir:v "STREPTOCCUS SALIVARIUS GROUP" ]
+  ] [
+     fhir:code [ fhir:v "90797" ] ;
+     fhir:display [ fhir:v "NOCARDIA TRANSVALENSIS COMPLEX" ]
+  ] [
+     fhir:code [ fhir:v "80061" ] ;
+     fhir:display [ fhir:v "RHODOTORULA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80038" ] ;
+     fhir:display [ fhir:v "CLOSTRIDIUM PERFRINGENS" ]
+  ] [
+     fhir:code [ fhir:v "90450" ] ;
+     fhir:display [ fhir:v "MORAXELLA NONLIQUIFACIENS " ]
+  ] [
+     fhir:code [ fhir:v "80048" ] ;
+     fhir:display [ fhir:v "BETA STREPTOCOCCUS" ]
+  ] [
+     fhir:code [ fhir:v "90716" ] ;
+     fhir:display [ fhir:v "CUPRIAVIDUS METALLIDURANS" ]
+  ] [
+     fhir:code [ fhir:v "80112" ] ;
+     fhir:display [ fhir:v "BACTEROIDES FRAGILIS GROUP" ]
+  ] [
+     fhir:code [ fhir:v "90878" ] ;
+     fhir:display [ fhir:v "CAMPYLOBACTER UREOLYTICUS" ]
+  ] [
+     fhir:code [ fhir:v "90729" ] ;
+     fhir:display [ fhir:v "DESULFOVIBRIO DESULFURICANS" ]
+  ] [
+     fhir:code [ fhir:v "90801" ] ;
+     fhir:display [ fhir:v "LACTOBACILLUS RHAMNOSUS" ]
+  ] [
+     fhir:code [ fhir:v "80153" ] ;
+     fhir:display [ fhir:v "MORAXELLA OSLOENSIS" ]
+  ] [
+     fhir:code [ fhir:v "90422" ] ;
+     fhir:display [ fhir:v "HOOKWORM" ]
+  ] [
+     fhir:code [ fhir:v "90305" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90745" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS SAPROPHYTICUS" ]
+  ] [
+     fhir:code [ fhir:v "80130" ] ;
+     fhir:display [ fhir:v "MYCELIA STERILIA" ]
+  ] [
+     fhir:code [ fhir:v "80300" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR PNEUMOCYSTIS JIROVECII (CARINII)" ]
+  ] [
+     fhir:code [ fhir:v "90280" ] ;
+     fhir:display [ fhir:v "SHIGELLA SONNEI" ]
+  ] [
+     fhir:code [ fhir:v "90736" ] ;
+     fhir:display [ fhir:v "AGGREGATIBACTER (HAEMOPHILUS) APHROPHILUS" ]
+  ] [
+     fhir:code [ fhir:v "80254" ] ;
+     fhir:display [ fhir:v "CANDIDA ALBICANS, PRESUMPTIVE IDENTIFICATION" ]
+  ] [
+     fhir:code [ fhir:v "80005" ] ;
+     fhir:display [ fhir:v "KLEBSIELLA OXYTOCA" ]
+  ] [
+     fhir:code [ fhir:v "90758" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS WARNERI/PASTEURI" ]
+  ] [
+     fhir:code [ fhir:v "90818" ] ;
+     fhir:display [ fhir:v "PRESUMPTIVE POSITIVE FOR LEGIONELLA SEROGROUP 1 ANTIGEN" ]
+  ] [
+     fhir:code [ fhir:v "90672" ] ;
+     fhir:display [ fhir:v "NIGROSPORA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80245" ] ;
+     fhir:display [ fhir:v "FUSOBACTERIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80030" ] ;
+     fhir:display [ fhir:v "BORDETELLA BRONCHISEPTICA" ]
+  ] [
+     fhir:code [ fhir:v "90621" ] ;
+     fhir:display [ fhir:v "TICK NOT CONSISTENT WITH IXODES SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90864" ] ;
+     fhir:display [ fhir:v "LACTOBACILLUS CASEI/PARACASEI/ZEAE" ]
+  ] [
+     fhir:code [ fhir:v "90322" ] ;
+     fhir:display [ fhir:v "MYCOPLASMA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90660" ] ;
+     fhir:display [ fhir:v "PHOMA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80224" ] ;
+     fhir:display [ fhir:v "BETA STREPTOCOCCUS NOT GROUP A OR B" ]
+  ] [
+     fhir:code [ fhir:v "80213" ] ;
+     fhir:display [ fhir:v "BETA STREPTOCOCCI, NOT GROUP A" ]
+  ] [
+     fhir:code [ fhir:v "90412" ] ;
+     fhir:display [ fhir:v "SALMONELLA HEIDELBERG" ]
+  ] [
+     fhir:code [ fhir:v "80255" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS SAPROPHYTICUS, PRESUMPTIVE IDENTIFICATION" ]
+  ] [
+     fhir:code [ fhir:v "90533" ] ;
+     fhir:display [ fhir:v "HYMENOLEPIS NANA" ]
+  ] [
+     fhir:code [ fhir:v "90752" ] ;
+     fhir:display [ fhir:v "MALASSEZIA PACHYDERMATIS" ]
+  ] [
+     fhir:code [ fhir:v "80142" ] ;
+     fhir:display [ fhir:v "FUSOBACTERIUM NECROPHORUM" ]
+  ] [
+     fhir:code [ fhir:v "90550" ] ;
+     fhir:display [ fhir:v "MALASSEZIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90817" ] ;
+     fhir:display [ fhir:v "GRANULICATELLA ADIACENS" ]
+  ] [
+     fhir:code [ fhir:v "90851" ] ;
+     fhir:display [ fhir:v "SCEDOSPORIUM APIOSPERMUM COMPLEX" ]
+  ] [
+     fhir:code [ fhir:v "90776" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS GALLOLYTICUS SSP. GALLOLYTICUS (STREPTOCOCCUS BOVIS)" ]
+  ] [
+     fhir:code [ fhir:v "90339" ] ;
+     fhir:display [ fhir:v "CRYPTOCOCCUS LAURENTII" ]
+  ] [
+     fhir:code [ fhir:v "80035" ] ;
+     fhir:display [ fhir:v "EIKENELLA CORRODENS" ]
+  ] [
+     fhir:code [ fhir:v "80017" ] ;
+     fhir:display [ fhir:v "PROTEUS MIRABILIS" ]
+  ] [
+     fhir:code [ fhir:v "80306" ] ;
+     fhir:display [ fhir:v "MICROCOCCUS/STOMATOCOCCUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80178" ] ;
+     fhir:display [ fhir:v "INFLUENZA A VIRUS" ]
+  ] [
+     fhir:code [ fhir:v "90374" ] ;
+     fhir:display [ fhir:v "CLOSTRIDIUM TERTIUM" ]
+  ] [
+     fhir:code [ fhir:v "90750" ] ;
+     fhir:display [ fhir:v "RHIZOBIUM RADIOBACTER" ]
+  ] [
+     fhir:code [ fhir:v "90763" ] ;
+     fhir:display [ fhir:v "ENTEROBACTER CLOACAE COMPLEX" ]
+  ] [
+     fhir:code [ fhir:v "80164" ] ;
+     fhir:display [ fhir:v "ENTEROBACTER ASBURIAE" ]
+  ] [
+     fhir:code [ fhir:v "90440" ] ;
+     fhir:display [ fhir:v "SALMONELLA SCHWARZENGRUND" ]
+  ] [
+     fhir:code [ fhir:v "90826" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS AURICULARIS" ]
+  ] [
+     fhir:code [ fhir:v "80042" ] ;
+     fhir:display [ fhir:v "NEISSERIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90430" ] ;
+     fhir:display [ fhir:v "SALMONELLA DUBLIN" ]
+  ] [
+     fhir:code [ fhir:v "90454" ] ;
+     fhir:display [ fhir:v "PROTEUS PENNERI" ]
+  ] [
+     fhir:code [ fhir:v "80107" ] ;
+     fhir:display [ fhir:v "CAMPYLOBACTER SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90784" ] ;
+     fhir:display [ fhir:v "PSEUDOMONAS MENDOCINA" ]
+  ] [
+     fhir:code [ fhir:v "80014" ] ;
+     fhir:display [ fhir:v "SERRATIA MARCESCENS" ]
+  ] [
+     fhir:code [ fhir:v "90760" ] ;
+     fhir:display [ fhir:v "CANCELLED" ]
+  ] [
+     fhir:code [ fhir:v "90844" ] ;
+     fhir:display [ fhir:v "GEMELLA BERGERI" ]
+  ] [
+     fhir:code [ fhir:v "80103" ] ;
+     fhir:display [ fhir:v "SPOROBOLOMYCES SALMONICOLOR" ]
+  ] [
+     fhir:code [ fhir:v "90352" ] ;
+     fhir:display [ fhir:v "CLOSTRIDIUM CLOSTRIDIIFORME" ]
+  ] [
+     fhir:code [ fhir:v "90377" ] ;
+     fhir:display [ fhir:v "CLOSTRIDIUM RAMOSUM" ]
+  ] [
+     fhir:code [ fhir:v "90871" ] ;
+     fhir:display [ fhir:v "GLOBICATELLA SANGUINIS" ]
+  ] [
+     fhir:code [ fhir:v "90497" ] ;
+     fhir:display [ fhir:v "MICROCOCCUS LUTEUS" ]
+  ] [
+     fhir:code [ fhir:v "80182" ] ;
+     fhir:display [ fhir:v "OCHROBACTRUM ANTHROPI" ]
+  ] [
+     fhir:code [ fhir:v "90644" ] ;
+     fhir:display [ fhir:v "GIARDIA LAMBLIA SEEN" ]
+  ] [
+     fhir:code [ fhir:v "90840" ] ;
+     fhir:display [ fhir:v "S. AUREUS POSITIVE; MRSA POSITIVE" ]
+  ] [
+     fhir:code [ fhir:v "90814" ] ;
+     fhir:display [ fhir:v "ARTHROGRAPHIS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90640" ] ;
+     fhir:display [ fhir:v "BIPOLARIS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90680" ] ;
+     fhir:display [ fhir:v "SALMONELLA CORVALLIS" ]
+  ] [
+     fhir:code [ fhir:v "80204" ] ;
+     fhir:display [ fhir:v "ENTEROCOCCUS CASSELIFLAVUS" ]
+  ] [
+     fhir:code [ fhir:v "80060" ] ;
+     fhir:display [ fhir:v "CANDIDA ALBICANS" ]
+  ] [
+     fhir:code [ fhir:v "80158" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM AVIUM COMPLEX" ]
+  ] [
+     fhir:code [ fhir:v "80085" ] ;
+     fhir:display [ fhir:v "CORYNEBACTERIUM SPECIES (DIPHTHEROIDS)" ]
+  ] [
+     fhir:code [ fhir:v "90452" ] ;
+     fhir:display [ fhir:v "ENTEROBACTER AMNIGENUS 2 " ]
+  ] [
+     fhir:code [ fhir:v "90748" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS INFANTARIUS SSP. COLI (STREPTOCOCCUS BOVIS)" ]
+  ] [
+     fhir:code [ fhir:v "90799" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS INFANTARIUS SSP. INFANTARIUS (STREPTOCOCCUS BOVIS)" ]
+  ] [
+     fhir:code [ fhir:v "90874" ] ;
+     fhir:display [ fhir:v "KOCURIA ROSEA" ]
+  ] [
+     fhir:code [ fhir:v "90665" ] ;
+     fhir:display [ fhir:v "EPICOCCUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90885" ] ;
+     fhir:display [ fhir:v "ACETOBACTER SP." ]
+  ] [
+     fhir:code [ fhir:v "90765" ] ;
+     fhir:display [ fhir:v "DOLOSIGRANULUM PIGRUM" ]
+  ] [
+     fhir:code [ fhir:v "80251" ] ;
+     fhir:display [ fhir:v "MANY BLASTOCYSTIS HOMINIS" ]
+  ] [
+     fhir:code [ fhir:v "80106" ] ;
+     fhir:display [ fhir:v "CANDIDA TROPICALIS" ]
+  ] [
+     fhir:code [ fhir:v "90330" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM CHELONAE" ]
+  ] [
+     fhir:code [ fhir:v "90827" ] ;
+     fhir:display [ fhir:v "CANDIDA AURIS" ]
+  ] [
+     fhir:code [ fhir:v "80143" ] ;
+     fhir:display [ fhir:v "CYTOMEGALOVIRUS " ]
+  ] [
+     fhir:code [ fhir:v "80225" ] ;
+     fhir:display [ fhir:v "NON-FERMENTER, NOT PSEUDOMONAS AERUGINOSA" ]
+  ] [
+     fhir:code [ fhir:v "90646" ] ;
+     fhir:display [ fhir:v "TRICHOMONAS VAGINALIS SEEN" ]
+  ] [
+     fhir:code [ fhir:v "90774" ] ;
+     fhir:display [ fhir:v "ENTEROCOCCUS HIRAE" ]
+  ] [
+     fhir:code [ fhir:v "90713" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM MUCOGENICUM" ]
+  ] [
+     fhir:code [ fhir:v "80199" ] ;
+     fhir:display [ fhir:v "MALASSEZIA FURFUR" ]
+  ] [
+     fhir:code [ fhir:v "90808" ] ;
+     fhir:display [ fhir:v "MICROMONOSPORA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80290" ] ;
+     fhir:display [ fhir:v "SHEWANELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90387" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM BOVIS" ]
+  ] [
+     fhir:code [ fhir:v "80009" ] ;
+     fhir:display [ fhir:v "HAFNIA ALVEI" ]
+  ] [
+     fhir:code [ fhir:v "80197" ] ;
+     fhir:display [ fhir:v "CITROBACTER YOUNGAE" ]
+  ] [
+     fhir:code [ fhir:v "90836" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS PARASANGUINIS" ]
+  ] [
+     fhir:code [ fhir:v "90420" ] ;
+     fhir:display [ fhir:v "TAENIA SP." ]
+  ] [
+     fhir:code [ fhir:v "90693" ] ;
+     fhir:display [ fhir:v "BEAUVERIA BASSIANA" ]
+  ] [
+     fhir:code [ fhir:v "80181" ] ;
+     fhir:display [ fhir:v "PARAINFLUENZA VIRUS TYPE 3" ]
+  ] [
+     fhir:code [ fhir:v "80149" ] ;
+     fhir:display [ fhir:v "PAECILOMYCES SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80046" ] ;
+     fhir:display [ fhir:v "BETA STREPTOCOCCUS GROUP C" ]
+  ] [
+     fhir:code [ fhir:v "90627" ] ;
+     fhir:display [ fhir:v "LEGIONELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90671" ] ;
+     fhir:display [ fhir:v "STEMPHYLIUM SP." ]
+  ] [
+     fhir:code [ fhir:v "90816" ] ;
+     fhir:display [ fhir:v "ACHROMOBACTER XYLOSOXIDANS" ]
+  ] [
+     fhir:code [ fhir:v "80050" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS BOVIS " ]
+  ] [
+     fhir:code [ fhir:v "90683" ] ;
+     fhir:display [ fhir:v "PROTEUS VULGARIS GROUP" ]
+  ] [
+     fhir:code [ fhir:v "80018" ] ;
+     fhir:display [ fhir:v "MORGANELLA MORGANII" ]
+  ] [
+     fhir:code [ fhir:v "90379" ] ;
+     fhir:display [ fhir:v "CAPNOCYTOPHAGA OCHRACEA" ]
+  ] [
+     fhir:code [ fhir:v "80286" ] ;
+     fhir:display [ fhir:v "GORDONIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90590" ] ;
+     fhir:display [ fhir:v "PREVOTELLA ORALIS" ]
+  ] [
+     fhir:code [ fhir:v "80173" ] ;
+     fhir:display [ fhir:v "VEILLONELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80298" ] ;
+     fhir:display [ fhir:v "GEMELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90390" ] ;
+     fhir:display [ fhir:v "TRICHOPHYTON RUBRUM" ]
+  ] [
+     fhir:code [ fhir:v "80127" ] ;
+     fhir:display [ fhir:v "FUNGUS" ]
+  ] [
+     fhir:code [ fhir:v "90415" ] ;
+     fhir:display [ fhir:v "SALMONELLA NEWPORT" ]
+  ] [
+     fhir:code [ fhir:v "90741" ] ;
+     fhir:display [ fhir:v "ROTHIA MUCILAGINOSA" ]
+  ] [
+     fhir:code [ fhir:v "90511" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS INTERMEDIUS" ]
+  ] [
+     fhir:code [ fhir:v "80161" ] ;
+     fhir:display [ fhir:v "STRONGYLOIDES STERCORALIS " ]
+  ] [
+     fhir:code [ fhir:v "90850" ] ;
+     fhir:display [ fhir:v "BACILLUS CIRCULANS GROUP" ]
+  ] [
+     fhir:code [ fhir:v "80243" ] ;
+     fhir:display [ fhir:v "PORPHYROMONAS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80102" ] ;
+     fhir:display [ fhir:v "SACCHAROMYCES CEREVISIAE" ]
+  ] [
+     fhir:code [ fhir:v "90564" ] ;
+     fhir:display [ fhir:v "NOCARDIA BRASILIENSIS" ]
+  ] [
+     fhir:code [ fhir:v "90775" ] ;
+     fhir:display [ fhir:v "USTILAGO SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80105" ] ;
+     fhir:display [ fhir:v "RHIZOPUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90769" ] ;
+     fhir:display [ fhir:v "NOCARDIA FARCINICA" ]
+  ] [
+     fhir:code [ fhir:v "80272" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS VESTIBULARIS" ]
+  ] [
+     fhir:code [ fhir:v "80053" ] ;
+     fhir:display [ fhir:v "ENTEROCOCCUS SP." ]
+  ] [
+     fhir:code [ fhir:v "80004" ] ;
+     fhir:display [ fhir:v "KLEBSIELLA PNEUMONIAE" ]
+  ] [
+     fhir:code [ fhir:v "90295" ] ;
+     fhir:display [ fhir:v "VIBRIO CHOLERAE" ]
+  ] [
+     fhir:code [ fhir:v "90780" ] ;
+     fhir:display [ fhir:v "ACHROMOBACTER (ALCALIGENES) XYLOSOXIDANS" ]
+  ] [
+     fhir:code [ fhir:v "90742" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS CAPITIS" ]
+  ] [
+     fhir:code [ fhir:v "90543" ] ;
+     fhir:display [ fhir:v "OLIGELLA URETHRALIS" ]
+  ] [
+     fhir:code [ fhir:v "80097" ] ;
+     fhir:display [ fhir:v "PROVIDENCIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90868" ] ;
+     fhir:display [ fhir:v "YOKENELLA REGENSBURGEI" ]
+  ] [
+     fhir:code [ fhir:v "80080" ] ;
+     fhir:display [ fhir:v "BACTERIA" ]
+  ] [
+     fhir:code [ fhir:v "90544" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS SCIURI" ]
+  ] [
+     fhir:code [ fhir:v "90512" ] ;
+     fhir:display [ fhir:v "DERMATOPHYTE" ]
+  ] [
+     fhir:code [ fhir:v "90508" ] ;
+     fhir:display [ fhir:v "ACTINOMYCES SP." ]
+  ] [
+     fhir:code [ fhir:v "90678" ] ;
+     fhir:display [ fhir:v "MICROBACTERIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80176" ] ;
+     fhir:display [ fhir:v "VARICELLA-ZOSTER VIRUS" ]
+  ] [
+     fhir:code [ fhir:v "80015" ] ;
+     fhir:display [ fhir:v "SERRATIA RUBIDAEA" ]
+  ] [
+     fhir:code [ fhir:v "80282" ] ;
+     fhir:display [ fhir:v "FONSECAEA PEDROSOI" ]
+  ] [
+     fhir:code [ fhir:v "90889" ] ;
+     fhir:display [ fhir:v "CUTIBACTERIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90767" ] ;
+     fhir:display [ fhir:v "OCHROBACTRUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90443" ] ;
+     fhir:display [ fhir:v "ALTERNARIA SP." ]
+  ] [
+     fhir:code [ fhir:v "90281" ] ;
+     fhir:display [ fhir:v "EDWARDSIELLA TARDA" ]
+  ] [
+     fhir:code [ fhir:v "90398" ] ;
+     fhir:display [ fhir:v "ACTINOMYCES ISRAELII" ]
+  ] [
+     fhir:code [ fhir:v "80226" ] ;
+     fhir:display [ fhir:v "PROBABLE LACTOBACILLUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90552" ] ;
+     fhir:display [ fhir:v "ROSEOMONAS GILARDII" ]
+  ] [
+     fhir:code [ fhir:v "80092" ] ;
+     fhir:display [ fhir:v "AEROCOCCUS VIRIDANS" ]
+  ] [
+     fhir:code [ fhir:v "80013" ] ;
+     fhir:display [ fhir:v "SERRATIA LIQUEFACIENS" ]
+  ] [
+     fhir:code [ fhir:v "80066" ] ;
+     fhir:display [ fhir:v "ASPERGILLUS FUMIGATUS" ]
+  ] [
+     fhir:code [ fhir:v "90855" ] ;
+     fhir:display [ fhir:v "POSITIVE" ]
+  ] [
+     fhir:code [ fhir:v "90340" ] ;
+     fhir:display [ fhir:v "GEOTRICHIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80299" ] ;
+     fhir:display [ fhir:v "MYCOPLASMA HOMINIS" ]
+  ] [
+     fhir:code [ fhir:v "80248" ] ;
+     fhir:display [ fhir:v "CITROBACTER FREUNDII COMPLEX" ]
+  ] [
+     fhir:code [ fhir:v "80292" ] ;
+     fhir:display [ fhir:v "NEISSERIA SPECIES, NOT GONORRHOEAE" ]
+  ] [
+     fhir:code [ fhir:v "90370" ] ;
+     fhir:display [ fhir:v "SERRATIA FONTICOLA" ]
+  ] [
+     fhir:code [ fhir:v "90623" ] ;
+     fhir:display [ fhir:v "SALMONELLA SANDIEGO" ]
+  ] [
+     fhir:code [ fhir:v "90734" ] ;
+     fhir:display [ fhir:v "FINEGOLDIA (PEPTOSTREPTOCOCCUS) SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80147" ] ;
+     fhir:display [ fhir:v "CHLAMYDIA TRACHOMATIS" ]
+  ] [
+     fhir:code [ fhir:v "90514" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM MARINUM" ]
+  ] [
+     fhir:code [ fhir:v "90695" ] ;
+     fhir:display [ fhir:v "DELFTIA ACIDOVORANS" ]
+  ] [
+     fhir:code [ fhir:v "90681" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS CAPRAE/CAPITIS" ]
+  ] [
+     fhir:code [ fhir:v "80170" ] ;
+     fhir:display [ fhir:v "LEUCONOSTOC SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90829" ] ;
+     fhir:display [ fhir:v "ACRODONTIUM SALMONEUM" ]
+  ] [
+     fhir:code [ fhir:v "90472" ] ;
+     fhir:display [ fhir:v "ALCALIGENES FAECALIS" ]
+  ] [
+     fhir:code [ fhir:v "90738" ] ;
+     fhir:display [ fhir:v "ELIZABETHKINGIA (CHRYSEOBACTERIUM) MENIGOSEPTICA" ]
+  ] [
+     fhir:code [ fhir:v "90470" ] ;
+     fhir:display [ fhir:v "GARDNERELLA  VAGINALIS" ]
+  ] [
+     fhir:code [ fhir:v "90522" ] ;
+     fhir:display [ fhir:v "CAMPYLOBACTER UPSALIENSIS" ]
+  ] [
+     fhir:code [ fhir:v "90333" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM KANSASII" ]
+  ] [
+     fhir:code [ fhir:v "90863" ] ;
+     fhir:display [ fhir:v "NOCARDIA CYRIACIGEORGICA" ]
+  ] [
+     fhir:code [ fhir:v "90310" ] ;
+     fhir:display [ fhir:v "HAEMOPHILUS APHROPHILUS" ]
+  ] [
+     fhir:code [ fhir:v "80234" ] ;
+     fhir:display [ fhir:v "PRESUMPTIVE PROPIONIBACTERIUM ACNES" ]
+  ] [
+     fhir:code [ fhir:v "90791" ] ;
+     fhir:display [ fhir:v "GORDONIA SPUTI" ]
+  ] [
+     fhir:code [ fhir:v "80077" ] ;
+     fhir:display [ fhir:v "CRYPTOCOCCUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90888" ] ;
+     fhir:display [ fhir:v "DIALISTER MICRAEROPHILUS" ]
+  ] [
+     fhir:code [ fhir:v "90697" ] ;
+     fhir:display [ fhir:v "ACTINOMYCES TURICENSIS" ]
+  ] [
+     fhir:code [ fhir:v "90549" ] ;
+     fhir:display [ fhir:v "ENTEROCOCCUS DURANS" ]
+  ] [
+     fhir:code [ fhir:v "90487" ] ;
+     fhir:display [ fhir:v "ACHROMOBACTER (ALCALIGENES) DENTRIFICANS" ]
+  ] [
+     fhir:code [ fhir:v "90361" ] ;
+     fhir:display [ fhir:v "HEMOPHILUS HEMOLYTICUS" ]
+  ] [
+     fhir:code [ fhir:v "90839" ] ;
+     fhir:display [ fhir:v "ACTINOTIGNUM SANGUINIS" ]
+  ] [
+     fhir:code [ fhir:v "90756" ] ;
+     fhir:display [ fhir:v "HERBASPIRILLUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80244" ] ;
+     fhir:display [ fhir:v "PREVOTELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80116" ] ;
+     fhir:display [ fhir:v "FUSARIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80177" ] ;
+     fhir:display [ fhir:v "RESPIRATORY SYNCYTIAL VIRUS (RSV)" ]
+  ] [
+     fhir:code [ fhir:v "90977" ] ;
+     fhir:display [ fhir:v "PHIALEMONIUM INFLATUM" ]
+  ] [
+     fhir:code [ fhir:v "90279" ] ;
+     fhir:display [ fhir:v "SHIGELLA BOYDII" ]
+  ] [
+     fhir:code [ fhir:v "80137" ] ;
+     fhir:display [ fhir:v "CANDIDA LUSITANIAE" ]
+  ] [
+     fhir:code [ fhir:v "80288" ] ;
+     fhir:display [ fhir:v "CANDIDA KRUSEI / CANDIDA INCONSPICUA" ]
+  ] [
+     fhir:code [ fhir:v "90798" ] ;
+     fhir:display [ fhir:v "ALLOIOCOCCUS OTITIS" ]
+  ] [
+     fhir:code [ fhir:v "90411" ] ;
+     fhir:display [ fhir:v "GIARDIA CYSTS" ]
+  ] [
+     fhir:code [ fhir:v "90755" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS GALLOLYTICUS SSP. PASTEURIANUS (STREPTOCOCCUS BOVIS)" ]
+  ] [
+     fhir:code [ fhir:v "90380" ] ;
+     fhir:display [ fhir:v "SCOPULARIOPSIS SP." ]
+  ] [
+     fhir:code [ fhir:v "90466" ] ;
+     fhir:display [ fhir:v "LACTOBACILLUS SALIVARIUS SS. SALIVARIUS" ]
+  ] [
+     fhir:code [ fhir:v "80235" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS ANGINOSUS (MILLERI) GROUP" ]
+  ] [
+     fhir:code [ fhir:v "80056" ] ;
+     fhir:display [ fhir:v "GRAM POSITIVE RODS" ]
+  ] [
+     fhir:code [ fhir:v "90710" ] ;
+     fhir:display [ fhir:v "SYTALIDIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80239" ] ;
+     fhir:display [ fhir:v "ASPERGILLUS SP. NOT FUMIGATUS, FLAVUS OR NIGER" ]
+  ] [
+     fhir:code [ fhir:v "90739" ] ;
+     fhir:display [ fhir:v "GLOBICATELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80101" ] ;
+     fhir:display [ fhir:v "CANDIDA KRUSEI" ]
+  ] [
+     fhir:code [ fhir:v "90566" ] ;
+     fhir:display [ fhir:v "NOCARDIA NOVA" ]
+  ] [
+     fhir:code [ fhir:v "80037" ] ;
+     fhir:display [ fhir:v "GRAM VARIABLE RODS" ]
+  ] [
+     fhir:code [ fhir:v "80078" ] ;
+     fhir:display [ fhir:v "ANAEROBIC GRAM POSITIVE COCCUS(I)" ]
+  ] [
+     fhir:code [ fhir:v "90892" ] ;
+     fhir:display [ fhir:v "KOCURIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90518" ] ;
+     fhir:display [ fhir:v "ENTEROCOCCUS RAFFINOSUS" ]
+  ] [
+     fhir:code [ fhir:v "90560" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM CELATUM" ]
+  ] [
+     fhir:code [ fhir:v "80194" ] ;
+     fhir:display [ fhir:v "ACINETOBACTER BAUMANNII" ]
+  ] [
+     fhir:code [ fhir:v "90714" ] ;
+     fhir:display [ fhir:v "CONIDIOBOLUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90598" ] ;
+     fhir:display [ fhir:v "EXOPHIALA (WANGIELLA) DERMATITIDIS" ]
+  ] [
+     fhir:code [ fhir:v "90581" ] ;
+     fhir:display [ fhir:v "EXOPHIALA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90733" ] ;
+     fhir:display [ fhir:v "PEPTONIPHILUS (PEPTOSTREPTOCOCCUS) SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90537" ] ;
+     fhir:display [ fhir:v "SPHINGOBACTERIUM MULTIVORUM" ]
+  ] [
+     fhir:code [ fhir:v "90873" ] ;
+     fhir:display [ fhir:v "HAEMOPHILUS HAEMOLYTICUS" ]
+  ] [
+     fhir:code [ fhir:v "80079" ] ;
+     fhir:display [ fhir:v "ANAEROBIC GRAM POSITIVE ROD(S)" ]
+  ] [
+     fhir:code [ fhir:v "90346" ] ;
+     fhir:display [ fhir:v "PREVOTELLA MELANINOGENICA" ]
+  ] [
+     fhir:code [ fhir:v "90711" ] ;
+     fhir:display [ fhir:v "AEROMONAS HYDROPHILA COMPLEX" ]
+  ] [
+     fhir:code [ fhir:v "80057" ] ;
+     fhir:display [ fhir:v "GRAM NEGATIVE DIPLOCOCCI" ]
+  ] [
+     fhir:code [ fhir:v "80232" ] ;
+     fhir:display [ fhir:v "PRESUMPTIVE VEILLONELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90355" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS INTERMEDIUS" ]
+  ] [
+     fhir:code [ fhir:v "80188" ] ;
+     fhir:display [ fhir:v "SCEDOSPORIUM (APIOSPERMUM) BOYDII COMPLEX" ]
+  ] [
+     fhir:code [ fhir:v "80108" ] ;
+     fhir:display [ fhir:v "PROPIONIBACTERIUM ACNES" ]
+  ] [
+     fhir:code [ fhir:v "80021" ] ;
+     fhir:display [ fhir:v "SHIGELLA FLEXNERI" ]
+  ] [
+     fhir:code [ fhir:v "80128" ] ;
+     fhir:display [ fhir:v "FUSOBACTERIUM NUCLEATUM" ]
+  ] [
+     fhir:code [ fhir:v "90728" ] ;
+     fhir:display [ fhir:v "SERRATIA LIQUEFACIENS COMPLEX" ]
+  ] [
+     fhir:code [ fhir:v "80238" ] ;
+     fhir:display [ fhir:v "CLOSTRIDIUM SPECIES NOT C. PERFRINGENS OR C. SEPTICUM" ]
+  ] [
+     fhir:code [ fhir:v "90484" ] ;
+     fhir:display [ fhir:v "SALMONELLA ORANIENBURG" ]
+  ] [
+     fhir:code [ fhir:v "90893" ] ;
+     fhir:display [ fhir:v "PAENIBACILLUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80184" ] ;
+     fhir:display [ fhir:v "ENTEROCOCCUS GALLINARUM" ]
+  ] [
+     fhir:code [ fhir:v "90491" ] ;
+     fhir:display [ fhir:v "ULOCLADIUM SP." ]
+  ] [
+     fhir:code [ fhir:v "80212" ] ;
+     fhir:display [ fhir:v "PORPHYROMONAS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90526" ] ;
+     fhir:display [ fhir:v "PARAINFLUENZA VIRUS TYPE 2" ]
+  ] [
+     fhir:code [ fhir:v "80191" ] ;
+     fhir:display [ fhir:v "HAEMOPHILUS INFLUENZAE, BETA-LACTAMASE POSITIVE" ]
+  ] [
+     fhir:code [ fhir:v "90727" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR HERPES SIMPLEX (HSV)" ]
+  ] [
+     fhir:code [ fhir:v "80090" ] ;
+     fhir:display [ fhir:v "SERRATIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80151" ] ;
+     fhir:display [ fhir:v "CITROBACTER KOSERI" ]
+  ] [
+     fhir:code [ fhir:v "80063" ] ;
+     fhir:display [ fhir:v "ASPERGILLUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90439" ] ;
+     fhir:display [ fhir:v "CUNNINGHAMELLA SP." ]
+  ] [
+     fhir:code [ fhir:v "80281" ] ;
+     fhir:display [ fhir:v "BACILLUS SPECIES; NOT ANTHRACIS" ]
+  ] [
+     fhir:code [ fhir:v "80126" ] ;
+     fhir:display [ fhir:v "CLADOSPORIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90848" ] ;
+     fhir:display [ fhir:v "KOCURIA KRISTINAE" ]
+  ] [
+     fhir:code [ fhir:v "80024" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS EPIDERMIDIS" ]
+  ] [
+     fhir:code [ fhir:v "80031" ] ;
+     fhir:display [ fhir:v "MORAXELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80233" ] ;
+     fhir:display [ fhir:v "PRESUMPTIVE PEPTOSTREPTOCOCCUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80162" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS LUGDUNENSIS" ]
+  ] [
+     fhir:code [ fhir:v "90754" ] ;
+     fhir:display [ fhir:v "PASTEURELLA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90656" ] ;
+     fhir:display [ fhir:v "SPHINGOMONAS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80293" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR METHICILLIN RESISTANT STAPH AUREUS" ]
+  ] [
+     fhir:code [ fhir:v "90689" ] ;
+     fhir:display [ fhir:v "SALMONELLA KIAMBU" ]
+  ] [
+     fhir:code [ fhir:v "80117" ] ;
+     fhir:display [ fhir:v "AUREOBASIDIUM PULLULANS" ]
+  ] [
+     fhir:code [ fhir:v "90883" ] ;
+     fhir:display [ fhir:v "PERONEUTYPA SCOPARIA" ]
+  ] [
+     fhir:code [ fhir:v "80029" ] ;
+     fhir:display [ fhir:v "PSEUDOMONAS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90353" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM SCROFULACEUM" ]
+  ] [
+     fhir:code [ fhir:v "90536" ] ;
+     fhir:display [ fhir:v "ESCHERICHIA COLI O157:H7" ]
+  ] [
+     fhir:code [ fhir:v "90869" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS CONSTELLATUS SSP. CONSTELLATUS" ]
+  ] [
+     fhir:code [ fhir:v "80257" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR INFLUENZA B VIRAL ANTIGEN" ]
+  ] [
+     fhir:code [ fhir:v "90519" ] ;
+     fhir:display [ fhir:v "LEUCONOSTOC MESENTEROIDES" ]
+  ] [
+     fhir:code [ fhir:v "90862" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM MARSEILLENSE" ]
+  ] [
+     fhir:code [ fhir:v "90854" ] ;
+     fhir:display [ fhir:v "DESULFOVIBRIO LEGALLII" ]
+  ] [
+     fhir:code [ fhir:v "80159" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM TUBERCULOSIS COMPLEX" ]
+  ] [
+     fhir:code [ fhir:v "90834" ] ;
+     fhir:display [ fhir:v "ASPERGILLUS FUMIGATUS COMPLEX" ]
+  ] [
+     fhir:code [ fhir:v "90283" ] ;
+     fhir:display [ fhir:v "SALMONELLA TYPHI" ]
+  ] [
+     fhir:code [ fhir:v "90559" ] ;
+     fhir:display [ fhir:v "ESCHERICHIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90847" ] ;
+     fhir:display [ fhir:v "CUTIBACTERIUM AVIDUM" ]
+  ] [
+     fhir:code [ fhir:v "90823" ] ;
+     fhir:display [ fhir:v "LOMENTOSPORA PROLIFICANS (FORMERLY SCEDOSPORIUM PROLIFICANS)" ]
+  ] [
+     fhir:code [ fhir:v "80067" ] ;
+     fhir:display [ fhir:v "NOCARDIA ASTEROIDES" ]
+  ] [
+     fhir:code [ fhir:v "90872" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS INFANTARIUS SSP. COLI (STR. LUTETIENSIS)" ]
+  ] [
+     fhir:code [ fhir:v "90399" ] ;
+     fhir:display [ fhir:v "SALMONELLA TYPHIMURIUM" ]
+  ] [
+     fhir:code [ fhir:v "90822" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM MAGERITENSE" ]
+  ] [
+     fhir:code [ fhir:v "80131" ] ;
+     fhir:display [ fhir:v "SALMONELLA HADAR" ]
+  ] [
+     fhir:code [ fhir:v "90830" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS GORDONII" ]
+  ] [
+     fhir:code [ fhir:v "80312" ] ;
+     fhir:display [ fhir:v "PSEUDOMONAS PUTIDA/FLUORESCENS" ]
+  ] [
+     fhir:code [ fhir:v "90722" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR PARAINFLUENZA TYPE 2" ]
+  ] [
+     fhir:code [ fhir:v "90294" ] ;
+     fhir:display [ fhir:v "PLESIOMONAS SHIGELLOIDES" ]
+  ] [
+     fhir:code [ fhir:v "90297" ] ;
+     fhir:display [ fhir:v "VIBRIO PARAHAEMOLYTICUS" ]
+  ] [
+     fhir:code [ fhir:v "80118" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS SALIVARIUS" ]
+  ] [
+     fhir:code [ fhir:v "90746" ] ;
+     fhir:display [ fhir:v "STAPHYLOCOCCUS WARNERI" ]
+  ] [
+     fhir:code [ fhir:v "80134" ] ;
+     fhir:display [ fhir:v "ENDOLIMAX NANA" ]
+  ] [
+     fhir:code [ fhir:v "90875" ] ;
+     fhir:display [ fhir:v "ATOPOBIUM RIMAE" ]
+  ] [
+     fhir:code [ fhir:v "90464" ] ;
+     fhir:display [ fhir:v "SALMONELLA JAVIANA" ]
+  ] [
+     fhir:code [ fhir:v "90403" ] ;
+     fhir:display [ fhir:v "ESCHERICHIA VULNERIS" ]
+  ] [
+     fhir:code [ fhir:v "90753" ] ;
+     fhir:display [ fhir:v "IXODES SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80082" ] ;
+     fhir:display [ fhir:v "BACILLUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80115" ] ;
+     fhir:display [ fhir:v "PROPIONIBACTERIUM SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90735" ] ;
+     fhir:display [ fhir:v "AGGREGATIBACTER SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80202" ] ;
+     fhir:display [ fhir:v "LEGIONELLA PNEUMOPHILA " ]
+  ] [
+     fhir:code [ fhir:v "90762" ] ;
+     fhir:display [ fhir:v "NEOSCYTALIDIUM DIMIDIATUM" ]
+  ] [
+     fhir:code [ fhir:v "80089" ] ;
+     fhir:display [ fhir:v "GAMMA(I.E. NON-HEMOLYTIC) STREPTOCOCCUS" ]
+  ] [
+     fhir:code [ fhir:v "80308" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR CYTOMEGALOVIRUS" ]
+  ] [
+     fhir:code [ fhir:v "90852" ] ;
+     fhir:display [ fhir:v "BIFIDOBACTERIUM LONGUM" ]
+  ] [
+     fhir:code [ fhir:v "90425" ] ;
+     fhir:display [ fhir:v "DIENTAMOEBA FRAGILIS" ]
+  ] [
+     fhir:code [ fhir:v "80043" ] ;
+     fhir:display [ fhir:v "HAEMOPHILUS PARAINFLUENZAE" ]
+  ] [
+     fhir:code [ fhir:v "90879" ] ;
+     fhir:display [ fhir:v "PENICILLIUM FELLUTANUM" ]
+  ] [
+     fhir:code [ fhir:v "80062" ] ;
+     fhir:display [ fhir:v "ASPERGILLUS NIGER" ]
+  ] [
+     fhir:code [ fhir:v "80091" ] ;
+     fhir:display [ fhir:v "LISTERIA MONOCYTOGENES" ]
+  ] [
+     fhir:code [ fhir:v "90434" ] ;
+     fhir:display [ fhir:v "SALMONELLA SAINTPAUL" ]
+  ] [
+     fhir:code [ fhir:v "90636" ] ;
+     fhir:display [ fhir:v "IODAMOEBA BUTSCHLII" ]
+  ] [
+     fhir:code [ fhir:v "90429" ] ;
+     fhir:display [ fhir:v "HERPES SIMPLEX VIRUS" ]
+  ] [
+     fhir:code [ fhir:v "90438" ] ;
+     fhir:display [ fhir:v "FRANCISELLA TULARENSIS" ]
+  ] [
+     fhir:code [ fhir:v "90841" ] ;
+     fhir:display [ fhir:v "SAPROCHAETE (FORMERLY GEOTRICHUM) CAPITATA" ]
+  ] [
+     fhir:code [ fhir:v "80084" ] ;
+     fhir:display [ fhir:v "PROTEUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90541" ] ;
+     fhir:display [ fhir:v "COMAMONAS TESTOSTERONI" ]
+  ] [
+     fhir:code [ fhir:v "90858" ] ;
+     fhir:display [ fhir:v "NEOASCOCHYTA DESMAZIERI" ]
+  ] [
+     fhir:code [ fhir:v "90276" ] ;
+     fhir:display [ fhir:v "YERSINIA ENTEROCOLITICA" ]
+  ] [
+     fhir:code [ fhir:v "80305" ] ;
+     fhir:display [ fhir:v "PSEUDOMONAS LUTEOLA" ]
+  ] [
+     fhir:code [ fhir:v "80034" ] ;
+     fhir:display [ fhir:v "PASTEURELLA MULTOCIDA" ]
+  ] [
+     fhir:code [ fhir:v "80266" ] ;
+     fhir:display [ fhir:v "PANTOEA (ENTEROBACTER) AGGLOMERANS" ]
+  ] [
+     fhir:code [ fhir:v "90669" ] ;
+     fhir:display [ fhir:v "SALMONELLA TELELKEBIR" ]
+  ] [
+     fhir:code [ fhir:v "90880" ] ;
+     fhir:display [ fhir:v "CUTIBACTERIUM (PROPIONIBACTERIUM) ACNES" ]
+  ] [
+     fhir:code [ fhir:v "90894" ] ;
+     fhir:display [ fhir:v "CORYNEBACTERIUM GLUCURONOLYTICUM" ]
+  ] [
+     fhir:code [ fhir:v "90899" ] ;
+     fhir:display [ fhir:v "CORYNEBACTERIUM PYRUVICIPRODUCENS" ]
+  ] [
+     fhir:code [ fhir:v "90860" ] ;
+     fhir:display [ fhir:v "DESULFOVIBRIO SP." ]
+  ] [
+     fhir:code [ fhir:v "80099" ] ;
+     fhir:display [ fhir:v "CANDIDA PARAPSILOSIS" ]
+  ] [
+     fhir:code [ fhir:v "90459" ] ;
+     fhir:display [ fhir:v "NEISSERIA MUCOSA" ]
+  ] [
+     fhir:code [ fhir:v "90789" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM ABSCESSUS GROUP" ]
+  ] [
+     fhir:code [ fhir:v "90813" ] ;
+     fhir:display [ fhir:v "ACINETOBACTER RADIORESISTENS" ]
+  ] [
+     fhir:code [ fhir:v "80174" ] ;
+     fhir:display [ fhir:v "CURVULARIA SP." ]
+  ] [
+     fhir:code [ fhir:v "80068" ] ;
+     fhir:display [ fhir:v "NOCARDIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90849" ] ;
+     fhir:display [ fhir:v "S. AUREUS POSITIVE; MRSA NEGATIVE" ]
+  ] [
+     fhir:code [ fhir:v "80242" ] ;
+     fhir:display [ fhir:v "RESEMBLING MICROCOCCUS/STOMATOCOCCUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90507" ] ;
+     fhir:display [ fhir:v "SALMONELLA STANLEY" ]
+  ] [
+     fhir:code [ fhir:v "90717" ] ;
+     fhir:display [ fhir:v "LACTOBACILLUS GASSERI" ]
+  ] [
+     fhir:code [ fhir:v "80132" ] ;
+     fhir:display [ fhir:v "ENTAMOEBA COLI" ]
+  ] [
+     fhir:code [ fhir:v "80133" ] ;
+     fhir:display [ fhir:v "GIARDIA LAMBLIA" ]
+  ] [
+     fhir:code [ fhir:v "80215" ] ;
+     fhir:display [ fhir:v "ASPERGILLUS NIDULANS" ]
+  ] [
+     fhir:code [ fhir:v "90638" ] ;
+     fhir:display [ fhir:v "RARE BLASTOCYSTIS HOMINIS" ]
+  ] [
+     fhir:code [ fhir:v "80136" ] ;
+     fhir:display [ fhir:v "ACTINOMYCES ODONTOLYTICUS" ]
+  ] [
+     fhir:code [ fhir:v "90793" ] ;
+     fhir:display [ fhir:v "EMMONSIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90641" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM ABSCESSUS" ]
+  ] [
+     fhir:code [ fhir:v "80098" ] ;
+     fhir:display [ fhir:v "CITROBACTER SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90349" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM TERRAE" ]
+  ] [
+     fhir:code [ fhir:v "80209" ] ;
+     fhir:display [ fhir:v "LISTERIA SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "90721" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR PARAINFLUENZA TYPE 1" ]
+  ] [
+     fhir:code [ fhir:v "90730" ] ;
+     fhir:display [ fhir:v "BURKHOLDERIA XENOVORANS" ]
+  ] [
+     fhir:code [ fhir:v "90806" ] ;
+     fhir:display [ fhir:v "SHEWANELLA ALGAE" ]
+  ] [
+     fhir:code [ fhir:v "80088" ] ;
+     fhir:display [ fhir:v "LACTOBACILLUS SPECIES" ]
+  ] [
+     fhir:code [ fhir:v "80279" ] ;
+     fhir:display [ fhir:v "STREPTOCOCCUS MILLERI GROUP" ]
+  ] [
+     fhir:code [ fhir:v "80263" ] ;
+     fhir:display [ fhir:v "ORGANISM" ]
+  ] [
+     fhir:code [ fhir:v "90433" ] ;
+     fhir:display [ fhir:v "MYCOBACTERIUM FLAVESCENS" ]
+  ] [
+     fhir:code [ fhir:v "90726" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR PARAINFLUENZA VIRUS" ]
+  ] [
+     fhir:code [ fhir:v "80230" ] ;
+     fhir:display [ fhir:v "POSITIVE FOR INFLUENZA A VIRAL ANTIGEN" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
