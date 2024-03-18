@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "1.5.1"] ; # 
   fhir:name [ fhir:v "VoiceaBiomarkerforAI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-18T21:32:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-18T21:50:56+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -1008,23 +1008,7 @@
            fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Home" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "brief_fhir_intro.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "brief_fhir_intro.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Brief Fhir Intro" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "changelog.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "changelog.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Changelog" ] ;
+         fhir:title [ fhir:v "Index" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -1037,10 +1021,18 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "protocol.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "artifacts.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "protocol.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Protocol" ] ;
+         fhir:name [ fhir:v "artifacts.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Artifacts" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "changelog.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "changelog.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Changelog" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -1053,10 +1045,10 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "tutorial_neuro.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "tutorial_voice.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "tutorial_neuro.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Tutorial Neuro" ] ;
+         fhir:name [ fhir:v "tutorial_voice.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Tutorial Voice" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -1077,6 +1069,14 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "tutorial_neuro.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "tutorial_neuro.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Tutorial Neuro" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "tutorial_table_of_contents.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "tutorial_table_of_contents.html"^^xsd:anyURI ] ;
@@ -1085,10 +1085,18 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "tutorial_voice.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "brief_fhir_intro.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "tutorial_voice.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Tutorial Voice" ] ;
+         fhir:name [ fhir:v "brief_fhir_intro.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Brief Fhir Intro" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "protocol.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "protocol.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Protocol" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <style type="text/css">h2{--heading-prefix:"11"}
+    h3,h4,h5,h6{--heading-prefix:"11"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -91,7 +91,19 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="guidance.html">Guidance</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+  <li>
+    <a href="tutorial_table_of_contents.html">Tutorial</a>
+  </li>
+  <li>
+    <a href="protocol.html">Protocol</a>
   </li>
 </ul>
             </div>    <!-- /.nav-collapse -->
@@ -146,13 +158,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="fhir">FHIR</h3>
 
-<p><a name="l245">​</a>The Voice as a Biomarker for AI Health (VBAI) profiles are based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and derived from <a href="http://hl7.org/fhir/us/core/STU5/">US Core STU5</a> where possible. The profiles capture the data collected in the VBAI study.</p>
+<p><a name="l269">​</a>The Voice as a Biomarker for AI Health (VBAI) profiles are based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and derived from <a href="http://hl7.org/fhir/us/core/STU5/">US Core STU5</a> where possible. The profiles capture the data collected in the VBAI study.</p>
 
 <p>There are three resources from FHIR worth specifically highlighting.</p>
 
-<h4 id="plandefinition-resource"><a name="l257">​</a><a href="StructureDefinition-vbai-plan-definition.html">PlanDefinition</a> resource</h4>
+<h4 id="plandefinition-resource"><a name="l281">​</a><a href="StructureDefinition-vbai-plan-definition.html">PlanDefinition</a> resource</h4>
 
-<p><a name="l262">​</a>A <a href="StructureDefinition-vbai-plan-definition.html">PlanDefinition</a> resource describes a set of sequential actions. It forms the basis of a protocol.
+<p><a name="l286">​</a>A <a href="StructureDefinition-vbai-plan-definition.html">PlanDefinition</a> resource describes a set of sequential actions. It forms the basis of a protocol.
 The resource is very flexible, and provides some logic for actions being dependent on previous actions.</p>
 
 <p>These actions have either:</p>
@@ -164,31 +176,31 @@ The resource is very flexible, and provides some logic for actions being depende
 
 <p>Here, the “definition” is a FHIR resource, and the utility of having a definition means we can apply rules to constrain what the data could be. It may help to contrast the two cases. In the first case, we describe the action, but we have no way of verifying that the action was done correctly, or that we have collected the data correctly. In the second case, we have a definition resource, which lets us explicitly describe the rules that the data must follow during collection. Enforcing these rules at data collection time is an effective way to ensure data quality. The most common definition is a Questionnaire resource.</p>
 
-<h4 id="questionnaire"><a name="l283">​</a><a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a></h4>
+<h4 id="questionnaire"><a name="l307">​</a><a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a></h4>
 
-<p><a name="l287">​</a>The <a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a> resource allows us to specify questions being asked <em>and</em> the structure of the responses. This specification will allow a FHIR server using this profile to validate data content.
+<p><a name="l311">​</a>The <a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a> resource allows us to specify questions being asked <em>and</em> the structure of the responses. This specification will allow a FHIR server using this profile to validate data content.
 The <a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a> resource itself describes what the questions are, and what the allowable answers are.
 Each question within the Questionnaire resource is bounded to a set of options and valuesets, with each having their own codesystem. Value sets and code systems are mechanisms in FHIR to specify what is an allowed option. For example, you might have a code system created by a standards organization which describes a set of diagnoses (e.g. ICD-10). However, you only want to allow a subset of the ICD-10 diagnoses, not all of them, so you create a ValueSet which specifies the subset of ICD-10 codes you allow.</p>
 
 <p>Some example questionnaires in the protocols include:</p>
 
 <ul>
-  <li><a name="l304">​</a><a href="Questionnaire-PHQ9schema.html">PHQ9</a></li>
-  <li><a name="l308">​</a><a href="Questionnaire-GAD7schema.html">GAD7</a></li>
-  <li><a name="l312">​</a><a href="Questionnaire-VbaiQuestionnaireConfoundersExample.html">Confounders</a></li>
-  <li><a name="l316">​</a><a href="Questionnaire-VbaiQuestionnaireDemographicExample.html">Demographics</a></li>
+  <li><a name="l328">​</a><a href="Questionnaire-PHQ9schema.html">PHQ9</a></li>
+  <li><a name="l332">​</a><a href="Questionnaire-GAD7schema.html">GAD7</a></li>
+  <li><a name="l336">​</a><a href="Questionnaire-VbaiQuestionnaireConfoundersExample.html">Confounders</a></li>
+  <li><a name="l340">​</a><a href="Questionnaire-VbaiQuestionnaireDemographicExample.html">Demographics</a></li>
 </ul>
 
-<h4 id="questionnaireresponse"><a name="l321">​</a><a href="StructureDefinition-vbai-questionnaire-response.html">QuestionnaireResponse</a></h4>
+<h4 id="questionnaireresponse"><a name="l345">​</a><a href="StructureDefinition-vbai-questionnaire-response.html">QuestionnaireResponse</a></h4>
 
-<p><a name="l325">​</a>The <a href="StructureDefinition-vbai-questionnaire-response.html">QuestionnaireResponse</a> resource is a natural counterpart to the <a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a> resource.
+<p><a name="l349">​</a>The <a href="StructureDefinition-vbai-questionnaire-response.html">QuestionnaireResponse</a> resource is a natural counterpart to the <a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a> resource.
 Whereas the <a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a> describes the format of the questions being asked, the <a href="StructureDefinition-vbai-questionnaire-response.html">QuestionnaireResponse</a> describes the format of the answers being provided. We use <a href="StructureDefinition-vbai-questionnaire-response.html">QuestionnaireResponse</a> resources to validate the answers to the question.</p>
 
-<p><a name="l343">​</a>Think of a multiple choice exam. In this case, <a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a> describes the exam questions, and the possible answers to each question (e.g. a, b, c, or d). The <a href="StructureDefinition-vbai-questionnaire-response.html">QuestionnaireResponse</a> is just the set of answers provided by an individual.</p>
+<p><a name="l367">​</a>Think of a multiple choice exam. In this case, <a href="StructureDefinition-vbai-questionnaire.html">Questionnaire</a> describes the exam questions, and the possible answers to each question (e.g. a, b, c, or d). The <a href="StructureDefinition-vbai-questionnaire-response.html">QuestionnaireResponse</a> is just the set of answers provided by an individual.</p>
 
 <h4 id="reading-a-resource">Reading a resource</h4>
 
-<p><a name="l355">​</a>With some knowledge of the resources involved in the cohort, it will be useful to understand how to read a resource page.
+<p><a name="l379">​</a>With some knowledge of the resources involved in the cohort, it will be useful to understand how to read a resource page.
 The following is a sample of the <a href="Questionnaire-VbaiQuestionnaireDemographicExample.html">Demographics</a>:</p>
 
   <!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide -->
@@ -210,7 +222,7 @@ The following is a sample of the <a href="Questionnaire-VbaiQuestionnaireDemogra
   <li>A description (e.g. “Who is completing this survey?”)</li>
   <li>The cardinality of the identifier, which stipulates how many responses are allowed. The most common entry is “0..1”, which means both 0 and 1 responses are allowed. More clearly, we expect one response, but it’s OK for there to be no response, and we don’t allow more than one response to this question.</li>
   <li>The type of the response. Types enforce certain rules on the response. A “choice” type can only be one of a predecided set of choices. A “string” type can be any text. A “date” type must follow rules for well-formed dates, and so on.</li>
-  <li><a name="l397">​</a>Optionally, a ValueSet is listed. For the “choice” data type, the ValueSet lists out the allowed choices. For “completed_by”, this is the <a href="ValueSet-whocompletedsurvey.html">whocompletedsurvey</a> ValueSet.</li>
+  <li><a name="l421">​</a>Optionally, a ValueSet is listed. For the “choice” data type, the ValueSet lists out the allowed choices. For “completed_by”, this is the <a href="ValueSet-whocompletedsurvey.html">whocompletedsurvey</a> ValueSet.</li>
 </ul>
 
   <!-- - Consent - -->
@@ -240,7 +252,7 @@ The following is a sample of the <a href="Questionnaire-VbaiQuestionnaireDemogra
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#1.5.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 18, 2024 21:32+0000">2024-03-18</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#1.5.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 18, 2024 21:50+0000">2024-03-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
