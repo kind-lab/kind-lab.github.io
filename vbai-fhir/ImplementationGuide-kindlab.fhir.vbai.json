@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VoiceaBiomarkerforAI</h2><p>The official URL for this implementation guide is: </p><pre>https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai</pre><div><p>Implementation Guide for Voice Biomarker for AI FHIR Profiles</p>\n</div></div>"
   },
   "url" : "https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai",
-  "version" : "1.5.1",
+  "version" : "2.0.0",
   "name" : "VoiceaBiomarkerforAI",
   "status" : "draft",
-  "date" : "2024-03-19T17:09:46+00:00",
+  "date" : "2024-03-25T20:15:52+00:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -598,13 +598,241 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-body-height"
+      },
+      "name" : "VBAI Body Height",
+      "description" : "An observation profile based on US Core Body Height Profile",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-body-weight"
+      },
+      "name" : "VBAI Body Weight",
+      "description" : "An observation profile based on US Core Body Weight Profile.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-cohort-protocol"
+      },
+      "name" : "A general template for VBAI protocols",
+      "description" : "This profile extends PlanDefinition to restrict the number of actions to 12, the number of high-level steps in the VBAI protocol template.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-condition"
+      },
+      "name" : "VBAI Condition",
+      "description" : "A condition profile based on US Core Condition Encounter Diagnosis.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-consent"
+      },
+      "name" : "VBAI Consent",
+      "description" : "A consent profile based on the base Consent resource",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-encounter"
+      },
+      "name" : "VBAI Encounter",
+      "description" : "An encounter profile based on US Core Encounter.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-imaging-media"
+      },
+      "name" : "VBAI Imaging Media",
+      "description" : "A imaging media profile based on the base Media resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-imaging-study"
+      },
+      "name" : "VBAI Imaging Study",
+      "description" : "An imaging study profile based on the base ImagingStudy resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-patient"
+      },
+      "name" : "VBAI Patient",
+      "description" : "A patient profile based on US Core Patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-plan-definition"
+      },
+      "name" : "Vbai Plan Definition",
+      "description" : "An PlanDefinition profile based on the base PlanDefinition resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-questionnaire"
+      },
+      "name" : "VBAI Questionnaire",
+      "description" : "A questionnaire profile based on the base Questionnaire resource",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-questionnaire-response"
+      },
+      "name" : "VBAI Questionnaire Response",
+      "description" : "A questionnaire response profile based on the base QuestionnaireResponse resource",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-vital-signs"
+      },
+      "name" : "VBAI Vital Signs",
+      "description" : "A observation profile based on US Core Vital Signs Profile.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-waveform-device"
+      },
+      "name" : "VBAI Waveform Device",
+      "description" : "A device profile based on the base Device resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vbai-waveform-media"
+      },
+      "name" : "VBAI Waveform Media",
+      "description" : "A media profile based on the base Media resource. Primarily captures binary audio waveform data.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MoodAcousticTasksQuestionnaire"
+      },
+      "name" : "MoodAcousticTasksQuestionnaire",
+      "description" : "MoodAcousticTasks Questionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/PedsAcousticTasksQuestionnaire"
+      },
+      "name" : "PedsAcousticTasksQuestionnaire",
+      "description" : "PedsAcousticTasks Questionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/RespiratoryAcousticTasksQuestionnaire"
+      },
+      "name" : "RespiratoryAcousticTasksQuestionnaire",
+      "description" : "RespiratoryAcousticTasks Questionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/VoiceAcousticTasksQuestionnaire"
+      },
+      "name" : "VoiceAcousticTasksQuestionnaire",
+      "description" : "VoiceAcousticTasks Questionnaire",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Questionnaire"
       }],
       "reference" : {
         "reference" : "Questionnaire/acoustictaskschema"
       },
       "name" : "acoustictaskschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -615,7 +843,7 @@
         "reference" : "Questionnaire/bridge2aieconsentaddendumbchenglishschema"
       },
       "name" : "bridge2aieconsentaddendumbchenglishschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -626,7 +854,7 @@
         "reference" : "Questionnaire/bridge2aieconsentaddendummitenglishschema"
       },
       "name" : "bridge2aieconsentaddendummitenglishschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -637,7 +865,7 @@
         "reference" : "Questionnaire/bridge2aieconsentaddendummitresearcherstatemeschema"
       },
       "name" : "bridge2aieconsentaddendummitresearcherstatemeschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -648,7 +876,7 @@
         "reference" : "Questionnaire/bridge2aieconsentaddendumwcmenglishschema"
       },
       "name" : "bridge2aieconsentaddendumwcmenglishschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -659,7 +887,7 @@
         "reference" : "Questionnaire/bridge2aieconsentaddendumwcmresearcherstatemeschema"
       },
       "name" : "bridge2aieconsentaddendumwcmresearcherstatemeschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -670,7 +898,7 @@
         "reference" : "Questionnaire/bridge2aieconsentcombinedpdfaddendummitschema"
       },
       "name" : "bridge2aieconsentcombinedpdfaddendummitschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -681,7 +909,7 @@
         "reference" : "Questionnaire/bridge2aieconsentcombinedpdfaddendumwcmschema"
       },
       "name" : "bridge2aieconsentcombinedpdfaddendumwcmschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -692,7 +920,7 @@
         "reference" : "Questionnaire/bridge2aieconsentcombinedpdfmainicfusfschema"
       },
       "name" : "bridge2aieconsentcombinedpdfmainicfusfschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -703,7 +931,7 @@
         "reference" : "Questionnaire/bridge2aieconsentmainicfusfenglishschema"
       },
       "name" : "bridge2aieconsentmainicfusfenglishschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -714,7 +942,7 @@
         "reference" : "Questionnaire/bridge2aieconsentmainicfusfresearcherstatemeschema"
       },
       "name" : "bridge2aieconsentmainicfusfresearcherstatemeschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -725,7 +953,7 @@
         "reference" : "Questionnaire/bridge2aipaperconsentallsitesenglishschema"
       },
       "name" : "bridge2aipaperconsentallsitesenglishschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -736,7 +964,7 @@
         "reference" : "Questionnaire/dmoodbipolardisorderschema"
       },
       "name" : "dmoodbipolardisorderschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -747,7 +975,7 @@
         "reference" : "Questionnaire/dmooddepressionormajordepressivedisorderschema"
       },
       "name" : "dmooddepressionormajordepressivedisorderschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -758,7 +986,7 @@
         "reference" : "Questionnaire/dneuroalzheimersdiseasemildcognitiveimpairmeschema"
       },
       "name" : "dneuroalzheimersdiseasemildcognitiveimpairmeschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -769,7 +997,7 @@
         "reference" : "Questionnaire/dneuroamyotrophiclateralsclerosisalsschema"
       },
       "name" : "dneuroamyotrophiclateralsclerosisalsschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -780,7 +1008,7 @@
         "reference" : "Questionnaire/dneuroparkinsonsdiseaseschema"
       },
       "name" : "dneuroparkinsonsdiseaseschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -791,7 +1019,7 @@
         "reference" : "Questionnaire/dpedshealthydevelopmentallytypicalchildrenschema"
       },
       "name" : "dpedshealthydevelopmentallytypicalchildrenschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -802,7 +1030,7 @@
         "reference" : "Questionnaire/drespairwaystenosisschema"
       },
       "name" : "drespairwaystenosisschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -813,7 +1041,7 @@
         "reference" : "Questionnaire/dvoicevocalfoldparalysisschema"
       },
       "name" : "dvoicevocalfoldparalysisschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -824,7 +1052,7 @@
         "reference" : "Questionnaire/enrollmentformschema"
       },
       "name" : "enrollmentformschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -835,7 +1063,7 @@
         "reference" : "Questionnaire/qgenericconfoundersschema"
       },
       "name" : "qgenericconfoundersschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -846,7 +1074,7 @@
         "reference" : "Questionnaire/qgenericdemographicsschema"
       },
       "name" : "qgenericdemographicsschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -857,7 +1085,7 @@
         "reference" : "Questionnaire/qgenericgad7anxietyschema"
       },
       "name" : "qgenericgad7anxietyschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -868,7 +1096,7 @@
         "reference" : "Questionnaire/qgenericpatienthealthquestionnaire9schema"
       },
       "name" : "qgenericpatienthealthquestionnaire9schema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -879,7 +1107,7 @@
         "reference" : "Questionnaire/qgenericvoicehandicapindexvhi10schema"
       },
       "name" : "qgenericvoicehandicapindexvhi10schema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -890,7 +1118,7 @@
         "reference" : "Questionnaire/qgenericvoiceperceptionschema"
       },
       "name" : "qgenericvoiceperceptionschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -901,7 +1129,7 @@
         "reference" : "Questionnaire/qmoodadhdadultschema"
       },
       "name" : "qmoodadhdadultschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -912,7 +1140,7 @@
         "reference" : "Questionnaire/qmoodcustomaffectscaleschema"
       },
       "name" : "qmoodcustomaffectscaleschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -923,7 +1151,7 @@
         "reference" : "Questionnaire/qmooddsm5adultschema"
       },
       "name" : "qmooddsm5adultschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -934,7 +1162,7 @@
         "reference" : "Questionnaire/qmoodpanasschema"
       },
       "name" : "qmoodpanasschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -945,7 +1173,7 @@
         "reference" : "Questionnaire/qmoodptsdadultschema"
       },
       "name" : "qmoodptsdadultschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -956,7 +1184,7 @@
         "reference" : "Questionnaire/qneuroproductivevocabularyschema"
       },
       "name" : "qneuroproductivevocabularyschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -967,7 +1195,7 @@
         "reference" : "Questionnaire/qneurorandomitemgenerationschema"
       },
       "name" : "qneurorandomitemgenerationschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -978,7 +1206,7 @@
         "reference" : "Questionnaire/qneurowinogradschemasschema"
       },
       "name" : "qneurowinogradschemasschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -989,7 +1217,7 @@
         "reference" : "Questionnaire/qneurowordcolorstroopschema"
       },
       "name" : "qneurowordcolorstroopschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -1000,7 +1228,7 @@
         "reference" : "Questionnaire/qrespdyspneaindexdischema"
       },
       "name" : "qrespdyspneaindexdischema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -1011,7 +1239,7 @@
         "reference" : "Questionnaire/qrespleicestercoughquestionnairelcqschema"
       },
       "name" : "qrespleicestercoughquestionnairelcqschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -1022,7 +1250,7 @@
         "reference" : "Questionnaire/qvoicevoiceproblemseverityschema"
       },
       "name" : "qvoicevoiceproblemseverityschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -1033,7 +1261,7 @@
         "reference" : "Questionnaire/recordingschema"
       },
       "name" : "recordingschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -1044,7 +1272,7 @@
         "reference" : "Questionnaire/sessionschema"
       },
       "name" : "sessionschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -1055,7 +1283,7 @@
         "reference" : "Questionnaire/subjectparticipantbasicinformationschema"
       },
       "name" : "subjectparticipantbasicinformationschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -1066,7 +1294,7 @@
         "reference" : "Questionnaire/subjectparticipantcontactinformationschema"
       },
       "name" : "subjectparticipantcontactinformationschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     },
     {
       "extension" : [{
@@ -1077,7 +1305,7 @@
         "reference" : "Questionnaire/subjectparticipanteligiblestudiesschema"
       },
       "name" : "subjectparticipanteligiblestudiesschema",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     }],
     "page" : {
       "extension" : [{

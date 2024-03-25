@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Protocol -  v1.5.1</title>
+    <title>Protocol -  v2.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -60,7 +60,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">1.5.1 - ci-build
+            <span style="display:inline-block;">2.0.0 - ci-build
 
 
             </span>
@@ -100,9 +100,6 @@
     <a href="changelog.html">Change Log</a>
   </li>
   <li>
-    <a href="tutorial_table_of_contents.html">Tutorial</a>
-  </li>
-  <li>
     <a href="protocol.html">Protocol</a>
   </li>
 </ul>
@@ -137,7 +134,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v1.5.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://voicecollab.ai/fhir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v2.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://voicecollab.ai/fhir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Protocol</h2>
   
 
@@ -211,7 +208,7 @@ across a diverse set of stakeholders.</p>
 Resources (FHIR) which strictly define acceptable inputs. The design of these FHIR resources
 was collaboratively decided by the Bridge2AI-Voice Consortium.</p>
 
-<div class="alert info"><a name="l383">​</a>
+<div class="alert info"><a name="l377">​</a>
   <span class="closebtn">×</span>  
   <strong>Note:</strong> If you don't know what the PlanDefinition, Questionnaire, and QuestionnaireResponse resources are, head over to the <a href="/vbai-fhir/brief_fhir_intro.html">brief FHIR intro</a> page.
 </div>
@@ -219,9 +216,9 @@ was collaboratively decided by the Bridge2AI-Voice Consortium.</p>
 <p>Data collection was standardized into a set of sequential phases:</p>
 
 <ol>
-  <li>▵ Eligibility</li>
-  <li>▵ Consent</li>
-  <li>▵ Demographic Questionnaire</li>
+  <li>Eligibility</li>
+  <li>Consent</li>
+  <li>Demographic Questionnaire</li>
   <li>Acoustic Tasks</li>
   <li>Cohort Specific Tasks</li>
   <li>Confounder Questionnaire</li>
@@ -243,13 +240,13 @@ The following sections describe each of these phases in detail.</p>
 
 <p>We will ask you a few questions to determine if you are eligible for study enrollment.</p>
 
-<p><strong>Questionnaire resources</strong></p>
+<p><strong>Questionnaire resources</strong>
+  <!-- * [SurveyCompletion] - who is completing the survey --></p>
 <ul>
-  <li><a name="l453">​</a><a href="Questionnaire-SurveyCompletionQuestionnaire.html">SurveyCompletion</a> - who is completing the survey</li>
-  <li><a name="l458">​</a><a href="Questionnaire-GeneralInformation.html">GeneralInformation</a></li>
-  <li><a name="l462">​</a><a href="Questionnaire-ContactInformation.html">ContactInformation</a></li>
-  <li><a name="l466">​</a><a href="Questionnaire-EligibleStudies.html">EligibleStudies</a></li>
-  <li><a name="l470">​</a><a href="Questionnaire-Enrollment.html">Enrollment</a></li>
+  <li><a href="Questionnaire-subjectparticipantbasicinformationschema.html">GeneralInformation</a></li>
+  <li><a href="Questionnaire-subjectparticipantcontactinformationschema.html">ContactInformation</a></li>
+  <li><a href="Questionnaire-subjectparticipanteligiblestudiesschema.html">EligibleStudies</a></li>
+  <li><a href="Questionnaire-enrollmentformschema.html">Enrollment</a></li>
 </ul>
 
 <h3 id="consent">Consent</h3>
@@ -260,14 +257,17 @@ The following sections describe each of these phases in detail.</p>
 
 <p><strong>Questionnaire resources</strong></p>
 <ul>
-  <li><a name="l491">​</a><a href="Questionnaire-MainICF.html">ConsentMainICF</a></li>
-  <li><a name="l495">​</a><a href="Questionnaire-MainICFResearcherStatement.html">ConsentMainICFResearcherStatement</a></li>
-  <li><a name="l499">​</a><a href="Questionnaire-MainICFCombinedPDF.html">ConsentMainICFCombined</a></li>
-  <li><a name="l503">​</a><a href="Questionnaire-AddendumWCM.html">AddendumWCM</a></li>
-  <li><a name="l507">​</a><a href="Questionnaire-AddendumWCMResearcherStatement.html">AddendumWCMResearcherStatement</a></li>
-  <li><a name="l511">​</a><a href="Questionnaire-AddendumCombinedPDF.html">AddendumCombinedPDF</a></li>
-  <li><a name="l515">​</a><a href="Questionnaire-ConsentQuestionnaire.html">ConsentQuestionnaire</a></li>
-  <li><a name="l519">​</a><a href="PlanDefinition-VbaiPlanDefinitionNeuroConsentExample.html">NeuroConsent</a> (Neuro only)</li>
+  <li><a href="Questionnaire-bridge2aieconsentmainicfusfenglishschema.html">ConsentMainICFUSFEnglish</a></li>
+  <li><a href="Questionnaire-bridge2aieconsentmainicfusfresearcherstatemeschema.html">ConsentMainICFResearcherStatement</a></li>
+  <li><a href="Questionnaire-bridge2aieconsentcombinedpdfmainicfusfschema.html">ConsentMainICFCombined</a></li>
+  <li><a href="Questionnaire-bridge2aieconsentaddendumbchenglishschema.html">AddendumEnglish</a></li>
+  <li><a href="Questionnaire-bridge2aieconsentaddendumwcmenglishschema.html">AddendumWCMEnglish</a></li>
+  <li><a href="Questionnaire-bridge2aieconsentaddendumwcmresearcherstatemeschema.html">AddendumWCMResearcherStatement</a></li>
+  <li><a href="Questionnaire-bridge2aieconsentaddendummitenglishschema.html">AddendumMITEnglish</a></li>
+  <li><a href="Questionnaire-bridge2aieconsentaddendummitresearcherstatemeschema.html">AddendumMITResearcherStatement</a></li>
+  <li><a href="Questionnaire-bridge2aieconsentcombinedpdfaddendumwcmschema.html">AddendumCombinedPDFWCM</a></li>
+  <li><a href="Questionnaire-bridge2aieconsentcombinedpdfaddendummitschema.html">AddendumCombinedPDFMIT</a></li>
+  <li><a href="Questionnaire-bridge2aipaperconsentallsitesenglishschema.html">PaperConsentAllSiteEnglish</a></li>
 </ul>
 
 <h3 id="demographics">Demographics</h3>
@@ -276,7 +276,7 @@ The following sections describe each of these phases in detail.</p>
 
 <p><strong>Questionnaire resources</strong></p>
 <ul>
-  <li><a name="l538">​</a><a href="Questionnaire-VbaiQuestionnaireDemographicExample.html">DemographicQuestionnaire</a></li>
+  <li><a href="Questionnaire-qgenericdemographicsschema.html">DemographicQuestionnaire</a></li>
 </ul>
 
   <!-- Acoustic tasks -->
@@ -286,7 +286,7 @@ The following sections describe each of these phases in detail.</p>
 
 <p><strong>Questionnaire resources</strong></p>
 <ul>
-  <li><a name="l558">​</a><a href="Questionnaire-GeneralAcousticTasksQuestionnaire.html">AcousticTasks</a></li>
+  <li><a href="Questionnaire-acoustictaskschema.html">AcousticTasks</a></li>
 </ul>
 
   <!-- Session specific variables collected -->
@@ -296,7 +296,7 @@ The following sections describe each of these phases in detail.</p>
 
 <p><strong>Questionnaire resources</strong></p>
 <ul>
-  <li><a name="l578">​</a><a href="Questionnaire-VbaiQuestionnaireConfoundersExample.html">ConfounderQuestionnaire</a> - A questionnaire asking about factors which relate to past medical history.</li>
+  <li><a href="Questionnaire-qgenericconfoundersschema.html">ConfounderQuestionnaire</a> - A questionnaire asking about factors which relate to past medical history.</li>
 </ul>
 
   <!-- validated questionnaires -->
@@ -306,12 +306,12 @@ The following sections describe each of these phases in detail.</p>
 
 <p><strong>Questionnaire resources</strong></p>
 <ul>
-  <li><a name="l599">​</a><a href="PlanDefinition-VbaiPlanDefinitionGeneralQuestionnaireExample.html">ValidatedQuestionnaires</a>
+  <li>ValidatedQuestionnaires
     <ul>
-      <li><a name="l605">​</a><a href="Questionnaire-GAD7schema.html">GAD7</a></li>
-      <li><a name="l609">​</a><a href="Questionnaire-PHQ9schema.html">PHQ9</a></li>
-      <li><a name="l613">​</a><a href="Questionnaire-VoicePerception.html">VoicePerception</a></li>
-      <li><a name="l617">​</a><a href="Questionnaire-VHI10.html">VHI10</a></li>
+      <li><a href="Questionnaire-qgenericgad7anxietyschema.html">GAD7</a></li>
+      <li><a href="Questionnaire-qgenericpatienthealthquestionnaire9schema.html">PHQ9</a></li>
+      <li><a href="Questionnaire-qgenericvoiceperceptionschema.html">VoicePerception</a></li>
+      <li><a href="Questionnaire-qgenericvoicehandicapindexvhi10schema.html">VHI10</a></li>
     </ul>
   </li>
 </ul>
@@ -325,17 +325,17 @@ The following sections describe each of these phases in detail.</p>
 
 <p><strong>Questionnaire resources</strong></p>
 <ul>
-  <li><a name="l642">​</a>Mood - <a href="Questionnaire-MoodAcousticTasksQuestionnaire.html">MoodAcousticTasks</a></li>
-  <li><a name="l647">​</a>Voice - <a href="Questionnaire-VoiceAcousticTasksQuestionnaire.html">VoiceAcousticTasks</a></li>
-  <li><a name="l652">​</a>Pediatric - <a href="Questionnaire-PedsAcousticTasksQuestionnaire.html">PediatricAcousticTasks</a></li>
-  <li><a name="l657">​</a>Respiratory - <a href="Questionnaire-RespiratoryAcousticTasksQuestionnaire.html">RespiratoryAcousticTasks</a></li>
+  <li>Mood - <a href="Questionnaire-MoodAcousticTasksQuestionnaire.html">MoodAcousticTasks</a></li>
+  <li>Voice - <a href="Questionnaire-VoiceAcousticTasksQuestionnaire.html">VoiceAcousticTasks</a></li>
+  <li>Pediatric - <a href="Questionnaire-PedsAcousticTasksQuestionnaire.html">PediatricAcousticTasks</a></li>
+  <li>Respiratory - <a href="Questionnaire-RespiratoryAcousticTasksQuestionnaire.html">RespiratoryAcousticTasks</a></li>
   <li>Neuro
     <ul>
-      <li><a name="l666">​</a>Task 1: <a href="Questionnaire-MOCA.html">Moca</a></li>
-      <li><a name="l671">​</a>Task 2: <a href="Questionnaire-Stroop.html">Stroop</a></li>
-      <li><a name="l676">​</a>Task 3: <a href="Questionnaire-Vocabulary.html">Vocabulary</a></li>
-      <li><a name="l681">​</a>Task 4: <a href="Questionnaire-Words.html">RandomItemGeneration</a></li>
-      <li><a name="l686">​</a>Task 5: <a href="Questionnaire-WinogradSchema.html">Winograd</a></li>
+      <li>Task 1: Moca</li>
+      <li>Task 2: <a href="Questionnaire-qneurowordcolorstroopschema.html">Stroop</a></li>
+      <li>Task 3: <a href="Questionnaire-qneuroproductivevocabularyschema.html">Vocabulary</a></li>
+      <li>Task 4: <a href="Questionnaire-qneurorandomitemgenerationschema.html">RandomItemGeneration</a></li>
+      <li>Task 5: <a href="Questionnaire-qneurowinogradschemasschema.html">Winograd</a></li>
     </ul>
   </li>
 </ul>
@@ -354,38 +354,39 @@ The following sections describe each of these phases in detail.</p>
 <ul>
   <li>Mood
     <ul>
-      <li><a name="l717">​</a><a href="Questionnaire-PANASQuestionnaire.html">Panas</a></li>
-      <li><a name="l721">​</a><a href="Questionnaire-CustomAffectScaleQuestionnaire.html">CustomAffectScale</a></li>
-      <li><a name="l725">​</a><a href="Questionnaire-DSM5.html">DSM5</a></li>
-      <li><a name="l729">​</a><a href="Questionnaire-PTSD.html">PTSD</a></li>
-      <li><a name="l733">​</a><a href="Questionnaire-ADHDQuestionnaire.html">ADHD</a></li>
-      <li>Altman Self-Rating Mania Scale</li>
-      <li>Severity Measure for Social Anxiety Disorder (Social Phobia)—Adult - 10</li>
-      <li>Well-being: Secure Flourishing Index</li>
-      <li>Hamburg–Hannover Agitation Scale (H2A)</li>
-      <li>Chalder Fatigue Scale 11</li>
-      <li>The Big Five Inventory–2 Extra Short Form&nbsp;</li>
+      <li><a href="Questionnaire-qmoodpanasschema.html">Panas</a></li>
+      <li><a href="Questionnaire-qmoodcustomaffectscaleschema.html">CustomAffectScale</a></li>
+      <li><a href="Questionnaire-qmooddsm5adultschema.html">DSM5</a></li>
+      <li><a href="Questionnaire-qmoodptsdadultschema.html">PTSD</a></li>
+      <li><a href="Questionnaire-qmoodadhdadultschema.html">ADHD</a>
+  <!-- - Altman Self-Rating Mania Scale -->
+  <!-- - Severity Measure for Social Anxiety Disorder (Social Phobia)—Adult - 10 -->
+  <!-- - Well-being: Secure Flourishing Index -->
+  <!-- - Hamburg–Hannover Agitation Scale (H2A) -->
+  <!-- - Chalder Fatigue Scale 11 -->
+  <!-- - The Big Five Inventory–2 Extra Short Form  --></li>
     </ul>
   </li>
   <li>Voice
     <ul>
-      <li><a name="l761">​</a><a href="Questionnaire-PatientQuestions.html">PatientQuestionnaire</a></li>
-      <li><a name="l765">​</a><a href="Questionnaire-VHI10.html">VHI10</a></li>
-      <li><a name="l769">​</a><a href="Questionnaire-CAPEVQuestionnaire.html">CAPEV</a></li>
-      <li><a name="l773">​</a><a href="Questionnaire-VoiceProblemSeverity.html">VoiceProblemSeverity</a></li>
+      <li><a name="l753">​</a><a href="Questionnaire-PatientQuestions.html">PatientQuestionnaire</a></li>
+      <li><a href="Questionnaire-qgenericvoicehandicapindexvhi10schema.html">VHI10</a></li>
+      <li><a href="Questionnaire-dvoicevocalfoldparalysisschema.html">CAPEV</a></li>
+      <li><a href="Questionnaire-qvoicevoiceproblemseverityschema.html">VoiceProblemSeverity</a></li>
     </ul>
   </li>
   <li>Pediatric
     <ul>
-      <li><a name="l783">​</a><a href="Questionnaire-PSC17.html">PSC17</a></li>
+      <li>N/A
+  <!-- - [PSC17] --></li>
     </ul>
   </li>
   <li>Respiratory
     <ul>
-      <li><a name="l793">​</a><a href="Questionnaire-RespiratoryPatientQuestionnaire.html">PatientRespiratoryQuestionnaire</a></li>
-      <li><a name="l797">​</a><a href="Questionnaire-DyspneaIndex.html">DyspneaIndex</a></li>
-      <li><a name="l801">​</a><a href="Questionnaire-LeicesterCough.html">LeicesterCough</a></li>
-      <li><a name="l805">​</a><a href="Questionnaire-UrgeToCough.htmls">UrgeToCough</a></li>
+      <li><a name="l785">​</a><a href="Questionnaire-RespiratoryPatientQuestionnaire.html">PatientRespiratoryQuestionnaire</a></li>
+      <li><a href="Questionnaire-qrespdyspneaindexdischema.html">DyspneaIndex</a></li>
+      <li><a href="Questionnaire-qrespleicestercoughquestionnairelcqschema.html">LeicesterCough</a>
+  <!-- - [UrgeToCough] --></li>
     </ul>
   </li>
   <li>Neuro
@@ -402,7 +403,7 @@ The following sections describe each of these phases in detail.</p>
 
 <p><strong>Questionnaire resources</strong></p>
 <ul>
-  <li>N/A.</li>
+  <li>N/A</li>
 </ul>
 
 <h3 id="feedback">Feedback</h3>
@@ -411,10 +412,24 @@ The following sections describe each of these phases in detail.</p>
 
 <p><strong>Questionnaire resources</strong></p>
 <ul>
-  <li><a name="l853">​</a><a href="Questionnaire-FeedbackQuestionnaire.html">FeedbackQuestionnaire</a></li>
+  <li>N/A</li>
 </ul>
 
+  <!-- Profiles -->
+
+  <!-- Protcols -->
+
+  <!-- Missing -->
+
+  <!-- Questionnaires -->
+
   <!-- - Consent - -->
+
+  <!-- Acoustic Tasks -->
+
+  <!-- [VbaiPlanDefinitionClinicianInputExample]: PlanDefinition-VbaiPlanDefinitionClinicianInputExample.html
+[FeedbackQuestionnaire]: Questionnaire-FeedbackQuestionnaire.html
+[NeuroConsent]: PlanDefinition-VbaiPlanDefinitionNeuroConsentExample.html -->
 
 
 
@@ -441,7 +456,7 @@ The following sections describe each of these phases in detail.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#1.5.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 19, 2024 17:09+0000">2024-03-19</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 25, 2024 20:15+0000">2024-03-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

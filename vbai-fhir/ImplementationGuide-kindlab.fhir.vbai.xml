@@ -7,10 +7,10 @@
 </div></div>
   </text>
   <url value="https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai"/>
-  <version value="1.5.1"/>
+  <version value="2.0.0"/>
   <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2024-03-19T17:09:46+00:00"/>
+  <date value="2024-03-25T20:15:52+00:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -444,13 +444,222 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-body-height"/>
+      </reference>
+      <name value="VBAI Body Height"/>
+      <description value="An observation profile based on US Core Body Height Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-body-weight"/>
+      </reference>
+      <name value="VBAI Body Weight"/>
+      <description value="An observation profile based on US Core Body Weight Profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-cohort-protocol"/>
+      </reference>
+      <name value="A general template for VBAI protocols"/>
+      <description value="This profile extends PlanDefinition to restrict the number of actions to 12, the number of high-level steps in the VBAI protocol template."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-condition"/>
+      </reference>
+      <name value="VBAI Condition"/>
+      <description value="A condition profile based on US Core Condition Encounter Diagnosis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-consent"/>
+      </reference>
+      <name value="VBAI Consent"/>
+      <description value="A consent profile based on the base Consent resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-encounter"/>
+      </reference>
+      <name value="VBAI Encounter"/>
+      <description value="An encounter profile based on US Core Encounter."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-imaging-media"/>
+      </reference>
+      <name value="VBAI Imaging Media"/>
+      <description value="A imaging media profile based on the base Media resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-imaging-study"/>
+      </reference>
+      <name value="VBAI Imaging Study"/>
+      <description value="An imaging study profile based on the base ImagingStudy resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-patient"/>
+      </reference>
+      <name value="VBAI Patient"/>
+      <description value="A patient profile based on US Core Patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-plan-definition"/>
+      </reference>
+      <name value="Vbai Plan Definition"/>
+      <description value="An PlanDefinition profile based on the base PlanDefinition resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-questionnaire"/>
+      </reference>
+      <name value="VBAI Questionnaire"/>
+      <description value="A questionnaire profile based on the base Questionnaire resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-questionnaire-response"/>
+      </reference>
+      <name value="VBAI Questionnaire Response"/>
+      <description value="A questionnaire response profile based on the base QuestionnaireResponse resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-vital-signs"/>
+      </reference>
+      <name value="VBAI Vital Signs"/>
+      <description value="A observation profile based on US Core Vital Signs Profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-waveform-device"/>
+      </reference>
+      <name value="VBAI Waveform Device"/>
+      <description value="A device profile based on the base Device resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vbai-waveform-media"/>
+      </reference>
+      <name value="VBAI Waveform Media"/>
+      <description value="A media profile based on the base Media resource. Primarily captures binary audio waveform data."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MoodAcousticTasksQuestionnaire"/>
+      </reference>
+      <name value="MoodAcousticTasksQuestionnaire"/>
+      <description value="MoodAcousticTasks Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/PedsAcousticTasksQuestionnaire"/>
+      </reference>
+      <name value="PedsAcousticTasksQuestionnaire"/>
+      <description value="PedsAcousticTasks Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/RespiratoryAcousticTasksQuestionnaire"/>
+      </reference>
+      <name value="RespiratoryAcousticTasksQuestionnaire"/>
+      <description value="RespiratoryAcousticTasks Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/VoiceAcousticTasksQuestionnaire"/>
+      </reference>
+      <name value="VoiceAcousticTasksQuestionnaire"/>
+      <description value="VoiceAcousticTasks Questionnaire"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
         <reference value="Questionnaire/acoustictaskschema"/>
       </reference>
       <name value="acoustictaskschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -460,7 +669,7 @@
         <reference value="Questionnaire/bridge2aieconsentaddendumbchenglishschema"/>
       </reference>
       <name value="bridge2aieconsentaddendumbchenglishschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -470,7 +679,7 @@
         <reference value="Questionnaire/bridge2aieconsentaddendummitenglishschema"/>
       </reference>
       <name value="bridge2aieconsentaddendummitenglishschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -480,7 +689,7 @@
         <reference value="Questionnaire/bridge2aieconsentaddendummitresearcherstatemeschema"/>
       </reference>
       <name value="bridge2aieconsentaddendummitresearcherstatemeschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -490,7 +699,7 @@
         <reference value="Questionnaire/bridge2aieconsentaddendumwcmenglishschema"/>
       </reference>
       <name value="bridge2aieconsentaddendumwcmenglishschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -500,7 +709,7 @@
         <reference value="Questionnaire/bridge2aieconsentaddendumwcmresearcherstatemeschema"/>
       </reference>
       <name value="bridge2aieconsentaddendumwcmresearcherstatemeschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -510,7 +719,7 @@
         <reference value="Questionnaire/bridge2aieconsentcombinedpdfaddendummitschema"/>
       </reference>
       <name value="bridge2aieconsentcombinedpdfaddendummitschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -520,7 +729,7 @@
         <reference value="Questionnaire/bridge2aieconsentcombinedpdfaddendumwcmschema"/>
       </reference>
       <name value="bridge2aieconsentcombinedpdfaddendumwcmschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -530,7 +739,7 @@
         <reference value="Questionnaire/bridge2aieconsentcombinedpdfmainicfusfschema"/>
       </reference>
       <name value="bridge2aieconsentcombinedpdfmainicfusfschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -540,7 +749,7 @@
         <reference value="Questionnaire/bridge2aieconsentmainicfusfenglishschema"/>
       </reference>
       <name value="bridge2aieconsentmainicfusfenglishschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -550,7 +759,7 @@
         <reference value="Questionnaire/bridge2aieconsentmainicfusfresearcherstatemeschema"/>
       </reference>
       <name value="bridge2aieconsentmainicfusfresearcherstatemeschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -560,7 +769,7 @@
         <reference value="Questionnaire/bridge2aipaperconsentallsitesenglishschema"/>
       </reference>
       <name value="bridge2aipaperconsentallsitesenglishschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -570,7 +779,7 @@
         <reference value="Questionnaire/dmoodbipolardisorderschema"/>
       </reference>
       <name value="dmoodbipolardisorderschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -580,7 +789,7 @@
         <reference value="Questionnaire/dmooddepressionormajordepressivedisorderschema"/>
       </reference>
       <name value="dmooddepressionormajordepressivedisorderschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -590,7 +799,7 @@
         <reference value="Questionnaire/dneuroalzheimersdiseasemildcognitiveimpairmeschema"/>
       </reference>
       <name value="dneuroalzheimersdiseasemildcognitiveimpairmeschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -600,7 +809,7 @@
         <reference value="Questionnaire/dneuroamyotrophiclateralsclerosisalsschema"/>
       </reference>
       <name value="dneuroamyotrophiclateralsclerosisalsschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -610,7 +819,7 @@
         <reference value="Questionnaire/dneuroparkinsonsdiseaseschema"/>
       </reference>
       <name value="dneuroparkinsonsdiseaseschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -620,7 +829,7 @@
         <reference value="Questionnaire/dpedshealthydevelopmentallytypicalchildrenschema"/>
       </reference>
       <name value="dpedshealthydevelopmentallytypicalchildrenschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -630,7 +839,7 @@
         <reference value="Questionnaire/drespairwaystenosisschema"/>
       </reference>
       <name value="drespairwaystenosisschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -640,7 +849,7 @@
         <reference value="Questionnaire/dvoicevocalfoldparalysisschema"/>
       </reference>
       <name value="dvoicevocalfoldparalysisschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -650,7 +859,7 @@
         <reference value="Questionnaire/enrollmentformschema"/>
       </reference>
       <name value="enrollmentformschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -660,7 +869,7 @@
         <reference value="Questionnaire/qgenericconfoundersschema"/>
       </reference>
       <name value="qgenericconfoundersschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -670,7 +879,7 @@
         <reference value="Questionnaire/qgenericdemographicsschema"/>
       </reference>
       <name value="qgenericdemographicsschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -680,7 +889,7 @@
         <reference value="Questionnaire/qgenericgad7anxietyschema"/>
       </reference>
       <name value="qgenericgad7anxietyschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -690,7 +899,7 @@
         <reference value="Questionnaire/qgenericpatienthealthquestionnaire9schema"/>
       </reference>
       <name value="qgenericpatienthealthquestionnaire9schema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -700,7 +909,7 @@
         <reference value="Questionnaire/qgenericvoicehandicapindexvhi10schema"/>
       </reference>
       <name value="qgenericvoicehandicapindexvhi10schema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -710,7 +919,7 @@
         <reference value="Questionnaire/qgenericvoiceperceptionschema"/>
       </reference>
       <name value="qgenericvoiceperceptionschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -720,7 +929,7 @@
         <reference value="Questionnaire/qmoodadhdadultschema"/>
       </reference>
       <name value="qmoodadhdadultschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -730,7 +939,7 @@
         <reference value="Questionnaire/qmoodcustomaffectscaleschema"/>
       </reference>
       <name value="qmoodcustomaffectscaleschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -740,7 +949,7 @@
         <reference value="Questionnaire/qmooddsm5adultschema"/>
       </reference>
       <name value="qmooddsm5adultschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -750,7 +959,7 @@
         <reference value="Questionnaire/qmoodpanasschema"/>
       </reference>
       <name value="qmoodpanasschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -760,7 +969,7 @@
         <reference value="Questionnaire/qmoodptsdadultschema"/>
       </reference>
       <name value="qmoodptsdadultschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -770,7 +979,7 @@
         <reference value="Questionnaire/qneuroproductivevocabularyschema"/>
       </reference>
       <name value="qneuroproductivevocabularyschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -780,7 +989,7 @@
         <reference value="Questionnaire/qneurorandomitemgenerationschema"/>
       </reference>
       <name value="qneurorandomitemgenerationschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -790,7 +999,7 @@
         <reference value="Questionnaire/qneurowinogradschemasschema"/>
       </reference>
       <name value="qneurowinogradschemasschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -800,7 +1009,7 @@
         <reference value="Questionnaire/qneurowordcolorstroopschema"/>
       </reference>
       <name value="qneurowordcolorstroopschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -810,7 +1019,7 @@
         <reference value="Questionnaire/qrespdyspneaindexdischema"/>
       </reference>
       <name value="qrespdyspneaindexdischema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -820,7 +1029,7 @@
         <reference value="Questionnaire/qrespleicestercoughquestionnairelcqschema"/>
       </reference>
       <name value="qrespleicestercoughquestionnairelcqschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -830,7 +1039,7 @@
         <reference value="Questionnaire/qvoicevoiceproblemseverityschema"/>
       </reference>
       <name value="qvoicevoiceproblemseverityschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -840,7 +1049,7 @@
         <reference value="Questionnaire/recordingschema"/>
       </reference>
       <name value="recordingschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -850,7 +1059,7 @@
         <reference value="Questionnaire/sessionschema"/>
       </reference>
       <name value="sessionschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -860,7 +1069,7 @@
         <reference value="Questionnaire/subjectparticipantbasicinformationschema"/>
       </reference>
       <name value="subjectparticipantbasicinformationschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -870,7 +1079,7 @@
         <reference value="Questionnaire/subjectparticipantcontactinformationschema"/>
       </reference>
       <name value="subjectparticipantcontactinformationschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -880,7 +1089,7 @@
         <reference value="Questionnaire/subjectparticipanteligiblestudiesschema"/>
       </reference>
       <name value="subjectparticipanteligiblestudiesschema"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

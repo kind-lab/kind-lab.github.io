@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts -  v1.5.1</title>
+    <title>Artifacts -  v2.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -60,7 +60,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">1.5.1 - ci-build
+            <span style="display:inline-block;">2.0.0 - ci-build
 
 
             </span>
@@ -100,9 +100,6 @@
     <a href="changelog.html">Change Log</a>
   </li>
   <li>
-    <a href="tutorial_table_of_contents.html">Tutorial</a>
-  </li>
-  <li>
     <a href="protocol.html">Protocol</a>
   </li>
 </ul>
@@ -137,7 +134,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v1.5.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://voicecollab.ai/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://voicecollab.ai/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts</h2>
   
   
@@ -149,7 +146,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Example: Example Instances</a>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -158,6 +158,149 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-cohort-protocol.html"
+                  title="StructureDefinition/vbai-cohort-protocol">A general template for VBAI protocols</a>
+            </td>
+            <td>
+<p>This profile extends PlanDefinition to restrict the number of actions to 12, the number of high-level steps in the VBAI protocol template.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-body-height.html"
+                  title="StructureDefinition/vbai-body-height">VBAI Body Height</a>
+            </td>
+            <td>
+<p>An observation profile based on US Core Body Height Profile</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-body-weight.html"
+                  title="StructureDefinition/vbai-body-weight">VBAI Body Weight</a>
+            </td>
+            <td>
+<p>An observation profile based on US Core Body Weight Profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-condition.html"
+                  title="StructureDefinition/vbai-condition">VBAI Condition</a>
+            </td>
+            <td>
+<p>A condition profile based on US Core Condition Encounter Diagnosis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-consent.html"
+                  title="StructureDefinition/vbai-consent">VBAI Consent</a>
+            </td>
+            <td>
+<p>A consent profile based on the base Consent resource</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-encounter.html"
+                  title="StructureDefinition/vbai-encounter">VBAI Encounter</a>
+            </td>
+            <td>
+<p>An encounter profile based on US Core Encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-imaging-media.html"
+                  title="StructureDefinition/vbai-imaging-media">VBAI Imaging Media</a>
+            </td>
+            <td>
+<p>A imaging media profile based on the base Media resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-imaging-study.html"
+                  title="StructureDefinition/vbai-imaging-study">VBAI Imaging Study</a>
+            </td>
+            <td>
+<p>An imaging study profile based on the base ImagingStudy resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-patient.html"
+                  title="StructureDefinition/vbai-patient">VBAI Patient</a>
+            </td>
+            <td>
+<p>A patient profile based on US Core Patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-questionnaire.html"
+                  title="StructureDefinition/vbai-questionnaire">VBAI Questionnaire</a>
+            </td>
+            <td>
+<p>A questionnaire profile based on the base Questionnaire resource</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-questionnaire-response.html"
+                  title="StructureDefinition/vbai-questionnaire-response">VBAI Questionnaire Response</a>
+            </td>
+            <td>
+<p>A questionnaire response profile based on the base QuestionnaireResponse resource</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-vital-signs.html"
+                  title="StructureDefinition/vbai-vital-signs">VBAI Vital Signs</a>
+            </td>
+            <td>
+<p>A observation profile based on US Core Vital Signs Profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-waveform-device.html"
+                  title="StructureDefinition/vbai-waveform-device">VBAI Waveform Device</a>
+            </td>
+            <td>
+<p>A device profile based on the base Device resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-waveform-media.html"
+                  title="StructureDefinition/vbai-waveform-media">VBAI Waveform Media</a>
+            </td>
+            <td>
+<p>A media profile based on the base Media resource. Primarily captures binary audio waveform data.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vbai-plan-definition.html"
+                  title="StructureDefinition/vbai-plan-definition">Vbai Plan Definition</a>
+            </td>
+            <td>
+<p>An PlanDefinition profile based on the base PlanDefinition resource.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -165,267 +308,435 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="Questionnaire-MoodAcousticTasksQuestionnaire.html"
+                  title="Questionnaire/MoodAcousticTasksQuestionnaire">MoodAcousticTasksQuestionnaire</a>
+            </td>
+            <td>
+<p>MoodAcousticTasks Questionnaire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-PedsAcousticTasksQuestionnaire.html"
+                  title="Questionnaire/PedsAcousticTasksQuestionnaire">PedsAcousticTasksQuestionnaire</a>
+            </td>
+            <td>
+<p>PedsAcousticTasks Questionnaire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-RespiratoryAcousticTasksQuestionnaire.html"
+                  title="Questionnaire/RespiratoryAcousticTasksQuestionnaire">RespiratoryAcousticTasksQuestionnaire</a>
+            </td>
+            <td>
+<p>RespiratoryAcousticTasks Questionnaire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-VoiceAcousticTasksQuestionnaire.html"
+                  title="Questionnaire/VoiceAcousticTasksQuestionnaire">VoiceAcousticTasksQuestionnaire</a>
+            </td>
+            <td>
+<p>VoiceAcousticTasks Questionnaire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Questionnaire-acoustictaskschema.html"
                   title="Questionnaire/acoustictaskschema">acoustictaskschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-bridge2aieconsentaddendumbchenglishschema.html"
                   title="Questionnaire/bridge2aieconsentaddendumbchenglishschema">bridge2aieconsentaddendumbchenglishschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-bridge2aieconsentaddendummitenglishschema.html"
                   title="Questionnaire/bridge2aieconsentaddendummitenglishschema">bridge2aieconsentaddendummitenglishschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-bridge2aieconsentaddendummitresearcherstatemeschema.html"
                   title="Questionnaire/bridge2aieconsentaddendummitresearcherstatemeschema">bridge2aieconsentaddendummitresearcherstatemeschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-bridge2aieconsentaddendumwcmenglishschema.html"
                   title="Questionnaire/bridge2aieconsentaddendumwcmenglishschema">bridge2aieconsentaddendumwcmenglishschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-bridge2aieconsentaddendumwcmresearcherstatemeschema.html"
                   title="Questionnaire/bridge2aieconsentaddendumwcmresearcherstatemeschema">bridge2aieconsentaddendumwcmresearcherstatemeschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-bridge2aieconsentcombinedpdfaddendummitschema.html"
                   title="Questionnaire/bridge2aieconsentcombinedpdfaddendummitschema">bridge2aieconsentcombinedpdfaddendummitschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-bridge2aieconsentcombinedpdfaddendumwcmschema.html"
                   title="Questionnaire/bridge2aieconsentcombinedpdfaddendumwcmschema">bridge2aieconsentcombinedpdfaddendumwcmschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-bridge2aieconsentcombinedpdfmainicfusfschema.html"
                   title="Questionnaire/bridge2aieconsentcombinedpdfmainicfusfschema">bridge2aieconsentcombinedpdfmainicfusfschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-bridge2aieconsentmainicfusfenglishschema.html"
                   title="Questionnaire/bridge2aieconsentmainicfusfenglishschema">bridge2aieconsentmainicfusfenglishschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-bridge2aieconsentmainicfusfresearcherstatemeschema.html"
                   title="Questionnaire/bridge2aieconsentmainicfusfresearcherstatemeschema">bridge2aieconsentmainicfusfresearcherstatemeschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-bridge2aipaperconsentallsitesenglishschema.html"
                   title="Questionnaire/bridge2aipaperconsentallsitesenglishschema">bridge2aipaperconsentallsitesenglishschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-dmoodbipolardisorderschema.html"
                   title="Questionnaire/dmoodbipolardisorderschema">dmoodbipolardisorderschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-dmooddepressionormajordepressivedisorderschema.html"
                   title="Questionnaire/dmooddepressionormajordepressivedisorderschema">dmooddepressionormajordepressivedisorderschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-dneuroalzheimersdiseasemildcognitiveimpairmeschema.html"
                   title="Questionnaire/dneuroalzheimersdiseasemildcognitiveimpairmeschema">dneuroalzheimersdiseasemildcognitiveimpairmeschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-dneuroamyotrophiclateralsclerosisalsschema.html"
                   title="Questionnaire/dneuroamyotrophiclateralsclerosisalsschema">dneuroamyotrophiclateralsclerosisalsschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-dneuroparkinsonsdiseaseschema.html"
                   title="Questionnaire/dneuroparkinsonsdiseaseschema">dneuroparkinsonsdiseaseschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-dpedshealthydevelopmentallytypicalchildrenschema.html"
                   title="Questionnaire/dpedshealthydevelopmentallytypicalchildrenschema">dpedshealthydevelopmentallytypicalchildrenschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-drespairwaystenosisschema.html"
                   title="Questionnaire/drespairwaystenosisschema">drespairwaystenosisschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-dvoicevocalfoldparalysisschema.html"
                   title="Questionnaire/dvoicevocalfoldparalysisschema">dvoicevocalfoldparalysisschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-enrollmentformschema.html"
                   title="Questionnaire/enrollmentformschema">enrollmentformschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qgenericconfoundersschema.html"
                   title="Questionnaire/qgenericconfoundersschema">qgenericconfoundersschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qgenericdemographicsschema.html"
                   title="Questionnaire/qgenericdemographicsschema">qgenericdemographicsschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qgenericgad7anxietyschema.html"
                   title="Questionnaire/qgenericgad7anxietyschema">qgenericgad7anxietyschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qgenericpatienthealthquestionnaire9schema.html"
                   title="Questionnaire/qgenericpatienthealthquestionnaire9schema">qgenericpatienthealthquestionnaire9schema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qgenericvoicehandicapindexvhi10schema.html"
                   title="Questionnaire/qgenericvoicehandicapindexvhi10schema">qgenericvoicehandicapindexvhi10schema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qgenericvoiceperceptionschema.html"
                   title="Questionnaire/qgenericvoiceperceptionschema">qgenericvoiceperceptionschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qmoodadhdadultschema.html"
                   title="Questionnaire/qmoodadhdadultschema">qmoodadhdadultschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qmoodcustomaffectscaleschema.html"
                   title="Questionnaire/qmoodcustomaffectscaleschema">qmoodcustomaffectscaleschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qmooddsm5adultschema.html"
                   title="Questionnaire/qmooddsm5adultschema">qmooddsm5adultschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qmoodpanasschema.html"
                   title="Questionnaire/qmoodpanasschema">qmoodpanasschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qmoodptsdadultschema.html"
                   title="Questionnaire/qmoodptsdadultschema">qmoodptsdadultschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qneuroproductivevocabularyschema.html"
                   title="Questionnaire/qneuroproductivevocabularyschema">qneuroproductivevocabularyschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qneurorandomitemgenerationschema.html"
                   title="Questionnaire/qneurorandomitemgenerationschema">qneurorandomitemgenerationschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qneurowinogradschemasschema.html"
                   title="Questionnaire/qneurowinogradschemasschema">qneurowinogradschemasschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qneurowordcolorstroopschema.html"
                   title="Questionnaire/qneurowordcolorstroopschema">qneurowordcolorstroopschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qrespdyspneaindexdischema.html"
                   title="Questionnaire/qrespdyspneaindexdischema">qrespdyspneaindexdischema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qrespleicestercoughquestionnairelcqschema.html"
                   title="Questionnaire/qrespleicestercoughquestionnairelcqschema">qrespleicestercoughquestionnairelcqschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-qvoicevoiceproblemseverityschema.html"
                   title="Questionnaire/qvoicevoiceproblemseverityschema">qvoicevoiceproblemseverityschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-recordingschema.html"
                   title="Questionnaire/recordingschema">recordingschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-sessionschema.html"
                   title="Questionnaire/sessionschema">sessionschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-subjectparticipantbasicinformationschema.html"
                   title="Questionnaire/subjectparticipantbasicinformationschema">subjectparticipantbasicinformationschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-subjectparticipantcontactinformationschema.html"
                   title="Questionnaire/subjectparticipantcontactinformationschema">subjectparticipantcontactinformationschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-subjectparticipanteligiblestudiesschema.html"
                   title="Questionnaire/subjectparticipanteligiblestudiesschema">subjectparticipanteligiblestudiesschema</a>
             </td>
+            <td>
+
+</td>
          </tr>
       </tbody>
    </table>
@@ -453,7 +764,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#1.5.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 19, 2024 17:09+0000">2024-03-19</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 25, 2024 20:15+0000">2024-03-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
