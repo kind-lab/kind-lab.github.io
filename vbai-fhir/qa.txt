@@ -1,9 +1,9 @@
 VoiceaBiomarkerforAI : Validation Results
 =========================================
 
-err = 9, warn = 2771, info = 57
-IG Publisher Version: 1.6.3
-Generated Tue Mar 26 20:12:01 UTC 2024. FHIR version 4.0.1 for kindlab.fhir.vbai#2.0.1 (canonical = https://voicecollab.ai/fhir)
+err = 11, warn = 2771, info = 57
+IG Publisher Version: 1.6.4
+Generated Mon Apr 15 18:24:21 UTC 2024. FHIR version 4.0.1 for kindlab.fhir.vbai#2.0.1 (canonical = https://voicecollab.ai/fhir)
  Build Errors : 20 / 48 / 0
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/ImplementationGuide-kindlab.fhir.vbai : 0 / 0 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-MoodAcousticTasksQuestionnaire : 0 / 5 / 2
@@ -54,8 +54,8 @@ Generated Tue Mar 26 20:12:01 UTC 2024. FHIR version 4.0.1 for kindlab.fhir.vbai
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-subjectparticipantbasicinformationschema : 0 / 9 / 2
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-subjectparticipantcontactinformationschema : 0 / 0 / 2
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/Questionnaire-subjectparticipanteligiblestudiesschema : 0 / 30 / 2
- /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-body-height : 0 / 1 / 1
- /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-body-weight : 0 / 1 / 1
+ /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-body-height : 1 / 1 / 1
+ /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-body-weight : 1 / 1 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-cohort-protocol : 0 / 1 / 1
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-condition : 0 / 1 / 2
  /home/runner/work/voice-biomarker-fhir/voice-biomarker-fhir/fsh-generated/resources/StructureDefinition-vbai-consent : 0 / 1 / 8
@@ -2955,8 +2955,10 @@ WARNING: Questionnaire/subjectparticipanteligiblestudiesschema: Questionnaire.it
 WARNING: Questionnaire/subjectparticipanteligiblestudiesschema: Questionnaire.item[30].answerOption[0].value.ofType(string): value should not start or finish with whitespace 'Unchecked '
 INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-vbai-body-height.json ==
+ERROR: StructureDefinition/vbai-body-height: StructureDefinition: Error generating Snapshot: Cannot invoke "org.hl7.fhir.r5.model.DataType.fhirType()" because the return value of "org.hl7.fhir.r5.model.ElementDefinition.getFixed()" is null (this usually arises from a problem in the differential)
 WARNING: StructureDefinition.where(url = 'https://voicecollab.ai/fhir/StructureDefinition/vbai-body-height'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-vbai-body-weight.json ==
+ERROR: StructureDefinition/vbai-body-weight: StructureDefinition: Error generating Snapshot: Cannot invoke "org.hl7.fhir.r5.model.DataType.fhirType()" because the return value of "org.hl7.fhir.r5.model.ElementDefinition.getFixed()" is null (this usually arises from a problem in the differential)
 WARNING: StructureDefinition.where(url = 'https://voicecollab.ai/fhir/StructureDefinition/vbai-body-weight'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-vbai-cohort-protocol.json ==
 WARNING: StructureDefinition.where(url = 'https://voicecollab.ai/fhir/StructureDefinition/vbai-cohort-protocol'): The Implementation Guide contains no examples for this profile
