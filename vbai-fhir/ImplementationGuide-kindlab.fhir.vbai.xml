@@ -7,10 +7,10 @@
 </div></div>
   </text>
   <url value="https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai"/>
-  <version value="2.0.1"/>
+  <version value="2.1.0"/>
   <name value="VoiceaBiomarkerforAI"/>
   <status value="draft"/>
-  <date value="2024-04-15T18:23:02+00:00"/>
+  <date value="2024-04-16T16:30:12+00:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -846,6 +846,46 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
+        <reference value="Questionnaire/dvoicebenignlesionsschema"/>
+      </reference>
+      <name value="dvoicebenignlesionsschema"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/dvoicelaryngealcancerschema"/>
+      </reference>
+      <name value="dvoicelaryngealcancerschema"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/dvoicelaryngealdystoniaschema"/>
+      </reference>
+      <name value="dvoicelaryngealdystoniaschema"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/dvoiceprecancerouslesionsschema"/>
+      </reference>
+      <name value="dvoiceprecancerouslesionsschema"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
         <reference value="Questionnaire/dvoicevocalfoldparalysisschema"/>
       </reference>
       <name value="dvoicevocalfoldparalysisschema"/>
@@ -969,6 +1009,16 @@
         <reference value="Questionnaire/qmoodptsdadultschema"/>
       </reference>
       <name value="qmoodptsdadultschema"/>
+      <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/qneuromocaschema"/>
+      </reference>
+      <name value="qneuromocaschema"/>
       <exampleCanonical value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
     </resource>
     <resource>
