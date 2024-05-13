@@ -53,11 +53,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Media.view","Media.view","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Imaging view, e.g. Lateral or Antero-posterior","The name of the imaging view e.g. Lateral or Antero-posterior (AP).","","","","","","","","","",,"example","Imaging view (projection) used when collecting an image.","http://hl7.org/fhir/ValueSet/media-view","",,,,"Media.view",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","DiagnosticImage.subjectOrientationCode"
-"Media.subject","Media.subject","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://voicecollab.ai/fhir/StructureDefinition/vbai-patient]]}
+"Media.subject","Media.subject","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-patient]]}
 ","Who/What this Media is a record of","Who/What this Media is a record of.","","","","","","","","","",,,,,"",,,,"Media.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject",".participation[typeCode=""SUBJ""]???","FiveWs.subject[x]","FiveWs.subject","~0010,0020"
 "Media.encounter","Media.encounter","","context
-","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://voicecollab.ai/fhir/StructureDefinition/vbai-encounter]]}
+","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-encounter]]}
 ","Encounter associated with media","The encounter that establishes the context for this media.","This will typically be the encounter the media occurred within.","Links the Media to the Encounter context.","","","","","","","",,,,,"",,,,"Media.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.encounter",".inboundRelationship(typeCode=COMP].source[classCode<=PCPR, moodCode=EVN]","FiveWs.context"
 "Media.created[x]","Media.created[x]","","timing

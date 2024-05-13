@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>VBAI Consent -  v2.1.0</title>
+    <title>VBAI Consent -  v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -64,7 +64,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - ci-build
+            <span style="display:inline-block;">2.2.0 - ci-build
 
 
             </span>
@@ -131,7 +131,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://voicecollab.ai/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">VoiceaBiomarkerforAI - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://kind-lab.github.io/vbai-fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -208,10 +208,10 @@
   <table class="colsi">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://voicecollab.ai/fhir/StructureDefinition/vbai-consent<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://voicecollab.ai/fhir/StructureDefinition/vbai-consent"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-consent<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-consent"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://voicecollab.ai/fhir/StructureDefinition/vbai-consent|2.1.0"/></span>
+      <span class="copy-text">2.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-consent|2.2.0"/></span>
       </td>
     </tr>
 
@@ -227,7 +227,7 @@
         
           Active
           
-            as of 2024-04-16
+            as of 2024-05-13
           
         
       </td>
@@ -1256,7 +1256,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     "<a href="StructureDefinition-vbai-consent.html#Consent.status" title="Indicates the current state of this consent (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">status</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">draft | proposed | active | rejected | inactive | entered-in-error</a></span>
     "<a href="StructureDefinition-vbai-consent.html#Consent.scope" title="A selector of the type of consent being presented: ADR, Privacy, Treatment, Research.  This list is now extensible (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">scope</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Which of the four areas this resource covers (extensible)</a></span>
     "<a href="StructureDefinition-vbai-consent.html#Consent.category" title="A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements" class="dict"><span style="text-decoration: underline">category</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Classification of the consent statement - for indexing/retrieval</a></span>
-    "<a href="StructureDefinition-vbai-consent.html#Consent.patient" title="The patient/healthcare consumer to whom this consent applies" class="dict"><span style="text-decoration: underline">patient</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://voicecollab.ai/fhir/StructureDefinition/vbai-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who the consent applies to</span>
+    "<a href="StructureDefinition-vbai-consent.html#Consent.patient" title="The patient/healthcare consumer to whom this consent applies" class="dict"><span style="text-decoration: underline">patient</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who the consent applies to</span>
     "<a href="StructureDefinition-vbai-consent.html#Consent.dateTime" title="When this  Consent was issued / created / indexed" class="dict"><span style="text-decoration: underline">dateTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">When this Consent was created or indexed</span>
     "<a href="StructureDefinition-vbai-consent.html#Consent.performer" title="Either the Grantor, which is the entity responsible for granting the rights listed in a Consent Directive or the Grantee, which is the entity responsible for complying with the Consent Directive, including any obligations or limitations on authorizations and enforcement of prohibitions" class="dict"><span style="text-decoration: underline">performer</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who is agreeing to the policy and rules</span>
     "<a href="StructureDefinition-vbai-consent.html#Consent.organization" title="The organization that manages the consent, and the framework within which it is executed" class="dict"><span style="text-decoration: underline">organization</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Custodian of the consent</span>
@@ -1333,7 +1333,7 @@ Summary
 <p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-vbai-patient.html">VBAI Patient <span style="font-size: 8px">(https://voicecollab.ai/fhir/StructureDefinition/vbai-patient)</span></a></li>
+<li><a href="StructureDefinition-vbai-patient.html">VBAI Patient <span style="font-size: 8px">(https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-patient)</span></a></li>
 
 </ul>
 
@@ -2300,7 +2300,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     "<a href="StructureDefinition-vbai-consent.html#Consent.status" title="Indicates the current state of this consent (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">status</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">draft | proposed | active | rejected | inactive | entered-in-error</a></span>
     "<a href="StructureDefinition-vbai-consent.html#Consent.scope" title="A selector of the type of consent being presented: ADR, Privacy, Treatment, Research.  This list is now extensible (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">scope</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Which of the four areas this resource covers (extensible)</a></span>
     "<a href="StructureDefinition-vbai-consent.html#Consent.category" title="A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements" class="dict"><span style="text-decoration: underline">category</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Classification of the consent statement - for indexing/retrieval</a></span>
-    "<a href="StructureDefinition-vbai-consent.html#Consent.patient" title="The patient/healthcare consumer to whom this consent applies" class="dict"><span style="text-decoration: underline">patient</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://voicecollab.ai/fhir/StructureDefinition/vbai-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who the consent applies to</span>
+    "<a href="StructureDefinition-vbai-consent.html#Consent.patient" title="The patient/healthcare consumer to whom this consent applies" class="dict"><span style="text-decoration: underline">patient</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who the consent applies to</span>
     "<a href="StructureDefinition-vbai-consent.html#Consent.dateTime" title="When this  Consent was issued / created / indexed" class="dict"><span style="text-decoration: underline">dateTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">When this Consent was created or indexed</span>
     "<a href="StructureDefinition-vbai-consent.html#Consent.performer" title="Either the Grantor, which is the entity responsible for granting the rights listed in a Consent Directive or the Grantee, which is the entity responsible for complying with the Consent Directive, including any obligations or limitations on authorizations and enforcement of prohibitions" class="dict"><span style="text-decoration: underline">performer</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who is agreeing to the policy and rules</span>
     "<a href="StructureDefinition-vbai-consent.html#Consent.organization" title="The organization that manages the consent, and the framework within which it is executed" class="dict"><span style="text-decoration: underline">organization</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Custodian of the consent</span>
@@ -2373,7 +2373,7 @@ Summary
 <p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-vbai-patient.html">VBAI Patient <span style="font-size: 8px">(https://voicecollab.ai/fhir/StructureDefinition/vbai-patient)</span></a></li>
+<li><a href="StructureDefinition-vbai-patient.html">VBAI Patient <span style="font-size: 8px">(https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-patient)</span></a></li>
 
 </ul>
 
@@ -2404,43 +2404,16 @@ Summary
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 16, 2024 16:30+0000">2024-04-16</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://fhir.kindlab.sickkids.ca">KinD Lab</a>.  Package kindlab.fhir.vbai#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 13, 2024 19:43+0000">2024-05-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -2467,16 +2440,8 @@ Summary
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
   <!-- Analytics Below
   ================================================== -->
   </body>

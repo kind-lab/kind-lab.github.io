@@ -29,12 +29,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="https://voicecollab.ai/fhir/StructureDefinition/vbai-consent"/>
-  <version value="2.1.0"/>
+  <url value="https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-consent"/>
+  <version value="2.2.0"/>
   <name value="VbaiConsent"/>
   <title value="VBAI Consent"/>
   <status value="active"/>
-  <date value="2024-04-16T16:30:12+00:00"/>
+  <date value="2024-05-13T19:43:18+00:00"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -648,7 +648,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"/>
+        <targetProfile value="https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-patient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2115,7 +2115,7 @@
       <path value="Consent.patient"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"/>
+        <targetProfile value="https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-patient"/>
       </type>
     </element>
     <element id="Consent.policyRule">

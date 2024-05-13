@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai> a fhir:ImplementationGuide ;
+<https://kind-lab.github.io/vbai-fhir/ImplementationGuide/kindlab.fhir.vbai> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "kindlab.fhir.vbai"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VoiceaBiomarkerforAI</h2><p>The official URL for this implementation guide is: </p><pre>https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai</pre><div><p>Implementation Guide for Voice Biomarker for AI FHIR Profiles</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VoiceaBiomarkerforAI</h2><p>The official URL for this implementation guide is: </p><pre>https://kind-lab.github.io/vbai-fhir/ImplementationGuide/kindlab.fhir.vbai</pre><div><p>Implementation Guide for Voice Biomarker for AI FHIR Profiles</p>\n</div></div>"
   ] ; # 
-  fhir:url [ fhir:v "https://voicecollab.ai/fhir/ImplementationGuide/kindlab.fhir.vbai"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.1.0"] ; # 
+  fhir:url [ fhir:v "https://kind-lab.github.io/vbai-fhir/ImplementationGuide/kindlab.fhir.vbai"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.2.0"] ; # 
   fhir:name [ fhir:v "VoiceaBiomarkerforAI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-16T16:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-13T19:43:18+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KinD Lab"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KinD Lab" ] ;
@@ -142,7 +142,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "https://voicecollab.ai/fhir/history.html" ]
+         fhir:value [ fhir:v "https://kind-lab.github.io/vbai-fhir/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -370,7 +370,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "https://voicecollab.ai/fhir/history.html" ]
+         fhir:value [ fhir:v "https://kind-lab.github.io/vbai-fhir/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -515,7 +515,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-body-height> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-body-height> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-body-height" ]
        ] ;
        fhir:name [ fhir:v "VBAI Body Height" ] ;
@@ -527,7 +527,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-body-weight> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-body-weight> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-body-weight" ]
        ] ;
        fhir:name [ fhir:v "VBAI Body Weight" ] ;
@@ -539,7 +539,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-cohort-protocol> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-cohort-protocol> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-cohort-protocol" ]
        ] ;
        fhir:name [ fhir:v "A general template for VBAI protocols" ] ;
@@ -551,7 +551,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-condition> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-condition> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-condition" ]
        ] ;
        fhir:name [ fhir:v "VBAI Condition" ] ;
@@ -563,7 +563,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-consent> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-consent> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-consent" ]
        ] ;
        fhir:name [ fhir:v "VBAI Consent" ] ;
@@ -575,7 +575,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-encounter> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-encounter> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-encounter" ]
        ] ;
        fhir:name [ fhir:v "VBAI Encounter" ] ;
@@ -587,7 +587,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-imaging-media> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-imaging-media> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-imaging-media" ]
        ] ;
        fhir:name [ fhir:v "VBAI Imaging Media" ] ;
@@ -599,7 +599,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-imaging-study> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-imaging-study> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-imaging-study" ]
        ] ;
        fhir:name [ fhir:v "VBAI Imaging Study" ] ;
@@ -611,7 +611,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-patient> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-patient> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-patient" ]
        ] ;
        fhir:name [ fhir:v "VBAI Patient" ] ;
@@ -623,7 +623,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-plan-definition> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-plan-definition> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-plan-definition" ]
        ] ;
        fhir:name [ fhir:v "Vbai Plan Definition" ] ;
@@ -635,7 +635,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-questionnaire> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-questionnaire" ]
        ] ;
        fhir:name [ fhir:v "VBAI Questionnaire" ] ;
@@ -647,7 +647,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire-response> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-questionnaire-response> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-questionnaire-response" ]
        ] ;
        fhir:name [ fhir:v "VBAI Questionnaire Response" ] ;
@@ -659,7 +659,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-vital-signs> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-vital-signs> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-vital-signs" ]
        ] ;
        fhir:name [ fhir:v "VBAI Vital Signs" ] ;
@@ -671,7 +671,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-waveform-device> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-waveform-device> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-waveform-device" ]
        ] ;
        fhir:name [ fhir:v "VBAI Waveform Device" ] ;
@@ -683,7 +683,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-waveform-media> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-waveform-media> ;
          fhir:reference [ fhir:v "StructureDefinition/vbai-waveform-media" ]
        ] ;
        fhir:name [ fhir:v "VBAI Waveform Media" ] ;
@@ -695,7 +695,7 @@
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/MoodAcousticTasksQuestionnaire> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/MoodAcousticTasksQuestionnaire> ;
          fhir:reference [ fhir:v "Questionnaire/MoodAcousticTasksQuestionnaire" ]
        ] ;
        fhir:name [ fhir:v "MoodAcousticTasksQuestionnaire" ] ;
@@ -707,7 +707,7 @@
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/PedsAcousticTasksQuestionnaire> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/PedsAcousticTasksQuestionnaire> ;
          fhir:reference [ fhir:v "Questionnaire/PedsAcousticTasksQuestionnaire" ]
        ] ;
        fhir:name [ fhir:v "PedsAcousticTasksQuestionnaire" ] ;
@@ -719,7 +719,7 @@
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/RespiratoryAcousticTasksQuestionnaire> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/RespiratoryAcousticTasksQuestionnaire> ;
          fhir:reference [ fhir:v "Questionnaire/RespiratoryAcousticTasksQuestionnaire" ]
        ] ;
        fhir:name [ fhir:v "RespiratoryAcousticTasksQuestionnaire" ] ;
@@ -731,7 +731,7 @@
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/VoiceAcousticTasksQuestionnaire> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/VoiceAcousticTasksQuestionnaire> ;
          fhir:reference [ fhir:v "Questionnaire/VoiceAcousticTasksQuestionnaire" ]
        ] ;
        fhir:name [ fhir:v "VoiceAcousticTasksQuestionnaire" ] ;
@@ -743,686 +743,539 @@
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/acoustictaskschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/acoustictaskschema> ;
          fhir:reference [ fhir:v "Questionnaire/acoustictaskschema" ]
        ] ;
        fhir:name [ fhir:v "acoustictaskschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/bridge2aieconsentaddendumbchenglishschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/bridge2aieconsentaddendumbchenglishschema> ;
          fhir:reference [ fhir:v "Questionnaire/bridge2aieconsentaddendumbchenglishschema" ]
        ] ;
        fhir:name [ fhir:v "bridge2aieconsentaddendumbchenglishschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/bridge2aieconsentaddendummitenglishschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/bridge2aieconsentaddendummitenglishschema> ;
          fhir:reference [ fhir:v "Questionnaire/bridge2aieconsentaddendummitenglishschema" ]
        ] ;
        fhir:name [ fhir:v "bridge2aieconsentaddendummitenglishschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/bridge2aieconsentaddendummitresearcherstatemeschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/bridge2aieconsentaddendummitresearcherstatemeschema> ;
          fhir:reference [ fhir:v "Questionnaire/bridge2aieconsentaddendummitresearcherstatemeschema" ]
        ] ;
        fhir:name [ fhir:v "bridge2aieconsentaddendummitresearcherstatemeschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/bridge2aieconsentaddendumwcmenglishschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/bridge2aieconsentaddendumwcmenglishschema> ;
          fhir:reference [ fhir:v "Questionnaire/bridge2aieconsentaddendumwcmenglishschema" ]
        ] ;
        fhir:name [ fhir:v "bridge2aieconsentaddendumwcmenglishschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/bridge2aieconsentaddendumwcmresearcherstatemeschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/bridge2aieconsentaddendumwcmresearcherstatemeschema> ;
          fhir:reference [ fhir:v "Questionnaire/bridge2aieconsentaddendumwcmresearcherstatemeschema" ]
        ] ;
        fhir:name [ fhir:v "bridge2aieconsentaddendumwcmresearcherstatemeschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/bridge2aieconsentcombinedpdfaddendummitschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/bridge2aieconsentcombinedpdfaddendummitschema> ;
          fhir:reference [ fhir:v "Questionnaire/bridge2aieconsentcombinedpdfaddendummitschema" ]
        ] ;
        fhir:name [ fhir:v "bridge2aieconsentcombinedpdfaddendummitschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/bridge2aieconsentcombinedpdfaddendumwcmschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/bridge2aieconsentcombinedpdfaddendumwcmschema> ;
          fhir:reference [ fhir:v "Questionnaire/bridge2aieconsentcombinedpdfaddendumwcmschema" ]
        ] ;
        fhir:name [ fhir:v "bridge2aieconsentcombinedpdfaddendumwcmschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/bridge2aieconsentcombinedpdfmainicfusfschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/bridge2aieconsentcombinedpdfmainicfusfschema> ;
          fhir:reference [ fhir:v "Questionnaire/bridge2aieconsentcombinedpdfmainicfusfschema" ]
        ] ;
        fhir:name [ fhir:v "bridge2aieconsentcombinedpdfmainicfusfschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/bridge2aieconsentmainicfusfenglishschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/bridge2aieconsentmainicfusfenglishschema> ;
          fhir:reference [ fhir:v "Questionnaire/bridge2aieconsentmainicfusfenglishschema" ]
        ] ;
        fhir:name [ fhir:v "bridge2aieconsentmainicfusfenglishschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/bridge2aieconsentmainicfusfresearcherstatemeschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/bridge2aieconsentmainicfusfresearcherstatemeschema> ;
          fhir:reference [ fhir:v "Questionnaire/bridge2aieconsentmainicfusfresearcherstatemeschema" ]
        ] ;
        fhir:name [ fhir:v "bridge2aieconsentmainicfusfresearcherstatemeschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/bridge2aipaperconsentallsitesenglishschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/bridge2aipaperconsentallsitesenglishschema> ;
          fhir:reference [ fhir:v "Questionnaire/bridge2aipaperconsentallsitesenglishschema" ]
        ] ;
        fhir:name [ fhir:v "bridge2aipaperconsentallsitesenglishschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/dmoodbipolardisorderschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/dmoodbipolardisorderschema> ;
          fhir:reference [ fhir:v "Questionnaire/dmoodbipolardisorderschema" ]
        ] ;
        fhir:name [ fhir:v "dmoodbipolardisorderschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/dmooddepressionormajordepressivedisorderschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/dmooddepressionormajordepressivedisorderschema> ;
          fhir:reference [ fhir:v "Questionnaire/dmooddepressionormajordepressivedisorderschema" ]
        ] ;
        fhir:name [ fhir:v "dmooddepressionormajordepressivedisorderschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/dneuroalzheimersdiseasemildcognitiveimpairmeschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/dneuroalzheimersdiseasemildcognitiveimpairmeschema> ;
          fhir:reference [ fhir:v "Questionnaire/dneuroalzheimersdiseasemildcognitiveimpairmeschema" ]
        ] ;
        fhir:name [ fhir:v "dneuroalzheimersdiseasemildcognitiveimpairmeschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/dneuroamyotrophiclateralsclerosisalsschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/dneuroamyotrophiclateralsclerosisalsschema> ;
          fhir:reference [ fhir:v "Questionnaire/dneuroamyotrophiclateralsclerosisalsschema" ]
        ] ;
        fhir:name [ fhir:v "dneuroamyotrophiclateralsclerosisalsschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/dneuroparkinsonsdiseaseschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/dneuroparkinsonsdiseaseschema> ;
          fhir:reference [ fhir:v "Questionnaire/dneuroparkinsonsdiseaseschema" ]
        ] ;
        fhir:name [ fhir:v "dneuroparkinsonsdiseaseschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/dpedshealthydevelopmentallytypicalchildrenschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/dpedshealthydevelopmentallytypicalchildrenschema> ;
          fhir:reference [ fhir:v "Questionnaire/dpedshealthydevelopmentallytypicalchildrenschema" ]
        ] ;
        fhir:name [ fhir:v "dpedshealthydevelopmentallytypicalchildrenschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/drespairwaystenosisschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/drespairwaystenosisschema> ;
          fhir:reference [ fhir:v "Questionnaire/drespairwaystenosisschema" ]
        ] ;
        fhir:name [ fhir:v "drespairwaystenosisschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/dvoicebenignlesionsschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/dvoicebenignlesionsschema> ;
          fhir:reference [ fhir:v "Questionnaire/dvoicebenignlesionsschema" ]
        ] ;
        fhir:name [ fhir:v "dvoicebenignlesionsschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/dvoicelaryngealcancerschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/dvoicelaryngealcancerschema> ;
          fhir:reference [ fhir:v "Questionnaire/dvoicelaryngealcancerschema" ]
        ] ;
        fhir:name [ fhir:v "dvoicelaryngealcancerschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/dvoicelaryngealdystoniaschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/dvoicelaryngealdystoniaschema> ;
          fhir:reference [ fhir:v "Questionnaire/dvoicelaryngealdystoniaschema" ]
        ] ;
        fhir:name [ fhir:v "dvoicelaryngealdystoniaschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/dvoiceprecancerouslesionsschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/dvoiceprecancerouslesionsschema> ;
          fhir:reference [ fhir:v "Questionnaire/dvoiceprecancerouslesionsschema" ]
        ] ;
        fhir:name [ fhir:v "dvoiceprecancerouslesionsschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/dvoicevocalfoldparalysisschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/dvoicevocalfoldparalysisschema> ;
          fhir:reference [ fhir:v "Questionnaire/dvoicevocalfoldparalysisschema" ]
        ] ;
        fhir:name [ fhir:v "dvoicevocalfoldparalysisschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/enrollmentformschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/enrollmentformschema> ;
          fhir:reference [ fhir:v "Questionnaire/enrollmentformschema" ]
        ] ;
        fhir:name [ fhir:v "enrollmentformschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qgenericconfoundersschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qgenericconfoundersschema> ;
          fhir:reference [ fhir:v "Questionnaire/qgenericconfoundersschema" ]
        ] ;
        fhir:name [ fhir:v "qgenericconfoundersschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qgenericdemographicsschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qgenericdemographicsschema> ;
          fhir:reference [ fhir:v "Questionnaire/qgenericdemographicsschema" ]
        ] ;
        fhir:name [ fhir:v "qgenericdemographicsschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qgenericgad7anxietyschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qgenericgad7anxietyschema> ;
          fhir:reference [ fhir:v "Questionnaire/qgenericgad7anxietyschema" ]
        ] ;
        fhir:name [ fhir:v "qgenericgad7anxietyschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qgenericpatienthealthquestionnaire9schema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qgenericpatienthealthquestionnaire9schema> ;
          fhir:reference [ fhir:v "Questionnaire/qgenericpatienthealthquestionnaire9schema" ]
        ] ;
        fhir:name [ fhir:v "qgenericpatienthealthquestionnaire9schema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qgenericvoicehandicapindexvhi10schema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qgenericvoicehandicapindexvhi10schema> ;
          fhir:reference [ fhir:v "Questionnaire/qgenericvoicehandicapindexvhi10schema" ]
        ] ;
        fhir:name [ fhir:v "qgenericvoicehandicapindexvhi10schema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qgenericvoiceperceptionschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qgenericvoiceperceptionschema> ;
          fhir:reference [ fhir:v "Questionnaire/qgenericvoiceperceptionschema" ]
        ] ;
        fhir:name [ fhir:v "qgenericvoiceperceptionschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qmoodadhdadultschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qmoodadhdadultschema> ;
          fhir:reference [ fhir:v "Questionnaire/qmoodadhdadultschema" ]
        ] ;
        fhir:name [ fhir:v "qmoodadhdadultschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qmoodcustomaffectscaleschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qmoodcustomaffectscaleschema> ;
          fhir:reference [ fhir:v "Questionnaire/qmoodcustomaffectscaleschema" ]
        ] ;
        fhir:name [ fhir:v "qmoodcustomaffectscaleschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qmooddsm5adultschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qmooddsm5adultschema> ;
          fhir:reference [ fhir:v "Questionnaire/qmooddsm5adultschema" ]
        ] ;
        fhir:name [ fhir:v "qmooddsm5adultschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qmoodpanasschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qmoodpanasschema> ;
          fhir:reference [ fhir:v "Questionnaire/qmoodpanasschema" ]
        ] ;
        fhir:name [ fhir:v "qmoodpanasschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qmoodptsdadultschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qmoodptsdadultschema> ;
          fhir:reference [ fhir:v "Questionnaire/qmoodptsdadultschema" ]
        ] ;
        fhir:name [ fhir:v "qmoodptsdadultschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qneuromocaschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qneuromocaschema> ;
          fhir:reference [ fhir:v "Questionnaire/qneuromocaschema" ]
        ] ;
        fhir:name [ fhir:v "qneuromocaschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qneuroproductivevocabularyschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qneuroproductivevocabularyschema> ;
          fhir:reference [ fhir:v "Questionnaire/qneuroproductivevocabularyschema" ]
        ] ;
        fhir:name [ fhir:v "qneuroproductivevocabularyschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qneurorandomitemgenerationschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qneurorandomitemgenerationschema> ;
          fhir:reference [ fhir:v "Questionnaire/qneurorandomitemgenerationschema" ]
        ] ;
        fhir:name [ fhir:v "qneurorandomitemgenerationschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qneurowinogradschemasschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qneurowinogradschemasschema> ;
          fhir:reference [ fhir:v "Questionnaire/qneurowinogradschemasschema" ]
        ] ;
        fhir:name [ fhir:v "qneurowinogradschemasschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qneurowordcolorstroopschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qneurowordcolorstroopschema> ;
          fhir:reference [ fhir:v "Questionnaire/qneurowordcolorstroopschema" ]
        ] ;
        fhir:name [ fhir:v "qneurowordcolorstroopschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qrespdyspneaindexdischema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qrespdyspneaindexdischema> ;
          fhir:reference [ fhir:v "Questionnaire/qrespdyspneaindexdischema" ]
        ] ;
        fhir:name [ fhir:v "qrespdyspneaindexdischema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qrespleicestercoughquestionnairelcqschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qrespleicestercoughquestionnairelcqschema> ;
          fhir:reference [ fhir:v "Questionnaire/qrespleicestercoughquestionnairelcqschema" ]
        ] ;
        fhir:name [ fhir:v "qrespleicestercoughquestionnairelcqschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/qvoicevoiceproblemseverityschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/qvoicevoiceproblemseverityschema> ;
          fhir:reference [ fhir:v "Questionnaire/qvoicevoiceproblemseverityschema" ]
        ] ;
        fhir:name [ fhir:v "qvoicevoiceproblemseverityschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/recordingschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/recordingschema> ;
          fhir:reference [ fhir:v "Questionnaire/recordingschema" ]
        ] ;
        fhir:name [ fhir:v "recordingschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/sessionschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/sessionschema> ;
          fhir:reference [ fhir:v "Questionnaire/sessionschema" ]
        ] ;
        fhir:name [ fhir:v "sessionschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/subjectparticipantbasicinformationschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/subjectparticipantbasicinformationschema> ;
          fhir:reference [ fhir:v "Questionnaire/subjectparticipantbasicinformationschema" ]
        ] ;
        fhir:name [ fhir:v "subjectparticipantbasicinformationschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/subjectparticipantcontactinformationschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/subjectparticipantcontactinformationschema> ;
          fhir:reference [ fhir:v "Questionnaire/subjectparticipantcontactinformationschema" ]
        ] ;
        fhir:name [ fhir:v "subjectparticipantcontactinformationschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://voicecollab.ai/fhir/Questionnaire/subjectparticipanteligiblestudiesschema> ;
+         fhir:link <https://kind-lab.github.io/vbai-fhir/Questionnaire/subjectparticipanteligiblestudiesschema> ;
          fhir:reference [ fhir:v "Questionnaire/subjectparticipanteligiblestudiesschema" ]
        ] ;
        fhir:name [ fhir:v "subjectparticipanteligiblestudiesschema" ] ;
-       fhir:example [
-         fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
-         fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

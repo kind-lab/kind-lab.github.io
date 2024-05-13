@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html",
-      "version" : "2024.1.20240120",
+      "version" : "2024.2.20240331",
       "status" : "active",
       "name" : "AcquisitionModality",
       "title" : null,
@@ -223,13 +223,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
+      "StructureDefinition-vbai-body-weight.html" : "VBAI Body Weight",
+      "StructureDefinition-vbai-imaging-media.html" : "VBAI Imaging Media",
+      "StructureDefinition-vbai-condition.html" : "VBAI Condition",
+      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height",
       "StructureDefinition-vbai-imaging-study.html" : "VBAI Imaging Study",
       "StructureDefinition-vbai-waveform-media.html" : "VBAI Waveform Media",
-      "StructureDefinition-vbai-body-weight.html" : "VBAI Body Weight",
-      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs",
-      "StructureDefinition-vbai-imaging-media.html" : "VBAI Imaging Media",
-      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height",
-      "StructureDefinition-vbai-condition.html" : "VBAI Condition"
+      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/bodysite-laterality",
@@ -535,8 +535,8 @@
       "uses" : {
       },
       "StructureDefinition-vbai-body-weight.html" : "VBAI Body Weight",
-      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs",
-      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height"
+      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height",
+      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/definition-topic",
@@ -755,8 +755,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.109"],
       "uses" : {
       },
-      "StructureDefinition-vbai-waveform-media.html" : "VBAI Waveform Media",
-      "StructureDefinition-vbai-imaging-media.html" : "VBAI Imaging Media"
+      "StructureDefinition-vbai-imaging-media.html" : "VBAI Imaging Media",
+      "StructureDefinition-vbai-waveform-media.html" : "VBAI Waveform Media"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/goal-category",
@@ -877,8 +877,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.48"],
       "uses" : {
       },
-      "StructureDefinition-vbai-plan-definition.html" : "Vbai Plan Definition",
       "StructureDefinition-vbai-questionnaire.html" : "VBAI Questionnaire",
+      "StructureDefinition-vbai-plan-definition.html" : "Vbai Plan Definition",
       "StructureDefinition-vbai-cohort-protocol.html" : "A general template for VBAI protocols"
     },
     {
@@ -893,21 +893,21 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-vbai-plan-definition.html" : "Vbai Plan Definition",
-      "StructureDefinition-vbai-cohort-protocol.html" : "A general template for VBAI protocols",
-      "StructureDefinition-vbai-imaging-study.html" : "VBAI Imaging Study",
-      "StructureDefinition-vbai-consent.html" : "VBAI Consent",
-      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs",
       "StructureDefinition-vbai-patient.html" : "VBAI Patient",
+      "StructureDefinition-vbai-body-weight.html" : "VBAI Body Weight",
       "StructureDefinition-vbai-imaging-media.html" : "VBAI Imaging Media",
-      "StructureDefinition-vbai-questionnaire-response.html" : "VBAI Questionnaire Response",
-      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height",
       "StructureDefinition-vbai-condition.html" : "VBAI Condition",
       "StructureDefinition-vbai-questionnaire.html" : "VBAI Questionnaire",
-      "StructureDefinition-vbai-waveform-media.html" : "VBAI Waveform Media",
-      "StructureDefinition-vbai-body-weight.html" : "VBAI Body Weight",
+      "StructureDefinition-vbai-imaging-study.html" : "VBAI Imaging Study",
       "StructureDefinition-vbai-encounter.html" : "VBAI Encounter",
-      "StructureDefinition-vbai-waveform-device.html" : "VBAI Waveform Device"
+      "StructureDefinition-vbai-plan-definition.html" : "Vbai Plan Definition",
+      "StructureDefinition-vbai-waveform-media.html" : "VBAI Waveform Media",
+      "StructureDefinition-vbai-cohort-protocol.html" : "A general template for VBAI protocols",
+      "StructureDefinition-vbai-questionnaire-response.html" : "VBAI Questionnaire Response",
+      "StructureDefinition-vbai-waveform-device.html" : "VBAI Waveform Device",
+      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height",
+      "StructureDefinition-vbai-consent.html" : "VBAI Consent",
+      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -982,8 +982,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1001"],
       "uses" : {
       },
-      "StructureDefinition-vbai-waveform-media.html" : "VBAI Waveform Media",
-      "StructureDefinition-vbai-imaging-media.html" : "VBAI Imaging Media"
+      "StructureDefinition-vbai-imaging-media.html" : "VBAI Imaging Media",
+      "StructureDefinition-vbai-waveform-media.html" : "VBAI Waveform Media"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/media-type",
@@ -997,8 +997,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1000"],
       "uses" : {
       },
-      "StructureDefinition-vbai-waveform-media.html" : "VBAI Waveform Media",
-      "StructureDefinition-vbai-imaging-media.html" : "VBAI Imaging Media"
+      "StructureDefinition-vbai-imaging-media.html" : "VBAI Imaging Media",
+      "StructureDefinition-vbai-waveform-media.html" : "VBAI Waveform Media"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/media-view",
@@ -1012,8 +1012,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.337"],
       "uses" : {
       },
-      "StructureDefinition-vbai-waveform-media.html" : "VBAI Waveform Media",
-      "StructureDefinition-vbai-imaging-media.html" : "VBAI Imaging Media"
+      "StructureDefinition-vbai-imaging-media.html" : "VBAI Imaging Media",
+      "StructureDefinition-vbai-waveform-media.html" : "VBAI Waveform Media"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/name-use",
@@ -1042,8 +1042,8 @@
       "uses" : {
       },
       "StructureDefinition-vbai-body-weight.html" : "VBAI Body Weight",
-      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs",
-      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height"
+      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height",
+      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -1075,8 +1075,8 @@
       "uses" : {
       },
       "StructureDefinition-vbai-body-weight.html" : "VBAI Body Weight",
-      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs",
-      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height"
+      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height",
+      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -1091,8 +1091,8 @@
       "uses" : {
       },
       "StructureDefinition-vbai-body-weight.html" : "VBAI Body Weight",
-      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs",
-      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height"
+      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height",
+      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -1107,8 +1107,8 @@
       "uses" : {
       },
       "StructureDefinition-vbai-body-weight.html" : "VBAI Body Weight",
-      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs",
-      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height"
+      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height",
+      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -1151,9 +1151,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.432"],
       "uses" : {
       },
+      "StructureDefinition-vbai-imaging-media.html" : "VBAI Imaging Media",
       "StructureDefinition-vbai-imaging-study.html" : "VBAI Imaging Study",
-      "StructureDefinition-vbai-waveform-media.html" : "VBAI Waveform Media",
-      "StructureDefinition-vbai-imaging-media.html" : "VBAI Imaging Media"
+      "StructureDefinition-vbai-waveform-media.html" : "VBAI Waveform Media"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/publication-status",
@@ -1167,8 +1167,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.3"],
       "uses" : {
       },
-      "StructureDefinition-vbai-plan-definition.html" : "Vbai Plan Definition",
       "StructureDefinition-vbai-questionnaire.html" : "VBAI Questionnaire",
+      "StructureDefinition-vbai-plan-definition.html" : "Vbai Plan Definition",
       "StructureDefinition-vbai-cohort-protocol.html" : "A general template for VBAI protocols"
     },
     {
@@ -1198,8 +1198,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.446"],
       "uses" : {
       },
-      "StructureDefinition-vbai-questionnaire.html" : "VBAI Questionnaire",
-      "StructureDefinition-vbai-questionnaire-response.html" : "VBAI Questionnaire Response"
+      "StructureDefinition-vbai-questionnaire-response.html" : "VBAI Questionnaire Response",
+      "StructureDefinition-vbai-questionnaire.html" : "VBAI Questionnaire"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers-status",
@@ -1273,8 +1273,8 @@
       "uses" : {
       },
       "StructureDefinition-vbai-body-weight.html" : "VBAI Body Weight",
-      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs",
-      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height"
+      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height",
+      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -1291,8 +1291,8 @@
       "uses" : {
       },
       "StructureDefinition-vbai-body-weight.html" : "VBAI Body Weight",
-      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs",
-      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height"
+      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height",
+      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-priority",
@@ -1449,8 +1449,8 @@
       "uses" : {
       },
       "StructureDefinition-vbai-body-weight.html" : "VBAI Body Weight",
-      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs",
-      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height"
+      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height",
+      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/udi-entry-type",
@@ -1543,8 +1543,8 @@
       "uses" : {
       },
       "StructureDefinition-vbai-body-weight.html" : "VBAI Body Weight",
-      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs",
-      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height"
+      "StructureDefinition-vbai-body-height.html" : "VBAI Body Height",
+      "StructureDefinition-vbai-vital-signs.html" : "VBAI Vital Signs"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0092",

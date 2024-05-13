@@ -13,12 +13,12 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
     "valueCode" : "patient"
   }],
-  "url" : "https://voicecollab.ai/fhir/StructureDefinition/vbai-imaging-study",
-  "version" : "2.1.0",
+  "url" : "https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-imaging-study",
+  "version" : "2.2.0",
   "name" : "VbaiImagingStudy",
   "title" : "VBAI Imaging Study",
   "status" : "active",
-  "date" : "2024-04-16T16:30:12+00:00",
+  "date" : "2024-05-13T19:43:18+00:00",
   "publisher" : "KinD Lab",
   "contact" : [{
     "name" : "KinD Lab",
@@ -567,7 +567,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"]
+        "targetProfile" : ["https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-patient"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -615,7 +615,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://voicecollab.ai/fhir/StructureDefinition/vbai-encounter"]
+        "targetProfile" : ["https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-encounter"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2313,7 +2313,7 @@
       "path" : "ImagingStudy.subject",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://voicecollab.ai/fhir/StructureDefinition/vbai-patient"]
+        "targetProfile" : ["https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-patient"]
       }]
     },
     {
@@ -2321,7 +2321,7 @@
       "path" : "ImagingStudy.encounter",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://voicecollab.ai/fhir/StructureDefinition/vbai-encounter"]
+        "targetProfile" : ["https://kind-lab.github.io/vbai-fhir/StructureDefinition/vbai-encounter"]
       }]
     }]
   }
