@@ -47,13 +47,13 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_pl_treatment" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_pl_treatment</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5. Treatment obtained: Has the patient undergone any treatment for this condition?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_pl_treatment">2 options</a></td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_pl_treatment_select" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="String" class="hierarchy"/> diagnosis_pl_treatment_select</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Select all that apply:</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.diagnosis_pl_treatment">diagnosis_pl_treatment</a> = 'yes'</span></td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="item.diagnosis_pl_treatment_other" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="String" class="hierarchy"/> diagnosis_pl_treatment_other</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Other, please specify</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.diagnosis_pl_treatment_select">diagnosis_pl_treatment_select</a> = '1'</span></td></tr>
-<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.diagnois_pl_gsd_ls"> </a><p><b>Answer options for diagnois_pl_gsd_ls </b></p><ul><li style="font-size: 11px">Yes </li><li style="font-size: 11px">No </li><li style="font-size: 11px">Not certain</li></ul><a name="opt-item.diagnois_pl_gsd_bp"> </a><p><b>Answer options for diagnois_pl_gsd_bp </b></p><ul><li style="font-size: 11px">Yes </li><li style="font-size: 11px">No </li><li style="font-size: 11px">Not certain</li></ul><a name="opt-item.diagnosis_pl_ds_k"> </a><p><b>Answer options for diagnosis_pl_ds_k </b></p><ul><li style="font-size: 11px">With dysplasia </li><li style="font-size: 11px">Without dysplasia</li></ul><a name="opt-item.diagnosis_pl_ds_k_wd_g"> </a><p><b>Answer options for diagnosis_pl_ds_k_wd_g </b></p><ul><li style="font-size: 11px">Low grade </li><li style="font-size: 11px">Moderate grade </li><li style="font-size: 11px">High grade</li></ul><a name="opt-item.diagnosis_pl_ds_l"> </a><p><b>Answer options for diagnosis_pl_ds_l </b></p><ul><li style="font-size: 11px">With dysplasia </li><li style="font-size: 11px">Without dysplasia</li></ul><a name="opt-item.diagnosis_pl_ds_l_wd_g"> </a><p><b>Answer options for diagnosis_pl_ds_l_wd_g </b></p><ul><li style="font-size: 11px">Low grade </li><li style="font-size: 11px">Moderate grade </li><li style="font-size: 11px">High grade</li></ul><a name="opt-item.diagnosis_pl_ds_e"> </a><p><b>Answer options for diagnosis_pl_ds_e </b></p><ul><li style="font-size: 11px">With dysplasia </li><li style="font-size: 11px">Without dysplasia</li></ul><a name="opt-item.diagnosis_pl_ds_e_wd_g"> </a><p><b>Answer options for diagnosis_pl_ds_e_wd_g </b></p><ul><li style="font-size: 11px">Low grade </li><li style="font-size: 11px">Moderate grade </li><li style="font-size: 11px">High grade</li></ul><a name="opt-item.diagnosis_pl_degree_os_2"> </a><p><b>Answer options for diagnosis_pl_degree_os_2 </b></p><ul><li style="font-size: 11px">Consistent </li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_pl_degree_r_2"> </a><p><b>Answer options for diagnosis_pl_degree_r_2 </b></p><ul><li style="font-size: 11px">Consistent </li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_pl_degree_b_2"> </a><p><b>Answer options for diagnosis_pl_degree_b_2 </b></p><ul><li style="font-size: 11px">Consistent </li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_pl_degree_s_2"> </a><p><b>Answer options for diagnosis_pl_degree_s_2 </b></p><ul><li style="font-size: 11px">Consistent </li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_pl_degree_p_2"> </a><p><b>Answer options for diagnosis_pl_degree_p_2 </b></p><ul><li style="font-size: 11px">Consistent </li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_pl_degree_l_2"> </a><p><b>Answer options for diagnosis_pl_degree_l_2 </b></p><ul><li style="font-size: 11px">Consistent </li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_pl_degree_comments"> </a><p><b>Answer options for diagnosis_pl_degree_comments </b></p><ul><li style="font-size: 11px">Normal </li><li style="font-size: 11px">Other</li></ul><a name="opt-item.diagnosis_pl_treatment"> </a><p><b>Answer options for diagnosis_pl_treatment </b></p><ul><li style="font-size: 11px">Yes </li><li style="font-size: 11px">No</li></ul></div>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.diagnois_pl_gsd_ls"> </a><p><b>Answer options for diagnois_pl_gsd_ls </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li><li style="font-size: 11px">Not certain</li></ul><a name="opt-item.diagnois_pl_gsd_bp"> </a><p><b>Answer options for diagnois_pl_gsd_bp </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li><li style="font-size: 11px">Not certain</li></ul><a name="opt-item.diagnosis_pl_ds_k"> </a><p><b>Answer options for diagnosis_pl_ds_k </b></p><ul><li style="font-size: 11px">With dysplasia</li><li style="font-size: 11px">Without dysplasia</li></ul><a name="opt-item.diagnosis_pl_ds_k_wd_g"> </a><p><b>Answer options for diagnosis_pl_ds_k_wd_g </b></p><ul><li style="font-size: 11px">Low grade</li><li style="font-size: 11px">Moderate grade</li><li style="font-size: 11px">High grade</li></ul><a name="opt-item.diagnosis_pl_ds_l"> </a><p><b>Answer options for diagnosis_pl_ds_l </b></p><ul><li style="font-size: 11px">With dysplasia</li><li style="font-size: 11px">Without dysplasia</li></ul><a name="opt-item.diagnosis_pl_ds_l_wd_g"> </a><p><b>Answer options for diagnosis_pl_ds_l_wd_g </b></p><ul><li style="font-size: 11px">Low grade</li><li style="font-size: 11px">Moderate grade</li><li style="font-size: 11px">High grade</li></ul><a name="opt-item.diagnosis_pl_ds_e"> </a><p><b>Answer options for diagnosis_pl_ds_e </b></p><ul><li style="font-size: 11px">With dysplasia</li><li style="font-size: 11px">Without dysplasia</li></ul><a name="opt-item.diagnosis_pl_ds_e_wd_g"> </a><p><b>Answer options for diagnosis_pl_ds_e_wd_g </b></p><ul><li style="font-size: 11px">Low grade</li><li style="font-size: 11px">Moderate grade</li><li style="font-size: 11px">High grade</li></ul><a name="opt-item.diagnosis_pl_degree_os_2"> </a><p><b>Answer options for diagnosis_pl_degree_os_2 </b></p><ul><li style="font-size: 11px">Consistent</li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_pl_degree_r_2"> </a><p><b>Answer options for diagnosis_pl_degree_r_2 </b></p><ul><li style="font-size: 11px">Consistent</li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_pl_degree_b_2"> </a><p><b>Answer options for diagnosis_pl_degree_b_2 </b></p><ul><li style="font-size: 11px">Consistent</li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_pl_degree_s_2"> </a><p><b>Answer options for diagnosis_pl_degree_s_2 </b></p><ul><li style="font-size: 11px">Consistent</li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_pl_degree_p_2"> </a><p><b>Answer options for diagnosis_pl_degree_p_2 </b></p><ul><li style="font-size: 11px">Consistent</li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_pl_degree_l_2"> </a><p><b>Answer options for diagnosis_pl_degree_l_2 </b></p><ul><li style="font-size: 11px">Consistent</li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_pl_degree_comments"> </a><p><b>Answer options for diagnosis_pl_degree_comments </b></p><ul><li style="font-size: 11px">Normal</li><li style="font-size: 11px">Other</li></ul><a name="opt-item.diagnosis_pl_treatment"> </a><p><b>Answer options for diagnosis_pl_treatment </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li></ul></div>
   </text>
   <url value="https://kind-lab.github.io/vbai-fhir/Questionnaire-dvoiceprecancerouslesionsschema"/>
   <version value="2.2.0"/>
   <title value="d_voice_precancerous_lesions_schema"/>
   <status value="active"/>
-  <date value="2024-05-13T19:41:29Z"/>
+  <date value="2024-05-29T18:29:24Z"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -67,10 +67,10 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
     <text value="1. Gold Standard Diagnosis: Does the patient have a precancerous vocal fold lesion confirmed by laryngoscopy/stroboscopy?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
-      <valueString value="No "/>
+      <valueString value="No"/>
     </answerOption>
     <answerOption>
       <valueString value="Not certain"/>
@@ -81,10 +81,10 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
     <text value="Does the patient have a precancerous vocal fold lesion confirmed by biopsy/pathology?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
-      <valueString value="No "/>
+      <valueString value="No"/>
     </answerOption>
     <answerOption>
       <valueString value="Not certain"/>
@@ -105,7 +105,7 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
       <answerString value="'1'"/>
     </enableWhen>
     <answerOption>
-      <valueString value="With dysplasia "/>
+      <valueString value="With dysplasia"/>
     </answerOption>
     <answerOption>
       <valueString value="Without dysplasia"/>
@@ -121,10 +121,10 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
       <answerString value="'withDysplasia'"/>
     </enableWhen>
     <answerOption>
-      <valueString value="Low grade "/>
+      <valueString value="Low grade"/>
     </answerOption>
     <answerOption>
-      <valueString value="Moderate grade "/>
+      <valueString value="Moderate grade"/>
     </answerOption>
     <answerOption>
       <valueString value="High grade"/>
@@ -140,7 +140,7 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
       <answerString value="'1'"/>
     </enableWhen>
     <answerOption>
-      <valueString value="With dysplasia "/>
+      <valueString value="With dysplasia"/>
     </answerOption>
     <answerOption>
       <valueString value="Without dysplasia"/>
@@ -156,10 +156,10 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
       <answerString value="'withDysplasia'"/>
     </enableWhen>
     <answerOption>
-      <valueString value="Low grade "/>
+      <valueString value="Low grade"/>
     </answerOption>
     <answerOption>
-      <valueString value="Moderate grade "/>
+      <valueString value="Moderate grade"/>
     </answerOption>
     <answerOption>
       <valueString value="High grade"/>
@@ -175,7 +175,7 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
       <answerString value="'1'"/>
     </enableWhen>
     <answerOption>
-      <valueString value="With dysplasia "/>
+      <valueString value="With dysplasia"/>
     </answerOption>
     <answerOption>
       <valueString value="Without dysplasia"/>
@@ -191,10 +191,10 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
       <answerString value="'withDysplasia'"/>
     </enableWhen>
     <answerOption>
-      <valueString value="Low grade "/>
+      <valueString value="Low grade"/>
     </answerOption>
     <answerOption>
-      <valueString value="Moderate grade "/>
+      <valueString value="Moderate grade"/>
     </answerOption>
     <answerOption>
       <valueString value="High grade"/>
@@ -250,7 +250,7 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
     <text value="Overall Severity"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Consistent "/>
+      <valueString value="Consistent"/>
     </answerOption>
     <answerOption>
       <valueString value="Intermittent"/>
@@ -266,7 +266,7 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
     <text value="Roughness"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Consistent "/>
+      <valueString value="Consistent"/>
     </answerOption>
     <answerOption>
       <valueString value="Intermittent"/>
@@ -282,7 +282,7 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
     <text value="Breathiness"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Consistent "/>
+      <valueString value="Consistent"/>
     </answerOption>
     <answerOption>
       <valueString value="Intermittent"/>
@@ -298,7 +298,7 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
     <text value="Strain"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Consistent "/>
+      <valueString value="Consistent"/>
     </answerOption>
     <answerOption>
       <valueString value="Intermittent"/>
@@ -324,7 +324,7 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
     <text value="Pitch"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Consistent "/>
+      <valueString value="Consistent"/>
     </answerOption>
     <answerOption>
       <valueString value="Intermittent"/>
@@ -350,7 +350,7 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
     <text value="Loudness"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Consistent "/>
+      <valueString value="Consistent"/>
     </answerOption>
     <answerOption>
       <valueString value="Intermittent"/>
@@ -361,7 +361,7 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
     <text value="Comments about resonance"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Normal "/>
+      <valueString value="Normal"/>
     </answerOption>
     <answerOption>
       <valueString value="Other"/>
@@ -387,7 +387,7 @@ Clinician places slider between 0 and 100; indicates C or I. &quot;Indicate the 
     <text value="5. Treatment obtained: Has the patient undergone any treatment for this condition?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="No"/>

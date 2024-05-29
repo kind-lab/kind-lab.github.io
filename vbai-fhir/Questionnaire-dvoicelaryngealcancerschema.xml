@@ -48,13 +48,13 @@ features responses are free text. Comments about resonance: Indicate normal or O
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_lc_treatment_select" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="String" class="hierarchy"/> diagnosis_lc_treatment_select</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Select all that apply:</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.diagnosis_lc_treatment">diagnosis_lc_treatment</a> = 'yes'</span></td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_lc_treatment_s" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="String" class="hierarchy"/> diagnosis_lc_treatment_s</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Surgery</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.diagnosis_lc_treatment_select">diagnosis_lc_treatment_select</a> = '1'</span></td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="item.diagnosis_lc_treatment_other" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="String" class="hierarchy"/> diagnosis_lc_treatment_other</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Other, please specify</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.diagnosis_lc_treatment_select">diagnosis_lc_treatment_select</a> = '1'</span></td></tr>
-<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.diagnois_lc_gsd_sll"> </a><p><b>Answer options for diagnois_lc_gsd_sll </b></p><ul><li style="font-size: 11px">Yes </li><li style="font-size: 11px">No </li><li style="font-size: 11px">Not certain</li></ul><a name="opt-item.diagnosis_lc_gsd_bpr"> </a><p><b>Answer options for diagnosis_lc_gsd_bpr </b></p><ul><li style="font-size: 11px">Yes </li><li style="font-size: 11px">No </li><li style="font-size: 11px">Not certain</li></ul><a name="opt-item.diagnosis_lc_ds_t_stage"> </a><p><b>Answer options for diagnosis_lc_ds_t_stage </b></p><ul><li style="font-size: 11px">Tis (carcinoma in situ) </li><li style="font-size: 11px">T1a </li><li style="font-size: 11px">T1b </li><li style="font-size: 11px">T2 </li><li style="font-size: 11px">T3 </li><li style="font-size: 11px">T4a </li><li style="font-size: 11px">T4b </li><li style="font-size: 11px">Unknown yet</li></ul><a name="opt-item.diagnosis_lc_ds_n_stage"> </a><p><b>Answer options for diagnosis_lc_ds_n_stage </b></p><ul><li style="font-size: 11px">N0 </li><li style="font-size: 11px">N1 </li><li style="font-size: 11px">N2a </li><li style="font-size: 11px">N2b </li><li style="font-size: 11px">N2c </li><li style="font-size: 11px">N3 </li><li style="font-size: 11px">Unknown yet</li></ul><a name="opt-item.diagnosis_lc_ds_m_stage"> </a><p><b>Answer options for diagnosis_lc_ds_m_stage </b></p><ul><li style="font-size: 11px">M0: no distant metastasis </li><li style="font-size: 11px">M1: Any distant metastasis</li></ul><a name="opt-item.diagnosis_lc_degree_os_2"> </a><p><b>Answer options for diagnosis_lc_degree_os_2 </b></p><ul><li style="font-size: 11px">Consistent </li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_lc_degree_r_2"> </a><p><b>Answer options for diagnosis_lc_degree_r_2 </b></p><ul><li style="font-size: 11px">Consistent </li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_lc_degree_b_2"> </a><p><b>Answer options for diagnosis_lc_degree_b_2 </b></p><ul><li style="font-size: 11px">Consistent </li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_lc_degree_s_2"> </a><p><b>Answer options for diagnosis_lc_degree_s_2 </b></p><ul><li style="font-size: 11px">Consistent </li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_lc_degree_p_2"> </a><p><b>Answer options for diagnosis_lc_degree_p_2 </b></p><ul><li style="font-size: 11px">Consistent </li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_lc_degree_l_2"> </a><p><b>Answer options for diagnosis_lc_degree_l_2 </b></p><ul><li style="font-size: 11px">Consistent </li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_lc_degree_comments"> </a><p><b>Answer options for diagnosis_lc_degree_comments </b></p><ul><li style="font-size: 11px">Normal </li><li style="font-size: 11px">Other</li></ul><a name="opt-item.diagnosis_as_ds_ccsr"> </a><p><b>Answer options for diagnosis_as_ds_ccsr </b></p><ul><li style="font-size: 11px">No the patient does not have stridor </li><li style="font-size: 11px">Yes mild stridor </li><li style="font-size: 11px">Yes moderate stridor </li><li style="font-size: 11px">Yes severe stridor</li></ul><a name="opt-item.diagnosis_lc_treatment"> </a><p><b>Answer options for diagnosis_lc_treatment </b></p><ul><li style="font-size: 11px">Yes </li><li style="font-size: 11px">No</li></ul></div>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.diagnois_lc_gsd_sll"> </a><p><b>Answer options for diagnois_lc_gsd_sll </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li><li style="font-size: 11px">Not certain</li></ul><a name="opt-item.diagnosis_lc_gsd_bpr"> </a><p><b>Answer options for diagnosis_lc_gsd_bpr </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li><li style="font-size: 11px">Not certain</li></ul><a name="opt-item.diagnosis_lc_ds_t_stage"> </a><p><b>Answer options for diagnosis_lc_ds_t_stage </b></p><ul><li style="font-size: 11px">Tis (carcinoma in situ)</li><li style="font-size: 11px">T1a</li><li style="font-size: 11px">T1b</li><li style="font-size: 11px">T2</li><li style="font-size: 11px">T3</li><li style="font-size: 11px">T4a</li><li style="font-size: 11px">T4b</li><li style="font-size: 11px">Unknown yet</li></ul><a name="opt-item.diagnosis_lc_ds_n_stage"> </a><p><b>Answer options for diagnosis_lc_ds_n_stage </b></p><ul><li style="font-size: 11px">N0</li><li style="font-size: 11px">N1</li><li style="font-size: 11px">N2a</li><li style="font-size: 11px">N2b</li><li style="font-size: 11px">N2c</li><li style="font-size: 11px">N3</li><li style="font-size: 11px">Unknown yet</li></ul><a name="opt-item.diagnosis_lc_ds_m_stage"> </a><p><b>Answer options for diagnosis_lc_ds_m_stage </b></p><ul><li style="font-size: 11px">M0: no distant metastasis</li><li style="font-size: 11px">M1: Any distant metastasis</li></ul><a name="opt-item.diagnosis_lc_degree_os_2"> </a><p><b>Answer options for diagnosis_lc_degree_os_2 </b></p><ul><li style="font-size: 11px">Consistent</li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_lc_degree_r_2"> </a><p><b>Answer options for diagnosis_lc_degree_r_2 </b></p><ul><li style="font-size: 11px">Consistent</li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_lc_degree_b_2"> </a><p><b>Answer options for diagnosis_lc_degree_b_2 </b></p><ul><li style="font-size: 11px">Consistent</li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_lc_degree_s_2"> </a><p><b>Answer options for diagnosis_lc_degree_s_2 </b></p><ul><li style="font-size: 11px">Consistent</li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_lc_degree_p_2"> </a><p><b>Answer options for diagnosis_lc_degree_p_2 </b></p><ul><li style="font-size: 11px">Consistent</li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_lc_degree_l_2"> </a><p><b>Answer options for diagnosis_lc_degree_l_2 </b></p><ul><li style="font-size: 11px">Consistent</li><li style="font-size: 11px">Intermittent</li></ul><a name="opt-item.diagnosis_lc_degree_comments"> </a><p><b>Answer options for diagnosis_lc_degree_comments </b></p><ul><li style="font-size: 11px">Normal</li><li style="font-size: 11px">Other</li></ul><a name="opt-item.diagnosis_as_ds_ccsr"> </a><p><b>Answer options for diagnosis_as_ds_ccsr </b></p><ul><li style="font-size: 11px">No the patient does not have stridor</li><li style="font-size: 11px">Yes mild stridor</li><li style="font-size: 11px">Yes moderate stridor</li><li style="font-size: 11px">Yes severe stridor</li></ul><a name="opt-item.diagnosis_lc_treatment"> </a><p><b>Answer options for diagnosis_lc_treatment </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li></ul></div>
   </text>
   <url value="https://kind-lab.github.io/vbai-fhir/Questionnaire-dvoicelaryngealcancerschema"/>
   <version value="2.2.0"/>
   <title value="d_voice_laryngeal_cancer_schema"/>
   <status value="active"/>
-  <date value="2024-05-13T19:41:28Z"/>
+  <date value="2024-05-29T18:29:22Z"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -68,10 +68,10 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="1. Gold Standard Diagnosis: Did the patient get a laryngoscopy/stroboscopy confirming the presence of a suspicious laryngeal lesion?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
-      <valueString value="No "/>
+      <valueString value="No"/>
     </answerOption>
     <answerOption>
       <valueString value="Not certain"/>
@@ -82,10 +82,10 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="Does the patient have laryngeal cancer confirmed by biopsy/pathology report?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
-      <valueString value="No "/>
+      <valueString value="No"/>
     </answerOption>
     <answerOption>
       <valueString value="Not certain"/>
@@ -121,25 +121,25 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="4. Disease Severity: What is the T stage of the cancer based on the AJCC Classification?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Tis (carcinoma in situ) "/>
+      <valueString value="Tis (carcinoma in situ)"/>
     </answerOption>
     <answerOption>
-      <valueString value="T1a "/>
+      <valueString value="T1a"/>
     </answerOption>
     <answerOption>
-      <valueString value="T1b "/>
+      <valueString value="T1b"/>
     </answerOption>
     <answerOption>
-      <valueString value="T2 "/>
+      <valueString value="T2"/>
     </answerOption>
     <answerOption>
-      <valueString value="T3 "/>
+      <valueString value="T3"/>
     </answerOption>
     <answerOption>
-      <valueString value="T4a "/>
+      <valueString value="T4a"/>
     </answerOption>
     <answerOption>
-      <valueString value="T4b "/>
+      <valueString value="T4b"/>
     </answerOption>
     <answerOption>
       <valueString value="Unknown yet"/>
@@ -155,22 +155,22 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="What is the N stage of the cancer based on the AJCC Classification?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="N0 "/>
+      <valueString value="N0"/>
     </answerOption>
     <answerOption>
-      <valueString value="N1 "/>
+      <valueString value="N1"/>
     </answerOption>
     <answerOption>
-      <valueString value="N2a "/>
+      <valueString value="N2a"/>
     </answerOption>
     <answerOption>
-      <valueString value="N2b "/>
+      <valueString value="N2b"/>
     </answerOption>
     <answerOption>
-      <valueString value="N2c "/>
+      <valueString value="N2c"/>
     </answerOption>
     <answerOption>
-      <valueString value="N3 "/>
+      <valueString value="N3"/>
     </answerOption>
     <answerOption>
       <valueString value="Unknown yet"/>
@@ -186,7 +186,7 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="What is the M stage of the cancer based on the AJCC Classification?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="M0: no distant metastasis "/>
+      <valueString value="M0: no distant metastasis"/>
     </answerOption>
     <answerOption>
       <valueString value="M1: Any distant metastasis"/>
@@ -212,7 +212,7 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="Overall Severity"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Consistent "/>
+      <valueString value="Consistent"/>
     </answerOption>
     <answerOption>
       <valueString value="Intermittent"/>
@@ -228,7 +228,7 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="Roughness"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Consistent "/>
+      <valueString value="Consistent"/>
     </answerOption>
     <answerOption>
       <valueString value="Intermittent"/>
@@ -244,7 +244,7 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="Breathiness"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Consistent "/>
+      <valueString value="Consistent"/>
     </answerOption>
     <answerOption>
       <valueString value="Intermittent"/>
@@ -260,7 +260,7 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="Strain"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Consistent "/>
+      <valueString value="Consistent"/>
     </answerOption>
     <answerOption>
       <valueString value="Intermittent"/>
@@ -286,7 +286,7 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="Pitch"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Consistent "/>
+      <valueString value="Consistent"/>
     </answerOption>
     <answerOption>
       <valueString value="Intermittent"/>
@@ -312,7 +312,7 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="Loudness"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Consistent "/>
+      <valueString value="Consistent"/>
     </answerOption>
     <answerOption>
       <valueString value="Intermittent"/>
@@ -323,7 +323,7 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="Comments about resonance"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Normal "/>
+      <valueString value="Normal"/>
     </answerOption>
     <answerOption>
       <valueString value="Other"/>
@@ -349,13 +349,13 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="Is the cancer causing stridor at rest?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="No the patient does not have stridor "/>
+      <valueString value="No the patient does not have stridor"/>
     </answerOption>
     <answerOption>
-      <valueString value="Yes mild stridor "/>
+      <valueString value="Yes mild stridor"/>
     </answerOption>
     <answerOption>
-      <valueString value="Yes moderate stridor "/>
+      <valueString value="Yes moderate stridor"/>
     </answerOption>
     <answerOption>
       <valueString value="Yes severe stridor"/>
@@ -366,7 +366,7 @@ features responses are free text. Comments about resonance: Indicate normal or O
     <text value="5. Treatment obtained: Has the patient undergone any treatment for their condition?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="No"/>

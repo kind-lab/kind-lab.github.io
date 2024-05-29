@@ -64,13 +64,13 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.transportation_yn" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> transportation_yn</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Do you have a reliable mode of transportation?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.transportation_yn">2 options</a></td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.primary_transportation" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> primary_transportation</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">What is your primary mode of transportation?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.transportation_yn">transportation_yn</a> = '1'</span><br/>Options: <a href="#opt-item.primary_transportation">8 options</a></td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="item.other_transportation" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="String" class="hierarchy"/> other_transportation</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">If you selected &quot;other&quot; transportation, please specify.</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.primary_transportation">primary_transportation</a> = '8'</span></td></tr>
-<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.country"> </a><p><b>Answer options for country </b></p><ul><li style="font-size: 11px">USA </li><li style="font-size: 11px">Canada</li></ul><a name="opt-item.gender_identity"> </a><p><b>Answer options for gender_identity </b></p><ul><li style="font-size: 11px">Female gender identity </li><li style="font-size: 11px">Male gender identity </li><li style="font-size: 11px">Non-binary or genderqueer gender identity </li><li style="font-size: 11px">Other </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.specify_gender_identity"> </a><p><b>Answer options for specify_gender_identity </b></p><ul><li style="font-size: 11px">Cis: same gender as the sex assigned at birth </li><li style="font-size: 11px">Trans</li></ul><a name="opt-item.sexual_orientation"> </a><p><b>Answer options for sexual_orientation </b></p><ul><li style="font-size: 11px">Bisexual </li><li style="font-size: 11px">Heterosexual </li><li style="font-size: 11px">Homosexual </li><li style="font-size: 11px">Other (Please specify) </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.ethnicity"> </a><p><b>Answer options for ethnicity </b></p><ul><li style="font-size: 11px">Hispanic or Latino </li><li style="font-size: 11px">Not Hispanic or Latino </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.edu_level"> </a><p><b>Answer options for edu_level </b></p><ul><li style="font-size: 11px">No formal education </li><li style="font-size: 11px">Some elementary school </li><li style="font-size: 11px">Some secondary or high school education </li><li style="font-size: 11px">High School or secondary school degree complete </li><li style="font-size: 11px">Some college education </li><li style="font-size: 11px">Associate's or technical degree complete </li><li style="font-size: 11px">College or baccalaureate degree complete </li><li style="font-size: 11px">Some post-baccalaureate education </li><li style="font-size: 11px">Graduate or professional degree complete </li><li style="font-size: 11px">Doctoral or post graduate education </li><li style="font-size: 11px">Other </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.hearing"> </a><p><b>Answer options for hearing </b></p><ul><li style="font-size: 11px">No </li><li style="font-size: 11px">Yes </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.vision"> </a><p><b>Answer options for vision </b></p><ul><li style="font-size: 11px">No </li><li style="font-size: 11px">Yes </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.cognition"> </a><p><b>Answer options for cognition </b></p><ul><li style="font-size: 11px">No </li><li style="font-size: 11px">Yes </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.mobility"> </a><p><b>Answer options for mobility </b></p><ul><li style="font-size: 11px">No </li><li style="font-size: 11px">Yes </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.self_care"> </a><p><b>Answer options for self_care </b></p><ul><li style="font-size: 11px">No </li><li style="font-size: 11px">Yes </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.independent_living"> </a><p><b>Answer options for independent_living </b></p><ul><li style="font-size: 11px">No </li><li style="font-size: 11px">Yes </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.veteran"> </a><p><b>Answer options for veteran </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li></ul><a name="opt-item.household_income_usa"> </a><p><b>Answer options for household_income_usa </b></p><ul><li style="font-size: 11px">&lt; $15,000 </li><li style="font-size: 11px">$15,000 to $29,999 </li><li style="font-size: 11px">$30,000 to $$49,999 </li><li style="font-size: 11px">$50,000 to $99,999 </li><li style="font-size: 11px">$100,000 to $149,999 </li><li style="font-size: 11px">$150,000 to $199,999 </li><li style="font-size: 11px">$200,000 to $249,999 </li><li style="font-size: 11px">&gt;$250,000 </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.financial_assistance_usa"> </a><p><b>Answer options for financial_assistance_usa </b></p><ul><li style="font-size: 11px">No </li><li style="font-size: 11px">Yes </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.household_income_ca"> </a><p><b>Answer options for household_income_ca </b></p><ul><li style="font-size: 11px">&lt; $15,000 </li><li style="font-size: 11px">$15,000 to $29,999 </li><li style="font-size: 11px">$30,000 to $$49,999 </li><li style="font-size: 11px">$50,000 to $99,999 </li><li style="font-size: 11px">$100,000 to $149,999 </li><li style="font-size: 11px">$150,000 to $199,999 </li><li style="font-size: 11px">$200,000 to $249,999 </li><li style="font-size: 11px">&gt;$250,000 </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.financial_assistance_ca"> </a><p><b>Answer options for financial_assistance_ca </b></p><ul><li style="font-size: 11px">No </li><li style="font-size: 11px">Yes </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.citizen"> </a><p><b>Answer options for citizen </b></p><ul><li style="font-size: 11px">Citizen </li><li style="font-size: 11px">Permanent resident (Green card holder) </li><li style="font-size: 11px">Non-citizen US/Canadian national </li><li style="font-size: 11px">Refugee </li><li style="font-size: 11px">Asylum seeker </li><li style="font-size: 11px">Non-immigrant student </li><li style="font-size: 11px">Non-immigrant worker </li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.housing_status"> </a><p><b>Answer options for housing_status </b></p><ul><li style="font-size: 11px">Assisted living </li><li style="font-size: 11px">Own home </li><li style="font-size: 11px">Rent home </li><li style="font-size: 11px">Skilled nursing facility/nursing home </li><li style="font-size: 11px">Unhoused-temporarily </li><li style="font-size: 11px">Unhoused-permanently</li></ul><a name="opt-item.spouse_partner_sig_other"> </a><p><b>Answer options for spouse_partner_sig_other </b></p><ul><li style="font-size: 11px">Yes </li><li style="font-size: 11px">No</li></ul><a name="opt-item.children"> </a><p><b>Answer options for children </b></p><ul><li style="font-size: 11px">Yes </li><li style="font-size: 11px">No</li></ul><a name="opt-item.parent"> </a><p><b>Answer options for parent </b></p><ul><li style="font-size: 11px">Yes </li><li style="font-size: 11px">No</li></ul><a name="opt-item.grandparent"> </a><p><b>Answer options for grandparent </b></p><ul><li style="font-size: 11px">Yes </li><li style="font-size: 11px">No</li></ul><a name="opt-item.other_live_with"> </a><p><b>Answer options for other_live_with </b></p><ul><li style="font-size: 11px">Yes </li><li style="font-size: 11px">No</li></ul><a name="opt-item.transportation_yn"> </a><p><b>Answer options for transportation_yn </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li></ul><a name="opt-item.primary_transportation"> </a><p><b>Answer options for primary_transportation </b></p><ul><li style="font-size: 11px">Personal vehicle </li><li style="font-size: 11px">Shared vehicle </li><li style="font-size: 11px">Public transportation </li><li style="font-size: 11px">Ride with someone else </li><li style="font-size: 11px">Ride service </li><li style="font-size: 11px">Bicycle/Motorbike </li><li style="font-size: 11px">Walking </li><li style="font-size: 11px">Other (Please specify)</li></ul></div>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.country"> </a><p><b>Answer options for country </b></p><ul><li style="font-size: 11px">USA</li><li style="font-size: 11px">Canada</li></ul><a name="opt-item.gender_identity"> </a><p><b>Answer options for gender_identity </b></p><ul><li style="font-size: 11px">Female gender identity</li><li style="font-size: 11px">Male gender identity</li><li style="font-size: 11px">Non-binary or genderqueer gender identity</li><li style="font-size: 11px">Other</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.specify_gender_identity"> </a><p><b>Answer options for specify_gender_identity </b></p><ul><li style="font-size: 11px">Cis: same gender as the sex assigned at birth</li><li style="font-size: 11px">Trans</li></ul><a name="opt-item.sexual_orientation"> </a><p><b>Answer options for sexual_orientation </b></p><ul><li style="font-size: 11px">Bisexual</li><li style="font-size: 11px">Heterosexual</li><li style="font-size: 11px">Homosexual</li><li style="font-size: 11px">Other (Please specify)</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.ethnicity"> </a><p><b>Answer options for ethnicity </b></p><ul><li style="font-size: 11px">Hispanic or Latino</li><li style="font-size: 11px">Not Hispanic or Latino</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.edu_level"> </a><p><b>Answer options for edu_level </b></p><ul><li style="font-size: 11px">No formal education</li><li style="font-size: 11px">Some elementary school</li><li style="font-size: 11px">Some secondary or high school education</li><li style="font-size: 11px">High School or secondary school degree complete</li><li style="font-size: 11px">Some college education</li><li style="font-size: 11px">Associate's or technical degree complete</li><li style="font-size: 11px">College or baccalaureate degree complete</li><li style="font-size: 11px">Some post-baccalaureate education</li><li style="font-size: 11px">Graduate or professional degree complete</li><li style="font-size: 11px">Doctoral or post graduate education</li><li style="font-size: 11px">Other</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.hearing"> </a><p><b>Answer options for hearing </b></p><ul><li style="font-size: 11px">No</li><li style="font-size: 11px">Yes</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.vision"> </a><p><b>Answer options for vision </b></p><ul><li style="font-size: 11px">No</li><li style="font-size: 11px">Yes</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.cognition"> </a><p><b>Answer options for cognition </b></p><ul><li style="font-size: 11px">No</li><li style="font-size: 11px">Yes</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.mobility"> </a><p><b>Answer options for mobility </b></p><ul><li style="font-size: 11px">No</li><li style="font-size: 11px">Yes</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.self_care"> </a><p><b>Answer options for self_care </b></p><ul><li style="font-size: 11px">No</li><li style="font-size: 11px">Yes</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.independent_living"> </a><p><b>Answer options for independent_living </b></p><ul><li style="font-size: 11px">No</li><li style="font-size: 11px">Yes</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.veteran"> </a><p><b>Answer options for veteran </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li></ul><a name="opt-item.household_income_usa"> </a><p><b>Answer options for household_income_usa </b></p><ul><li style="font-size: 11px">&lt; $15,000</li><li style="font-size: 11px">$15,000 to $29,999</li><li style="font-size: 11px">$30,000 to $$49,999</li><li style="font-size: 11px">$50,000 to $99,999</li><li style="font-size: 11px">$100,000 to $149,999</li><li style="font-size: 11px">$150,000 to $199,999</li><li style="font-size: 11px">$200,000 to $249,999</li><li style="font-size: 11px">&gt;$250,000</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.financial_assistance_usa"> </a><p><b>Answer options for financial_assistance_usa </b></p><ul><li style="font-size: 11px">No</li><li style="font-size: 11px">Yes</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.household_income_ca"> </a><p><b>Answer options for household_income_ca </b></p><ul><li style="font-size: 11px">&lt; $15,000</li><li style="font-size: 11px">$15,000 to $29,999</li><li style="font-size: 11px">$30,000 to $$49,999</li><li style="font-size: 11px">$50,000 to $99,999</li><li style="font-size: 11px">$100,000 to $149,999</li><li style="font-size: 11px">$150,000 to $199,999</li><li style="font-size: 11px">$200,000 to $249,999</li><li style="font-size: 11px">&gt;$250,000</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.financial_assistance_ca"> </a><p><b>Answer options for financial_assistance_ca </b></p><ul><li style="font-size: 11px">No</li><li style="font-size: 11px">Yes</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.citizen"> </a><p><b>Answer options for citizen </b></p><ul><li style="font-size: 11px">Citizen</li><li style="font-size: 11px">Permanent resident (Green card holder)</li><li style="font-size: 11px">Non-citizen US/Canadian national</li><li style="font-size: 11px">Refugee</li><li style="font-size: 11px">Asylum seeker</li><li style="font-size: 11px">Non-immigrant student</li><li style="font-size: 11px">Non-immigrant worker</li><li style="font-size: 11px">Prefer not to answer</li></ul><a name="opt-item.housing_status"> </a><p><b>Answer options for housing_status </b></p><ul><li style="font-size: 11px">Assisted living</li><li style="font-size: 11px">Own home</li><li style="font-size: 11px">Rent home</li><li style="font-size: 11px">Skilled nursing facility/nursing home</li><li style="font-size: 11px">Unhoused-temporarily</li><li style="font-size: 11px">Unhoused-permanently</li></ul><a name="opt-item.spouse_partner_sig_other"> </a><p><b>Answer options for spouse_partner_sig_other </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li></ul><a name="opt-item.children"> </a><p><b>Answer options for children </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li></ul><a name="opt-item.parent"> </a><p><b>Answer options for parent </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li></ul><a name="opt-item.grandparent"> </a><p><b>Answer options for grandparent </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li></ul><a name="opt-item.other_live_with"> </a><p><b>Answer options for other_live_with </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li></ul><a name="opt-item.transportation_yn"> </a><p><b>Answer options for transportation_yn </b></p><ul><li style="font-size: 11px">Yes</li><li style="font-size: 11px">No</li></ul><a name="opt-item.primary_transportation"> </a><p><b>Answer options for primary_transportation </b></p><ul><li style="font-size: 11px">Personal vehicle</li><li style="font-size: 11px">Shared vehicle</li><li style="font-size: 11px">Public transportation</li><li style="font-size: 11px">Ride with someone else</li><li style="font-size: 11px">Ride service</li><li style="font-size: 11px">Bicycle/Motorbike</li><li style="font-size: 11px">Walking</li><li style="font-size: 11px">Other (Please specify)</li></ul></div>
   </text>
   <url value="https://kind-lab.github.io/vbai-fhir/Questionnaire-qgenericdemographicsschema"/>
   <version value="2.2.0"/>
   <title value="q_generic_demographics_schema"/>
   <status value="active"/>
-  <date value="2024-05-13T19:41:32Z"/>
+  <date value="2024-05-29T18:29:27Z"/>
   <publisher value="KinD Lab"/>
   <contact>
     <name value="KinD Lab"/>
@@ -124,7 +124,7 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     <text value="Country"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="USA "/>
+      <valueString value="USA"/>
     </answerOption>
     <answerOption>
       <valueString value="Canada"/>
@@ -135,16 +135,16 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     <text value="Patient Demographics: What is your gender identity?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Female gender identity "/>
+      <valueString value="Female gender identity"/>
     </answerOption>
     <answerOption>
-      <valueString value="Male gender identity "/>
+      <valueString value="Male gender identity"/>
     </answerOption>
     <answerOption>
-      <valueString value="Non-binary or genderqueer gender identity "/>
+      <valueString value="Non-binary or genderqueer gender identity"/>
     </answerOption>
     <answerOption>
-      <valueString value="Other "/>
+      <valueString value="Other"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -176,7 +176,7 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     </enableWhen>
     <enableBehavior value="any"/>
     <answerOption>
-      <valueString value="Cis: same gender as the sex assigned at birth "/>
+      <valueString value="Cis: same gender as the sex assigned at birth"/>
     </answerOption>
     <answerOption>
       <valueString value="Trans"/>
@@ -187,16 +187,16 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     <text value="What is your sexual orientation?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Bisexual "/>
+      <valueString value="Bisexual"/>
     </answerOption>
     <answerOption>
-      <valueString value="Heterosexual "/>
+      <valueString value="Heterosexual"/>
     </answerOption>
     <answerOption>
-      <valueString value="Homosexual "/>
+      <valueString value="Homosexual"/>
     </answerOption>
     <answerOption>
-      <valueString value="Other (Please specify) "/>
+      <valueString value="Other (Please specify)"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -292,10 +292,10 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     <text value="What is your ethnic or cultural origin?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Hispanic or Latino "/>
+      <valueString value="Hispanic or Latino"/>
     </answerOption>
     <answerOption>
-      <valueString value="Not Hispanic or Latino "/>
+      <valueString value="Not Hispanic or Latino"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -316,37 +316,37 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     <text value="Education: What is your highest level of education?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="No formal education "/>
+      <valueString value="No formal education"/>
     </answerOption>
     <answerOption>
-      <valueString value="Some elementary school "/>
+      <valueString value="Some elementary school"/>
     </answerOption>
     <answerOption>
-      <valueString value="Some secondary or high school education "/>
+      <valueString value="Some secondary or high school education"/>
     </answerOption>
     <answerOption>
-      <valueString value="High School or secondary school degree complete "/>
+      <valueString value="High School or secondary school degree complete"/>
     </answerOption>
     <answerOption>
-      <valueString value="Some college education "/>
+      <valueString value="Some college education"/>
     </answerOption>
     <answerOption>
-      <valueString value="Associate's or technical degree complete "/>
+      <valueString value="Associate's or technical degree complete"/>
     </answerOption>
     <answerOption>
-      <valueString value="College or baccalaureate degree complete "/>
+      <valueString value="College or baccalaureate degree complete"/>
     </answerOption>
     <answerOption>
-      <valueString value="Some post-baccalaureate education "/>
+      <valueString value="Some post-baccalaureate education"/>
     </answerOption>
     <answerOption>
-      <valueString value="Graduate or professional degree complete "/>
+      <valueString value="Graduate or professional degree complete"/>
     </answerOption>
     <answerOption>
-      <valueString value="Doctoral or post graduate education "/>
+      <valueString value="Doctoral or post graduate education"/>
     </answerOption>
     <answerOption>
-      <valueString value="Other "/>
+      <valueString value="Other"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -367,10 +367,10 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     <text value="Disability Questions: Are you deaf or do you have serious difficulty hearing?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="No "/>
+      <valueString value="No"/>
     </answerOption>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -381,10 +381,10 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     <text value="Are you blind or do you have serious difficulty seeing, even when wearing glasses?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="No "/>
+      <valueString value="No"/>
     </answerOption>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -395,10 +395,10 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     <text value="Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="No "/>
+      <valueString value="No"/>
     </answerOption>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -409,10 +409,10 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     <text value="Do you have serious difficulty walking or climbing stairs?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="No "/>
+      <valueString value="No"/>
     </answerOption>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -423,10 +423,10 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     <text value="Do you have difficulty dressing or bathing?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="No "/>
+      <valueString value="No"/>
     </answerOption>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -437,10 +437,10 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     <text value="Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a doctor's office or shopping?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="No "/>
+      <valueString value="No"/>
     </answerOption>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -487,28 +487,28 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
       <answerString value="'1'"/>
     </enableWhen>
     <answerOption>
-      <valueString value="&lt; $15,000 "/>
+      <valueString value="&lt; $15,000"/>
     </answerOption>
     <answerOption>
-      <valueString value="$15,000 to $29,999 "/>
+      <valueString value="$15,000 to $29,999"/>
     </answerOption>
     <answerOption>
-      <valueString value="$30,000 to $$49,999 "/>
+      <valueString value="$30,000 to $$49,999"/>
     </answerOption>
     <answerOption>
-      <valueString value="$50,000 to $99,999 "/>
+      <valueString value="$50,000 to $99,999"/>
     </answerOption>
     <answerOption>
-      <valueString value="$100,000 to $149,999 "/>
+      <valueString value="$100,000 to $149,999"/>
     </answerOption>
     <answerOption>
-      <valueString value="$150,000 to $199,999 "/>
+      <valueString value="$150,000 to $199,999"/>
     </answerOption>
     <answerOption>
-      <valueString value="$200,000 to $249,999 "/>
+      <valueString value="$200,000 to $249,999"/>
     </answerOption>
     <answerOption>
-      <valueString value="&gt;$250,000 "/>
+      <valueString value="&gt;$250,000"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -524,10 +524,10 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
       <answerString value="'1'"/>
     </enableWhen>
     <answerOption>
-      <valueString value="No "/>
+      <valueString value="No"/>
     </answerOption>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -553,28 +553,28 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
       <answerString value="'2'"/>
     </enableWhen>
     <answerOption>
-      <valueString value="&lt; $15,000 "/>
+      <valueString value="&lt; $15,000"/>
     </answerOption>
     <answerOption>
-      <valueString value="$15,000 to $29,999 "/>
+      <valueString value="$15,000 to $29,999"/>
     </answerOption>
     <answerOption>
-      <valueString value="$30,000 to $$49,999 "/>
+      <valueString value="$30,000 to $$49,999"/>
     </answerOption>
     <answerOption>
-      <valueString value="$50,000 to $99,999 "/>
+      <valueString value="$50,000 to $99,999"/>
     </answerOption>
     <answerOption>
-      <valueString value="$100,000 to $149,999 "/>
+      <valueString value="$100,000 to $149,999"/>
     </answerOption>
     <answerOption>
-      <valueString value="$150,000 to $199,999 "/>
+      <valueString value="$150,000 to $199,999"/>
     </answerOption>
     <answerOption>
-      <valueString value="$200,000 to $249,999 "/>
+      <valueString value="$200,000 to $249,999"/>
     </answerOption>
     <answerOption>
-      <valueString value="&gt;$250,000 "/>
+      <valueString value="&gt;$250,000"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -590,10 +590,10 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
       <answerString value="'2'"/>
     </enableWhen>
     <answerOption>
-      <valueString value="No "/>
+      <valueString value="No"/>
     </answerOption>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -614,25 +614,25 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     <text value="Citizenship: Citizen"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Citizen "/>
+      <valueString value="Citizen"/>
     </answerOption>
     <answerOption>
-      <valueString value="Permanent resident (Green card holder) "/>
+      <valueString value="Permanent resident (Green card holder)"/>
     </answerOption>
     <answerOption>
-      <valueString value="Non-citizen US/Canadian national "/>
+      <valueString value="Non-citizen US/Canadian national"/>
     </answerOption>
     <answerOption>
-      <valueString value="Refugee "/>
+      <valueString value="Refugee"/>
     </answerOption>
     <answerOption>
-      <valueString value="Asylum seeker "/>
+      <valueString value="Asylum seeker"/>
     </answerOption>
     <answerOption>
-      <valueString value="Non-immigrant student "/>
+      <valueString value="Non-immigrant student"/>
     </answerOption>
     <answerOption>
-      <valueString value="Non-immigrant worker "/>
+      <valueString value="Non-immigrant worker"/>
     </answerOption>
     <answerOption>
       <valueString value="Prefer not to answer"/>
@@ -648,19 +648,19 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
     <text value="What is your current housing status?"/>
     <type value="choice"/>
     <answerOption>
-      <valueString value="Assisted living "/>
+      <valueString value="Assisted living"/>
     </answerOption>
     <answerOption>
-      <valueString value="Own home "/>
+      <valueString value="Own home"/>
     </answerOption>
     <answerOption>
-      <valueString value="Rent home "/>
+      <valueString value="Rent home"/>
     </answerOption>
     <answerOption>
-      <valueString value="Skilled nursing facility/nursing home "/>
+      <valueString value="Skilled nursing facility/nursing home"/>
     </answerOption>
     <answerOption>
-      <valueString value="Unhoused-temporarily "/>
+      <valueString value="Unhoused-temporarily"/>
     </answerOption>
     <answerOption>
       <valueString value="Unhoused-permanently"/>
@@ -681,7 +681,7 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
       <answerString value="0"/>
     </enableWhen>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="No"/>
@@ -697,7 +697,7 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
       <answerString value="0"/>
     </enableWhen>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="No"/>
@@ -713,7 +713,7 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
       <answerString value="0"/>
     </enableWhen>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="No"/>
@@ -729,7 +729,7 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
       <answerString value="0"/>
     </enableWhen>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="No"/>
@@ -745,7 +745,7 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
       <answerString value="0"/>
     </enableWhen>
     <answerOption>
-      <valueString value="Yes "/>
+      <valueString value="Yes"/>
     </answerOption>
     <answerOption>
       <valueString value="No"/>
@@ -782,25 +782,25 @@ Choose all that apply</td><td style="vertical-align: top; text-align : left; bac
       <answerString value="'1'"/>
     </enableWhen>
     <answerOption>
-      <valueString value="Personal vehicle "/>
+      <valueString value="Personal vehicle"/>
     </answerOption>
     <answerOption>
-      <valueString value="Shared vehicle "/>
+      <valueString value="Shared vehicle"/>
     </answerOption>
     <answerOption>
-      <valueString value="Public transportation "/>
+      <valueString value="Public transportation"/>
     </answerOption>
     <answerOption>
-      <valueString value="Ride with someone else "/>
+      <valueString value="Ride with someone else"/>
     </answerOption>
     <answerOption>
-      <valueString value="Ride service "/>
+      <valueString value="Ride service"/>
     </answerOption>
     <answerOption>
-      <valueString value="Bicycle/Motorbike "/>
+      <valueString value="Bicycle/Motorbike"/>
     </answerOption>
     <answerOption>
-      <valueString value="Walking "/>
+      <valueString value="Walking"/>
     </answerOption>
     <answerOption>
       <valueString value="Other (Please specify)"/>
